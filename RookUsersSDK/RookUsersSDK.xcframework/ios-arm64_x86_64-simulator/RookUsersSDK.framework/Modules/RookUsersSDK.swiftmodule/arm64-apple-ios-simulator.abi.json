@@ -1,0 +1,2617 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JSONParameterEncoder",
+        "printedName": "JSONParameterEncoder",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(urlRequest:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "paramValueOwnership": "InOut",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12RookUsersSDK20JSONParameterEncoderV6encode10urlRequest4withy10Foundation10URLRequestVz_SDySSypGtKFZ",
+            "mangledName": "$s12RookUsersSDK20JSONParameterEncoderV6encode10urlRequest4withy10Foundation10URLRequestVz_SDySSypGtKFZ",
+            "moduleName": "RookUsersSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12RookUsersSDK20JSONParameterEncoderV",
+        "mangledName": "$s12RookUsersSDK20JSONParameterEncoderV",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ParameterEncoder",
+            "printedName": "ParameterEncoder",
+            "usr": "s:12RookUsersSDK16ParameterEncoderP",
+            "mangledName": "$s12RookUsersSDK16ParameterEncoderP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLParameterEncoder",
+        "printedName": "URLParameterEncoder",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(urlRequest:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "paramValueOwnership": "InOut",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12RookUsersSDK19URLParameterEncoderV6encode10urlRequest4withy10Foundation10URLRequestVz_SDySSypGtKFZ",
+            "mangledName": "$s12RookUsersSDK19URLParameterEncoderV6encode10urlRequest4withy10Foundation10URLRequestVz_SDySSypGtKFZ",
+            "moduleName": "RookUsersSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12RookUsersSDK19URLParameterEncoderV",
+        "mangledName": "$s12RookUsersSDK19URLParameterEncoderV",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ParameterEncoder",
+            "printedName": "ParameterEncoder",
+            "usr": "s:12RookUsersSDK16ParameterEncoderP",
+            "mangledName": "$s12RookUsersSDK16ParameterEncoderP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RookUsersManger",
+        "printedName": "RookUsersManger",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookUsersManger",
+                "printedName": "RookUsersSDK.RookUsersManger",
+                "usr": "s:12RookUsersSDK0aB6MangerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12RookUsersSDK0aB6MangerCACycfc",
+            "mangledName": "$s12RookUsersSDK0aB6MangerCACycfc",
+            "moduleName": "RookUsersSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "registerRookUser",
+            "printedName": "registerRookUser(with:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12RookUsersSDK0aB6MangerC08registerA4User4with10completionySS_ys6ResultOySbs5Error_pGctF",
+            "mangledName": "$s12RookUsersSDK0aB6MangerC08registerA4User4with10completionySS_ys6ResultOySbs5Error_pGctF",
+            "moduleName": "RookUsersSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUserIdStored",
+            "printedName": "getUserIdStored(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.String, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.String, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12RookUsersSDK0aB6MangerC15getUserIdStored10completionyys6ResultOySSs5Error_pGc_tF",
+            "mangledName": "$s12RookUsersSDK0aB6MangerC15getUserIdStored10completionyys6ResultOySSs5Error_pGc_tF",
+            "moduleName": "RookUsersSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeUser",
+            "printedName": "removeUser(compeltion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12RookUsersSDK0aB6MangerC10removeUser10compeltionyys6ResultOySbs5Error_pGc_tF",
+            "mangledName": "$s12RookUsersSDK0aB6MangerC10removeUser10compeltionyys6ResultOySbs5Error_pGc_tF",
+            "moduleName": "RookUsersSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12RookUsersSDK0aB6MangerC",
+        "mangledName": "$s12RookUsersSDK0aB6MangerC",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "AccessControl",
+          "Final"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ParameterEncoder",
+        "printedName": "ParameterEncoder",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(urlRequest:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "paramValueOwnership": "InOut",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12RookUsersSDK16ParameterEncoderP6encode10urlRequest4withy10Foundation10URLRequestVz_SDySSypGtKFZ",
+            "mangledName": "$s12RookUsersSDK16ParameterEncoderP6encode10urlRequest4withy10Foundation10URLRequestVz_SDySSypGtKFZ",
+            "moduleName": "RookUsersSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : RookUsersSDK.ParameterEncoder>",
+            "sugared_genericSig": "<Self where Self : RookUsersSDK.ParameterEncoder>",
+            "static": true,
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12RookUsersSDK16ParameterEncoderP",
+        "mangledName": "$s12RookUsersSDK16ParameterEncoderP",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkError",
+        "printedName": "NetworkError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "parametersNil",
+            "printedName": "parametersNil",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookUsersSDK.NetworkError.Type) -> RookUsersSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "RookUsersSDK.NetworkError",
+                    "usr": "s:12RookUsersSDK12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookUsersSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "RookUsersSDK.NetworkError",
+                        "usr": "s:12RookUsersSDK12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12RookUsersSDK12NetworkErrorO13parametersNilyA2CmF",
+            "mangledName": "$s12RookUsersSDK12NetworkErrorO13parametersNilyA2CmF",
+            "moduleName": "RookUsersSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "encodingFailed",
+            "printedName": "encodingFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookUsersSDK.NetworkError.Type) -> RookUsersSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "RookUsersSDK.NetworkError",
+                    "usr": "s:12RookUsersSDK12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookUsersSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "RookUsersSDK.NetworkError",
+                        "usr": "s:12RookUsersSDK12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12RookUsersSDK12NetworkErrorO14encodingFailedyA2CmF",
+            "mangledName": "$s12RookUsersSDK12NetworkErrorO14encodingFailedyA2CmF",
+            "moduleName": "RookUsersSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "missingUrl",
+            "printedName": "missingUrl",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookUsersSDK.NetworkError.Type) -> RookUsersSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "RookUsersSDK.NetworkError",
+                    "usr": "s:12RookUsersSDK12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookUsersSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "RookUsersSDK.NetworkError",
+                        "usr": "s:12RookUsersSDK12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12RookUsersSDK12NetworkErrorO10missingUrlyA2CmF",
+            "mangledName": "$s12RookUsersSDK12NetworkErrorO10missingUrlyA2CmF",
+            "moduleName": "RookUsersSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "noData",
+            "printedName": "noData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookUsersSDK.NetworkError.Type) -> RookUsersSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "RookUsersSDK.NetworkError",
+                    "usr": "s:12RookUsersSDK12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookUsersSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "RookUsersSDK.NetworkError",
+                        "usr": "s:12RookUsersSDK12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12RookUsersSDK12NetworkErrorO6noDatayA2CmF",
+            "mangledName": "$s12RookUsersSDK12NetworkErrorO6noDatayA2CmF",
+            "moduleName": "RookUsersSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "NotAuthorizedError",
+            "printedName": "NotAuthorizedError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookUsersSDK.NetworkError.Type) -> RookUsersSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "RookUsersSDK.NetworkError",
+                    "usr": "s:12RookUsersSDK12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookUsersSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "RookUsersSDK.NetworkError",
+                        "usr": "s:12RookUsersSDK12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12RookUsersSDK12NetworkErrorO013NotAuthorizedE0yA2CmF",
+            "mangledName": "$s12RookUsersSDK12NetworkErrorO013NotAuthorizedE0yA2CmF",
+            "moduleName": "RookUsersSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "RookUsersSDK.NetworkError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "RookUsersSDK.NetworkError",
+                    "usr": "s:12RookUsersSDK12NetworkErrorO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12RookUsersSDK12NetworkErrorO8rawValueACSgSS_tcfc",
+            "mangledName": "$s12RookUsersSDK12NetworkErrorO8rawValueACSgSS_tcfc",
+            "moduleName": "RookUsersSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12RookUsersSDK12NetworkErrorO8rawValueSSvp",
+            "mangledName": "$s12RookUsersSDK12NetworkErrorO8rawValueSSvp",
+            "moduleName": "RookUsersSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12RookUsersSDK12NetworkErrorO8rawValueSSvg",
+                "mangledName": "$s12RookUsersSDK12NetworkErrorO8rawValueSSvg",
+                "moduleName": "RookUsersSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12RookUsersSDK12NetworkErrorO",
+        "mangledName": "$s12RookUsersSDK12NetworkErrorO",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkResponse",
+        "printedName": "NetworkResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "succes",
+            "printedName": "succes",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookUsersSDK.NetworkResponse.Type) -> RookUsersSDK.NetworkResponse",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkResponse",
+                    "printedName": "RookUsersSDK.NetworkResponse",
+                    "usr": "s:12RookUsersSDK15NetworkResponseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookUsersSDK.NetworkResponse.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkResponse",
+                        "printedName": "RookUsersSDK.NetworkResponse",
+                        "usr": "s:12RookUsersSDK15NetworkResponseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12RookUsersSDK15NetworkResponseO6succesyA2CmF",
+            "mangledName": "$s12RookUsersSDK15NetworkResponseO6succesyA2CmF",
+            "moduleName": "RookUsersSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "authenticationError",
+            "printedName": "authenticationError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookUsersSDK.NetworkResponse.Type) -> RookUsersSDK.NetworkResponse",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkResponse",
+                    "printedName": "RookUsersSDK.NetworkResponse",
+                    "usr": "s:12RookUsersSDK15NetworkResponseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookUsersSDK.NetworkResponse.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkResponse",
+                        "printedName": "RookUsersSDK.NetworkResponse",
+                        "usr": "s:12RookUsersSDK15NetworkResponseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12RookUsersSDK15NetworkResponseO19authenticationErroryA2CmF",
+            "mangledName": "$s12RookUsersSDK15NetworkResponseO19authenticationErroryA2CmF",
+            "moduleName": "RookUsersSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "badRequest",
+            "printedName": "badRequest",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookUsersSDK.NetworkResponse.Type) -> RookUsersSDK.NetworkResponse",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkResponse",
+                    "printedName": "RookUsersSDK.NetworkResponse",
+                    "usr": "s:12RookUsersSDK15NetworkResponseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookUsersSDK.NetworkResponse.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkResponse",
+                        "printedName": "RookUsersSDK.NetworkResponse",
+                        "usr": "s:12RookUsersSDK15NetworkResponseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12RookUsersSDK15NetworkResponseO10badRequestyA2CmF",
+            "mangledName": "$s12RookUsersSDK15NetworkResponseO10badRequestyA2CmF",
+            "moduleName": "RookUsersSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "outdated",
+            "printedName": "outdated",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookUsersSDK.NetworkResponse.Type) -> RookUsersSDK.NetworkResponse",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkResponse",
+                    "printedName": "RookUsersSDK.NetworkResponse",
+                    "usr": "s:12RookUsersSDK15NetworkResponseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookUsersSDK.NetworkResponse.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkResponse",
+                        "printedName": "RookUsersSDK.NetworkResponse",
+                        "usr": "s:12RookUsersSDK15NetworkResponseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12RookUsersSDK15NetworkResponseO8outdatedyA2CmF",
+            "mangledName": "$s12RookUsersSDK15NetworkResponseO8outdatedyA2CmF",
+            "moduleName": "RookUsersSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookUsersSDK.NetworkResponse.Type) -> RookUsersSDK.NetworkResponse",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkResponse",
+                    "printedName": "RookUsersSDK.NetworkResponse",
+                    "usr": "s:12RookUsersSDK15NetworkResponseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookUsersSDK.NetworkResponse.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkResponse",
+                        "printedName": "RookUsersSDK.NetworkResponse",
+                        "usr": "s:12RookUsersSDK15NetworkResponseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12RookUsersSDK15NetworkResponseO6failedyA2CmF",
+            "mangledName": "$s12RookUsersSDK15NetworkResponseO6failedyA2CmF",
+            "moduleName": "RookUsersSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "noData",
+            "printedName": "noData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookUsersSDK.NetworkResponse.Type) -> RookUsersSDK.NetworkResponse",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkResponse",
+                    "printedName": "RookUsersSDK.NetworkResponse",
+                    "usr": "s:12RookUsersSDK15NetworkResponseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookUsersSDK.NetworkResponse.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkResponse",
+                        "printedName": "RookUsersSDK.NetworkResponse",
+                        "usr": "s:12RookUsersSDK15NetworkResponseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12RookUsersSDK15NetworkResponseO6noDatayA2CmF",
+            "mangledName": "$s12RookUsersSDK15NetworkResponseO6noDatayA2CmF",
+            "moduleName": "RookUsersSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "unableToDecode",
+            "printedName": "unableToDecode",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookUsersSDK.NetworkResponse.Type) -> RookUsersSDK.NetworkResponse",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkResponse",
+                    "printedName": "RookUsersSDK.NetworkResponse",
+                    "usr": "s:12RookUsersSDK15NetworkResponseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookUsersSDK.NetworkResponse.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkResponse",
+                        "printedName": "RookUsersSDK.NetworkResponse",
+                        "usr": "s:12RookUsersSDK15NetworkResponseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12RookUsersSDK15NetworkResponseO14unableToDecodeyA2CmF",
+            "mangledName": "$s12RookUsersSDK15NetworkResponseO14unableToDecodeyA2CmF",
+            "moduleName": "RookUsersSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "RookUsersSDK.NetworkResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkResponse",
+                    "printedName": "RookUsersSDK.NetworkResponse",
+                    "usr": "s:12RookUsersSDK15NetworkResponseO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12RookUsersSDK15NetworkResponseO8rawValueACSgSS_tcfc",
+            "mangledName": "$s12RookUsersSDK15NetworkResponseO8rawValueACSgSS_tcfc",
+            "moduleName": "RookUsersSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12RookUsersSDK15NetworkResponseO8rawValueSSvp",
+            "mangledName": "$s12RookUsersSDK15NetworkResponseO8rawValueSSvp",
+            "moduleName": "RookUsersSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12RookUsersSDK15NetworkResponseO8rawValueSSvg",
+                "mangledName": "$s12RookUsersSDK15NetworkResponseO8rawValueSSvg",
+                "moduleName": "RookUsersSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12RookUsersSDK15NetworkResponseO",
+        "mangledName": "$s12RookUsersSDK15NetworkResponseO",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RookUsersConfiguration",
+        "printedName": "RookUsersConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookUsersConfiguration",
+                "printedName": "RookUsersSDK.RookUsersConfiguration",
+                "usr": "s:12RookUsersSDK0aB13ConfigurationC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12RookUsersSDK0aB13ConfigurationC6sharedACvpZ",
+            "mangledName": "$s12RookUsersSDK0aB13ConfigurationC6sharedACvpZ",
+            "moduleName": "RookUsersSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookUsersConfiguration",
+                    "printedName": "RookUsersSDK.RookUsersConfiguration",
+                    "usr": "s:12RookUsersSDK0aB13ConfigurationC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12RookUsersSDK0aB13ConfigurationC6sharedACvgZ",
+                "mangledName": "$s12RookUsersSDK0aB13ConfigurationC6sharedACvgZ",
+                "moduleName": "RookUsersSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setConfiration",
+            "printedName": "setConfiration(urlAPI:clientUUID:secretKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12RookUsersSDK0aB13ConfigurationC14setConfiration6urlAPI10clientUUID9secretKeyySS_S2StF",
+            "mangledName": "$s12RookUsersSDK0aB13ConfigurationC14setConfiration6urlAPI10clientUUID9secretKeyySS_S2StF",
+            "moduleName": "RookUsersSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initRookUsers",
+            "printedName": "initRookUsers(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12RookUsersSDK0aB13ConfigurationC04initaB010completionyys6ResultOySbs5Error_pGc_tF",
+            "mangledName": "$s12RookUsersSDK0aB13ConfigurationC04initaB010completionyys6ResultOySbs5Error_pGc_tF",
+            "moduleName": "RookUsersSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12RookUsersSDK0aB13ConfigurationC",
+        "mangledName": "$s12RookUsersSDK0aB13ConfigurationC",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HTTPTask",
+        "printedName": "HTTPTask",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "request",
+            "printedName": "request",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookUsersSDK.HTTPTask.Type) -> RookUsersSDK.HTTPTask",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPTask",
+                    "printedName": "RookUsersSDK.HTTPTask",
+                    "usr": "s:12RookUsersSDK8HTTPTaskO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookUsersSDK.HTTPTask.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPTask",
+                        "printedName": "RookUsersSDK.HTTPTask",
+                        "usr": "s:12RookUsersSDK8HTTPTaskO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12RookUsersSDK8HTTPTaskO7requestyA2CmF",
+            "mangledName": "$s12RookUsersSDK8HTTPTaskO7requestyA2CmF",
+            "moduleName": "RookUsersSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "requestParameters",
+            "printedName": "requestParameters",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookUsersSDK.HTTPTask.Type) -> ([Swift.String : Any]?, [Swift.String : Any]?) -> RookUsersSDK.HTTPTask",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Any]?, [Swift.String : Any]?) -> RookUsersSDK.HTTPTask",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPTask",
+                        "printedName": "RookUsersSDK.HTTPTask",
+                        "usr": "s:12RookUsersSDK8HTTPTaskO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(bodyParameters: [Swift.String : Any]?, urlParameters: [Swift.String : Any]?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String : Any]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String : Any]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookUsersSDK.HTTPTask.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPTask",
+                        "printedName": "RookUsersSDK.HTTPTask",
+                        "usr": "s:12RookUsersSDK8HTTPTaskO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12RookUsersSDK8HTTPTaskO17requestParametersyACSDySSypGSg_AFtcACmF",
+            "mangledName": "$s12RookUsersSDK8HTTPTaskO17requestParametersyACSDySSypGSg_AFtcACmF",
+            "moduleName": "RookUsersSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "requestParametersAndHeaders",
+            "printedName": "requestParametersAndHeaders",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookUsersSDK.HTTPTask.Type) -> ([Swift.String : Any]?, [Swift.String : Any]?, [Swift.String : Swift.String]?) -> RookUsersSDK.HTTPTask",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Any]?, [Swift.String : Any]?, [Swift.String : Swift.String]?) -> RookUsersSDK.HTTPTask",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPTask",
+                        "printedName": "RookUsersSDK.HTTPTask",
+                        "usr": "s:12RookUsersSDK8HTTPTaskO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(bodyParameters: [Swift.String : Any]?, urlParameters: [Swift.String : Any]?, additionalHeaders: [Swift.String : Swift.String]?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String : Any]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String : Any]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String : Swift.String]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Swift.String]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookUsersSDK.HTTPTask.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPTask",
+                        "printedName": "RookUsersSDK.HTTPTask",
+                        "usr": "s:12RookUsersSDK8HTTPTaskO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12RookUsersSDK8HTTPTaskO27requestParametersAndHeadersyACSDySSypGSg_AFSDyS2SGSgtcACmF",
+            "mangledName": "$s12RookUsersSDK8HTTPTaskO27requestParametersAndHeadersyACSDySSypGSg_AFSDyS2SGSgtcACmF",
+            "moduleName": "RookUsersSDK"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12RookUsersSDK8HTTPTaskO",
+        "mangledName": "$s12RookUsersSDK8HTTPTaskO",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HTTPMethod",
+        "printedName": "HTTPMethod",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "get",
+            "printedName": "get",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookUsersSDK.HTTPMethod.Type) -> RookUsersSDK.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "RookUsersSDK.HTTPMethod",
+                    "usr": "s:12RookUsersSDK10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookUsersSDK.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "RookUsersSDK.HTTPMethod",
+                        "usr": "s:12RookUsersSDK10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12RookUsersSDK10HTTPMethodO3getyA2CmF",
+            "mangledName": "$s12RookUsersSDK10HTTPMethodO3getyA2CmF",
+            "moduleName": "RookUsersSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "post",
+            "printedName": "post",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookUsersSDK.HTTPMethod.Type) -> RookUsersSDK.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "RookUsersSDK.HTTPMethod",
+                    "usr": "s:12RookUsersSDK10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookUsersSDK.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "RookUsersSDK.HTTPMethod",
+                        "usr": "s:12RookUsersSDK10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12RookUsersSDK10HTTPMethodO4postyA2CmF",
+            "mangledName": "$s12RookUsersSDK10HTTPMethodO4postyA2CmF",
+            "moduleName": "RookUsersSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "RookUsersSDK.HTTPMethod?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "RookUsersSDK.HTTPMethod",
+                    "usr": "s:12RookUsersSDK10HTTPMethodO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12RookUsersSDK10HTTPMethodO8rawValueACSgSS_tcfc",
+            "mangledName": "$s12RookUsersSDK10HTTPMethodO8rawValueACSgSS_tcfc",
+            "moduleName": "RookUsersSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12RookUsersSDK10HTTPMethodO8rawValueSSvp",
+            "mangledName": "$s12RookUsersSDK10HTTPMethodO8rawValueSSvp",
+            "moduleName": "RookUsersSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12RookUsersSDK10HTTPMethodO8rawValueSSvg",
+                "mangledName": "$s12RookUsersSDK10HTTPMethodO8rawValueSSvg",
+                "moduleName": "RookUsersSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12RookUsersSDK10HTTPMethodO",
+        "mangledName": "$s12RookUsersSDK10HTTPMethodO",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookUsersSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Encoding\/ParameterEncoding.swift",
+      "kind": "StringLiteral",
+      "offset": 391,
+      "length": 22,
+      "value": "\"Parameters were nil.\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Encoding\/ParameterEncoding.swift",
+      "kind": "StringLiteral",
+      "offset": 438,
+      "length": 28,
+      "value": "\"Parameter encoding failed.\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Encoding\/ParameterEncoding.swift",
+      "kind": "StringLiteral",
+      "offset": 487,
+      "length": 13,
+      "value": "\"URL is nil.\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Encoding\/ParameterEncoding.swift",
+      "kind": "StringLiteral",
+      "offset": 517,
+      "length": 22,
+      "value": "\"no data was returned\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Encoding\/ParameterEncoding.swift",
+      "kind": "StringLiteral",
+      "offset": 568,
+      "length": 20,
+      "value": "\"NotAuthorizedError\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Encoding\/ParameterEncoding.swift",
+      "kind": "StringLiteral",
+      "offset": 391,
+      "length": 22,
+      "value": "\"Parameters were nil.\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Encoding\/ParameterEncoding.swift",
+      "kind": "StringLiteral",
+      "offset": 438,
+      "length": 28,
+      "value": "\"Parameter encoding failed.\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Encoding\/ParameterEncoding.swift",
+      "kind": "StringLiteral",
+      "offset": 487,
+      "length": 13,
+      "value": "\"URL is nil.\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Encoding\/ParameterEncoding.swift",
+      "kind": "StringLiteral",
+      "offset": 517,
+      "length": 22,
+      "value": "\"no data was returned\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Encoding\/ParameterEncoding.swift",
+      "kind": "StringLiteral",
+      "offset": 568,
+      "length": 20,
+      "value": "\"NotAuthorizedError\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/Domain\/Entities\/TokenData.swift",
+      "kind": "StringLiteral",
+      "offset": 316,
+      "length": 5,
+      "value": "\"iat\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/Domain\/Entities\/TokenData.swift",
+      "kind": "StringLiteral",
+      "offset": 348,
+      "length": 5,
+      "value": "\"exp\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/Domain\/Entities\/TokenData.swift",
+      "kind": "StringLiteral",
+      "offset": 381,
+      "length": 18,
+      "value": "\"enabled_features\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/Domain\/Entities\/TokenData.swift",
+      "kind": "StringLiteral",
+      "offset": 316,
+      "length": 5,
+      "value": "\"iat\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/Domain\/Entities\/TokenData.swift",
+      "kind": "StringLiteral",
+      "offset": 348,
+      "length": 5,
+      "value": "\"exp\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/Domain\/Entities\/TokenData.swift",
+      "kind": "StringLiteral",
+      "offset": 381,
+      "length": 18,
+      "value": "\"enabled_features\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/Domain\/Entities\/TokenData.swift",
+      "kind": "StringLiteral",
+      "offset": 676,
+      "length": 33,
+      "value": "\"extraction.bluetooth.heart_rate\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/Domain\/Entities\/TokenData.swift",
+      "kind": "StringLiteral",
+      "offset": 743,
+      "length": 25,
+      "value": "\"extraction.apple_health\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/Domain\/Entities\/TokenData.swift",
+      "kind": "StringLiteral",
+      "offset": 804,
+      "length": 27,
+      "value": "\"extraction.health_connect\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/Domain\/Entities\/TokenData.swift",
+      "kind": "StringLiteral",
+      "offset": 863,
+      "length": 22,
+      "value": "\"transmission.sockets\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/Domain\/Entities\/TokenData.swift",
+      "kind": "StringLiteral",
+      "offset": 903,
+      "length": 7,
+      "value": "\"users\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/Domain\/Entities\/TokenData.swift",
+      "kind": "StringLiteral",
+      "offset": 931,
+      "length": 10,
+      "value": "\"training\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/Domain\/Entities\/TokenData.swift",
+      "kind": "StringLiteral",
+      "offset": 676,
+      "length": 33,
+      "value": "\"extraction.bluetooth.heart_rate\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/Domain\/Entities\/TokenData.swift",
+      "kind": "StringLiteral",
+      "offset": 743,
+      "length": 25,
+      "value": "\"extraction.apple_health\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/Domain\/Entities\/TokenData.swift",
+      "kind": "StringLiteral",
+      "offset": 804,
+      "length": 27,
+      "value": "\"extraction.health_connect\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/Domain\/Entities\/TokenData.swift",
+      "kind": "StringLiteral",
+      "offset": 863,
+      "length": 22,
+      "value": "\"transmission.sockets\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/Domain\/Entities\/TokenData.swift",
+      "kind": "StringLiteral",
+      "offset": 903,
+      "length": 7,
+      "value": "\"users\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/Domain\/Entities\/TokenData.swift",
+      "kind": "StringLiteral",
+      "offset": 931,
+      "length": 10,
+      "value": "\"training\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Manager\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 216,
+      "length": 37,
+      "value": "\"You need to be authenticated first.\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Manager\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 274,
+      "length": 13,
+      "value": "\"Bad request\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Manager\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 306,
+      "length": 36,
+      "value": "\"The url you requested is outdated.\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Manager\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 359,
+      "length": 25,
+      "value": "\"Network request failed.\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Manager\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 401,
+      "length": 43,
+      "value": "\"Response returned with no data to decode.\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Manager\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 469,
+      "length": 35,
+      "value": "\"We could not decode the response.\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Manager\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 216,
+      "length": 37,
+      "value": "\"You need to be authenticated first.\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Manager\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 274,
+      "length": 13,
+      "value": "\"Bad request\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Manager\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 306,
+      "length": 36,
+      "value": "\"The url you requested is outdated.\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Manager\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 359,
+      "length": 25,
+      "value": "\"Network request failed.\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Manager\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 401,
+      "length": 43,
+      "value": "\"Response returned with no data to decode.\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Manager\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 469,
+      "length": 35,
+      "value": "\"We could not decode the response.\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/RAAuthenticationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 201,
+      "length": 40,
+      "value": "\"You have to set the configration first\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/RAAuthenticationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 201,
+      "length": 40,
+      "value": "\"You have to set the configration first\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
+      "kind": "StringLiteral",
+      "offset": 427,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
+      "kind": "StringLiteral",
+      "offset": 438,
+      "length": 3,
+      "value": "\"+\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
+      "kind": "StringLiteral",
+      "offset": 477,
+      "length": 3,
+      "value": "\"_\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
+      "kind": "StringLiteral",
+      "offset": 488,
+      "length": 3,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 554,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 559,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 564,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
+      "kind": "StringLiteral",
+      "offset": 576,
+      "length": 3,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 593,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
+      "kind": "StringLiteral",
+      "offset": 990,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1033,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookUsersSDK\/Source\/Configuration\/Constants\/ConfigurationConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 205,
+      "length": 12,
+      "value": "\"rook.users\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Service\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 181,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Service\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 201,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Service\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 181,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Service\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 201,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookConnectAppleHealthSDK\/Source\/RookAuthtentication\/Constants\/RookAuthenticationConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 227,
+      "length": 32,
+      "value": "\"rook_connect_auth_client_token\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookAuthenticationSDK\/RookUsersSDK\/Source\/User\/Constants\/RooKUserStorageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 216,
+      "length": 22,
+      "value": "\"rook_connect_user_id\""
+    }
+  ]
+}

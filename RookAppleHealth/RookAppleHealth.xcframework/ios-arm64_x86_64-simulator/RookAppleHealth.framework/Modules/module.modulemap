@@ -1,0 +1,11 @@
+framework module RookAppleHealth {
+  umbrella header "RookAppleHealth.h"
+
+  export *
+  module * { export * }
+}
+
+module RookAppleHealth.Swift {
+  header "RookAppleHealth-Swift.h"
+  requires objc
+}
