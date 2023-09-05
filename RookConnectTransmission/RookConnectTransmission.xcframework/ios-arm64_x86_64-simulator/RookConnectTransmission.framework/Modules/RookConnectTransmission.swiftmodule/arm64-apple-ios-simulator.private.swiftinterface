@@ -550,6 +550,7 @@ public struct RookTemperatureGranularTransmissionDTO {
   @objc final public func setConfiguration(with urlAPI: Swift.String, clientUUID: Swift.String, secretKey: Swift.String)
   @objc final public func setUserId(with id: Swift.String?)
   @objc final public func initRookTransmission()
+  final public func initRookTransmission(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc final public func isTransmissionAvailable() -> Swift.Bool
   @objc deinit
 }

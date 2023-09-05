@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class RookEventsManager {
+@objc public final class RookEventsManager: NSObject {
   
   // MARK:  Properties
   
@@ -19,9 +19,11 @@ public final class RookEventsManager {
   
   private let syncActivityEventsUseCase: SyncActivityEventsUseCaseProtocol = SyncActivityEventsUseCase()
   
+  private let syncPendingEventUseCase: SynPendingEventsUseCaseProtocol = SynPendingEventsUseCase()
+  
   // MARK:  Int
   
-  public init() {
+  @objc public override init() {
   }
   
   // MARK:  Helpers
@@ -46,4 +48,7 @@ public final class RookEventsManager {
     syncActivityEventsUseCase.execute(date: date, completion: completion)
   }
   
+  public func syncPendingEvents(completion: @escaping (Result<Bool, Error>) -> Void) {
+    self.syncPendingEventUseCase.execute(completion: completion)
+  }
 }

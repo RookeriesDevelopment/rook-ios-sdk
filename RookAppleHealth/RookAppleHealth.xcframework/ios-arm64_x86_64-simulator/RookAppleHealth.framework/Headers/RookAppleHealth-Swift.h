@@ -264,6 +264,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookAuthAppl
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// Sets your client uuid to configure the sdk
 - (void)setClientUUIDWith:(NSString * _Nonnull)uuid;
+- (void)setExcludeManualData:(BOOL)excludeManual;
 /// Initializes the rook apple health sdk
 /// first you have to set your client uuid
 - (void)initRookAH SWIFT_METHOD_FAMILY(none);
@@ -1058,6 +1059,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookAuthAppl
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// Sets your client uuid to configure the sdk
 - (void)setClientUUIDWith:(NSString * _Nonnull)uuid;
+- (void)setExcludeManualData:(BOOL)excludeManual;
 /// Initializes the rook apple health sdk
 /// first you have to set your client uuid
 - (void)initRookAH SWIFT_METHOD_FAMILY(none);

@@ -312,7 +312,9 @@ public struct RookPositionData : Swift.Encodable {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class RookAuthAppleHealth : ObjectiveC.NSObject {
   @objc public static let shared: RookAppleHealth.RookAuthAppleHealth
   @objc final public func setClientUUID(with uuid: Swift.String)
+  @objc final public func setExcludeManualData(_ excludeManual: Swift.Bool)
   @objc final public func initRookAH()
+  final public func initRookAH(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc final public func setUserId(with id: Swift.String?)
   @objc final public func isAHAvailable() -> Swift.Bool
   @objc deinit
@@ -598,6 +600,7 @@ public struct RookActivityEvent : Swift.Encodable {
 }
 public enum RookError : Swift.String, Swift.Error {
   case SDKUnavailable
+  case emptySamples
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -962,6 +965,9 @@ public enum HealthDataType : Swift.String, Swift.CaseIterable, Swift.Identifiabl
   case respiratoryRate
   case biologicalSex
   case dateOfBirth
+  case bloodPressureSystolic
+  case bloodPressureDiastolic
+  case bloodGlucose
   public init?(rawValue: Swift.String)
   public typealias AllCases = [RookAppleHealth.HealthDataType]
   public typealias ID = RookAppleHealth.HealthDataType
@@ -1171,7 +1177,7 @@ public struct BloodPressureSystolicDiastolicBpNumber : Swift.Codable {
 }
 public struct BloodPressureGranularDataSystolicDiastolicBpNumber : Swift.Codable {
   public let datetime: Foundation.Date
-  public let bloodPressureSystolicDiastolicBpNumber: [RookAppleHealth.BloodPressureSystolicDiastolicBpNumber]
+  public let systolicBp: Swift.Int, diastolicBp: Swift.Int
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }

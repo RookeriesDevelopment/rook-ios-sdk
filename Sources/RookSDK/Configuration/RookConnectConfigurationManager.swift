@@ -20,6 +20,9 @@ public final class RookConnectConfigurationManager {
   private let extractionConfigurator: RookAuthAppleHealth = RookAuthAppleHealth.shared
   private let transmissionConfigurator: RookTransmissionSettings = RookTransmissionSettings.shared
   private let userManger: RookUsersManger = RookUsersManger()
+  private let initUseCase: InitUseCaseProtocol = InitUseCase()
+  
+  private var innerConfiguration: SDKConfiguration?
   
   // MARK:  Init
   
@@ -34,12 +37,21 @@ public final class RookConnectConfigurationManager {
     self.usersConfigurator.setConfiration(urlAPI: urlAPI, clientUUID: clientUUID, secretKey: secretKey)
     self.extractionConfigurator.setClientUUID(with: clientUUID)
     self.transmissionConfigurator.setConfiguration(with: urlAPI, clientUUID: clientUUID, secretKey: secretKey)
+    
+    self.innerConfiguration = SDKConfiguration(
+      urlAPI: urlAPI,
+      clientUUID: clientUUID,
+      secretKey: secretKey)
   }
   
   public func initRook() {
     self.usersConfigurator.initRookUsers() { _ in }
     self.extractionConfigurator.initRookAH()
     self.transmissionConfigurator.initRookTransmission()
+  }
+  
+  public func initRook(completion: @escaping (Result<Bool, Error>) -> Void) {
+    self.initUseCase.execute(configuration: self.innerConfiguration, completion: completion)
   }
   
   public func updateUserId(_ id: String,

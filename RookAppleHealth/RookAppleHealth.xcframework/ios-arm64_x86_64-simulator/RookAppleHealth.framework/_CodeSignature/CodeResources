@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RookAppleHealth-Swift.h</key>
 		<data>
-		FXHaGdHZvoRJR4Vg94PvfnXDDPU=
+		4zPV2Wyxy8NbkGV/Dk+vEM3Db1w=
 		</data>
 		<key>Headers/RookAppleHealth.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		t/ConZl/Zw6qs0XjPvGS0ZEosoA=
+		zZqAkn9mzUE1po0vTG/mhgr22NQ=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		aUjsYXVATN/NmTX3Ng8Qy2NvggQ=
+		0jMWgHU398LGLqGPuPqbC4nOsRY=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		aUjsYXVATN/NmTX3Ng8Qy2NvggQ=
+		0jMWgHU398LGLqGPuPqbC4nOsRY=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		oegAvePDEr0zFc1AY28OJbB3Kqg=
+		4KUrJyFVa94C2KoPD8sg0UnIXlk=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		t/ConZl/Zw6qs0XjPvGS0ZEosoA=
+		zZqAkn9mzUE1po0vTG/mhgr22NQ=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		MYoHn86VonDFTAJQ+xs0r4NEFF4=
+		Ph3uaeMNXACRRT5difRXCLUqycY=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		MYoHn86VonDFTAJQ+xs0r4NEFF4=
+		Ph3uaeMNXACRRT5difRXCLUqycY=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JG5EmJk0V4u8yHLkHp0k2sGWjWI=
+		CgRL7BfuzIhhiiTOtyTDtyTAXA8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r4375ULubpYVVMx/oWpvDLO9b8zkRnA2/LT3d7A4Jb4=
+			11NKm1HeRx7fBW0ntFs1oF0+cf2pySccceVaMbm7RAw=
 			</data>
 		</dict>
 		<key>Headers/RookAppleHealth.h</key>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GA6iEnXRT8uAD8Oah9+deOQbxkpSK3IXeY8tMb/P98s=
+			2l0jFaa6ENlq66M+LAwoZaLXKe9WYVAWP0vFYePo738=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z/zFT433GfV57eoJs8iFl2/O3P2XiriEg17v3VP8ZE0=
+			G6aaa+sxW9VN3MZq1yduxcHbyPaabM9tfGtT8h71rTM=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z/zFT433GfV57eoJs8iFl2/O3P2XiriEg17v3VP8ZE0=
+			G6aaa+sxW9VN3MZq1yduxcHbyPaabM9tfGtT8h71rTM=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zzsiMiVYYjjNZCCbNttExWFbj0V7oPhBOjtS16v7O90=
+			cGl4+Nzz0SmzMYQTq2d4ujmSCObFUusJXt6Bf5eAqaI=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GA6iEnXRT8uAD8Oah9+deOQbxkpSK3IXeY8tMb/P98s=
+			2l0jFaa6ENlq66M+LAwoZaLXKe9WYVAWP0vFYePo738=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			91D1q4gdJ23YUwEB+f6m8nSan2fWD5p8NWIx3As4VlU=
+			AcW+GLSiEM/6DzTn4E6jxemoGDAYPpOIrKJsVtSUrkA=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			91D1q4gdJ23YUwEB+f6m8nSan2fWD5p8NWIx3As4VlU=
+			AcW+GLSiEM/6DzTn4E6jxemoGDAYPpOIrKJsVtSUrkA=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6DI6+o+Y/lbespbPZt8g1arw5nOsqOsPFjMrHNJJ6FU=
+			OGBl6SacYyk7jz/N6Fdm9HXTq7R3x+xYodtOEztU1bw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

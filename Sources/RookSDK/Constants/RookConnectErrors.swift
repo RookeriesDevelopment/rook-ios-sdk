@@ -9,4 +9,8 @@ import Foundation
 
 enum RookConnectErrors: Error {
   case empySummary
+  case emptySummaries
+  case emptyEvent
+  case nothingToUpdate
+  case missingConfigurtion
 }

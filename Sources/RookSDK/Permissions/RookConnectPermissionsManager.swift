@@ -9,7 +9,7 @@ import Foundation
 import RookAppleHealth
 import RookConnectTransmission
 
-public final class RookConnectPermissionsManager {
+@objc public final class RookConnectPermissionsManager: NSObject {
   
   // MARK:  Properties
   
@@ -17,7 +17,7 @@ public final class RookConnectPermissionsManager {
   
   // MARK:  Init
   
-  public init() {
+  @objc public override init() {
   }
   
   // MARK:  Helpers
