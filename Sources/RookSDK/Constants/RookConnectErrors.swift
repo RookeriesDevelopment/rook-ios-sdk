@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum RookConnectErrors: Error {
+public enum RookConnectErrors: Error {
   case empySummary
   case emptySummaries
   case emptyEvent
