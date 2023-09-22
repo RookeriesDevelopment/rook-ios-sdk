@@ -903,6 +903,11 @@ final public class RookHrEventTransmissionManager {
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
 }
+@_inheritsConvenienceInitializers @objc final public class RookTimeZoneManagerObjc : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc final public func uploadUserTimeZone(timezone: Swift.String, offset: Swift.Int, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc deinit
+}
 @objc public class HydrationAmountGranularDataMlNumberObjc : ObjectiveC.NSObject, Swift.Codable {
   final public let datetime: Foundation.Date
   final public let intervalDurationSeconds: Swift.Int, hydrationAmountMl: Swift.Int
@@ -1338,6 +1343,7 @@ public enum RookTransmissionError : Swift.String, Swift.Error {
   case invalidEventData
   case registerNotFound
   case datetimeNil
+  case clientUUIDEmpty
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -1531,6 +1537,11 @@ extension RookConnectTransmission.RookBodyTransmissionManager {
   @objc final public func enqueueBosysummaries(with bodyBuilder: RookConnectTransmission.RookBodyDataTransmissionDTOBuilderObjc, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func getBodySummariesStoredObjc(completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
   @objc final public func uploadBodySummariesObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+}
+final public class RookTimeZoneManager {
+  public init()
+  final public func uploadUserTimeZone(timezone: Swift.String, offset: Swift.Int, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  @objc deinit
 }
 @objc public class BloodGlucoseGranularDataMgPerDLObjc : ObjectiveC.NSObject, Swift.Codable {
   final public let datetime: Foundation.Date

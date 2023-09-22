@@ -560,6 +560,10 @@ extension RookAppleHealth.RookExtractionEventManagerObjc {
   @objc final public func getBodyOxygenationEventsDictionary(date: Foundation.Date, completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
   @objc final public func getActivityEventsDictionary(date: Foundation.Date, completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
 }
+public struct UserTimeZone {
+  public let timeZone: Swift.String
+  public let offset: Swift.Int
+}
 public struct RookCadenceGranularItem : Swift.Encodable {
   public let datetime: Foundation.Date
   public let intervalDurationSeconds: Swift.Int
@@ -742,6 +746,7 @@ public struct RookOxigenationDataEvent : Swift.Codable {
   final public func getBodySummary(date: Foundation.Date, completion: @escaping (Swift.Result<RookAppleHealth.RookBodyData, Swift.Error>) -> Swift.Void)
   final public func getUserInformation(date: Foundation.Date, completion: @escaping (Swift.Result<RookAppleHealth.RookUserInfoData, Swift.Error>) -> Swift.Void)
   final public func getLastExtractionDate(of summary: RookAppleHealth.RookDataType) -> Foundation.Date?
+  final public func getUserTimeZone(completion: @escaping (Swift.Result<RookAppleHealth.UserTimeZone, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 public struct RookPhysicalData : Swift.Codable {

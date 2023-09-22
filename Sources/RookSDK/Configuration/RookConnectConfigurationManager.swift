@@ -21,6 +21,7 @@ public final class RookConnectConfigurationManager {
   private let transmissionConfigurator: RookTransmissionSettings = RookTransmissionSettings.shared
   private let userManger: RookUsersManger = RookUsersManger()
   private let initUseCase: InitUseCaseProtocol = InitUseCase()
+  private let timeZoneUseCase: TimeZoneUseCaseProtocol = TimeZoneUseCase()
   
   private var innerConfiguration: SDKConfiguration?
   
@@ -56,10 +57,22 @@ public final class RookConnectConfigurationManager {
   
   public func updateUserId(_ id: String,
                            completion: @escaping (Result<Bool, Error>) -> Void) {
-    self.userManger.registerRookUser(with: id, completion: completion)
+    self.userManger.registerRookUser(with: id) { [weak self] result in
+      switch result {
+      case .success(let success):
+        completion(.success(success))
+        self?.timeZoneUseCase.execute(completion: completion)
+      case .failure(let failure):
+        completion(.failure(failure))
+      }
+    }
   }
   
   public func clearUser(completion: @escaping (Result<Bool, Error>) -> Void) {
     self.userManger.removeUser(compeltion: completion)
+  }
+  
+  public func syncUserTimeZone(completion: @escaping (Result<Bool, Error>) -> Void) {
+    timeZoneUseCase.execute(completion: completion)
   }
 }
