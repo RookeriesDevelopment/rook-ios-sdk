@@ -14,6 +14,7 @@ The features listed bellow are available to fetch and synchronize:
 - Heart rate events
 - Oxygenation events
 - Activity events
+- Time zone of the device
 
 ## Installation
 
@@ -90,8 +91,9 @@ The class `RookConnectConfigurationManager` contains two methods related to the 
 
 | Method | Description |
 | ----- | ----- |
-| `func updateUserId(_ id: String, completion: @escaping (Result<Bool, Error>) -> Void)` | It will try to register the user in the rook server and it will be stored, if the registration was successful. |
+| `func updateUserId(_ id: String, completion: @escaping (Result<Bool, Error>) -> Void)` | It will try to register the user in the rook server and it will be stored, if the registration was successful, after that the sdk upload the current time zone od the device. |
 | `func clearUser(completion: @escaping (Result<Bool, Error>) -> Void)` | Deletes the user stored locally. |
+| `public func syncUserTimeZone(completion: @escaping (Result<Bool, Error>) -> Void)` | Uploads the curret time zone of the device a user has to added before use this method. |
 
 ### RookSummaryManger
 

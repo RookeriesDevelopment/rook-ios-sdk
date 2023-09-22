@@ -527,6 +527,7 @@ SWIFT_CLASS("_TtC15RookAppleHealth21RookExtractionManager")
 - (NSDate * _Nullable)getLastExtractionDateOfSleep SWIFT_WARN_UNUSED_RESULT;
 - (NSDate * _Nullable)getLastExtractionDateOfPhysical SWIFT_WARN_UNUSED_RESULT;
 - (NSDate * _Nullable)getLastExtractionDateOfBody SWIFT_WARN_UNUSED_RESULT;
+- (void)getUserTimeZoneWithCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
 @end
 
 
@@ -1322,6 +1323,7 @@ SWIFT_CLASS("_TtC15RookAppleHealth21RookExtractionManager")
 - (NSDate * _Nullable)getLastExtractionDateOfSleep SWIFT_WARN_UNUSED_RESULT;
 - (NSDate * _Nullable)getLastExtractionDateOfPhysical SWIFT_WARN_UNUSED_RESULT;
 - (NSDate * _Nullable)getLastExtractionDateOfBody SWIFT_WARN_UNUSED_RESULT;
+- (void)getUserTimeZoneWithCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
 @end
 
 

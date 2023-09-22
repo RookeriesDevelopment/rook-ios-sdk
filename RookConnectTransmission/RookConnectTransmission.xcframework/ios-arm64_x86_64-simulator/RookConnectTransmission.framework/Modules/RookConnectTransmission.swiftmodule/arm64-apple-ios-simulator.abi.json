@@ -6972,6 +6972,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookConnectTransmission",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
@@ -20345,6 +20355,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookConnectTransmission",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
@@ -24279,6 +24299,16 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookConnectTransmission",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -45338,6 +45368,190 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "RookTimeZoneManagerObjc",
+        "printedName": "RookTimeZoneManagerObjc",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookTimeZoneManagerObjc",
+                "printedName": "RookConnectTransmission.RookTimeZoneManagerObjc",
+                "usr": "c:@M@RookConnectTransmission@objc(cs)RookTimeZoneManagerObjc"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@RookConnectTransmission@objc(cs)RookTimeZoneManagerObjc(im)init",
+            "mangledName": "$s23RookConnectTransmission0A19TimeZoneManagerObjcCACycfc",
+            "moduleName": "RookConnectTransmission",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Override",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadUserTimeZone",
+            "printedName": "uploadUserTimeZone(timezone:offset:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookConnectTransmission@objc(cs)RookTimeZoneManagerObjc(im)uploadUserTimeZoneWithTimezone:offset:completion:",
+            "mangledName": "$s23RookConnectTransmission0A19TimeZoneManagerObjcC010uploadUserdE08timezone6offset10completionySS_SiySb_s5Error_pSgtctF",
+            "moduleName": "RookConnectTransmission",
+            "objc_name": "uploadUserTimeZoneWithTimezone:offset:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@RookConnectTransmission@objc(cs)RookTimeZoneManagerObjc",
+        "mangledName": "$s23RookConnectTransmission0A19TimeZoneManagerObjcC",
+        "moduleName": "RookConnectTransmission",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookConnectTransmission",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "HydrationAmountGranularDataMlNumberObjc",
         "printedName": "HydrationAmountGranularDataMlNumberObjc",
         "children": [
@@ -66066,6 +66280,43 @@
             "moduleName": "RookConnectTransmission"
           },
           {
+            "kind": "Var",
+            "name": "clientUUIDEmpty",
+            "printedName": "clientUUIDEmpty",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookConnectTransmission.RookTransmissionError.Type) -> RookConnectTransmission.RookTransmissionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookTransmissionError",
+                    "printedName": "RookConnectTransmission.RookTransmissionError",
+                    "usr": "s:23RookConnectTransmission0aC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookConnectTransmission.RookTransmissionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookTransmissionError",
+                        "printedName": "RookConnectTransmission.RookTransmissionError",
+                        "usr": "s:23RookConnectTransmission0aC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23RookConnectTransmission0aC5ErrorO15clientUUIDEmptyyA2CmF",
+            "mangledName": "$s23RookConnectTransmission0aC5ErrorO15clientUUIDEmptyyA2CmF",
+            "moduleName": "RookConnectTransmission"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -68863,6 +69114,16 @@
             "usr": "s:SE",
             "mangledName": "$sSE"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookConnectTransmission",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -77667,6 +77928,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookConnectTransmission",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "FloorsClimbedGranularDataFloorExtraction",
         "printedName": "FloorsClimbedGranularDataFloorExtraction",
@@ -78136,11 +78407,134 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "RookTimeZoneManager",
+        "printedName": "RookTimeZoneManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookTimeZoneManager",
+                "printedName": "RookConnectTransmission.RookTimeZoneManager",
+                "usr": "s:23RookConnectTransmission0A15TimeZoneManagerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23RookConnectTransmission0A15TimeZoneManagerCACycfc",
+            "mangledName": "$s23RookConnectTransmission0A15TimeZoneManagerCACycfc",
+            "moduleName": "RookConnectTransmission",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadUserTimeZone",
+            "printedName": "uploadUserTimeZone(timezone:offset:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23RookConnectTransmission0A15TimeZoneManagerC010uploadUserdE08timezone6offset10completionySS_Siys6ResultOySbs5Error_pGctF",
+            "mangledName": "$s23RookConnectTransmission0A15TimeZoneManagerC010uploadUserdE08timezone6offset10completionySS_Siys6ResultOySbs5Error_pGctF",
+            "moduleName": "RookConnectTransmission",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:23RookConnectTransmission0A15TimeZoneManagerC",
+        "mangledName": "$s23RookConnectTransmission0A15TimeZoneManagerC",
+        "moduleName": "RookConnectTransmission",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookConnectTransmission",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
         "moduleName": "RookConnectTransmission"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookConnectTransmission",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -87171,6 +87565,48 @@
       "value": "\"Unknown\""
     },
     {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/TransmissionManager\/TimeZone\/Data\/Networking\/Entities\/TimeZoneRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 355,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/TransmissionManager\/TimeZone\/Data\/Networking\/Entities\/TimeZoneRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 387,
+      "length": 13,
+      "value": "\"client_uuid\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/TransmissionManager\/TimeZone\/Data\/Networking\/Entities\/TimeZoneRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 461,
+      "length": 18,
+      "value": "\"time_zone_source\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/TransmissionManager\/TimeZone\/Data\/Networking\/Entities\/TimeZoneRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 355,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/TransmissionManager\/TimeZone\/Data\/Networking\/Entities\/TimeZoneRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 387,
+      "length": 13,
+      "value": "\"client_uuid\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/TransmissionManager\/TimeZone\/Data\/Networking\/Entities\/TimeZoneRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 461,
+      "length": 18,
+      "value": "\"time_zone_source\""
+    },
+    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/Data\/TrasnmissionNetworking\/Events\/Entities\/RookBloodGlucoseEventTransmissionNetworking.swift",
       "kind": "StringLiteral",
       "offset": 520,
@@ -94936,6 +95372,13 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/TransmissionManager\/RookBodyTransmission\/RookBodyTransmissionManager.swift",
       "kind": "StringLiteral",
+      "offset": 518,
+      "length": 30,
+      "value": "\"Your client uuid was not set\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/TransmissionManager\/RookBodyTransmission\/RookBodyTransmissionManager.swift",
+      "kind": "StringLiteral",
       "offset": 224,
       "length": 23,
       "value": "\"First set the user id\""
@@ -94967,6 +95410,13 @@
       "offset": 458,
       "length": 34,
       "value": "\"metadata detaime could't be nill\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/TransmissionManager\/RookBodyTransmission\/RookBodyTransmissionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 518,
+      "length": 30,
+      "value": "\"Your client uuid was not set\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/Data\/TrasnmissionNetworking\/PhysicalNetworking\/Entities\/Granular\/RookActivityLevelGranularNetworking.swift",

@@ -546,6 +546,13 @@ SWIFT_CLASS("_TtC23RookConnectTransmission50RookTemperatureGranularDataCelsiusTr
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC23RookConnectTransmission23RookTimeZoneManagerObjc")
+@interface RookTimeZoneManagerObjc : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)uploadUserTimeZoneWithTimezone:(NSString * _Nonnull)timezone offset:(NSInteger)offset completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
 @class RookTransmissionActivityLevelGranularObjc;
 
 SWIFT_CLASS("_TtC23RookConnectTransmission37RookTransmissionActivityDataEventObjc")
@@ -1652,6 +1659,13 @@ SWIFT_CLASS("_TtC23RookConnectTransmission50RookTemperatureGranularDataCelsiusTr
 - (nonnull instancetype)initWithDatetime:(NSDate * _Nonnull)datetime temperatureCelsius:(NSInteger)temperatureCelsius OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC23RookConnectTransmission23RookTimeZoneManagerObjc")
+@interface RookTimeZoneManagerObjc : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)uploadUserTimeZoneWithTimezone:(NSString * _Nonnull)timezone offset:(NSInteger)offset completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
 @class RookTransmissionActivityLevelGranularObjc;

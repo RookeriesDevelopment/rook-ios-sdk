@@ -16507,6 +16507,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookPositionItem",
         "printedName": "RookPositionItem",
@@ -19054,13 +19064,6 @@
       },
       {
         "kind": "Import",
-        "name": "HealthKit",
-        "printedName": "HealthKit",
-        "declKind": "Import",
-        "moduleName": "RookAppleHealth"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -19088,6 +19091,23 @@
       },
       {
         "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -19102,6 +19122,16 @@
         "printedName": "HealthKit",
         "declKind": "Import",
         "moduleName": "RookAppleHealth"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -19664,6 +19694,16 @@
             "usr": "s:SE",
             "mangledName": "$sSE"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -26743,6 +26783,128 @@
         "moduleName": "RookAppleHealth",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserTimeZone",
+        "printedName": "UserTimeZone",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "timeZone",
+            "printedName": "timeZone",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth12UserTimeZoneV04timeF0SSvp",
+            "mangledName": "$s15RookAppleHealth12UserTimeZoneV04timeF0SSvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth12UserTimeZoneV04timeF0SSvg",
+                "mangledName": "$s15RookAppleHealth12UserTimeZoneV04timeF0SSvg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "offset",
+            "printedName": "offset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth12UserTimeZoneV6offsetSivp",
+            "mangledName": "$s15RookAppleHealth12UserTimeZoneV6offsetSivp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth12UserTimeZoneV6offsetSivg",
+                "mangledName": "$s15RookAppleHealth12UserTimeZoneV6offsetSivg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15RookAppleHealth12UserTimeZoneV",
+        "mangledName": "$s15RookAppleHealth12UserTimeZoneV",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -35791,6 +35953,59 @@
             "declKind": "Func",
             "usr": "s:15RookAppleHealth0A17ExtractionManagerC07getLastD4Date2of10Foundation0H0VSgAA0A8DataTypeO_tF",
             "mangledName": "$s15RookAppleHealth0A17ExtractionManagerC07getLastD4Date2of10Foundation0H0VSgAA0A8DataTypeO_tF",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUserTimeZone",
+            "printedName": "getUserTimeZone(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<RookAppleHealth.UserTimeZone, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<RookAppleHealth.UserTimeZone, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserTimeZone",
+                        "printedName": "RookAppleHealth.UserTimeZone",
+                        "usr": "s:15RookAppleHealth12UserTimeZoneV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15RookAppleHealth0A17ExtractionManagerC15getUserTimeZone10completionyys6ResultOyAA0ghI0Vs5Error_pGc_tF",
+            "mangledName": "$s15RookAppleHealth0A17ExtractionManagerC15getUserTimeZone10completionyys6ResultOyAA0ghI0Vs5Error_pGc_tF",
             "moduleName": "RookAppleHealth",
             "declAttributes": [
               "Final",
@@ -63298,6 +63513,20 @@
       "offset": 472,
       "length": 27,
       "value": "\"interval_duration_seconds\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/TimeZone\/Entities\/TimeZoneErrors.swift",
+      "kind": "StringLiteral",
+      "offset": 198,
+      "length": 46,
+      "value": "\"The user's device does not contain time zone\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/TimeZone\/Entities\/TimeZoneErrors.swift",
+      "kind": "StringLiteral",
+      "offset": 198,
+      "length": 46,
+      "value": "\"The user's device does not contain time zone\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionPowerDataObjc.swift",
