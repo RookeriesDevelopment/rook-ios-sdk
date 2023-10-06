@@ -262,6 +262,16 @@ SWIFT_CLASS("_TtC23RookConnectTransmission35ActivityLevelGranularDataNumberObjc"
 @end
 
 
+SWIFT_CLASS("_TtC23RookConnectTransmission33AnaliticsTransmissionConfigurator")
+@interface AnaliticsTransmissionConfigurator : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AnaliticsTransmissionConfigurator * _Nonnull shared;)
++ (AnaliticsTransmissionConfigurator * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setPlatformToReact;
+@end
+
+
 SWIFT_CLASS("_TtC23RookConnectTransmission35BloodGlucoseGranularDataMgPerDLObjc")
 @interface BloodGlucoseGranularDataMgPerDLObjc : NSObject
 - (nonnull instancetype)initWithDatetime:(NSDate * _Nonnull)datetime bloodGlucoseMgPerDL:(NSInteger)bloodGlucoseMgPerDL OBJC_DESIGNATED_INITIALIZER;
@@ -948,7 +958,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookTransmis
 + (RookTransmissionSettings * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)setConfigurationWith:(NSString * _Nonnull)urlAPI clientUUID:(NSString * _Nonnull)clientUUID secretKey:(NSString * _Nonnull)secretKey;
+- (void)setConfigurationWithClientUUID:(NSString * _Nonnull)clientUUID secretKey:(NSString * _Nonnull)secretKey;
+- (void)setEnvironmentToSandbox;
+- (void)setEnvironmentToProduction;
 - (void)setUserIdWith:(NSString * _Nullable)id;
 - (void)initRookTransmission SWIFT_METHOD_FAMILY(none);
 - (BOOL)isTransmissionAvailable SWIFT_WARN_UNUSED_RESULT;

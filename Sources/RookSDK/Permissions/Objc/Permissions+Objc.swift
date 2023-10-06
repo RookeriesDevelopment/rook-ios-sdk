@@ -31,8 +31,8 @@ extension RookConnectPermissionsManager {
     }
   }
   
-  @objc public func requestUserInfoPersmissionsObjc(completion: @escaping (Bool, Error?) -> Void) {
-    self.requestUserInfoPersmissions() { result in
+  @objc public func requestUserInfoPermissionsObjc(completion: @escaping (Bool, Error?) -> Void) {
+    self.requestUserInfoPermissions() { result in
       switch result {
       case .success(let success):
         completion(success, nil)
@@ -53,8 +53,8 @@ extension RookConnectPermissionsManager {
     }
   }
   
-  @objc public func requesBodyPermissionsObjc(completion: @escaping (Bool, Error?) -> Void) {
-    self.requesBodyPermissions() { result in
+  @objc public func requestBodyPermissionsObjc(completion: @escaping (Bool, Error?) -> Void) {
+    self.requestBodyPermissions() { result in
       switch result {
       case .success(let success):
         completion(success, nil)

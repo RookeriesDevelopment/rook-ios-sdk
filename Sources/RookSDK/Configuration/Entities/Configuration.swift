@@ -8,7 +8,6 @@
 import Foundation
 
 struct SDKConfiguration {
-  let urlAPI: String
   let clientUUID: String
   let secretKey: String
 }

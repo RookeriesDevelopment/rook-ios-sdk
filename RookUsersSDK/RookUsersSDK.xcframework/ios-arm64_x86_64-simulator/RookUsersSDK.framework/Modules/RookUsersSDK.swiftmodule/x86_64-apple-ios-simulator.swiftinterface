@@ -36,6 +36,11 @@ public enum NetworkError : Swift.String, Swift.Error {
     get
   }
 }
+extension RookUsersSDK.NetworkError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
 public enum NetworkResponse : Swift.String {
   case succes
   case authenticationError
@@ -52,7 +57,8 @@ public enum NetworkResponse : Swift.String {
 }
 @_hasMissingDesignatedInitializers final public class RookUsersConfiguration {
   public static let shared: RookUsersSDK.RookUsersConfiguration
-  final public func setConfiration(urlAPI: Swift.String, clientUUID: Swift.String, secretKey: Swift.String)
+  final public func setConfiguration(clientUUID: Swift.String, secretKey: Swift.String)
+  final public func setEnvironment(_ environment: RookUsersSDK.RookUsersEnvironment)
   final public func initRookUsers(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
@@ -71,6 +77,15 @@ public enum HTTPMethod : Swift.String {
     get
   }
 }
+public enum RookUsersEnvironment {
+  case sandbox
+  case production
+  public static func == (a: RookUsersSDK.RookUsersEnvironment, b: RookUsersSDK.RookUsersEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public typealias NetworkRouterCompletion = (_ data: Foundation.Data?, _ response: Foundation.URLResponse?, _ error: Swift.Error?) -> Swift.Void
 extension RookUsersSDK.NetworkError : Swift.Equatable {}
 extension RookUsersSDK.NetworkError : Swift.Hashable {}
@@ -81,3 +96,5 @@ extension RookUsersSDK.NetworkResponse : Swift.RawRepresentable {}
 extension RookUsersSDK.HTTPMethod : Swift.Equatable {}
 extension RookUsersSDK.HTTPMethod : Swift.Hashable {}
 extension RookUsersSDK.HTTPMethod : Swift.RawRepresentable {}
+extension RookUsersSDK.RookUsersEnvironment : Swift.Equatable {}
+extension RookUsersSDK.RookUsersEnvironment : Swift.Hashable {}
