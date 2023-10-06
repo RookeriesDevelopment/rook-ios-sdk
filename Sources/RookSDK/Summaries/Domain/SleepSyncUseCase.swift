@@ -39,7 +39,7 @@ final class SleepSyncUseCase: SummarySyncUseCaseProtocol {
   private func handleSummary(_ summary: RookSleepData, completion: @escaping (Result<Bool, Error>) -> Void) {
     
     guard let data: Data = summary.getData() else {
-      return completion(.failure(RookConnectErrors.empySummary))
+      return completion(.failure(RookConnectErrors.emptySummary))
     }
     sleepTransmissionManager.enqueueSleepSummary(with: data) { [weak self] result in
       switch result {

@@ -25,24 +25,44 @@ public final class RookConnectConfigurationManager {
   
   private var innerConfiguration: SDKConfiguration?
   
+  private var innerEnvironment: RookEnvironment = .sandbox
+  
   // MARK:  Init
   
   private init() { }
   
   // MARK:  Helpers
   
-  public func setConfiguration(urlAPI: String,
-                               clientUUID: String,
+  public func setConfiguration(clientUUID: String,
                                secretKey: String) {
     
-    self.usersConfigurator.setConfiration(urlAPI: urlAPI, clientUUID: clientUUID, secretKey: secretKey)
-    self.extractionConfigurator.setClientUUID(with: clientUUID)
-    self.transmissionConfigurator.setConfiguration(with: urlAPI, clientUUID: clientUUID, secretKey: secretKey)
-    
-    self.innerConfiguration = SDKConfiguration(
-      urlAPI: urlAPI,
+    self.usersConfigurator.setConfiguration(
       clientUUID: clientUUID,
       secretKey: secretKey)
+    
+    self.extractionConfigurator.setClientUUID(
+      with: clientUUID)
+    
+    self.transmissionConfigurator.setConfiguration(
+      clientUUID: clientUUID,
+      secretKey: secretKey)
+    
+    self.innerConfiguration = SDKConfiguration(
+      clientUUID: clientUUID,
+      secretKey: secretKey)
+  }
+  
+  public func setEnvironment(_ environment: RookEnvironment) {
+    switch environment {
+    case .sandbox:
+      self.usersConfigurator.setEnvironment(.sandbox)
+      self.extractionConfigurator.setEnvironment(.sandbox)
+      self.transmissionConfigurator.setEnvironmnet(.sandbox)
+    case .production:
+      self.usersConfigurator.setEnvironment(.sandbox)
+      self.extractionConfigurator.setEnvironment(.sandbox)
+      self.transmissionConfigurator.setEnvironmnet(.production)
+    }
   }
   
   public func initRook() {
@@ -61,7 +81,7 @@ public final class RookConnectConfigurationManager {
       switch result {
       case .success(let success):
         completion(.success(success))
-        self?.timeZoneUseCase.execute(completion: completion)
+        self?.timeZoneUseCase.execute { _ in }
       case .failure(let failure):
         completion(.failure(failure))
       }

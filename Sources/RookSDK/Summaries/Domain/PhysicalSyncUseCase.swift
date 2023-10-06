@@ -35,7 +35,7 @@ final class PhysicalSyncUseCase: SummarySyncUseCaseProtocol {
   private func handleSummary(_ summary: RookPhysicalData, completion: @escaping (Result<Bool, Error>) -> Void) {
     
     guard let data: Data = summary.getData() else {
-      return completion(.failure(RookConnectErrors.empySummary))
+      return completion(.failure(RookConnectErrors.emptySummary))
     }
     transmissionManager.enqueuePhysicalSummary(with: data) { [weak self] result in
       switch result {

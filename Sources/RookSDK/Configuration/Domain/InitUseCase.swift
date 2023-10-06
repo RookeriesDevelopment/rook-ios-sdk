@@ -39,11 +39,11 @@ final class InitUseCase: InitUseCaseProtocol {
   
   private func validateConfiguration(configuration: SDKConfiguration?) throws {
     guard let configuration: SDKConfiguration = configuration else {
-      throw RookConnectErrors.missingConfigurtion
+      throw RookConnectErrors.missingConfiguration
     }
     
-    if configuration.urlAPI.isEmpty || configuration.secretKey.isEmpty || configuration.clientUUID.isEmpty {
-      throw RookConnectErrors.missingConfigurtion
+    if configuration.secretKey.isEmpty || configuration.clientUUID.isEmpty {
+      throw RookConnectErrors.missingConfiguration
     }
   }
   

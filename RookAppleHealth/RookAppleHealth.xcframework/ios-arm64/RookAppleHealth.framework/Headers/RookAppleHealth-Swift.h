@@ -253,6 +253,16 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 
+SWIFT_CLASS("_TtC15RookAppleHealth31AnaliticsExtractionConfigurator")
+@interface AnaliticsExtractionConfigurator : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AnaliticsExtractionConfigurator * _Nonnull shared;)
++ (AnaliticsExtractionConfigurator * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setPlatformToReact;
+@end
+
+
 
 @class NSString;
 
@@ -264,6 +274,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookAuthAppl
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// Sets your client uuid to configure the sdk
 - (void)setClientUUIDWith:(NSString * _Nonnull)uuid;
+- (void)setEnvironmentToSandbox;
+- (void)setEnvironmentToProduction;
 - (void)setExcludeManualData:(BOOL)excludeManual;
 /// Initializes the rook apple health sdk
 /// first you have to set your client uuid
@@ -527,6 +539,7 @@ SWIFT_CLASS("_TtC15RookAppleHealth21RookExtractionManager")
 - (NSDate * _Nullable)getLastExtractionDateOfSleep SWIFT_WARN_UNUSED_RESULT;
 - (NSDate * _Nullable)getLastExtractionDateOfPhysical SWIFT_WARN_UNUSED_RESULT;
 - (NSDate * _Nullable)getLastExtractionDateOfBody SWIFT_WARN_UNUSED_RESULT;
+- (void)getUserTimeZoneWithCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
 @end
 
 

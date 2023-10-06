@@ -25,20 +25,26 @@ import RookUsersSDK
   
   // MARK:  Helpers
   
-  @objc public func setConfiguration(urlAPI: String,
-                                     clientUUID: String,
+  @objc public func setConfiguration(clientUUID: String,
                                      secretKey: String) {
     self.innerConfiguration.setConfiguration(
-      urlAPI: urlAPI,
       clientUUID: clientUUID,
       secretKey: secretKey)
+  }
+  
+  @objc public func setEnvironmentForSandbox() {
+    self.innerConfiguration.setEnvironment(.sandbox)
+  }
+  
+  @objc public func setEnvironmentForProduction() {
+    self.innerConfiguration.setEnvironment(.production)
   }
   
   @objc public func initRook() {
     self.innerConfiguration.initRook()
   }
   
-  @objc  public func updateUserId(_ id: String,
+  @objc public func updateUserId(_ id: String,
                            completion: @escaping (Bool, Error?) -> Void) {
     self.innerConfiguration.updateUserId(id) { result in
       switch result {

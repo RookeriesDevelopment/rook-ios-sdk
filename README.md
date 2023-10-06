@@ -24,7 +24,7 @@ To add a package dependency to your Xcode project, select File > Swift Packages 
 
 To configure Rook SDK, you need to follow this steps:
 
-1. Import th apple health sdk
+1. Import the apple health sdk
 
 ```swift
 import RookSDK
@@ -38,9 +38,10 @@ func application(_ application: UIApplication
                  didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     
     RookConnectConfigurationManager.shared.setConfiguration(
-      urlAPI: "YOUR-API_URL",
       clientUUID: "YOUR-CLIENT-UUID",
       secretKey: "YOUR-SECRET-KEY")
+      
+    RookConnectConfigurationManager.shared.setEnvironment(.sandbox)
     
     RookConnectConfigurationManager.shared.initRook()
     return true
@@ -62,10 +63,24 @@ func application(_ application: UIApplication
 <key>NSHealthShareUsageDescription</key>
 <string>This app requires access to your health and fitness data in order to track your workouts and activity levels.</string>
 <key>NSHealthUpdateUsageDescription</key>
-<string>This app requires permission to write healt data to HealthKit.</string>
+<string>This app requires permission to write health data to HealthKit.</string>
 ```
 
 ![infoplist](infoplist.png)
+
+### Configuration
+
+RookConnectConfigurationManager Use this class to configure and init the sdk.
+This class conforms the singleton pattern, to access this class use the shared property.
+
+| Method | Description |
+| ----- | ----- |
+| `func setConfiguration(clientUUID: String, secretKey: String)` | Sets the configuration of the sdk. |
+| `func setEnvironment(_ environment: RookEnvironment)`| Configures the rook sdk environment. |
+| `func initRook()` | Initializes the rook sdk |
+| `func updateUserId(_ id: String, completion: @escaping (Result<Bool, Error>) -> Void)` | It will try to register the user in the rook server and it will be stored, if the registration was successful, after that the sdk upload the current time zone of the device. |
+| `func clearUser(completion: @escaping (Result<Bool, Error>) -> Void)` | Deletes the user stored locally. |
+| `func syncUserTimeZone(completion: @escaping (Result<Bool, Error>) -> Void)`| Uploads the current time zone of the device a user has to added before use this method. |
 
 ### Permissions
 
@@ -75,9 +90,9 @@ Before synchronize or fetch health date the user has to grand access, the sdk pr
 | ----- | ----- |
 |  + requestAllPermissions(completion: @escaping (Result<Bool, Error>) -> Void)| Sends a request for all the health permissions and displays a view to grand access |
 | + requestSleepPermissions(completion: @escaping (Result<Bool, Error>) -> Void) | Sends a request for the sleep data types permissions and displays a view to grand access. |
-| + requestUserInfoPersmissions(completion: @escaping (Result<Bool, Error>) -> Void) | Sends a request for the user information permissons. |
+| + requestUserInfoPermissions(completion: @escaping (Result<Bool, Error>) -> Void) | Sends a request for the user information permissions. |
 | + requestPhysicalPermissions(completion: @escaping (Result<Bool, Error>) -> Void) | Sends a request for the physical data types permissions and displays a view to grand access |
-| + requesBodyPermissions(completion: @escaping (Result<Bool, Error>) -> Void) | Sends a request for the body data type permissions and displays a view to grand access. |
+| + requestBodyPermissions(completion: @escaping (Result<Bool, Error>) -> Void) | Sends a request for the body data type permissions and displays a view to grand access. |
 
 After call any of the above methods a pop up view will display.
 
@@ -91,9 +106,9 @@ The class `RookConnectConfigurationManager` contains two methods related to the 
 
 | Method | Description |
 | ----- | ----- |
-| `func updateUserId(_ id: String, completion: @escaping (Result<Bool, Error>) -> Void)` | It will try to register the user in the rook server and it will be stored, if the registration was successful, after that the sdk upload the current time zone od the device. |
+| `func updateUserId(_ id: String, completion: @escaping (Result<Bool, Error>) -> Void)` | It will try to register the user in the rook server and it will be stored, if the registration was successful, after that the sdk upload the current time zone of the device. |
 | `func clearUser(completion: @escaping (Result<Bool, Error>) -> Void)` | Deletes the user stored locally. |
-| `public func syncUserTimeZone(completion: @escaping (Result<Bool, Error>) -> Void)` | Uploads the curret time zone of the device a user has to added before use this method. |
+| `public func syncUserTimeZone(completion: @escaping (Result<Bool, Error>) -> Void)` | Uploads the current time zone of the device a user has to added before use this method. |
 
 ### RookSummaryManger
 

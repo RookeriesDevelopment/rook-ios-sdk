@@ -7,6 +7,7 @@ import Foundation
 import HealthKit
 @_exported import RookConnectTransmission
 import Swift
+import UIKit
 import _Concurrency
 import _StringProcessing
 @objc public class RookTransmissionActivityEventObjc : ObjectiveC.NSObject, Swift.Encodable {
@@ -547,7 +548,10 @@ public struct RookTemperatureGranularTransmissionDTO {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class RookTransmissionSettings : ObjectiveC.NSObject {
   @objc public static let shared: RookConnectTransmission.RookTransmissionSettings
   final public func setConfiguration(_ configuration: RookConnectTransmission.RookTransmissionConfiguration)
-  @objc final public func setConfiguration(with urlAPI: Swift.String, clientUUID: Swift.String, secretKey: Swift.String)
+  @objc final public func setConfiguration(clientUUID: Swift.String, secretKey: Swift.String)
+  final public func setEnvironmnet(_ environment: RookConnectTransmission.RookTransmissionEnvironment)
+  @objc final public func setEnvironmentToSandbox()
+  @objc final public func setEnvironmentToProduction()
   @objc final public func setUserId(with id: Swift.String?)
   @objc final public func initRookTransmission()
   final public func initRookTransmission(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
@@ -791,6 +795,22 @@ public struct RookBodyDataTransmissionDTO {
   public var temperatureMaxCelsius: RookConnectTransmission.RookTemperatureTransmissionDTO?
   public var temperatureDeltaCelsius: RookConnectTransmission.RookTemperatureTransmissionDTO?
   public var temperatureGranularDataCelsius: [RookConnectTransmission.RookTemperatureGranularTransmissionDTO]?
+}
+public enum AnaliticPlatform {
+  case ios
+  case flutter
+  case reactNative
+  public static func == (a: RookConnectTransmission.AnaliticPlatform, b: RookConnectTransmission.AnaliticPlatform) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class AnaliticsTransmissionConfigurator : ObjectiveC.NSObject {
+  @objc public static let shared: RookConnectTransmission.AnaliticsTransmissionConfigurator
+  final public func setPlatform(_ platform: RookConnectTransmission.AnaliticPlatform)
+  @objc final public func setPlatformToReact()
+  @objc deinit
 }
 @objc public class RookTransmissionMovementDataObjc : ObjectiveC.NSObject, Swift.Encodable {
   @objc final public let speedNormalizedMetersPerSecond: Swift.Int
@@ -1245,6 +1265,11 @@ public enum NetworkError : Swift.String, Swift.Error {
     get
   }
 }
+extension RookConnectTransmission.NetworkError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
 @objc public class RookTransmissionMetaDataEventObjc : ObjectiveC.NSObject, Swift.Codable {
   @objc public var datetime: Foundation.Date
   @objc public var userId: Swift.String?
@@ -1347,6 +1372,11 @@ public enum RookTransmissionError : Swift.String, Swift.Error {
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
+    get
+  }
+}
+extension RookConnectTransmission.RookTransmissionError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
     get
   }
 }
@@ -1513,6 +1543,15 @@ public struct RookSleepDataTransmissionDTO {
   public var saturationMaxPercentage: Swift.Int?
   public var saturationGranularDataPercentage: [RookConnectTransmission.RookSaturationGranularDTO]?
 }
+public enum RookTransmissionEnvironment {
+  case sandbox
+  case production
+  public static func == (a: RookConnectTransmission.RookTransmissionEnvironment, b: RookConnectTransmission.RookTransmissionEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct RookGranularElevationTransmission : Swift.Codable {
   public let datetime: Foundation.Date
   public let intervalDurationSeconds: Swift.Int, elevationChange: Swift.Int
@@ -1527,10 +1566,9 @@ public struct FloorsClimbedGranularDataFloorExtraction : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct RookTransmissionConfiguration {
-  public let urlAPI: Swift.String
   public let clientUUID: Swift.String
   public let secretKey: Swift.String
-  public init(urlAPI: Swift.String, clientUUID: Swift.String, secretKey: Swift.String)
+  public init(clientUUID: Swift.String, secretKey: Swift.String)
 }
 extension RookConnectTransmission.RookBodyTransmissionManager {
   @objc final public func enqueueBodySummaryObjc(with extractionData: Foundation.Data, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
@@ -1634,6 +1672,8 @@ extension RookConnectTransmission.HTTPMethod : Swift.Hashable {}
 extension RookConnectTransmission.HTTPMethod : Swift.RawRepresentable {}
 extension RookConnectTransmission.RookContextType : Swift.Equatable {}
 extension RookConnectTransmission.RookContextType : Swift.Hashable {}
+extension RookConnectTransmission.AnaliticPlatform : Swift.Equatable {}
+extension RookConnectTransmission.AnaliticPlatform : Swift.Hashable {}
 extension RookConnectTransmission.NetworkResponse : Swift.Equatable {}
 extension RookConnectTransmission.NetworkResponse : Swift.Hashable {}
 extension RookConnectTransmission.NetworkResponse : Swift.RawRepresentable {}
@@ -1643,3 +1683,5 @@ extension RookConnectTransmission.NetworkError : Swift.RawRepresentable {}
 extension RookConnectTransmission.RookTransmissionError : Swift.Equatable {}
 extension RookConnectTransmission.RookTransmissionError : Swift.Hashable {}
 extension RookConnectTransmission.RookTransmissionError : Swift.RawRepresentable {}
+extension RookConnectTransmission.RookTransmissionEnvironment : Swift.Equatable {}
+extension RookConnectTransmission.RookTransmissionEnvironment : Swift.Hashable {}

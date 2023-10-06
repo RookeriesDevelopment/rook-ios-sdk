@@ -6,6 +6,7 @@ import Foundation
 import HealthKit
 @_exported import RookAppleHealth
 import Swift
+import UIKit
 import WatchConnectivity
 import _Concurrency
 import _StringProcessing
@@ -85,6 +86,7 @@ extension RookAppleHealth.RookExtractionManager {
   @objc final public func getLastExtractionDateOfSleep() -> Foundation.Date?
   @objc final public func getLastExtractionDateOfPhysical() -> Foundation.Date?
   @objc final public func getLastExtractionDateOfBody() -> Foundation.Date?
+  @objc final public func getUserTimeZone(completion: @escaping ([Swift.String : Any]?, Swift.Error?) -> Swift.Void)
 }
 public enum NetworkResponse : Swift.String {
   case succes
@@ -312,6 +314,9 @@ public struct RookPositionData : Swift.Encodable {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class RookAuthAppleHealth : ObjectiveC.NSObject {
   @objc public static let shared: RookAppleHealth.RookAuthAppleHealth
   @objc final public func setClientUUID(with uuid: Swift.String)
+  final public func setEnvironment(_ environment: RookAppleHealth.RookExtractionEnvironment)
+  @objc final public func setEnvironmentToSandbox()
+  @objc final public func setEnvironmentToProduction()
   @objc final public func setExcludeManualData(_ excludeManual: Swift.Bool)
   @objc final public func initRookAH()
   final public func initRookAH(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
@@ -383,6 +388,19 @@ public struct RookPositionGranularItem : Swift.Encodable {
   public let latitude: Swift.Double
   public let longitude: Swift.Double
   public func encode(to encoder: Swift.Encoder) throws
+}
+public enum TimeZoneErrors : Swift.String, Swift.Error {
+  case timeZoneNotAvailable
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension RookAppleHealth.TimeZoneErrors : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers @objc public class RookExtractionPowerDataObjc : ObjectiveC.NSObject, Swift.Encodable {
   @objc final public let powerAvgWattsNumber: Swift.Int
@@ -560,9 +578,10 @@ extension RookAppleHealth.RookExtractionEventManagerObjc {
   @objc final public func getBodyOxygenationEventsDictionary(date: Foundation.Date, completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
   @objc final public func getActivityEventsDictionary(date: Foundation.Date, completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
 }
-public struct UserTimeZone {
+public struct UserTimeZone : Swift.Encodable {
   public let timeZone: Swift.String
   public let offset: Swift.Int
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public struct RookCadenceGranularItem : Swift.Encodable {
   public let datetime: Foundation.Date
@@ -583,6 +602,11 @@ public enum NetworkError : Swift.String, Swift.Error {
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
+    get
+  }
+}
+extension RookAppleHealth.NetworkError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
     get
   }
 }
@@ -608,6 +632,11 @@ public enum RookError : Swift.String, Swift.Error {
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
+    get
+  }
+}
+extension RookAppleHealth.RookError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
     get
   }
 }
@@ -914,6 +943,22 @@ public struct StressGranularDataScoreNumber : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
+public enum AnaliticPlatform {
+  case ios
+  case flutter
+  case reactNative
+  public static func == (a: RookAppleHealth.AnaliticPlatform, b: RookAppleHealth.AnaliticPlatform) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class AnaliticsExtractionConfigurator : ObjectiveC.NSObject {
+  @objc public static let shared: RookAppleHealth.AnaliticsExtractionConfigurator
+  final public func setPlatform(_ platform: RookAppleHealth.AnaliticPlatform)
+  @objc final public func setPlatformToReact()
+  @objc deinit
+}
 public enum SleepEvent : Swift.String {
   case aSleep
   case inBed
@@ -924,6 +969,15 @@ public enum SleepEvent : Swift.String {
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
+    get
+  }
+}
+public enum RookExtractionEnvironment {
+  case sandbox
+  case production
+  public static func == (a: RookAppleHealth.RookExtractionEnvironment, b: RookAppleHealth.RookExtractionEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
     get
   }
 }
@@ -1251,12 +1305,20 @@ public enum ExtractionErrors : Swift.String, Swift.Error {
     get
   }
 }
+extension RookAppleHealth.ExtractionErrors : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
 extension RookAppleHealth.NetworkResponse : Swift.Equatable {}
 extension RookAppleHealth.NetworkResponse : Swift.Hashable {}
 extension RookAppleHealth.NetworkResponse : Swift.RawRepresentable {}
 extension RookAppleHealth.RookDataType : Swift.Equatable {}
 extension RookAppleHealth.RookDataType : Swift.Hashable {}
 extension RookAppleHealth.RookDataType : Swift.RawRepresentable {}
+extension RookAppleHealth.TimeZoneErrors : Swift.Equatable {}
+extension RookAppleHealth.TimeZoneErrors : Swift.Hashable {}
+extension RookAppleHealth.TimeZoneErrors : Swift.RawRepresentable {}
 extension RookAppleHealth.NetworkError : Swift.Equatable {}
 extension RookAppleHealth.NetworkError : Swift.Hashable {}
 extension RookAppleHealth.NetworkError : Swift.RawRepresentable {}
@@ -1266,9 +1328,13 @@ extension RookAppleHealth.RookError : Swift.RawRepresentable {}
 extension RookAppleHealth.HTTPMethod : Swift.Equatable {}
 extension RookAppleHealth.HTTPMethod : Swift.Hashable {}
 extension RookAppleHealth.HTTPMethod : Swift.RawRepresentable {}
+extension RookAppleHealth.AnaliticPlatform : Swift.Equatable {}
+extension RookAppleHealth.AnaliticPlatform : Swift.Hashable {}
 extension RookAppleHealth.SleepEvent : Swift.Equatable {}
 extension RookAppleHealth.SleepEvent : Swift.Hashable {}
 extension RookAppleHealth.SleepEvent : Swift.RawRepresentable {}
+extension RookAppleHealth.RookExtractionEnvironment : Swift.Equatable {}
+extension RookAppleHealth.RookExtractionEnvironment : Swift.Hashable {}
 extension RookAppleHealth.HealthDataType : Swift.Equatable {}
 extension RookAppleHealth.HealthDataType : Swift.Hashable {}
 extension RookAppleHealth.HealthDataType : Swift.RawRepresentable {}
