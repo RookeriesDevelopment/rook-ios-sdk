@@ -253,10 +253,10 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 
-SWIFT_CLASS("_TtC15RookAppleHealth31AnaliticsExtractionConfigurator")
-@interface AnaliticsExtractionConfigurator : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AnaliticsExtractionConfigurator * _Nonnull shared;)
-+ (AnaliticsExtractionConfigurator * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS("_TtC15RookAppleHealth31AnalyticsExtractionConfigurator")
+@interface AnalyticsExtractionConfigurator : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AnalyticsExtractionConfigurator * _Nonnull shared;)
++ (AnalyticsExtractionConfigurator * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)setPlatformToReact;
@@ -533,7 +533,7 @@ SWIFT_CLASS("_TtC15RookAppleHealth21RookExtractionManager")
 
 
 @interface RookExtractionManager (SWIFT_EXTENSION(RookAppleHealth))
-- (void)getSleepSummayObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
+- (void)getSleepSummaryObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
 - (void)getPhysicalSummaryObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
 - (void)getBodySummaryObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
 - (NSDate * _Nullable)getLastExtractionDateOfSleep SWIFT_WARN_UNUSED_RESULT;

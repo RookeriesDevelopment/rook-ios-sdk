@@ -36292,8 +36292,8 @@
           },
           {
             "kind": "Function",
-            "name": "getSleepSummay",
-            "printedName": "getSleepSummay(date:completion:)",
+            "name": "getSleepSummary",
+            "printedName": "getSleepSummary(date:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -36340,8 +36340,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15RookAppleHealth0A17ExtractionManagerC14getSleepSummay4date10completiony10Foundation4DateV_ys6ResultOyAA0aG4DataVs5Error_pGctF",
-            "mangledName": "$s15RookAppleHealth0A17ExtractionManagerC14getSleepSummay4date10completiony10Foundation4DateV_ys6ResultOyAA0aG4DataVs5Error_pGctF",
+            "usr": "s:15RookAppleHealth0A17ExtractionManagerC15getSleepSummary4date10completiony10Foundation4DateV_ys6ResultOyAA0aG4DataVs5Error_pGctF",
+            "mangledName": "$s15RookAppleHealth0A17ExtractionManagerC15getSleepSummary4date10completiony10Foundation4DateV_ys6ResultOyAA0aG4DataVs5Error_pGctF",
             "moduleName": "RookAppleHealth",
             "declAttributes": [
               "Final",
@@ -36618,8 +36618,8 @@
           },
           {
             "kind": "Function",
-            "name": "getSleepSummayObjc",
-            "printedName": "getSleepSummayObjc(date:completion:)",
+            "name": "getSleepSummaryObjc",
+            "printedName": "getSleepSummaryObjc(date:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -36694,10 +36694,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@RookAppleHealth@objc(cs)RookExtractionManager(im)getSleepSummayObjcWithDate:completion:",
-            "mangledName": "$s15RookAppleHealth0A17ExtractionManagerC18getSleepSummayObjc4date10completiony10Foundation4DateV_ySDySSypGSg_s5Error_pSgtctF",
+            "usr": "c:@CM@RookAppleHealth@objc(cs)RookExtractionManager(im)getSleepSummaryObjcWithDate:completion:",
+            "mangledName": "$s15RookAppleHealth0A17ExtractionManagerC19getSleepSummaryObjc4date10completiony10Foundation4DateV_ySDySSypGSg_s5Error_pSgtctF",
             "moduleName": "RookAppleHealth",
-            "objc_name": "getSleepSummayObjcWithDate:completion:",
+            "objc_name": "getSleepSummaryObjcWithDate:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -45929,8 +45929,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "AnaliticPlatform",
-        "printedName": "AnaliticPlatform",
+        "name": "AnalyticPlatform",
+        "printedName": "AnalyticPlatform",
         "children": [
           {
             "kind": "Var",
@@ -45940,24 +45940,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(RookAppleHealth.AnaliticPlatform.Type) -> RookAppleHealth.AnaliticPlatform",
+                "printedName": "(RookAppleHealth.AnalyticPlatform.Type) -> RookAppleHealth.AnalyticPlatform",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "AnaliticPlatform",
-                    "printedName": "RookAppleHealth.AnaliticPlatform",
-                    "usr": "s:15RookAppleHealth16AnaliticPlatformO"
+                    "name": "AnalyticPlatform",
+                    "printedName": "RookAppleHealth.AnalyticPlatform",
+                    "usr": "s:15RookAppleHealth16AnalyticPlatformO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "RookAppleHealth.AnaliticPlatform.Type",
+                    "printedName": "RookAppleHealth.AnalyticPlatform.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "AnaliticPlatform",
-                        "printedName": "RookAppleHealth.AnaliticPlatform",
-                        "usr": "s:15RookAppleHealth16AnaliticPlatformO"
+                        "name": "AnalyticPlatform",
+                        "printedName": "RookAppleHealth.AnalyticPlatform",
+                        "usr": "s:15RookAppleHealth16AnalyticPlatformO"
                       }
                     ]
                   }
@@ -45965,8 +45965,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:15RookAppleHealth16AnaliticPlatformO3iosyA2CmF",
-            "mangledName": "$s15RookAppleHealth16AnaliticPlatformO3iosyA2CmF",
+            "usr": "s:15RookAppleHealth16AnalyticPlatformO3iosyA2CmF",
+            "mangledName": "$s15RookAppleHealth16AnalyticPlatformO3iosyA2CmF",
             "moduleName": "RookAppleHealth"
           },
           {
@@ -45977,24 +45977,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(RookAppleHealth.AnaliticPlatform.Type) -> RookAppleHealth.AnaliticPlatform",
+                "printedName": "(RookAppleHealth.AnalyticPlatform.Type) -> RookAppleHealth.AnalyticPlatform",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "AnaliticPlatform",
-                    "printedName": "RookAppleHealth.AnaliticPlatform",
-                    "usr": "s:15RookAppleHealth16AnaliticPlatformO"
+                    "name": "AnalyticPlatform",
+                    "printedName": "RookAppleHealth.AnalyticPlatform",
+                    "usr": "s:15RookAppleHealth16AnalyticPlatformO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "RookAppleHealth.AnaliticPlatform.Type",
+                    "printedName": "RookAppleHealth.AnalyticPlatform.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "AnaliticPlatform",
-                        "printedName": "RookAppleHealth.AnaliticPlatform",
-                        "usr": "s:15RookAppleHealth16AnaliticPlatformO"
+                        "name": "AnalyticPlatform",
+                        "printedName": "RookAppleHealth.AnalyticPlatform",
+                        "usr": "s:15RookAppleHealth16AnalyticPlatformO"
                       }
                     ]
                   }
@@ -46002,8 +46002,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:15RookAppleHealth16AnaliticPlatformO7flutteryA2CmF",
-            "mangledName": "$s15RookAppleHealth16AnaliticPlatformO7flutteryA2CmF",
+            "usr": "s:15RookAppleHealth16AnalyticPlatformO7flutteryA2CmF",
+            "mangledName": "$s15RookAppleHealth16AnalyticPlatformO7flutteryA2CmF",
             "moduleName": "RookAppleHealth"
           },
           {
@@ -46014,24 +46014,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(RookAppleHealth.AnaliticPlatform.Type) -> RookAppleHealth.AnaliticPlatform",
+                "printedName": "(RookAppleHealth.AnalyticPlatform.Type) -> RookAppleHealth.AnalyticPlatform",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "AnaliticPlatform",
-                    "printedName": "RookAppleHealth.AnaliticPlatform",
-                    "usr": "s:15RookAppleHealth16AnaliticPlatformO"
+                    "name": "AnalyticPlatform",
+                    "printedName": "RookAppleHealth.AnalyticPlatform",
+                    "usr": "s:15RookAppleHealth16AnalyticPlatformO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "RookAppleHealth.AnaliticPlatform.Type",
+                    "printedName": "RookAppleHealth.AnalyticPlatform.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "AnaliticPlatform",
-                        "printedName": "RookAppleHealth.AnaliticPlatform",
-                        "usr": "s:15RookAppleHealth16AnaliticPlatformO"
+                        "name": "AnalyticPlatform",
+                        "printedName": "RookAppleHealth.AnalyticPlatform",
+                        "usr": "s:15RookAppleHealth16AnalyticPlatformO"
                       }
                     ]
                   }
@@ -46039,8 +46039,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:15RookAppleHealth16AnaliticPlatformO11reactNativeyA2CmF",
-            "mangledName": "$s15RookAppleHealth16AnaliticPlatformO11reactNativeyA2CmF",
+            "usr": "s:15RookAppleHealth16AnalyticPlatformO11reactNativeyA2CmF",
+            "mangledName": "$s15RookAppleHealth16AnalyticPlatformO11reactNativeyA2CmF",
             "moduleName": "RookAppleHealth"
           },
           {
@@ -46056,20 +46056,20 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "AnaliticPlatform",
-                "printedName": "RookAppleHealth.AnaliticPlatform",
-                "usr": "s:15RookAppleHealth16AnaliticPlatformO"
+                "name": "AnalyticPlatform",
+                "printedName": "RookAppleHealth.AnalyticPlatform",
+                "usr": "s:15RookAppleHealth16AnalyticPlatformO"
               },
               {
                 "kind": "TypeNominal",
-                "name": "AnaliticPlatform",
-                "printedName": "RookAppleHealth.AnaliticPlatform",
-                "usr": "s:15RookAppleHealth16AnaliticPlatformO"
+                "name": "AnalyticPlatform",
+                "printedName": "RookAppleHealth.AnalyticPlatform",
+                "usr": "s:15RookAppleHealth16AnalyticPlatformO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15RookAppleHealth16AnaliticPlatformO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s15RookAppleHealth16AnaliticPlatformO2eeoiySbAC_ACtFZ",
+            "usr": "s:15RookAppleHealth16AnalyticPlatformO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s15RookAppleHealth16AnalyticPlatformO2eeoiySbAC_ACtFZ",
             "moduleName": "RookAppleHealth",
             "static": true,
             "implicit": true,
@@ -46088,8 +46088,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15RookAppleHealth16AnaliticPlatformO9hashValueSivp",
-            "mangledName": "$s15RookAppleHealth16AnaliticPlatformO9hashValueSivp",
+            "usr": "s:15RookAppleHealth16AnalyticPlatformO9hashValueSivp",
+            "mangledName": "$s15RookAppleHealth16AnalyticPlatformO9hashValueSivp",
             "moduleName": "RookAppleHealth",
             "implicit": true,
             "accessors": [
@@ -46106,8 +46106,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15RookAppleHealth16AnaliticPlatformO9hashValueSivg",
-                "mangledName": "$s15RookAppleHealth16AnaliticPlatformO9hashValueSivg",
+                "usr": "s:15RookAppleHealth16AnalyticPlatformO9hashValueSivg",
+                "mangledName": "$s15RookAppleHealth16AnalyticPlatformO9hashValueSivg",
                 "moduleName": "RookAppleHealth",
                 "implicit": true,
                 "accessorKind": "get"
@@ -46133,16 +46133,16 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15RookAppleHealth16AnaliticPlatformO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s15RookAppleHealth16AnaliticPlatformO4hash4intoys6HasherVz_tF",
+            "usr": "s:15RookAppleHealth16AnalyticPlatformO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s15RookAppleHealth16AnalyticPlatformO4hash4intoys6HasherVz_tF",
             "moduleName": "RookAppleHealth",
             "implicit": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Enum",
-        "usr": "s:15RookAppleHealth16AnaliticPlatformO",
-        "mangledName": "$s15RookAppleHealth16AnaliticPlatformO",
+        "usr": "s:15RookAppleHealth16AnalyticPlatformO",
+        "mangledName": "$s15RookAppleHealth16AnalyticPlatformO",
         "moduleName": "RookAppleHealth",
         "declAttributes": [
           "AccessControl"
@@ -46166,8 +46166,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "AnaliticsExtractionConfigurator",
-        "printedName": "AnaliticsExtractionConfigurator",
+        "name": "AnalyticsExtractionConfigurator",
+        "printedName": "AnalyticsExtractionConfigurator",
         "children": [
           {
             "kind": "Var",
@@ -46176,14 +46176,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "AnaliticsExtractionConfigurator",
-                "printedName": "RookAppleHealth.AnaliticsExtractionConfigurator",
-                "usr": "c:@M@RookAppleHealth@objc(cs)AnaliticsExtractionConfigurator"
+                "name": "AnalyticsExtractionConfigurator",
+                "printedName": "RookAppleHealth.AnalyticsExtractionConfigurator",
+                "usr": "c:@M@RookAppleHealth@objc(cs)AnalyticsExtractionConfigurator"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@RookAppleHealth@objc(cs)AnaliticsExtractionConfigurator(cpy)shared",
-            "mangledName": "$s15RookAppleHealth31AnaliticsExtractionConfiguratorC6sharedACvpZ",
+            "usr": "c:@M@RookAppleHealth@objc(cs)AnalyticsExtractionConfigurator(cpy)shared",
+            "mangledName": "$s15RookAppleHealth31AnalyticsExtractionConfiguratorC6sharedACvpZ",
             "moduleName": "RookAppleHealth",
             "static": true,
             "declAttributes": [
@@ -46204,14 +46204,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "AnaliticsExtractionConfigurator",
-                    "printedName": "RookAppleHealth.AnaliticsExtractionConfigurator",
-                    "usr": "c:@M@RookAppleHealth@objc(cs)AnaliticsExtractionConfigurator"
+                    "name": "AnalyticsExtractionConfigurator",
+                    "printedName": "RookAppleHealth.AnalyticsExtractionConfigurator",
+                    "usr": "c:@M@RookAppleHealth@objc(cs)AnalyticsExtractionConfigurator"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@RookAppleHealth@objc(cs)AnaliticsExtractionConfigurator(cm)shared",
-                "mangledName": "$s15RookAppleHealth31AnaliticsExtractionConfiguratorC6sharedACvgZ",
+                "usr": "c:@M@RookAppleHealth@objc(cs)AnalyticsExtractionConfigurator(cm)shared",
+                "mangledName": "$s15RookAppleHealth31AnalyticsExtractionConfiguratorC6sharedACvgZ",
                 "moduleName": "RookAppleHealth",
                 "static": true,
                 "implicit": true,
@@ -46235,14 +46235,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "AnaliticPlatform",
-                "printedName": "RookAppleHealth.AnaliticPlatform",
-                "usr": "s:15RookAppleHealth16AnaliticPlatformO"
+                "name": "AnalyticPlatform",
+                "printedName": "RookAppleHealth.AnalyticPlatform",
+                "usr": "s:15RookAppleHealth16AnalyticPlatformO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15RookAppleHealth31AnaliticsExtractionConfiguratorC11setPlatformyyAA08AnaliticH0OF",
-            "mangledName": "$s15RookAppleHealth31AnaliticsExtractionConfiguratorC11setPlatformyyAA08AnaliticH0OF",
+            "usr": "s:15RookAppleHealth31AnalyticsExtractionConfiguratorC11setPlatformyyAA08AnalyticH0OF",
+            "mangledName": "$s15RookAppleHealth31AnalyticsExtractionConfiguratorC11setPlatformyyAA08AnalyticH0OF",
             "moduleName": "RookAppleHealth",
             "declAttributes": [
               "Final",
@@ -46263,8 +46263,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@RookAppleHealth@objc(cs)AnaliticsExtractionConfigurator(im)setPlatformToReact",
-            "mangledName": "$s15RookAppleHealth31AnaliticsExtractionConfiguratorC18setPlatformToReactyyF",
+            "usr": "c:@M@RookAppleHealth@objc(cs)AnalyticsExtractionConfigurator(im)setPlatformToReact",
+            "mangledName": "$s15RookAppleHealth31AnalyticsExtractionConfiguratorC18setPlatformToReactyyF",
             "moduleName": "RookAppleHealth",
             "declAttributes": [
               "Final",
@@ -46275,8 +46275,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@RookAppleHealth@objc(cs)AnaliticsExtractionConfigurator",
-        "mangledName": "$s15RookAppleHealth31AnaliticsExtractionConfiguratorC",
+        "usr": "c:@M@RookAppleHealth@objc(cs)AnalyticsExtractionConfigurator",
+        "mangledName": "$s15RookAppleHealth31AnalyticsExtractionConfiguratorC",
         "moduleName": "RookAppleHealth",
         "declAttributes": [
           "Final",
@@ -64431,7 +64431,7 @@
       "kind": "StringLiteral",
       "offset": 568,
       "length": 8,
-      "value": "\"1.0.15\""
+      "value": "\"1.0.17\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Configuration\/RookAuthAppleHealth.swift",
@@ -66438,182 +66438,182 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 548,
+      "offset": 549,
       "length": 13,
       "value": "\"client_uuid\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 580,
+      "offset": 581,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 649,
+      "offset": 650,
       "length": 13,
       "value": "\"device_info\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 701,
+      "offset": 702,
       "length": 16,
       "value": "\"extraction_log\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 745,
+      "offset": 746,
       "length": 18,
       "value": "\"transmission_log\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 548,
+      "offset": 549,
       "length": 13,
       "value": "\"client_uuid\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 580,
+      "offset": 581,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 649,
+      "offset": 650,
       "length": 13,
       "value": "\"device_info\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 701,
+      "offset": 702,
       "length": 16,
       "value": "\"extraction_log\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 745,
+      "offset": 746,
       "length": 18,
       "value": "\"transmission_log\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 967,
+      "offset": 968,
       "length": 12,
       "value": "\"os_version\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 967,
+      "offset": 968,
       "length": 12,
       "value": "\"os_version\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 1278,
+      "offset": 1301,
       "length": 11,
       "value": "\"data_type\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 1314,
+      "offset": 1352,
       "length": 15,
       "value": "\"data_datetime\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 1371,
+      "offset": 1409,
       "length": 16,
       "value": "\"failure_reason\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 1278,
+      "offset": 1301,
       "length": 11,
       "value": "\"data_type\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 1314,
+      "offset": 1352,
       "length": 15,
       "value": "\"data_datetime\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 1371,
+      "offset": 1409,
       "length": 16,
       "value": "\"failure_reason\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 1612,
+      "offset": 1671,
       "length": 11,
       "value": "\"data_type\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 1648,
+      "offset": 1722,
       "length": 15,
       "value": "\"data_datetime\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 1690,
+      "offset": 1764,
       "length": 17,
       "value": "\"server_response\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 1732,
+      "offset": 1806,
       "length": 15,
       "value": "\"response_time\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 1612,
+      "offset": 1671,
       "length": 11,
       "value": "\"data_type\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 1648,
+      "offset": 1722,
       "length": 15,
       "value": "\"data_datetime\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 1690,
+      "offset": 1764,
       "length": 17,
       "value": "\"server_response\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Data\/Networking\/Input\/AnaliticExtractionInput.swift",
       "kind": "StringLiteral",
-      "offset": 1732,
+      "offset": 1806,
       "length": 15,
       "value": "\"response_time\""
     },
@@ -66912,165 +66912,207 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
       "offset": 196,
       "length": 5,
       "value": "\"iOS\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
       "offset": 238,
-      "length": 12,
-      "value": "\"iOS native\""
+      "length": 8,
+      "value": "\"Native\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 283,
+      "offset": 279,
       "length": 5,
       "value": "\"ios\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 330,
-      "length": 14,
-      "value": "\"React Native\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 379,
+      "offset": 326,
       "length": 13,
-      "value": "\"reactnative\""
+      "value": "\"ReactNative\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 436,
+      "offset": 383,
       "length": 9,
       "value": "\"Flutter\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 482,
+      "offset": 449,
+      "length": 6,
+      "value": "\"send\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 471,
+      "length": 7,
+      "value": "\"clear\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 496,
       "length": 9,
-      "value": "\"flutter\""
+      "value": "\"enqueue\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 549,
+      "offset": 523,
+      "length": 9,
+      "value": "\"extract\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 449,
+      "length": 6,
+      "value": "\"send\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 471,
+      "length": 7,
+      "value": "\"clear\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 496,
+      "length": 9,
+      "value": "\"enqueue\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 523,
+      "length": 9,
+      "value": "\"extract\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 590,
       "length": 15,
       "value": "\"sleep_summary\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 590,
+      "offset": 631,
       "length": 18,
       "value": "\"physical_summary\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 630,
+      "offset": 671,
       "length": 14,
       "value": "\"body_summary\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 666,
-      "length": 23,
-      "value": "\"body_heart_rate_event\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 715,
-      "length": 27,
-      "value": "\"physical_heart_rate_event\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 765,
+      "offset": 707,
       "length": 24,
-      "value": "\"body_oxygenation_event\""
+      "value": "\"heart_rate_body_events\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 816,
+      "offset": 757,
       "length": 28,
-      "value": "\"physical_oxygenation_event\""
+      "value": "\"heart_rate_physical_events\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 868,
-      "length": 16,
-      "value": "\"activity_event\""
+      "offset": 808,
+      "length": 25,
+      "value": "\"oxygenation_body_events\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 549,
+      "offset": 860,
+      "length": 29,
+      "value": "\"oxygenation_physical_events\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 913,
+      "length": 17,
+      "value": "\"physical_events\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 590,
       "length": 15,
       "value": "\"sleep_summary\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 590,
+      "offset": 631,
       "length": 18,
       "value": "\"physical_summary\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 630,
+      "offset": 671,
       "length": 14,
       "value": "\"body_summary\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 666,
-      "length": 23,
-      "value": "\"body_heart_rate_event\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 715,
-      "length": 27,
-      "value": "\"physical_heart_rate_event\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 765,
+      "offset": 707,
       "length": 24,
-      "value": "\"body_oxygenation_event\""
+      "value": "\"heart_rate_body_events\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 816,
+      "offset": 757,
       "length": 28,
-      "value": "\"physical_oxygenation_event\""
+      "value": "\"heart_rate_physical_events\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnaliticConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 868,
-      "length": 16,
-      "value": "\"activity_event\""
+      "offset": 808,
+      "length": 25,
+      "value": "\"oxygenation_body_events\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 860,
+      "length": 29,
+      "value": "\"oxygenation_physical_events\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 913,
+      "length": 17,
+      "value": "\"physical_events\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/RookMetaDataEventObjc.swift",
@@ -68494,14 +68536,14 @@
       "value": "\"stress_score\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Helpers\/AnaliticsExtractionConfigurator.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Helpers\/AnalyticsExtractionConfigurator.swift",
       "kind": "StringLiteral",
       "offset": 518,
       "length": 20,
       "value": "\"ios-elastic-search\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Helpers\/AnaliticsExtractionConfigurator.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Helpers\/AnalyticsExtractionConfigurator.swift",
       "kind": "StringLiteral",
       "offset": 564,
       "length": 16,

@@ -549,7 +549,7 @@ public struct RookTemperatureGranularTransmissionDTO {
   @objc public static let shared: RookConnectTransmission.RookTransmissionSettings
   final public func setConfiguration(_ configuration: RookConnectTransmission.RookTransmissionConfiguration)
   @objc final public func setConfiguration(clientUUID: Swift.String, secretKey: Swift.String)
-  final public func setEnvironmnet(_ environment: RookConnectTransmission.RookTransmissionEnvironment)
+  final public func setEnvironment(_ environment: RookConnectTransmission.RookTransmissionEnvironment)
   @objc final public func setEnvironmentToSandbox()
   @objc final public func setEnvironmentToProduction()
   @objc final public func setUserId(with id: Swift.String?)
@@ -796,19 +796,19 @@ public struct RookBodyDataTransmissionDTO {
   public var temperatureDeltaCelsius: RookConnectTransmission.RookTemperatureTransmissionDTO?
   public var temperatureGranularDataCelsius: [RookConnectTransmission.RookTemperatureGranularTransmissionDTO]?
 }
-public enum AnaliticPlatform {
+public enum AnalyticPlatform {
   case ios
   case flutter
   case reactNative
-  public static func == (a: RookConnectTransmission.AnaliticPlatform, b: RookConnectTransmission.AnaliticPlatform) -> Swift.Bool
+  public static func == (a: RookConnectTransmission.AnalyticPlatform, b: RookConnectTransmission.AnalyticPlatform) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class AnaliticsTransmissionConfigurator : ObjectiveC.NSObject {
-  @objc public static let shared: RookConnectTransmission.AnaliticsTransmissionConfigurator
-  final public func setPlatform(_ platform: RookConnectTransmission.AnaliticPlatform)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class AnalyticsTransmissionConfigurator : ObjectiveC.NSObject {
+  @objc public static let shared: RookConnectTransmission.AnalyticsTransmissionConfigurator
+  final public func setPlatform(_ platform: RookConnectTransmission.AnalyticPlatform)
   @objc final public func setPlatformToReact()
   @objc deinit
 }
@@ -1672,8 +1672,8 @@ extension RookConnectTransmission.HTTPMethod : Swift.Hashable {}
 extension RookConnectTransmission.HTTPMethod : Swift.RawRepresentable {}
 extension RookConnectTransmission.RookContextType : Swift.Equatable {}
 extension RookConnectTransmission.RookContextType : Swift.Hashable {}
-extension RookConnectTransmission.AnaliticPlatform : Swift.Equatable {}
-extension RookConnectTransmission.AnaliticPlatform : Swift.Hashable {}
+extension RookConnectTransmission.AnalyticPlatform : Swift.Equatable {}
+extension RookConnectTransmission.AnalyticPlatform : Swift.Hashable {}
 extension RookConnectTransmission.NetworkResponse : Swift.Equatable {}
 extension RookConnectTransmission.NetworkResponse : Swift.Hashable {}
 extension RookConnectTransmission.NetworkResponse : Swift.RawRepresentable {}

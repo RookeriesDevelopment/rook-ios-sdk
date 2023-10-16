@@ -26,7 +26,7 @@ final class SleepSyncUseCase: SummarySyncUseCaseProtocol {
   // MARK:  Helpers
   
   func execute(date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
-    summariesExtraction.getSleepSummay(date: date) { [weak self] result in
+    summariesExtraction.getSleepSummary(date: date) { [weak self] result in
       switch result {
       case .success(let summary):
         self?.handleSummary(summary, completion: completion)
