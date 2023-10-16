@@ -80,7 +80,7 @@ public struct RookActivityLevelGranular : Swift.Encodable {
   public func encode(to encoder: Swift.Encoder) throws
 }
 extension RookAppleHealth.RookExtractionManager {
-  @objc final public func getSleepSummayObjc(date: Foundation.Date, completion: @escaping ([Swift.String : Any]?, Swift.Error?) -> Swift.Void)
+  @objc final public func getSleepSummaryObjc(date: Foundation.Date, completion: @escaping ([Swift.String : Any]?, Swift.Error?) -> Swift.Void)
   @objc final public func getPhysicalSummaryObjc(date: Foundation.Date, completion: @escaping ([Swift.String : Any]?, Swift.Error?) -> Swift.Void)
   @objc final public func getBodySummaryObjc(date: Foundation.Date, completion: @escaping ([Swift.String : Any]?, Swift.Error?) -> Swift.Void)
   @objc final public func getLastExtractionDateOfSleep() -> Foundation.Date?
@@ -770,7 +770,7 @@ public struct RookOxigenationDataEvent : Swift.Codable {
 }
 @_inheritsConvenienceInitializers @objc final public class RookExtractionManager : ObjectiveC.NSObject {
   @objc override dynamic public init()
-  final public func getSleepSummay(date: Foundation.Date, completion: @escaping (Swift.Result<RookAppleHealth.RookSleepData, Swift.Error>) -> Swift.Void)
+  final public func getSleepSummary(date: Foundation.Date, completion: @escaping (Swift.Result<RookAppleHealth.RookSleepData, Swift.Error>) -> Swift.Void)
   final public func getPhysicalSummary(date: Foundation.Date, completion: @escaping (Swift.Result<RookAppleHealth.RookPhysicalData, Swift.Error>) -> Swift.Void)
   final public func getBodySummary(date: Foundation.Date, completion: @escaping (Swift.Result<RookAppleHealth.RookBodyData, Swift.Error>) -> Swift.Void)
   final public func getUserInformation(date: Foundation.Date, completion: @escaping (Swift.Result<RookAppleHealth.RookUserInfoData, Swift.Error>) -> Swift.Void)
@@ -943,19 +943,19 @@ public struct StressGranularDataScoreNumber : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
-public enum AnaliticPlatform {
+public enum AnalyticPlatform {
   case ios
   case flutter
   case reactNative
-  public static func == (a: RookAppleHealth.AnaliticPlatform, b: RookAppleHealth.AnaliticPlatform) -> Swift.Bool
+  public static func == (a: RookAppleHealth.AnalyticPlatform, b: RookAppleHealth.AnalyticPlatform) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class AnaliticsExtractionConfigurator : ObjectiveC.NSObject {
-  @objc public static let shared: RookAppleHealth.AnaliticsExtractionConfigurator
-  final public func setPlatform(_ platform: RookAppleHealth.AnaliticPlatform)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class AnalyticsExtractionConfigurator : ObjectiveC.NSObject {
+  @objc public static let shared: RookAppleHealth.AnalyticsExtractionConfigurator
+  final public func setPlatform(_ platform: RookAppleHealth.AnalyticPlatform)
   @objc final public func setPlatformToReact()
   @objc deinit
 }
@@ -1328,8 +1328,8 @@ extension RookAppleHealth.RookError : Swift.RawRepresentable {}
 extension RookAppleHealth.HTTPMethod : Swift.Equatable {}
 extension RookAppleHealth.HTTPMethod : Swift.Hashable {}
 extension RookAppleHealth.HTTPMethod : Swift.RawRepresentable {}
-extension RookAppleHealth.AnaliticPlatform : Swift.Equatable {}
-extension RookAppleHealth.AnaliticPlatform : Swift.Hashable {}
+extension RookAppleHealth.AnalyticPlatform : Swift.Equatable {}
+extension RookAppleHealth.AnalyticPlatform : Swift.Hashable {}
 extension RookAppleHealth.SleepEvent : Swift.Equatable {}
 extension RookAppleHealth.SleepEvent : Swift.Hashable {}
 extension RookAppleHealth.SleepEvent : Swift.RawRepresentable {}
