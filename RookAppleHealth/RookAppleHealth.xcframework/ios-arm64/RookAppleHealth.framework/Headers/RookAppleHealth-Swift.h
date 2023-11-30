@@ -264,6 +264,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AnalyticsExt
 
 
 
+SWIFT_CLASS("_TtC15RookAppleHealth18ExtractionIOSClass")
+@interface ExtractionIOSClass : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) ExtractionIOSClass * _Nonnull shared;)
++ (ExtractionIOSClass * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
++ (void)setShared:(ExtractionIOSClass * _Nonnull)value;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)test;
+- (void)diableTest;
+@end
+
+
 @class NSString;
 
 SWIFT_CLASS("_TtC15RookAppleHealth19RookAuthAppleHealth")
@@ -273,7 +285,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookAuthAppl
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// Sets your client uuid to configure the sdk
-- (void)setClientUUIDWith:(NSString * _Nonnull)uuid;
+- (void)setClientUUIDWith:(NSString * _Nonnull)uuid secretKey:(NSString * _Nonnull)secretKey;
 - (void)setEnvironmentToSandbox;
 - (void)setEnvironmentToProduction;
 - (void)setExcludeManualData:(BOOL)excludeManual;
@@ -282,6 +294,24 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookAuthAppl
 - (void)initRookAH SWIFT_METHOD_FAMILY(none);
 - (void)setUserIdWith:(NSString * _Nullable)id;
 - (BOOL)isAHAvailable SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC15RookAppleHealth24RookBackGroundExtraction")
+@interface RookBackGroundExtraction : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull notificationSteps;
+@property (nonatomic, readonly, copy) NSString * _Nonnull notificationCalories;
+@property (nonatomic, copy) void (^ _Nullable handleStepsUpdate)(NSInteger);
+@property (nonatomic, copy) void (^ _Nullable handleCaloriesUpdate)(NSInteger);
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGroundExtraction * _Nonnull shared;)
++ (RookBackGroundExtraction * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setBackGroundListeners;
+- (void)enableBackGroundForSteps;
+- (void)disableBackGroundForStepsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)enableBackGroundForCalories;
+- (void)disableBackGroundForCaloriesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
 @class NSDate;
@@ -795,7 +825,19 @@ SWIFT_CLASS("_TtC15RookAppleHealth24RookPermissionExtraction")
 - (void)requestAllPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)requestSleepPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)requestPhysicalPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)requesBodyPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)requestBodyPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
+
+SWIFT_CLASS("_TtC15RookAppleHealth29RookVariableExtractionManager")
+@interface RookVariableExtractionManager : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface RookVariableExtractionManager (SWIFT_EXTENSION(RookAppleHealth))
+- (void)getTodayStepsWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+- (void)getTodayActiveCaloriesBurnedWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 @end
 
 #endif

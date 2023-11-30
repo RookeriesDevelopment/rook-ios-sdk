@@ -10524,6 +10524,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookPowerData",
         "printedName": "RookPowerData",
@@ -15656,6 +15666,839 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "RookBackGroundExtraction",
+        "printedName": "RookBackGroundExtraction",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "notificationSteps",
+            "printedName": "notificationSteps",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(py)notificationSteps",
+            "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC17notificationStepsSSvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(im)notificationSteps",
+                "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC17notificationStepsSSvg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "notificationCalories",
+            "printedName": "notificationCalories",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(py)notificationCalories",
+            "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC20notificationCaloriesSSvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(im)notificationCalories",
+                "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC20notificationCaloriesSSvg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "handleStepsUpdate",
+            "printedName": "handleStepsUpdate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Int) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(py)handleStepsUpdate",
+            "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC17handleStepsUpdateySicSgvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Int) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(im)handleStepsUpdate",
+                "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC17handleStepsUpdateySicSgvg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Int) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(im)setHandleStepsUpdate:",
+                "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC17handleStepsUpdateySicSgvs",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A20BackGroundExtractionC17handleStepsUpdateySicSgvM",
+                "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC17handleStepsUpdateySicSgvM",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "handleCaloriesUpdate",
+            "printedName": "handleCaloriesUpdate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Int) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(py)handleCaloriesUpdate",
+            "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC20handleCaloriesUpdateySicSgvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Int) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(im)handleCaloriesUpdate",
+                "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC20handleCaloriesUpdateySicSgvg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Int) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(im)setHandleCaloriesUpdate:",
+                "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC20handleCaloriesUpdateySicSgvs",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A20BackGroundExtractionC20handleCaloriesUpdateySicSgvM",
+                "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC20handleCaloriesUpdateySicSgvM",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookBackGroundExtraction",
+                "printedName": "RookAppleHealth.RookBackGroundExtraction",
+                "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(cpy)shared",
+            "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC6sharedACvpZ",
+            "moduleName": "RookAppleHealth",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookBackGroundExtraction",
+                    "printedName": "RookAppleHealth.RookBackGroundExtraction",
+                    "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(cm)shared",
+                "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC6sharedACvgZ",
+                "moduleName": "RookAppleHealth",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setBackGroundListeners",
+            "printedName": "setBackGroundListeners()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(im)setBackGroundListeners",
+            "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC03setdE9ListenersyyF",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableBackGroundForSteps",
+            "printedName": "enableBackGroundForSteps()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(im)enableBackGroundForSteps",
+            "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC06enabledE8ForStepsyyF",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disableBackGroundForSteps",
+            "printedName": "disableBackGroundForSteps(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15RookAppleHealth0A20BackGroundExtractionC07disabledE8ForSteps10completionyys6ResultOySbs5Error_pGc_tF",
+            "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC07disabledE8ForSteps10completionyys6ResultOySbs5Error_pGc_tF",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disableBackGroundForStepsObjc",
+            "printedName": "disableBackGroundForStepsObjc(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(im)disableBackGroundForStepsObjcWithCompletion:",
+            "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC07disabledE12ForStepsObjc10completionyySb_s5Error_pSgtc_tF",
+            "moduleName": "RookAppleHealth",
+            "objc_name": "disableBackGroundForStepsObjcWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableBackGroundForCalories",
+            "printedName": "enableBackGroundForCalories()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(im)enableBackGroundForCalories",
+            "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC06enabledE11ForCaloriesyyF",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disableBackGroundForCalories",
+            "printedName": "disableBackGroundForCalories(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15RookAppleHealth0A20BackGroundExtractionC07disabledE11ForCalories10completionyys6ResultOySbs5Error_pGc_tF",
+            "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC07disabledE11ForCalories10completionyys6ResultOySbs5Error_pGc_tF",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disableBackGroundForCaloriesObjc",
+            "printedName": "disableBackGroundForCaloriesObjc(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(im)disableBackGroundForCaloriesObjcWithCompletion:",
+            "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC07disabledE15ForCaloriesObjc10completionyySb_s5Error_pSgtc_tF",
+            "moduleName": "RookAppleHealth",
+            "objc_name": "disableBackGroundForCaloriesObjcWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction",
+        "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "RookPositionData",
         "printedName": "RookPositionData",
         "children": [
@@ -16039,6 +16882,345 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "RookVariableExtractionManager",
+        "printedName": "RookVariableExtractionManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookVariableExtractionManager",
+                "printedName": "RookAppleHealth.RookVariableExtractionManager",
+                "usr": "c:@M@RookAppleHealth@objc(cs)RookVariableExtractionManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookVariableExtractionManager(im)init",
+            "mangledName": "$s15RookAppleHealth0A25VariableExtractionManagerCACycfc",
+            "moduleName": "RookAppleHealth",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getTodaySteps",
+            "printedName": "getTodaySteps(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Int, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Int, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15RookAppleHealth0A25VariableExtractionManagerC13getTodaySteps10completionyys6ResultOySis5Error_pGc_tF",
+            "mangledName": "$s15RookAppleHealth0A25VariableExtractionManagerC13getTodaySteps10completionyys6ResultOySis5Error_pGc_tF",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTodayActiveCaloriesBurned",
+            "printedName": "getTodayActiveCaloriesBurned(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Int, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Int, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15RookAppleHealth0A25VariableExtractionManagerC28getTodayActiveCaloriesBurned10completionyys6ResultOySis5Error_pGc_tF",
+            "mangledName": "$s15RookAppleHealth0A25VariableExtractionManagerC28getTodayActiveCaloriesBurned10completionyys6ResultOySis5Error_pGc_tF",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTodaySteps",
+            "printedName": "getTodaySteps(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Int, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Int, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookAppleHealth@objc(cs)RookVariableExtractionManager(im)getTodayStepsWithCompletion:",
+            "mangledName": "$s15RookAppleHealth0A25VariableExtractionManagerC13getTodaySteps10completionyySi_s5Error_pSgtc_tF",
+            "moduleName": "RookAppleHealth",
+            "objc_name": "getTodayStepsWithCompletion:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTodayActiveCaloriesBurned",
+            "printedName": "getTodayActiveCaloriesBurned(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Int, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Int, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookAppleHealth@objc(cs)RookVariableExtractionManager(im)getTodayActiveCaloriesBurnedWithCompletion:",
+            "mangledName": "$s15RookAppleHealth0A25VariableExtractionManagerC28getTodayActiveCaloriesBurned10completionyySi_s5Error_pSgtc_tF",
+            "moduleName": "RookAppleHealth",
+            "objc_name": "getTodayActiveCaloriesBurnedWithCompletion:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@RookAppleHealth@objc(cs)RookVariableExtractionManager",
+        "mangledName": "$s15RookAppleHealth0A25VariableExtractionManagerC",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -16109,7 +17291,7 @@
           {
             "kind": "Function",
             "name": "setClientUUID",
-            "printedName": "setClientUUID(with:)",
+            "printedName": "setClientUUID(with:secretKey:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -16121,13 +17303,19 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@RookAppleHealth@objc(cs)RookAuthAppleHealth(im)setClientUUIDWith:",
-            "mangledName": "$s15RookAppleHealth0a4AuthbC0C13setClientUUID4withySS_tF",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookAuthAppleHealth(im)setClientUUIDWith:secretKey:",
+            "mangledName": "$s15RookAppleHealth0a4AuthbC0C13setClientUUID4with9secretKeyySS_SStF",
             "moduleName": "RookAppleHealth",
-            "objc_name": "setClientUUIDWith:",
+            "objc_name": "setClientUUIDWith:secretKey:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -16518,6 +17706,16 @@
             "usr": "s:15RookAppleHealth16ParameterEncoderP",
             "mangledName": "$s15RookAppleHealth16ParameterEncoderP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -17909,6 +19107,234 @@
         "moduleName": "RookAppleHealth",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ExtractionIOSClass",
+        "printedName": "ExtractionIOSClass",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExtractionIOSClass",
+                "printedName": "RookAppleHealth.ExtractionIOSClass",
+                "usr": "c:@M@RookAppleHealth@objc(cs)ExtractionIOSClass"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RookAppleHealth@objc(cs)ExtractionIOSClass(cpy)shared",
+            "mangledName": "$s15RookAppleHealth18ExtractionIOSClassC6sharedACvpZ",
+            "moduleName": "RookAppleHealth",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExtractionIOSClass",
+                    "printedName": "RookAppleHealth.ExtractionIOSClass",
+                    "usr": "c:@M@RookAppleHealth@objc(cs)ExtractionIOSClass"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookAppleHealth@objc(cs)ExtractionIOSClass(cm)shared",
+                "mangledName": "$s15RookAppleHealth18ExtractionIOSClassC6sharedACvgZ",
+                "moduleName": "RookAppleHealth",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExtractionIOSClass",
+                    "printedName": "RookAppleHealth.ExtractionIOSClass",
+                    "usr": "c:@M@RookAppleHealth@objc(cs)ExtractionIOSClass"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookAppleHealth@objc(cs)ExtractionIOSClass(cm)setShared:",
+                "mangledName": "$s15RookAppleHealth18ExtractionIOSClassC6sharedACvsZ",
+                "moduleName": "RookAppleHealth",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth18ExtractionIOSClassC6sharedACvMZ",
+                "mangledName": "$s15RookAppleHealth18ExtractionIOSClassC6sharedACvMZ",
+                "moduleName": "RookAppleHealth",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "test",
+            "printedName": "test()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookAppleHealth@objc(cs)ExtractionIOSClass(im)test",
+            "mangledName": "$s15RookAppleHealth18ExtractionIOSClassC4testyyF",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "diableTest",
+            "printedName": "diableTest()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookAppleHealth@objc(cs)ExtractionIOSClass(im)diableTest",
+            "mangledName": "$s15RookAppleHealth18ExtractionIOSClassC10diableTestyyF",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@RookAppleHealth@objc(cs)ExtractionIOSClass",
+        "mangledName": "$s15RookAppleHealth18ExtractionIOSClassC",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -19594,6 +21020,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookPositionGranularItem",
         "printedName": "RookPositionGranularItem",
@@ -20688,6 +22124,23 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth"
       },
       {
         "kind": "Import",
@@ -27344,6 +28797,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookCadenceGranularItem",
         "printedName": "RookCadenceGranularItem",
@@ -32998,6 +34461,43 @@
             "moduleName": "RookAppleHealth"
           },
           {
+            "kind": "Var",
+            "name": "patch",
+            "printedName": "patch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookAppleHealth.HTTPMethod.Type) -> RookAppleHealth.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "RookAppleHealth.HTTPMethod",
+                    "usr": "s:15RookAppleHealth10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookAppleHealth.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "RookAppleHealth.HTTPMethod",
+                        "usr": "s:15RookAppleHealth10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15RookAppleHealth10HTTPMethodO5patchyA2CmF",
+            "mangledName": "$s15RookAppleHealth10HTTPMethodO5patchyA2CmF",
+            "moduleName": "RookAppleHealth"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -33554,6 +35054,16 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -47485,6 +48995,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "HealthKit",
         "printedName": "HealthKit",
         "declKind": "Import",
@@ -55919,8 +57439,8 @@
           },
           {
             "kind": "Function",
-            "name": "requestUserInfoPersmissions",
-            "printedName": "requestUserInfoPersmissions(completion:)",
+            "name": "requestUserInfoPermissions",
+            "printedName": "requestUserInfoPermissions(completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -55961,8 +57481,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15RookAppleHealth0A20PermissionExtractionC27requestUserInfoPersmissions10completionyys6ResultOySbs5Error_pGc_tF",
-            "mangledName": "$s15RookAppleHealth0A20PermissionExtractionC27requestUserInfoPersmissions10completionyys6ResultOySbs5Error_pGc_tF",
+            "usr": "s:15RookAppleHealth0A20PermissionExtractionC26requestUserInfoPermissions10completionyys6ResultOySbs5Error_pGc_tF",
+            "mangledName": "$s15RookAppleHealth0A20PermissionExtractionC26requestUserInfoPermissions10completionyys6ResultOySbs5Error_pGc_tF",
             "moduleName": "RookAppleHealth",
             "declAttributes": [
               "AccessControl"
@@ -56023,8 +57543,8 @@
           },
           {
             "kind": "Function",
-            "name": "requesBodyPermissions",
-            "printedName": "requesBodyPermissions(completion:)",
+            "name": "requestBodyPermissions",
+            "printedName": "requestBodyPermissions(completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -56065,8 +57585,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15RookAppleHealth0A20PermissionExtractionC21requesBodyPermissions10completionyys6ResultOySbs5Error_pGc_tF",
-            "mangledName": "$s15RookAppleHealth0A20PermissionExtractionC21requesBodyPermissions10completionyys6ResultOySbs5Error_pGc_tF",
+            "usr": "s:15RookAppleHealth0A20PermissionExtractionC22requestBodyPermissions10completionyys6ResultOySbs5Error_pGc_tF",
+            "mangledName": "$s15RookAppleHealth0A20PermissionExtractionC22requestBodyPermissions10completionyys6ResultOySbs5Error_pGc_tF",
             "moduleName": "RookAppleHealth",
             "declAttributes": [
               "AccessControl"
@@ -56259,8 +57779,8 @@
           },
           {
             "kind": "Function",
-            "name": "requesBodyPermissionsObjc",
-            "printedName": "requesBodyPermissionsObjc(completion:)",
+            "name": "requestBodyPermissionsObjc",
+            "printedName": "requestBodyPermissionsObjc(completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -56308,10 +57828,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@RookAppleHealth@objc(cs)RookPermissionExtraction(im)requesBodyPermissionsObjcWithCompletion:",
-            "mangledName": "$s15RookAppleHealth0A20PermissionExtractionC25requesBodyPermissionsObjc10completionyySb_s5Error_pSgtc_tF",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookPermissionExtraction(im)requestBodyPermissionsObjcWithCompletion:",
+            "mangledName": "$s15RookAppleHealth0A20PermissionExtractionC26requestBodyPermissionsObjc10completionyySb_s5Error_pSgtc_tF",
             "moduleName": "RookAppleHealth",
-            "objc_name": "requesBodyPermissionsObjcWithCompletion:",
+            "objc_name": "requestBodyPermissionsObjcWithCompletion:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -62026,76 +63546,135 @@
             "moduleName": "RookAppleHealth"
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
+            "kind": "Var",
+            "name": "errorRequest",
+            "printedName": "errorRequest",
             "children": [
               {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "RookAppleHealth.ExtractionErrors?",
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookAppleHealth.ExtractionErrors.Type) -> (Swift.Int) -> RookAppleHealth.ExtractionErrors",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> RookAppleHealth.ExtractionErrors",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExtractionErrors",
+                        "printedName": "RookAppleHealth.ExtractionErrors",
+                        "usr": "s:15RookAppleHealth16ExtractionErrorsO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(httpCode: Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookAppleHealth.ExtractionErrors.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExtractionErrors",
+                        "printedName": "RookAppleHealth.ExtractionErrors",
+                        "usr": "s:15RookAppleHealth16ExtractionErrorsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15RookAppleHealth16ExtractionErrorsO12errorRequestyACSi_tcACmF",
+            "mangledName": "$s15RookAppleHealth16ExtractionErrorsO12errorRequestyACSi_tcACmF",
+            "moduleName": "RookAppleHealth"
+          },
+          {
+            "kind": "Var",
+            "name": "badRequest",
+            "printedName": "badRequest",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookAppleHealth.ExtractionErrors.Type) -> RookAppleHealth.ExtractionErrors",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "ExtractionErrors",
                     "printedName": "RookAppleHealth.ExtractionErrors",
                     "usr": "s:15RookAppleHealth16ExtractionErrorsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookAppleHealth.ExtractionErrors.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExtractionErrors",
+                        "printedName": "RookAppleHealth.ExtractionErrors",
+                        "usr": "s:15RookAppleHealth16ExtractionErrorsO"
+                      }
+                    ]
                   }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                ]
               }
             ],
-            "declKind": "Constructor",
-            "usr": "s:15RookAppleHealth16ExtractionErrorsO8rawValueACSgSS_tcfc",
-            "mangledName": "$s15RookAppleHealth16ExtractionErrorsO8rawValueACSgSS_tcfc",
-            "moduleName": "RookAppleHealth",
-            "implicit": true,
-            "init_kind": "Designated"
+            "declKind": "EnumElement",
+            "usr": "s:15RookAppleHealth16ExtractionErrorsO10badRequestyA2CmF",
+            "mangledName": "$s15RookAppleHealth16ExtractionErrorsO10badRequestyA2CmF",
+            "moduleName": "RookAppleHealth"
           },
           {
             "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
+            "name": "userNotFound",
+            "printedName": "userNotFound",
             "children": [
               {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15RookAppleHealth16ExtractionErrorsO8rawValueSSvp",
-            "mangledName": "$s15RookAppleHealth16ExtractionErrorsO8rawValueSSvp",
-            "moduleName": "RookAppleHealth",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookAppleHealth.ExtractionErrors.Type) -> RookAppleHealth.ExtractionErrors",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "ExtractionErrors",
+                    "printedName": "RookAppleHealth.ExtractionErrors",
+                    "usr": "s:15RookAppleHealth16ExtractionErrorsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookAppleHealth.ExtractionErrors.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExtractionErrors",
+                        "printedName": "RookAppleHealth.ExtractionErrors",
+                        "usr": "s:15RookAppleHealth16ExtractionErrorsO"
+                      }
+                    ]
                   }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15RookAppleHealth16ExtractionErrorsO8rawValueSSvg",
-                "mangledName": "$s15RookAppleHealth16ExtractionErrorsO8rawValueSSvg",
-                "moduleName": "RookAppleHealth",
-                "implicit": true,
-                "accessorKind": "get"
+                ]
               }
-            ]
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15RookAppleHealth16ExtractionErrorsO12userNotFoundyA2CmF",
+            "mangledName": "$s15RookAppleHealth16ExtractionErrorsO12userNotFoundyA2CmF",
+            "moduleName": "RookAppleHealth"
           },
           {
             "kind": "Var",
@@ -62163,44 +63742,7 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "enumRawTypeName": "String",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -63629,6 +65171,34 @@
       "value": "\"training\""
     },
     {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/VariableExtraction\/Constants\/BackGroundStorageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 222,
+      "length": 44,
+      "value": "\"rook_is_steps_background_extraction_enable\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/VariableExtraction\/Constants\/BackGroundStorageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 311,
+      "length": 47,
+      "value": "\"rook_is_calories_background_extraction_enable\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/VariableExtraction\/Constants\/BackGroundStorageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 222,
+      "length": 44,
+      "value": "\"rook_is_steps_background_extraction_enable\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/VariableExtraction\/Constants\/BackGroundStorageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 311,
+      "length": 47,
+      "value": "\"rook_is_calories_background_extraction_enable\""
+    },
+    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookPowerData.swift",
       "kind": "StringLiteral",
       "offset": 388,
@@ -64357,6 +65927,20 @@
       "value": "\"activity_energy_planned_kilojoules\""
     },
     {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/VariableExtraction\/RookBackGroundExtraction.swift",
+      "kind": "StringLiteral",
+      "offset": 598,
+      "length": 19,
+      "value": "\"rook_steps_update\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/VariableExtraction\/RookBackGroundExtraction.swift",
+      "kind": "StringLiteral",
+      "offset": 668,
+      "length": 22,
+      "value": "\"rook_calories_update\""
+    },
+    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookPositionData.swift",
       "kind": "StringLiteral",
       "offset": 551,
@@ -64429,14 +66013,14 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Configuration\/RookAuthAppleHealth.swift",
       "kind": "StringLiteral",
-      "offset": 568,
+      "offset": 642,
       "length": 8,
-      "value": "\"1.0.17\""
+      "value": "\"1.0.19\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Configuration\/RookAuthAppleHealth.swift",
       "kind": "BooleanLiteral",
-      "offset": 622,
+      "offset": 696,
       "length": 4,
       "value": "true"
     },
@@ -64649,6 +66233,13 @@
       "offset": 875,
       "length": 27,
       "value": "\"temperature_delta_celsius\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Configuration\/DevConfig\/ExtractionIOSClass.swift",
+      "kind": "BooleanLiteral",
+      "offset": 254,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookHeartRateEvent.swift",
@@ -64891,7 +66482,7 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/PredicateBuilder\/RookPredicateBuilder.swift",
       "kind": "BooleanLiteral",
-      "offset": 448,
+      "offset": 1079,
       "length": 4,
       "value": "true"
     },
@@ -66096,15 +67687,15 @@
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/RAAuthenticationManager.swift",
       "kind": "StringLiteral",
       "offset": 201,
-      "length": 40,
-      "value": "\"You have to set the configration first\""
+      "length": 41,
+      "value": "\"You have to set the configuration first\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/RAAuthenticationManager.swift",
       "kind": "StringLiteral",
       "offset": 201,
-      "length": 40,
-      "value": "\"You have to set the configration first\""
+      "length": 41,
+      "value": "\"You have to set the configuration first\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Entities\/RookError.swift",
@@ -66133,6 +67724,13 @@
       "offset": 241,
       "length": 23,
       "value": "\"No samples were found\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/DataTypesProvider\/CaloriesProvider\/RookCaloriesProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 318,
+      "length": 1,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Helpers\/Extensions.swift",
@@ -66767,6 +68365,13 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Service\/HTTPMethod.swift",
       "kind": "StringLiteral",
+      "offset": 223,
+      "length": 7,
+      "value": "\"PATCH\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Service\/HTTPMethod.swift",
+      "kind": "StringLiteral",
       "offset": 181,
       "length": 5,
       "value": "\"GET\""
@@ -66777,6 +68382,13 @@
       "offset": 201,
       "length": 6,
       "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Service\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 223,
+      "length": 7,
+      "value": "\"PATCH\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionOxygenationDataObjc.swift",
@@ -67061,6 +68673,34 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
+      "offset": 952,
+      "length": 14,
+      "value": "\"enable_steps\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 989,
+      "length": 15,
+      "value": "\"disable_steps\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1029,
+      "length": 17,
+      "value": "\"enable_calories\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1072,
+      "length": 18,
+      "value": "\"disable_calories\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
       "offset": 590,
       "length": 15,
       "value": "\"sleep_summary\""
@@ -67113,6 +68753,34 @@
       "offset": 913,
       "length": 17,
       "value": "\"physical_events\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 952,
+      "length": 14,
+      "value": "\"enable_steps\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 989,
+      "length": 15,
+      "value": "\"disable_steps\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1029,
+      "length": 17,
+      "value": "\"enable_calories\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1072,
+      "length": 18,
+      "value": "\"disable_calories\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/RookMetaDataEventObjc.swift",
@@ -68657,7 +70325,7 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/DataTypesProvider\/Data\/RookSampleProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 1807,
+      "offset": 1640,
       "length": 4,
       "value": "true"
     },
@@ -70774,20 +72442,6 @@
       "offset": 11940,
       "length": 12,
       "value": "\"bmi_number\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/DataTypesProvider\/Constants\/ExtractionErrors.swift",
-      "kind": "StringLiteral",
-      "offset": 203,
-      "length": 45,
-      "value": "\"The user does not have sleep data available\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/DataTypesProvider\/Constants\/ExtractionErrors.swift",
-      "kind": "StringLiteral",
-      "offset": 203,
-      "length": 45,
-      "value": "\"The user does not have sleep data available\""
     }
   ]
 }

@@ -230,6 +230,7 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ObjectiveC;
 #endif
 
 #endif
@@ -250,6 +251,18 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+
+SWIFT_CLASS("_TtC12RookUsersSDK13UsersIOSClass")
+@interface UsersIOSClass : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) UsersIOSClass * _Nonnull shared;)
++ (UsersIOSClass * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
++ (void)setShared:(UsersIOSClass * _Nonnull)value;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)test;
+- (void)diableTest;
+@end
+
 #endif
 #if defined(__cplusplus)
 #endif
@@ -490,6 +503,7 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ObjectiveC;
 #endif
 
 #endif
@@ -510,6 +524,18 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+
+SWIFT_CLASS("_TtC12RookUsersSDK13UsersIOSClass")
+@interface UsersIOSClass : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) UsersIOSClass * _Nonnull shared;)
++ (UsersIOSClass * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
++ (void)setShared:(UsersIOSClass * _Nonnull)value;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)test;
+- (void)diableTest;
+@end
+
 #endif
 #if defined(__cplusplus)
 #endif

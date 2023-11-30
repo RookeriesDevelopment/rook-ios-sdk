@@ -10136,6 +10136,234 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "TransmissionIOSClass",
+        "printedName": "TransmissionIOSClass",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TransmissionIOSClass",
+                "printedName": "RookConnectTransmission.TransmissionIOSClass",
+                "usr": "c:@M@RookConnectTransmission@objc(cs)TransmissionIOSClass"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RookConnectTransmission@objc(cs)TransmissionIOSClass(cpy)shared",
+            "mangledName": "$s23RookConnectTransmission0C8IOSClassC6sharedACvpZ",
+            "moduleName": "RookConnectTransmission",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransmissionIOSClass",
+                    "printedName": "RookConnectTransmission.TransmissionIOSClass",
+                    "usr": "c:@M@RookConnectTransmission@objc(cs)TransmissionIOSClass"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookConnectTransmission@objc(cs)TransmissionIOSClass(cm)shared",
+                "mangledName": "$s23RookConnectTransmission0C8IOSClassC6sharedACvgZ",
+                "moduleName": "RookConnectTransmission",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransmissionIOSClass",
+                    "printedName": "RookConnectTransmission.TransmissionIOSClass",
+                    "usr": "c:@M@RookConnectTransmission@objc(cs)TransmissionIOSClass"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookConnectTransmission@objc(cs)TransmissionIOSClass(cm)setShared:",
+                "mangledName": "$s23RookConnectTransmission0C8IOSClassC6sharedACvsZ",
+                "moduleName": "RookConnectTransmission",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23RookConnectTransmission0C8IOSClassC6sharedACvMZ",
+                "mangledName": "$s23RookConnectTransmission0C8IOSClassC6sharedACvMZ",
+                "moduleName": "RookConnectTransmission",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "test",
+            "printedName": "test()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookConnectTransmission@objc(cs)TransmissionIOSClass(im)test",
+            "mangledName": "$s23RookConnectTransmission0C8IOSClassC4testyyF",
+            "moduleName": "RookConnectTransmission",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "diableTest",
+            "printedName": "diableTest()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookConnectTransmission@objc(cs)TransmissionIOSClass(im)diableTest",
+            "mangledName": "$s23RookConnectTransmission0C8IOSClassC10diableTestyyF",
+            "moduleName": "RookConnectTransmission",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@RookConnectTransmission@objc(cs)TransmissionIOSClass",
+        "mangledName": "$s23RookConnectTransmission0C8IOSClassC",
+        "moduleName": "RookConnectTransmission",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookConnectTransmission",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -11036,6 +11264,57 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookHrGranularTransmissionDTO",
+                "printedName": "RookConnectTransmission.RookHrGranularTransmissionDTO",
+                "usr": "s:23RookConnectTransmission0a10HrGranularC3DTOV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23RookConnectTransmission0a10HrGranularC3DTOV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s23RookConnectTransmission0a10HrGranularC3DTOV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23RookConnectTransmission0a10HrGranularC3DTOV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s23RookConnectTransmission0a10HrGranularC3DTOV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -11044,6 +11323,22 @@
         "moduleName": "RookConnectTransmission",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -15285,6 +15580,57 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookHydratationAmountGranularDTO",
+                "printedName": "RookConnectTransmission.RookHydratationAmountGranularDTO",
+                "usr": "s:23RookConnectTransmission0A28HydratationAmountGranularDTOV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23RookConnectTransmission0A28HydratationAmountGranularDTOV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s23RookConnectTransmission0A28HydratationAmountGranularDTOV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23RookConnectTransmission0A28HydratationAmountGranularDTOV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s23RookConnectTransmission0A28HydratationAmountGranularDTOV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -15293,6 +15639,22 @@
         "moduleName": "RookConnectTransmission",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -18327,6 +18689,43 @@
             "moduleName": "RookConnectTransmission"
           },
           {
+            "kind": "Var",
+            "name": "patch",
+            "printedName": "patch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookConnectTransmission.HTTPMethod.Type) -> RookConnectTransmission.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "RookConnectTransmission.HTTPMethod",
+                    "usr": "s:23RookConnectTransmission10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookConnectTransmission.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "RookConnectTransmission.HTTPMethod",
+                        "usr": "s:23RookConnectTransmission10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23RookConnectTransmission10HTTPMethodO5patchyA2CmF",
+            "mangledName": "$s23RookConnectTransmission10HTTPMethodO5patchyA2CmF",
+            "moduleName": "RookConnectTransmission"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -18598,6 +18997,57 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookHrvSdnnGranularTransmisisonDTO",
+                "printedName": "RookConnectTransmission.RookHrvSdnnGranularTransmisisonDTO",
+                "usr": "s:23RookConnectTransmission0A30HrvSdnnGranularTransmisisonDTOV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23RookConnectTransmission0A30HrvSdnnGranularTransmisisonDTOV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s23RookConnectTransmission0A30HrvSdnnGranularTransmisisonDTOV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23RookConnectTransmission0A30HrvSdnnGranularTransmisisonDTOV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s23RookConnectTransmission0A30HrvSdnnGranularTransmisisonDTOV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -18606,6 +19056,22 @@
         "moduleName": "RookConnectTransmission",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -20410,6 +20876,57 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookBloodPressureGranularSystolicDiastolicBpNumberDTO",
+                "printedName": "RookConnectTransmission.RookBloodPressureGranularSystolicDiastolicBpNumberDTO",
+                "usr": "s:23RookConnectTransmission0A49BloodPressureGranularSystolicDiastolicBpNumberDTOV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23RookConnectTransmission0A49BloodPressureGranularSystolicDiastolicBpNumberDTOV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s23RookConnectTransmission0A49BloodPressureGranularSystolicDiastolicBpNumberDTOV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23RookConnectTransmission0A49BloodPressureGranularSystolicDiastolicBpNumberDTOV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s23RookConnectTransmission0A49BloodPressureGranularSystolicDiastolicBpNumberDTOV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -20418,6 +20935,22 @@
         "moduleName": "RookConnectTransmission",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -26045,6 +26578,57 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookTemperatureGranularTransmissionDTO",
+                "printedName": "RookConnectTransmission.RookTemperatureGranularTransmissionDTO",
+                "usr": "s:23RookConnectTransmission0a19TemperatureGranularC3DTOV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23RookConnectTransmission0a19TemperatureGranularC3DTOV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s23RookConnectTransmission0a19TemperatureGranularC3DTOV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23RookConnectTransmission0a19TemperatureGranularC3DTOV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s23RookConnectTransmission0a19TemperatureGranularC3DTOV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -26053,6 +26637,22 @@
         "moduleName": "RookConnectTransmission",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -39152,6 +39752,57 @@
             ]
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookBodyDataTransmissionDTO",
+                "printedName": "RookConnectTransmission.RookBodyDataTransmissionDTO",
+                "usr": "s:23RookConnectTransmission0a8BodyDataC3DTOV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23RookConnectTransmission0a8BodyDataC3DTOV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s23RookConnectTransmission0a8BodyDataC3DTOV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23RookConnectTransmission0a8BodyDataC3DTOV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s23RookConnectTransmission0a8BodyDataC3DTOV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "TypeDecl",
             "name": "RookBodyDataTransmissionDTOBuilder",
             "printedName": "RookBodyDataTransmissionDTOBuilder",
@@ -40459,6 +41110,22 @@
         "moduleName": "RookConnectTransmission",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -49436,6 +50103,57 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookTemperatureTransmissionDTO",
+                "printedName": "RookConnectTransmission.RookTemperatureTransmissionDTO",
+                "usr": "s:23RookConnectTransmission0a11TemperatureC3DTOV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23RookConnectTransmission0a11TemperatureC3DTOV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s23RookConnectTransmission0a11TemperatureC3DTOV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23RookConnectTransmission0a11TemperatureC3DTOV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s23RookConnectTransmission0a11TemperatureC3DTOV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -49444,6 +50162,22 @@
         "moduleName": "RookConnectTransmission",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -49843,6 +50577,57 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookHydrationPercentageGranularDTO",
+                "printedName": "RookConnectTransmission.RookHydrationPercentageGranularDTO",
+                "usr": "s:23RookConnectTransmission0A30HydrationPercentageGranularDTOV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23RookConnectTransmission0A30HydrationPercentageGranularDTOV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s23RookConnectTransmission0A30HydrationPercentageGranularDTOV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23RookConnectTransmission0A30HydrationPercentageGranularDTOV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s23RookConnectTransmission0A30HydrationPercentageGranularDTOV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -49851,6 +50636,22 @@
         "moduleName": "RookConnectTransmission",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -49988,6 +50789,57 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookBloodGlucoseGranularTransmissionDTO",
+                "printedName": "RookConnectTransmission.RookBloodGlucoseGranularTransmissionDTO",
+                "usr": "s:23RookConnectTransmission0a20BloodGlucoseGranularC3DTOV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23RookConnectTransmission0a20BloodGlucoseGranularC3DTOV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s23RookConnectTransmission0a20BloodGlucoseGranularC3DTOV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23RookConnectTransmission0a20BloodGlucoseGranularC3DTOV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s23RookConnectTransmission0a20BloodGlucoseGranularC3DTOV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -49996,6 +50848,22 @@
         "moduleName": "RookConnectTransmission",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -64462,6 +65330,57 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookMoodGranularTransmissionDTO",
+                "printedName": "RookConnectTransmission.RookMoodGranularTransmissionDTO",
+                "usr": "s:23RookConnectTransmission0a12MoodGranularC3DTOV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23RookConnectTransmission0a12MoodGranularC3DTOV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s23RookConnectTransmission0a12MoodGranularC3DTOV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23RookConnectTransmission0a12MoodGranularC3DTOV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s23RookConnectTransmission0a12MoodGranularC3DTOV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -64470,6 +65389,22 @@
         "moduleName": "RookConnectTransmission",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -65843,6 +66778,57 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookSaturationGranularDTO",
+                "printedName": "RookConnectTransmission.RookSaturationGranularDTO",
+                "usr": "s:23RookConnectTransmission0A21SaturationGranularDTOV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23RookConnectTransmission0A21SaturationGranularDTOV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s23RookConnectTransmission0A21SaturationGranularDTOV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23RookConnectTransmission0A21SaturationGranularDTOV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s23RookConnectTransmission0A21SaturationGranularDTOV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -65851,6 +66837,22 @@
         "moduleName": "RookConnectTransmission",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -66998,6 +68000,43 @@
             "moduleName": "RookConnectTransmission"
           },
           {
+            "kind": "Var",
+            "name": "emptyData",
+            "printedName": "emptyData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookConnectTransmission.RookTransmissionError.Type) -> RookConnectTransmission.RookTransmissionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookTransmissionError",
+                    "printedName": "RookConnectTransmission.RookTransmissionError",
+                    "usr": "s:23RookConnectTransmission0aC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookConnectTransmission.RookTransmissionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookTransmissionError",
+                        "printedName": "RookConnectTransmission.RookTransmissionError",
+                        "usr": "s:23RookConnectTransmission0aC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23RookConnectTransmission0aC5ErrorO9emptyDatayA2CmF",
+            "mangledName": "$s23RookConnectTransmission0aC5ErrorO9emptyDatayA2CmF",
+            "moduleName": "RookConnectTransmission"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -67531,8 +68570,8 @@
           },
           {
             "kind": "Function",
-            "name": "enqueueBosysummaries",
-            "printedName": "enqueueBosysummaries(with:completion:)",
+            "name": "enqueueBodySummaries",
+            "printedName": "enqueueBodySummaries(with:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -67586,10 +68625,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@RookConnectTransmission@objc(cs)RookBodyTransmissionManager(im)enqueueBosysummariesWith:completion:",
-            "mangledName": "$s23RookConnectTransmission0a4BodyC7ManagerC20enqueueBosysummaries4with10completionyAA0ad4DataC14DTOBuilderObjcC_ySb_s5Error_pSgtctF",
+            "usr": "c:@CM@RookConnectTransmission@objc(cs)RookBodyTransmissionManager(im)enqueueBodySummariesWith:completion:",
+            "mangledName": "$s23RookConnectTransmission0a4BodyC7ManagerC07enqueueD9Summaries4with10completionyAA0ad4DataC14DTOBuilderObjcC_ySb_s5Error_pSgtctF",
             "moduleName": "RookConnectTransmission",
-            "objc_name": "enqueueBosysummariesWith:completion:",
+            "objc_name": "enqueueBodySummariesWith:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -68426,6 +69465,57 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookBloodPressureSytolaticDiastolicDTO",
+                "printedName": "RookConnectTransmission.RookBloodPressureSytolaticDiastolicDTO",
+                "usr": "s:23RookConnectTransmission0A34BloodPressureSytolaticDiastolicDTOV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23RookConnectTransmission0A34BloodPressureSytolaticDiastolicDTOV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s23RookConnectTransmission0A34BloodPressureSytolaticDiastolicDTOV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23RookConnectTransmission0A34BloodPressureSytolaticDiastolicDTOV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s23RookConnectTransmission0A34BloodPressureSytolaticDiastolicDTOV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookConnectTransmission",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -68434,6 +69524,22 @@
         "moduleName": "RookConnectTransmission",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -86559,6 +87665,13 @@
       "value": "\"RookConnectTransmission.RookTransmissionOxygenationDataObjc\""
     },
     {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/Configuration\/DevConfig\/TransmissionIOSClass.swift",
+      "kind": "BooleanLiteral",
+      "offset": 266,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/TransmissionManager\/Entities\/RookTemperatureExtraction.swift",
       "kind": "StringLiteral",
       "offset": 619,
@@ -88255,6 +89368,13 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Service\/HTTPMethod.swift",
       "kind": "StringLiteral",
+      "offset": 223,
+      "length": 7,
+      "value": "\"PATCH\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Service\/HTTPMethod.swift",
+      "kind": "StringLiteral",
       "offset": 181,
       "length": 5,
       "value": "\"GET\""
@@ -88265,6 +89385,13 @@
       "offset": 201,
       "length": 6,
       "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/networking\/Service\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 223,
+      "length": 7,
+      "value": "\"PATCH\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/Data\/TrasnmissionNetworking\/Entities\/CommonGranular\/RookSpeedGranularTransmissionNetworking.swift",
@@ -89130,9 +90257,9 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/Configuration\/RookTransmissionSettings.swift",
       "kind": "StringLiteral",
-      "offset": 627,
+      "offset": 705,
       "length": 8,
-      "value": "\"1.0.14\""
+      "value": "\"1.0.15\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/Data\/TrasnmissionNetworking\/PhysicalNetworking\/Entities\/RookPhysicalSummaryTransmission.swift",
@@ -90552,15 +91679,15 @@
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/RAAuthenticationManager.swift",
       "kind": "StringLiteral",
       "offset": 201,
-      "length": 40,
-      "value": "\"You have to set the configration first\""
+      "length": 41,
+      "value": "\"You have to set the configuration first\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/RAAuthenticationManager.swift",
       "kind": "StringLiteral",
       "offset": 201,
-      "length": 40,
-      "value": "\"You have to set the configration first\""
+      "length": 41,
+      "value": "\"You have to set the configuration first\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/Analitics\/Helpers\/AnalyticsTransmissionConfigurator.swift",
@@ -92175,6 +93302,34 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
+      "offset": 952,
+      "length": 14,
+      "value": "\"enable_steps\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 989,
+      "length": 15,
+      "value": "\"disable_steps\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1029,
+      "length": 17,
+      "value": "\"enable_calories\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1072,
+      "length": 18,
+      "value": "\"disable_calories\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
       "offset": 590,
       "length": 15,
       "value": "\"sleep_summary\""
@@ -92227,6 +93382,34 @@
       "offset": 913,
       "length": 17,
       "value": "\"physical_events\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 952,
+      "length": 14,
+      "value": "\"enable_steps\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 989,
+      "length": 15,
+      "value": "\"disable_steps\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1029,
+      "length": 17,
+      "value": "\"enable_calories\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1072,
+      "length": 18,
+      "value": "\"disable_calories\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Storage\/UserDefaults\/Constants\/TokenDefaultsConstants.swift",
@@ -96704,6 +97887,13 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/TransmissionManager\/RookBodyTransmission\/RookBodyTransmissionManager.swift",
       "kind": "StringLiteral",
+      "offset": 568,
+      "length": 29,
+      "value": "\"There are no data to upload\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/TransmissionManager\/RookBodyTransmission\/RookBodyTransmissionManager.swift",
+      "kind": "StringLiteral",
       "offset": 224,
       "length": 23,
       "value": "\"First set the user id\""
@@ -96742,6 +97932,13 @@
       "offset": 518,
       "length": 30,
       "value": "\"Your client uuid was not set\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/TransmissionManager\/RookBodyTransmission\/RookBodyTransmissionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 568,
+      "length": 29,
+      "value": "\"There are no data to upload\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookConnectTransmission\/Source\/Data\/TrasnmissionNetworking\/PhysicalNetworking\/Entities\/Granular\/RookActivityLevelGranularNetworking.swift",

@@ -78,6 +78,17 @@ import RookUsersSDK
     }
   }
   
+  @objc public func removeUserFromRook(completion: @escaping (Bool, Error?) -> Void) {
+    self.innerConfiguration.removeUserFromRook { result in
+      switch result {
+      case .success(let success):
+        completion(success, nil)
+      case .failure(let failure):
+        completion(false, failure)
+      }
+    }
+  }
+  
   @objc public func syncUserTimeZone(completion: @escaping (Bool, Error?) -> Void) {
     self.innerConfiguration.syncUserTimeZone() { result in
       switch result {

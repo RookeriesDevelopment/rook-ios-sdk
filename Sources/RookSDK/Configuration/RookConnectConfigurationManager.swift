@@ -41,7 +41,8 @@ public final class RookConnectConfigurationManager {
       secretKey: secretKey)
     
     self.extractionConfigurator.setClientUUID(
-      with: clientUUID)
+      with: clientUUID,
+      secretKey: secretKey)
     
     self.transmissionConfigurator.setConfiguration(
       clientUUID: clientUUID,
@@ -89,7 +90,11 @@ public final class RookConnectConfigurationManager {
   }
   
   public func clearUser(completion: @escaping (Result<Bool, Error>) -> Void) {
-    self.userManger.removeUser(compeltion: completion)
+    self.userManger.removeUser(completion: completion)
+  }
+  
+  public func removeUserFromRook(completion: @escaping (Result<Bool, Error>) -> Void) {
+    self.userManger.removeUserFromRook(completion: completion)
   }
   
   public func syncUserTimeZone(completion: @escaping (Result<Bool, Error>) -> Void) {

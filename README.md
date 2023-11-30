@@ -81,6 +81,7 @@ This class conforms the singleton pattern, to access this class use the shared p
 | `func updateUserId(_ id: String, completion: @escaping (Result<Bool, Error>) -> Void)` | It will try to register the user in the rook server and it will be stored, if the registration was successful, after that the sdk upload the current time zone of the device. |
 | `func clearUser(completion: @escaping (Result<Bool, Error>) -> Void)` | Deletes the user stored locally. |
 | `func syncUserTimeZone(completion: @escaping (Result<Bool, Error>) -> Void)`| Uploads the current time zone of the device a user has to added before use this method. |
+| `func removeUserFromRook(completion: @escaping (Result<Bool, Error>) -> Void)` | Removes the user from rook server and deletes the id stored locally. |
 
 ### Permissions
 
@@ -129,3 +130,83 @@ This class contains the methods to synchronize summaries of the user
 | `func syncBodyOxygenationEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the body oxygenation events from the given date. |
 | `func syncPhysicalOxygenationEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the physical oxygenation events from the given date. |
 | `func syncTrainingEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the trainings events from the given date. |
+
+### Variable extraction
+
+`RookVariableExtractionManager` allows to extract the current value of the following health data. to use this class is necessary to import `import RookAppleHealth` in your file.
+
+- step count
+- active calories burner
+
+| Method | Description |
+| ----- | ----- |
+| `func getTodaySteps(completion: @escaping (Result<Int, Error>) -> Void)` | Returns the step count of the current day. |
+| `func getTodayActiveCaloriesBurned(completion: @escaping (Result<Int, Error>) -> Void)` | Returns the active calories burned of the current day. |
+
+### Background active extraction
+
+`RookBackGroundExtraction` allows to read health data while your app is in background. the health data available to read in background is:
+
+- step count.
+- active calories burned.
+
+Health store is an encrypted data base, that means the while the device is lock the background will not be available, once the device is unlocked the back ground will be available.
+
+To configure background delivery you need to follow the steps bellow:
+
+- Add health kit to your project and enable background delivery.
+
+![background_delivery](background_delivery.png)
+
+- In the app delegate of your app add the following method in didFinishLaunchingWithOptions function.
+
+#### Example
+
+``` swift
+
+import RookAppleHealth
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+  
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+                    RookBackGroundExtraction.shared.setBackGroundListeners()
+                   }
+```
+
+- it is recommended to add the callback that notifies when new information is available.
+
+#### Example
+
+``` swift
+
+import RookAppleHealth
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+  
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+                    RookBackGroundExtraction.shared.setBackGroundListeners()
+
+                    RookBackGroundExtraction.shared.handleCaloriesUpdate = { [weak self] caloriesBurned in
+                    // Do something whit the new data
+                    }
+
+                    RookBackGroundExtraction.shared.handleStepsUpdate = { [weak self] steps in
+                    // Do something with the new data
+                    }
+                   }
+```
+
+- To enable or disable the step background read and calories the following methods are available.
+
+| Method | Description |
+| ----- | ----- |
+| `func enableBackGroundForSteps()` | Enables the step background read. |
+| `func enableBackGroundForCalories()` | Enables the calories background read. |
+| `func disableBackGroundForSteps(completion: @escaping (Result<Bool, Error>) -> Void)` | Disables the step background read. |
+| `func disableBackGroundForCalories(completion: @escaping (Result<Bool, Error>) -> Void)` | Disables the calories background read. |
+| `var handleStepsUpdate: ((Int) -> Void)?` | Closure that works as callback to handle the steps updates  |
+| `var handleCaloriesUpdate: ((Int) -> Void)?` | Closure that works as callback to handle the calories updates |
+
+

@@ -31,7 +31,7 @@ import RookConnectTransmission
   }
   
   public func requestUserInfoPermissions(completion: @escaping (Result<Bool, Error>) -> Void) {
-    permissionsManger.requestUserInfoPersmissions(completion: completion)
+    permissionsManger.requestUserInfoPermissions(completion: completion)
   }
   
   public func requestPhysicalPermissions(completion: @escaping (Result<Bool, Error>) -> Void) {
@@ -39,7 +39,7 @@ import RookConnectTransmission
   }
   
   public func requestBodyPermissions(completion: @escaping (Result<Bool, Error>) -> Void) {
-    permissionsManger.requesBodyPermissions(completion: completion)
+    permissionsManger.requestBodyPermissions(completion: completion)
   }
   
   

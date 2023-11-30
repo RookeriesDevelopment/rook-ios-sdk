@@ -303,6 +303,21 @@ public struct RookActivityDataEvent : Swift.Encodable {
   public let activityEnergyPlannedKilojoules: Swift.Int?
   public func encode(to encoder: Swift.Encoder) throws
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RookBackGroundExtraction : ObjectiveC.NSObject {
+  @objc final public let notificationSteps: Swift.String
+  @objc final public let notificationCalories: Swift.String
+  @objc public var handleStepsUpdate: ((Swift.Int) -> Swift.Void)?
+  @objc public var handleCaloriesUpdate: ((Swift.Int) -> Swift.Void)?
+  @objc public static let shared: RookAppleHealth.RookBackGroundExtraction
+  @objc public func setBackGroundListeners()
+  @objc public func enableBackGroundForSteps()
+  public func disableBackGroundForSteps(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  @objc public func disableBackGroundForStepsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc public func enableBackGroundForCalories()
+  public func disableBackGroundForCalories(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  @objc public func disableBackGroundForCaloriesObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc deinit
+}
 public struct RookPositionData : Swift.Encodable {
   public let positionStartLatLngDeg: RookAppleHealth.RookPositionItem?
   public let positionCentroidLatLngDeg: RookAppleHealth.RookPositionItem?
@@ -311,9 +326,15 @@ public struct RookPositionData : Swift.Encodable {
   public let positionPolylineMapDataSummaryString: Swift.String?
   public func encode(to encoder: Swift.Encoder) throws
 }
+@_inheritsConvenienceInitializers @objc public class RookVariableExtractionManager : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  public func getTodaySteps(completion: @escaping (Swift.Result<Swift.Int, Swift.Error>) -> Swift.Void)
+  public func getTodayActiveCaloriesBurned(completion: @escaping (Swift.Result<Swift.Int, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class RookAuthAppleHealth : ObjectiveC.NSObject {
   @objc public static let shared: RookAppleHealth.RookAuthAppleHealth
-  @objc final public func setClientUUID(with uuid: Swift.String)
+  @objc final public func setClientUUID(with uuid: Swift.String, secretKey: Swift.String)
   final public func setEnvironment(_ environment: RookAppleHealth.RookExtractionEnvironment)
   @objc final public func setEnvironmentToSandbox()
   @objc final public func setEnvironmentToProduction()
@@ -352,6 +373,12 @@ public struct RookTemperatureData : Swift.Codable {
   public let temperatureDeltaCelsius: Swift.Int?
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ExtractionIOSClass : ObjectiveC.NSObject {
+  @objc public static var shared: RookAppleHealth.ExtractionIOSClass
+  @objc public func test()
+  @objc public func diableTest()
+  @objc deinit
 }
 public struct RookHeartRateEvent : Swift.Codable {
   public var metadata: RookAppleHealth.RookMetaDataEvent
@@ -583,6 +610,10 @@ public struct UserTimeZone : Swift.Encodable {
   public let offset: Swift.Int
   public func encode(to encoder: Swift.Encoder) throws
 }
+extension RookAppleHealth.RookVariableExtractionManager {
+  @objc dynamic public func getTodaySteps(completion: @escaping (Swift.Int, Swift.Error?) -> Swift.Void)
+  @objc dynamic public func getTodayActiveCaloriesBurned(completion: @escaping (Swift.Int, Swift.Error?) -> Swift.Void)
+}
 public struct RookCadenceGranularItem : Swift.Encodable {
   public let datetime: Foundation.Date
   public let intervalDurationSeconds: Swift.Int
@@ -699,6 +730,7 @@ public struct RookTorqueGranularItem : Swift.Encodable {
 public enum HTTPMethod : Swift.String {
   case get
   case post
+  case patch
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -1152,13 +1184,13 @@ public struct RookDistanceData : Swift.Codable {
   @objc override dynamic public init()
   public func requestAllPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   public func requestSleepPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  public func requestUserInfoPersmissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  public func requestUserInfoPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   public func requestPhysicalPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  public func requesBodyPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  public func requestBodyPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc public func requestAllPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc public func requestSleepPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc public func requestPhysicalPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc public func requesBodyPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc public func requestBodyPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc deinit
 }
 public struct RookLapGranularItem : Swift.Encodable {
@@ -1297,13 +1329,11 @@ public struct Body : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
-public enum ExtractionErrors : Swift.String, Swift.Error {
+public enum ExtractionErrors : Swift.Error {
   case sleepDataEmpty
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
+  case errorRequest(httpCode: Swift.Int)
+  case badRequest
+  case userNotFound
 }
 extension RookAppleHealth.ExtractionErrors : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
@@ -1338,6 +1368,3 @@ extension RookAppleHealth.RookExtractionEnvironment : Swift.Hashable {}
 extension RookAppleHealth.HealthDataType : Swift.Equatable {}
 extension RookAppleHealth.HealthDataType : Swift.Hashable {}
 extension RookAppleHealth.HealthDataType : Swift.RawRepresentable {}
-extension RookAppleHealth.ExtractionErrors : Swift.Equatable {}
-extension RookAppleHealth.ExtractionErrors : Swift.Hashable {}
-extension RookAppleHealth.ExtractionErrors : Swift.RawRepresentable {}
