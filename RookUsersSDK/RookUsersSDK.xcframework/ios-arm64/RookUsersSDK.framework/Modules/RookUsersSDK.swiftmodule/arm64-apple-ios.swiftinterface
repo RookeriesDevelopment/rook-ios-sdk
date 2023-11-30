@@ -10,6 +10,12 @@ import _StringProcessing
 public struct JSONParameterEncoder : RookUsersSDK.ParameterEncoder {
   public static func encode(urlRequest: inout Foundation.URLRequest, with parameters: RookUsersSDK.Parameters) throws
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class UsersIOSClass : ObjectiveC.NSObject {
+  @objc public static var shared: RookUsersSDK.UsersIOSClass
+  @objc public func test()
+  @objc public func diableTest()
+  @objc deinit
+}
 public struct URLParameterEncoder : RookUsersSDK.ParameterEncoder {
   public static func encode(urlRequest: inout Foundation.URLRequest, with parameters: RookUsersSDK.Parameters) throws
 }
@@ -17,7 +23,8 @@ final public class RookUsersManger {
   public init()
   final public func registerRookUser(with id: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func getUserIdStored(completion: @escaping (Swift.Result<Swift.String, Swift.Error>) -> Swift.Void)
-  final public func removeUser(compeltion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func removeUser(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func removeUserFromRook(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 public typealias Parameters = [Swift.String : Any]
@@ -71,6 +78,7 @@ public enum HTTPTask {
 public enum HTTPMethod : Swift.String {
   case get
   case post
+  case patch
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {

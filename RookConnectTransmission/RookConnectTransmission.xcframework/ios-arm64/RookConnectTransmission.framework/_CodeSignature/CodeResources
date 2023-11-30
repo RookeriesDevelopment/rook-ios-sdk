@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RookConnectTransmission-Swift.h</key>
 		<data>
-		zOdrpxiWIm0+I1yfvcYx3kJUJMM=
+		4CjpwsiMv6kP2SrtA6O48WVl+9Q=
 		</data>
 		<key>Headers/RookConnectTransmission.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		CIhBMB1G2ccDJKEMaQUN+bq1wBI=
+		vmngZD3WEWVLT2dI88/x+BySQKg=
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		bmYgUL1g/jsk87FmG1ywwvOql1Q=
+		WNTCCT/UGK6hSsssi3rF0TpWa3M=
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		bmYgUL1g/jsk87FmG1ywwvOql1Q=
+		WNTCCT/UGK6hSsssi3rF0TpWa3M=
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ZPPjDfBn2HMNCJ3Y4P83PwoUM3E=
+		+EzTSJ29Fg7uV0cXU7PR4aUQQhw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,7 +63,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			agF2YHvW0p0pd+Kiv7L8y/dUwGO6/BIGqc6Oc3Q8phA=
+			88lNovPWX7sVhIc78Er1C8C3aIvapdfDbEij5Sd/mJo=
 			</data>
 		</dict>
 		<key>Headers/RookConnectTransmission.h</key>
@@ -77,14 +77,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X4hNwtTBJ7zYUKHseBcm7lRotBrh1wWFQBZzo6oOvYU=
+			l5GmFKqdkVD6cyvU5x/ubwD1LDtdvHcYCp9/U/b8+Vo=
 			</data>
 		</dict>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hF3Z9XU02wBi13p9FXVFwiiR1a/+8ptgGiC/cBvw17U=
+			XRIUG+y+QHLzBuOsVV9wHHPzI1xqx3r54c3cQBz+0VA=
 			</data>
 		</dict>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hF3Z9XU02wBi13p9FXVFwiiR1a/+8ptgGiC/cBvw17U=
+			XRIUG+y+QHLzBuOsVV9wHHPzI1xqx3r54c3cQBz+0VA=
 			</data>
 		</dict>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vM267HKvdqWfkopvFvqRXSezWwZvRrohutDz3/K5ksE=
+			w8I9rdJoC/5wQdsd88YrwHcWdhJ5/yXeisAKWuslyXY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
