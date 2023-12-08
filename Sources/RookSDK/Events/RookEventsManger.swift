@@ -19,6 +19,12 @@ import Foundation
   
   private let syncActivityEventsUseCase: SyncActivityEventsUseCaseProtocol = SyncActivityEventsUseCase()
   
+  private let syncTemperatureUseCase: SyncTemperatureEventsUseCaseProtocol = SyncTemperatureEventsUseCase()
+  
+  private let syncBloodGlucoseUseCase: SyncBloodGlucoseEventsUseCaseProtocol = SyncBloodGlucoseEventsUseCase()
+  
+  private let syncBloodPressureUseCase: SyncBloodPressureEventsUseCaseProtocol = SyncBloodPressureEventsUseCase()
+  
   private let syncPendingEventUseCase: SynPendingEventsUseCaseProtocol = SynPendingEventsUseCase()
   
   // MARK:  Int
@@ -46,6 +52,18 @@ import Foundation
   
   public func syncTrainingEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
     syncActivityEventsUseCase.execute(date: date, completion: completion)
+  }
+  
+  public func syncTemperatureEvents(date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
+    syncTemperatureUseCase.execute(date: date, completion: completion)
+  }
+  
+  public func syncBloodPressureEvents(date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
+    syncBloodPressureUseCase.execute(date: date, completion: completion)
+  }
+  
+  public func syncBloodGlucoseEvents(date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
+    syncBloodGlucoseUseCase.execute(date: date, completion: completion)
   }
   
   public func syncPendingEvents(completion: @escaping (Result<Bool, Error>) -> Void) {

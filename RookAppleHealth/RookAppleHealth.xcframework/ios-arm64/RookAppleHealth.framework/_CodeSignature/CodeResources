@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RookAppleHealth-Swift.h</key>
 		<data>
-		hE44+AZcQq0GFljMoiAN4tSf6Gs=
+		m7P5Qm7MrVw1hw/UNmPU1kC4GEE=
 		</data>
 		<key>Headers/RookAppleHealth.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		qeb//P6JqdkbWFRp5U7S9dmes6E=
+		W5XUoCmBRS4Cx/S+driLUBlTy7k=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		0AL76IwTif1pMGkOlvS1iLvxD+c=
+		oo0z2OijtISCB9TbRWgaL8qzoic=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		0AL76IwTif1pMGkOlvS1iLvxD+c=
+		oo0z2OijtISCB9TbRWgaL8qzoic=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		h771VyAIJPuxPgvX5E3z5zfZhBQ=
+		u3unR0wj0KF/IWAc/iZO4YI36rg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OUrrONSIIPdz0m7TrsRAFtvBwwnv/IFueBNiglitLK8=
+			ODlw8u+ZbryPlOfWEiRrIK5L18hFYGjc+N96pFu/2+I=
 			</data>
 		</dict>
 		<key>Headers/RookAppleHealth.h</key>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l29h4LEd2uJTpYCS6tuiH2UgRA1CLSJ5e/Hg2tLlmgE=
+			DgLqp3hJNC6um4JvQFuQAnwb98eeocivJwvYUq4LoM4=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3YuANkxsIuU1TdnCLG1xPFoke40ltZjokiKzHx/n81w=
+			NNzO7N2WfjlBL+beh+gvsqXnLfbqyD/r2CG6WR8YTHI=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3YuANkxsIuU1TdnCLG1xPFoke40ltZjokiKzHx/n81w=
+			NNzO7N2WfjlBL+beh+gvsqXnLfbqyD/r2CG6WR8YTHI=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Twrcan0LwiwRVqyOIam4gC7MykeSFHn7HuhwU2qWyKk=
+			QwKA43GnkDWm2tbFawLUFN1qF0XRj41c/3FZG3kqeyE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

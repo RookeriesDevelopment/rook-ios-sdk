@@ -64,6 +64,39 @@ extension RookEventsManager {
     }
   }
   
+  @objc public func syncTemperatureEventsObjc(date: Date, completion: @escaping (Bool, Error?) -> Void) {
+    self.syncTemperatureEvents(date: date) { result in
+      switch result {
+      case .success(let success):
+        completion(success, nil)
+      case .failure(let failure):
+        completion(false, failure)
+      }
+    }
+  }
+  
+  @objc public func syncPressureEventsObjc(date: Date, completion: @escaping (Bool, Error?) -> Void) {
+    self.syncBloodPressureEvents(date: date) { result in
+      switch result {
+      case .success(let success):
+        completion(success, nil)
+      case .failure(let failure):
+        completion(false, failure)
+      }
+    }
+  }
+  
+  @objc public func syncGlucoseEventsObjc(date: Date, completion: @escaping (Bool, Error?) -> Void) {
+    self.syncBloodGlucoseEvents(date: date) { result in
+      switch result {
+      case .success(let success):
+        completion(success, nil)
+      case .failure(let failure):
+        completion(false, failure)
+      }
+    }
+  }
+  
   @objc func syncPendingEventsObjc(completion: @escaping (Bool, Error?) -> Void) {
     self.syncPendingEvents() { result in
       switch result {

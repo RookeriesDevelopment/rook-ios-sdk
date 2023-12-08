@@ -362,17 +362,72 @@ SWIFT_CLASS("_TtC23RookConnectTransmission25MoodGranularDataScaleObjc")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC23RookConnectTransmission60PressureAverageSystolicDiastolicGranularItemTransmissionObjc")
+@interface PressureAverageSystolicDiastolicGranularItemTransmissionObjc : NSObject
+@property (nonatomic, readonly) NSInteger systolicBp;
+@property (nonatomic, readonly) NSInteger diastolicBp;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull dateTime;
+- (nonnull instancetype)initWithSystolicBp:(NSInteger)systolicBp diastolicBp:(NSInteger)diastolicBp dateTime:(NSDate * _Nonnull)dateTime OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC23RookConnectTransmission54PressureAverageSystolicDiastolicNumberTransmissionObjc")
+@interface PressureAverageSystolicDiastolicNumberTransmissionObjc : NSObject
+@property (nonatomic, readonly) NSInteger systolicBp;
+@property (nonatomic, readonly) NSInteger diastolicBp;
+- (nonnull instancetype)initWithSystolicBp:(NSInteger)systolicBp diastolicBp:(NSInteger)diastolicBp OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class RookTransmissionActivityEventObjc;
+@class NSString;
 
 SWIFT_CLASS("_TtC23RookConnectTransmission40RookActivityEventTransmissionManagerObjc")
 @interface RookActivityEventTransmissionManagerObjc : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)enqueueActitivtyEvents:(NSArray<RookTransmissionActivityEventObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getActivityEventsWithCompletion:(void (^ _Nonnull)(NSArray<RookTransmissionActivityEventObjc *> * _Nullable, NSError * _Nullable))completion;
+- (void)getActivityEventDictionariesWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)uploadEventsWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
-@class NSString;
+
+SWIFT_CLASS("_TtC23RookConnectTransmission37RookBloodPressureDataTransmissionObjc")
+@interface RookBloodPressureDataTransmissionObjc : NSObject
+@property (nonatomic, strong) PressureAverageSystolicDiastolicNumberTransmissionObjc * _Nullable pressureAverageSystolicDiastolicNumber;
+@property (nonatomic, copy) NSArray<PressureAverageSystolicDiastolicGranularItemTransmissionObjc *> * _Nullable pressureGranularData;
+- (nonnull instancetype)initWithPressureAverageSystolicDiastolicNumber:(PressureAverageSystolicDiastolicNumberTransmissionObjc * _Nullable)pressureAverageSystolicDiastolicNumber pressureGranularData:(NSArray<PressureAverageSystolicDiastolicGranularItemTransmissionObjc *> * _Nullable)pressureGranularData OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class RookBloodPressureEventTransmissionObjc;
+
+SWIFT_CLASS("_TtC23RookConnectTransmission45RookBloodPressureEventTransmissionManagerObjc")
+@interface RookBloodPressureEventTransmissionManagerObjc : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)enqueuePressureEvents:(NSArray<RookBloodPressureEventTransmissionObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)getBloodPressureEventsWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
+- (void)uploadEventsWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
+@class RookTransmissionMetaDataEventObjc;
+@class NSData;
+
+SWIFT_CLASS("_TtC23RookConnectTransmission38RookBloodPressureEventTransmissionObjc")
+@interface RookBloodPressureEventTransmissionObjc : NSObject
+@property (nonatomic, strong) RookTransmissionMetaDataEventObjc * _Nonnull metadata;
+@property (nonatomic, strong) RookBloodPressureDataTransmissionObjc * _Nonnull pressureData;
+@property (nonatomic, readonly, copy) NSData * _Nullable eventData;
+- (nonnull instancetype)initWithMetadata:(RookTransmissionMetaDataEventObjc * _Nonnull)metadata pressureData:(RookBloodPressureDataTransmissionObjc * _Nonnull)pressureData OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class NSNumber;
 @class SaturationGranularDataPercentageObjc;
 @class Vo2GranularDataLiterPerMinObjc;
@@ -402,7 +457,6 @@ SWIFT_CLASS("_TtC23RookConnectTransmission27RookBodyTransmissionManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSData;
 
 @interface RookBodyTransmissionManager (SWIFT_EXTENSION(RookConnectTransmission))
 - (void)enqueueBodySummaryObjcWith:(NSData * _Nonnull)extractionData completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
@@ -415,6 +469,48 @@ SWIFT_CLASS("_TtC23RookConnectTransmission27RookBodyTransmissionManager")
 SWIFT_CLASS("_TtC23RookConnectTransmission54RookBreathingGranularDataBreathsPerMinTransmissionObjc")
 @interface RookBreathingGranularDataBreathsPerMinTransmissionObjc : NSObject
 - (nonnull instancetype)initWithDatetime:(NSDate * _Nonnull)datetime breathsPerMin:(NSInteger)breathsPerMin OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class RookGlucoseGranularItemTransmissionObjc;
+
+SWIFT_CLASS("_TtC23RookConnectTransmission31RookGlucoseDataTransmissionObjc")
+@interface RookGlucoseDataTransmissionObjc : NSObject
+@property (nonatomic) NSInteger glucoseAverageNumber;
+@property (nonatomic, copy) NSArray<RookGlucoseGranularItemTransmissionObjc *> * _Nullable glucoseGranular;
+- (nonnull instancetype)initWithGlucoseAverageNumber:(NSInteger)glucoseAverageNumber glucoseGranular:(NSArray<RookGlucoseGranularItemTransmissionObjc *> * _Nullable)glucoseGranular OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class RookGlucoseEventTransmissionObjc;
+
+SWIFT_CLASS("_TtC23RookConnectTransmission39RookGlucoseEventTransmissionManagerObjc")
+@interface RookGlucoseEventTransmissionManagerObjc : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)enqueueGlucoseEvents:(NSArray<RookGlucoseEventTransmissionObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)getGlucoseEventsWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
+- (void)uploadEventsWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
+
+SWIFT_CLASS("_TtC23RookConnectTransmission32RookGlucoseEventTransmissionObjc")
+@interface RookGlucoseEventTransmissionObjc : NSObject
+@property (nonatomic, strong) RookTransmissionMetaDataEventObjc * _Nonnull metadata;
+@property (nonatomic, strong) RookGlucoseDataTransmissionObjc * _Nonnull glucoseData;
+@property (nonatomic, readonly, copy) NSData * _Nullable dataEvent;
+- (nonnull instancetype)initWithMetadata:(RookTransmissionMetaDataEventObjc * _Nonnull)metadata glucoseData:(RookGlucoseDataTransmissionObjc * _Nonnull)glucoseData OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC23RookConnectTransmission39RookGlucoseGranularItemTransmissionObjc")
+@interface RookGlucoseGranularItemTransmissionObjc : NSObject
+@property (nonatomic, copy) NSDate * _Nonnull dateTime;
+@property (nonatomic) NSInteger glucoseValue;
+- (nonnull instancetype)initWithDateTime:(NSDate * _Nonnull)dateTime glucoseValue:(NSInteger)glucoseValue OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -548,10 +644,53 @@ SWIFT_CLASS("_TtC23RookConnectTransmission44RookSnoringGranularDataSnoreTransmis
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class RookTemperatureTransmissionItemObjc;
+
+SWIFT_CLASS("_TtC23RookConnectTransmission35RookTemperatureDataTransmissionObjc")
+@interface RookTemperatureDataTransmissionObjc : NSObject
+@property (nonatomic, readonly, strong) RookTemperatureTransmissionItemObjc * _Nullable temperatureMinimumCelsius;
+@property (nonatomic, readonly, strong) RookTemperatureTransmissionItemObjc * _Nullable temperatureAvgCelsius;
+@property (nonatomic, readonly, strong) RookTemperatureTransmissionItemObjc * _Nullable temperatureMaxCelsius;
+@property (nonatomic, readonly, copy) NSArray<RookTemperatureGranularDataCelsiusTransmissionObjc *> * _Nullable temperatureGranularDataCelsius;
+@property (nonatomic, readonly, strong) RookTemperatureTransmissionItemObjc * _Nullable temperatureDeltaCelsius;
+- (nonnull instancetype)initWithTemperatureMinimumCelsius:(RookTemperatureTransmissionItemObjc * _Nullable)temperatureMinimumCelsius temperatureAvgCelsius:(RookTemperatureTransmissionItemObjc * _Nullable)temperatureAvgCelsius temperatureMaxCelsius:(RookTemperatureTransmissionItemObjc * _Nullable)temperatureMaxCelsius temperatureGranularDataCelsius:(NSArray<RookTemperatureGranularDataCelsiusTransmissionObjc *> * _Nullable)temperatureGranularDataCelsius temperatureDeltaCelsius:(RookTemperatureTransmissionItemObjc * _Nullable)temperatureDeltaCelsius OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class RookTemperatureEventTransmissionObjc;
+
+SWIFT_CLASS("_TtC23RookConnectTransmission43RookTemperatureEventTransmissionManagerObjc")
+@interface RookTemperatureEventTransmissionManagerObjc : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)enqueueTemperatureEvents:(NSArray<RookTemperatureEventTransmissionObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)getTemperatureEventsWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
+- (void)uploadEventsWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
+
+SWIFT_CLASS("_TtC23RookConnectTransmission36RookTemperatureEventTransmissionObjc")
+@interface RookTemperatureEventTransmissionObjc : NSObject
+@property (nonatomic, strong) RookTransmissionMetaDataEventObjc * _Nonnull metadata;
+@property (nonatomic, strong) RookTemperatureDataTransmissionObjc * _Nonnull temperatureData;
+- (nonnull instancetype)initWithMetadata:(RookTransmissionMetaDataEventObjc * _Nonnull)metadata temperatureData:(RookTemperatureDataTransmissionObjc * _Nonnull)temperatureData OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 SWIFT_CLASS("_TtC23RookConnectTransmission50RookTemperatureGranularDataCelsiusTransmissionObjc")
 @interface RookTemperatureGranularDataCelsiusTransmissionObjc : NSObject
 - (nonnull instancetype)initWithDatetime:(NSDate * _Nonnull)datetime temperatureCelsius:(NSInteger)temperatureCelsius OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC23RookConnectTransmission35RookTemperatureTransmissionItemObjc")
+@interface RookTemperatureTransmissionItemObjc : NSObject
+@property (nonatomic, readonly) NSInteger temperatureCelsius;
+@property (nonatomic, readonly, copy) NSString * _Nonnull measurementType;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -588,7 +727,6 @@ SWIFT_CLASS("_TtC23RookConnectTransmission37RookTransmissionActivityDataEventObj
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class RookTransmissionMetaDataEventObjc;
 @class RookTransmissionCaloriesDataEventObjc;
 @class RookTransmissionDistanceDataObjc;
 @class RookTransmissionHeartRateDataObjc;
@@ -750,7 +888,9 @@ SWIFT_CLASS("_TtC23RookConnectTransmission34RookTransmissionHrEventManagerObjc")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)enqueueHrEvents:(NSArray<RookTransmissionHeartRateEventObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getBodyHrEventsStoredWithCompletion:(void (^ _Nonnull)(NSArray<RookTransmissionHeartRateEventObjc *> * _Nullable, NSError * _Nullable))completion;
+- (void)getBodyHrEventDictionariesStoredWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)getHrEventsStoredWithCompletion:(void (^ _Nonnull)(NSArray<RookTransmissionHeartRateEventObjc *> * _Nullable, NSError * _Nullable))completion;
+- (void)getHrEventDictionariesStoredWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)uploadHrEventsWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
@@ -866,7 +1006,9 @@ SWIFT_CLASS("_TtC23RookConnectTransmission43RookTransmissionOxygenationEventMana
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)enqueueOxygenationEvents:(NSArray<RookTransmissionOxygenationEventObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getBodyOxygenationEventsWithCompletion:(void (^ _Nonnull)(NSArray<RookTransmissionOxygenationEventObjc *> * _Nullable, NSError * _Nullable))completion;
+- (void)getBodyOxygenationEventDictionariesWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)getOxygenationEventsWithCompletion:(void (^ _Nonnull)(NSArray<RookTransmissionOxygenationEventObjc *> * _Nullable, NSError * _Nullable))completion;
+- (void)getOxygenationEventDictionariesWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)uploadEventWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
@@ -1501,17 +1643,72 @@ SWIFT_CLASS("_TtC23RookConnectTransmission25MoodGranularDataScaleObjc")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC23RookConnectTransmission60PressureAverageSystolicDiastolicGranularItemTransmissionObjc")
+@interface PressureAverageSystolicDiastolicGranularItemTransmissionObjc : NSObject
+@property (nonatomic, readonly) NSInteger systolicBp;
+@property (nonatomic, readonly) NSInteger diastolicBp;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull dateTime;
+- (nonnull instancetype)initWithSystolicBp:(NSInteger)systolicBp diastolicBp:(NSInteger)diastolicBp dateTime:(NSDate * _Nonnull)dateTime OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC23RookConnectTransmission54PressureAverageSystolicDiastolicNumberTransmissionObjc")
+@interface PressureAverageSystolicDiastolicNumberTransmissionObjc : NSObject
+@property (nonatomic, readonly) NSInteger systolicBp;
+@property (nonatomic, readonly) NSInteger diastolicBp;
+- (nonnull instancetype)initWithSystolicBp:(NSInteger)systolicBp diastolicBp:(NSInteger)diastolicBp OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class RookTransmissionActivityEventObjc;
+@class NSString;
 
 SWIFT_CLASS("_TtC23RookConnectTransmission40RookActivityEventTransmissionManagerObjc")
 @interface RookActivityEventTransmissionManagerObjc : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)enqueueActitivtyEvents:(NSArray<RookTransmissionActivityEventObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getActivityEventsWithCompletion:(void (^ _Nonnull)(NSArray<RookTransmissionActivityEventObjc *> * _Nullable, NSError * _Nullable))completion;
+- (void)getActivityEventDictionariesWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)uploadEventsWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
-@class NSString;
+
+SWIFT_CLASS("_TtC23RookConnectTransmission37RookBloodPressureDataTransmissionObjc")
+@interface RookBloodPressureDataTransmissionObjc : NSObject
+@property (nonatomic, strong) PressureAverageSystolicDiastolicNumberTransmissionObjc * _Nullable pressureAverageSystolicDiastolicNumber;
+@property (nonatomic, copy) NSArray<PressureAverageSystolicDiastolicGranularItemTransmissionObjc *> * _Nullable pressureGranularData;
+- (nonnull instancetype)initWithPressureAverageSystolicDiastolicNumber:(PressureAverageSystolicDiastolicNumberTransmissionObjc * _Nullable)pressureAverageSystolicDiastolicNumber pressureGranularData:(NSArray<PressureAverageSystolicDiastolicGranularItemTransmissionObjc *> * _Nullable)pressureGranularData OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class RookBloodPressureEventTransmissionObjc;
+
+SWIFT_CLASS("_TtC23RookConnectTransmission45RookBloodPressureEventTransmissionManagerObjc")
+@interface RookBloodPressureEventTransmissionManagerObjc : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)enqueuePressureEvents:(NSArray<RookBloodPressureEventTransmissionObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)getBloodPressureEventsWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
+- (void)uploadEventsWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
+@class RookTransmissionMetaDataEventObjc;
+@class NSData;
+
+SWIFT_CLASS("_TtC23RookConnectTransmission38RookBloodPressureEventTransmissionObjc")
+@interface RookBloodPressureEventTransmissionObjc : NSObject
+@property (nonatomic, strong) RookTransmissionMetaDataEventObjc * _Nonnull metadata;
+@property (nonatomic, strong) RookBloodPressureDataTransmissionObjc * _Nonnull pressureData;
+@property (nonatomic, readonly, copy) NSData * _Nullable eventData;
+- (nonnull instancetype)initWithMetadata:(RookTransmissionMetaDataEventObjc * _Nonnull)metadata pressureData:(RookBloodPressureDataTransmissionObjc * _Nonnull)pressureData OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class NSNumber;
 @class SaturationGranularDataPercentageObjc;
 @class Vo2GranularDataLiterPerMinObjc;
@@ -1541,7 +1738,6 @@ SWIFT_CLASS("_TtC23RookConnectTransmission27RookBodyTransmissionManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSData;
 
 @interface RookBodyTransmissionManager (SWIFT_EXTENSION(RookConnectTransmission))
 - (void)enqueueBodySummaryObjcWith:(NSData * _Nonnull)extractionData completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
@@ -1554,6 +1750,48 @@ SWIFT_CLASS("_TtC23RookConnectTransmission27RookBodyTransmissionManager")
 SWIFT_CLASS("_TtC23RookConnectTransmission54RookBreathingGranularDataBreathsPerMinTransmissionObjc")
 @interface RookBreathingGranularDataBreathsPerMinTransmissionObjc : NSObject
 - (nonnull instancetype)initWithDatetime:(NSDate * _Nonnull)datetime breathsPerMin:(NSInteger)breathsPerMin OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class RookGlucoseGranularItemTransmissionObjc;
+
+SWIFT_CLASS("_TtC23RookConnectTransmission31RookGlucoseDataTransmissionObjc")
+@interface RookGlucoseDataTransmissionObjc : NSObject
+@property (nonatomic) NSInteger glucoseAverageNumber;
+@property (nonatomic, copy) NSArray<RookGlucoseGranularItemTransmissionObjc *> * _Nullable glucoseGranular;
+- (nonnull instancetype)initWithGlucoseAverageNumber:(NSInteger)glucoseAverageNumber glucoseGranular:(NSArray<RookGlucoseGranularItemTransmissionObjc *> * _Nullable)glucoseGranular OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class RookGlucoseEventTransmissionObjc;
+
+SWIFT_CLASS("_TtC23RookConnectTransmission39RookGlucoseEventTransmissionManagerObjc")
+@interface RookGlucoseEventTransmissionManagerObjc : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)enqueueGlucoseEvents:(NSArray<RookGlucoseEventTransmissionObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)getGlucoseEventsWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
+- (void)uploadEventsWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
+
+SWIFT_CLASS("_TtC23RookConnectTransmission32RookGlucoseEventTransmissionObjc")
+@interface RookGlucoseEventTransmissionObjc : NSObject
+@property (nonatomic, strong) RookTransmissionMetaDataEventObjc * _Nonnull metadata;
+@property (nonatomic, strong) RookGlucoseDataTransmissionObjc * _Nonnull glucoseData;
+@property (nonatomic, readonly, copy) NSData * _Nullable dataEvent;
+- (nonnull instancetype)initWithMetadata:(RookTransmissionMetaDataEventObjc * _Nonnull)metadata glucoseData:(RookGlucoseDataTransmissionObjc * _Nonnull)glucoseData OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC23RookConnectTransmission39RookGlucoseGranularItemTransmissionObjc")
+@interface RookGlucoseGranularItemTransmissionObjc : NSObject
+@property (nonatomic, copy) NSDate * _Nonnull dateTime;
+@property (nonatomic) NSInteger glucoseValue;
+- (nonnull instancetype)initWithDateTime:(NSDate * _Nonnull)dateTime glucoseValue:(NSInteger)glucoseValue OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1687,10 +1925,53 @@ SWIFT_CLASS("_TtC23RookConnectTransmission44RookSnoringGranularDataSnoreTransmis
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class RookTemperatureTransmissionItemObjc;
+
+SWIFT_CLASS("_TtC23RookConnectTransmission35RookTemperatureDataTransmissionObjc")
+@interface RookTemperatureDataTransmissionObjc : NSObject
+@property (nonatomic, readonly, strong) RookTemperatureTransmissionItemObjc * _Nullable temperatureMinimumCelsius;
+@property (nonatomic, readonly, strong) RookTemperatureTransmissionItemObjc * _Nullable temperatureAvgCelsius;
+@property (nonatomic, readonly, strong) RookTemperatureTransmissionItemObjc * _Nullable temperatureMaxCelsius;
+@property (nonatomic, readonly, copy) NSArray<RookTemperatureGranularDataCelsiusTransmissionObjc *> * _Nullable temperatureGranularDataCelsius;
+@property (nonatomic, readonly, strong) RookTemperatureTransmissionItemObjc * _Nullable temperatureDeltaCelsius;
+- (nonnull instancetype)initWithTemperatureMinimumCelsius:(RookTemperatureTransmissionItemObjc * _Nullable)temperatureMinimumCelsius temperatureAvgCelsius:(RookTemperatureTransmissionItemObjc * _Nullable)temperatureAvgCelsius temperatureMaxCelsius:(RookTemperatureTransmissionItemObjc * _Nullable)temperatureMaxCelsius temperatureGranularDataCelsius:(NSArray<RookTemperatureGranularDataCelsiusTransmissionObjc *> * _Nullable)temperatureGranularDataCelsius temperatureDeltaCelsius:(RookTemperatureTransmissionItemObjc * _Nullable)temperatureDeltaCelsius OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class RookTemperatureEventTransmissionObjc;
+
+SWIFT_CLASS("_TtC23RookConnectTransmission43RookTemperatureEventTransmissionManagerObjc")
+@interface RookTemperatureEventTransmissionManagerObjc : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)enqueueTemperatureEvents:(NSArray<RookTemperatureEventTransmissionObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)getTemperatureEventsWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
+- (void)uploadEventsWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
+
+SWIFT_CLASS("_TtC23RookConnectTransmission36RookTemperatureEventTransmissionObjc")
+@interface RookTemperatureEventTransmissionObjc : NSObject
+@property (nonatomic, strong) RookTransmissionMetaDataEventObjc * _Nonnull metadata;
+@property (nonatomic, strong) RookTemperatureDataTransmissionObjc * _Nonnull temperatureData;
+- (nonnull instancetype)initWithMetadata:(RookTransmissionMetaDataEventObjc * _Nonnull)metadata temperatureData:(RookTemperatureDataTransmissionObjc * _Nonnull)temperatureData OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 SWIFT_CLASS("_TtC23RookConnectTransmission50RookTemperatureGranularDataCelsiusTransmissionObjc")
 @interface RookTemperatureGranularDataCelsiusTransmissionObjc : NSObject
 - (nonnull instancetype)initWithDatetime:(NSDate * _Nonnull)datetime temperatureCelsius:(NSInteger)temperatureCelsius OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC23RookConnectTransmission35RookTemperatureTransmissionItemObjc")
+@interface RookTemperatureTransmissionItemObjc : NSObject
+@property (nonatomic, readonly) NSInteger temperatureCelsius;
+@property (nonatomic, readonly, copy) NSString * _Nonnull measurementType;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1727,7 +2008,6 @@ SWIFT_CLASS("_TtC23RookConnectTransmission37RookTransmissionActivityDataEventObj
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class RookTransmissionMetaDataEventObjc;
 @class RookTransmissionCaloriesDataEventObjc;
 @class RookTransmissionDistanceDataObjc;
 @class RookTransmissionHeartRateDataObjc;
@@ -1889,7 +2169,9 @@ SWIFT_CLASS("_TtC23RookConnectTransmission34RookTransmissionHrEventManagerObjc")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)enqueueHrEvents:(NSArray<RookTransmissionHeartRateEventObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getBodyHrEventsStoredWithCompletion:(void (^ _Nonnull)(NSArray<RookTransmissionHeartRateEventObjc *> * _Nullable, NSError * _Nullable))completion;
+- (void)getBodyHrEventDictionariesStoredWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)getHrEventsStoredWithCompletion:(void (^ _Nonnull)(NSArray<RookTransmissionHeartRateEventObjc *> * _Nullable, NSError * _Nullable))completion;
+- (void)getHrEventDictionariesStoredWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)uploadHrEventsWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
@@ -2005,7 +2287,9 @@ SWIFT_CLASS("_TtC23RookConnectTransmission43RookTransmissionOxygenationEventMana
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)enqueueOxygenationEvents:(NSArray<RookTransmissionOxygenationEventObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getBodyOxygenationEventsWithCompletion:(void (^ _Nonnull)(NSArray<RookTransmissionOxygenationEventObjc *> * _Nullable, NSError * _Nullable))completion;
+- (void)getBodyOxygenationEventDictionariesWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)getOxygenationEventsWithCompletion:(void (^ _Nonnull)(NSArray<RookTransmissionOxygenationEventObjc *> * _Nullable, NSError * _Nullable))completion;
+- (void)getOxygenationEventDictionariesWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)uploadEventWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
