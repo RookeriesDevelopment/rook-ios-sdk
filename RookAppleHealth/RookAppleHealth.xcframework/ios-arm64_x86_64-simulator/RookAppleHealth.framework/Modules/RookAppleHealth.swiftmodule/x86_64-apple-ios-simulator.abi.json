@@ -3395,6 +3395,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "HealthKit",
         "printedName": "HealthKit",
         "declKind": "Import",
@@ -3589,6 +3599,16 @@
         "printedName": "HealthKit",
         "declKind": "Import",
         "moduleName": "RookAppleHealth"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -4056,6 +4076,899 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "RookGlucoseEvent",
+        "printedName": "RookGlucoseEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "metadata",
+            "printedName": "metadata",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookMetaDataEvent",
+                "printedName": "RookAppleHealth.RookMetaDataEvent",
+                "usr": "s:15RookAppleHealth0A13MetaDataEventV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth0A12GlucoseEventV8metadataAA0a8MetaDataE0Vvp",
+            "mangledName": "$s15RookAppleHealth0A12GlucoseEventV8metadataAA0a8MetaDataE0Vvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookMetaDataEvent",
+                    "printedName": "RookAppleHealth.RookMetaDataEvent",
+                    "usr": "s:15RookAppleHealth0A13MetaDataEventV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A12GlucoseEventV8metadataAA0a8MetaDataE0Vvg",
+                "mangledName": "$s15RookAppleHealth0A12GlucoseEventV8metadataAA0a8MetaDataE0Vvg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookMetaDataEvent",
+                    "printedName": "RookAppleHealth.RookMetaDataEvent",
+                    "usr": "s:15RookAppleHealth0A13MetaDataEventV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A12GlucoseEventV8metadataAA0a8MetaDataE0Vvs",
+                "mangledName": "$s15RookAppleHealth0A12GlucoseEventV8metadataAA0a8MetaDataE0Vvs",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A12GlucoseEventV8metadataAA0a8MetaDataE0VvM",
+                "mangledName": "$s15RookAppleHealth0A12GlucoseEventV8metadataAA0a8MetaDataE0VvM",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "glucoseData",
+            "printedName": "glucoseData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookGlucoseData",
+                "printedName": "RookAppleHealth.RookGlucoseData",
+                "usr": "s:15RookAppleHealth0A11GlucoseDataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth0A12GlucoseEventV11glucoseDataAA0adG0Vvp",
+            "mangledName": "$s15RookAppleHealth0A12GlucoseEventV11glucoseDataAA0adG0Vvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookGlucoseData",
+                    "printedName": "RookAppleHealth.RookGlucoseData",
+                    "usr": "s:15RookAppleHealth0A11GlucoseDataV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A12GlucoseEventV11glucoseDataAA0adG0Vvg",
+                "mangledName": "$s15RookAppleHealth0A12GlucoseEventV11glucoseDataAA0adG0Vvg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookGlucoseData",
+                    "printedName": "RookAppleHealth.RookGlucoseData",
+                    "usr": "s:15RookAppleHealth0A11GlucoseDataV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A12GlucoseEventV11glucoseDataAA0adG0Vvs",
+                "mangledName": "$s15RookAppleHealth0A12GlucoseEventV11glucoseDataAA0adG0Vvs",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A12GlucoseEventV11glucoseDataAA0adG0VvM",
+                "mangledName": "$s15RookAppleHealth0A12GlucoseEventV11glucoseDataAA0adG0VvM",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dataEvent",
+            "printedName": "dataEvent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth0A12GlucoseEventV04dataE010Foundation4DataVSgvp",
+            "mangledName": "$s15RookAppleHealth0A12GlucoseEventV04dataE010Foundation4DataVSgvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A12GlucoseEventV04dataE010Foundation4DataVSgvg",
+                "mangledName": "$s15RookAppleHealth0A12GlucoseEventV04dataE010Foundation4DataVSgvg",
+                "moduleName": "RookAppleHealth",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookGlucoseEvent",
+                "printedName": "RookAppleHealth.RookGlucoseEvent",
+                "usr": "s:15RookAppleHealth0A12GlucoseEventV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15RookAppleHealth0A12GlucoseEventV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15RookAppleHealth0A12GlucoseEventV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookAppleHealth",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15RookAppleHealth0A12GlucoseEventV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s15RookAppleHealth0A12GlucoseEventV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookAppleHealth",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15RookAppleHealth0A12GlucoseEventV",
+        "mangledName": "$s15RookAppleHealth0A12GlucoseEventV",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RookGlucoseData",
+        "printedName": "RookGlucoseData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "glucoseAverageNumber",
+            "printedName": "glucoseAverageNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth0A11GlucoseDataV20glucoseAverageNumberSiSgvp",
+            "mangledName": "$s15RookAppleHealth0A11GlucoseDataV20glucoseAverageNumberSiSgvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A11GlucoseDataV20glucoseAverageNumberSiSgvg",
+                "mangledName": "$s15RookAppleHealth0A11GlucoseDataV20glucoseAverageNumberSiSgvg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A11GlucoseDataV20glucoseAverageNumberSiSgvs",
+                "mangledName": "$s15RookAppleHealth0A11GlucoseDataV20glucoseAverageNumberSiSgvs",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A11GlucoseDataV20glucoseAverageNumberSiSgvM",
+                "mangledName": "$s15RookAppleHealth0A11GlucoseDataV20glucoseAverageNumberSiSgvM",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "glucoseGranular",
+            "printedName": "glucoseGranular",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[RookAppleHealth.RookGlucoseGranularItem]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookAppleHealth.RookGlucoseGranularItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookGlucoseGranularItem",
+                        "printedName": "RookAppleHealth.RookGlucoseGranularItem",
+                        "usr": "s:15RookAppleHealth0A19GlucoseGranularItemV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth0A11GlucoseDataV15glucoseGranularSayAA0adG4ItemVGSgvp",
+            "mangledName": "$s15RookAppleHealth0A11GlucoseDataV15glucoseGranularSayAA0adG4ItemVGSgvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[RookAppleHealth.RookGlucoseGranularItem]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[RookAppleHealth.RookGlucoseGranularItem]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RookGlucoseGranularItem",
+                            "printedName": "RookAppleHealth.RookGlucoseGranularItem",
+                            "usr": "s:15RookAppleHealth0A19GlucoseGranularItemV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A11GlucoseDataV15glucoseGranularSayAA0adG4ItemVGSgvg",
+                "mangledName": "$s15RookAppleHealth0A11GlucoseDataV15glucoseGranularSayAA0adG4ItemVGSgvg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[RookAppleHealth.RookGlucoseGranularItem]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[RookAppleHealth.RookGlucoseGranularItem]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RookGlucoseGranularItem",
+                            "printedName": "RookAppleHealth.RookGlucoseGranularItem",
+                            "usr": "s:15RookAppleHealth0A19GlucoseGranularItemV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A11GlucoseDataV15glucoseGranularSayAA0adG4ItemVGSgvs",
+                "mangledName": "$s15RookAppleHealth0A11GlucoseDataV15glucoseGranularSayAA0adG4ItemVGSgvs",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A11GlucoseDataV15glucoseGranularSayAA0adG4ItemVGSgvM",
+                "mangledName": "$s15RookAppleHealth0A11GlucoseDataV15glucoseGranularSayAA0adG4ItemVGSgvM",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookGlucoseData",
+                "printedName": "RookAppleHealth.RookGlucoseData",
+                "usr": "s:15RookAppleHealth0A11GlucoseDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15RookAppleHealth0A11GlucoseDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15RookAppleHealth0A11GlucoseDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookAppleHealth",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15RookAppleHealth0A11GlucoseDataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s15RookAppleHealth0A11GlucoseDataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookAppleHealth",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15RookAppleHealth0A11GlucoseDataV",
+        "mangledName": "$s15RookAppleHealth0A11GlucoseDataV",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RookGlucoseGranularItem",
+        "printedName": "RookGlucoseGranularItem",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "dateTime",
+            "printedName": "dateTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth0A19GlucoseGranularItemV8dateTime10Foundation4DateVvp",
+            "mangledName": "$s15RookAppleHealth0A19GlucoseGranularItemV8dateTime10Foundation4DateVvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A19GlucoseGranularItemV8dateTime10Foundation4DateVvg",
+                "mangledName": "$s15RookAppleHealth0A19GlucoseGranularItemV8dateTime10Foundation4DateVvg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A19GlucoseGranularItemV8dateTime10Foundation4DateVvs",
+                "mangledName": "$s15RookAppleHealth0A19GlucoseGranularItemV8dateTime10Foundation4DateVvs",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A19GlucoseGranularItemV8dateTime10Foundation4DateVvM",
+                "mangledName": "$s15RookAppleHealth0A19GlucoseGranularItemV8dateTime10Foundation4DateVvM",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "glucoseValue",
+            "printedName": "glucoseValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth0A19GlucoseGranularItemV12glucoseValueSivp",
+            "mangledName": "$s15RookAppleHealth0A19GlucoseGranularItemV12glucoseValueSivp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A19GlucoseGranularItemV12glucoseValueSivg",
+                "mangledName": "$s15RookAppleHealth0A19GlucoseGranularItemV12glucoseValueSivg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A19GlucoseGranularItemV12glucoseValueSivs",
+                "mangledName": "$s15RookAppleHealth0A19GlucoseGranularItemV12glucoseValueSivs",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A19GlucoseGranularItemV12glucoseValueSivM",
+                "mangledName": "$s15RookAppleHealth0A19GlucoseGranularItemV12glucoseValueSivM",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookGlucoseGranularItem",
+                "printedName": "RookAppleHealth.RookGlucoseGranularItem",
+                "usr": "s:15RookAppleHealth0A19GlucoseGranularItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15RookAppleHealth0A19GlucoseGranularItemV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15RookAppleHealth0A19GlucoseGranularItemV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookAppleHealth",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15RookAppleHealth0A19GlucoseGranularItemV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s15RookAppleHealth0A19GlucoseGranularItemV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookAppleHealth",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15RookAppleHealth0A19GlucoseGranularItemV",
+        "mangledName": "$s15RookAppleHealth0A19GlucoseGranularItemV",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "RookSpeedGranularItem",
         "printedName": "RookSpeedGranularItem",
         "children": [
@@ -4232,6 +5145,16 @@
             "usr": "s:SE",
             "mangledName": "$sSE"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -6292,6 +7215,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookExtractionEventManager",
         "printedName": "RookExtractionEventManager",
@@ -6688,6 +7621,210 @@
               "Final",
               "AccessControl"
             ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTemperatureEvents",
+            "printedName": "getTemperatureEvents(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[RookAppleHealth.RookTemperatureEvent], Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[RookAppleHealth.RookTemperatureEvent], Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[RookAppleHealth.RookTemperatureEvent]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RookTemperatureEvent",
+                            "printedName": "RookAppleHealth.RookTemperatureEvent",
+                            "usr": "s:15RookAppleHealth0A16TemperatureEventV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15RookAppleHealth0A22ExtractionEventManagerC20getTemperatureEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0ahE0VGs5Error_pGctF",
+            "mangledName": "$s15RookAppleHealth0A22ExtractionEventManagerC20getTemperatureEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0ahE0VGs5Error_pGctF",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBloodPressureEvents",
+            "printedName": "getBloodPressureEvents(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[RookAppleHealth.RookBloodPressureEvent], Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[RookAppleHealth.RookBloodPressureEvent], Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[RookAppleHealth.RookBloodPressureEvent]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RookBloodPressureEvent",
+                            "printedName": "RookAppleHealth.RookBloodPressureEvent",
+                            "usr": "s:15RookAppleHealth0A18BloodPressureEventV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15RookAppleHealth0A22ExtractionEventManagerC22getBloodPressureEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0ahiE0VGs5Error_pGctF",
+            "mangledName": "$s15RookAppleHealth0A22ExtractionEventManagerC22getBloodPressureEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0ahiE0VGs5Error_pGctF",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getGlucoseEvents",
+            "printedName": "getGlucoseEvents(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[RookAppleHealth.RookGlucoseEvent], Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[RookAppleHealth.RookGlucoseEvent], Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[RookAppleHealth.RookGlucoseEvent]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RookGlucoseEvent",
+                            "printedName": "RookAppleHealth.RookGlucoseEvent",
+                            "usr": "s:15RookAppleHealth0A12GlucoseEventV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15RookAppleHealth0A22ExtractionEventManagerC16getGlucoseEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0ahE0VGs5Error_pGctF",
+            "mangledName": "$s15RookAppleHealth0A22ExtractionEventManagerC16getGlucoseEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0ahE0VGs5Error_pGctF",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -9339,6 +10476,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookExtractionEventManagerObjc",
         "printedName": "RookExtractionEventManagerObjc",
@@ -10428,6 +11575,300 @@
             "mangledName": "$s15RookAppleHealth0A26ExtractionEventManagerObjcC27getActivityEventsDictionary4date10completiony10Foundation4DateV_ySaySDySSypGGSg_s5Error_pSgtctF",
             "moduleName": "RookAppleHealth",
             "objc_name": "getActivityEventsDictionaryWithDate:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBloodPressureEventsDictionary",
+            "printedName": "getBloodPressureEventsDictionary(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([[Swift.String : Any]]?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([[Swift.String : Any]]?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[[Swift.String : Any]]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[[Swift.String : Any]]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookAppleHealth@objc(cs)RookExtractionEventManagerObjc(im)getBloodPressureEventsDictionaryWithDate:completion:",
+            "mangledName": "$s15RookAppleHealth0A26ExtractionEventManagerObjcC32getBloodPressureEventsDictionary4date10completiony10Foundation4DateV_ySaySDySSypGGSg_s5Error_pSgtctF",
+            "moduleName": "RookAppleHealth",
+            "objc_name": "getBloodPressureEventsDictionaryWithDate:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getGlucoseEventsDictionary",
+            "printedName": "getGlucoseEventsDictionary(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([[Swift.String : Any]]?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([[Swift.String : Any]]?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[[Swift.String : Any]]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[[Swift.String : Any]]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookAppleHealth@objc(cs)RookExtractionEventManagerObjc(im)getGlucoseEventsDictionaryWithDate:completion:",
+            "mangledName": "$s15RookAppleHealth0A26ExtractionEventManagerObjcC26getGlucoseEventsDictionary4date10completiony10Foundation4DateV_ySaySDySSypGGSg_s5Error_pSgtctF",
+            "moduleName": "RookAppleHealth",
+            "objc_name": "getGlucoseEventsDictionaryWithDate:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTemperatureEventsDictionary",
+            "printedName": "getTemperatureEventsDictionary(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([[Swift.String : Any]]?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([[Swift.String : Any]]?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[[Swift.String : Any]]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[[Swift.String : Any]]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookAppleHealth@objc(cs)RookExtractionEventManagerObjc(im)getTemperatureEventsDictionaryWithDate:completion:",
+            "mangledName": "$s15RookAppleHealth0A26ExtractionEventManagerObjcC30getTemperatureEventsDictionary4date10completiony10Foundation4DateV_ySaySDySSypGGSg_s5Error_pSgtctF",
+            "moduleName": "RookAppleHealth",
+            "objc_name": "getTemperatureEventsDictionaryWithDate:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -16175,6 +17616,46 @@
           },
           {
             "kind": "Function",
+            "name": "isStepsBackgroundEnable",
+            "printedName": "isStepsBackgroundEnable(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(im)isStepsBackgroundEnableWithCompletion:",
+            "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC23isStepsBackgroundEnable10completionyySbc_tF",
+            "moduleName": "RookAppleHealth",
+            "objc_name": "isStepsBackgroundEnableWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "disableBackGroundForSteps",
             "printedName": "disableBackGroundForSteps(completion:)",
             "children": [
@@ -16301,6 +17782,46 @@
             "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(im)enableBackGroundForCalories",
             "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC06enabledE11ForCaloriesyyF",
             "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isCaloriesBackgroundEnable",
+            "printedName": "isCaloriesBackgroundEnable(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookBackGroundExtraction(im)isCaloriesBackgroundEnableWithCompletion:",
+            "mangledName": "$s15RookAppleHealth0A20BackGroundExtractionC26isCaloriesBackgroundEnable10completionyySbc_tF",
+            "moduleName": "RookAppleHealth",
+            "objc_name": "isCaloriesBackgroundEnableWithCompletion:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -18442,6 +19963,23 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookTemperatureEvent",
         "printedName": "RookTemperatureEvent",
@@ -18617,6 +20155,62 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "dataEvent",
+            "printedName": "dataEvent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth0A16TemperatureEventV04dataE010Foundation4DataVSgvp",
+            "mangledName": "$s15RookAppleHealth0A16TemperatureEventV04dataE010Foundation4DataVSgvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A16TemperatureEventV04dataE010Foundation4DataVSgvg",
+                "mangledName": "$s15RookAppleHealth0A16TemperatureEventV04dataE010Foundation4DataVSgvg",
+                "moduleName": "RookAppleHealth",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -18705,27 +20299,27 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Int?",
+                "printedName": "RookAppleHealth.RookTemperatureExtractionItem?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "RookTemperatureExtractionItem",
+                    "printedName": "RookAppleHealth.RookTemperatureExtractionItem",
+                    "usr": "s:15RookAppleHealth0A25TemperatureExtractionItemV"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15RookAppleHealth0A15TemperatureDataV25temperatureMinimumCelsiusSiSgvp",
-            "mangledName": "$s15RookAppleHealth0A15TemperatureDataV25temperatureMinimumCelsiusSiSgvp",
+            "usr": "s:15RookAppleHealth0A15TemperatureDataV25temperatureMinimumCelsiusAA0aD14ExtractionItemVSgvp",
+            "mangledName": "$s15RookAppleHealth0A15TemperatureDataV25temperatureMinimumCelsiusAA0aD14ExtractionItemVSgvp",
             "moduleName": "RookAppleHealth",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -18736,24 +20330,74 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Int?",
+                    "printedName": "RookAppleHealth.RookTemperatureExtractionItem?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "RookTemperatureExtractionItem",
+                        "printedName": "RookAppleHealth.RookTemperatureExtractionItem",
+                        "usr": "s:15RookAppleHealth0A25TemperatureExtractionItemV"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15RookAppleHealth0A15TemperatureDataV25temperatureMinimumCelsiusSiSgvg",
-                "mangledName": "$s15RookAppleHealth0A15TemperatureDataV25temperatureMinimumCelsiusSiSgvg",
+                "usr": "s:15RookAppleHealth0A15TemperatureDataV25temperatureMinimumCelsiusAA0aD14ExtractionItemVSgvg",
+                "mangledName": "$s15RookAppleHealth0A15TemperatureDataV25temperatureMinimumCelsiusAA0aD14ExtractionItemVSgvg",
                 "moduleName": "RookAppleHealth",
                 "implicit": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "RookAppleHealth.RookTemperatureExtractionItem?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookTemperatureExtractionItem",
+                        "printedName": "RookAppleHealth.RookTemperatureExtractionItem",
+                        "usr": "s:15RookAppleHealth0A25TemperatureExtractionItemV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A15TemperatureDataV25temperatureMinimumCelsiusAA0aD14ExtractionItemVSgvs",
+                "mangledName": "$s15RookAppleHealth0A15TemperatureDataV25temperatureMinimumCelsiusAA0aD14ExtractionItemVSgvs",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A15TemperatureDataV25temperatureMinimumCelsiusAA0aD14ExtractionItemVSgvM",
+                "mangledName": "$s15RookAppleHealth0A15TemperatureDataV25temperatureMinimumCelsiusAA0aD14ExtractionItemVSgvM",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -18765,27 +20409,27 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Int?",
+                "printedName": "RookAppleHealth.RookTemperatureExtractionItem?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "RookTemperatureExtractionItem",
+                    "printedName": "RookAppleHealth.RookTemperatureExtractionItem",
+                    "usr": "s:15RookAppleHealth0A25TemperatureExtractionItemV"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15RookAppleHealth0A15TemperatureDataV21temperatureAvgCelsiusSiSgvp",
-            "mangledName": "$s15RookAppleHealth0A15TemperatureDataV21temperatureAvgCelsiusSiSgvp",
+            "usr": "s:15RookAppleHealth0A15TemperatureDataV21temperatureAvgCelsiusAA0aD14ExtractionItemVSgvp",
+            "mangledName": "$s15RookAppleHealth0A15TemperatureDataV21temperatureAvgCelsiusAA0aD14ExtractionItemVSgvp",
             "moduleName": "RookAppleHealth",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -18796,24 +20440,74 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Int?",
+                    "printedName": "RookAppleHealth.RookTemperatureExtractionItem?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "RookTemperatureExtractionItem",
+                        "printedName": "RookAppleHealth.RookTemperatureExtractionItem",
+                        "usr": "s:15RookAppleHealth0A25TemperatureExtractionItemV"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15RookAppleHealth0A15TemperatureDataV21temperatureAvgCelsiusSiSgvg",
-                "mangledName": "$s15RookAppleHealth0A15TemperatureDataV21temperatureAvgCelsiusSiSgvg",
+                "usr": "s:15RookAppleHealth0A15TemperatureDataV21temperatureAvgCelsiusAA0aD14ExtractionItemVSgvg",
+                "mangledName": "$s15RookAppleHealth0A15TemperatureDataV21temperatureAvgCelsiusAA0aD14ExtractionItemVSgvg",
                 "moduleName": "RookAppleHealth",
                 "implicit": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "RookAppleHealth.RookTemperatureExtractionItem?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookTemperatureExtractionItem",
+                        "printedName": "RookAppleHealth.RookTemperatureExtractionItem",
+                        "usr": "s:15RookAppleHealth0A25TemperatureExtractionItemV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A15TemperatureDataV21temperatureAvgCelsiusAA0aD14ExtractionItemVSgvs",
+                "mangledName": "$s15RookAppleHealth0A15TemperatureDataV21temperatureAvgCelsiusAA0aD14ExtractionItemVSgvs",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A15TemperatureDataV21temperatureAvgCelsiusAA0aD14ExtractionItemVSgvM",
+                "mangledName": "$s15RookAppleHealth0A15TemperatureDataV21temperatureAvgCelsiusAA0aD14ExtractionItemVSgvM",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -18825,27 +20519,27 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Int?",
+                "printedName": "RookAppleHealth.RookTemperatureExtractionItem?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "RookTemperatureExtractionItem",
+                    "printedName": "RookAppleHealth.RookTemperatureExtractionItem",
+                    "usr": "s:15RookAppleHealth0A25TemperatureExtractionItemV"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15RookAppleHealth0A15TemperatureDataV21temperatureMaxCelsiusSiSgvp",
-            "mangledName": "$s15RookAppleHealth0A15TemperatureDataV21temperatureMaxCelsiusSiSgvp",
+            "usr": "s:15RookAppleHealth0A15TemperatureDataV21temperatureMaxCelsiusAA0aD14ExtractionItemVSgvp",
+            "mangledName": "$s15RookAppleHealth0A15TemperatureDataV21temperatureMaxCelsiusAA0aD14ExtractionItemVSgvp",
             "moduleName": "RookAppleHealth",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -18856,24 +20550,74 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Int?",
+                    "printedName": "RookAppleHealth.RookTemperatureExtractionItem?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "RookTemperatureExtractionItem",
+                        "printedName": "RookAppleHealth.RookTemperatureExtractionItem",
+                        "usr": "s:15RookAppleHealth0A25TemperatureExtractionItemV"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15RookAppleHealth0A15TemperatureDataV21temperatureMaxCelsiusSiSgvg",
-                "mangledName": "$s15RookAppleHealth0A15TemperatureDataV21temperatureMaxCelsiusSiSgvg",
+                "usr": "s:15RookAppleHealth0A15TemperatureDataV21temperatureMaxCelsiusAA0aD14ExtractionItemVSgvg",
+                "mangledName": "$s15RookAppleHealth0A15TemperatureDataV21temperatureMaxCelsiusAA0aD14ExtractionItemVSgvg",
                 "moduleName": "RookAppleHealth",
                 "implicit": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "RookAppleHealth.RookTemperatureExtractionItem?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookTemperatureExtractionItem",
+                        "printedName": "RookAppleHealth.RookTemperatureExtractionItem",
+                        "usr": "s:15RookAppleHealth0A25TemperatureExtractionItemV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A15TemperatureDataV21temperatureMaxCelsiusAA0aD14ExtractionItemVSgvs",
+                "mangledName": "$s15RookAppleHealth0A15TemperatureDataV21temperatureMaxCelsiusAA0aD14ExtractionItemVSgvs",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A15TemperatureDataV21temperatureMaxCelsiusAA0aD14ExtractionItemVSgvM",
+                "mangledName": "$s15RookAppleHealth0A15TemperatureDataV21temperatureMaxCelsiusAA0aD14ExtractionItemVSgvM",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -18910,10 +20654,10 @@
             "mangledName": "$s15RookAppleHealth0A15TemperatureDataV019temperatureGranularE7CelsiusSayAA0dgeH0VGSgvp",
             "moduleName": "RookAppleHealth",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -18950,6 +20694,64 @@
                 "moduleName": "RookAppleHealth",
                 "implicit": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[RookAppleHealth.TemperatureGranularDataCelsius]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[RookAppleHealth.TemperatureGranularDataCelsius]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TemperatureGranularDataCelsius",
+                            "printedName": "RookAppleHealth.TemperatureGranularDataCelsius",
+                            "usr": "s:15RookAppleHealth30TemperatureGranularDataCelsiusV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A15TemperatureDataV019temperatureGranularE7CelsiusSayAA0dgeH0VGSgvs",
+                "mangledName": "$s15RookAppleHealth0A15TemperatureDataV019temperatureGranularE7CelsiusSayAA0dgeH0VGSgvs",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A15TemperatureDataV019temperatureGranularE7CelsiusSayAA0dgeH0VGSgvM",
+                "mangledName": "$s15RookAppleHealth0A15TemperatureDataV019temperatureGranularE7CelsiusSayAA0dgeH0VGSgvM",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -18961,27 +20763,27 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Int?",
+                "printedName": "RookAppleHealth.RookTemperatureExtractionItem?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "RookTemperatureExtractionItem",
+                    "printedName": "RookAppleHealth.RookTemperatureExtractionItem",
+                    "usr": "s:15RookAppleHealth0A25TemperatureExtractionItemV"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15RookAppleHealth0A15TemperatureDataV23temperatureDeltaCelsiusSiSgvp",
-            "mangledName": "$s15RookAppleHealth0A15TemperatureDataV23temperatureDeltaCelsiusSiSgvp",
+            "usr": "s:15RookAppleHealth0A15TemperatureDataV23temperatureDeltaCelsiusAA0aD14ExtractionItemVSgvp",
+            "mangledName": "$s15RookAppleHealth0A15TemperatureDataV23temperatureDeltaCelsiusAA0aD14ExtractionItemVSgvp",
             "moduleName": "RookAppleHealth",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -18992,24 +20794,74 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Int?",
+                    "printedName": "RookAppleHealth.RookTemperatureExtractionItem?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "RookTemperatureExtractionItem",
+                        "printedName": "RookAppleHealth.RookTemperatureExtractionItem",
+                        "usr": "s:15RookAppleHealth0A25TemperatureExtractionItemV"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15RookAppleHealth0A15TemperatureDataV23temperatureDeltaCelsiusSiSgvg",
-                "mangledName": "$s15RookAppleHealth0A15TemperatureDataV23temperatureDeltaCelsiusSiSgvg",
+                "usr": "s:15RookAppleHealth0A15TemperatureDataV23temperatureDeltaCelsiusAA0aD14ExtractionItemVSgvg",
+                "mangledName": "$s15RookAppleHealth0A15TemperatureDataV23temperatureDeltaCelsiusAA0aD14ExtractionItemVSgvg",
                 "moduleName": "RookAppleHealth",
                 "implicit": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "RookAppleHealth.RookTemperatureExtractionItem?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookTemperatureExtractionItem",
+                        "printedName": "RookAppleHealth.RookTemperatureExtractionItem",
+                        "usr": "s:15RookAppleHealth0A25TemperatureExtractionItemV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A15TemperatureDataV23temperatureDeltaCelsiusAA0aD14ExtractionItemVSgvs",
+                "mangledName": "$s15RookAppleHealth0A15TemperatureDataV23temperatureDeltaCelsiusAA0aD14ExtractionItemVSgvs",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A15TemperatureDataV23temperatureDeltaCelsiusAA0aD14ExtractionItemVSgvM",
+                "mangledName": "$s15RookAppleHealth0A15TemperatureDataV23temperatureDeltaCelsiusAA0aD14ExtractionItemVSgvM",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -20701,6 +22553,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "HTTPTask",
         "printedName": "HTTPTask",
@@ -22137,6 +23999,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "HealthKit",
         "printedName": "HealthKit",
         "declKind": "Import",
@@ -22288,6 +24160,16 @@
             "usr": "s:15RookAppleHealth16ParameterEncoderP",
             "mangledName": "$s15RookAppleHealth16ParameterEncoderP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -29058,6 +30940,23 @@
       },
       {
         "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -31211,10 +33110,30 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "RookAppleHealth"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -33173,6 +35092,16 @@
         "printedName": "HealthKit",
         "declKind": "Import",
         "moduleName": "RookAppleHealth"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -47438,6 +49367,26 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "AnalyticPlatform",
         "printedName": "AnalyticPlatform",
@@ -49031,6 +50980,26 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "HealthDataType",
         "printedName": "HealthDataType",
@@ -50223,6 +52192,305 @@
             "moduleName": "RookAppleHealth"
           },
           {
+            "kind": "Var",
+            "name": "dietaryEnergyConsumed",
+            "printedName": "dietaryEnergyConsumed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookAppleHealth.HealthDataType.Type) -> RookAppleHealth.HealthDataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HealthDataType",
+                    "printedName": "RookAppleHealth.HealthDataType",
+                    "usr": "s:15RookAppleHealth0C8DataTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookAppleHealth.HealthDataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HealthDataType",
+                        "printedName": "RookAppleHealth.HealthDataType",
+                        "usr": "s:15RookAppleHealth0C8DataTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15RookAppleHealth0C8DataTypeO21dietaryEnergyConsumedyA2CmF",
+            "mangledName": "$s15RookAppleHealth0C8DataTypeO21dietaryEnergyConsumedyA2CmF",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dietaryProtein",
+            "printedName": "dietaryProtein",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookAppleHealth.HealthDataType.Type) -> RookAppleHealth.HealthDataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HealthDataType",
+                    "printedName": "RookAppleHealth.HealthDataType",
+                    "usr": "s:15RookAppleHealth0C8DataTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookAppleHealth.HealthDataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HealthDataType",
+                        "printedName": "RookAppleHealth.HealthDataType",
+                        "usr": "s:15RookAppleHealth0C8DataTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15RookAppleHealth0C8DataTypeO14dietaryProteinyA2CmF",
+            "mangledName": "$s15RookAppleHealth0C8DataTypeO14dietaryProteinyA2CmF",
+            "moduleName": "RookAppleHealth"
+          },
+          {
+            "kind": "Var",
+            "name": "dietarySugar",
+            "printedName": "dietarySugar",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookAppleHealth.HealthDataType.Type) -> RookAppleHealth.HealthDataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HealthDataType",
+                    "printedName": "RookAppleHealth.HealthDataType",
+                    "usr": "s:15RookAppleHealth0C8DataTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookAppleHealth.HealthDataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HealthDataType",
+                        "printedName": "RookAppleHealth.HealthDataType",
+                        "usr": "s:15RookAppleHealth0C8DataTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15RookAppleHealth0C8DataTypeO12dietarySugaryA2CmF",
+            "mangledName": "$s15RookAppleHealth0C8DataTypeO12dietarySugaryA2CmF",
+            "moduleName": "RookAppleHealth"
+          },
+          {
+            "kind": "Var",
+            "name": "dietaryFatTotal",
+            "printedName": "dietaryFatTotal",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookAppleHealth.HealthDataType.Type) -> RookAppleHealth.HealthDataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HealthDataType",
+                    "printedName": "RookAppleHealth.HealthDataType",
+                    "usr": "s:15RookAppleHealth0C8DataTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookAppleHealth.HealthDataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HealthDataType",
+                        "printedName": "RookAppleHealth.HealthDataType",
+                        "usr": "s:15RookAppleHealth0C8DataTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15RookAppleHealth0C8DataTypeO15dietaryFatTotalyA2CmF",
+            "mangledName": "$s15RookAppleHealth0C8DataTypeO15dietaryFatTotalyA2CmF",
+            "moduleName": "RookAppleHealth"
+          },
+          {
+            "kind": "Var",
+            "name": "dietaryCarbohydrates",
+            "printedName": "dietaryCarbohydrates",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookAppleHealth.HealthDataType.Type) -> RookAppleHealth.HealthDataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HealthDataType",
+                    "printedName": "RookAppleHealth.HealthDataType",
+                    "usr": "s:15RookAppleHealth0C8DataTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookAppleHealth.HealthDataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HealthDataType",
+                        "printedName": "RookAppleHealth.HealthDataType",
+                        "usr": "s:15RookAppleHealth0C8DataTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15RookAppleHealth0C8DataTypeO20dietaryCarbohydratesyA2CmF",
+            "mangledName": "$s15RookAppleHealth0C8DataTypeO20dietaryCarbohydratesyA2CmF",
+            "moduleName": "RookAppleHealth"
+          },
+          {
+            "kind": "Var",
+            "name": "dietaryFiber",
+            "printedName": "dietaryFiber",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookAppleHealth.HealthDataType.Type) -> RookAppleHealth.HealthDataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HealthDataType",
+                    "printedName": "RookAppleHealth.HealthDataType",
+                    "usr": "s:15RookAppleHealth0C8DataTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookAppleHealth.HealthDataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HealthDataType",
+                        "printedName": "RookAppleHealth.HealthDataType",
+                        "usr": "s:15RookAppleHealth0C8DataTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15RookAppleHealth0C8DataTypeO12dietaryFiberyA2CmF",
+            "mangledName": "$s15RookAppleHealth0C8DataTypeO12dietaryFiberyA2CmF",
+            "moduleName": "RookAppleHealth"
+          },
+          {
+            "kind": "Var",
+            "name": "dietarySodium",
+            "printedName": "dietarySodium",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookAppleHealth.HealthDataType.Type) -> RookAppleHealth.HealthDataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HealthDataType",
+                    "printedName": "RookAppleHealth.HealthDataType",
+                    "usr": "s:15RookAppleHealth0C8DataTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookAppleHealth.HealthDataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HealthDataType",
+                        "printedName": "RookAppleHealth.HealthDataType",
+                        "usr": "s:15RookAppleHealth0C8DataTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15RookAppleHealth0C8DataTypeO13dietarySodiumyA2CmF",
+            "mangledName": "$s15RookAppleHealth0C8DataTypeO13dietarySodiumyA2CmF",
+            "moduleName": "RookAppleHealth"
+          },
+          {
+            "kind": "Var",
+            "name": "dietaryCholesterol",
+            "printedName": "dietaryCholesterol",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookAppleHealth.HealthDataType.Type) -> RookAppleHealth.HealthDataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HealthDataType",
+                    "printedName": "RookAppleHealth.HealthDataType",
+                    "usr": "s:15RookAppleHealth0C8DataTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookAppleHealth.HealthDataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HealthDataType",
+                        "printedName": "RookAppleHealth.HealthDataType",
+                        "usr": "s:15RookAppleHealth0C8DataTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15RookAppleHealth0C8DataTypeO18dietaryCholesterolyA2CmF",
+            "mangledName": "$s15RookAppleHealth0C8DataTypeO18dietaryCholesterolyA2CmF",
+            "moduleName": "RookAppleHealth"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -50449,6 +52717,16 @@
             "usr": "s:s12IdentifiableP",
             "mangledName": "$ss12IdentifiableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -57952,6 +60230,1062 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "RookBloodPressureEvent",
+        "printedName": "RookBloodPressureEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "metadata",
+            "printedName": "metadata",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookMetaDataEvent",
+                "printedName": "RookAppleHealth.RookMetaDataEvent",
+                "usr": "s:15RookAppleHealth0A13MetaDataEventV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth0A18BloodPressureEventV8metadataAA0a8MetaDataF0Vvp",
+            "mangledName": "$s15RookAppleHealth0A18BloodPressureEventV8metadataAA0a8MetaDataF0Vvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookMetaDataEvent",
+                    "printedName": "RookAppleHealth.RookMetaDataEvent",
+                    "usr": "s:15RookAppleHealth0A13MetaDataEventV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A18BloodPressureEventV8metadataAA0a8MetaDataF0Vvg",
+                "mangledName": "$s15RookAppleHealth0A18BloodPressureEventV8metadataAA0a8MetaDataF0Vvg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookMetaDataEvent",
+                    "printedName": "RookAppleHealth.RookMetaDataEvent",
+                    "usr": "s:15RookAppleHealth0A13MetaDataEventV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A18BloodPressureEventV8metadataAA0a8MetaDataF0Vvs",
+                "mangledName": "$s15RookAppleHealth0A18BloodPressureEventV8metadataAA0a8MetaDataF0Vvs",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A18BloodPressureEventV8metadataAA0a8MetaDataF0VvM",
+                "mangledName": "$s15RookAppleHealth0A18BloodPressureEventV8metadataAA0a8MetaDataF0VvM",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pressureData",
+            "printedName": "pressureData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookBloodPressureData",
+                "printedName": "RookAppleHealth.RookBloodPressureData",
+                "usr": "s:15RookAppleHealth0A17BloodPressureDataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth0A18BloodPressureEventV12pressureDataAA0adeH0Vvp",
+            "mangledName": "$s15RookAppleHealth0A18BloodPressureEventV12pressureDataAA0adeH0Vvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookBloodPressureData",
+                    "printedName": "RookAppleHealth.RookBloodPressureData",
+                    "usr": "s:15RookAppleHealth0A17BloodPressureDataV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A18BloodPressureEventV12pressureDataAA0adeH0Vvg",
+                "mangledName": "$s15RookAppleHealth0A18BloodPressureEventV12pressureDataAA0adeH0Vvg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookBloodPressureData",
+                    "printedName": "RookAppleHealth.RookBloodPressureData",
+                    "usr": "s:15RookAppleHealth0A17BloodPressureDataV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A18BloodPressureEventV12pressureDataAA0adeH0Vvs",
+                "mangledName": "$s15RookAppleHealth0A18BloodPressureEventV12pressureDataAA0adeH0Vvs",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A18BloodPressureEventV12pressureDataAA0adeH0VvM",
+                "mangledName": "$s15RookAppleHealth0A18BloodPressureEventV12pressureDataAA0adeH0VvM",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eventData",
+            "printedName": "eventData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth0A18BloodPressureEventV9eventData10Foundation0H0VSgvp",
+            "mangledName": "$s15RookAppleHealth0A18BloodPressureEventV9eventData10Foundation0H0VSgvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A18BloodPressureEventV9eventData10Foundation0H0VSgvg",
+                "mangledName": "$s15RookAppleHealth0A18BloodPressureEventV9eventData10Foundation0H0VSgvg",
+                "moduleName": "RookAppleHealth",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookBloodPressureEvent",
+                "printedName": "RookAppleHealth.RookBloodPressureEvent",
+                "usr": "s:15RookAppleHealth0A18BloodPressureEventV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15RookAppleHealth0A18BloodPressureEventV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15RookAppleHealth0A18BloodPressureEventV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookAppleHealth",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15RookAppleHealth0A18BloodPressureEventV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s15RookAppleHealth0A18BloodPressureEventV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookAppleHealth",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15RookAppleHealth0A18BloodPressureEventV",
+        "mangledName": "$s15RookAppleHealth0A18BloodPressureEventV",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RookBloodPressureData",
+        "printedName": "RookBloodPressureData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pressureAverageSystolicDiastolicNumber",
+            "printedName": "pressureAverageSystolicDiastolicNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "RookAppleHealth.PressureAverageSystolicDiastolicNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PressureAverageSystolicDiastolicNumber",
+                    "printedName": "RookAppleHealth.PressureAverageSystolicDiastolicNumber",
+                    "usr": "s:15RookAppleHealth38PressureAverageSystolicDiastolicNumberV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth0A17BloodPressureDataV38pressureAverageSystolicDiastolicNumberAA0ehijK0VSgvp",
+            "mangledName": "$s15RookAppleHealth0A17BloodPressureDataV38pressureAverageSystolicDiastolicNumberAA0ehijK0VSgvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "RookAppleHealth.PressureAverageSystolicDiastolicNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PressureAverageSystolicDiastolicNumber",
+                        "printedName": "RookAppleHealth.PressureAverageSystolicDiastolicNumber",
+                        "usr": "s:15RookAppleHealth38PressureAverageSystolicDiastolicNumberV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A17BloodPressureDataV38pressureAverageSystolicDiastolicNumberAA0ehijK0VSgvg",
+                "mangledName": "$s15RookAppleHealth0A17BloodPressureDataV38pressureAverageSystolicDiastolicNumberAA0ehijK0VSgvg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "RookAppleHealth.PressureAverageSystolicDiastolicNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PressureAverageSystolicDiastolicNumber",
+                        "printedName": "RookAppleHealth.PressureAverageSystolicDiastolicNumber",
+                        "usr": "s:15RookAppleHealth38PressureAverageSystolicDiastolicNumberV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A17BloodPressureDataV38pressureAverageSystolicDiastolicNumberAA0ehijK0VSgvs",
+                "mangledName": "$s15RookAppleHealth0A17BloodPressureDataV38pressureAverageSystolicDiastolicNumberAA0ehijK0VSgvs",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A17BloodPressureDataV38pressureAverageSystolicDiastolicNumberAA0ehijK0VSgvM",
+                "mangledName": "$s15RookAppleHealth0A17BloodPressureDataV38pressureAverageSystolicDiastolicNumberAA0ehijK0VSgvM",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pressureGranularData",
+            "printedName": "pressureGranularData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[RookAppleHealth.PressureAverageSystolicDiastolicGranularItem]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookAppleHealth.PressureAverageSystolicDiastolicGranularItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PressureAverageSystolicDiastolicGranularItem",
+                        "printedName": "RookAppleHealth.PressureAverageSystolicDiastolicGranularItem",
+                        "usr": "s:15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth0A17BloodPressureDataV016pressureGranularF0SayAA0e24AverageSystolicDiastolicH4ItemVGSgvp",
+            "mangledName": "$s15RookAppleHealth0A17BloodPressureDataV016pressureGranularF0SayAA0e24AverageSystolicDiastolicH4ItemVGSgvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[RookAppleHealth.PressureAverageSystolicDiastolicGranularItem]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[RookAppleHealth.PressureAverageSystolicDiastolicGranularItem]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PressureAverageSystolicDiastolicGranularItem",
+                            "printedName": "RookAppleHealth.PressureAverageSystolicDiastolicGranularItem",
+                            "usr": "s:15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A17BloodPressureDataV016pressureGranularF0SayAA0e24AverageSystolicDiastolicH4ItemVGSgvg",
+                "mangledName": "$s15RookAppleHealth0A17BloodPressureDataV016pressureGranularF0SayAA0e24AverageSystolicDiastolicH4ItemVGSgvg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[RookAppleHealth.PressureAverageSystolicDiastolicGranularItem]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[RookAppleHealth.PressureAverageSystolicDiastolicGranularItem]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PressureAverageSystolicDiastolicGranularItem",
+                            "printedName": "RookAppleHealth.PressureAverageSystolicDiastolicGranularItem",
+                            "usr": "s:15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A17BloodPressureDataV016pressureGranularF0SayAA0e24AverageSystolicDiastolicH4ItemVGSgvs",
+                "mangledName": "$s15RookAppleHealth0A17BloodPressureDataV016pressureGranularF0SayAA0e24AverageSystolicDiastolicH4ItemVGSgvs",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A17BloodPressureDataV016pressureGranularF0SayAA0e24AverageSystolicDiastolicH4ItemVGSgvM",
+                "mangledName": "$s15RookAppleHealth0A17BloodPressureDataV016pressureGranularF0SayAA0e24AverageSystolicDiastolicH4ItemVGSgvM",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookBloodPressureData",
+                "printedName": "RookAppleHealth.RookBloodPressureData",
+                "usr": "s:15RookAppleHealth0A17BloodPressureDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15RookAppleHealth0A17BloodPressureDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15RookAppleHealth0A17BloodPressureDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookAppleHealth",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15RookAppleHealth0A17BloodPressureDataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s15RookAppleHealth0A17BloodPressureDataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookAppleHealth",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15RookAppleHealth0A17BloodPressureDataV",
+        "mangledName": "$s15RookAppleHealth0A17BloodPressureDataV",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PressureAverageSystolicDiastolicNumber",
+        "printedName": "PressureAverageSystolicDiastolicNumber",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "systolicBp",
+            "printedName": "systolicBp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth38PressureAverageSystolicDiastolicNumberV10systolicBpSiSgvp",
+            "mangledName": "$s15RookAppleHealth38PressureAverageSystolicDiastolicNumberV10systolicBpSiSgvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth38PressureAverageSystolicDiastolicNumberV10systolicBpSiSgvg",
+                "mangledName": "$s15RookAppleHealth38PressureAverageSystolicDiastolicNumberV10systolicBpSiSgvg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "diastolicBp",
+            "printedName": "diastolicBp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth38PressureAverageSystolicDiastolicNumberV11diastolicBpSiSgvp",
+            "mangledName": "$s15RookAppleHealth38PressureAverageSystolicDiastolicNumberV11diastolicBpSiSgvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth38PressureAverageSystolicDiastolicNumberV11diastolicBpSiSgvg",
+                "mangledName": "$s15RookAppleHealth38PressureAverageSystolicDiastolicNumberV11diastolicBpSiSgvg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PressureAverageSystolicDiastolicNumber",
+                "printedName": "RookAppleHealth.PressureAverageSystolicDiastolicNumber",
+                "usr": "s:15RookAppleHealth38PressureAverageSystolicDiastolicNumberV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15RookAppleHealth38PressureAverageSystolicDiastolicNumberV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15RookAppleHealth38PressureAverageSystolicDiastolicNumberV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookAppleHealth",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15RookAppleHealth38PressureAverageSystolicDiastolicNumberV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s15RookAppleHealth38PressureAverageSystolicDiastolicNumberV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookAppleHealth",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15RookAppleHealth38PressureAverageSystolicDiastolicNumberV",
+        "mangledName": "$s15RookAppleHealth38PressureAverageSystolicDiastolicNumberV",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PressureAverageSystolicDiastolicGranularItem",
+        "printedName": "PressureAverageSystolicDiastolicGranularItem",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "systolicBp",
+            "printedName": "systolicBp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV10systolicBpSivp",
+            "mangledName": "$s15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV10systolicBpSivp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV10systolicBpSivg",
+                "mangledName": "$s15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV10systolicBpSivg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "diastolicBp",
+            "printedName": "diastolicBp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV11diastolicBpSivp",
+            "mangledName": "$s15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV11diastolicBpSivp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV11diastolicBpSivg",
+                "mangledName": "$s15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV11diastolicBpSivg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dateTime",
+            "printedName": "dateTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV8dateTime10Foundation4DateVvp",
+            "mangledName": "$s15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV8dateTime10Foundation4DateVvp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV8dateTime10Foundation4DateVvg",
+                "mangledName": "$s15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV8dateTime10Foundation4DateVvg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PressureAverageSystolicDiastolicGranularItem",
+                "printedName": "RookAppleHealth.PressureAverageSystolicDiastolicGranularItem",
+                "usr": "s:15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookAppleHealth",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookAppleHealth",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV",
+        "mangledName": "$s15RookAppleHealth44PressureAverageSystolicDiastolicGranularItemV",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -64492,6 +67826,62 @@
       "value": "\"We could not decode the response.\""
     },
     {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookGlucoseEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 555,
+      "length": 40,
+      "value": "\"blood_glucose_day_avg_mg_per_dL_number\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookGlucoseEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 623,
+      "length": 46,
+      "value": "\"blood_glucose_granular_data_mg_per_dL_number\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookGlucoseEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 555,
+      "length": 40,
+      "value": "\"blood_glucose_day_avg_mg_per_dL_number\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookGlucoseEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 623,
+      "length": 46,
+      "value": "\"blood_glucose_granular_data_mg_per_dL_number\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookGlucoseEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 847,
+      "length": 10,
+      "value": "\"datetime\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookGlucoseEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 882,
+      "length": 25,
+      "value": "\"blood_glucose_mg_per_dL\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookGlucoseEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 847,
+      "length": 10,
+      "value": "\"datetime\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookGlucoseEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 882,
+      "length": 25,
+      "value": "\"blood_glucose_mg_per_dL\""
+    },
+    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Granular\/RookSpeedGranularItem.swift",
       "kind": "StringLiteral",
       "offset": 391,
@@ -66015,14 +69405,14 @@
       "kind": "StringLiteral",
       "offset": 642,
       "length": 8,
-      "value": "\"1.0.19\""
+      "value": "\"1.0.23\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Configuration\/RookAuthAppleHealth.swift",
       "kind": "BooleanLiteral",
       "offset": 696,
-      "length": 4,
-      "value": "true"
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookBodyMetricsEvent.swift",
@@ -66167,70 +69557,70 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookTemperatureEvent.swift",
       "kind": "StringLiteral",
-      "offset": 614,
+      "offset": 748,
       "length": 29,
       "value": "\"temperature_minimum_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookTemperatureEvent.swift",
       "kind": "StringLiteral",
-      "offset": 677,
+      "offset": 811,
       "length": 25,
       "value": "\"temperature_avg_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookTemperatureEvent.swift",
       "kind": "StringLiteral",
-      "offset": 736,
+      "offset": 870,
       "length": 25,
       "value": "\"temperature_max_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookTemperatureEvent.swift",
       "kind": "StringLiteral",
-      "offset": 804,
+      "offset": 938,
       "length": 35,
       "value": "\"temperature_granular_data_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookTemperatureEvent.swift",
       "kind": "StringLiteral",
-      "offset": 875,
+      "offset": 1009,
       "length": 27,
       "value": "\"temperature_delta_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookTemperatureEvent.swift",
       "kind": "StringLiteral",
-      "offset": 614,
+      "offset": 748,
       "length": 29,
       "value": "\"temperature_minimum_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookTemperatureEvent.swift",
       "kind": "StringLiteral",
-      "offset": 677,
+      "offset": 811,
       "length": 25,
       "value": "\"temperature_avg_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookTemperatureEvent.swift",
       "kind": "StringLiteral",
-      "offset": 736,
+      "offset": 870,
       "length": 25,
       "value": "\"temperature_max_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookTemperatureEvent.swift",
       "kind": "StringLiteral",
-      "offset": 804,
+      "offset": 938,
       "length": 35,
       "value": "\"temperature_granular_data_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookTemperatureEvent.swift",
       "kind": "StringLiteral",
-      "offset": 875,
+      "offset": 1009,
       "length": 27,
       "value": "\"temperature_delta_celsius\""
     },
@@ -67960,27 +71350,27 @@
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/AppleHealthErrors.swift",
       "kind": "StringLiteral",
       "offset": 343,
-      "length": 39,
-      "value": "\"The value of the sum queantity is nil\""
+      "length": 38,
+      "value": "\"The value of the sum quantity is nil\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/AppleHealthErrors.swift",
       "kind": "StringLiteral",
-      "offset": 415,
+      "offset": 414,
       "length": 30,
       "value": "\"sample type is not available\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/AppleHealthErrors.swift",
       "kind": "StringLiteral",
-      "offset": 474,
+      "offset": 473,
       "length": 44,
       "value": "\"There was a problem building the predicate\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/AppleHealthErrors.swift",
       "kind": "StringLiteral",
-      "offset": 541,
+      "offset": 540,
       "length": 40,
       "value": "\"Any sample was found for the data type\""
     },
@@ -68002,27 +71392,27 @@
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/AppleHealthErrors.swift",
       "kind": "StringLiteral",
       "offset": 343,
-      "length": 39,
-      "value": "\"The value of the sum queantity is nil\""
+      "length": 38,
+      "value": "\"The value of the sum quantity is nil\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/AppleHealthErrors.swift",
       "kind": "StringLiteral",
-      "offset": 415,
+      "offset": 414,
       "length": 30,
       "value": "\"sample type is not available\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/AppleHealthErrors.swift",
       "kind": "StringLiteral",
-      "offset": 474,
+      "offset": 473,
       "length": 44,
       "value": "\"There was a problem building the predicate\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/AppleHealthErrors.swift",
       "kind": "StringLiteral",
-      "offset": 541,
+      "offset": 540,
       "length": 40,
       "value": "\"Any sample was found for the data type\""
     },
@@ -68519,7 +71909,7 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/DataTypesProvider\/RookAccumulativeProvider\/RookAccumulativeProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 774,
+      "offset": 704,
       "length": 4,
       "value": "true"
     },
@@ -68673,28 +72063,49 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 952,
+      "offset": 957,
+      "length": 25,
+      "value": "\"temperature_body_events\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1006,
+      "length": 28,
+      "value": "\"blood_pressure_body_events\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1057,
+      "length": 27,
+      "value": "\"blood_glucose_body_events\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1106,
       "length": 14,
       "value": "\"enable_steps\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 989,
+      "offset": 1143,
       "length": 15,
       "value": "\"disable_steps\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1029,
+      "offset": 1183,
       "length": 17,
       "value": "\"enable_calories\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1072,
+      "offset": 1226,
       "length": 18,
       "value": "\"disable_calories\""
     },
@@ -68757,28 +72168,49 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 952,
+      "offset": 957,
+      "length": 25,
+      "value": "\"temperature_body_events\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1006,
+      "length": 28,
+      "value": "\"blood_pressure_body_events\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1057,
+      "length": 27,
+      "value": "\"blood_glucose_body_events\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1106,
       "length": 14,
       "value": "\"enable_steps\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 989,
+      "offset": 1143,
       "length": 15,
       "value": "\"disable_steps\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1029,
+      "offset": 1183,
       "length": 17,
       "value": "\"enable_calories\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1072,
+      "offset": 1226,
       "length": 18,
       "value": "\"disable_calories\""
     },
@@ -70563,6 +73995,62 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
+      "offset": 1685,
+      "length": 23,
+      "value": "\"dietaryEnergyConsumed\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 1733,
+      "length": 16,
+      "value": "\"dietaryProtein\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 1772,
+      "length": 14,
+      "value": "\"dietarySugar\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 1812,
+      "length": 17,
+      "value": "\"dietaryFatTotal\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 1860,
+      "length": 22,
+      "value": "\"dietaryCarbohydrates\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 1905,
+      "length": 14,
+      "value": "\"dietaryFiber\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 1943,
+      "length": 15,
+      "value": "\"dietarySodium\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 1987,
+      "length": 20,
+      "value": "\"dietaryCholesterol\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
+      "kind": "StringLiteral",
       "offset": 272,
       "length": 19,
       "value": "\"appleExerciseTime\""
@@ -70776,6 +74264,62 @@
       "offset": 1621,
       "length": 14,
       "value": "\"bloodGlucose\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 1685,
+      "length": 23,
+      "value": "\"dietaryEnergyConsumed\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 1733,
+      "length": 16,
+      "value": "\"dietaryProtein\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 1772,
+      "length": 14,
+      "value": "\"dietarySugar\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 1812,
+      "length": 17,
+      "value": "\"dietaryFatTotal\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 1860,
+      "length": 22,
+      "value": "\"dietaryCarbohydrates\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 1905,
+      "length": 14,
+      "value": "\"dietaryFiber\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 1943,
+      "length": 15,
+      "value": "\"dietarySodium\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 1987,
+      "length": 20,
+      "value": "\"dietaryCholesterol\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Configuration\/Constants\/ConfigurationConstants.swift",
@@ -71658,6 +75202,76 @@
       "offset": 6157,
       "length": 33,
       "value": "\"RookAppleHealth.RookExtractionLapGranularItemObjc\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookBloodPressureEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 777,
+      "length": 13,
+      "value": "\"systolic_bp\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookBloodPressureEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 814,
+      "length": 14,
+      "value": "\"diastolic_bp\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookBloodPressureEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 777,
+      "length": 13,
+      "value": "\"systolic_bp\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookBloodPressureEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 814,
+      "length": 14,
+      "value": "\"diastolic_bp\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookBloodPressureEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 1057,
+      "length": 13,
+      "value": "\"systolic_bp\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookBloodPressureEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 1094,
+      "length": 14,
+      "value": "\"diastolic_bp\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookBloodPressureEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 1129,
+      "length": 10,
+      "value": "\"datetime\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookBloodPressureEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 1057,
+      "length": 13,
+      "value": "\"systolic_bp\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookBloodPressureEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 1094,
+      "length": 14,
+      "value": "\"diastolic_bp\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/Entities\/RookBloodPressureEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 1129,
+      "length": 10,
+      "value": "\"datetime\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Granular\/RookLapGranularItem.swift",

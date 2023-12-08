@@ -309,8 +309,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)setBackGroundListeners;
 - (void)enableBackGroundForSteps;
+- (void)isStepsBackgroundEnableWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 - (void)disableBackGroundForStepsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)enableBackGroundForCalories;
+- (void)isCaloriesBackgroundEnableWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 - (void)disableBackGroundForCaloriesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
@@ -474,6 +476,9 @@ SWIFT_CLASS("_TtC15RookAppleHealth30RookExtractionEventManagerObjc")
 - (void)getPhysicalOxygenationEventsDictionaryWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)getBodyOxygenationEventsDictionaryWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)getActivityEventsDictionaryWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
+- (void)getBloodPressureEventsDictionaryWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
+- (void)getGlucoseEventsDictionaryWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
+- (void)getTemperatureEventsDictionaryWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 @end
 
 

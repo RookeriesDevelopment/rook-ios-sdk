@@ -1,8 +1,19 @@
 # RookSDK
 
+If you’re building a health or fitness application of any kind, you likely know of the power of health user data. You will benefit when integrating it with your application no matter what your use case is: mindfulness or wellness, digital health, or remote care.
+
+Apple Health does not have an API. As no data is stored in the cloud, you need to retrieve it locally from your user's devices. This can be done by implementing Apple HealthKit and all its data retrieval methods into your iOS
+
+RookSDK allows developers to ask their users to access and share their health data through Apple HealthKit
+
 Rook SDK for iOS enables fetch health data from apple health and synchronize it with rook server. It also enables to register a new user and store it locally.
 
 The SDK provides access to apple health data, however, is enabled only after the user's explicit consent. The user can select detailed data sharing settings including witch data type will be read.
+
+## Demo app
+
+To help your implementation here is a demo app that shows you how to configure and use the sdk: https://github.com/RookeriesDevelopment/rook_demo_app_ios_rook_sdk
+
 
 ## Features
 
@@ -14,7 +25,15 @@ The features listed bellow are available to fetch and synchronize:
 - Heart rate events
 - Oxygenation events
 - Activity events
+- Temperature Events
+- Blood Glucose Events
+- Blood Pressure Events
 - Time zone of the device
+- Variable extraction
+- Background active extraction
+
+## Integrating the iOS framework
+----
 
 ## Installation
 
@@ -81,11 +100,14 @@ This class conforms the singleton pattern, to access this class use the shared p
 | `func updateUserId(_ id: String, completion: @escaping (Result<Bool, Error>) -> Void)` | It will try to register the user in the rook server and it will be stored, if the registration was successful, after that the sdk upload the current time zone of the device. |
 | `func clearUser(completion: @escaping (Result<Bool, Error>) -> Void)` | Deletes the user stored locally. |
 | `func syncUserTimeZone(completion: @escaping (Result<Bool, Error>) -> Void)`| Uploads the current time zone of the device a user has to added before use this method. |
-| `func removeUserFromRook(completion: @escaping (Result<Bool, Error>) -> Void)` | Removes the user from rook server and deletes the id stored locally. |
 
-### Permissions
+### Get user authorization
 
-Before synchronize or fetch health date the user has to grand access, the sdk provides `RookConnectPermissionsManager` class to request user's permission. It contains the methods described bellow:
+Before you can retrieve any data, your app needs to be authorized to access Apple Health data by your users. To get authorization, use the authorize method and the corresponding dialogue will be shown on top of your app.
+
+![health_permissions](health_permissions.png)
+
+The sdk provides `RookConnectPermissionsManager` class to request user's permission. It contains the methods described bellow:
 
 | Method | Description |
 | ----- | ----- |
@@ -95,9 +117,7 @@ Before synchronize or fetch health date the user has to grand access, the sdk pr
 | + requestPhysicalPermissions(completion: @escaping (Result<Bool, Error>) -> Void) | Sends a request for the physical data types permissions and displays a view to grand access |
 | + requestBodyPermissions(completion: @escaping (Result<Bool, Error>) -> Void) | Sends a request for the body data type permissions and displays a view to grand access. |
 
-After call any of the above methods a pop up view will display.
-
-![health_permissions](health_permissions.png)
+**Note: The callback of eahc method will return a boolean true if the permission window was successfully presented or false and an optional error if the window was not presented properly. This value does not indicate whether the user actually granted permission. Please keep in mind, that Apple Health does not allow to check the status of permission for types which were requested to be read. If the user does not allow data types reading by mistake or on purpose, it simply appears as if there is no data of the requested type in the HealthKit store. Any further change must be performed by the user through the Apple Health application.**
 
 ### User
 
@@ -111,25 +131,34 @@ The class `RookConnectConfigurationManager` contains two methods related to the 
 | `func clearUser(completion: @escaping (Result<Bool, Error>) -> Void)` | Deletes the user stored locally. |
 | `public func syncUserTimeZone(completion: @escaping (Result<Bool, Error>) -> Void)` | Uploads the current time zone of the device a user has to added before use this method. |
 
+# Manual Sync Data
+
+---
+
 ### RookSummaryManger
 
 This class contains the methods to synchronize summaries of the user
 
 | Method | Description |
 | ----- | ----- |
-| `func syncSleepSummary(form date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronizes the sleep summary from the given date. |
-| `func syncPhysicalSummary(form date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronizes the physical summary from the given date. |
-| `func syncBodySummary(from date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronizes the body summary from the given date. |
+| `func syncSleepSummary(form date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronizes the sleep summary from the given day date. |
+| `func syncPhysicalSummary(form date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronizes the physical summary from the given day date. |
+| `func syncBodySummary(from date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronizes the body summary from the given day date. |
 
 ### RookEventsManager
 
 | Method | Description |
 | ----- | ----- |
-| `func syncBodyHeartRateEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the body heart rate events from the given date. |
-| `func syncPhysicalHeartRateEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the physical heart rate events from the given date. |
-| `func syncBodyOxygenationEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the body oxygenation events from the given date. |
-| `func syncPhysicalOxygenationEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the physical oxygenation events from the given date. |
-| `func syncTrainingEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the trainings events from the given date. |
+| `func syncBodyHeartRateEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the body heart rate events from the given day date. |
+| `func syncPhysicalHeartRateEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the physical heart rate events from the given day date. |
+| `func syncBodyOxygenationEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the body oxygenation events from the given day date. |
+| `func syncPhysicalOxygenationEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the physical oxygenation events from the given day date. |
+| `func syncTrainingEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the trainings events from the given day date. |
+| `func syncTemperatureEvents(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the temperature events from the given day date. |
+| `func syncBloodPressureEvents(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the blood pressure events from the given day date. |
+| `func syncBloodGlucoseEvents(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the blood glucose events from the given day date. |
+
+**Note: We highly advise to not retrieve more than 14 days of EPOCH data and 30 days of Daily data for more than one data type. Due to the expected data, the data retrieval will require extensive resources and will effect the user experience.**
 
 ### Variable extraction
 
@@ -150,11 +179,12 @@ This class contains the methods to synchronize summaries of the user
 - step count.
 - active calories burned.
 
-Health store is an encrypted data base, that means the while the device is lock the background will not be available, once the device is unlocked the back ground will be available.
+**Note: Please note that for security, iOS devices encrypt the HealthKit storage when users lock their devices. As a result, apps may not be able to read data from Apple Health when it runs in the background. Please refer to the official documentation for more information.**
 
 To configure background delivery you need to follow the steps bellow:
 
 - Add health kit to your project and enable background delivery.
+- Add Background modes and enable Background fetch.
 
 ![background_delivery](background_delivery.png)
 
@@ -206,7 +236,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 | `func enableBackGroundForCalories()` | Enables the calories background read. |
 | `func disableBackGroundForSteps(completion: @escaping (Result<Bool, Error>) -> Void)` | Disables the step background read. |
 | `func disableBackGroundForCalories(completion: @escaping (Result<Bool, Error>) -> Void)` | Disables the calories background read. |
-| `var handleStepsUpdate: ((Int) -> Void)?` | Closure that works as callback to handle the steps updates  |
-| `var handleCaloriesUpdate: ((Int) -> Void)?` | Closure that works as callback to handle the calories updates |
-
+| `func isCaloriesBackgroundEnable(completion: @escaping (Bool) -> Void)` | Returns in the completion block a boolean value indicating if the active calories extraction is enable. |
+| `func isStepsBackgroundEnable(completion: @escaping (Bool) -> Void)` | Returns in the completion block a boolean value indicating if the steps extraction is enable. |
+| `var handleStepsUpdate: ((Int) -> Void)?` | Closure that handles the today step count update |
+| `var handleCaloriesUpdate: ((Int) -> Void)?` | Closure that handles the today active calories count update. |
 
