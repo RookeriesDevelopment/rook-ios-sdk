@@ -37,6 +37,8 @@ The features listed bellow are available to fetch and synchronize:
 
 ## Installation
 
+**The SDK requires Xcode 14.0.1 or higher. To run your app using the Rook SDK on a connected device with iOS 16.2 or later you need Xcode 14.2 or higher.**
+
 To add a package dependency to your Xcode project, select File > Swift Packages > Add Package Dependency and enter the repository URL [rook SDK](https://github.com/RookeriesDevelopment/rook-ios-sdk)
 
 ## Configuration
@@ -99,6 +101,7 @@ This class conforms the singleton pattern, to access this class use the shared p
 | `func initRook()` | Initializes the rook sdk |
 | `func updateUserId(_ id: String, completion: @escaping (Result<Bool, Error>) -> Void)` | It will try to register the user in the rook server and it will be stored, if the registration was successful, after that the sdk upload the current time zone of the device. |
 | `func clearUser(completion: @escaping (Result<Bool, Error>) -> Void)` | Deletes the user stored locally. |
+| `func removeUserFromRook(completion: @escaping (Result<Bool, Error>) -> Void)` |  Removes the authorization od the user to upload data from apple health and deletes the user id stored locally. |
 | `func syncUserTimeZone(completion: @escaping (Result<Bool, Error>) -> Void)`| Uploads the current time zone of the device a user has to added before use this method. |
 
 ### Get user authorization
@@ -111,13 +114,13 @@ The sdk provides `RookConnectPermissionsManager` class to request user's permiss
 
 | Method | Description |
 | ----- | ----- |
-|  + requestAllPermissions(completion: @escaping (Result<Bool, Error>) -> Void)| Sends a request for all the health permissions and displays a view to grand access |
-| + requestSleepPermissions(completion: @escaping (Result<Bool, Error>) -> Void) | Sends a request for the sleep data types permissions and displays a view to grand access. |
-| + requestUserInfoPermissions(completion: @escaping (Result<Bool, Error>) -> Void) | Sends a request for the user information permissions. |
-| + requestPhysicalPermissions(completion: @escaping (Result<Bool, Error>) -> Void) | Sends a request for the physical data types permissions and displays a view to grand access |
-| + requestBodyPermissions(completion: @escaping (Result<Bool, Error>) -> Void) | Sends a request for the body data type permissions and displays a view to grand access. |
+|  + `requestAllPermissions(completion: @escaping (Result<Bool, Error>) -> Void)`| Sends a request for all the health permissions and displays a view to grand access |
+| + `requestSleepPermissions(completion: @escaping (Result<Bool, Error>) -> Void)` | Sends a request for the sleep data types permissions and displays a view to grand access. |
+| + `requestUserInfoPermissions(completion: @escaping (Result<Bool, Error>) -> Void)` | Sends a request for the user information permissions. |
+| + `requestPhysicalPermissions(completion: @escaping (Result<Bool, Error>) -> Void)` | Sends a request for the physical data types permissions and displays a view to grand access |
+| + `requestBodyPermissions(completion: @escaping (Result<Bool, Error>) -> Void)` | Sends a request for the body data type permissions and displays a view to grand access. |
 
-**Note: The callback of eahc method will return a boolean true if the permission window was successfully presented or false and an optional error if the window was not presented properly. This value does not indicate whether the user actually granted permission. Please keep in mind, that Apple Health does not allow to check the status of permission for types which were requested to be read. If the user does not allow data types reading by mistake or on purpose, it simply appears as if there is no data of the requested type in the HealthKit store. Any further change must be performed by the user through the Apple Health application.**
+**Note: The callback of each method will return a boolean true if the permission window was successfully presented or false and an optional error if the window was not presented properly. This value does not indicate whether the user actually granted permission. Please keep in mind, that Apple Health does not allow to check the status of permission for types which were requested to be read. If the user does not allow data types reading by mistake or on purpose, it simply appears as if there is no data of the requested type in the Heathkit store. Any further change must be performed by the user through the Apple Health application.**
 
 ### User
 
@@ -141,6 +144,7 @@ This class contains the methods to synchronize summaries of the user
 
 | Method | Description |
 | ----- | ----- |
+| `func syncYesterdaySummaries(completion: @escaping () -> Void)` | Synchronizes the sleep, physical and body summaries of the day before of the device's current date. |
 | `func syncSleepSummary(form date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronizes the sleep summary from the given day date. |
 | `func syncPhysicalSummary(form date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronizes the physical summary from the given day date. |
 | `func syncBodySummary(from date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronizes the body summary from the given day date. |
@@ -149,6 +153,7 @@ This class contains the methods to synchronize summaries of the user
 
 | Method | Description |
 | ----- | ----- |
+| `func syncYesterdayEvents(completion: @escaping () -> Void)` | Synchronized all the events of the day before of the device's current date |
 | `func syncBodyHeartRateEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the body heart rate events from the given day date. |
 | `func syncPhysicalHeartRateEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the physical heart rate events from the given day date. |
 | `func syncBodyOxygenationEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)` | Synchronized all the body oxygenation events from the given day date. |

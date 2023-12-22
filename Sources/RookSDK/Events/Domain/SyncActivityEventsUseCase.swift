@@ -17,13 +17,13 @@ final class SyncActivityEventsUseCase: SyncActivityEventsUseCaseProtocol {
   
   // MARK:  Properties
   
-  private let extactionManager: RookExtractionEventManager = RookExtractionEventManager()
+  private let extractionManager: RookExtractionEventManager = RookExtractionEventManager()
   private let transmissionManger: RookActivityEventTransmissionManager = RookActivityEventTransmissionManager()
   
   // MARK:  Helpers
   
   func  execute(date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
-    extactionManager.getActivityEvents(date: date) { [weak self] result in
+    extractionManager.getActivityEvents(date: date) { [weak self] result in
       switch result {
       case .success(let events):
         self?.handleEvents(events, completion: completion)

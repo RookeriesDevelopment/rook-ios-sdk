@@ -7085,6 +7085,117 @@
             "moduleName": "RookAppleHealth"
           },
           {
+            "kind": "Var",
+            "name": "temperatureEvent",
+            "printedName": "temperatureEvent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookAppleHealth.RookDataType.Type) -> RookAppleHealth.RookDataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookDataType",
+                    "printedName": "RookAppleHealth.RookDataType",
+                    "usr": "s:15RookAppleHealth0A8DataTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookAppleHealth.RookDataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookDataType",
+                        "printedName": "RookAppleHealth.RookDataType",
+                        "usr": "s:15RookAppleHealth0A8DataTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15RookAppleHealth0A8DataTypeO16temperatureEventyA2CmF",
+            "mangledName": "$s15RookAppleHealth0A8DataTypeO16temperatureEventyA2CmF",
+            "moduleName": "RookAppleHealth"
+          },
+          {
+            "kind": "Var",
+            "name": "bloodGlucoseEvent",
+            "printedName": "bloodGlucoseEvent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookAppleHealth.RookDataType.Type) -> RookAppleHealth.RookDataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookDataType",
+                    "printedName": "RookAppleHealth.RookDataType",
+                    "usr": "s:15RookAppleHealth0A8DataTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookAppleHealth.RookDataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookDataType",
+                        "printedName": "RookAppleHealth.RookDataType",
+                        "usr": "s:15RookAppleHealth0A8DataTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15RookAppleHealth0A8DataTypeO17bloodGlucoseEventyA2CmF",
+            "mangledName": "$s15RookAppleHealth0A8DataTypeO17bloodGlucoseEventyA2CmF",
+            "moduleName": "RookAppleHealth"
+          },
+          {
+            "kind": "Var",
+            "name": "bloodPressureEvent",
+            "printedName": "bloodPressureEvent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookAppleHealth.RookDataType.Type) -> RookAppleHealth.RookDataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookDataType",
+                    "printedName": "RookAppleHealth.RookDataType",
+                    "usr": "s:15RookAppleHealth0A8DataTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookAppleHealth.RookDataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookDataType",
+                        "printedName": "RookAppleHealth.RookDataType",
+                        "usr": "s:15RookAppleHealth0A8DataTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15RookAppleHealth0A8DataTypeO18bloodPressureEventyA2CmF",
+            "mangledName": "$s15RookAppleHealth0A8DataTypeO18bloodPressureEventyA2CmF",
+            "moduleName": "RookAppleHealth"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -11085,6 +11196,99 @@
             "declKind": "Func",
             "usr": "c:@M@RookAppleHealth@objc(cs)RookExtractionEventManagerObjc(im)getLastExtractionDateOfPhysicalOxygenationEvents",
             "mangledName": "$s15RookAppleHealth0A26ExtractionEventManagerObjcC07getLastD31DateOfPhysicalOxygenationEvents10Foundation0J0VSgyF",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getLastExtractionDateOfTemperatureEvents",
+            "printedName": "getLastExtractionDateOfTemperatureEvents()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookExtractionEventManagerObjc(im)getLastExtractionDateOfTemperatureEvents",
+            "mangledName": "$s15RookAppleHealth0A26ExtractionEventManagerObjcC07getLastD23DateOfTemperatureEvents10Foundation0J0VSgyF",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getLastExtractionDateOfBloodPressureEvents",
+            "printedName": "getLastExtractionDateOfBloodPressureEvents()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookExtractionEventManagerObjc(im)getLastExtractionDateOfBloodPressureEvents",
+            "mangledName": "$s15RookAppleHealth0A26ExtractionEventManagerObjcC07getLastD25DateOfBloodPressureEvents10Foundation0J0VSgyF",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getLastExtractionDateOfBloodGlucoseEvents",
+            "printedName": "getLastExtractionDateOfBloodGlucoseEvents()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookExtractionEventManagerObjc(im)getLastExtractionDateOfBloodGlucoseEvents",
+            "mangledName": "$s15RookAppleHealth0A26ExtractionEventManagerObjcC07getLastD24DateOfBloodGlucoseEvents10Foundation0J0VSgyF",
             "moduleName": "RookAppleHealth",
             "declAttributes": [
               "Final",
@@ -68248,6 +68452,27 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
+      "offset": 777,
+      "length": 34,
+      "value": "\"rook_last_temperature_extraction\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 839,
+      "length": 36,
+      "value": "\"rook_last_blood_glucose_extraction\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 904,
+      "length": 37,
+      "value": "\"rook_last_blood_pressure_extraction\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
+      "kind": "StringLiteral",
       "offset": 193,
       "length": 33,
       "value": "\"rook_last_sleep_date_extraction\""
@@ -68307,6 +68532,27 @@
       "offset": 719,
       "length": 31,
       "value": "\"rook_last_activity_extraction\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 777,
+      "length": 34,
+      "value": "\"rook_last_temperature_extraction\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 839,
+      "length": 36,
+      "value": "\"rook_last_blood_glucose_extraction\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 904,
+      "length": 37,
+      "value": "\"rook_last_blood_pressure_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/UserInfoProvider\/Entities\/RookUserInfoData.swift",
@@ -69405,7 +69651,7 @@
       "kind": "StringLiteral",
       "offset": 642,
       "length": 8,
-      "value": "\"1.0.23\""
+      "value": "\"1.0.25\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Configuration\/RookAuthAppleHealth.swift",
@@ -71377,6 +71623,13 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/AppleHealthErrors.swift",
       "kind": "StringLiteral",
+      "offset": 600,
+      "length": 78,
+      "value": "\"There is no data for this summary or the user has denied all the permissions\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/AppleHealthErrors.swift",
+      "kind": "StringLiteral",
       "offset": 204,
       "length": 48,
       "value": "\"apple health kit is not avaible un your device\""
@@ -71415,6 +71668,13 @@
       "offset": 540,
       "length": 40,
       "value": "\"Any sample was found for the data type\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/AppleHealthErrors.swift",
+      "kind": "StringLiteral",
+      "offset": 600,
+      "length": 78,
+      "value": "\"There is no data for this summary or the user has denied all the permissions\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Storage\/UserDefaults\/Constants\/TokenDefaultsConstants.swift",
@@ -74548,266 +74808,266 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1114,
+      "offset": 1869,
       "length": 14,
       "value": "\"steps_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1169,
+      "offset": 1924,
       "length": 35,
       "value": "\"steps_granular_data_steps_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1237,
+      "offset": 1992,
       "length": 24,
       "value": "\"walked_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1296,
+      "offset": 2051,
       "length": 26,
       "value": "\"traveled_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1369,
+      "offset": 2124,
       "length": 40,
       "value": "\"traveled_distance_granular_data_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1441,
+      "offset": 2196,
       "length": 23,
       "value": "\"floors_climbed_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1508,
+      "offset": 2263,
       "length": 37,
       "value": "\"floors_climbed_granular_data_floors\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1584,
+      "offset": 2339,
       "length": 31,
       "value": "\"elevation_avg_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1658,
+      "offset": 2413,
       "length": 35,
       "value": "\"elevation_minimum_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1732,
+      "offset": 2487,
       "length": 31,
       "value": "\"elevation_max_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1809,
+      "offset": 2564,
       "length": 39,
       "value": "\"elevation_loss_actual_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1894,
+      "offset": 2649,
       "length": 39,
       "value": "\"elevation_gain_actual_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1972,
+      "offset": 2727,
       "length": 31,
       "value": "\"elevation_planned_gain_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 2043,
+      "offset": 2798,
       "length": 32,
       "value": "\"elevation_granular_data_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 2109,
+      "offset": 2864,
       "length": 25,
       "value": "\"swimming_strokes_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 2168,
+      "offset": 2923,
       "length": 26,
       "value": "\"swimming_num_laps_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 2231,
+      "offset": 2986,
       "length": 29,
       "value": "\"swimming_pool_length_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 2300,
+      "offset": 3055,
       "length": 32,
       "value": "\"swimming_total_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 2379,
+      "offset": 3134,
       "length": 40,
       "value": "\"swimming_distance_granular_data_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1114,
+      "offset": 1869,
       "length": 14,
       "value": "\"steps_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1169,
+      "offset": 1924,
       "length": 35,
       "value": "\"steps_granular_data_steps_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1237,
+      "offset": 1992,
       "length": 24,
       "value": "\"walked_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1296,
+      "offset": 2051,
       "length": 26,
       "value": "\"traveled_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1369,
+      "offset": 2124,
       "length": 40,
       "value": "\"traveled_distance_granular_data_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1441,
+      "offset": 2196,
       "length": 23,
       "value": "\"floors_climbed_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1508,
+      "offset": 2263,
       "length": 37,
       "value": "\"floors_climbed_granular_data_floors\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1584,
+      "offset": 2339,
       "length": 31,
       "value": "\"elevation_avg_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1658,
+      "offset": 2413,
       "length": 35,
       "value": "\"elevation_minimum_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1732,
+      "offset": 2487,
       "length": 31,
       "value": "\"elevation_max_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1809,
+      "offset": 2564,
       "length": 39,
       "value": "\"elevation_loss_actual_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1894,
+      "offset": 2649,
       "length": 39,
       "value": "\"elevation_gain_actual_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 1972,
+      "offset": 2727,
       "length": 31,
       "value": "\"elevation_planned_gain_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 2043,
+      "offset": 2798,
       "length": 32,
       "value": "\"elevation_granular_data_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 2109,
+      "offset": 2864,
       "length": 25,
       "value": "\"swimming_strokes_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 2168,
+      "offset": 2923,
       "length": 26,
       "value": "\"swimming_num_laps_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 2231,
+      "offset": 2986,
       "length": 29,
       "value": "\"swimming_pool_length_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 2300,
+      "offset": 3055,
       "length": 32,
       "value": "\"swimming_total_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Common\/RookDistanceData.swift",
       "kind": "StringLiteral",
-      "offset": 2379,
+      "offset": 3134,
       "length": 40,
       "value": "\"swimming_distance_granular_data_meters\""
     },
@@ -75290,770 +75550,770 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 612,
+      "offset": 551,
       "length": 16,
       "value": "\"data_structure\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 612,
+      "offset": 551,
       "length": 16,
       "value": "\"data_structure\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 822,
+      "offset": 761,
       "length": 11,
       "value": "\"body_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 822,
+      "offset": 761,
       "length": 11,
       "value": "\"body_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 1089,
+      "offset": 1028,
       "length": 15,
       "value": "\"blood_glucose\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 1089,
+      "offset": 1028,
       "length": 15,
       "value": "\"blood_glucose\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 1521,
+      "offset": 1460,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 1556,
+      "offset": 1495,
       "length": 17,
       "value": "\"sources_of_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 1602,
+      "offset": 1541,
       "length": 19,
       "value": "\"user_demographics\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 1649,
+      "offset": 1588,
       "length": 19,
       "value": "\"body_health_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 1521,
+      "offset": 1460,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 1556,
+      "offset": 1495,
       "length": 17,
       "value": "\"sources_of_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 1602,
+      "offset": 1541,
       "length": 19,
       "value": "\"user_demographics\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 1649,
+      "offset": 1588,
       "length": 19,
       "value": "\"body_health_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 2550,
+      "offset": 2489,
       "length": 40,
       "value": "\"blood_glucose_day_avg_mg_per_dL_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 2634,
+      "offset": 2573,
       "length": 39,
       "value": "\"blood_glucose_granular_data_mg_per_dL\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 2699,
+      "offset": 2638,
       "length": 16,
       "value": "\"blood_pressure\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 2550,
+      "offset": 2489,
       "length": 40,
       "value": "\"blood_glucose_day_avg_mg_per_dL_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 2634,
+      "offset": 2573,
       "length": 39,
       "value": "\"blood_glucose_granular_data_mg_per_dL\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 2699,
+      "offset": 2638,
       "length": 16,
       "value": "\"blood_pressure\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 3441,
+      "offset": 3380,
       "length": 25,
       "value": "\"blood_glucose_mg_per_dL\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 3441,
+      "offset": 3380,
       "length": 25,
       "value": "\"blood_glucose_mg_per_dL\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 4147,
+      "offset": 4086,
       "length": 53,
       "value": "\"blood_pressure_day_avg_systolic_diastolic_bp_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 4263,
+      "offset": 4202,
       "length": 59,
       "value": "\"blood_pressure_granular_data_systolic_diastolic_bp_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 4367,
+      "offset": 4306,
       "length": 17,
       "value": "\"heart_rate_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 4437,
+      "offset": 4376,
       "length": 18,
       "value": "\"oxygenation_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 4490,
+      "offset": 4429,
       "length": 18,
       "value": "\"temperature_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 4538,
+      "offset": 4477,
       "length": 21,
       "value": "\"non_structured_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 4147,
+      "offset": 4086,
       "length": 53,
       "value": "\"blood_pressure_day_avg_systolic_diastolic_bp_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 4263,
+      "offset": 4202,
       "length": 59,
       "value": "\"blood_pressure_granular_data_systolic_diastolic_bp_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 4367,
+      "offset": 4306,
       "length": 17,
       "value": "\"heart_rate_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 4437,
+      "offset": 4376,
       "length": 18,
       "value": "\"oxygenation_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 4490,
+      "offset": 4429,
       "length": 18,
       "value": "\"temperature_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 4538,
+      "offset": 4477,
       "length": 21,
       "value": "\"non_structured_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 4787,
+      "offset": 4726,
       "length": 13,
       "value": "\"systolic_bp\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 4824,
+      "offset": 4763,
       "length": 14,
       "value": "\"diastolic_bp\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 4787,
+      "offset": 4726,
       "length": 13,
       "value": "\"systolic_bp\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 4824,
+      "offset": 4763,
       "length": 14,
       "value": "\"diastolic_bp\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 5136,
+      "offset": 5075,
       "length": 13,
       "value": "\"systolic_bp\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 5173,
+      "offset": 5112,
       "length": 14,
       "value": "\"diastolic_bp\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 5136,
+      "offset": 5075,
       "length": 13,
       "value": "\"systolic_bp\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 5173,
+      "offset": 5112,
       "length": 14,
       "value": "\"diastolic_bp\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 5575,
+      "offset": 5514,
       "length": 35,
       "value": "\"water_total_consumption_ml_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 5658,
+      "offset": 5597,
       "length": 42,
       "value": "\"hydration_amount_granular_data_ml_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 5755,
+      "offset": 5694,
       "length": 49,
       "value": "\"hydration_level_granular_data_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 5575,
+      "offset": 5514,
       "length": 35,
       "value": "\"water_total_consumption_ml_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 5658,
+      "offset": 5597,
       "length": 42,
       "value": "\"hydration_amount_granular_data_ml_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 5755,
+      "offset": 5694,
       "length": 49,
       "value": "\"hydration_level_granular_data_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 6627,
+      "offset": 6566,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 6684,
+      "offset": 6623,
       "length": 21,
       "value": "\"hydration_amount_ml\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 6627,
+      "offset": 6566,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 6684,
+      "offset": 6623,
       "length": 21,
       "value": "\"hydration_amount_ml\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 7026,
+      "offset": 6965,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 7090,
+      "offset": 7029,
       "length": 28,
       "value": "\"hydration_level_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 7026,
+      "offset": 6965,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 7090,
+      "offset": 7029,
       "length": 28,
       "value": "\"hydration_level_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 7401,
+      "offset": 7340,
       "length": 20,
       "value": "\"mood_minimum_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 7446,
+      "offset": 7385,
       "length": 16,
       "value": "\"mood_avg_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 7487,
+      "offset": 7426,
       "length": 16,
       "value": "\"mood_max_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 7537,
+      "offset": 7476,
       "length": 26,
       "value": "\"mood_granular_data_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 7590,
+      "offset": 7529,
       "length": 18,
       "value": "\"mood_delta_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 7401,
+      "offset": 7340,
       "length": 20,
       "value": "\"mood_minimum_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 7446,
+      "offset": 7385,
       "length": 16,
       "value": "\"mood_avg_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 7487,
+      "offset": 7426,
       "length": 16,
       "value": "\"mood_max_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 7537,
+      "offset": 7476,
       "length": 26,
       "value": "\"mood_granular_data_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 7590,
+      "offset": 7529,
       "length": 18,
       "value": "\"mood_delta_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 8459,
+      "offset": 8398,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 8508,
+      "offset": 8447,
       "length": 12,
       "value": "\"mood_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 8459,
+      "offset": 8398,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 8508,
+      "offset": 8447,
       "length": 12,
       "value": "\"mood_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 8968,
+      "offset": 8907,
       "length": 20,
       "value": "\"food_intake_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9021,
+      "offset": 8960,
       "length": 24,
       "value": "\"calories_intake_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9078,
+      "offset": 9017,
       "length": 25,
       "value": "\"protein_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9134,
+      "offset": 9073,
       "length": 23,
       "value": "\"sugar_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9186,
+      "offset": 9125,
       "length": 21,
       "value": "\"fat_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9241,
+      "offset": 9180,
       "length": 27,
       "value": "\"trans_fat_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9307,
+      "offset": 9246,
       "length": 31,
       "value": "\"carbohydrates_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9369,
+      "offset": 9308,
       "length": 23,
       "value": "\"fiber_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9425,
+      "offset": 9364,
       "length": 25,
       "value": "\"alcohol_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9483,
+      "offset": 9422,
       "length": 25,
       "value": "\"sodium_intake_mg_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9546,
+      "offset": 9485,
       "length": 30,
       "value": "\"cholesterol_intake_mg_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 8968,
+      "offset": 8907,
       "length": 20,
       "value": "\"food_intake_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9021,
+      "offset": 8960,
       "length": 24,
       "value": "\"calories_intake_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9078,
+      "offset": 9017,
       "length": 25,
       "value": "\"protein_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9134,
+      "offset": 9073,
       "length": 23,
       "value": "\"sugar_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9186,
+      "offset": 9125,
       "length": 21,
       "value": "\"fat_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9241,
+      "offset": 9180,
       "length": 27,
       "value": "\"trans_fat_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9307,
+      "offset": 9246,
       "length": 31,
       "value": "\"carbohydrates_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9369,
+      "offset": 9308,
       "length": 23,
       "value": "\"fiber_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9425,
+      "offset": 9364,
       "length": 25,
       "value": "\"alcohol_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9483,
+      "offset": 9422,
       "length": 25,
       "value": "\"sodium_intake_mg_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 9546,
+      "offset": 9485,
       "length": 30,
       "value": "\"cholesterol_intake_mg_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11421,
+      "offset": 11360,
       "length": 31,
       "value": "\"waist_circumference_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11489,
+      "offset": 11428,
       "length": 29,
       "value": "\"hip_circumference_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11557,
+      "offset": 11496,
       "length": 31,
       "value": "\"chest_circumference_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11632,
+      "offset": 11571,
       "length": 36,
       "value": "\"bone_composition_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11714,
+      "offset": 11653,
       "length": 38,
       "value": "\"muscle_composition_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11791,
+      "offset": 11730,
       "length": 37,
       "value": "\"water_composition_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11855,
+      "offset": 11794,
       "length": 18,
       "value": "\"weight_kg_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11900,
+      "offset": 11839,
       "length": 18,
       "value": "\"height_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11940,
+      "offset": 11879,
       "length": 12,
       "value": "\"bmi_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11421,
+      "offset": 11360,
       "length": 31,
       "value": "\"waist_circumference_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11489,
+      "offset": 11428,
       "length": 29,
       "value": "\"hip_circumference_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11557,
+      "offset": 11496,
       "length": 31,
       "value": "\"chest_circumference_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11632,
+      "offset": 11571,
       "length": 36,
       "value": "\"bone_composition_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11714,
+      "offset": 11653,
       "length": 38,
       "value": "\"muscle_composition_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11791,
+      "offset": 11730,
       "length": 37,
       "value": "\"water_composition_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11855,
+      "offset": 11794,
       "length": 18,
       "value": "\"weight_kg_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11900,
+      "offset": 11839,
       "length": 18,
       "value": "\"height_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11940,
+      "offset": 11879,
       "length": 12,
       "value": "\"bmi_number\""
     }

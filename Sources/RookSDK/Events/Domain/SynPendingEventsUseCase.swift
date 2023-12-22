@@ -8,11 +8,11 @@
 import Foundation
 import RookConnectTransmission
 
-protocol SynPendingEventsUseCaseProtocol {
+protocol SyncPendingEventsUseCaseProtocol {
   func execute(completion: @escaping (Result<Bool, Error>) -> Void)
 }
 
-final class SynPendingEventsUseCase: SynPendingEventsUseCaseProtocol {
+final class SyncPendingEventsUseCase: SyncPendingEventsUseCaseProtocol {
   
   // MARK:  Properties
   

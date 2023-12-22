@@ -173,6 +173,9 @@ public enum RookDataType : Swift.String {
   case oxygenationBodyEvent
   case oxygenationPhysicalEvent
   case activityEvent
+  case temperatureEvent
+  case bloodGlucoseEvent
+  case bloodPressureEvent
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -244,6 +247,9 @@ extension RookAppleHealth.RookExtractionEventManager {
   @objc final public func getLastExtractionDateOfPhysicalHeartRateEvents() -> Foundation.Date?
   @objc final public func getLastExtractionDateOfBodyOxygenationEvents() -> Foundation.Date?
   @objc final public func getLastExtractionDateOfPhysicalOxygenationEvents() -> Foundation.Date?
+  @objc final public func getLastExtractionDateOfTemperatureEvents() -> Foundation.Date?
+  @objc final public func getLastExtractionDateOfBloodPressureEvents() -> Foundation.Date?
+  @objc final public func getLastExtractionDateOfBloodGlucoseEvents() -> Foundation.Date?
   @objc deinit
 }
 public typealias NetworkRouterCompletion = (_ data: Foundation.Data?, _ response: Foundation.URLResponse?, _ error: Swift.Error?) -> Swift.Void

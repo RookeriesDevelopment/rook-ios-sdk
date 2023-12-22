@@ -467,6 +467,9 @@ SWIFT_CLASS("_TtC15RookAppleHealth30RookExtractionEventManagerObjc")
 - (NSDate * _Nullable)getLastExtractionDateOfPhysicalHeartRateEvents SWIFT_WARN_UNUSED_RESULT;
 - (NSDate * _Nullable)getLastExtractionDateOfBodyOxygenationEvents SWIFT_WARN_UNUSED_RESULT;
 - (NSDate * _Nullable)getLastExtractionDateOfPhysicalOxygenationEvents SWIFT_WARN_UNUSED_RESULT;
+- (NSDate * _Nullable)getLastExtractionDateOfTemperatureEvents SWIFT_WARN_UNUSED_RESULT;
+- (NSDate * _Nullable)getLastExtractionDateOfBloodPressureEvents SWIFT_WARN_UNUSED_RESULT;
+- (NSDate * _Nullable)getLastExtractionDateOfBloodGlucoseEvents SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

@@ -15,12 +15,21 @@ import Foundation
   private let physicalUseCase: SummarySyncUseCaseProtocol = PhysicalSyncUseCase()
   private let bodyUseCase: SummarySyncUseCaseProtocol = BodySyncUseCase()
   private let pendingUseCase: SyncPendingUseCaseProtocol = SyncPendingUseCase()
+  
+  lazy var yesterdayUseCase: SyncYesterdaySummaryUseCaseProtocol = {
+    return SyncYesterdaySummaryUseCase(sleepSync: SleepSyncUseCase(),
+                                       physicalSync: PhysicalSyncUseCase(),
+                                       bodySync: BodySyncUseCase())
+  }()
   // MARK:  Init
   
   @objc public override init() {
   }
   
   // MARK:  Helpers
+  @objc public func syncYesterdaySummaries(completion: @escaping () -> Void) {
+    yesterdayUseCase.execute(completion: completion)
+  }
   
   public func syncSleepSummary(from date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
     sleepUseCase.execute(date: date, completion: completion)
