@@ -60,8 +60,8 @@ public final class RookConnectConfigurationManager {
       self.extractionConfigurator.setEnvironment(.sandbox)
       self.transmissionConfigurator.setEnvironment(.sandbox)
     case .production:
-      self.usersConfigurator.setEnvironment(.sandbox)
-      self.extractionConfigurator.setEnvironment(.sandbox)
+      self.usersConfigurator.setEnvironment(.production)
+      self.extractionConfigurator.setEnvironment(.production)
       self.transmissionConfigurator.setEnvironment(.production)
     }
   }

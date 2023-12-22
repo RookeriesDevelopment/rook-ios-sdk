@@ -25,7 +25,9 @@ import Foundation
   
   private let syncBloodPressureUseCase: SyncBloodPressureEventsUseCaseProtocol = SyncBloodPressureEventsUseCase()
   
-  private let syncPendingEventUseCase: SynPendingEventsUseCaseProtocol = SynPendingEventsUseCase()
+  private let syncYesterdayEventsUseCase: SyncYesterdayEventsUseCase = SyncYesterdayEventsUseCase()
+  
+  private let syncPendingEventUseCase: SyncPendingEventsUseCaseProtocol = SyncPendingEventsUseCase()
   
   // MARK:  Int
   
@@ -33,6 +35,10 @@ import Foundation
   }
   
   // MARK:  Helpers
+  
+  @objc public func syncYesterdayEvents(completion: @escaping () -> Void) {
+    syncYesterdayEventsUseCase.execute(completion: completion)
+  }
   
   public func syncBodyHeartRateEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
     syncBodyHrEventsUseCase.execute(date: date, completion: completion)

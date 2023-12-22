@@ -681,7 +681,7 @@ SWIFT_CLASS("_TtC23RookConnectTransmission36RookTemperatureEventTransmissionObjc
 
 SWIFT_CLASS("_TtC23RookConnectTransmission50RookTemperatureGranularDataCelsiusTransmissionObjc")
 @interface RookTemperatureGranularDataCelsiusTransmissionObjc : NSObject
-- (nonnull instancetype)initWithDatetime:(NSDate * _Nonnull)datetime temperatureCelsius:(NSInteger)temperatureCelsius OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithDatetime:(NSDate * _Nonnull)datetime temperatureCelsius:(NSInteger)temperatureCelsius measurementType:(NSString * _Nonnull)measurementType OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -691,6 +691,7 @@ SWIFT_CLASS("_TtC23RookConnectTransmission35RookTemperatureTransmissionItemObjc"
 @interface RookTemperatureTransmissionItemObjc : NSObject
 @property (nonatomic, readonly) NSInteger temperatureCelsius;
 @property (nonatomic, readonly, copy) NSString * _Nonnull measurementType;
+- (nonnull instancetype)initWithTemperatureCelsius:(NSInteger)temperatureCelsius measurementType:(NSString * _Nonnull)measurementType OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1962,7 +1963,7 @@ SWIFT_CLASS("_TtC23RookConnectTransmission36RookTemperatureEventTransmissionObjc
 
 SWIFT_CLASS("_TtC23RookConnectTransmission50RookTemperatureGranularDataCelsiusTransmissionObjc")
 @interface RookTemperatureGranularDataCelsiusTransmissionObjc : NSObject
-- (nonnull instancetype)initWithDatetime:(NSDate * _Nonnull)datetime temperatureCelsius:(NSInteger)temperatureCelsius OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithDatetime:(NSDate * _Nonnull)datetime temperatureCelsius:(NSInteger)temperatureCelsius measurementType:(NSString * _Nonnull)measurementType OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1972,6 +1973,7 @@ SWIFT_CLASS("_TtC23RookConnectTransmission35RookTemperatureTransmissionItemObjc"
 @interface RookTemperatureTransmissionItemObjc : NSObject
 @property (nonatomic, readonly) NSInteger temperatureCelsius;
 @property (nonatomic, readonly, copy) NSString * _Nonnull measurementType;
+- (nonnull instancetype)initWithTemperatureCelsius:(NSInteger)temperatureCelsius measurementType:(NSString * _Nonnull)measurementType OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

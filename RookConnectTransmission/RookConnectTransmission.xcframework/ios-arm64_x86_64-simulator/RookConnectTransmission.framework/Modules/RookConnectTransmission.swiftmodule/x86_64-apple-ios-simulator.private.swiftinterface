@@ -301,7 +301,7 @@ public struct JSONParameterEncoder : RookConnectTransmission.ParameterEncoder {
 @objc public class RookTemperatureTransmissionItemObjc : ObjectiveC.NSObject, Swift.Codable {
   @objc final public let temperatureCelsius: Swift.Int
   @objc final public let measurementType: Swift.String
-  public init(temperatureCelsius: Swift.Int, measurementType: Swift.String)
+  @objc public init(temperatureCelsius: Swift.Int, measurementType: Swift.String)
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
@@ -373,7 +373,7 @@ public struct RookOxigenationDataEventTransmission : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 @objc public class RookTemperatureGranularDataCelsiusTransmissionObjc : ObjectiveC.NSObject, Swift.Codable {
-  @objc public init(datetime: Foundation.Date, temperatureCelsius: Swift.Int)
+  @objc public init(datetime: Foundation.Date, temperatureCelsius: Swift.Int, measurementType: Swift.String)
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
