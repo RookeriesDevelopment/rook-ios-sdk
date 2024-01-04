@@ -9,6 +9,7 @@ import Foundation
 import RookAppleHealth
 import RookConnectTransmission
 import RookUsersSDK
+import UIKit
 
 public final class RookConnectConfigurationManager {
   
@@ -22,14 +23,23 @@ public final class RookConnectConfigurationManager {
   private let userManger: RookUsersManger = RookUsersManger()
   private let initUseCase: InitUseCaseProtocol = InitUseCase()
   private let timeZoneUseCase: TimeZoneUseCaseProtocol = TimeZoneUseCase()
+  private let syncManager: RookSummaryManger = RookSummaryManger()
+  private let eventsManager: RookEventsManager = RookEventsManager()
+  private let foregroundSyncLocalDataSource: ForegroundSyncLocalDataSource = ForegroundSyncLocalDataSource()
   
   private var innerConfiguration: SDKConfiguration?
   
   private var innerEnvironment: RookEnvironment = .sandbox
+
+  private var observer: NSObjectProtocol?
+  
+  // UIApplicationWillEnterForegroundNotification
   
   // MARK:  Init
   
-  private init() { }
+  private init() {
+    self.addObserver()
+  }
   
   // MARK:  Helpers
   
@@ -99,5 +109,34 @@ public final class RookConnectConfigurationManager {
   
   public func syncUserTimeZone(completion: @escaping (Result<Bool, Error>) -> Void) {
     timeZoneUseCase.execute(completion: completion)
+  }
+  
+  public func enableYesterdaySync() {
+    foregroundSyncLocalDataSource.setForegroundEnable(with: true)
+  }
+  
+  public func disableYesterdaySync() {
+    foregroundSyncLocalDataSource.setForegroundEnable(with: false)
+  }
+
+  public func isYesterdaySyncEnable() -> Bool {
+    return foregroundSyncLocalDataSource.isForegroundSyncEnable()
+  }
+
+  // MARK:  Private
+  
+  private func addObserver() {
+    observer = NotificationCenter.default.addObserver(
+      forName: UIApplication.willEnterForegroundNotification,
+      object: nil,
+      queue: .main) { [weak self] notification in
+        guard let self: RookConnectConfigurationManager = self else {
+          return
+        }
+        if self.foregroundSyncLocalDataSource.isForegroundSyncEnable() {
+          self.syncManager.syncYesterdaySummaries {}
+          self.eventsManager.syncYesterdayEvents {}
+        }
+    }
   }
 }

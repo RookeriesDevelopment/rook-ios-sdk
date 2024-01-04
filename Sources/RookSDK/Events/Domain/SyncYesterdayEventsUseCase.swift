@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import RookAppleHealth
 
 final class SyncYesterdayEventsUseCase {
   let physicalOxygenationUseCase: SyncPhysicalOxygenationUseCase = SyncPhysicalOxygenationUseCase()
@@ -16,6 +17,7 @@ final class SyncYesterdayEventsUseCase {
   let pressureUseCase: SyncBloodPressureEventsUseCase = SyncBloodPressureEventsUseCase()
   let glucoseUseCase: SyncBloodGlucoseEventsUseCase = SyncBloodGlucoseEventsUseCase()
   let temperatureUseCase: SyncTemperatureEventsUseCase = SyncTemperatureEventsUseCase()
+  let lastExtractionUseCase: LastExtractionEventDateUseCase = LastExtractionEventDateUseCase()
   
   func execute(completion: @escaping () -> Void) {
     
@@ -28,92 +30,124 @@ final class SyncYesterdayEventsUseCase {
       
       // Oxygenation
       do {
-        _ = try await uploadAsyncPhysicalOxygenation(yesterdayDate)
+        if isValidDateForUpdate(for: .oxygenationPhysicalEvent) {
+          _ = try await uploadAsyncPhysicalOxygenation(yesterdayDate)
+        }
       } catch {
       }
       
       do {
-        _ = try await uploadAsyncBodyOxygenation(yesterdayDate)
+        if isValidDateForUpdate(for: .oxygenationBodyEvent) {
+          _ = try await uploadAsyncBodyOxygenation(yesterdayDate)
+        }
       } catch {
       }
       
       do {
-        _ = try await uploadAsyncPhysicalOxygenation(currentDate)
+        if isValidDateForUpdate(for: .oxygenationPhysicalEvent) {
+          _ = try await uploadAsyncPhysicalOxygenation(currentDate)
+        }
       } catch {
       }
       
       do {
-        _ = try await uploadAsyncBodyOxygenation(currentDate)
+        if isValidDateForUpdate(for: .oxygenationBodyEvent) {
+          _ = try await uploadAsyncBodyOxygenation(currentDate)
+        }
       } catch {
       }
       
       // Heart Rate
       
       do {
-        _ = try await uploadAsyncBodyHeartRate(yesterdayDate)
+        if isValidDateForUpdate(for: .heartRateBodyEvent) {
+          _ = try await uploadAsyncBodyHeartRate(yesterdayDate)
+        }
       } catch {
       }
       
       do {
-        _ = try await uploadAsyncPhysicalHeartRate(yesterdayDate)
+        if isValidDateForUpdate(for: .heartRatePhysicalEvent) {
+          _ = try await uploadAsyncPhysicalHeartRate(yesterdayDate)
+        }
       } catch {
       }
       
       do {
-        _ = try await uploadAsyncBodyHeartRate(currentDate)
+        if isValidDateForUpdate(for: .heartRateBodyEvent) {
+          _ = try await uploadAsyncBodyHeartRate(currentDate)
+        }
       } catch {
       }
       
       do {
-        _ = try await uploadAsyncPhysicalHeartRate(currentDate)
+        if isValidDateForUpdate(for: .heartRatePhysicalEvent) {
+          _ = try await uploadAsyncPhysicalHeartRate(currentDate)
+        }
       } catch {
       }
       
       // Activity
       
       do {
-        _ = try await uploadAsyncActivity(yesterdayDate)
+        if isValidDateForUpdate(for: .activityEvent) {
+          _ = try await uploadAsyncActivity(yesterdayDate)
+        }
       } catch {
       }
       
       do {
-        _ = try await uploadAsyncActivity(currentDate)
+        if isValidDateForUpdate(for: .activityEvent) {
+          _ = try await uploadAsyncActivity(currentDate)
+        }
       } catch {
       }
       
       // Blood Pressure
       
       do {
-        _ = try await uploadAsyncBloodPressure(yesterdayDate)
+        if isValidDateForUpdate(for: .bloodPressureEvent) {
+          _ = try await uploadAsyncBloodPressure(yesterdayDate)
+        }
       } catch {
       }
       
       do {
-        _ = try await uploadAsyncBloodPressure(currentDate)
+        if isValidDateForUpdate(for: .bloodPressureEvent) {
+          _ = try await uploadAsyncBloodPressure(currentDate)
+        }
       } catch {
       }
       
       // Blood Glucose
       
       do {
-        _ = try await uploadAsyncBloodGlucose(yesterdayDate)
+        if isValidDateForUpdate(for: .bloodGlucoseEvent) {
+          _ = try await uploadAsyncBloodGlucose(yesterdayDate)
+        }
       } catch {
       }
       
       do {
-        _ = try await uploadAsyncBloodGlucose(currentDate)
+        if isValidDateForUpdate(for: .bloodGlucoseEvent) {
+          _ = try await uploadAsyncBloodGlucose(currentDate)
+        }
       } catch {
       }
       
       // Temperature
       
       do {
-        _ = try await uploadAsyncTemperature(yesterdayDate)
+        if isValidDateForUpdate(for: .temperatureEvent) {
+          _ = try await uploadAsyncTemperature(yesterdayDate)
+        }
       } catch {
       }
       
       do {
-        _ = try await uploadAsyncTemperature(currentDate)
+        if isValidDateForUpdate(for: .temperatureEvent) {
+          _ = try await uploadAsyncTemperature(currentDate)
+        }
       } catch {
       }
       
@@ -121,5 +155,16 @@ final class SyncYesterdayEventsUseCase {
       
     }
     
+  }
+
+  private func isValidDateForUpdate(for type: RookDataType) -> Bool {
+    if let lastExtractionDate: Date = lastExtractionUseCase.execute(type: type) {
+      let currentDate: Date = Date()
+      let distance: TimeInterval = lastExtractionDate.distance(to: currentDate)
+      let distanceHours: Int = Int(distance) / 3600
+      return distanceHours > 1
+    } else {
+      return true
+    }
   }
 }

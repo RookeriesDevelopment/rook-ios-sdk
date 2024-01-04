@@ -103,6 +103,9 @@ This class conforms the singleton pattern, to access this class use the shared p
 | `func clearUser(completion: @escaping (Result<Bool, Error>) -> Void)` | Deletes the user stored locally. |
 | `func removeUserFromRook(completion: @escaping (Result<Bool, Error>) -> Void)` |  Removes the authorization od the user to upload data from apple health and deletes the user id stored locally. |
 | `func syncUserTimeZone(completion: @escaping (Result<Bool, Error>) -> Void)`| Uploads the current time zone of the device a user has to added before use this method. |
+| `func enableYesterdaySync()`| After call this method, every time a user opens the application the sdk will upload data, if there is new information, a user has to be added first, if there is not user stored, the data won't be uploaded. |
+| `func disableYesterdaySync()`| Disables the upload data after the user opens the app. |
+| `func isYesterdaySyncEnable() () -> Bool`| Returns a boolean indicating if the sync yesterday is enable. |
 
 ### Get user authorization
 
