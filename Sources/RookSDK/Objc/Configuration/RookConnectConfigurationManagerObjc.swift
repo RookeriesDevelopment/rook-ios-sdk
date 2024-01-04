@@ -99,5 +99,17 @@ import RookUsersSDK
       }
     }
   }
+
+  @objc public func enableYesterdaySync() {
+    self.innerConfiguration.enableYesterdaySync()
+  }
+  
+  @objc public func disableYesterdaySync() {
+    self.innerConfiguration.disableYesterdaySync()
+  }
+
+  @objc public func isYesterdaySyncEnable() -> Bool {
+    return innerConfiguration.isYesterdaySyncEnable()
+  }
   
 }

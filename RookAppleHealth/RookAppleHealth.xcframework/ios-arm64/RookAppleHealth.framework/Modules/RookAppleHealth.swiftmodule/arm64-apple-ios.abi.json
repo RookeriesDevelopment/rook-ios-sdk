@@ -69650,13 +69650,13 @@
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Configuration\/RookAuthAppleHealth.swift",
       "kind": "StringLiteral",
       "offset": 642,
-      "length": 8,
-      "value": "\"1.0.25\""
+      "length": 7,
+      "value": "\"1.1.0\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Configuration\/RookAuthAppleHealth.swift",
       "kind": "BooleanLiteral",
-      "offset": 696,
+      "offset": 695,
       "length": 5,
       "value": "false"
     },
@@ -70118,7 +70118,7 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/PredicateBuilder\/RookPredicateBuilder.swift",
       "kind": "BooleanLiteral",
-      "offset": 1079,
+      "offset": 1114,
       "length": 4,
       "value": "true"
     },
@@ -74017,7 +74017,7 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/DataTypesProvider\/Data\/RookSampleProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 1640,
+      "offset": 1658,
       "length": 4,
       "value": "true"
     },
