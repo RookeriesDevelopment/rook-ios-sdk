@@ -99,6 +99,10 @@ public final class RookConnectConfigurationManager {
     }
   }
   
+  public func getUserId(completion: @escaping (Result<String, Error>) -> Void) {
+    self.userManger.getUserIdStored(completion: completion)
+  }
+  
   public func clearUser(completion: @escaping (Result<Bool, Error>) -> Void) {
     self.userManger.removeUser(completion: completion)
   }
