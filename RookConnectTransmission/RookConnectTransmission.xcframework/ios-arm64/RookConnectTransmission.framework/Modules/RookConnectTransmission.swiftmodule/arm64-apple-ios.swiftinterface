@@ -16,6 +16,9 @@ final public class RookBloodPressureEventTransmissionManager {
   final public func enqueueBloodPressureEvents(_ events: [RookConnectTransmission.RookBloodPressureEventTransmission], completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func getBloodPressureEvents(completion: @escaping (Swift.Result<[RookConnectTransmission.RookBloodPressureEventTransmission], Swift.Error>) -> Swift.Void)
   final public func uploadEvents(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func uploadEventsAsync() async throws -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc public class RookTransmissionActivityEventObjc : ObjectiveC.NSObject, Swift.Encodable {
@@ -223,6 +226,9 @@ public struct RookPowerGranularItemTransmission : Swift.Codable {
   final public func enqueueSleepSummary(with extractionData: Foundation.Data, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func enqueueSleepSummary(with summary: RookConnectTransmission.RookSleepDataTransmissionDTO, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func getSleepSummariesStored(completion: @escaping (Swift.Result<[RookConnectTransmission.RookSleepDataTransmissionDTO], Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func uploadSleepSummariesAsync() async throws -> Swift.Bool
+  #endif
   final public func uploadSleepSummaries(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
@@ -612,6 +618,9 @@ public struct RookVo2GranularDTO : Swift.Codable {
   final public func enqueuePhysicalSummary(with extractionData: Foundation.Data, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func enqueuePhysicalSummary(with physicalDTO: RookConnectTransmission.RookPhysicalDataTransmissionDTO, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func getPhysicalSummariesStored(completion: @escaping (Swift.Result<[RookConnectTransmission.RookPhysicalDataTransmissionDTO], Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func uploadPhysicalSummariesAsync() async throws -> Swift.Bool
+  #endif
   final public func uploadPhysicalSummaries(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
@@ -1012,6 +1021,9 @@ final public class RookHrEventTransmissionManager {
   final public func enqueueHrEvents(_ events: [RookConnectTransmission.RookHeartRateEventTransmission], completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func getBodyHrEventsStored(completion: @escaping (Swift.Result<[RookConnectTransmission.RookHeartRateEventTransmission], Swift.Error>) -> Swift.Void)
   final public func getHrEventsStored(completion: @escaping (Swift.Result<[RookConnectTransmission.RookHeartRateEventTransmission], Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func uploadHrEventsAsync() async throws -> Swift.Bool
+  #endif
   final public func uploadHrEvents(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
@@ -1263,6 +1275,9 @@ final public class RookActivityEventTransmissionManager {
   final public func enqueActivityEvent(_ eventData: Foundation.Data, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func enqueueActitivtyEvents(_ events: [RookConnectTransmission.RookActivityEventTransmission], completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func getActivityEvents(completion: @escaping (Swift.Result<[RookConnectTransmission.RookActivityEventTransmission], Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func uploadEventsAsync() async throws -> Swift.Bool
+  #endif
   final public func uploadEvents(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
@@ -1428,6 +1443,9 @@ final public class RookGlucoseEventTransmissionManager {
   final public func enqueueGlucoseEvents(_ events: [RookConnectTransmission.RookGlucoseEventTransmission], completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func getGlucoseEvents(completion: @escaping (Swift.Result<[RookConnectTransmission.RookGlucoseEventTransmission], Swift.Error>) -> Swift.Void)
   final public func uploadEvents(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func uploadEventsAsync() async throws -> Swift.Bool
+  #endif
   @objc deinit
 }
 public typealias Parameters = [Swift.String : Any]
@@ -1585,6 +1603,9 @@ extension RookConnectTransmission.RookTransmissionError : Foundation.LocalizedEr
   final public func enqueueBodySummary(with extractionData: Foundation.Data, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func enqueueBodySummary(with bodyDTO: RookConnectTransmission.RookBodyDataTransmissionDTO, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func getBodySummariesStored(completion: @escaping (Swift.Result<[RookConnectTransmission.RookBodyDataTransmissionDTO], Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func uploadBodySummariesAsync() async throws -> Swift.Bool
+  #endif
   final public func uploadBodySummaries(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
@@ -1594,6 +1615,9 @@ final public class RookOxygenationEventTransmissionManager {
   final public func enqueueOxygenationEvents(_ events: [RookConnectTransmission.RookOxygenationEventTransmission], completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func getBodyOxygenationEvents(completion: @escaping (Swift.Result<[RookConnectTransmission.RookOxygenationEventTransmission], Swift.Error>) -> Swift.Void)
   final public func getOxygenationEvents(completion: @escaping (Swift.Result<[RookConnectTransmission.RookOxygenationEventTransmission], Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func uploadEventsAsync() async throws -> Swift.Bool
+  #endif
   final public func uploadEvent(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
@@ -1807,6 +1831,9 @@ final public class RookTemperatureEventTransmissionManager {
   final public func enqueueTemperatureEvent(_ eventData: Foundation.Data, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func enqueueTemperatureEvents(_ events: [RookConnectTransmission.RookTemperatureEventTransmission], completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func getTemperatureEvents(completion: @escaping (Swift.Result<[RookConnectTransmission.RookTemperatureEventTransmission], Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func uploadEventsAsync() async throws -> Swift.Bool
+  #endif
   final public func uploadEvents(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }

@@ -27,45 +27,38 @@ final class SyncPendingEventsUseCase: SyncPendingEventsUseCaseProtocol {
   }
 
   private func uploadEvents(completion: @escaping (Result<Bool, Error>) -> Void) {
-    let dispatchGroup: DispatchGroup = DispatchGroup()
-    var results: [String: Result<Bool, Error>] = [:]
     
-    dispatchGroup.enter()
-    transmissionHrEvent.uploadHrEvents() { result in
-      results.updateValue(result, forKey: "hrEvents")
-      dispatchGroup.leave()
-    }
-    
-    dispatchGroup.enter()
-    transmissionOxygenationEvent.uploadEvent() { result in
-      results.updateValue(result, forKey: "oxygenationEvents")
-      dispatchGroup.leave()
-    }
-    
-    dispatchGroup.enter()
-    transmissionActivityManger.uploadEvents() { result in
-      results.updateValue(result, forKey: "activityEvents")
-      dispatchGroup.leave()
-    }
-    
-    
-    dispatchGroup.notify(queue: .main) {
-      self.handleResuls(results, completion: completion)
+    Task {
+      var errors: [String: Error] = [:]
+      
+      //Hr
+      do {
+        _ = try await transmissionHrEvent.uploadHrEventsAsync()
+      } catch {
+        errors.updateValue(error, forKey: "hrEvents")
+      }
+      //Oxygenation
+      do {
+        _ = try await transmissionOxygenationEvent.uploadEventsAsync()
+      } catch {
+        errors.updateValue(error, forKey: "oxygenationEvents")
+      }
+      // Activity
+      do {
+        _ = try await transmissionActivityManger.uploadEventsAsync()
+      } catch {
+        errors.updateValue(error, forKey: "activityEvents")
+      }
+      
+      handleResults(errors, completion: completion)
     }
   }
   
-  private func handleResuls(_ results: [String: Result<Bool, Error>],
-                            completion: @escaping (Result<Bool, Error>) -> Void) {
-    guard !results.isEmpty else {
-      return completion(.failure(RookConnectErrors.nothingToUpdate))
+  private func handleResults(_ errors: [String: Error],
+                             completion: @escaping (Result<Bool, Error>) -> Void) {
+    guard let error: Error = errors.first?.value else {
+      return completion(.success(true))
     }
-    
-    for result in results {
-      if let value: Bool = try? result.value.get(), value {
-        return completion(.success(true))
-      }
-    }
-    
-    completion(.success(false))
+    completion(.failure(error))
   }
 }
