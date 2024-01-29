@@ -10,7 +10,9 @@ import RookAppleHealth
 import RookConnectTransmission
 
 protocol SyncBodyOxygenationUseCaseProtocol {
-  func execute(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)
+  func execute(date: Date,
+               excludingDatesBefore: Date?,
+               completion: @escaping (Result<Bool, Error>) -> Void)
 }
 
 final class SyncBodyOxygenationUseCase: SyncBodyOxygenationUseCaseProtocol {
@@ -24,8 +26,9 @@ final class SyncBodyOxygenationUseCase: SyncBodyOxygenationUseCaseProtocol {
   
   // MARK:  Helpers
   
-  func execute(date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
-    extractionEvent.getBodyOxygenationEvents(date: date) { [weak self] result in
+  func execute(date: Date, excludingDatesBefore: Date?, completion: @escaping (Result<Bool, Error>) -> Void) {
+    extractionEvent.getBodyOxygenationEvents(date: date,
+                                             excludingDatesBefore: excludingDatesBefore) { [weak self] result in
       switch result {
       case .success(let events):
         self?.handleEvents(events, completion: completion)

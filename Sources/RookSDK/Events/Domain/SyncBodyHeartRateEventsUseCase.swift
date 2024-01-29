@@ -10,7 +10,7 @@ import RookAppleHealth
 import RookConnectTransmission
 
 protocol SyncBodyHeartRateEventsUseCaseProtocol {
-  func execute(date: Date, completion: @escaping (Result<Bool, Error>) -> Void)
+  func execute(date: Date, excludingDatesBefore: Date?, completion: @escaping (Result<Bool, Error>) -> Void)
 }
 
 final class SyncBodyHeartRateEventsUseCase: SyncBodyHeartRateEventsUseCaseProtocol {
@@ -24,8 +24,8 @@ final class SyncBodyHeartRateEventsUseCase: SyncBodyHeartRateEventsUseCaseProtoc
   
   // MARK:  Helpers
   
-  func execute(date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
-    extractionEvent.getBodyHeartRateEvents(date: date) { [weak self] result in
+  func execute(date: Date, excludingDatesBefore: Date?, completion: @escaping (Result<Bool, Error>) -> Void) {
+    extractionEvent.getBodyHeartRateEvents(date: date, excludingDatesBefore: excludingDatesBefore) { [weak self] result in
       switch result {
       case .success(let events):
         self?.handleEvents(events, completion: completion)

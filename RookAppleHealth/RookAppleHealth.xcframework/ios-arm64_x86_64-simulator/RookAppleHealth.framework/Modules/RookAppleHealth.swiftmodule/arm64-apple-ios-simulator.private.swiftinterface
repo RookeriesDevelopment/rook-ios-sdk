@@ -185,10 +185,10 @@ public enum RookDataType : Swift.String {
 final public class RookExtractionEventManager {
   public init()
   final public func getPhysicalHeartRateEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookAppleHealth.RookHeartRateEvent], Swift.Error>) -> Swift.Void)
-  final public func getBodyHeartRateEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookAppleHealth.RookHeartRateEvent], Swift.Error>) -> Swift.Void)
+  final public func getBodyHeartRateEvents(date: Foundation.Date, excludingDatesBefore: Foundation.Date? = nil, completion: @escaping (Swift.Result<[RookAppleHealth.RookHeartRateEvent], Swift.Error>) -> Swift.Void)
   final public func getPhysicalOxygenationEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookAppleHealth.RookOxygentationEvent], Swift.Error>) -> Swift.Void)
-  final public func getBodyOxygenationEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookAppleHealth.RookOxygentationEvent], Swift.Error>) -> Swift.Void)
-  final public func getActivityEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookAppleHealth.RookActivityEvent], Swift.Error>) -> Swift.Void)
+  final public func getBodyOxygenationEvents(date: Foundation.Date, excludingDatesBefore: Foundation.Date? = nil, completion: @escaping (Swift.Result<[RookAppleHealth.RookOxygentationEvent], Swift.Error>) -> Swift.Void)
+  final public func getActivityEvents(date: Foundation.Date, excludingDatesBefore: Foundation.Date? = nil, completion: @escaping (Swift.Result<[RookAppleHealth.RookActivityEvent], Swift.Error>) -> Swift.Void)
   final public func getLastExtractionDate(of summary: RookAppleHealth.RookDataType) -> Foundation.Date?
   @objc deinit
 }
@@ -253,6 +253,21 @@ extension RookAppleHealth.RookExtractionEventManager {
   @objc deinit
 }
 public typealias NetworkRouterCompletion = (_ data: Foundation.Data?, _ response: Foundation.URLResponse?, _ error: Swift.Error?) -> Swift.Void
+public enum BackGroundStorageTypes : Swift.String {
+  case stepsBackGroundExtractionEnable
+  case caloriesBackGroundExtractionEnable
+  case heartRateBackGroundExtractionEnable
+  case sleepBackGroundExtractionEnable
+  case physicalBackGroundExtractionEnable
+  case bodyBackGroundExtractionEnable
+  case allSummariesBackGroundExtractionEnable
+  case activityEventsBackGroundExtractionEnable
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public struct RookPowerData : Swift.Encodable {
   public let powerAvgWattsNumber: Swift.Int
   public let powerMaxWattsNumber: Swift.Int
@@ -840,6 +855,13 @@ public struct RookOxigenationDataEvent : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
 }
+extension RookAppleHealth.RookBackGroundExtraction {
+  public func setBackGroundListener(type: RookAppleHealth.HealthDataType, completionHandler: @escaping (@escaping HealthKit.HKObserverQueryCompletionHandler, Swift.Error?) -> Swift.Void)
+  public func disableBackGround(for type: RookAppleHealth.HealthDataType, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  public func isBackgroundEnable(for type: RookAppleHealth.BackGroundStorageTypes, completion: @escaping (Swift.Bool) -> Swift.Void)
+  public func setBackGroundEnable(for type: RookAppleHealth.BackGroundStorageTypes)
+  public func setBackGroundDisable(for type: RookAppleHealth.BackGroundStorageTypes)
+}
 @_inheritsConvenienceInitializers @objc final public class RookExtractionManager : ObjectiveC.NSObject {
   @objc override dynamic public init()
   final public func getSleepSummary(date: Foundation.Date, completion: @escaping (Swift.Result<RookAppleHealth.RookSleepData, Swift.Error>) -> Swift.Void)
@@ -1422,6 +1444,9 @@ extension RookAppleHealth.NetworkResponse : Swift.RawRepresentable {}
 extension RookAppleHealth.RookDataType : Swift.Equatable {}
 extension RookAppleHealth.RookDataType : Swift.Hashable {}
 extension RookAppleHealth.RookDataType : Swift.RawRepresentable {}
+extension RookAppleHealth.BackGroundStorageTypes : Swift.Equatable {}
+extension RookAppleHealth.BackGroundStorageTypes : Swift.Hashable {}
+extension RookAppleHealth.BackGroundStorageTypes : Swift.RawRepresentable {}
 extension RookAppleHealth.TimeZoneErrors : Swift.Equatable {}
 extension RookAppleHealth.TimeZoneErrors : Swift.Hashable {}
 extension RookAppleHealth.TimeZoneErrors : Swift.RawRepresentable {}

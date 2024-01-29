@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import RookAppleHealth
+import RookConnectTransmission
 
 @objc public final class RookSummaryManger: NSObject {
   
@@ -14,12 +16,36 @@ import Foundation
   private let sleepUseCase: SummarySyncUseCaseProtocol = SleepSyncUseCase()
   private let physicalUseCase: SummarySyncUseCaseProtocol = PhysicalSyncUseCase()
   private let bodyUseCase: SummarySyncUseCaseProtocol = BodySyncUseCase()
-  private let pendingUseCase: SyncPendingUseCaseProtocol = SyncPendingUseCase()
   
-  lazy var yesterdayUseCase: SyncYesterdaySummaryUseCaseProtocol = {
-    return SyncYesterdaySummaryUseCase(sleepSync: SleepSyncUseCase(),
-                                       physicalSync: PhysicalSyncUseCase(),
-                                       bodySync: BodySyncUseCase())
+  
+  private lazy var pendingUseCase: SyncPendingUseCaseProtocol = {
+    return SyncPendingUseCase()
+  }()
+  
+  private lazy var yesterdayUseCase: SyncYesterdaySummaryUseCaseProtocol = {
+    let extractionManager: RookExtractionManager = RookExtractionManager()
+    let sleepTransmissionManager: RookSleepTransmissionManager = RookSleepTransmissionManager()
+    let physicalTransmissionManager: RookPhysicalTransmissionManager = RookPhysicalTransmissionManager()
+    let bodyTransmission: RookBodyTransmissionManager = RookBodyTransmissionManager()
+    return SyncYesterdaySummaryUseCase(
+      uploadMissingSummaries: UploadMissingSummaries(
+      useCases: UploadMissingSummaries.UseCases(
+        missingDateUseCase: MissingDaysUseCase(
+          localDataSource: SummaryLocalDataSource(
+            sleepTransmissionManger: sleepTransmissionManager,
+            physicalTransmissionManger: physicalTransmissionManager,
+            bodyTransmissionManger: bodyTransmission)),
+        extractionSleepUseCase: ExtractionSleepUseCase(
+          extractionManager: extractionManager,
+          sleepTransmissionManger: sleepTransmissionManager),
+        extractionPhysicalUseCase: ExtractionPhysicalUseCase(
+          extractionManager: extractionManager,
+          physicalTransmissionManager: physicalTransmissionManager),
+        extractionBodyUseCase: ExtractionBodyUseCase(
+          extractionManager: extractionManager,
+          bodyTransmissionManager: bodyTransmission),
+        uploadPendingUseCases: self.pendingUseCase)
+      ))
   }()
   // MARK:  Init
   

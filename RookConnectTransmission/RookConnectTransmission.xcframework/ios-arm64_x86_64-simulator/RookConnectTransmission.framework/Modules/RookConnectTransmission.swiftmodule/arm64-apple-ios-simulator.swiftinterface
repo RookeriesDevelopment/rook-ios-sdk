@@ -12,6 +12,7 @@ import _Concurrency
 import _StringProcessing
 final public class RookBloodPressureEventTransmissionManager {
   public init()
+  final public func getLastBloodPressureEventTransmittedDate() -> Foundation.Date?
   final public func enqueueBloodPressureEvent(_ eventData: Foundation.Data, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func enqueueBloodPressureEvents(_ events: [RookConnectTransmission.RookBloodPressureEventTransmission], completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func getBloodPressureEvents(completion: @escaping (Swift.Result<[RookConnectTransmission.RookBloodPressureEventTransmission], Swift.Error>) -> Swift.Void)
@@ -230,6 +231,7 @@ public struct RookPowerGranularItemTransmission : Swift.Codable {
   final public func uploadSleepSummariesAsync() async throws -> Swift.Bool
   #endif
   final public func uploadSleepSummaries(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func getLastSleepSummaryTransmittedDate() -> Foundation.Date?
   @objc deinit
 }
 public struct RookSnoringGranularTransmissionDTO {
@@ -276,6 +278,8 @@ public struct RookSnoringGranularTransmissionDTO {
 }
 @_inheritsConvenienceInitializers @objc final public class RookTransmissionHrEventManagerObjc : ObjectiveC.NSObject {
   @objc override dynamic public init()
+  @objc final public func getLastBodyHREventTransmittedDate() -> Foundation.Date?
+  @objc final public func getLastPhysicalHREventTransmittedDate() -> Foundation.Date?
   @objc final public func enqueueHrEvents(_ events: [RookConnectTransmission.RookTransmissionHeartRateEventObjc], completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func getBodyHrEventsStored(completion: @escaping ([RookConnectTransmission.RookTransmissionHeartRateEventObjc]?, Swift.Error?) -> Swift.Void)
   @objc final public func getBodyHrEventDictionariesStored(completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
@@ -425,7 +429,7 @@ public struct RookLapGranularItemTransmission : Swift.Codable {
   required public init(from decoder: Swift.Decoder) throws
 }
 public struct RookActivityEventTransmission : Swift.Codable {
-  public var metadata: RookConnectTransmission.RookMetaDataEventTransmission?
+  public var metadata: RookConnectTransmission.RookMetaDataEventTransmission
   public var activityData: RookConnectTransmission.RookActitivityDataEventTransmission?
   public var caloriesData: RookConnectTransmission.RookCaloriesDataEventTransmission?
   public var distanceData: RookConnectTransmission.RookDistanceDateTransmission?
@@ -435,7 +439,7 @@ public struct RookActivityEventTransmission : Swift.Codable {
   public var positionData: RookConnectTransmission.RookPositionDataTransmission?
   public var oxygenationData: RookConnectTransmission.RookOxigenationDataEventTransmission?
   public var stressData: RookConnectTransmission.RookStressDataTransmission?
-  public init(metadata: RookConnectTransmission.RookMetaDataEventTransmission?, activityData: RookConnectTransmission.RookActitivityDataEventTransmission?, caloriesData: RookConnectTransmission.RookCaloriesDataEventTransmission?, distanceData: RookConnectTransmission.RookDistanceDateTransmission?, heartRateData: RookConnectTransmission.RookHeartRateDataEventTransmission?, movementData: RookConnectTransmission.RookMovementDataTransmission?, powerData: RookConnectTransmission.RookPowerDataTransmission?, positionData: RookConnectTransmission.RookPositionDataTransmission?, oxygenationData: RookConnectTransmission.RookOxigenationDataEventTransmission?, stressData: RookConnectTransmission.RookStressDataTransmission?)
+  public init(metadata: RookConnectTransmission.RookMetaDataEventTransmission, activityData: RookConnectTransmission.RookActitivityDataEventTransmission?, caloriesData: RookConnectTransmission.RookCaloriesDataEventTransmission?, distanceData: RookConnectTransmission.RookDistanceDateTransmission?, heartRateData: RookConnectTransmission.RookHeartRateDataEventTransmission?, movementData: RookConnectTransmission.RookMovementDataTransmission?, powerData: RookConnectTransmission.RookPowerDataTransmission?, positionData: RookConnectTransmission.RookPositionDataTransmission?, oxygenationData: RookConnectTransmission.RookOxigenationDataEventTransmission?, stressData: RookConnectTransmission.RookStressDataTransmission?)
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
@@ -570,6 +574,7 @@ extension RookConnectTransmission.RookSleepTransmissionManager {
   @objc final public func enqueueSleepSummaryObjc(with summaryBuilder: RookConnectTransmission.RookSleepDataTransmissionDTOBuilderObjc, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func getSleepSummariesStoredObjc(completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
   @objc final public func uploadSleepSummariesObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func getLastSleepSummaryTransmittedDateObjc() -> Foundation.Date?
 }
 @_inheritsConvenienceInitializers @objc public class RookPhysicalDataTransmissionDTOBuilderObjc : ObjectiveC.NSObject {
   @objc override dynamic public init()
@@ -601,6 +606,7 @@ extension RookConnectTransmission.RookSleepTransmissionManager {
 }
 @_inheritsConvenienceInitializers @objc public class RookGlucoseEventTransmissionManagerObjc : ObjectiveC.NSObject {
   @objc override dynamic public init()
+  @objc public func getLastBloodGlucoseEventTransmittedDate() -> Foundation.Date?
   @objc public func enqueueGlucoseEvents(_ events: [RookConnectTransmission.RookGlucoseEventTransmissionObjc], completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc public func getGlucoseEvents(completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
   @objc public func uploadEvents(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
@@ -622,6 +628,7 @@ public struct RookVo2GranularDTO : Swift.Codable {
   final public func uploadPhysicalSummariesAsync() async throws -> Swift.Bool
   #endif
   final public func uploadPhysicalSummaries(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func getLastPhysicalSummaryTransmittedDate() -> Foundation.Date?
   @objc deinit
 }
 @objc public class MoodGranularDataScaleObjc : ObjectiveC.NSObject, Swift.Codable {
@@ -986,6 +993,7 @@ public struct RookGranularFloorClimbedTransmission : Swift.Codable {
 }
 @_inheritsConvenienceInitializers @objc public class RookActivityEventTransmissionManagerObjc : ObjectiveC.NSObject {
   @objc override dynamic public init()
+  @objc public func getLastActivityEventTransmittedDate() -> Foundation.Date?
   @objc public func enqueueActitivtyEvents(_ events: [RookConnectTransmission.RookTransmissionActivityEventObjc], completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc public func getActivityEvents(completion: @escaping ([RookConnectTransmission.RookTransmissionActivityEventObjc]?, Swift.Error?) -> Swift.Void)
   @objc public func getActivityEventDictionaries(completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
@@ -1017,6 +1025,8 @@ public struct RookMetaDataEventTransmission : Swift.Codable {
 }
 final public class RookHrEventTransmissionManager {
   public init()
+  final public func getLastBodyHREventTransmittedDate() -> Foundation.Date?
+  final public func getLastPhysicalHREventTransmittedDate() -> Foundation.Date?
   final public func enqueueHrEvent(_ eventData: Foundation.Data, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func enqueueHrEvents(_ events: [RookConnectTransmission.RookHeartRateEventTransmission], completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func getBodyHrEventsStored(completion: @escaping (Swift.Result<[RookConnectTransmission.RookHeartRateEventTransmission], Swift.Error>) -> Swift.Void)
@@ -1095,6 +1105,7 @@ public struct RookVo2GranularTransmission : Swift.Codable {
 }
 @_inheritsConvenienceInitializers @objc public class RookTemperatureEventTransmissionManagerObjc : ObjectiveC.NSObject {
   @objc override dynamic public init()
+  public func getLastTemperatureEventTransmittedDate() -> Foundation.Date?
   @objc public func enqueueTemperatureEvents(_ events: [RookConnectTransmission.RookTemperatureEventTransmissionObjc], completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc public func getTemperatureEvents(completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
   @objc public func uploadEvents(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
@@ -1272,6 +1283,7 @@ public struct RookVelocityVectorItemTransmission : Swift.Codable {
 }
 final public class RookActivityEventTransmissionManager {
   public init()
+  final public func getLastActivityEventTransmittedDate() -> Foundation.Date?
   final public func enqueActivityEvent(_ eventData: Foundation.Data, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func enqueueActitivtyEvents(_ events: [RookConnectTransmission.RookActivityEventTransmission], completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func getActivityEvents(completion: @escaping (Swift.Result<[RookConnectTransmission.RookActivityEventTransmission], Swift.Error>) -> Swift.Void)
@@ -1290,6 +1302,8 @@ public struct RookHrvRmssdGranularTransmissionDTO : Swift.Codable {
 }
 @_inheritsConvenienceInitializers @objc public class RookTransmissionOxygenationEventManagerObjc : ObjectiveC.NSObject {
   @objc override dynamic public init()
+  @objc public func getLastBodyOxygenationEventTransmittedDate() -> Foundation.Date?
+  @objc public func getLastPhysicalOxygenationEventTransmittedDate() -> Foundation.Date?
   @objc public func enqueueOxygenationEvents(_ events: [RookConnectTransmission.RookTransmissionOxygenationEventObjc], completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc public func getBodyOxygenationEvents(completion: @escaping ([RookConnectTransmission.RookTransmissionOxygenationEventObjc]?, Swift.Error?) -> Swift.Void)
   @objc public func getBodyOxygenationEventDictionaries(completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
@@ -1303,6 +1317,7 @@ extension RookConnectTransmission.RookPhysicalTransmissionManager {
   @objc final public func enqueuePhysicalSummaryWithPhysicalBuilderObjc(_ builder: RookConnectTransmission.RookPhysicalDataTransmissionDTOBuilderObjc, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func getPhysicalSummariesStored(completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
   @objc final public func uploadPhysicalSummariesObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func getLastPhysicalSummaryTransmittedDateObjc() -> Foundation.Date?
 }
 @objc public class RookTransmissionCaloriesDataEventObjc : ObjectiveC.NSObject, Swift.Encodable {
   @objc final public let caloriesNetIntakeKilocalories: Swift.Int
@@ -1439,6 +1454,7 @@ public enum NetworkResponse : Swift.String {
 }
 final public class RookGlucoseEventTransmissionManager {
   public init()
+  final public func getLastBloodGlucoseEventTransmittedDate() -> Foundation.Date?
   final public func enqueueGlucoseEvent(_ eventData: Foundation.Data, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func enqueueGlucoseEvents(_ events: [RookConnectTransmission.RookGlucoseEventTransmission], completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func getGlucoseEvents(completion: @escaping (Swift.Result<[RookConnectTransmission.RookGlucoseEventTransmission], Swift.Error>) -> Swift.Void)
@@ -1488,6 +1504,7 @@ public struct RookMoodGranularTransmissionDTO : Swift.Codable {
 }
 @_inheritsConvenienceInitializers @objc public class RookBloodPressureEventTransmissionManagerObjc : ObjectiveC.NSObject {
   @objc override dynamic public init()
+  @objc public func getLastBloodPressureEventTransmittedDate() -> Foundation.Date?
   @objc public func enqueuePressureEvents(_ events: [RookConnectTransmission.RookBloodPressureEventTransmissionObjc], completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc public func getBloodPressureEvents(completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
   @objc public func uploadEvents(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
@@ -1557,6 +1574,21 @@ extension RookConnectTransmission.RookPhysicalDataTransmissionDTO {
     @objc deinit
   }
 }
+public enum RookTransmissionEventType : Swift.String {
+  case heartRateBodyEvent
+  case heartRatePhysicalEvent
+  case oxygenationBodyEvent
+  case oxygenationPhysicalEvent
+  case activityEvent
+  case temperatureEvent
+  case bloodGlucoseEvent
+  case bloodPressureEvent
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public struct RookTemperatureEventTransmission : Swift.Codable {
   public var metadata: RookConnectTransmission.RookMetaDataEventTransmission
   public var temperatureData: RookConnectTransmission.RookTemperatureDataTransmission
@@ -1607,10 +1639,13 @@ extension RookConnectTransmission.RookTransmissionError : Foundation.LocalizedEr
   final public func uploadBodySummariesAsync() async throws -> Swift.Bool
   #endif
   final public func uploadBodySummaries(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func getLastBodySummaryTransmittedDate() -> Foundation.Date?
   @objc deinit
 }
 final public class RookOxygenationEventTransmissionManager {
   public init()
+  final public func getLastBodyOxygenationEventTransmittedDate() -> Foundation.Date?
+  final public func getLastPhysicalOxygenationEventTransmittedDate() -> Foundation.Date?
   final public func enqueueOxygenationEvent(_ eventData: Foundation.Data, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func enqueueOxygenationEvents(_ events: [RookConnectTransmission.RookOxygenationEventTransmission], completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func getBodyOxygenationEvents(completion: @escaping (Swift.Result<[RookConnectTransmission.RookOxygenationEventTransmission], Swift.Error>) -> Swift.Void)
@@ -1825,9 +1860,11 @@ extension RookConnectTransmission.RookBodyTransmissionManager {
   @objc final public func enqueueBodySummaries(with bodyBuilder: RookConnectTransmission.RookBodyDataTransmissionDTOBuilderObjc, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func getBodySummariesStoredObjc(completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
   @objc final public func uploadBodySummariesObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func getLastBodySummaryTransmittedDateObjc() -> Foundation.Date?
 }
 final public class RookTemperatureEventTransmissionManager {
   public init()
+  final public func getLastTemperatureEventTransmittedDate() -> Foundation.Date?
   final public func enqueueTemperatureEvent(_ eventData: Foundation.Data, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func enqueueTemperatureEvents(_ events: [RookConnectTransmission.RookTemperatureEventTransmission], completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func getTemperatureEvents(completion: @escaping (Swift.Result<[RookConnectTransmission.RookTemperatureEventTransmission], Swift.Error>) -> Swift.Void)
@@ -1907,6 +1944,16 @@ final public class RookTimeZoneManager {
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
 }
+public enum RookTransmissionSummaryType : Swift.String {
+  case sleep
+  case physical
+  case body
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 @objc public class BloodPressureGranularDataSystolicDiastolicBpNumberObjc : ObjectiveC.NSObject, Swift.Codable {
   final public let datetime: Foundation.Date
   final public let bloodPressureSystolicDiastolicBpNumber: [RookConnectTransmission.BloodPressureSystolicDiastolicBpNumberObjc]
@@ -1941,8 +1988,14 @@ extension RookConnectTransmission.NetworkResponse : Swift.RawRepresentable {}
 extension RookConnectTransmission.NetworkError : Swift.Equatable {}
 extension RookConnectTransmission.NetworkError : Swift.Hashable {}
 extension RookConnectTransmission.NetworkError : Swift.RawRepresentable {}
+extension RookConnectTransmission.RookTransmissionEventType : Swift.Equatable {}
+extension RookConnectTransmission.RookTransmissionEventType : Swift.Hashable {}
+extension RookConnectTransmission.RookTransmissionEventType : Swift.RawRepresentable {}
 extension RookConnectTransmission.RookTransmissionError : Swift.Equatable {}
 extension RookConnectTransmission.RookTransmissionError : Swift.Hashable {}
 extension RookConnectTransmission.RookTransmissionError : Swift.RawRepresentable {}
 extension RookConnectTransmission.RookTransmissionEnvironment : Swift.Equatable {}
 extension RookConnectTransmission.RookTransmissionEnvironment : Swift.Hashable {}
+extension RookConnectTransmission.RookTransmissionSummaryType : Swift.Equatable {}
+extension RookConnectTransmission.RookTransmissionSummaryType : Swift.Hashable {}
+extension RookConnectTransmission.RookTransmissionSummaryType : Swift.RawRepresentable {}

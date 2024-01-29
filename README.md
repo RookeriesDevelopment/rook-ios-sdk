@@ -100,12 +100,13 @@ This class conforms the singleton pattern, to access this class use the shared p
 | `func setEnvironment(_ environment: RookEnvironment)`| Configures the rook sdk environment. |
 | `func initRook()` | Initializes the rook sdk |
 | `func updateUserId(_ id: String, completion: @escaping (Result<Bool, Error>) -> Void)` | It will try to register the user in the rook server and it will be stored, if the registration was successful, after that the sdk upload the current time zone of the device. |
+| `func getUserId(completion: @escaping (Result<String, Error>) -> Void)` | Returns the user id stored locally. |
 | `func clearUser(completion: @escaping (Result<Bool, Error>) -> Void)` | Deletes the user stored locally. |
 | `func removeUserFromRook(completion: @escaping (Result<Bool, Error>) -> Void)` |  Removes the authorization od the user to upload data from apple health and deletes the user id stored locally. |
 | `func syncUserTimeZone(completion: @escaping (Result<Bool, Error>) -> Void)`| Uploads the current time zone of the device a user has to added before use this method. |
-| `func enableYesterdaySync()`| After call this method, every time a user opens the application the sdk will upload data, if there is new information, a user has to be added first, if there is not user stored, the data won't be uploaded. |
-| `func disableYesterdaySync()`| Disables the upload data after the user opens the app. |
-| `func isYesterdaySyncEnable() () -> Bool`| Returns a boolean indicating if the sync yesterday is enable. |
+| `func enableYesterdaySync()` | This method enables the automatic upload of the summaries from the previous day of the current device's date. Every time the user opens the app it will try to upload the summaries, before use this method is necessary to add a user id and request permissions. |
+| `func disableYesterdaySync()` | This method disables the automatic upload of the summaries from the previous day of the current device's date. |
+| `func isYesterdaySyncEnable() -> Bool` | Returns a boolean indicating if the automatic upload is enable. |
 
 ### Get user authorization
 
@@ -123,19 +124,75 @@ The sdk provides `RookConnectPermissionsManager` class to request user's permiss
 | + `requestPhysicalPermissions(completion: @escaping (Result<Bool, Error>) -> Void)` | Sends a request for the physical data types permissions and displays a view to grand access |
 | + `requestBodyPermissions(completion: @escaping (Result<Bool, Error>) -> Void)` | Sends a request for the body data type permissions and displays a view to grand access. |
 
-**Note: The callback of each method will return a boolean true if the permission window was successfully presented or false and an optional error if the window was not presented properly. This value does not indicate whether the user actually granted permission. Please keep in mind, that Apple Health does not allow to check the status of permission for types which were requested to be read. If the user does not allow data types reading by mistake or on purpose, it simply appears as if there is no data of the requested type in the Heathkit store. Any further change must be performed by the user through the Apple Health application.**
+**Note: The callback of each method will return a boolean true if the permission window was successfully presented or false and an optional error if the window was not presented properly. This value does not indicate whether the user actually granted permission. Please keep in mind, that Apple Health does not allow to check the status of permission for types which were requested to be read. If the user does not allow data types reading by mistake or on purpose, it simply appears as if there is no data of the requested type in the HealthKit store. Any further change must be performed by the user through the Apple Health application.**
 
 ### User
 
 Before synchronize summaries or events a user have to be added, otherwise the sdk will return an error.
 
-The class `RookConnectConfigurationManager` contains two methods related to the user access.
+The class `RookConnectConfigurationManager` contains the below methods related to the user access.
 
 | Method | Description |
 | ----- | ----- |
 | `func updateUserId(_ id: String, completion: @escaping (Result<Bool, Error>) -> Void)` | It will try to register the user in the rook server and it will be stored, if the registration was successful, after that the sdk upload the current time zone of the device. |
+| `func getUserId(completion: @escaping (Result<String, Error>) -> Void)` | Return the user id stored locally. |
 | `func clearUser(completion: @escaping (Result<Bool, Error>) -> Void)` | Deletes the user stored locally. |
+| `func removeUserFromRook(completion: @escaping (Result<Bool, Error>) -> Void)` |  Removes the authorization od the user to upload data from apple health and deletes the user id stored locally. |
 | `public func syncUserTimeZone(completion: @escaping (Result<Bool, Error>) -> Void)` | Uploads the current time zone of the device a user has to added before use this method. |
+
+# Continuous Upload
+
+---
+
+The class `RookConnectConfigurationManager` contains two methods to enable or disable continuous data upload. every time a user opens the app, the sdk will try to upload the data from the previous day of the device's current date.
+
+**Note: before enable this feature it is necessary to add a user a request permission from apple health**
+
+| Method | Description |
+| ----- | ----- |
+| `func enableYesterdaySync()` | This method enables the automatic upload of the summaries from the previous day of the current device's date. Every time the user opens the app it will try to upload the summaries, before use this method is necessary to add a user id and request permissions. |
+| `func disableYesterdaySync()` | This method disables the automatic upload of the summaries from the previous day of the current device's date. |
+
+# Background Upload
+
+---
+
+### RookBackGroundSync
+
+The class `RookBackGroundSync` contains the methods to enable background upload for summaries, this allows to your app to upload health data while your app is in background. it is recommended to combine continuous upload, back ground upload and manual sync for a better performance.
+
+
+**Note: Please note that for security, iOS devices encrypt the HealthKit storage when users lock their devices. As a result, apps may not be able to read data from Apple Health when it runs in the background. Please refer to the official documentation for more information.**
+
+| Method | Description |
+| ----- | ----- |
+| `func setBackListeners()` | This method has to be added in app delegate to enable back ground upload. |
+| `func enableBackGroundForSummaries()` | This method enables the background upload of the summaries. |
+| `func disableBackGroundForSummaries()` | This method disables the background upload of the summaries. |
+
+To configure background upload you need to follow the steps bellow:
+
+- Add health kit to your project and enable background delivery.
+- Add Background modes and enable Background fetch.
+
+![background_delivery](background_delivery.png)
+
+- In the app delegate of your app add the `setBackListeners()` method in didFinishLaunchingWithOptions function.
+
+#### Example
+
+``` swift
+
+import RookAppleHealth
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+  
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+                    RookBackGroundSync.shared.setBackListeners()
+                   }
+```
+
 
 # Manual Sync Data
 

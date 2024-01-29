@@ -6,28 +6,71 @@
 //
 
 import Foundation
+import RookAppleHealth
+import RookConnectTransmission
 
 @objc public final class RookEventsManager: NSObject {
   
   // MARK:  Properties
   
-  private let syncBodyHrEventsUseCase: SyncBodyHeartRateEventsUseCaseProtocol = SyncBodyHeartRateEventsUseCase()
-  private let syncPhysicalEventsUseCase: SyncPhysicalHeartRateEventsUseCaseProtocol = SyncPhysicalHeartRateEventsUseCase()
+  private lazy var syncBodyHrEventsUseCase: SyncBodyHeartRateEventsUseCase = {
+    SyncBodyHeartRateEventsUseCase()
+  }()
+
+  private lazy var syncPhysicalEventsUseCase: SyncPhysicalHeartRateEventsUseCase = { SyncPhysicalHeartRateEventsUseCase()
+  }()
   
-  private let syncBodyOxygenationEventsUseCase: SyncBodyOxygenationUseCaseProtocol = SyncBodyOxygenationUseCase()
-  private let syncPhysicalOxygenationEventUseCase: SyncPhysicalOxygenationUseCaseProtocol = SyncPhysicalOxygenationUseCase()
+  private lazy var syncBodyOxygenationEventsUseCase: SyncBodyOxygenationUseCase = { 
+    SyncBodyOxygenationUseCase()
+  }()
+
+  private lazy var syncPhysicalOxygenationEventUseCase: SyncPhysicalOxygenationUseCase = { SyncPhysicalOxygenationUseCase()
+  }()
+
+  private lazy var syncActivityEventsUseCase: SyncActivityEventsUseCase = {
+    SyncActivityEventsUseCase()
+  }()
   
-  private let syncActivityEventsUseCase: SyncActivityEventsUseCaseProtocol = SyncActivityEventsUseCase()
+  private lazy var syncTemperatureUseCase: SyncTemperatureEventsUseCase = {
+    SyncTemperatureEventsUseCase()
+  }()
   
-  private let syncTemperatureUseCase: SyncTemperatureEventsUseCaseProtocol = SyncTemperatureEventsUseCase()
+  private lazy var syncBloodGlucoseUseCase: SyncBloodGlucoseEventsUseCase = {
+    SyncBloodGlucoseEventsUseCase()
+  }()
   
-  private let syncBloodGlucoseUseCase: SyncBloodGlucoseEventsUseCaseProtocol = SyncBloodGlucoseEventsUseCase()
+  private lazy var syncBloodPressureUseCase: SyncBloodPressureEventsUseCase = {
+    SyncBloodPressureEventsUseCase()
+  }()
   
-  private let syncBloodPressureUseCase: SyncBloodPressureEventsUseCaseProtocol = SyncBloodPressureEventsUseCase()
+  private lazy var syncPendingEventUseCase: SyncPendingEventsUseCase = {
+    SyncPendingEventsUseCase()
+  }()
   
-  private let syncYesterdayEventsUseCase: SyncYesterdayEventsUseCase = SyncYesterdayEventsUseCase()
-  
-  private let syncPendingEventUseCase: SyncPendingEventsUseCaseProtocol = SyncPendingEventsUseCase()
+  private lazy var syncYesterdayEventsUseCase: SyncYesterdayEventsUseCase = {
+    let transmission: RookActivityEventTransmissionManager = RookActivityEventTransmissionManager()
+    return SyncYesterdayEventsUseCase(
+      useCases: SyncYesterdayEventsUseCase.UseCases(
+        physicalOxygenationUseCase: syncPhysicalOxygenationEventUseCase,
+        bodyOxygenationUseCase: syncBodyOxygenationEventsUseCase,
+        physicalHeartRateUseCase: syncPhysicalEventsUseCase,
+        activityUseCase: UploadMissingActivityEvents(
+          extractionManager: RookExtractionEventManager(),
+          useCases: UploadMissingActivityEvents.UseCases(
+            missingDateUseCase: MissingEventsDaysUseCase(
+              localDataSource: EventLocalDataSource(
+                activityEventTransmissionManger: transmission)
+            )
+          ),
+          transmissionActivityEvents: transmission),
+        bodyHeartRateUseCase: syncBodyHrEventsUseCase,
+        pressureUseCase: syncBloodPressureUseCase,
+        glucoseUseCase: syncBloodGlucoseUseCase,
+        temperatureUseCase: syncTemperatureUseCase,
+        lastExtractionUseCase: LastExtractionEventDateUseCase()
+      )
+    )
+  }()
   
   // MARK:  Int
   
@@ -37,11 +80,11 @@ import Foundation
   // MARK:  Helpers
   
   @objc public func syncYesterdayEvents(completion: @escaping () -> Void) {
-    syncYesterdayEventsUseCase.execute(completion: completion)
+    self.syncYesterdayEventsUseCase.execute(completion: completion)
   }
   
   public func syncBodyHeartRateEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
-    syncBodyHrEventsUseCase.execute(date: date, completion: completion)
+    syncBodyHrEventsUseCase.execute(date: date, excludingDatesBefore: nil, completion: completion)
   }
   
   public func syncPhysicalHeartRateEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
@@ -49,7 +92,7 @@ import Foundation
   }
   
   public func syncBodyOxygenationEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
-    syncBodyOxygenationEventsUseCase.execute(date: date, completion: completion)
+    syncBodyOxygenationEventsUseCase.execute(date: date, excludingDatesBefore: nil, completion: completion)
   }
   
   public func syncPhysicalOxygenationEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
