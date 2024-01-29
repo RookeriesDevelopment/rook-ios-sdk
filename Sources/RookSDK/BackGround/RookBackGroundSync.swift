@@ -98,6 +98,7 @@ import UIKit
 
   @objc public func disableBackGroundForSummaries() {
     backGroundManager.setBackGroundDisable(for: .allSummariesBackGroundExtractionEnable)
+    backGroundManager.disableBackGround(for: .heartRate) { _ in }
   }
 
   private func setBackGround() {
