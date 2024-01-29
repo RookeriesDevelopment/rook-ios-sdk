@@ -316,6 +316,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 - (void)disableBackGroundForCaloriesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
+
 @class NSDate;
 @class RookExtractionActivityLevelGranularObjc;
 

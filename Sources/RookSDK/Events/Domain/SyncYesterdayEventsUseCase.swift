@@ -9,15 +9,24 @@ import Foundation
 import RookAppleHealth
 
 final class SyncYesterdayEventsUseCase {
-  let physicalOxygenationUseCase: SyncPhysicalOxygenationUseCase = SyncPhysicalOxygenationUseCase()
-  let bodyOxygenationUseCase: SyncBodyOxygenationUseCase = SyncBodyOxygenationUseCase()
-  let physicalHeartRateUseCase: SyncPhysicalHeartRateEventsUseCase = SyncPhysicalHeartRateEventsUseCase()
-  let activityUseCase: SyncActivityEventsUseCase = SyncActivityEventsUseCase()
-  let bodyHeartRateUseCase: SyncBodyHeartRateEventsUseCase = SyncBodyHeartRateEventsUseCase()
-  let pressureUseCase: SyncBloodPressureEventsUseCase = SyncBloodPressureEventsUseCase()
-  let glucoseUseCase: SyncBloodGlucoseEventsUseCase = SyncBloodGlucoseEventsUseCase()
-  let temperatureUseCase: SyncTemperatureEventsUseCase = SyncTemperatureEventsUseCase()
-  let lastExtractionUseCase: LastExtractionEventDateUseCase = LastExtractionEventDateUseCase()
+  
+  struct UseCases {
+    let physicalOxygenationUseCase: SyncPhysicalOxygenationUseCase
+    let bodyOxygenationUseCase: SyncBodyOxygenationUseCase
+    let physicalHeartRateUseCase: SyncPhysicalHeartRateEventsUseCase
+    let activityUseCase: UploadMissingActivityEventsProtocol
+    let bodyHeartRateUseCase: SyncBodyHeartRateEventsUseCase
+    let pressureUseCase: SyncBloodPressureEventsUseCase
+    let glucoseUseCase: SyncBloodGlucoseEventsUseCase
+    let temperatureUseCase: SyncTemperatureEventsUseCase
+    let lastExtractionUseCase: LastExtractionEventDateUseCase
+  }
+
+  let useCases: UseCases
+  
+  init(useCases: UseCases) {
+    self.useCases = useCases
+  }
   
   func execute(completion: @escaping () -> Void) {
     
@@ -27,18 +36,25 @@ final class SyncYesterdayEventsUseCase {
     }
     
     Task {
+
+      // Activity
+      do {
+        _ = try await self.useCases.activityUseCase.execute(upload: true)
+      } catch {
+      }
       
       // Oxygenation
       do {
-        if isValidDateForUpdate(for: .oxygenationPhysicalEvent) {
+        if isValidDateForUpdate(for: .oxygenationPhysicalEvent, forToday: false) {
           _ = try await uploadAsyncPhysicalOxygenation(yesterdayDate)
         }
       } catch {
       }
       
       do {
-        if isValidDateForUpdate(for: .oxygenationBodyEvent) {
-          _ = try await uploadAsyncBodyOxygenation(yesterdayDate)
+        if isValidDateForUpdate(for: .oxygenationBodyEvent, forToday: false) {
+          _ = try await uploadAsyncBodyOxygenation(yesterdayDate,
+                                                   excludingDatesBefore: nil)
         }
       } catch {
       }
@@ -52,7 +68,10 @@ final class SyncYesterdayEventsUseCase {
       
       do {
         if isValidDateForUpdate(for: .oxygenationBodyEvent) {
-          _ = try await uploadAsyncBodyOxygenation(currentDate)
+          _ = try await uploadAsyncBodyOxygenation(
+            currentDate,
+            excludingDatesBefore: useCases.lastExtractionUseCase.execute(
+              type: .oxygenationBodyEvent))
         }
       } catch {
       }
@@ -60,14 +79,14 @@ final class SyncYesterdayEventsUseCase {
       // Heart Rate
       
       do {
-        if isValidDateForUpdate(for: .heartRateBodyEvent) {
-          _ = try await uploadAsyncBodyHeartRate(yesterdayDate)
+        if isValidDateForUpdate(for: .heartRateBodyEvent, forToday: false) {
+          _ = try await uploadAsyncBodyHeartRate(yesterdayDate, excludingDatesBefore: nil)
         }
       } catch {
       }
       
       do {
-        if isValidDateForUpdate(for: .heartRatePhysicalEvent) {
+        if isValidDateForUpdate(for: .heartRatePhysicalEvent, forToday: false) {
           _ = try await uploadAsyncPhysicalHeartRate(yesterdayDate)
         }
       } catch {
@@ -75,7 +94,10 @@ final class SyncYesterdayEventsUseCase {
       
       do {
         if isValidDateForUpdate(for: .heartRateBodyEvent) {
-          _ = try await uploadAsyncBodyHeartRate(currentDate)
+          _ = try await uploadAsyncBodyHeartRate(
+            currentDate,
+            excludingDatesBefore: useCases.lastExtractionUseCase.execute(
+              type: .heartRateBodyEvent))
         }
       } catch {
       }
@@ -87,26 +109,10 @@ final class SyncYesterdayEventsUseCase {
       } catch {
       }
       
-      // Activity
-      
-      do {
-        if isValidDateForUpdate(for: .activityEvent) {
-          _ = try await uploadAsyncActivity(yesterdayDate)
-        }
-      } catch {
-      }
-      
-      do {
-        if isValidDateForUpdate(for: .activityEvent) {
-          _ = try await uploadAsyncActivity(currentDate)
-        }
-      } catch {
-      }
-      
       // Blood Pressure
       
       do {
-        if isValidDateForUpdate(for: .bloodPressureEvent) {
+        if isValidDateForUpdate(for: .bloodPressureEvent, forToday: false) {
           _ = try await uploadAsyncBloodPressure(yesterdayDate)
         }
       } catch {
@@ -122,7 +128,7 @@ final class SyncYesterdayEventsUseCase {
       // Blood Glucose
       
       do {
-        if isValidDateForUpdate(for: .bloodGlucoseEvent) {
+        if isValidDateForUpdate(for: .bloodGlucoseEvent, forToday: false) {
           _ = try await uploadAsyncBloodGlucose(yesterdayDate)
         }
       } catch {
@@ -138,7 +144,7 @@ final class SyncYesterdayEventsUseCase {
       // Temperature
       
       do {
-        if isValidDateForUpdate(for: .temperatureEvent) {
+        if isValidDateForUpdate(for: .temperatureEvent, forToday: false) {
           _ = try await uploadAsyncTemperature(yesterdayDate)
         }
       } catch {
@@ -157,12 +163,13 @@ final class SyncYesterdayEventsUseCase {
     
   }
 
-  private func isValidDateForUpdate(for type: RookDataType) -> Bool {
-    if let lastExtractionDate: Date = lastExtractionUseCase.execute(type: type) {
+  private func isValidDateForUpdate(for type: RookDataType, forToday: Bool = true) -> Bool {
+    if let lastExtractionDate: Date = useCases.lastExtractionUseCase.execute(type: type) {
       let currentDate: Date = Date()
       let distance: TimeInterval = lastExtractionDate.distance(to: currentDate)
       let distanceHours: Int = Int(distance) / 3600
-      return distanceHours > 1
+      let minimumTimeForUpdate: Int = forToday ? 1 : 24
+      return distanceHours >= minimumTimeForUpdate
     } else {
       return true
     }

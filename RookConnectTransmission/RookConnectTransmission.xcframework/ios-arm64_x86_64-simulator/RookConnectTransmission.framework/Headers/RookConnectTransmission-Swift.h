@@ -389,6 +389,7 @@ SWIFT_CLASS("_TtC23RookConnectTransmission54PressureAverageSystolicDiastolicNumb
 SWIFT_CLASS("_TtC23RookConnectTransmission40RookActivityEventTransmissionManagerObjc")
 @interface RookActivityEventTransmissionManagerObjc : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (NSDate * _Nullable)getLastActivityEventTransmittedDate SWIFT_WARN_UNUSED_RESULT;
 - (void)enqueueActitivtyEvents:(NSArray<RookTransmissionActivityEventObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getActivityEventsWithCompletion:(void (^ _Nonnull)(NSArray<RookTransmissionActivityEventObjc *> * _Nullable, NSError * _Nullable))completion;
 - (void)getActivityEventDictionariesWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
@@ -410,6 +411,7 @@ SWIFT_CLASS("_TtC23RookConnectTransmission37RookBloodPressureDataTransmissionObj
 SWIFT_CLASS("_TtC23RookConnectTransmission45RookBloodPressureEventTransmissionManagerObjc")
 @interface RookBloodPressureEventTransmissionManagerObjc : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (NSDate * _Nullable)getLastBloodPressureEventTransmittedDate SWIFT_WARN_UNUSED_RESULT;
 - (void)enqueuePressureEvents:(NSArray<RookBloodPressureEventTransmissionObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getBloodPressureEventsWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)uploadEventsWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
@@ -463,6 +465,7 @@ SWIFT_CLASS("_TtC23RookConnectTransmission27RookBodyTransmissionManager")
 - (void)enqueueBodySummariesWith:(RookBodyDataTransmissionDTOBuilderObjc * _Nonnull)bodyBuilder completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getBodySummariesStoredObjcWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)uploadBodySummariesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (NSDate * _Nullable)getLastBodySummaryTransmittedDateObjc SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -489,6 +492,7 @@ SWIFT_CLASS("_TtC23RookConnectTransmission31RookGlucoseDataTransmissionObjc")
 SWIFT_CLASS("_TtC23RookConnectTransmission39RookGlucoseEventTransmissionManagerObjc")
 @interface RookGlucoseEventTransmissionManagerObjc : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (NSDate * _Nullable)getLastBloodGlucoseEventTransmittedDate SWIFT_WARN_UNUSED_RESULT;
 - (void)enqueueGlucoseEvents:(NSArray<RookGlucoseEventTransmissionObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getGlucoseEventsWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)uploadEventsWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
@@ -590,6 +594,7 @@ SWIFT_CLASS("_TtC23RookConnectTransmission31RookPhysicalTransmissionManager")
 - (void)enqueuePhysicalSummaryWithPhysicalBuilderObjc:(RookPhysicalDataTransmissionDTOBuilderObjc * _Nonnull)builder completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getPhysicalSummariesStoredWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)uploadPhysicalSummariesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (NSDate * _Nullable)getLastPhysicalSummaryTransmittedDateObjc SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -634,6 +639,7 @@ SWIFT_CLASS("_TtC23RookConnectTransmission28RookSleepTransmissionManager")
 - (void)enqueueSleepSummaryObjcWith:(RookSleepDataTransmissionDTOBuilderObjc * _Nonnull)summaryBuilder completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getSleepSummariesStoredObjcWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)uploadSleepSummariesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (NSDate * _Nullable)getLastSleepSummaryTransmittedDateObjc SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -887,6 +893,8 @@ SWIFT_CLASS("_TtC23RookConnectTransmission34RookTransmissionHeartRateEventObjc")
 SWIFT_CLASS("_TtC23RookConnectTransmission34RookTransmissionHrEventManagerObjc")
 @interface RookTransmissionHrEventManagerObjc : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (NSDate * _Nullable)getLastBodyHREventTransmittedDate SWIFT_WARN_UNUSED_RESULT;
+- (NSDate * _Nullable)getLastPhysicalHREventTransmittedDate SWIFT_WARN_UNUSED_RESULT;
 - (void)enqueueHrEvents:(NSArray<RookTransmissionHeartRateEventObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getBodyHrEventsStoredWithCompletion:(void (^ _Nonnull)(NSArray<RookTransmissionHeartRateEventObjc *> * _Nullable, NSError * _Nullable))completion;
 - (void)getBodyHrEventDictionariesStoredWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
@@ -1005,6 +1013,8 @@ SWIFT_CLASS("_TtC23RookConnectTransmission35RookTransmissionOxygenationDataObjc"
 SWIFT_CLASS("_TtC23RookConnectTransmission43RookTransmissionOxygenationEventManagerObjc")
 @interface RookTransmissionOxygenationEventManagerObjc : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (NSDate * _Nullable)getLastBodyOxygenationEventTransmittedDate SWIFT_WARN_UNUSED_RESULT;
+- (NSDate * _Nullable)getLastPhysicalOxygenationEventTransmittedDate SWIFT_WARN_UNUSED_RESULT;
 - (void)enqueueOxygenationEvents:(NSArray<RookTransmissionOxygenationEventObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getBodyOxygenationEventsWithCompletion:(void (^ _Nonnull)(NSArray<RookTransmissionOxygenationEventObjc *> * _Nullable, NSError * _Nullable))completion;
 - (void)getBodyOxygenationEventDictionariesWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
@@ -1671,6 +1681,7 @@ SWIFT_CLASS("_TtC23RookConnectTransmission54PressureAverageSystolicDiastolicNumb
 SWIFT_CLASS("_TtC23RookConnectTransmission40RookActivityEventTransmissionManagerObjc")
 @interface RookActivityEventTransmissionManagerObjc : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (NSDate * _Nullable)getLastActivityEventTransmittedDate SWIFT_WARN_UNUSED_RESULT;
 - (void)enqueueActitivtyEvents:(NSArray<RookTransmissionActivityEventObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getActivityEventsWithCompletion:(void (^ _Nonnull)(NSArray<RookTransmissionActivityEventObjc *> * _Nullable, NSError * _Nullable))completion;
 - (void)getActivityEventDictionariesWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
@@ -1692,6 +1703,7 @@ SWIFT_CLASS("_TtC23RookConnectTransmission37RookBloodPressureDataTransmissionObj
 SWIFT_CLASS("_TtC23RookConnectTransmission45RookBloodPressureEventTransmissionManagerObjc")
 @interface RookBloodPressureEventTransmissionManagerObjc : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (NSDate * _Nullable)getLastBloodPressureEventTransmittedDate SWIFT_WARN_UNUSED_RESULT;
 - (void)enqueuePressureEvents:(NSArray<RookBloodPressureEventTransmissionObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getBloodPressureEventsWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)uploadEventsWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
@@ -1745,6 +1757,7 @@ SWIFT_CLASS("_TtC23RookConnectTransmission27RookBodyTransmissionManager")
 - (void)enqueueBodySummariesWith:(RookBodyDataTransmissionDTOBuilderObjc * _Nonnull)bodyBuilder completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getBodySummariesStoredObjcWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)uploadBodySummariesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (NSDate * _Nullable)getLastBodySummaryTransmittedDateObjc SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -1771,6 +1784,7 @@ SWIFT_CLASS("_TtC23RookConnectTransmission31RookGlucoseDataTransmissionObjc")
 SWIFT_CLASS("_TtC23RookConnectTransmission39RookGlucoseEventTransmissionManagerObjc")
 @interface RookGlucoseEventTransmissionManagerObjc : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (NSDate * _Nullable)getLastBloodGlucoseEventTransmittedDate SWIFT_WARN_UNUSED_RESULT;
 - (void)enqueueGlucoseEvents:(NSArray<RookGlucoseEventTransmissionObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getGlucoseEventsWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)uploadEventsWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
@@ -1872,6 +1886,7 @@ SWIFT_CLASS("_TtC23RookConnectTransmission31RookPhysicalTransmissionManager")
 - (void)enqueuePhysicalSummaryWithPhysicalBuilderObjc:(RookPhysicalDataTransmissionDTOBuilderObjc * _Nonnull)builder completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getPhysicalSummariesStoredWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)uploadPhysicalSummariesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (NSDate * _Nullable)getLastPhysicalSummaryTransmittedDateObjc SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -1916,6 +1931,7 @@ SWIFT_CLASS("_TtC23RookConnectTransmission28RookSleepTransmissionManager")
 - (void)enqueueSleepSummaryObjcWith:(RookSleepDataTransmissionDTOBuilderObjc * _Nonnull)summaryBuilder completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getSleepSummariesStoredObjcWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)uploadSleepSummariesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (NSDate * _Nullable)getLastSleepSummaryTransmittedDateObjc SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -2169,6 +2185,8 @@ SWIFT_CLASS("_TtC23RookConnectTransmission34RookTransmissionHeartRateEventObjc")
 SWIFT_CLASS("_TtC23RookConnectTransmission34RookTransmissionHrEventManagerObjc")
 @interface RookTransmissionHrEventManagerObjc : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (NSDate * _Nullable)getLastBodyHREventTransmittedDate SWIFT_WARN_UNUSED_RESULT;
+- (NSDate * _Nullable)getLastPhysicalHREventTransmittedDate SWIFT_WARN_UNUSED_RESULT;
 - (void)enqueueHrEvents:(NSArray<RookTransmissionHeartRateEventObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getBodyHrEventsStoredWithCompletion:(void (^ _Nonnull)(NSArray<RookTransmissionHeartRateEventObjc *> * _Nullable, NSError * _Nullable))completion;
 - (void)getBodyHrEventDictionariesStoredWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
@@ -2287,6 +2305,8 @@ SWIFT_CLASS("_TtC23RookConnectTransmission35RookTransmissionOxygenationDataObjc"
 SWIFT_CLASS("_TtC23RookConnectTransmission43RookTransmissionOxygenationEventManagerObjc")
 @interface RookTransmissionOxygenationEventManagerObjc : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (NSDate * _Nullable)getLastBodyOxygenationEventTransmittedDate SWIFT_WARN_UNUSED_RESULT;
+- (NSDate * _Nullable)getLastPhysicalOxygenationEventTransmittedDate SWIFT_WARN_UNUSED_RESULT;
 - (void)enqueueOxygenationEvents:(NSArray<RookTransmissionOxygenationEventObjc *> * _Nonnull)events completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getBodyOxygenationEventsWithCompletion:(void (^ _Nonnull)(NSArray<RookTransmissionOxygenationEventObjc *> * _Nullable, NSError * _Nullable))completion;
 - (void)getBodyOxygenationEventDictionariesWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
