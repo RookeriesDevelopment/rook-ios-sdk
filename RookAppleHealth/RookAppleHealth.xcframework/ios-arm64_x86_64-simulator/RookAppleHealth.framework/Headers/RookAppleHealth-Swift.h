@@ -401,9 +401,9 @@ SWIFT_CLASS("_TtC15RookAppleHealth37RookExtractionCadenceGranularItemObjc")
 SWIFT_CLASS("_TtC15RookAppleHealth35RookExtractionCaloriesDataEventObjc")
 @interface RookExtractionCaloriesDataEventObjc : NSObject
 @property (nonatomic, readonly) NSInteger caloriesNetIntakeKilocalories;
-@property (nonatomic, readonly) NSInteger caloriesExpenditureKilocalories;
-@property (nonatomic, readonly) NSInteger caloriesNetActiveKilocalories;
-@property (nonatomic, readonly) NSInteger caloriesBasalMetabolicRateKilocalories;
+@property (nonatomic, readonly) float caloriesExpenditureKilocalories;
+@property (nonatomic, readonly) float caloriesNetActiveKilocalories;
+@property (nonatomic, readonly) float caloriesBasalMetabolicRateKilocalories;
 @property (nonatomic, readonly) NSInteger fatPercentageOfCaloriesPercentage;
 @property (nonatomic, readonly) NSInteger carbohydratePercentageOfCaloriesPercentage;
 @property (nonatomic, readonly) NSInteger proteinPercentageOfCaloriesPercentage;
@@ -1260,9 +1260,9 @@ SWIFT_CLASS("_TtC15RookAppleHealth37RookExtractionCadenceGranularItemObjc")
 SWIFT_CLASS("_TtC15RookAppleHealth35RookExtractionCaloriesDataEventObjc")
 @interface RookExtractionCaloriesDataEventObjc : NSObject
 @property (nonatomic, readonly) NSInteger caloriesNetIntakeKilocalories;
-@property (nonatomic, readonly) NSInteger caloriesExpenditureKilocalories;
-@property (nonatomic, readonly) NSInteger caloriesNetActiveKilocalories;
-@property (nonatomic, readonly) NSInteger caloriesBasalMetabolicRateKilocalories;
+@property (nonatomic, readonly) float caloriesExpenditureKilocalories;
+@property (nonatomic, readonly) float caloriesNetActiveKilocalories;
+@property (nonatomic, readonly) float caloriesBasalMetabolicRateKilocalories;
 @property (nonatomic, readonly) NSInteger fatPercentageOfCaloriesPercentage;
 @property (nonatomic, readonly) NSInteger carbohydratePercentageOfCaloriesPercentage;
 @property (nonatomic, readonly) NSInteger proteinPercentageOfCaloriesPercentage;

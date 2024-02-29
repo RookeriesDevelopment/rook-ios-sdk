@@ -16,7 +16,7 @@ extension RookBackGroundSync {
   }
   
   public func disableBackGroundForActivityEvents(completion: @escaping (Result<Bool, Error>) -> Void) {
-    backGroundManager.setBackGroundDisable(for: .activityEventsBackGroundExtractionEnable)
+    backGroundManager.setBackGroundDisable(for: .allSummariesBackGroundExtractionEnable)
     backGroundManager.disableBackGround(for: .workout, completion: completion)
   }
 

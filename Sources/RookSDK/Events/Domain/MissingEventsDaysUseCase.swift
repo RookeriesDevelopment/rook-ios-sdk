@@ -57,13 +57,13 @@ final class MissingEventsDaysUseCase: MissingEventsDaysUseCaseProtocol {
 
   private func getNumberOfMissingDays(_ eventType: EventType) throws -> Int {
     guard let lastDate: Date = localDataSource.getLastEventsUploadDate(for: eventType) else {
-      return 6
+      return 14
     }
     let fromDate: Date = lastDate
     let toDate: Date = Date()
     guard let numberOfDays: Int = Calendar.current.dateComponents([.day], from: fromDate, to: toDate).day else {
       throw RookConnectErrors.nothingToUpdate
     }
-    return numberOfDays > 6 ? 6 : numberOfDays
+    return numberOfDays > 14 ? 14 : numberOfDays
   }
 }

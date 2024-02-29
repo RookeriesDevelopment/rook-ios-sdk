@@ -7,6 +7,7 @@
 
 import Foundation
 import RookAppleHealth
+import RookConnectTransmission
 
 final class SyncYesterdayEventsUseCase {
   
@@ -19,7 +20,9 @@ final class SyncYesterdayEventsUseCase {
     let pressureUseCase: SyncBloodPressureEventsUseCase
     let glucoseUseCase: SyncBloodGlucoseEventsUseCase
     let temperatureUseCase: SyncTemperatureEventsUseCase
+    let syncBodyMetricsUseCase: SyncBodyMetricsEventsUseCaseProtocol
     let lastExtractionUseCase: LastExtractionEventDateUseCase
+    let bodyMetricsTransmissionManger: RookBodyMetricsEventTransmissionManager
   }
 
   let useCases: UseCases
@@ -157,6 +160,19 @@ final class SyncYesterdayEventsUseCase {
       } catch {
       }
       
+      // Body Metrics
+      do {
+        _ = try await uploadAsyncBodyMetrics(
+          yesterdayDate,
+          excluding: useCases.bodyMetricsTransmissionManger.getLastBodyMetricsEventTransmittedDate())
+      } catch { }
+
+      do {
+        _ = try await uploadAsyncBodyMetrics(
+          currentDate,
+          excluding: useCases.bodyMetricsTransmissionManger.getLastBodyMetricsEventTransmittedDate())
+      } catch { }
+
       completion()
       
     }

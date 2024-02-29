@@ -112,7 +112,7 @@ import UIKit
 
   private func initUploadBackgroundTask() {
     let summariesUploadTask: UIBackgroundTaskIdentifier = initiateBackgroundTask()
-    pendingUseCase.execute { [weak self] _ in
+    pendingUseCase.execute { [weak self] result in
       self?.handleSummariesUploaded?()
       UIApplication.shared.endBackgroundTask(summariesUploadTask)
     }

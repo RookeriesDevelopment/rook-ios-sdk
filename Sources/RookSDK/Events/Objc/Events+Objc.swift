@@ -96,6 +96,17 @@ extension RookEventsManager {
       }
     }
   }
+
+  @objc public func syncBodyMetricsEventsObjc(date: Date, completion: @escaping (Bool, Error?) -> Void) {
+    self.syncBodyMetricsEvents(date: date) { result in
+      switch result {
+      case .success(let success):
+        completion(success, nil)
+      case .failure(let failure):
+        completion(false, failure)
+      }
+    }
+  }
   
   @objc func syncPendingEventsObjc(completion: @escaping (Bool, Error?) -> Void) {
     self.syncPendingEvents() { result in

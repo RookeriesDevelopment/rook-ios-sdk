@@ -161,7 +161,8 @@ public struct RookDistanceDateTransmission : Swift.Codable {
   public var elevationGranularDataMeters: [RookConnectTransmission.RookGranularElevationTransmission]?
   public var swimmingStrokesNumber: Swift.Int?, swimmingNumLapsNumber: Swift.Int?, swimmingPoolLengthMeters: Swift.Int?, swimmingTotalDistanceMeters: Swift.Int?
   public var swimmingDistanceGranularDataMeters: [RookConnectTransmission.RookGranularSwimmingTransmisison]?
-  public init(stepsNumber: Swift.Int?, stepsGranularDataStepsPerMin: [RookConnectTransmission.RookGranularStepsTransmission]?, walkedDistanceMeters: Swift.Int?, traveledDistanceMeters: Swift.Int?, traveledDistanceGranularDataMeters: [RookConnectTransmission.RookGranularTraveledDistanceTransmission]?, floorsClimbedNumber: Swift.Int?, floorsClimbedGranularDataFloors: [RookConnectTransmission.RookGranularFloorClimbedTransmission]?, elevationAvgAltitudeMeters: Swift.Int?, elevationMinimumAltitudeMeters: Swift.Int?, elevationMaxAltitudeMeters: Swift.Int?, elevationLossActualAltitudeMeters: Swift.Int?, elevationGainActualAltitudeMeters: Swift.Int?, elevationPlannedGainMeters: Swift.Int?, elevationGranularDataMeters: [RookConnectTransmission.RookGranularElevationTransmission]?, swimmingStrokesNumber: Swift.Int?, swimmingNumLapsNumber: Swift.Int?, swimmingPoolLengthMeters: Swift.Int?, swimmingTotalDistanceMeters: Swift.Int?, swimmingDistanceGranularDataMeters: [RookConnectTransmission.RookGranularSwimmingTransmisison]?)
+  public var distanceCyclingMeters: Swift.Int?
+  public init(stepsNumber: Swift.Int?, stepsGranularDataStepsPerMin: [RookConnectTransmission.RookGranularStepsTransmission]?, walkedDistanceMeters: Swift.Int?, traveledDistanceMeters: Swift.Int?, traveledDistanceGranularDataMeters: [RookConnectTransmission.RookGranularTraveledDistanceTransmission]?, floorsClimbedNumber: Swift.Int?, floorsClimbedGranularDataFloors: [RookConnectTransmission.RookGranularFloorClimbedTransmission]?, elevationAvgAltitudeMeters: Swift.Int?, elevationMinimumAltitudeMeters: Swift.Int?, elevationMaxAltitudeMeters: Swift.Int?, elevationLossActualAltitudeMeters: Swift.Int?, elevationGainActualAltitudeMeters: Swift.Int?, elevationPlannedGainMeters: Swift.Int?, elevationGranularDataMeters: [RookConnectTransmission.RookGranularElevationTransmission]?, swimmingStrokesNumber: Swift.Int?, swimmingNumLapsNumber: Swift.Int?, swimmingPoolLengthMeters: Swift.Int?, swimmingTotalDistanceMeters: Swift.Int?, swimmingDistanceGranularDataMeters: [RookConnectTransmission.RookGranularSwimmingTransmisison]?, distanceCyclingMeters: Swift.Int? = nil)
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
@@ -286,6 +287,18 @@ public struct RookSnoringGranularTransmissionDTO {
   @objc final public func getHrEventsStored(completion: @escaping ([RookConnectTransmission.RookTransmissionHeartRateEventObjc]?, Swift.Error?) -> Swift.Void)
   @objc final public func getHrEventDictionariesStored(completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
   @objc final public func uploadHrEvents(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc deinit
+}
+final public class RookBodyMetricsEventTransmissionManager {
+  public init()
+  final public func getLastBodyMetricsEventTransmittedDate() -> Foundation.Date?
+  final public func enqueueBodyMetricsEvent(_ eventData: Foundation.Data, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func enqueueBodyMetricsEvents(_ events: [RookConnectTransmission.RookBodyMetricsEventTransmission], completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func getBodyMetricsEvents(completion: @escaping (Swift.Result<[RookConnectTransmission.RookBodyMetricsEventTransmission], Swift.Error>) -> Swift.Void)
+  final public func uploadEvents(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func uploadEventsAsync() async throws -> Swift.Bool
+  #endif
   @objc deinit
 }
 public struct JSONParameterEncoder : RookConnectTransmission.ParameterEncoder {
@@ -452,13 +465,13 @@ public struct RookGranularStepsTransmission : Swift.Codable {
 }
 public struct RookCaloriesDataEventTransmission : Swift.Codable {
   public let caloriesNetIntakeKilocalories: Swift.Int?
-  public let caloriesExpenditureKilocalories: Swift.Int?
-  public let caloriesNetActiveKilocalories: Swift.Int?
-  public let caloriesBasalMetabolicRateKilocalories: Swift.Int?
+  public let caloriesExpenditureKilocalories: Swift.Float?
+  public let caloriesNetActiveKilocalories: Swift.Float?
+  public let caloriesBasalMetabolicRateKilocalories: Swift.Float?
   public let fatPercentageOfCaloriesPercentage: Swift.Int?
   public let carbohydratePercentageOfCaloriesPercentage: Swift.Int?
   public let proteinPercentageOfCaloriesPercentage: Swift.Int?
-  public init(caloriesNetIntakeKilocalories: Swift.Int?, caloriesExpenditureKilocalories: Swift.Int?, caloriesNetActiveKilocalories: Swift.Int?, caloriesBasalMetabolicRateKilocalories: Swift.Int?, fatPercentageOfCaloriesPercentage: Swift.Int?, carbohydratePercentageOfCaloriesPercentage: Swift.Int?, proteinPercentageOfCaloriesPercentage: Swift.Int?)
+  public init(caloriesNetIntakeKilocalories: Swift.Int?, caloriesExpenditureKilocalories: Swift.Float?, caloriesNetActiveKilocalories: Swift.Float?, caloriesBasalMetabolicRateKilocalories: Swift.Float?, fatPercentageOfCaloriesPercentage: Swift.Int?, carbohydratePercentageOfCaloriesPercentage: Swift.Int?, proteinPercentageOfCaloriesPercentage: Swift.Int?)
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
@@ -653,6 +666,29 @@ public struct RookTemperatureGranularTransmissionDTO : Swift.Codable {
   public let measurementType: Swift.String
   public let datetime: Foundation.Date
   public init(datetime: Foundation.Date, temperatureCelsius: Swift.Int, measurementType: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct RookBodyMetricsEventTransmission : Swift.Codable {
+  public let metaData: RookConnectTransmission.RookMetaDataEventTransmission
+  public let bodyMetricsData: RookConnectTransmission.RookBodyMetricsDataEventTransmission
+  public var dataEvent: Foundation.Data? {
+    get
+  }
+  public init(metaData: RookConnectTransmission.RookMetaDataEventTransmission, bodyMetricsData: RookConnectTransmission.RookBodyMetricsDataEventTransmission)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct RookBodyMetricsDataEventTransmission : Swift.Codable {
+  public let waistCircumferenceCMNumber: Swift.Float?
+  public let hipCircumferenceCMNumber: Swift.Float?
+  public let chestCircumferenceCMNumber: Swift.Float?
+  public let boneCompositionPercentageNumber: Swift.Float?
+  public let bmiNumber: Swift.Float?
+  public let muscleCompositionPercentageNumber: Swift.Float?
+  public let weightKgNumber: Swift.Float?
+  public let heightCMNumber: Swift.Float?
+  public init(waistCircumferenceCMNumber: Swift.Float?, hipCircumferenceCMNumber: Swift.Float?, chestCircumferenceCMNumber: Swift.Float?, boneCompositionPercentageNumber: Swift.Float?, bmiNumber: Swift.Float?, muscleCompositionPercentageNumber: Swift.Float?, weightKgNumber: Swift.Float?, heightCMNumber: Swift.Float?)
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
@@ -1321,13 +1357,13 @@ extension RookConnectTransmission.RookPhysicalTransmissionManager {
 }
 @objc public class RookTransmissionCaloriesDataEventObjc : ObjectiveC.NSObject, Swift.Encodable {
   @objc final public let caloriesNetIntakeKilocalories: Swift.Int
-  @objc final public let caloriesExpenditureKilocalories: Swift.Int
-  @objc final public let caloriesNetActiveKilocalories: Swift.Int
-  @objc final public let caloriesBasalMetabolicRateKilocalories: Swift.Int
+  @objc final public let caloriesExpenditureKilocalories: Swift.Float
+  @objc final public let caloriesNetActiveKilocalories: Swift.Float
+  @objc final public let caloriesBasalMetabolicRateKilocalories: Swift.Float
   @objc final public let fatPercentageOfCaloriesPercentage: Swift.Int
   @objc final public let carbohydratePercentageOfCaloriesPercentage: Swift.Int
   @objc final public let proteinPercentageOfCaloriesPercentage: Swift.Int
-  @objc public init(caloriesNetIntakeKilocalories: Swift.Int, caloriesExpenditureKilocalories: Swift.Int, caloriesNetActiveKilocalories: Swift.Int, caloriesBasalMetabolicRateKilocalories: Swift.Int, fatPercentageOfCaloriesPercentage: Swift.Int, carbohydratePercentageOfCaloriesPercentage: Swift.Int, proteinPercentageOfCaloriesPercentage: Swift.Int)
+  @objc public init(caloriesNetIntakeKilocalories: Swift.Int, caloriesExpenditureKilocalories: Swift.Float, caloriesNetActiveKilocalories: Swift.Float, caloriesBasalMetabolicRateKilocalories: Swift.Float, fatPercentageOfCaloriesPercentage: Swift.Int, carbohydratePercentageOfCaloriesPercentage: Swift.Int, proteinPercentageOfCaloriesPercentage: Swift.Int)
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
 }
@@ -1583,6 +1619,7 @@ public enum RookTransmissionEventType : Swift.String {
   case temperatureEvent
   case bloodGlucoseEvent
   case bloodPressureEvent
+  case bodyMetricsEvent
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -1899,7 +1936,8 @@ final public class RookTimeZoneManager {
   @objc public var elevationGranularDataMeters: [RookConnectTransmission.RookTransmissionElevationGranularDataMeterObjc]?
   @objc public var swimmingStrokesNumber: Swift.Int, swimmingNumLapsNumber: Swift.Int, swimmingPoolLengthMeters: Swift.Int, swimmingTotalDistanceMeters: Swift.Int
   @objc public var swimmingDistanceGranularDataMeters: [RookConnectTransmission.RookTransmissionSwimmingDistanceGranularDataMeterObjc]?
-  @objc public init(stepsNumber: Swift.Int, stepsGranularDataStepsPerMin: [RookConnectTransmission.RookTransmissionStepsGranularDataStepsPerHrObjc]?, walkedDistanceMeters: Swift.Int, traveledDistanceMeters: Swift.Int, traveledDistanceGranularDataMeters: [RookConnectTransmission.RookTransmissionTraveledDistanceGranularDataMeterObjc]?, floorsClimbedNumber: Swift.Int, floorsClimbedGranularDataFloors: [RookConnectTransmission.RookTransmissionFloorsClimbedGranularDataFloorObjc]?, elevationAvgAltitudeMeters: Swift.Int, elevationMinimumAltitudeMeters: Swift.Int, elevationMaxAltitudeMeters: Swift.Int, elevationLossActualAltitudeMeters: Swift.Int, elevationGainActualAltitudeMeters: Swift.Int, elevationPlannedGainMeters: Swift.Int, elevationGranularDataMeters: [RookConnectTransmission.RookTransmissionElevationGranularDataMeterObjc]?, swimmingStrokesNumber: Swift.Int, swimmingNumLapsNumber: Swift.Int, swimmingPoolLengthMeters: Swift.Int, swimmingTotalDistanceMeters: Swift.Int, swimmingDistanceGranularDataMeters: [RookConnectTransmission.RookTransmissionSwimmingDistanceGranularDataMeterObjc]?)
+  @objc public var distanceCyclingMeters: Swift.Int
+  @objc public init(stepsNumber: Swift.Int, stepsGranularDataStepsPerMin: [RookConnectTransmission.RookTransmissionStepsGranularDataStepsPerHrObjc]?, walkedDistanceMeters: Swift.Int, traveledDistanceMeters: Swift.Int, traveledDistanceGranularDataMeters: [RookConnectTransmission.RookTransmissionTraveledDistanceGranularDataMeterObjc]?, floorsClimbedNumber: Swift.Int, floorsClimbedGranularDataFloors: [RookConnectTransmission.RookTransmissionFloorsClimbedGranularDataFloorObjc]?, elevationAvgAltitudeMeters: Swift.Int, elevationMinimumAltitudeMeters: Swift.Int, elevationMaxAltitudeMeters: Swift.Int, elevationLossActualAltitudeMeters: Swift.Int, elevationGainActualAltitudeMeters: Swift.Int, elevationPlannedGainMeters: Swift.Int, elevationGranularDataMeters: [RookConnectTransmission.RookTransmissionElevationGranularDataMeterObjc]?, swimmingStrokesNumber: Swift.Int, swimmingNumLapsNumber: Swift.Int, swimmingPoolLengthMeters: Swift.Int, swimmingTotalDistanceMeters: Swift.Int, swimmingDistanceGranularDataMeters: [RookConnectTransmission.RookTransmissionSwimmingDistanceGranularDataMeterObjc]?, distanceCyclingMeters: Swift.Int = 0)
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws

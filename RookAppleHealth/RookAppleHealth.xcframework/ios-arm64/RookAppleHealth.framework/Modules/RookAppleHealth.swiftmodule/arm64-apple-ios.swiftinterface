@@ -47,9 +47,9 @@ public struct RookMovementData : Swift.Encodable {
 }
 public struct RookCaloriesDataEvent : Swift.Encodable {
   public let caloriesNetIntakeKilocalories: Swift.Int?
-  public let caloriesExpenditureKilocalories: Swift.Int?
-  public let caloriesNetActiveKilocalories: Swift.Int?
-  public let caloriesBasalMetabolicRateKilocalories: Swift.Int?
+  public let caloriesExpenditureKilocalories: Swift.Float?
+  public let caloriesNetActiveKilocalories: Swift.Float?
+  public let caloriesBasalMetabolicRateKilocalories: Swift.Float?
   public let fatPercentageOfCaloriesPercentage: Swift.Int?
   public let carbohydratePercentageOfCaloriesPercentage: Swift.Int?
   public let proteinPercentageOfCaloriesPercentage: Swift.Int?
@@ -123,6 +123,19 @@ public struct RookGlucoseGranularItem : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
+public struct RookNutritionEvent : Swift.Codable {
+  public let metaData: RookAppleHealth.RookMetaDataEvent
+  public let nutritionData: RookAppleHealth.RookNutritionEventData
+  public var dataEvent: Foundation.Data? {
+    get
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct RookNutritionEventData : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
 public struct RookSpeedGranularItem : Swift.Encodable {
   public let datetime: Foundation.Date
   public let intervalDurationSeconds: Swift.Int
@@ -131,9 +144,9 @@ public struct RookSpeedGranularItem : Swift.Encodable {
 }
 @_hasMissingDesignatedInitializers @objc public class RookExtractionCaloriesDataEventObjc : ObjectiveC.NSObject, Swift.Encodable {
   @objc final public let caloriesNetIntakeKilocalories: Swift.Int
-  @objc final public let caloriesExpenditureKilocalories: Swift.Int
-  @objc final public let caloriesNetActiveKilocalories: Swift.Int
-  @objc final public let caloriesBasalMetabolicRateKilocalories: Swift.Int
+  @objc final public let caloriesExpenditureKilocalories: Swift.Float
+  @objc final public let caloriesNetActiveKilocalories: Swift.Float
+  @objc final public let caloriesBasalMetabolicRateKilocalories: Swift.Float
   @objc final public let fatPercentageOfCaloriesPercentage: Swift.Int
   @objc final public let carbohydratePercentageOfCaloriesPercentage: Swift.Int
   @objc final public let proteinPercentageOfCaloriesPercentage: Swift.Int
@@ -175,12 +188,32 @@ public enum RookDataType : Swift.String {
   case activityEvent
   case temperatureEvent
   case bloodGlucoseEvent
+  case nutritionEvent
   case bloodPressureEvent
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
+}
+public struct RookBodyMetricsEvent : Swift.Encodable {
+  public let metaData: RookAppleHealth.RookMetaDataEvent
+  public let bodyMetricsData: RookAppleHealth.RookBodyMetricsDataEvent
+  public var dataEvent: Foundation.Data? {
+    get
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct RookBodyMetricsDataEvent : Swift.Encodable {
+  public let waistCircumferenceCMNumber: Swift.Float?
+  public let hipCircumferenceCMNumber: Swift.Float?
+  public let chestCircumferenceCMNumber: Swift.Float?
+  public let boneCompositionPercentageNumber: Swift.Float?
+  public let bmiNumber: Swift.Float?
+  public let muscleCompositionPercentageNumber: Swift.Float?
+  public let weightKgNumber: Swift.Float?
+  public let heightCMNumber: Swift.Float?
+  public func encode(to encoder: Swift.Encoder) throws
 }
 final public class RookExtractionEventManager {
   public init()
@@ -189,6 +222,7 @@ final public class RookExtractionEventManager {
   final public func getPhysicalOxygenationEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookAppleHealth.RookOxygentationEvent], Swift.Error>) -> Swift.Void)
   final public func getBodyOxygenationEvents(date: Foundation.Date, excludingDatesBefore: Foundation.Date? = nil, completion: @escaping (Swift.Result<[RookAppleHealth.RookOxygentationEvent], Swift.Error>) -> Swift.Void)
   final public func getActivityEvents(date: Foundation.Date, excludingDatesBefore: Foundation.Date? = nil, completion: @escaping (Swift.Result<[RookAppleHealth.RookActivityEvent], Swift.Error>) -> Swift.Void)
+  final public func getNutritionEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookAppleHealth.RookNutritionEvent], Swift.Error>) -> Swift.Void)
   final public func getLastExtractionDate(of summary: RookAppleHealth.RookDataType) -> Foundation.Date?
   @objc deinit
 }
@@ -234,6 +268,7 @@ extension RookAppleHealth.RookExtractionEventManager {
   final public func getTemperatureEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookAppleHealth.RookTemperatureEvent], Swift.Error>) -> Swift.Void)
   final public func getBloodPressureEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookAppleHealth.RookBloodPressureEvent], Swift.Error>) -> Swift.Void)
   final public func getGlucoseEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookAppleHealth.RookGlucoseEvent], Swift.Error>) -> Swift.Void)
+  final public func getBodyMetricsEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookAppleHealth.RookBodyMetricsEvent], Swift.Error>) -> Swift.Void)
 }
 @_inheritsConvenienceInitializers @objc final public class RookExtractionEventManagerObjc : ObjectiveC.NSObject {
   @objc override dynamic public init()
@@ -1102,6 +1137,7 @@ public enum HealthDataType : Swift.String, Swift.CaseIterable, Swift.Identifiabl
   case flightsClimbed
   case height
   case bodyMass
+  case bodyMassIndex
   case waistCircumference
   case bodyFatPercentage
   case bodyTemperature
@@ -1194,6 +1230,7 @@ public struct RookDistanceData : Swift.Codable {
   public var elevationGranularDataMeters: [RookAppleHealth.ElevationGranularDataMeter]?
   public var swimmingStrokesNumber: Swift.Int?, swimmingNumLapsNumber: Swift.Int?, swimmingPoolLengthMeters: Swift.Int?, swimmingTotalDistanceMeters: Swift.Int?
   public var swimmingDistanceGranularDataMeters: [RookAppleHealth.SwimmingDistanceGranularDataMeter]?
+  public var distanceCyclingMeters: Swift.Int?
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }

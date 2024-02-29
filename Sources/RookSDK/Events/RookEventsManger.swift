@@ -20,7 +20,7 @@ import RookConnectTransmission
   private lazy var syncPhysicalEventsUseCase: SyncPhysicalHeartRateEventsUseCase = { SyncPhysicalHeartRateEventsUseCase()
   }()
   
-  private lazy var syncBodyOxygenationEventsUseCase: SyncBodyOxygenationUseCase = { 
+  private lazy var syncBodyOxygenationEventsUseCase: SyncBodyOxygenationUseCase = {
     SyncBodyOxygenationUseCase()
   }()
 
@@ -46,6 +46,20 @@ import RookConnectTransmission
   private lazy var syncPendingEventUseCase: SyncPendingEventsUseCase = {
     SyncPendingEventsUseCase()
   }()
+
+  private lazy var extractionManger: RookExtractionEventManager = {
+    RookExtractionEventManager()
+  }()
+
+  private lazy var bodyTransmissionManager: RookBodyMetricsEventTransmissionManager = {
+    RookBodyMetricsEventTransmissionManager()
+  }()
+
+  private lazy var syncBodyMetricsUseCase: SyncBodyMetricsEventsUseCaseProtocol = {
+    return SyncBodyMetricsEventsUseCase(
+      extractionEvent: extractionManger,
+      transmissionEvent: bodyTransmissionManager)
+  }()
   
   private lazy var syncYesterdayEventsUseCase: SyncYesterdayEventsUseCase = {
     let transmission: RookActivityEventTransmissionManager = RookActivityEventTransmissionManager()
@@ -55,7 +69,7 @@ import RookConnectTransmission
         bodyOxygenationUseCase: syncBodyOxygenationEventsUseCase,
         physicalHeartRateUseCase: syncPhysicalEventsUseCase,
         activityUseCase: UploadMissingActivityEvents(
-          extractionManager: RookExtractionEventManager(),
+          extractionManager: extractionManger,
           useCases: UploadMissingActivityEvents.UseCases(
             missingDateUseCase: MissingEventsDaysUseCase(
               localDataSource: EventLocalDataSource(
@@ -67,7 +81,9 @@ import RookConnectTransmission
         pressureUseCase: syncBloodPressureUseCase,
         glucoseUseCase: syncBloodGlucoseUseCase,
         temperatureUseCase: syncTemperatureUseCase,
-        lastExtractionUseCase: LastExtractionEventDateUseCase()
+        syncBodyMetricsUseCase: syncBodyMetricsUseCase,
+        lastExtractionUseCase: LastExtractionEventDateUseCase(),
+        bodyMetricsTransmissionManger: bodyTransmissionManager
       )
     )
   }()
@@ -113,6 +129,10 @@ import RookConnectTransmission
   
   public func syncBloodGlucoseEvents(date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
     syncBloodGlucoseUseCase.execute(date: date, completion: completion)
+  }
+
+  public func syncBodyMetricsEvents(date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
+    syncBodyMetricsUseCase.execute(date: date, excludingDatesBefore: nil, completion: completion)
   }
   
   public func syncPendingEvents(completion: @escaping (Result<Bool, Error>) -> Void) {

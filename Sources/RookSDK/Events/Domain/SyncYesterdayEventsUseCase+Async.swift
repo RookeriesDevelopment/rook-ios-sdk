@@ -101,7 +101,17 @@ extension SyncYesterdayEventsUseCase {
       }
     }
   }
-  
-  
-  
+
+  func uploadAsyncBodyMetrics(_ date: Date, excluding: Date?) async throws -> Bool {
+    try await withCheckedThrowingContinuation { continuation in
+      self.useCases.syncBodyMetricsUseCase.execute(date: date, excludingDatesBefore: excluding) { eventResult in
+        switch eventResult {
+        case .success(let success):
+          continuation.resume(returning: success)
+        case .failure(let failure):
+          continuation.resume(throwing: failure)
+        }
+      }
+    }
+  }
 }

@@ -41,6 +41,4 @@ import RookConnectTransmission
   public func requestBodyPermissions(completion: @escaping (Result<Bool, Error>) -> Void) {
     permissionsManger.requestBodyPermissions(completion: completion)
   }
-  
-  
 }
