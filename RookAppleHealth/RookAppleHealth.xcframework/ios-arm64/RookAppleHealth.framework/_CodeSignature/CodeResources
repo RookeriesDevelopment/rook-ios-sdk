@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		9/3N1lo7/DOF2En+jeTU0SQbyFs=
+		+4XwiPFnd910oOfw0yZgYFPvOmM=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ahRCAjeACs4azSmDYH0nDmxro1I=
+		vuvj+4a4J+EaH6NsPCrhbKXGvBA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,7 +61,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g1oSDHWVkL60taeLCLLx4xvvMxukWiinqRVI4Mtr+1E=
+			z/G2WHgAP443YspccOyBmCgWFLNIIzfmBMWO1QpDAwc=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -89,7 +89,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			meZMRWMEBarD0av+i2cvhORwOlVns0sxd5op7/Fcsz8=
+			DW2V3J9BXTEn0nO2iiVanyQRWMydpT8Yxfw69t59kuw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
