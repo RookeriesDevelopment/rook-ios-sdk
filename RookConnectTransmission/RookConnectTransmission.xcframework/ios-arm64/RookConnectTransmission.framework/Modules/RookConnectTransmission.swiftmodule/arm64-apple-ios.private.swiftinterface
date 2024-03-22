@@ -1488,6 +1488,11 @@ public enum NetworkResponse : Swift.String {
     get
   }
 }
+public class TransmissionLocalDataSource {
+  public init()
+  public func getLastEventTransmissionDate(of eventType: RookConnectTransmission.RookTransmissionEventType) -> Foundation.Date?
+  @objc deinit
+}
 final public class RookGlucoseEventTransmissionManager {
   public init()
   final public func getLastBloodGlucoseEventTransmittedDate() -> Foundation.Date?

@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		/Ct6STGUlz/nNbsKrtzGchIoUMo=
+		pHnVPf8MlAYtmchg8x1NYeR13M4=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		9ftAlPlZkjkDoJwzLNKQ+sfuhUE=
+		0jXxkSwdOVlT4s26XJzXRiaoDIc=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		9ftAlPlZkjkDoJwzLNKQ+sfuhUE=
+		0jXxkSwdOVlT4s26XJzXRiaoDIc=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		udcNhl8dHIJ0uhwTIPRMx2UM6Vo=
+		WvGQDwbHzncV6vZpxYFnZS7Egn4=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		/Ct6STGUlz/nNbsKrtzGchIoUMo=
+		pHnVPf8MlAYtmchg8x1NYeR13M4=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		UOUu95Sq7C8OUx2nIKZHc+Xn49g=
+		A6PF1BSi3afxs6F3ADZj9ylCHWA=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,15 +50,19 @@
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		UOUu95Sq7C8OUx2nIKZHc+Xn49g=
+		A6PF1BSi3afxs6F3ADZj9ylCHWA=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QatxVNA5MADqlxhWOyKqWaoU/d0=
+		syue4BS4KL6/YVnv+TPOTUlWzSM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		p6BZXUP8CCzvUJ3hoeRoB4eeqNA=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		o8RC9VHfPEvA66TEgh5o4d/ZT+4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -81,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jx7NusY+4Bvszg0tZTuVYenVFiWJ0OKo41VtPAlYZrY=
+			BbLEmqMwzwfxWrphe3dktbqH/QUMbWl6RZCz7zB/auw=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XQ1VAXwPJRqvHo1Cc6kwGB2iltHMuBkhav6xBwCsRko=
+			4i7JfdRLrw9R10++ab+GUFcoPp5nFhQW/Hp0ga10vEw=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XQ1VAXwPJRqvHo1Cc6kwGB2iltHMuBkhav6xBwCsRko=
+			4i7JfdRLrw9R10++ab+GUFcoPp5nFhQW/Hp0ga10vEw=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qeGhs0Ug4TaTIOIJfAEtRQCOhanL5AIEsEBWTAgbpcA=
+			NPA6Anq+a8w95O5hP6whdgX86EVgHcQsbkb+4H40vUI=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jx7NusY+4Bvszg0tZTuVYenVFiWJ0OKo41VtPAlYZrY=
+			BbLEmqMwzwfxWrphe3dktbqH/QUMbWl6RZCz7zB/auw=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			msxzR27OMBKXo2TYEVrneSsx1o/kK+zU6OxRvy+Ig70=
+			wqmZbhmfMKw1GVUKnbc+Is3cKe6Lm+yqakaVCLpylss=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			msxzR27OMBKXo2TYEVrneSsx1o/kK+zU6OxRvy+Ig70=
+			wqmZbhmfMKw1GVUKnbc+Is3cKe6Lm+yqakaVCLpylss=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U6KBI5AimpqLSNAIfCj35LqJK+0Trj0SGDBj2lBgW+o=
+			FZQrQr7y4zUUGT9r5crtIpwcuh2BUznH3YOC4b1CXpk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -152,6 +156,13 @@
 			<key>hash2</key>
 			<data>
 			8f3ayWQF3As5D2xiLyXdmJHCZ7zTiYvcvJQWp1yUiYw=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3auCUp8m8vdoISAEktM5Q0md95vO8ijdAfiqgEp3JVw=
 			</data>
 		</dict>
 	</dict>

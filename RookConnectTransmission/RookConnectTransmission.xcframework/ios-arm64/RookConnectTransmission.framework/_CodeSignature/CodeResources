@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		zbp6ZgmGcEXGauBVi3NKfRJg/n4=
+		NP4aylx3+wgEJGtLj2KCfGS/2P4=
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		9lDTQ9LgbGp1sN3zIxScYZaJL7w=
+		E9XPA9eHDu+tvglQ8tOWaP/81J8=
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,15 +30,19 @@
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		9lDTQ9LgbGp1sN3zIxScYZaJL7w=
+		E9XPA9eHDu+tvglQ8tOWaP/81J8=
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		msn81NMq1d1+ZBSypgk+3Hf9Wr0=
+		LiT/1X2RryPxzaASIqOyaOuUHlE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		ZhRcnoamZuiFFaeRPm31qFLpwU0=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		6PyG/Sn5jh81qqGDYJ701GSxHBw=
 		</data>
 		<key>RookTransmissionContainer.momd/RookTransmissionContainer 2.mom</key>
 		<data>
@@ -85,14 +89,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wyvfUhlcuuJDvCju4f+q/aA6T2/oAVRJxEz9//AL/KM=
+			ivF1A487SOCL+RA7Jhjx3sOiFZpN2EH+ta60aVKVcew=
 			</data>
 		</dict>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tf6BjLG3g1zKSTMXyYADBFv3fIbCXFtgkhVegxmeixQ=
+			eQ6J5dI49nFPgLq3PTs08pCKjKlauaqCQ6pd1cTMEfo=
 			</data>
 		</dict>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -106,14 +110,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tf6BjLG3g1zKSTMXyYADBFv3fIbCXFtgkhVegxmeixQ=
+			eQ6J5dI49nFPgLq3PTs08pCKjKlauaqCQ6pd1cTMEfo=
 			</data>
 		</dict>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nmUwKo/0kg20iFZE5Kw5/4immg8aDqM7SU70IfNNZ8Q=
+			iglaUASwv1CVSr4dNeBVx1uV76pkOzs2r44rkq/d6BA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -121,6 +125,13 @@
 			<key>hash2</key>
 			<data>
 			ZY58G+Dp3iRURpT1Vg7CSQZd9rYLOqHf8nj88zBNUyg=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3I1+H5p9p/M4HzB0a1kgbuYs4iW2n+O8u2YjT4RZvjU=
 			</data>
 		</dict>
 		<key>RookTransmissionContainer.momd/RookTransmissionContainer 2.mom</key>

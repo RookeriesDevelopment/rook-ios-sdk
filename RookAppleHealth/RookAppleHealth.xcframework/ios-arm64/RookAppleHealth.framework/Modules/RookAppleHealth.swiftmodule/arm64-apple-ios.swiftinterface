@@ -297,6 +297,7 @@ public enum BackGroundStorageTypes : Swift.String {
   case bodyBackGroundExtractionEnable
   case allSummariesBackGroundExtractionEnable
   case activityEventsBackGroundExtractionEnable
+  case eventsBackGroundExtractionEnable
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
