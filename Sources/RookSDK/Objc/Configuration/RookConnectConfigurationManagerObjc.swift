@@ -100,16 +100,31 @@ import RookUsersSDK
     }
   }
 
+  @available(*, deprecated, renamed: "enableSync")
   @objc public func enableYesterdaySync() {
-    self.innerConfiguration.enableYesterdaySync()
-  }
-  
-  @objc public func disableYesterdaySync() {
-    self.innerConfiguration.disableYesterdaySync()
+    self.innerConfiguration.enableSync()
   }
 
+  @objc public func enableSync() {
+    self.innerConfiguration.enableSync()
+  }
+
+  @available(*, deprecated, renamed: "disableSync")
+  @objc public func disableYesterdaySync() {
+    self.innerConfiguration.disableSync()
+  }
+
+  @objc public func disableSync() {
+    self.innerConfiguration.disableSync()
+  }
+
+  @available(*, deprecated, renamed: "isSyncEnable")
   @objc public func isYesterdaySyncEnable() -> Bool {
-    return innerConfiguration.isYesterdaySyncEnable()
+    return innerConfiguration.isSyncEnable()
+  }
+
+  @objc public func isSyncEnable() -> Bool {
+    return innerConfiguration.isSyncEnable()
   }
   
 }

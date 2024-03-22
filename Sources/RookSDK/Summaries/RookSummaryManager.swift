@@ -53,6 +53,12 @@ import RookConnectTransmission
   }
   
   // MARK:  Helpers
+
+  @objc public func syncSummaries(completion: @escaping () -> Void) {
+    yesterdayUseCase.execute(completion: completion)
+  }
+
+  @available(*, deprecated, renamed: "syncSummaries")
   @objc public func syncYesterdaySummaries(completion: @escaping () -> Void) {
     yesterdayUseCase.execute(completion: completion)
   }

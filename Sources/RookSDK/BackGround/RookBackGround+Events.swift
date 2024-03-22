@@ -14,10 +14,20 @@ extension RookBackGroundSync {
   @objc public func enableBackGroundForActivityEvents() {
     handleRequestActivityEventsData?()
   }
-  
+
+  @objc public func enableBackGroundForEvents() {
+    handleRequestActivityEventsData?()
+    handleRequestEventsData?()
+  }
+
   public func disableBackGroundForActivityEvents(completion: @escaping (Result<Bool, Error>) -> Void) {
-    backGroundManager.setBackGroundDisable(for: .allSummariesBackGroundExtractionEnable)
+    backGroundManager.setBackGroundDisable(for: .activityEventsBackGroundExtractionEnable)
+    backGroundManager.setBackGroundDisable(for: .eventsBackGroundExtractionEnable)
     backGroundManager.disableBackGround(for: .workout, completion: completion)
+  }
+
+  public func disableBackGroundForEvents() {
+    backGroundManager.setBackGroundDisable(for: .eventsBackGroundExtractionEnable)
   }
 
   func activityEventsBackListener() {
@@ -28,6 +38,17 @@ extension RookBackGroundSync {
         self?.handleRequestActivityEventsData = {
           self?.backGroundManager.setBackGroundEnable(for: .activityEventsBackGroundExtractionEnable)
           self?.setBackGround()
+        }
+      }
+    }
+    
+    backGroundManager.isBackgroundEnable(for: .eventsBackGroundExtractionEnable) { [weak self] (isEnable) in
+      if isEnable {
+        self?.setBackGroundEventListeners()
+      } else {
+        self?.handleRequestEventsData = {
+          self?.backGroundManager.setBackGroundEnable(for: .eventsBackGroundExtractionEnable)
+          self?.setBackGroundEventListeners()
         }
       }
     }
@@ -43,10 +64,12 @@ extension RookBackGroundSync {
   }
 
   private func initUploadBackgroundTask() {
-    let summariesUploadTask: UIBackgroundTaskIdentifier = initiateBackgroundTask()
-    self.activityTransmissionManager.uploadEvents { [weak self] _ in
-      self?.handleActivityEventsUploaded?()
-      UIApplication.shared.endBackgroundTask(summariesUploadTask)
+    if let summariesUploadTask: UIBackgroundTaskIdentifier = initiateBackgroundTask() {
+      self.activityTransmissionManager.uploadEvents { [weak self] _ in
+        self?.handleActivityEventsUploaded?()
+        self?.handleEventsUploaded?(.workout)
+        UIApplication.shared.endBackgroundTask(summariesUploadTask)
+      }
     }
   }
 

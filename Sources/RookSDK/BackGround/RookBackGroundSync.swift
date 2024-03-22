@@ -17,11 +17,13 @@ import UIKit
 
   @objc public var handleSummariesUploaded: (() -> Void)?
   @objc public var handleActivityEventsUploaded: (() -> Void)?
+  public var handleEventsUploaded: ((RookEventType) -> Void)?
 
   let backGroundManager: RookBackGroundExtraction = RookBackGroundExtraction.shared
   
   var handleRequestSummariesData: (() -> Void)?
   var handleRequestActivityEventsData: (() -> Void)?
+  var handleRequestEventsData: (() -> Void)?
   
   lazy var pendingUseCase: SyncPendingUseCaseProtocol = {
     return SyncPendingUseCase()
@@ -62,13 +64,89 @@ import UIKit
       )
   }()
 
+  private lazy var extractionManger: RookExtractionEventManager = {
+    RookExtractionEventManager()
+  }()
+
+  private lazy var missingDaysUseCase: MissingEventsDaysUseCaseProtocol = {
+    MissingEventsDaysUseCase(
+      localDataSource: EventLocalDataSource(
+        transmissionLocalDataSource: TransmissionLocalDataSource()
+      )
+    )
+  }()
+
+  private lazy var oxygenationTransmission: RookOxygenationEventTransmissionManager = {
+    RookOxygenationEventTransmissionManager()
+  }()
+
+  private lazy var heartRateTransmission: RookHrEventTransmissionManager = {
+    RookHrEventTransmissionManager()
+  }()
+
+  private lazy var bloodPressureTransmission: RookBloodPressureEventTransmissionManager = {
+    RookBloodPressureEventTransmissionManager()
+  }()
+
+  private lazy var bloodGlucoseTransmission: RookGlucoseEventTransmissionManager = {
+    RookGlucoseEventTransmissionManager()
+  }()
+
+  private lazy var  temperatureTransmission: RookTemperatureEventTransmissionManager = {
+    RookTemperatureEventTransmissionManager()
+  }()
+
+  private lazy var bodyTransmissionManager: RookBodyMetricsEventTransmissionManager = {
+    RookBodyMetricsEventTransmissionManager()
+  }()
+
+  lazy var eventsUseCase: SyncYesterdayEventsUseCase.UseCases = {
+    return SyncYesterdayEventsUseCase.UseCases(
+        oxygenationStoreUseCase: StoreMissingOxygenationEventsUseCase(
+          extractionEvent: extractionManger,
+          missingUseCase: missingDaysUseCase,
+          transmissionEvents: oxygenationTransmission),
+        oxygenationTransmission: oxygenationTransmission,
+        heartRateStoreUseCase: StoreMissingHrEventsUseCase(
+          extractionEvent: extractionManger,
+          missingUseCase: missingDaysUseCase,
+          transmissionEvents: heartRateTransmission),
+        heartRateTransmission: heartRateTransmission,
+        activityUseCase: UploadMissingActivityEvents(
+          extractionManager: extractionManger,
+          useCases: UploadMissingActivityEvents.UseCases(
+            missingDateUseCase: missingDaysUseCase),
+          transmissionActivityEvents: RookActivityEventTransmissionManager()),
+        pressureStoreUseCase: StoreMissingBloodPressureUseCase(
+          extractionEvent: extractionManger,
+          missingUseCase: missingDaysUseCase,
+          transmissionEvents: bloodPressureTransmission),
+        pressureTransmission: bloodPressureTransmission,
+        glucoseStoreUseCase: StoreMissingBloodGlucoseUseCase(
+          extractionEvent: extractionManger,
+          missingUseCase: missingDaysUseCase,
+          transmissionEvents: bloodGlucoseTransmission),
+        glucoseTransmission: bloodGlucoseTransmission,
+        temperatureStoreUseCase: StoreMissingTemperatureEventsUseCase(
+          extractionEvent: extractionManger,
+          missingUseCase: missingDaysUseCase,
+          transmissionEvents: temperatureTransmission),
+        temperatureTransmission: temperatureTransmission,
+        bodyMetricsStoreUseCase: StoreMissingBodyMetricsUseCase(
+          extractionEvent: extractionManger,
+          missingUseCase: missingDaysUseCase,
+          transmissionEvents: bodyTransmissionManager),
+        bodyMetricsTransmission: bodyTransmissionManager,
+        lastExtractionUseCase: LastExtractionEventDateUseCase())
+  }()
+
   lazy var activityMissingEvents: UploadMissingActivityEventsProtocol = {
     return UploadMissingActivityEvents(
       extractionManager: self.extractionEventManager,
       useCases: UploadMissingActivityEvents.UseCases(
         missingDateUseCase: MissingEventsDaysUseCase(
           localDataSource: EventLocalDataSource(
-            activityEventTransmissionManger: self.activityTransmissionManager
+            transmissionLocalDataSource: TransmissionLocalDataSource()
           )
         )
       ),
@@ -90,15 +168,16 @@ import UIKit
       }
     }
     activityEventsBackListener()
+    setBackGroundEventListeners()
   }
 
   @objc public func enableBackGroundForSummaries() {
     handleRequestSummariesData?()
+    enableBackGroundForEvents()
   }
 
   @objc public func disableBackGroundForSummaries() {
     backGroundManager.setBackGroundDisable(for: .allSummariesBackGroundExtractionEnable)
-    backGroundManager.disableBackGround(for: .heartRate) { _ in }
   }
 
   private func setBackGround() {
@@ -111,28 +190,62 @@ import UIKit
   }
 
   private func initUploadBackgroundTask() {
-    let summariesUploadTask: UIBackgroundTaskIdentifier = initiateBackgroundTask()
-    pendingUseCase.execute { [weak self] result in
-      self?.handleSummariesUploaded?()
-      UIApplication.shared.endBackgroundTask(summariesUploadTask)
+    if let summariesUploadTask: UIBackgroundTaskIdentifier = initiateBackgroundTask() {
+      pendingUseCase.execute { [weak self] _ in
+        self?.handleSummariesUploaded?()
+        UIApplication.shared.endBackgroundTask(summariesUploadTask)
+      }
+    }
+
+    if let heartUploadTask: UIBackgroundTaskIdentifier = initiateBackgroundTask() {
+      eventsUseCase.heartRateTransmission.uploadHrEvents() { [weak self] _ in
+        self?.handleSummariesUploaded?()
+        UIApplication.shared.endBackgroundTask(heartUploadTask)
+      }
     }
   }
 
-  func initiateBackgroundTask() -> UIBackgroundTaskIdentifier {
+  func initiateBackgroundTask() -> UIBackgroundTaskIdentifier? {
     var identifier: UIBackgroundTaskIdentifier? = nil
     identifier = UIApplication.shared.beginBackgroundTask {
-      UIApplication.shared.endBackgroundTask(identifier!)
+      if let identifier: UIBackgroundTaskIdentifier = identifier {
+        UIApplication.shared.endBackgroundTask(identifier)
+      }
     }
-    return identifier!
+    return identifier
   }
 
   private func storeMissing(completion: @escaping () -> Void) {
     Task {
       do {
         _ = try await self.missingUseCase.execute(upload: false)
+        _ = try await self.eventsUseCase.heartRateStoreUseCase.execute()
         completion()
       } catch {
         completion()
+      }
+    }
+  }
+}
+
+// MARK:  HeartRate
+
+extension RookBackGroundSync {
+
+  private func storeHeartRate(completion: @escaping () -> Void) {
+    Task {
+      do {
+        _ = try await self.eventsUseCase.heartRateStoreUseCase.execute()
+      } catch { }
+      completion()
+    }
+  }
+
+  private func uploadHeartRateBackGroundTask() {
+    if let eventUploadTask: UIBackgroundTaskIdentifier = initiateBackgroundTask() {
+      self.eventsUseCase.heartRateTransmission.uploadHrEvents() { [weak self] _ in
+        self?.handleEventsUploaded?(.heartRate)
+        UIApplication.shared.endBackgroundTask(eventUploadTask)
       }
     }
   }
