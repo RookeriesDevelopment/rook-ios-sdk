@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		N03x2jx503WAv4bfgsrNNSDiHq8=
+		Ureq5J0LgMNEXApFNgnBARj6O8A=
 		</data>
 		<key>Modules/RookUsersSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -59,6 +59,10 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		zl6C/hwq1fCDnUESz/aqIUBDgCU=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		6PyG/Sn5jh81qqGDYJ701GSxHBw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -152,6 +156,13 @@
 			<key>hash2</key>
 			<data>
 			WURO2lO79bHlj6qBbcaABPYbHdap2OZH9khpjaHw2Ew=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3I1+H5p9p/M4HzB0a1kgbuYs4iW2n+O8u2YjT4RZvjU=
 			</data>
 		</dict>
 	</dict>

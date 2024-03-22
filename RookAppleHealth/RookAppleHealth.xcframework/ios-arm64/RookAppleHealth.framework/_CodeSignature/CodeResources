@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		/Ct6STGUlz/nNbsKrtzGchIoUMo=
+		pHnVPf8MlAYtmchg8x1NYeR13M4=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		eA0sgf1LGkvNAx8zXTtjC2GQxDA=
+		SUEG83Ap3zEO0ztYgGx3FRV9uSc=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,15 +30,19 @@
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		eA0sgf1LGkvNAx8zXTtjC2GQxDA=
+		SUEG83Ap3zEO0ztYgGx3FRV9uSc=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		OMXZmsLGNxf8R4EnDpGFd4dkUKQ=
+		312+P7Fb46f6/NiwhBe9eWVsByA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		p6BZXUP8CCzvUJ3hoeRoB4eeqNA=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		o8RC9VHfPEvA66TEgh5o4d/ZT+4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -61,14 +65,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jx7NusY+4Bvszg0tZTuVYenVFiWJ0OKo41VtPAlYZrY=
+			BbLEmqMwzwfxWrphe3dktbqH/QUMbWl6RZCz7zB/auw=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SFqsiKRCnIVh49N8df/AXkxMwjg604M3ZEkjdPi8ahc=
+			fgM4rCjdv0G4NT9tx0m+zwFmi6ji+TKaUUH8cEd8OmE=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +86,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SFqsiKRCnIVh49N8df/AXkxMwjg604M3ZEkjdPi8ahc=
+			fgM4rCjdv0G4NT9tx0m+zwFmi6ji+TKaUUH8cEd8OmE=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ckaG94zfyhETjz3xECawg3XNicNX23OSmIOdXepW2fE=
+			3UUT7rjOt+WfIcTRcouYIpnBGr+DgOOcCxrfsG6T+Bk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -97,6 +101,13 @@
 			<key>hash2</key>
 			<data>
 			8f3ayWQF3As5D2xiLyXdmJHCZ7zTiYvcvJQWp1yUiYw=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3auCUp8m8vdoISAEktM5Q0md95vO8ijdAfiqgEp3JVw=
 			</data>
 		</dict>
 	</dict>

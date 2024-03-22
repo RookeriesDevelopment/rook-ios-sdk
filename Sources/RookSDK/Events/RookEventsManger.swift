@@ -20,7 +20,7 @@ import RookConnectTransmission
   private lazy var syncPhysicalEventsUseCase: SyncPhysicalHeartRateEventsUseCase = { SyncPhysicalHeartRateEventsUseCase()
   }()
   
-  private lazy var syncBodyOxygenationEventsUseCase: SyncBodyOxygenationUseCase = {
+  private lazy var syncBodyOxygenationEventsUseCase: SyncBodyOxygenationUseCase = { 
     SyncBodyOxygenationUseCase()
   }()
 
@@ -60,32 +60,75 @@ import RookConnectTransmission
       extractionEvent: extractionManger,
       transmissionEvent: bodyTransmissionManager)
   }()
-  
-  private lazy var syncYesterdayEventsUseCase: SyncYesterdayEventsUseCase = {
+
+  private lazy var missingDaysUseCase: MissingEventsDaysUseCaseProtocol = {
+    MissingEventsDaysUseCase(
+      localDataSource: EventLocalDataSource(
+        transmissionLocalDataSource: TransmissionLocalDataSource()
+      )
+    )
+  }()
+
+  private lazy var oxygenationTransmission: RookOxygenationEventTransmissionManager = {
+    RookOxygenationEventTransmissionManager()
+  }()
+
+  private lazy var heartRateTransmission: RookHrEventTransmissionManager = {
+    RookHrEventTransmissionManager()
+  }()
+
+  private lazy var bloodPressureTransmission: RookBloodPressureEventTransmissionManager = {
+    RookBloodPressureEventTransmissionManager()
+  }()
+
+  private lazy var bloodGlucoseTransmission: RookGlucoseEventTransmissionManager = {
+    RookGlucoseEventTransmissionManager()
+  }()
+
+  private lazy var  temperatureTransmission: RookTemperatureEventTransmissionManager = {
+    RookTemperatureEventTransmissionManager()
+  }()
+
+  private lazy var syncEventsUseCase: SyncYesterdayEventsUseCase = {
     let transmission: RookActivityEventTransmissionManager = RookActivityEventTransmissionManager()
     return SyncYesterdayEventsUseCase(
       useCases: SyncYesterdayEventsUseCase.UseCases(
-        physicalOxygenationUseCase: syncPhysicalOxygenationEventUseCase,
-        bodyOxygenationUseCase: syncBodyOxygenationEventsUseCase,
-        physicalHeartRateUseCase: syncPhysicalEventsUseCase,
+        oxygenationStoreUseCase: StoreMissingOxygenationEventsUseCase(
+          extractionEvent: extractionManger,
+          missingUseCase: missingDaysUseCase,
+          transmissionEvents: oxygenationTransmission),
+        oxygenationTransmission: oxygenationTransmission,
+        heartRateStoreUseCase: StoreMissingHrEventsUseCase(
+          extractionEvent: extractionManger,
+          missingUseCase: missingDaysUseCase,
+          transmissionEvents: heartRateTransmission),
+        heartRateTransmission: heartRateTransmission,
         activityUseCase: UploadMissingActivityEvents(
           extractionManager: extractionManger,
           useCases: UploadMissingActivityEvents.UseCases(
-            missingDateUseCase: MissingEventsDaysUseCase(
-              localDataSource: EventLocalDataSource(
-                activityEventTransmissionManger: transmission)
-            )
-          ),
-          transmissionActivityEvents: transmission),
-        bodyHeartRateUseCase: syncBodyHrEventsUseCase,
-        pressureUseCase: syncBloodPressureUseCase,
-        glucoseUseCase: syncBloodGlucoseUseCase,
-        temperatureUseCase: syncTemperatureUseCase,
-        syncBodyMetricsUseCase: syncBodyMetricsUseCase,
-        lastExtractionUseCase: LastExtractionEventDateUseCase(),
-        bodyMetricsTransmissionManger: bodyTransmissionManager
-      )
-    )
+            missingDateUseCase: missingDaysUseCase),
+          transmissionActivityEvents: RookActivityEventTransmissionManager()),
+        pressureStoreUseCase: StoreMissingBloodPressureUseCase(
+          extractionEvent: extractionManger,
+          missingUseCase: missingDaysUseCase,
+          transmissionEvents: bloodPressureTransmission),
+        pressureTransmission: bloodPressureTransmission,
+        glucoseStoreUseCase: StoreMissingBloodGlucoseUseCase(
+          extractionEvent: extractionManger,
+          missingUseCase: missingDaysUseCase,
+          transmissionEvents: bloodGlucoseTransmission),
+        glucoseTransmission: bloodGlucoseTransmission,
+        temperatureStoreUseCase: StoreMissingTemperatureEventsUseCase(
+          extractionEvent: extractionManger,
+          missingUseCase: missingDaysUseCase,
+          transmissionEvents: temperatureTransmission),
+        temperatureTransmission: temperatureTransmission,
+        bodyMetricsStoreUseCase: StoreMissingBodyMetricsUseCase(
+          extractionEvent: extractionManger,
+          missingUseCase: missingDaysUseCase,
+          transmissionEvents: bodyTransmissionManager),
+        bodyMetricsTransmission: bodyTransmissionManager,
+        lastExtractionUseCase: LastExtractionEventDateUseCase()))
   }()
   
   // MARK:  Int
@@ -94,15 +137,20 @@ import RookConnectTransmission
   }
   
   // MARK:  Helpers
-  
-  @objc public func syncYesterdayEvents(completion: @escaping () -> Void) {
-    self.syncYesterdayEventsUseCase.execute(completion: completion)
+
+  @objc public func syncEvents(completion: @escaping () -> Void) {
+    self.syncEventsUseCase.execute(completion: completion)
   }
-  
+
+  @available(*, deprecated, renamed: "syncEvents")
+  @objc public func syncYesterdayEvents(completion: @escaping () -> Void) {
+    self.syncEventsUseCase.execute(completion: completion)
+  }
+
   public func syncBodyHeartRateEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
     syncBodyHrEventsUseCase.execute(date: date, excludingDatesBefore: nil, completion: completion)
   }
-  
+
   public func syncPhysicalHeartRateEvent(date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
     syncPhysicalEventsUseCase.execute(date: date, completion: completion)
   }

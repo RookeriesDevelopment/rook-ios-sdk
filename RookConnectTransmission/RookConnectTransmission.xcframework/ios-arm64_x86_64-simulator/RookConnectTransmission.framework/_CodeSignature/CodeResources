@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		zbp6ZgmGcEXGauBVi3NKfRJg/n4=
+		NP4aylx3+wgEJGtLj2KCfGS/2P4=
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		I+O7TKbIQawO4Ptbvc04S0oKxao=
+		U0SbtRLv92N9praKEX9O/wHANZo=
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		I+O7TKbIQawO4Ptbvc04S0oKxao=
+		U0SbtRLv92N9praKEX9O/wHANZo=
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8dC+Mn1r5s6n5Ljm3Z2pgBdbbhs=
+		0kEj8MT5EspHuHXF7eLRSAEnNBE=
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		zbp6ZgmGcEXGauBVi3NKfRJg/n4=
+		NP4aylx3+wgEJGtLj2KCfGS/2P4=
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		FSdxz7UAzwzqJBXc37hccuqCyqw=
+		W+HtEA8STgOh5/oL/hfb2OwQkw0=
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,15 +50,19 @@
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FSdxz7UAzwzqJBXc37hccuqCyqw=
+		W+HtEA8STgOh5/oL/hfb2OwQkw0=
 		</data>
 		<key>Modules/RookConnectTransmission.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KC11zJXCtgQHF2HwRsqrYsh7p24=
+		KI6ny8ob5xNo8zQS/zYDEVLzYvU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		ZhRcnoamZuiFFaeRPm31qFLpwU0=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		6PyG/Sn5jh81qqGDYJ701GSxHBw=
 		</data>
 		<key>RookTransmissionContainer.momd/RookTransmissionContainer 2.mom</key>
 		<data>
@@ -105,14 +109,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wyvfUhlcuuJDvCju4f+q/aA6T2/oAVRJxEz9//AL/KM=
+			ivF1A487SOCL+RA7Jhjx3sOiFZpN2EH+ta60aVKVcew=
 			</data>
 		</dict>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jY+65dlVjr7SkTJdk6LYs0ScVuAtxnMGsR3NTkf9FYM=
+			6HqArPWWGrft17uzhIAocTDGShg3hK5plUjEIHeysm0=
 			</data>
 		</dict>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -126,28 +130,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jY+65dlVjr7SkTJdk6LYs0ScVuAtxnMGsR3NTkf9FYM=
+			6HqArPWWGrft17uzhIAocTDGShg3hK5plUjEIHeysm0=
 			</data>
 		</dict>
 		<key>Modules/RookConnectTransmission.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zyQ4iOiPDjErhvmLqYudryf/HtIxNzFu9yYSw2e8u+M=
+			OIV04NoE4KIJHTBWrKpWjmygeTrvEXwXaRJWO8zXn0Y=
 			</data>
 		</dict>
 		<key>Modules/RookConnectTransmission.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wyvfUhlcuuJDvCju4f+q/aA6T2/oAVRJxEz9//AL/KM=
+			ivF1A487SOCL+RA7Jhjx3sOiFZpN2EH+ta60aVKVcew=
 			</data>
 		</dict>
 		<key>Modules/RookConnectTransmission.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8zWVsQnLcTBfSttVOHZXaEnZ056/pKh+SknjqZrD4U8=
+			1osMBwQO8SyD7+BIVAkrRgmibAHZSlQuRncEw3DBwMw=
 			</data>
 		</dict>
 		<key>Modules/RookConnectTransmission.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -161,14 +165,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8zWVsQnLcTBfSttVOHZXaEnZ056/pKh+SknjqZrD4U8=
+			1osMBwQO8SyD7+BIVAkrRgmibAHZSlQuRncEw3DBwMw=
 			</data>
 		</dict>
 		<key>Modules/RookConnectTransmission.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9FKLKK0RRblGPfbxLYNIkg+FERB1MyQ1qIY76C4AY2s=
+			iLuWRP2x9uQHccKMbsBIcuaJhuyeLySPxrX6tuZ+OXI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -176,6 +180,13 @@
 			<key>hash2</key>
 			<data>
 			ZY58G+Dp3iRURpT1Vg7CSQZd9rYLOqHf8nj88zBNUyg=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3I1+H5p9p/M4HzB0a1kgbuYs4iW2n+O8u2YjT4RZvjU=
 			</data>
 		</dict>
 		<key>RookTransmissionContainer.momd/RookTransmissionContainer 2.mom</key>

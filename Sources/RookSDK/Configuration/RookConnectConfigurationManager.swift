@@ -115,15 +115,30 @@ public final class RookConnectConfigurationManager {
     timeZoneUseCase.execute(completion: completion)
   }
   
+  @available(*, deprecated, renamed: "enableSync")
   public func enableYesterdaySync() {
     foregroundSyncLocalDataSource.setForegroundEnable(with: true)
   }
-  
+
+  public func enableSync() {
+    foregroundSyncLocalDataSource.setForegroundEnable(with: true)
+  }
+
+  @available(*, deprecated, renamed: "disableSync")
   public func disableYesterdaySync() {
     foregroundSyncLocalDataSource.setForegroundEnable(with: false)
   }
 
+  public func disableSync() {
+    foregroundSyncLocalDataSource.setForegroundEnable(with: false)
+  }
+
+  @available(*, deprecated, renamed: "isSyncEnable")
   public func isYesterdaySyncEnable() -> Bool {
+    return foregroundSyncLocalDataSource.isForegroundSyncEnable()
+  }
+
+  public func isSyncEnable() -> Bool {
     return foregroundSyncLocalDataSource.isForegroundSyncEnable()
   }
 
@@ -138,8 +153,8 @@ public final class RookConnectConfigurationManager {
           return
         }
         if self.foregroundSyncLocalDataSource.isForegroundSyncEnable() {
-          self.syncManager.syncYesterdaySummaries {}
-          self.eventsManager.syncYesterdayEvents {}
+          self.syncManager.syncSummaries {}
+          self.eventsManager.syncEvents {}
         }
     }
   }
