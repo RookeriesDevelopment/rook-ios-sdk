@@ -25,136 +25,96 @@ import UIKit
   var handleRequestActivityEventsData: (() -> Void)?
   var handleRequestEventsData: (() -> Void)?
   
-  lazy var pendingUseCase: SyncPendingUseCaseProtocol = {
-    return SyncPendingUseCase()
-  }()
   
-  lazy var extractionManager: RookExtractionManager = {
-    RookExtractionManager()
-  }()
-
-  lazy var extractionEventManager: RookExtractionEventManager =  {
-    RookExtractionEventManager()
-  }()
-
-  lazy var activityTransmissionManager: RookActivityEventTransmissionManager = { RookActivityEventTransmissionManager()
-  }()
+  let pendingUseCase: SyncPendingUseCaseProtocol = SyncPendingUseCase()
+  private let extractionManger: RookExtractionEventManager = RookExtractionEventManager()
   
-  lazy var missingUseCase: UploadMissingSummariesProtocol = {
+  let missingUseCase: UploadMissingSummariesProtocol
+  let eventsUseCase: SyncYesterdayEventsUseCase.UseCases
+  let activityMissingEvents: UploadMissingActivityEventsProtocol
+  let activityTransmissionManager: RookActivityEventTransmissionManager
+  
+  private override init() {
+    let extractionManager: RookExtractionManager = RookExtractionManager()
     let sleepTransmissionManager: RookSleepTransmissionManager = RookSleepTransmissionManager()
-    let physicalTransmissionManager: RookPhysicalTransmissionManager = RookPhysicalTransmissionManager()
-    let bodyTransmission: RookBodyTransmissionManager = RookBodyTransmissionManager()
-    return UploadMissingSummaries(
+    let physicalTransmission: RookPhysicalTransmissionManager = RookPhysicalTransmissionManager()
+    let bodyTranmission: RookBodyTransmissionManager = RookBodyTransmissionManager()
+    let oxygenationTransmission: RookOxygenationEventTransmissionManager = RookOxygenationEventTransmissionManager()
+    let heartRateTransmission: RookHrEventTransmissionManager = RookHrEventTransmissionManager()
+    let bloodPressureTransmission: RookBloodPressureEventTransmissionManager = RookBloodPressureEventTransmissionManager()
+    let bloodGlucoseTransmission: RookGlucoseEventTransmissionManager = RookGlucoseEventTransmissionManager()
+    let temperatureTransmission: RookTemperatureEventTransmissionManager = RookTemperatureEventTransmissionManager()
+    let bodyMetricsTransmission: RookBodyMetricsEventTransmissionManager = RookBodyMetricsEventTransmissionManager()
+    let missingUseCases: UploadMissingSummariesProtocol = UploadMissingSummaries(
       useCases: UploadMissingSummaries.UseCases(
         missingDateUseCase: MissingDaysUseCase(
           localDataSource: SummaryLocalDataSource(
             sleepTransmissionManger: sleepTransmissionManager,
-            physicalTransmissionManger: physicalTransmissionManager,
-            bodyTransmissionManger: bodyTransmission)),
+            physicalTransmissionManger: physicalTransmission,
+            bodyTransmissionManger: bodyTranmission)),
         extractionSleepUseCase: ExtractionSleepUseCase(
-          extractionManager: self.extractionManager,
+          extractionManager: extractionManager,
           sleepTransmissionManger: sleepTransmissionManager),
         extractionPhysicalUseCase: ExtractionPhysicalUseCase(
-          extractionManager: self.extractionManager,
-          physicalTransmissionManager: physicalTransmissionManager),
+          extractionManager: extractionManager,
+          physicalTransmissionManager: physicalTransmission),
         extractionBodyUseCase: ExtractionBodyUseCase(
-          extractionManager: self.extractionManager,
-          bodyTransmissionManager: bodyTransmission),
-        uploadPendingUseCases: self.pendingUseCase)
-      )
-  }()
-
-  private lazy var extractionManger: RookExtractionEventManager = {
-    RookExtractionEventManager()
-  }()
-
-  private lazy var missingDaysUseCase: MissingEventsDaysUseCaseProtocol = {
-    MissingEventsDaysUseCase(
+          extractionManager: extractionManager,
+          bodyTransmissionManager: bodyTranmission),
+        uploadPendingUseCases: SyncPendingUseCase()))
+    let eventsMissing: MissingEventsDaysUseCaseProtocol = MissingEventsDaysUseCase(
       localDataSource: EventLocalDataSource(
-        transmissionLocalDataSource: TransmissionLocalDataSource()
-      )
-    )
-  }()
+        transmissionLocalDataSource: TransmissionLocalDataSource()))
+    let activityTransmission: RookActivityEventTransmissionManager = RookActivityEventTransmissionManager()
 
-  private lazy var oxygenationTransmission: RookOxygenationEventTransmissionManager = {
-    RookOxygenationEventTransmissionManager()
-  }()
-
-  private lazy var heartRateTransmission: RookHrEventTransmissionManager = {
-    RookHrEventTransmissionManager()
-  }()
-
-  private lazy var bloodPressureTransmission: RookBloodPressureEventTransmissionManager = {
-    RookBloodPressureEventTransmissionManager()
-  }()
-
-  private lazy var bloodGlucoseTransmission: RookGlucoseEventTransmissionManager = {
-    RookGlucoseEventTransmissionManager()
-  }()
-
-  private lazy var  temperatureTransmission: RookTemperatureEventTransmissionManager = {
-    RookTemperatureEventTransmissionManager()
-  }()
-
-  private lazy var bodyTransmissionManager: RookBodyMetricsEventTransmissionManager = {
-    RookBodyMetricsEventTransmissionManager()
-  }()
-
-  lazy var eventsUseCase: SyncYesterdayEventsUseCase.UseCases = {
-    return SyncYesterdayEventsUseCase.UseCases(
-        oxygenationStoreUseCase: StoreMissingOxygenationEventsUseCase(
-          extractionEvent: extractionManger,
-          missingUseCase: missingDaysUseCase,
-          transmissionEvents: oxygenationTransmission),
-        oxygenationTransmission: oxygenationTransmission,
-        heartRateStoreUseCase: StoreMissingHrEventsUseCase(
-          extractionEvent: extractionManger,
-          missingUseCase: missingDaysUseCase,
-          transmissionEvents: heartRateTransmission),
-        heartRateTransmission: heartRateTransmission,
-        activityUseCase: UploadMissingActivityEvents(
-          extractionManager: extractionManger,
-          useCases: UploadMissingActivityEvents.UseCases(
-            missingDateUseCase: missingDaysUseCase),
-          transmissionActivityEvents: RookActivityEventTransmissionManager()),
-        pressureStoreUseCase: StoreMissingBloodPressureUseCase(
-          extractionEvent: extractionManger,
-          missingUseCase: missingDaysUseCase,
-          transmissionEvents: bloodPressureTransmission),
-        pressureTransmission: bloodPressureTransmission,
-        glucoseStoreUseCase: StoreMissingBloodGlucoseUseCase(
-          extractionEvent: extractionManger,
-          missingUseCase: missingDaysUseCase,
-          transmissionEvents: bloodGlucoseTransmission),
-        glucoseTransmission: bloodGlucoseTransmission,
-        temperatureStoreUseCase: StoreMissingTemperatureEventsUseCase(
-          extractionEvent: extractionManger,
-          missingUseCase: missingDaysUseCase,
-          transmissionEvents: temperatureTransmission),
-        temperatureTransmission: temperatureTransmission,
-        bodyMetricsStoreUseCase: StoreMissingBodyMetricsUseCase(
-          extractionEvent: extractionManger,
-          missingUseCase: missingDaysUseCase,
-          transmissionEvents: bodyTransmissionManager),
-        bodyMetricsTransmission: bodyTransmissionManager,
-        lastExtractionUseCase: LastExtractionEventDateUseCase())
-  }()
-
-  lazy var activityMissingEvents: UploadMissingActivityEventsProtocol = {
-    return UploadMissingActivityEvents(
-      extractionManager: self.extractionEventManager,
+    self.missingUseCase = missingUseCases
+    self.activityTransmissionManager = activityTransmission
+    
+    self.activityMissingEvents = UploadMissingActivityEvents(
+      extractionManager: extractionManger,
       useCases: UploadMissingActivityEvents.UseCases(
         missingDateUseCase: MissingEventsDaysUseCase(
-          localDataSource: EventLocalDataSource(
-            transmissionLocalDataSource: TransmissionLocalDataSource()
-          )
-        )
-      ),
-      transmissionActivityEvents: self.activityTransmissionManager)
-  }()
+          localDataSource: EventLocalDataSource(transmissionLocalDataSource: TransmissionLocalDataSource()))),
+      transmissionActivityEvents: activityTransmission)
 
-  
-  private override init() { }
+    self.eventsUseCase = SyncYesterdayEventsUseCase.UseCases(
+      oxygenationStoreUseCase: StoreMissingOxygenationEventsUseCase(
+        extractionEvent: extractionManger,
+        missingUseCase: eventsMissing,
+        transmissionEvents: oxygenationTransmission),
+      oxygenationTransmission: oxygenationTransmission,
+      heartRateStoreUseCase: StoreMissingHrEventsUseCase(
+        extractionEvent: extractionManger,
+        missingUseCase: eventsMissing,
+        transmissionEvents: heartRateTransmission),
+      heartRateTransmission: heartRateTransmission,
+      activityUseCase: UploadMissingActivityEvents(
+        extractionManager: extractionManger,
+        useCases: UploadMissingActivityEvents.UseCases(missingDateUseCase: eventsMissing),
+        transmissionActivityEvents: RookActivityEventTransmissionManager()),
+      pressureStoreUseCase: StoreMissingBloodPressureUseCase(
+        extractionEvent: extractionManger,
+        missingUseCase: eventsMissing,
+        transmissionEvents: bloodPressureTransmission),
+      pressureTransmission: bloodPressureTransmission,
+      glucoseStoreUseCase: StoreMissingBloodGlucoseUseCase(
+        extractionEvent: extractionManger,
+        missingUseCase: eventsMissing,
+        transmissionEvents: bloodGlucoseTransmission),
+      glucoseTransmission: bloodGlucoseTransmission,
+      temperatureStoreUseCase: StoreMissingTemperatureEventsUseCase(
+        extractionEvent: extractionManger,
+        missingUseCase: eventsMissing,
+        transmissionEvents: temperatureTransmission),
+      temperatureTransmission: temperatureTransmission,
+      bodyMetricsStoreUseCase: StoreMissingBodyMetricsUseCase(
+        extractionEvent: extractionManger,
+        missingUseCase: eventsMissing,
+        transmissionEvents: bodyMetricsTransmission),
+      bodyMetricsTransmission: bodyMetricsTransmission,
+      lastExtractionUseCase: LastExtractionEventDateUseCase())
+    super.init()
+  }
 
   @objc public func setBackListeners() {
     backGroundManager.isBackgroundEnable(for: .allSummariesBackGroundExtractionEnable) { [weak self] (isEnable) in
