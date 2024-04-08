@@ -438,6 +438,7 @@ SWIFT_CLASS("_TtC15RookAppleHealth30RookExtractionDistanceDataObjc")
 @property (nonatomic) NSInteger swimmingPoolLengthMeters;
 @property (nonatomic) NSInteger swimmingTotalDistanceMeters;
 @property (nonatomic, copy) NSArray<RookExtractionSwimmingDistanceGranularDataMeterObjc *> * _Nullable swimmingDistanceGranularDataMeters;
+@property (nonatomic) NSInteger distanceCyclingMeters;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

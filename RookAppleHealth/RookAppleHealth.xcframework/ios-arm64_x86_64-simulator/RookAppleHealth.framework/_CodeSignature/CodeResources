@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RookAppleHealth-Swift.h</key>
 		<data>
-		Le8NG9urCCAI/dLHWSymW9qKhqM=
+		6rw3zCWeUCNIPo1H42MBSuAZbLY=
 		</data>
 		<key>Headers/RookAppleHealth.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IpOZLTM9xlnatfQeL0mN4bI/x2o=
+		VgZdP+ITcc2leGMo80L36XxYJBU=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		pHnVPf8MlAYtmchg8x1NYeR13M4=
+		pzCDoEjwdm2aLtaXKyKqzNvYedU=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		0jXxkSwdOVlT4s26XJzXRiaoDIc=
+		Kp7F0GGNtt2vAaLzrTBUtkkSFFk=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0jXxkSwdOVlT4s26XJzXRiaoDIc=
+		Kp7F0GGNtt2vAaLzrTBUtkkSFFk=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WvGQDwbHzncV6vZpxYFnZS7Egn4=
+		tsCNB3mn//Nv5LrlcWkALgy7D80=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		pHnVPf8MlAYtmchg8x1NYeR13M4=
+		pzCDoEjwdm2aLtaXKyKqzNvYedU=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		A6PF1BSi3afxs6F3ADZj9ylCHWA=
+		MFA2V8jF/n3GHTjupWesh6y+gsU=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		A6PF1BSi3afxs6F3ADZj9ylCHWA=
+		MFA2V8jF/n3GHTjupWesh6y+gsU=
 		</data>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		syue4BS4KL6/YVnv+TPOTUlWzSM=
+		eAVhMDCegz8QNXO6TTKWrCFzms0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KpHszvy8OmPgWwUZWKyCcciRsiKBtZIleNTgHJyiJ7c=
+			51KuHLzqbEa3ZMRatOpS12YMxXGD4cOG+sOR/i8gofI=
 			</data>
 		</dict>
 		<key>Headers/RookAppleHealth.h</key>
@@ -85,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BbLEmqMwzwfxWrphe3dktbqH/QUMbWl6RZCz7zB/auw=
+			8fDeliX+MSBU1rn5P4ST/3tS9ZIiKerx88OypEHU93U=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4i7JfdRLrw9R10++ab+GUFcoPp5nFhQW/Hp0ga10vEw=
+			va4eZXyYHFyeIoVdSE8/eCDZvNhHFIul5EFps3Dl/Ok=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -106,28 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4i7JfdRLrw9R10++ab+GUFcoPp5nFhQW/Hp0ga10vEw=
+			va4eZXyYHFyeIoVdSE8/eCDZvNhHFIul5EFps3Dl/Ok=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NPA6Anq+a8w95O5hP6whdgX86EVgHcQsbkb+4H40vUI=
+			G+Ov/bnj1bCZlic2FxmJ+5mMUOyMQNSkP9OXdvUwx6g=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BbLEmqMwzwfxWrphe3dktbqH/QUMbWl6RZCz7zB/auw=
+			8fDeliX+MSBU1rn5P4ST/3tS9ZIiKerx88OypEHU93U=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wqmZbhmfMKw1GVUKnbc+Is3cKe6Lm+yqakaVCLpylss=
+			LMTxo6VZN2tmVr2LJRP7FIpDs6R8VNq1uiCtd468eag=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -141,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wqmZbhmfMKw1GVUKnbc+Is3cKe6Lm+yqakaVCLpylss=
+			LMTxo6VZN2tmVr2LJRP7FIpDs6R8VNq1uiCtd468eag=
 			</data>
 		</dict>
 		<key>Modules/RookAppleHealth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FZQrQr7y4zUUGT9r5crtIpwcuh2BUznH3YOC4b1CXpk=
+			nTLNZwzFTWmGeX6Iw3aLUrZSMrvLXAtgLaU+u8zoYKE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
