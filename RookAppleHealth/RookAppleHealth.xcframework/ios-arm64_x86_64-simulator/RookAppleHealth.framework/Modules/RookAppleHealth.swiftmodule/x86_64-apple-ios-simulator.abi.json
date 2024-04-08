@@ -16294,6 +16294,98 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "distanceCyclingMeters",
+            "printedName": "distanceCyclingMeters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RookAppleHealth@objc(cs)RookExtractionDistanceDataObjc(py)distanceCyclingMeters",
+            "mangledName": "$s15RookAppleHealth0A26ExtractionDistanceDataObjcC21distanceCyclingMetersSivp",
+            "moduleName": "RookAppleHealth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookAppleHealth@objc(cs)RookExtractionDistanceDataObjc(im)distanceCyclingMeters",
+                "mangledName": "$s15RookAppleHealth0A26ExtractionDistanceDataObjcC21distanceCyclingMetersSivg",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookAppleHealth@objc(cs)RookExtractionDistanceDataObjc(im)setDistanceCyclingMeters:",
+                "mangledName": "$s15RookAppleHealth0A26ExtractionDistanceDataObjcC21distanceCyclingMetersSivs",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15RookAppleHealth0A26ExtractionDistanceDataObjcC21distanceCyclingMetersSivM",
+                "mangledName": "$s15RookAppleHealth0A26ExtractionDistanceDataObjcC21distanceCyclingMetersSivM",
+                "moduleName": "RookAppleHealth",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -26425,6 +26517,16 @@
         "printedName": "HealthKit",
         "declKind": "Import",
         "moduleName": "RookAppleHealth"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -39900,16 +40002,6 @@
             "usr": "s:SE",
             "mangledName": "$sSE"
           }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "RookAppleHealth",
-        "declAttributes": [
-          "RawDocComment"
         ]
       },
       {
@@ -69758,6 +69850,13 @@
       "value": "\"RookAppleHealth.RookExtractionActivityEventObjc\""
     },
     {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/DataTypesProvider\/WeightProvider\/RookWeightProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 617,
+      "length": 2,
+      "value": "10"
+    },
+    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/Event\/ActivityEvent\/Entities\/RookCaloriesDataEvent.swift",
       "kind": "StringLiteral",
       "offset": 650,
@@ -71482,268 +71581,282 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 3395,
+      "offset": 3524,
       "length": 14,
       "value": "\"steps_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 3450,
+      "offset": 3579,
       "length": 35,
       "value": "\"steps_granular_data_steps_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 3518,
+      "offset": 3647,
       "length": 24,
       "value": "\"walked_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 3577,
+      "offset": 3706,
       "length": 26,
       "value": "\"traveled_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 3650,
+      "offset": 3779,
       "length": 40,
       "value": "\"traveled_distance_granular_data_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 3722,
+      "offset": 3851,
       "length": 23,
       "value": "\"floors_climbed_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 3789,
+      "offset": 3918,
       "length": 37,
       "value": "\"floors_climbed_granular_data_floors\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 3865,
+      "offset": 3994,
       "length": 31,
       "value": "\"elevation_avg_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 3939,
+      "offset": 4068,
       "length": 35,
       "value": "\"elevation_minimum_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4013,
+      "offset": 4142,
       "length": 31,
       "value": "\"elevation_max_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4090,
+      "offset": 4219,
       "length": 39,
       "value": "\"elevation_loss_actual_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4175,
+      "offset": 4304,
       "length": 39,
       "value": "\"elevation_gain_actual_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4253,
+      "offset": 4382,
       "length": 31,
       "value": "\"elevation_planned_gain_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4324,
+      "offset": 4453,
       "length": 32,
       "value": "\"elevation_granular_data_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4390,
+      "offset": 4519,
       "length": 25,
       "value": "\"swimming_strokes_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4449,
+      "offset": 4578,
       "length": 26,
       "value": "\"swimming_num_laps_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4512,
+      "offset": 4641,
       "length": 29,
       "value": "\"swimming_pool_length_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4581,
+      "offset": 4710,
       "length": 32,
       "value": "\"swimming_total_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4660,
+      "offset": 4789,
       "length": 40,
       "value": "\"swimming_distance_granular_data_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 3395,
+      "offset": 4863,
+      "length": 25,
+      "value": "\"distance_cycling_meters\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
+      "kind": "StringLiteral",
+      "offset": 3524,
       "length": 14,
       "value": "\"steps_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 3450,
+      "offset": 3579,
       "length": 35,
       "value": "\"steps_granular_data_steps_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 3518,
+      "offset": 3647,
       "length": 24,
       "value": "\"walked_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 3577,
+      "offset": 3706,
       "length": 26,
       "value": "\"traveled_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 3650,
+      "offset": 3779,
       "length": 40,
       "value": "\"traveled_distance_granular_data_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 3722,
+      "offset": 3851,
       "length": 23,
       "value": "\"floors_climbed_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 3789,
+      "offset": 3918,
       "length": 37,
       "value": "\"floors_climbed_granular_data_floors\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 3865,
+      "offset": 3994,
       "length": 31,
       "value": "\"elevation_avg_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 3939,
+      "offset": 4068,
       "length": 35,
       "value": "\"elevation_minimum_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4013,
+      "offset": 4142,
       "length": 31,
       "value": "\"elevation_max_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4090,
+      "offset": 4219,
       "length": 39,
       "value": "\"elevation_loss_actual_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4175,
+      "offset": 4304,
       "length": 39,
       "value": "\"elevation_gain_actual_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4253,
+      "offset": 4382,
       "length": 31,
       "value": "\"elevation_planned_gain_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4324,
+      "offset": 4453,
       "length": 32,
       "value": "\"elevation_granular_data_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4390,
+      "offset": 4519,
       "length": 25,
       "value": "\"swimming_strokes_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4449,
+      "offset": 4578,
       "length": 26,
       "value": "\"swimming_num_laps_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4512,
+      "offset": 4641,
       "length": 29,
       "value": "\"swimming_pool_length_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4581,
+      "offset": 4710,
       "length": 32,
       "value": "\"swimming_total_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4660,
+      "offset": 4789,
       "length": 40,
       "value": "\"swimming_distance_granular_data_meters\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
+      "kind": "StringLiteral",
+      "offset": 4863,
+      "length": 25,
+      "value": "\"distance_cycling_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
@@ -71755,161 +71868,161 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 5163,
+      "offset": 5351,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 5163,
+      "offset": 5351,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 4727,
+      "offset": 4915,
       "length": 45,
       "value": "\"RookAppleHealth.RookExtractionStepsGranularDataStepsPerHrObjc\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 5742,
+      "offset": 5930,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 5804,
+      "offset": 5992,
       "length": 26,
       "value": "\"traveled_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 5742,
+      "offset": 5930,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 5804,
+      "offset": 5992,
       "length": 26,
       "value": "\"traveled_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 5232,
+      "offset": 5420,
       "length": 51,
       "value": "\"RookAppleHealth.RookExtractionTraveledDistanceGranularDataMeterObjc\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 6328,
+      "offset": 6516,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 6381,
+      "offset": 6569,
       "length": 16,
       "value": "\"floors_climbed\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 6328,
+      "offset": 6516,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 6381,
+      "offset": 6569,
       "length": 16,
       "value": "\"floors_climbed\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 5857,
+      "offset": 6045,
       "length": 48,
       "value": "\"RookAppleHealth.RookExtractionFloorsClimbedGranularDataFloorObjc\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 6899,
+      "offset": 7087,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 6954,
+      "offset": 7142,
       "length": 18,
       "value": "\"elevation_change\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 6899,
+      "offset": 7087,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 6954,
+      "offset": 7142,
       "length": 18,
       "value": "\"elevation_change\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 6424,
+      "offset": 6612,
       "length": 44,
       "value": "\"RookAppleHealth.RookExtractionElevationGranularDataMeterObjc\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 7509,
+      "offset": 7697,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 7571,
+      "offset": 7759,
       "length": 26,
       "value": "\"swimming_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 7509,
+      "offset": 7697,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 7571,
+      "offset": 7759,
       "length": 26,
       "value": "\"swimming_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Objc\/Entities\/Activity\/RookExtractionDistanceDataObjc.swift",
       "kind": "StringLiteral",
-      "offset": 6999,
+      "offset": 7187,
       "length": 51,
       "value": "\"RookAppleHealth.RookExtractionSwimmingDistanceGranularDataMeterObjc\""
     },
@@ -72584,6 +72697,13 @@
       "offset": 1114,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/DataTypesProvider\/HeightProvider\/RookHeightProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 618,
+      "length": 2,
+      "value": "10"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Entities\/Granular\/RookPositionGranularItem.swift",

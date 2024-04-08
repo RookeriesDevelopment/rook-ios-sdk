@@ -328,6 +328,7 @@ public struct RookPowerGranularItem : Swift.Encodable {
   @objc public var elevationGranularDataMeters: [RookAppleHealth.RookExtractionElevationGranularDataMeterObjc]?
   @objc public var swimmingStrokesNumber: Swift.Int, swimmingNumLapsNumber: Swift.Int, swimmingPoolLengthMeters: Swift.Int, swimmingTotalDistanceMeters: Swift.Int
   @objc public var swimmingDistanceGranularDataMeters: [RookAppleHealth.RookExtractionSwimmingDistanceGranularDataMeterObjc]?
+  @objc public var distanceCyclingMeters: Swift.Int
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws

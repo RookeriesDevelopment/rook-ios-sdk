@@ -43,7 +43,7 @@ final class StoreMissingBodyMetricsUseCase: StoreMissingBodyMetricsUseCaseProtoc
     }
     if let excludingDate: Date = transmissionEvents.getLastBodyMetricsEventTransmittedDate()  {
       return events.filter({
-        $0.metaData.datetime >= excludingDate
+        $0.metaData.datetime > excludingDate
       })
     }
     return events
