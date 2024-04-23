@@ -573,7 +573,7 @@ SWIFT_CLASS("_TtC15RookAppleHealth21RookExtractionManager")
 
 
 @interface RookExtractionManager (SWIFT_EXTENSION(RookAppleHealth))
-- (void)getSleepSummaryObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
+- (void)getSleepSummaryObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)getPhysicalSummaryObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
 - (void)getBodySummaryObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
 - (NSDate * _Nullable)getLastExtractionDateOfSleep SWIFT_WARN_UNUSED_RESULT;
