@@ -9,7 +9,7 @@ import Foundation
 import RookAppleHealth
 import RookConnectTransmission
 
-@objc public final class RookSummaryManger: NSObject {
+@objc public final class RookSummaryManager: NSObject {
   
   // MARK:  Properties
   

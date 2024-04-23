@@ -14,17 +14,17 @@ protocol SummarySyncUseCaseProtocol {
 }
 
 final class SleepSyncUseCase: SummarySyncUseCaseProtocol {
-  
+
   // MARK:  Properties
-  
+
   private let summariesExtraction: RookExtractionManager = RookExtractionManager()
-  
+
   private let sleepTransmissionManager: RookSleepTransmissionManager = RookSleepTransmissionManager()
-  
+
   // MARK:  Init
-  
+
   // MARK:  Helpers
-  
+
   func execute(date: Date, completion: @escaping (Result<Bool, Error>) -> Void) {
     summariesExtraction.getSleepSummary(date: date) { [weak self] result in
       switch result {
@@ -35,25 +35,24 @@ final class SleepSyncUseCase: SummarySyncUseCaseProtocol {
       }
     }
   }
-  
-  private func handleSummary(_ summary: RookSleepData, completion: @escaping (Result<Bool, Error>) -> Void) {
-    
-    guard let data: Data = summary.getData() else {
-      return completion(.failure(RookConnectErrors.emptySummary))
-    }
-    sleepTransmissionManager.enqueueSleepSummary(with: data) { [weak self] result in
-      switch result {
-      case .success(_):
-        self?.uploadSamplesStored(completion: completion)
-      case .failure(let failure):
-        completion(.failure(failure))
+
+  private func handleSummary(_ summaries: [RookSleepData], completion: @escaping (Result<Bool, Error>) -> Void) {
+    for summary in summaries {
+      guard let data: Data = summary.getData() else {
+        return completion(.failure(RookConnectErrors.emptySummary))
+      }
+      sleepTransmissionManager.enqueueSleepSummary(with: data) { [weak self] result in
+        switch result {
+        case .success(_):
+          self?.uploadSamplesStored(completion: completion)
+        case .failure(let failure):
+          completion(.failure(failure))
+        }
       }
     }
   }
-  
+
   private func uploadSamplesStored(completion: @escaping (Result<Bool, Error>) -> Void) {
     sleepTransmissionManager.uploadSleepSummaries(completion: completion)
   }
-  
-  
 }

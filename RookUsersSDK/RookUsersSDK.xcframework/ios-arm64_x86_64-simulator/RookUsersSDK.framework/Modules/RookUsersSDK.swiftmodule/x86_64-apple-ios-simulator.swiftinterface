@@ -2,9 +2,13 @@
 // swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RookUsersSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
 import Foundation
 @_exported import RookUsersSDK
 import Swift
+import SwiftUI
+import UIKit
+import WebKit
 import _Concurrency
 import _StringProcessing
 public struct JSONParameterEncoder : RookUsersSDK.ParameterEncoder {
@@ -69,6 +73,12 @@ public enum NetworkResponse : Swift.String {
   final public func initRookUsers(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
+final public class RookDataSourceManager {
+  public init()
+  final public func getAvailableDataSources(completion: @escaping (Swift.Result<[RookUsersSDK.RookDataSourceAvailable], Swift.Error>) -> Swift.Void)
+  final public func presentDataSourceView(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
 public typealias HTTPHeaders = [Swift.String : Swift.String]
 public enum HTTPTask {
   case request
@@ -95,6 +105,19 @@ public enum RookUsersEnvironment {
   }
 }
 public typealias NetworkRouterCompletion = (_ data: Foundation.Data?, _ response: Foundation.URLResponse?, _ error: Swift.Error?) -> Swift.Void
+public struct RookDataSources {
+  public let clientName: Swift.String
+  public let theme: Swift.String
+  public let dataSources: [RookUsersSDK.RookDataSourceAvailable]
+}
+public struct RookDataSourceAvailable : Swift.Decodable {
+  public let name: Swift.String
+  public let description: Swift.String
+  public let imageUrl: Swift.String
+  public let connected: Swift.Bool
+  public let authorizationURL: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+}
 extension RookUsersSDK.NetworkError : Swift.Equatable {}
 extension RookUsersSDK.NetworkError : Swift.Hashable {}
 extension RookUsersSDK.NetworkError : Swift.RawRepresentable {}

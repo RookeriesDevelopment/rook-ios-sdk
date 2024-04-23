@@ -208,6 +208,10 @@ public struct RookDistanceDateTransmission : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
 }
+public struct NoStructuredSleepSummary : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
 public struct RookPowerDataTransmission : Swift.Codable {
   public let powerAvgWattsNumber: Swift.Int?
   public let powerMaxWattsNumber: Swift.Int?

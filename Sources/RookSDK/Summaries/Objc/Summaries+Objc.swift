@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension RookSummaryManger {
+extension RookSummaryManager {
   
   @objc public func syncSleepSummaryObjc(form date: Date, completion: @escaping (Bool, Error?) -> Void) {
     self.syncSleepSummary(from: date) { result in

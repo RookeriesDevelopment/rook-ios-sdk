@@ -23,7 +23,7 @@ public final class RookConnectConfigurationManager {
   private let userManger: RookUsersManger = RookUsersManger()
   private let initUseCase: InitUseCaseProtocol = InitUseCase()
   private let timeZoneUseCase: TimeZoneUseCaseProtocol = TimeZoneUseCase()
-  private let syncManager: RookSummaryManger = RookSummaryManger()
+  private let syncManager: RookSummaryManager = RookSummaryManager()
   private let eventsManager: RookEventsManager = RookEventsManager()
   private let foregroundSyncLocalDataSource: ForegroundSyncLocalDataSource = ForegroundSyncLocalDataSource()
   
