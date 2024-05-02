@@ -1107,6 +1107,7 @@ public enum HealthDataType : Swift.String, Swift.CaseIterable, Swift.Identifiabl
     get
   }
   case appleExerciseTime
+  case appleMoveTime
   case appleStandTime
   case basalEnergyBurned
   case activeEnergyBurned

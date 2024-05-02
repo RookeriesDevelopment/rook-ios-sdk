@@ -30,7 +30,7 @@ extension RookBackGroundSync {
     backGroundManager.setBackGroundDisable(for: .eventsBackGroundExtractionEnable)
   }
 
-  func activityEventsBackListener() {
+  func eventsBackgroundListener() {
     backGroundManager.isBackgroundEnable(for: .activityEventsBackGroundExtractionEnable) { [weak self] (isEnable) in
       if isEnable {
         self?.setBackGround()

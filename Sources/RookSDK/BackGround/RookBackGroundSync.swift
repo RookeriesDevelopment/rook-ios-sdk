@@ -127,8 +127,7 @@ import UIKit
         }
       }
     }
-    activityEventsBackListener()
-    setBackGroundEventListeners()
+    eventsBackgroundListener()
   }
 
   @objc public func enableBackGroundForSummaries() {
@@ -159,7 +158,7 @@ import UIKit
 
     if let heartUploadTask: UIBackgroundTaskIdentifier = initiateBackgroundTask() {
       eventsUseCase.heartRateTransmission.uploadHrEvents() { [weak self] _ in
-        self?.handleSummariesUploaded?()
+        self?.handleEventsUploaded?(.heartRate)
         UIApplication.shared.endBackgroundTask(heartUploadTask)
       }
     }
