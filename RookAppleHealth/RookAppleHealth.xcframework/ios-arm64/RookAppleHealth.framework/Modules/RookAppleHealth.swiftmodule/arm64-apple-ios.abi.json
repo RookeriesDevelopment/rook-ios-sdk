@@ -7083,6 +7083,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookDataType",
         "printedName": "RookDataType",
@@ -37575,6 +37585,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookExtractionHeartRateDataObjc",
         "printedName": "RookExtractionHeartRateDataObjc",
@@ -38976,6 +38996,23 @@
             "mangledName": "$sSY"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth"
       },
       {
         "kind": "Import",
@@ -52366,6 +52403,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookAppleHealth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "HealthKit",
         "printedName": "HealthKit",
         "declKind": "Import",
@@ -52802,6 +52849,43 @@
             "declKind": "EnumElement",
             "usr": "s:15RookAppleHealth0C8DataTypeO17appleExerciseTimeyA2CmF",
             "mangledName": "$s15RookAppleHealth0C8DataTypeO17appleExerciseTimeyA2CmF",
+            "moduleName": "RookAppleHealth"
+          },
+          {
+            "kind": "Var",
+            "name": "appleMoveTime",
+            "printedName": "appleMoveTime",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookAppleHealth.HealthDataType.Type) -> RookAppleHealth.HealthDataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HealthDataType",
+                    "printedName": "RookAppleHealth.HealthDataType",
+                    "usr": "s:15RookAppleHealth0C8DataTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookAppleHealth.HealthDataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HealthDataType",
+                        "printedName": "RookAppleHealth.HealthDataType",
+                        "usr": "s:15RookAppleHealth0C8DataTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15RookAppleHealth0C8DataTypeO13appleMoveTimeyA2CmF",
+            "mangledName": "$s15RookAppleHealth0C8DataTypeO13appleMoveTimeyA2CmF",
             "moduleName": "RookAppleHealth"
           },
           {
@@ -72208,7 +72292,7 @@
       "kind": "StringLiteral",
       "offset": 1264,
       "length": 7,
-      "value": "\"1.6.0\""
+      "value": "\"1.6.1\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Configuration\/RookAuthAppleHealth.swift",
@@ -76609,280 +76693,287 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 316,
+      "offset": 315,
+      "length": 15,
+      "value": "\"appleMoveTime\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 355,
       "length": 16,
       "value": "\"appleStandTime\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 360,
+      "offset": 399,
       "length": 19,
       "value": "\"basalEnergyBurned\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 408,
+      "offset": 447,
       "length": 20,
       "value": "\"activeEnergyBurned\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 451,
+      "offset": 490,
       "length": 11,
       "value": "\"stepCount\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 488,
+      "offset": 527,
       "length": 17,
       "value": "\"distanceCycling\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 538,
+      "offset": 577,
       "length": 24,
       "value": "\"distanceWalkingRunning\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 589,
+      "offset": 628,
       "length": 18,
       "value": "\"distanceSwimming\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 637,
+      "offset": 676,
       "length": 21,
       "value": "\"swimmingStrokeCount\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 683,
+      "offset": 722,
       "length": 16,
       "value": "\"flightsClimbed\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 719,
+      "offset": 758,
       "length": 8,
       "value": "\"height\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 746,
+      "offset": 785,
       "length": 10,
       "value": "\"bodyMass\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 780,
+      "offset": 819,
       "length": 15,
       "value": "\"bodyMassIndex\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 824,
+      "offset": 863,
       "length": 20,
       "value": "\"waistCircumference\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 872,
+      "offset": 911,
       "length": 19,
       "value": "\"bodyFatPercentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 920,
+      "offset": 959,
       "length": 17,
       "value": "\"bodyTemperature\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 968,
+      "offset": 1007,
       "length": 22,
       "value": "\"basalBodyTemperature\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1030,
+      "offset": 1069,
       "length": 31,
       "value": "\"appleSleepingWristTemperature\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1084,
+      "offset": 1123,
       "length": 11,
       "value": "\"heartRate\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1122,
+      "offset": 1161,
       "length": 18,
       "value": "\"restingHeartRate\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1174,
+      "offset": 1213,
       "length": 25,
       "value": "\"walkingHeartRateAverage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1234,
+      "offset": 1273,
       "length": 26,
       "value": "\"heartRateVariabilitySDNN\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1288,
+      "offset": 1327,
       "length": 19,
       "value": "\"electrocardiogram\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1328,
+      "offset": 1367,
       "length": 9,
       "value": "\"workout\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1361,
+      "offset": 1400,
       "length": 15,
       "value": "\"sleepAnalysis\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1396,
+      "offset": 1435,
       "length": 8,
       "value": "\"vo2Max\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1431,
+      "offset": 1470,
       "length": 18,
       "value": "\"oxygenSaturation\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1475,
+      "offset": 1514,
       "length": 17,
       "value": "\"respiratoryRate\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1519,
+      "offset": 1558,
       "length": 15,
       "value": "\"biologicalSex\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1556,
+      "offset": 1595,
       "length": 13,
       "value": "\"dateOfBirth\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1604,
+      "offset": 1643,
       "length": 23,
       "value": "\"bloodPressureSystolic\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1660,
+      "offset": 1699,
       "length": 24,
       "value": "\"bloodPressureDiastolic\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1707,
+      "offset": 1746,
       "length": 14,
       "value": "\"bloodGlucose\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1771,
+      "offset": 1810,
       "length": 23,
       "value": "\"dietaryEnergyConsumed\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1819,
+      "offset": 1858,
       "length": 16,
       "value": "\"dietaryProtein\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1858,
+      "offset": 1897,
       "length": 14,
       "value": "\"dietarySugar\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1898,
+      "offset": 1937,
       "length": 17,
       "value": "\"dietaryFatTotal\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1946,
+      "offset": 1985,
       "length": 22,
       "value": "\"dietaryCarbohydrates\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1991,
+      "offset": 2030,
       "length": 14,
       "value": "\"dietaryFiber\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2029,
+      "offset": 2068,
       "length": 15,
       "value": "\"dietarySodium\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2073,
+      "offset": 2112,
       "length": 20,
       "value": "\"dietaryCholesterol\""
     },
@@ -76896,280 +76987,287 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 316,
+      "offset": 315,
+      "length": 15,
+      "value": "\"appleMoveTime\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 355,
       "length": 16,
       "value": "\"appleStandTime\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 360,
+      "offset": 399,
       "length": 19,
       "value": "\"basalEnergyBurned\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 408,
+      "offset": 447,
       "length": 20,
       "value": "\"activeEnergyBurned\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 451,
+      "offset": 490,
       "length": 11,
       "value": "\"stepCount\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 488,
+      "offset": 527,
       "length": 17,
       "value": "\"distanceCycling\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 538,
+      "offset": 577,
       "length": 24,
       "value": "\"distanceWalkingRunning\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 589,
+      "offset": 628,
       "length": 18,
       "value": "\"distanceSwimming\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 637,
+      "offset": 676,
       "length": 21,
       "value": "\"swimmingStrokeCount\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 683,
+      "offset": 722,
       "length": 16,
       "value": "\"flightsClimbed\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 719,
+      "offset": 758,
       "length": 8,
       "value": "\"height\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 746,
+      "offset": 785,
       "length": 10,
       "value": "\"bodyMass\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 780,
+      "offset": 819,
       "length": 15,
       "value": "\"bodyMassIndex\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 824,
+      "offset": 863,
       "length": 20,
       "value": "\"waistCircumference\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 872,
+      "offset": 911,
       "length": 19,
       "value": "\"bodyFatPercentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 920,
+      "offset": 959,
       "length": 17,
       "value": "\"bodyTemperature\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 968,
+      "offset": 1007,
       "length": 22,
       "value": "\"basalBodyTemperature\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1030,
+      "offset": 1069,
       "length": 31,
       "value": "\"appleSleepingWristTemperature\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1084,
+      "offset": 1123,
       "length": 11,
       "value": "\"heartRate\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1122,
+      "offset": 1161,
       "length": 18,
       "value": "\"restingHeartRate\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1174,
+      "offset": 1213,
       "length": 25,
       "value": "\"walkingHeartRateAverage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1234,
+      "offset": 1273,
       "length": 26,
       "value": "\"heartRateVariabilitySDNN\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1288,
+      "offset": 1327,
       "length": 19,
       "value": "\"electrocardiogram\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1328,
+      "offset": 1367,
       "length": 9,
       "value": "\"workout\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1361,
+      "offset": 1400,
       "length": 15,
       "value": "\"sleepAnalysis\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1396,
+      "offset": 1435,
       "length": 8,
       "value": "\"vo2Max\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1431,
+      "offset": 1470,
       "length": 18,
       "value": "\"oxygenSaturation\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1475,
+      "offset": 1514,
       "length": 17,
       "value": "\"respiratoryRate\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1519,
+      "offset": 1558,
       "length": 15,
       "value": "\"biologicalSex\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1556,
+      "offset": 1595,
       "length": 13,
       "value": "\"dateOfBirth\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1604,
+      "offset": 1643,
       "length": 23,
       "value": "\"bloodPressureSystolic\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1660,
+      "offset": 1699,
       "length": 24,
       "value": "\"bloodPressureDiastolic\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1707,
+      "offset": 1746,
       "length": 14,
       "value": "\"bloodGlucose\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1771,
+      "offset": 1810,
       "length": 23,
       "value": "\"dietaryEnergyConsumed\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1819,
+      "offset": 1858,
       "length": 16,
       "value": "\"dietaryProtein\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1858,
+      "offset": 1897,
       "length": 14,
       "value": "\"dietarySugar\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1898,
+      "offset": 1937,
       "length": 17,
       "value": "\"dietaryFatTotal\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1946,
+      "offset": 1985,
       "length": 22,
       "value": "\"dietaryCarbohydrates\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1991,
+      "offset": 2030,
       "length": 14,
       "value": "\"dietaryFiber\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2029,
+      "offset": 2068,
       "length": 15,
       "value": "\"dietarySodium\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2073,
+      "offset": 2112,
       "length": 20,
       "value": "\"dietaryCholesterol\""
     },

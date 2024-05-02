@@ -14,3 +14,11 @@ public struct RookDataSource {
   public let connected: Bool
   public let authorizationURL: String?
 }
+
+struct DataSource: Encodable {
+  public let name: String
+  public let description: String
+  public let imageUrl: String
+  public let connected: Bool
+  public let authorizationURL: String?
+}
