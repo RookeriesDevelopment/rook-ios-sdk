@@ -30,10 +30,10 @@ final class ExtractionSleepUseCase: ExtractionSleepUseCaseProtocol {
 
   private func getSummary(date: Date) async throws -> Bool {
     try await withCheckedThrowingContinuation { continuation in
-      extractionManager.getSleepSummary(date: date) { result in
+      extractionManager.getSleepSummary(date: date) { [weak self] result in
         switch result {
         case .success(let data):
-          self.storeBatchSummaries(data) { result in
+          self?.storeBatchSummaries(data) { result in
             switch result {
             case .success(let success):
               continuation.resume(returning: success)
@@ -51,7 +51,7 @@ final class ExtractionSleepUseCase: ExtractionSleepUseCaseProtocol {
   private func storeBatchSummaries(_ summaries: [RookSleepData], completion: @escaping (Result<Bool, Error>) -> Void) {
     Task {
       var storeError: Error?
-      var result: Bool = false
+      var result: Bool = true
       for summary in summaries {
         do {
           result = try await storeSummary(summary: summary)
@@ -59,11 +59,11 @@ final class ExtractionSleepUseCase: ExtractionSleepUseCaseProtocol {
           storeError = error
         }
       }
-
+      
       if let storeError: Error = storeError {
-        throw storeError
+        completion(.failure(storeError))
       } else {
-        return result
+        completion(.success(result))
       }
     }
   }
