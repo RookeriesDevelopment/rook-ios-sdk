@@ -186,26 +186,3 @@ import UIKit
     }
   }
 }
-
-// MARK:  HeartRate
-
-extension RookBackGroundSync {
-
-  private func storeHeartRate(completion: @escaping () -> Void) {
-    Task {
-      do {
-        _ = try await self.eventsUseCase.heartRateStoreUseCase.execute()
-      } catch { }
-      completion()
-    }
-  }
-
-  private func uploadHeartRateBackGroundTask() {
-    if let eventUploadTask: UIBackgroundTaskIdentifier = initiateBackgroundTask() {
-      self.eventsUseCase.heartRateTransmission.uploadHrEvents() { [weak self] _ in
-        self?.handleEventsUploaded?(.heartRate)
-        UIApplication.shared.endBackgroundTask(eventUploadTask)
-      }
-    }
-  }
-}
