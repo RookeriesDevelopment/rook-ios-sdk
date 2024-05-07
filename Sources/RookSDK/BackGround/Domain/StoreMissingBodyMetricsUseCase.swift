@@ -18,6 +18,7 @@ final class StoreMissingBodyMetricsUseCase: StoreMissingBodyMetricsUseCaseProtoc
   private let extractionEvent: RookExtractionEventManager
   private let missingUseCase: MissingEventsDaysUseCaseProtocol
   private let transmissionEvents: RookBodyMetricsEventTransmissionManager
+  private let transmissionMetricsStorage: TransmissionBodyMetricsValues = TransmissionBodyMetricsValues()
   
   init(extractionEvent: RookExtractionEventManager,
        missingUseCase: MissingEventsDaysUseCaseProtocol,
@@ -41,10 +42,12 @@ final class StoreMissingBodyMetricsUseCase: StoreMissingBodyMetricsUseCaseProtoc
       }
       events.append(contentsOf: eventToAppend)
     }
-    if let excludingDate: Date = transmissionEvents.getLastBodyMetricsEventTransmittedDate()  {
-      return events.filter({
-        $0.metaData.datetime > excludingDate
+    if let excludingDate: Date = transmissionEvents.getLastBodyMetricsEventTransmittedDate() {
+      let storedValues = transmissionMetricsStorage.getLastBodyTransmission()
+      let eventToReturn:  [RookBodyMetricsEvent] = events.filter({
+        ($0.metaData.datetime > excludingDate) || ($0.metaData.datetime == excludingDate && ( storedValues.0 != $0.bodyMetricsData.weightKgNumber || storedValues.1 != $0.bodyMetricsData.heightCMNumber))
       })
+      return eventToReturn
     }
     return events
   }

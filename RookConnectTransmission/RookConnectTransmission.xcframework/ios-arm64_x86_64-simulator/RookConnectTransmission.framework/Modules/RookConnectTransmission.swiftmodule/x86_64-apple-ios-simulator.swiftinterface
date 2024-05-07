@@ -212,6 +212,11 @@ public struct NoStructuredSleepSummary : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
+public class TransmissionBodyMetricsValues {
+  public init()
+  public func getLastBodyTransmission() -> (Swift.Float?, Swift.Float?)
+  @objc deinit
+}
 public struct RookPowerDataTransmission : Swift.Codable {
   public let powerAvgWattsNumber: Swift.Int?
   public let powerMaxWattsNumber: Swift.Int?
