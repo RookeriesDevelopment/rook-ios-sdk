@@ -126,5 +126,9 @@ import RookUsersSDK
   @objc public func isSyncEnable() -> Bool {
     return innerConfiguration.isSyncEnable()
   }
-  
+
+  @objc public func setConsoleLogAvailable(_ value: Bool) {
+    self.innerConfiguration.setConsoleLogAvailable(value)
+  }
+
 }

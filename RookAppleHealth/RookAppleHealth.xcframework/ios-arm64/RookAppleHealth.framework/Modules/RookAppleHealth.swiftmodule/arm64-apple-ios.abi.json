@@ -72292,7 +72292,7 @@
       "kind": "StringLiteral",
       "offset": 1264,
       "length": 7,
-      "value": "\"1.6.1\""
+      "value": "\"1.6.2\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Configuration\/RookAuthAppleHealth.swift",
@@ -72570,79 +72570,72 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
       "kind": "StringLiteral",
-      "offset": 427,
+      "offset": 431,
       "length": 3,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
       "kind": "StringLiteral",
-      "offset": 438,
+      "offset": 442,
       "length": 3,
       "value": "\"+\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
       "kind": "StringLiteral",
-      "offset": 477,
+      "offset": 481,
       "length": 3,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
       "kind": "StringLiteral",
-      "offset": 488,
+      "offset": 492,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 554,
+      "offset": 566,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 559,
+      "offset": 571,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 564,
+      "offset": 576,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
       "kind": "StringLiteral",
-      "offset": 576,
+      "offset": 588,
       "length": 3,
       "value": "\"=\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 593,
+      "offset": 605,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
       "kind": "StringLiteral",
-      "offset": 990,
+      "offset": 1027,
       "length": 3,
       "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAuthenticationSDK\/Source\/Authentication\/JWTDecoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1033,
-      "length": 1,
-      "value": "1"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookAppleHealth\/Source\/Extraction\/Data\/PredicateBuilder\/RookPredicateBuilder.swift",

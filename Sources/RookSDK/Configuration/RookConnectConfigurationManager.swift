@@ -142,6 +142,10 @@ public final class RookConnectConfigurationManager {
     return foregroundSyncLocalDataSource.isForegroundSyncEnable()
   }
 
+  @objc public func setConsoleLogAvailable(_ value: Bool) {
+    self.transmissionConfigurator.setConsoleLogAvailable(value)
+  }
+
   // MARK:  Private
   
   private func addObserver() {

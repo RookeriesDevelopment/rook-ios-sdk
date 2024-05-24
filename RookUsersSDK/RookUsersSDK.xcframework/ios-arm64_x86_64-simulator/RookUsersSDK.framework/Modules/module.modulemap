@@ -1,7 +1,7 @@
 framework module RookUsersSDK {
   umbrella header "RookUsersSDK.h"
-
   export *
+
   module * { export * }
 }
 

@@ -1,7 +1,7 @@
 framework module RookConnectTransmission {
   umbrella header "RookConnectTransmission.h"
-
   export *
+
   module * { export * }
 }
 
