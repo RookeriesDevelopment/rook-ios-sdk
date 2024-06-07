@@ -1,0 +1,11 @@
+framework module RookSDK {
+  umbrella header "RookSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module RookSDK.Swift {
+  header "RookSDK-Swift.h"
+  requires objc
+}
