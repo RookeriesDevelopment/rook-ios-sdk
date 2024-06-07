@@ -20,23 +20,7 @@ let package = Package(
   ],
   
   targets: [
-    
-    .target(
-      name: "RookSDK",
-      dependencies: ["RookAppleHealth",
-                     "RookConnectTransmission",
-                     "RookUsersSDK"],
-      cxxSettings: [
-        .headerSearchPath("include")
-      ]
-    ),
-    
-      .binaryTarget(name: "RookAppleHealth",
-                    path: "./RookAppleHealth/RookAppleHealth.xcframework"),
-      .binaryTarget(name: "RookConnectTransmission",
-                    path: "./RookConnectTransmission/RookConnectTransmission.xcframework"),
-      .binaryTarget(name: "RookUsersSDK",
-                    path: "./RookUsersSDK/RookUsersSDK.xcframework")
-    
+    .binaryTarget(name: "RookSDK",
+                  path: "./Sources/RookSDK.xcframework")
   ]
 )
