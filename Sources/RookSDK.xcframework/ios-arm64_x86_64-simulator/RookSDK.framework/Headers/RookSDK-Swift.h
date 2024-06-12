@@ -297,23 +297,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IOSClass * _
 
 SWIFT_CLASS("_TtC7RookSDK24RookBackGroundExtraction")
 @interface RookBackGroundExtraction : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull notificationSteps;
-@property (nonatomic, readonly, copy) NSString * _Nonnull notificationCalories;
-@property (nonatomic, copy) void (^ _Nullable handleStepsUpdate)(NSInteger);
-@property (nonatomic, copy) void (^ _Nullable handleCaloriesUpdate)(NSInteger);
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGroundExtraction * _Nonnull shared;)
 + (RookBackGroundExtraction * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)setBackGroundListeners;
-- (void)enableBackGroundForSteps;
-- (void)isStepsBackgroundEnableWithCompletion:(void (^ _Nonnull)(BOOL))completion;
-- (void)disableBackGroundForStepsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)enableBackGroundForCalories;
-- (void)isCaloriesBackgroundEnableWithCompletion:(void (^ _Nonnull)(BOOL))completion;
-- (void)disableBackGroundForCaloriesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
-
 
 
 SWIFT_CLASS("_TtC7RookSDK18RookBackGroundSync")
@@ -463,7 +451,6 @@ SWIFT_CLASS("_TtC7RookSDK29RookVariableExtractionManager")
 
 @interface RookVariableExtractionManager (SWIFT_EXTENSION(RookSDK))
 - (void)getTodayStepsWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
-- (void)getTodayActiveCaloriesBurnedWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 @end
 
 #endif
@@ -773,23 +760,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IOSClass * _
 
 SWIFT_CLASS("_TtC7RookSDK24RookBackGroundExtraction")
 @interface RookBackGroundExtraction : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull notificationSteps;
-@property (nonatomic, readonly, copy) NSString * _Nonnull notificationCalories;
-@property (nonatomic, copy) void (^ _Nullable handleStepsUpdate)(NSInteger);
-@property (nonatomic, copy) void (^ _Nullable handleCaloriesUpdate)(NSInteger);
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGroundExtraction * _Nonnull shared;)
 + (RookBackGroundExtraction * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)setBackGroundListeners;
-- (void)enableBackGroundForSteps;
-- (void)isStepsBackgroundEnableWithCompletion:(void (^ _Nonnull)(BOOL))completion;
-- (void)disableBackGroundForStepsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)enableBackGroundForCalories;
-- (void)isCaloriesBackgroundEnableWithCompletion:(void (^ _Nonnull)(BOOL))completion;
-- (void)disableBackGroundForCaloriesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
-
 
 
 SWIFT_CLASS("_TtC7RookSDK18RookBackGroundSync")
@@ -939,7 +914,6 @@ SWIFT_CLASS("_TtC7RookSDK29RookVariableExtractionManager")
 
 @interface RookVariableExtractionManager (SWIFT_EXTENSION(RookSDK))
 - (void)getTodayStepsWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
-- (void)getTodayActiveCaloriesBurnedWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 @end
 
 #endif

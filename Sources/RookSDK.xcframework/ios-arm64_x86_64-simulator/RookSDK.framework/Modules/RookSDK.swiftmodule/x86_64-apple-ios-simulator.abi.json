@@ -11971,58 +11971,6 @@
           },
           {
             "kind": "Function",
-            "name": "getTodayActiveCaloriesBurned",
-            "printedName": "getTodayActiveCaloriesBurned(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<Swift.Int, Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<Swift.Int, Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A25VariableExtractionManagerC28getTodayActiveCaloriesBurned10completionyys6ResultOySis5Error_pGc_tF",
-            "mangledName": "$s7RookSDK0A25VariableExtractionManagerC28getTodayActiveCaloriesBurned10completionyys6ResultOySis5Error_pGc_tF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "getTodaySteps",
             "printedName": "getTodaySteps(completion:)",
             "children": [
@@ -12076,69 +12024,6 @@
             "mangledName": "$s7RookSDK0A25VariableExtractionManagerC13getTodaySteps10completionyySi_s5Error_pSgtc_tF",
             "moduleName": "RookSDK",
             "objc_name": "getTodayStepsWithCompletion:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getTodayActiveCaloriesBurned",
-            "printedName": "getTodayActiveCaloriesBurned(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Int, Swift.Error?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.Int, Swift.Error?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.Error?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Error",
-                            "printedName": "Swift.Error",
-                            "usr": "s:s5ErrorP"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@RookSDK@objc(cs)RookVariableExtractionManager(im)getTodayActiveCaloriesBurnedWithCompletion:",
-            "mangledName": "$s7RookSDK0A25VariableExtractionManagerC28getTodayActiveCaloriesBurned10completionyySi_s5Error_pSgtc_tF",
-            "moduleName": "RookSDK",
-            "objc_name": "getTodayActiveCaloriesBurnedWithCompletion:",
             "declAttributes": [
               "Dynamic",
               "AccessControl",
@@ -58086,23 +57971,6 @@
       },
       {
         "kind": "Import",
-        "name": "HealthKit",
-        "printedName": "HealthKit",
-        "declKind": "Import",
-        "moduleName": "RookSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "RookSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -73278,1154 +73146,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "RookBackGroundExtraction",
-        "printedName": "RookBackGroundExtraction",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "notificationSteps",
-            "printedName": "notificationSteps",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(py)notificationSteps",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC17notificationStepsSSvp",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(im)notificationSteps",
-                "mangledName": "$s7RookSDK0A20BackGroundExtractionC17notificationStepsSSvg",
-                "moduleName": "RookSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "notificationCalories",
-            "printedName": "notificationCalories",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(py)notificationCalories",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC20notificationCaloriesSSvp",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(im)notificationCalories",
-                "mangledName": "$s7RookSDK0A20BackGroundExtractionC20notificationCaloriesSSvg",
-                "moduleName": "RookSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "handleStepsUpdate",
-            "printedName": "handleStepsUpdate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.Int) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Int) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(py)handleStepsUpdate",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC17handleStepsUpdateySicSgvp",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((Swift.Int) -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.Int) -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(im)handleStepsUpdate",
-                "mangledName": "$s7RookSDK0A20BackGroundExtractionC17handleStepsUpdateySicSgvg",
-                "moduleName": "RookSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((Swift.Int) -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.Int) -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(im)setHandleStepsUpdate:",
-                "mangledName": "$s7RookSDK0A20BackGroundExtractionC17handleStepsUpdateySicSgvs",
-                "moduleName": "RookSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7RookSDK0A20BackGroundExtractionC17handleStepsUpdateySicSgvM",
-                "mangledName": "$s7RookSDK0A20BackGroundExtractionC17handleStepsUpdateySicSgvM",
-                "moduleName": "RookSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "handleCaloriesUpdate",
-            "printedName": "handleCaloriesUpdate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.Int) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Int) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(py)handleCaloriesUpdate",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC20handleCaloriesUpdateySicSgvp",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((Swift.Int) -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.Int) -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(im)handleCaloriesUpdate",
-                "mangledName": "$s7RookSDK0A20BackGroundExtractionC20handleCaloriesUpdateySicSgvg",
-                "moduleName": "RookSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((Swift.Int) -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.Int) -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(im)setHandleCaloriesUpdate:",
-                "mangledName": "$s7RookSDK0A20BackGroundExtractionC20handleCaloriesUpdateySicSgvs",
-                "moduleName": "RookSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7RookSDK0A20BackGroundExtractionC20handleCaloriesUpdateySicSgvM",
-                "mangledName": "$s7RookSDK0A20BackGroundExtractionC20handleCaloriesUpdateySicSgvM",
-                "moduleName": "RookSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "RookBackGroundExtraction",
-                "printedName": "RookSDK.RookBackGroundExtraction",
-                "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(cpy)shared",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC6sharedACvpZ",
-            "moduleName": "RookSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RookBackGroundExtraction",
-                    "printedName": "RookSDK.RookBackGroundExtraction",
-                    "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(cm)shared",
-                "mangledName": "$s7RookSDK0A20BackGroundExtractionC6sharedACvgZ",
-                "moduleName": "RookSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "setBackGroundListeners",
-            "printedName": "setBackGroundListeners()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(im)setBackGroundListeners",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC03setcD9ListenersyyF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "enableBackGroundForSteps",
-            "printedName": "enableBackGroundForSteps()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(im)enableBackGroundForSteps",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC06enablecD8ForStepsyyF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "isStepsBackgroundEnable",
-            "printedName": "isStepsBackgroundEnable(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(im)isStepsBackgroundEnableWithCompletion:",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC23isStepsBackgroundEnable10completionyySbc_tF",
-            "moduleName": "RookSDK",
-            "objc_name": "isStepsBackgroundEnableWithCompletion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "disableBackGroundForSteps",
-            "printedName": "disableBackGroundForSteps(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A20BackGroundExtractionC07disablecD8ForSteps10completionyys6ResultOySbs5Error_pGc_tF",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC07disablecD8ForSteps10completionyys6ResultOySbs5Error_pGc_tF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "disableBackGroundForStepsObjc",
-            "printedName": "disableBackGroundForStepsObjc(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.Bool, Swift.Error?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.Error?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Error",
-                            "printedName": "Swift.Error",
-                            "usr": "s:s5ErrorP"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(im)disableBackGroundForStepsObjcWithCompletion:",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC07disablecD12ForStepsObjc10completionyySb_s5Error_pSgtc_tF",
-            "moduleName": "RookSDK",
-            "objc_name": "disableBackGroundForStepsObjcWithCompletion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "enableBackGroundForCalories",
-            "printedName": "enableBackGroundForCalories()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(im)enableBackGroundForCalories",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC06enablecD11ForCaloriesyyF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "isCaloriesBackgroundEnable",
-            "printedName": "isCaloriesBackgroundEnable(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(im)isCaloriesBackgroundEnableWithCompletion:",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC26isCaloriesBackgroundEnable10completionyySbc_tF",
-            "moduleName": "RookSDK",
-            "objc_name": "isCaloriesBackgroundEnableWithCompletion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "disableBackGroundForCalories",
-            "printedName": "disableBackGroundForCalories(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A20BackGroundExtractionC07disablecD11ForCalories10completionyys6ResultOySbs5Error_pGc_tF",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC07disablecD11ForCalories10completionyys6ResultOySbs5Error_pGc_tF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "disableBackGroundForCaloriesObjc",
-            "printedName": "disableBackGroundForCaloriesObjc(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.Bool, Swift.Error?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.Error?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Error",
-                            "printedName": "Swift.Error",
-                            "usr": "s:s5ErrorP"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(im)disableBackGroundForCaloriesObjcWithCompletion:",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC07disablecD15ForCaloriesObjc10completionyySb_s5Error_pSgtc_tF",
-            "moduleName": "RookSDK",
-            "objc_name": "disableBackGroundForCaloriesObjcWithCompletion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setBackGroundListener",
-            "printedName": "setBackGroundListener(type:completionHandler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HealthDataType",
-                "printedName": "RookSDK.HealthDataType",
-                "usr": "s:7RookSDK14HealthDataTypeO"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(@escaping () -> (), Swift.Error?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(() -> (), Swift.Error?)",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "() -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          }
-                        ]
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.Error?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Error",
-                            "printedName": "Swift.Error",
-                            "usr": "s:s5ErrorP"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A20BackGroundExtractionC03setcD8Listener4type17completionHandleryAA14HealthDataTypeO_yyyc_s5Error_pSgtctF",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC03setcD8Listener4type17completionHandleryAA14HealthDataTypeO_yyyc_s5Error_pSgtctF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "disableBackGround",
-            "printedName": "disableBackGround(for:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HealthDataType",
-                "printedName": "RookSDK.HealthDataType",
-                "usr": "s:7RookSDK14HealthDataTypeO"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A20BackGroundExtractionC07disablecD03for10completionyAA14HealthDataTypeO_ys6ResultOySbs5Error_pGctF",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC07disablecD03for10completionyAA14HealthDataTypeO_ys6ResultOySbs5Error_pGctF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "isBackgroundEnable",
-            "printedName": "isBackgroundEnable(for:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BackGroundStorageTypes",
-                "printedName": "RookSDK.BackGroundStorageTypes",
-                "usr": "s:7RookSDK22BackGroundStorageTypesO"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A20BackGroundExtractionC18isBackgroundEnable3for10completionyAA0cD12StorageTypesO_ySbctF",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC18isBackgroundEnable3for10completionyAA0cD12StorageTypesO_ySbctF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setBackGroundEnable",
-            "printedName": "setBackGroundEnable(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BackGroundStorageTypes",
-                "printedName": "RookSDK.BackGroundStorageTypes",
-                "usr": "s:7RookSDK22BackGroundStorageTypesO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A20BackGroundExtractionC03setcD6Enable3foryAA0cD12StorageTypesO_tF",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC03setcD6Enable3foryAA0cD12StorageTypesO_tF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setBackGroundDisable",
-            "printedName": "setBackGroundDisable(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BackGroundStorageTypes",
-                "printedName": "RookSDK.BackGroundStorageTypes",
-                "usr": "s:7RookSDK22BackGroundStorageTypesO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A20BackGroundExtractionC03setcD7Disable3foryAA0cD12StorageTypesO_tF",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC03setcD7Disable3foryAA0cD12StorageTypesO_tF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction",
-        "mangledName": "$s7RookSDK0A20BackGroundExtractionC",
-        "moduleName": "RookSDK",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "RookSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -81673,6 +80393,148 @@
       },
       {
         "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "RookSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RookBackGroundExtraction",
+        "printedName": "RookBackGroundExtraction",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookBackGroundExtraction",
+                "printedName": "RookSDK.RookBackGroundExtraction",
+                "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(cpy)shared",
+            "mangledName": "$s7RookSDK0A20BackGroundExtractionC6sharedACvpZ",
+            "moduleName": "RookSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookBackGroundExtraction",
+                    "printedName": "RookSDK.RookBackGroundExtraction",
+                    "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(cm)shared",
+                "mangledName": "$s7RookSDK0A20BackGroundExtractionC6sharedACvgZ",
+                "moduleName": "RookSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction",
+        "mangledName": "$s7RookSDK0A20BackGroundExtractionC",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -88066,7 +86928,7 @@
       "kind": "StringLiteral",
       "offset": 706,
       "length": 7,
-      "value": "\"1.4.8\""
+      "value": "\"1.5.0\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Configuration\/RookConnectConfigurationManager.swift",
@@ -99701,20 +98563,6 @@
       "offset": 294,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/VariableExtraction\/RookBackGroundExtraction.swift",
-      "kind": "StringLiteral",
-      "offset": 582,
-      "length": 19,
-      "value": "\"rook_steps_update\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/VariableExtraction\/RookBackGroundExtraction.swift",
-      "kind": "StringLiteral",
-      "offset": 652,
-      "length": 22,
-      "value": "\"rook_calories_update\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
