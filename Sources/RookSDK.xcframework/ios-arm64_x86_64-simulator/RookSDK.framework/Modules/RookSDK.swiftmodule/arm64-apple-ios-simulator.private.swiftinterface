@@ -302,7 +302,6 @@ final public class RookActivityEventTransmissionManager {
 @_inheritsConvenienceInitializers @objc public class RookVariableExtractionManager : ObjectiveC.NSObject {
   @objc override dynamic public init()
   public func getTodaySteps(completion: @escaping (Swift.Result<Swift.Int, Swift.Error>) -> Swift.Void)
-  public func getTodayActiveCaloriesBurned(completion: @escaping (Swift.Result<Swift.Int, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 public struct RookGlucoseEventTransmission : Swift.Codable {
@@ -1250,13 +1249,6 @@ public enum RookTransmissionEventType : Swift.String {
     get
   }
 }
-extension RookSDK.RookBackGroundExtraction {
-  public func setBackGroundListener(type: RookSDK.HealthDataType, completionHandler: @escaping (@escaping HealthKit.HKObserverQueryCompletionHandler, Swift.Error?) -> Swift.Void)
-  public func disableBackGround(for type: RookSDK.HealthDataType, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  public func isBackgroundEnable(for type: RookSDK.BackGroundStorageTypes, completion: @escaping (Swift.Bool) -> Swift.Void)
-  public func setBackGroundEnable(for type: RookSDK.BackGroundStorageTypes)
-  public func setBackGroundDisable(for type: RookSDK.BackGroundStorageTypes)
-}
 public struct RookActitivityDataEventTransmission : Swift.Codable {
   public let activityStartTimeDateTime: Foundation.Date
   public let activityEndTimeDateTime: Foundation.Date
@@ -1576,7 +1568,6 @@ public enum AnalyticPlatform {
 }
 extension RookSDK.RookVariableExtractionManager {
   @objc dynamic public func getTodaySteps(completion: @escaping (Swift.Int, Swift.Error?) -> Swift.Void)
-  @objc dynamic public func getTodayActiveCaloriesBurned(completion: @escaping (Swift.Int, Swift.Error?) -> Swift.Void)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RookBackGroundSync : ObjectiveC.NSObject {
   @objc public static let shared: RookSDK.RookBackGroundSync
@@ -1586,23 +1577,6 @@ extension RookSDK.RookVariableExtractionManager {
   @objc public func setBackListeners()
   @objc public func enableBackGroundForSummaries()
   @objc public func disableBackGroundForSummaries()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RookBackGroundExtraction : ObjectiveC.NSObject {
-  @objc final public let notificationSteps: Swift.String
-  @objc final public let notificationCalories: Swift.String
-  @objc public var handleStepsUpdate: ((Swift.Int) -> Swift.Void)?
-  @objc public var handleCaloriesUpdate: ((Swift.Int) -> Swift.Void)?
-  @objc public static let shared: RookSDK.RookBackGroundExtraction
-  @objc public func setBackGroundListeners()
-  @objc public func enableBackGroundForSteps()
-  @objc public func isStepsBackgroundEnable(completion: @escaping (Swift.Bool) -> Swift.Void)
-  public func disableBackGroundForSteps(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  @objc public func disableBackGroundForStepsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc public func enableBackGroundForCalories()
-  @objc public func isCaloriesBackgroundEnable(completion: @escaping (Swift.Bool) -> Swift.Void)
-  public func disableBackGroundForCalories(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  @objc public func disableBackGroundForCaloriesObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc deinit
 }
 public enum RookConnectErrors : Swift.Error {
@@ -1790,6 +1764,10 @@ public enum RookEnvironment {
   public var hashValue: Swift.Int {
     get
   }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RookBackGroundExtraction : ObjectiveC.NSObject {
+  @objc public static let shared: RookSDK.RookBackGroundExtraction
+  @objc deinit
 }
 public enum RookTransmissionError : Swift.String, Swift.Error {
   case emptyUserId
