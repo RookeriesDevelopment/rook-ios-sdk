@@ -74,6 +74,7 @@ public enum RookContextType {
   final public func syncBloodGlucoseEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncBodyMetricsEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncPendingEvents(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func getTodayStepCount(completion: @escaping (Swift.Result<Swift.Int, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 public struct RookGlucoseEvent : Swift.Codable {
@@ -299,11 +300,6 @@ final public class RookActivityEventTransmissionManager {
   final public func uploadEvents(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class RookVariableExtractionManager : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  public func getTodaySteps(completion: @escaping (Swift.Result<Swift.Int, Swift.Error>) -> Swift.Void)
-  @objc deinit
-}
 public struct RookGlucoseEventTransmission : Swift.Codable {
   public var metadata: RookSDK.RookMetaDataEventTransmission
   public var glucoseData: RookSDK.RookGlucoseDataTransmission
@@ -338,6 +334,8 @@ extension RookSDK.RookEventsManager {
   @objc final public func syncPressureEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func syncGlucoseEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func syncBodyMetricsEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func syncPendingEventsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func getTodayStepCount(completion: @escaping (Swift.Int, Swift.Error?) -> Swift.Void)
 }
 public struct RookActivityEventTransmission : Swift.Codable {
   public var metadata: RookSDK.RookMetaDataEventTransmission
@@ -1471,6 +1469,7 @@ final public class RookBloodPressureEventTransmissionManager {
   @objc deinit
 }
 public enum RookEventType {
+  case steps
   case heartRate
   case oxygenation
   case workout
@@ -1565,9 +1564,6 @@ public enum AnalyticPlatform {
   final public func setPlatform(_ platform: RookSDK.AnalyticPlatform)
   @objc final public func setPlatformToReact()
   @objc deinit
-}
-extension RookSDK.RookVariableExtractionManager {
-  @objc dynamic public func getTodaySteps(completion: @escaping (Swift.Int, Swift.Error?) -> Swift.Void)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RookBackGroundSync : ObjectiveC.NSObject {
   @objc public static let shared: RookSDK.RookBackGroundSync

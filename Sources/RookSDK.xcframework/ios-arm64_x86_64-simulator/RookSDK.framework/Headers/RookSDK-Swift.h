@@ -396,6 +396,8 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 - (void)syncPressureEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncGlucoseEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncBodyMetricsEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncPendingEventsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)getTodayStepCountWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 @end
 
 
@@ -440,17 +442,6 @@ SWIFT_CLASS("_TtC7RookSDK18RookSummaryManager")
 - (void)syncPhysicalSummaryObjcWithForm:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncBodySummaryObjcFrom:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncPendingSummariesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-@end
-
-
-SWIFT_CLASS("_TtC7RookSDK29RookVariableExtractionManager")
-@interface RookVariableExtractionManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface RookVariableExtractionManager (SWIFT_EXTENSION(RookSDK))
-- (void)getTodayStepsWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 @end
 
 #endif
@@ -859,6 +850,8 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 - (void)syncPressureEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncGlucoseEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncBodyMetricsEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncPendingEventsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)getTodayStepCountWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 @end
 
 
@@ -903,17 +896,6 @@ SWIFT_CLASS("_TtC7RookSDK18RookSummaryManager")
 - (void)syncPhysicalSummaryObjcWithForm:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncBodySummaryObjcFrom:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncPendingSummariesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-@end
-
-
-SWIFT_CLASS("_TtC7RookSDK29RookVariableExtractionManager")
-@interface RookVariableExtractionManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface RookVariableExtractionManager (SWIFT_EXTENSION(RookSDK))
-- (void)getTodayStepsWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 @end
 
 #endif
