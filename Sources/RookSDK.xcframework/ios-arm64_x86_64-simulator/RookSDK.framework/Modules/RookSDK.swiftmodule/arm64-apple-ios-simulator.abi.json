@@ -571,6 +571,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "HealthKit",
         "printedName": "HealthKit",
         "declKind": "Import",
@@ -2214,6 +2224,59 @@
           },
           {
             "kind": "Function",
+            "name": "getTodayStepCount",
+            "printedName": "getTodayStepCount(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Int, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Int, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A13EventsManagerC17getTodayStepCount10completionyys6ResultOySis5Error_pGc_tF",
+            "mangledName": "$s7RookSDK0A13EventsManagerC17getTodayStepCount10completionyys6ResultOySis5Error_pGc_tF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "syncBodyHeartRateEventObjc",
             "printedName": "syncBodyHeartRateEventObjc(date:completion:)",
             "children": [
@@ -2825,6 +2888,132 @@
             "mangledName": "$s7RookSDK0A13EventsManagerC015syncBodyMetricsC4Objc4date10completiony10Foundation4DateV_ySb_s5Error_pSgtctF",
             "moduleName": "RookSDK",
             "objc_name": "syncBodyMetricsEventsObjcWithDate:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncPendingEventsObjc",
+            "printedName": "syncPendingEventsObjc(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookEventsManager(im)syncPendingEventsObjcWithCompletion:",
+            "mangledName": "$s7RookSDK0A13EventsManagerC011syncPendingC4Objc10completionyySb_s5Error_pSgtc_tF",
+            "moduleName": "RookSDK",
+            "objc_name": "syncPendingEventsObjcWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTodayStepCount",
+            "printedName": "getTodayStepCount(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Int, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Int, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookEventsManager(im)getTodayStepCountWithCompletion:",
+            "mangledName": "$s7RookSDK0A13EventsManagerC17getTodayStepCount10completionyySi_s5Error_pSgtc_tF",
+            "moduleName": "RookSDK",
+            "objc_name": "getTodayStepCountWithCompletion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -11882,220 +12071,6 @@
         "moduleName": "RookSDK",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "RookVariableExtractionManager",
-        "printedName": "RookVariableExtractionManager",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "RookVariableExtractionManager",
-                "printedName": "RookSDK.RookVariableExtractionManager",
-                "usr": "c:@M@RookSDK@objc(cs)RookVariableExtractionManager"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@RookSDK@objc(cs)RookVariableExtractionManager(im)init",
-            "mangledName": "$s7RookSDK0A25VariableExtractionManagerCACycfc",
-            "moduleName": "RookSDK",
-            "overriding": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "getTodaySteps",
-            "printedName": "getTodaySteps(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<Swift.Int, Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<Swift.Int, Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A25VariableExtractionManagerC13getTodaySteps10completionyys6ResultOySis5Error_pGc_tF",
-            "mangledName": "$s7RookSDK0A25VariableExtractionManagerC13getTodaySteps10completionyys6ResultOySis5Error_pGc_tF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getTodaySteps",
-            "printedName": "getTodaySteps(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Int, Swift.Error?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.Int, Swift.Error?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.Error?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Error",
-                            "printedName": "Swift.Error",
-                            "usr": "s:s5ErrorP"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@RookSDK@objc(cs)RookVariableExtractionManager(im)getTodayStepsWithCompletion:",
-            "mangledName": "$s7RookSDK0A25VariableExtractionManagerC13getTodaySteps10completionyySi_s5Error_pSgtc_tF",
-            "moduleName": "RookSDK",
-            "objc_name": "getTodayStepsWithCompletion:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@RookSDK@objc(cs)RookVariableExtractionManager",
-        "mangledName": "$s7RookSDK0A25VariableExtractionManagerC",
-        "moduleName": "RookSDK",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
         ]
       },
       {
@@ -21747,6 +21722,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookSaturationGranularDTO",
         "printedName": "RookSaturationGranularDTO",
@@ -23032,6 +23017,16 @@
         "moduleName": "RookSDK",
         "declAttributes": [
           "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -36194,6 +36189,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookGranularSwimmingTransmisison",
         "printedName": "RookGranularSwimmingTransmisison",
@@ -48185,6 +48190,16 @@
         "printedName": "HealthKit",
         "declKind": "Import",
         "moduleName": "RookSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -63078,6 +63093,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "HealthKit",
         "printedName": "HealthKit",
         "declKind": "Import",
@@ -68208,6 +68233,43 @@
         "children": [
           {
             "kind": "Var",
+            "name": "steps",
+            "printedName": "steps",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookSDK.RookEventType.Type) -> RookSDK.RookEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookEventType",
+                    "printedName": "RookSDK.RookEventType",
+                    "usr": "s:7RookSDK0A9EventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookSDK.RookEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookEventType",
+                        "printedName": "RookSDK.RookEventType",
+                        "usr": "s:7RookSDK0A9EventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7RookSDK0A9EventTypeO5stepsyA2CmF",
+            "mangledName": "$s7RookSDK0A9EventTypeO5stepsyA2CmF",
+            "moduleName": "RookSDK"
+          },
+          {
+            "kind": "Var",
             "name": "heartRate",
             "printedName": "heartRate",
             "children": [
@@ -72155,16 +72217,6 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "RookSDK",
-        "declAttributes": [
-          "RawDocComment"
         ]
       },
       {
@@ -86014,6 +86066,62 @@
       "value": "[(\"Content-Type\", \"application\/json\")]"
     },
     {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/StepsNetworking.swift",
+      "kind": "StringLiteral",
+      "offset": 337,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/StepsNetworking.swift",
+      "kind": "StringLiteral",
+      "offset": 367,
+      "length": 10,
+      "value": "\"datetime\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/StepsNetworking.swift",
+      "kind": "StringLiteral",
+      "offset": 411,
+      "length": 38,
+      "value": "\"was_the_user_under_physical_activity\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/StepsNetworking.swift",
+      "kind": "StringLiteral",
+      "offset": 481,
+      "length": 23,
+      "value": "\"accumulated_steps_int\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/StepsNetworking.swift",
+      "kind": "StringLiteral",
+      "offset": 337,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/StepsNetworking.swift",
+      "kind": "StringLiteral",
+      "offset": 367,
+      "length": 10,
+      "value": "\"datetime\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/StepsNetworking.swift",
+      "kind": "StringLiteral",
+      "offset": 411,
+      "length": 38,
+      "value": "\"was_the_user_under_physical_activity\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/StepsNetworking.swift",
+      "kind": "StringLiteral",
+      "offset": 481,
+      "length": 23,
+      "value": "\"accumulated_steps_int\""
+    },
+    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/RookStressEventTransmisisonNetwokring.swift",
       "kind": "StringLiteral",
       "offset": 716,
@@ -86922,25 +87030,18 @@
       "offset": 200,
       "length": 9,
       "value": "\"Unknown\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Configuration\/RookConnectConfigurationManager.swift",
-      "kind": "StringLiteral",
-      "offset": 706,
-      "length": 7,
-      "value": "\"1.5.0\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Configuration\/RookConnectConfigurationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1142,
+      "offset": 1391,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Configuration\/RookConnectConfigurationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1191,
+      "offset": 1440,
       "length": 5,
       "value": "false"
     },
@@ -87904,13 +88005,6 @@
       "value": "\"elevation_change\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookTemperatureEventTransmission\/Domain\/RookTemperatureUploadUseCase.swift",
-      "kind": "StringLiteral",
-      "offset": 1327,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Events\/Domain\/MissingEventsDaysUseCase.swift",
       "kind": "IntegerLiteral",
       "offset": 467,
@@ -88077,27 +88171,6 @@
       "offset": 690,
       "length": 22,
       "value": "\"torque_newton_meters\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/RookExtractionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3873,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/BloodEvents\/Glucose\/Domain\/RookGlucoseUploadUseCase.swift",
-      "kind": "StringLiteral",
-      "offset": 1189,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookActivityEventTransmission\/Domain\/RookActivityUploadUseCase.swift",
-      "kind": "StringLiteral",
-      "offset": 1204,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Event\/ActivityEvent\/Entities\/RookActivityDataEvent.swift",
@@ -88469,20 +88542,6 @@
       "offset": 737,
       "length": 25,
       "value": "\"speed_meters_per_second\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookActivityEventTransmission\/RookActivityEventTransmissionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1003,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/BodyMetrics\/Domain\/RookBodyMetricsUploadUseCase.swift",
-      "kind": "StringLiteral",
-      "offset": 1316,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Constants\/RookExtractionConstants.swift",
@@ -89008,13 +89067,6 @@
       "offset": 538,
       "length": 25,
       "value": "\"speed_meters_per_second\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookSleepTransmission\/RookSleepTransmissionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1078,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/Entities\/Granular\/RookHRVSdnnGranularTransmission.swift",
@@ -89930,90 +89982,97 @@
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
       "offset": 865,
-      "length": 24,
-      "value": "\"heart_rate_body_events\""
+      "length": 23,
+      "value": "\"body_event_heart_rate\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 915,
-      "length": 28,
-      "value": "\"heart_rate_physical_events\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 966,
-      "length": 25,
-      "value": "\"oxygenation_body_events\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1018,
-      "length": 29,
-      "value": "\"oxygenation_physical_events\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1071,
-      "length": 17,
-      "value": "\"physical_events\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1115,
-      "length": 25,
-      "value": "\"temperature_body_events\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1164,
-      "length": 28,
-      "value": "\"blood_pressure_body_events\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1215,
+      "offset": 914,
       "length": 27,
-      "value": "\"blood_glucose_body_events\""
+      "value": "\"physical_event_heart_rate\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1269,
+      "offset": 964,
+      "length": 24,
+      "value": "\"body_event_oxygenation\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1015,
+      "length": 28,
+      "value": "\"physical_event_oxygenation\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1067,
+      "length": 25,
+      "value": "\"physical_event_activity\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1119,
+      "length": 24,
+      "value": "\"body_event_temperature\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1167,
       "length": 21,
-      "value": "\"body_metrics_events\""
+      "value": "\"body_event_pressure\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1312,
+      "offset": 1211,
+      "length": 20,
+      "value": "\"body_event_glucose\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1258,
+      "length": 20,
+      "value": "\"body_event_metrics\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1299,
+      "length": 22,
+      "value": "\"physical_event_steps\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1343,
       "length": 14,
       "value": "\"enable_steps\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1349,
+      "offset": 1380,
       "length": 15,
       "value": "\"disable_steps\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1389,
+      "offset": 1420,
       "length": 17,
       "value": "\"enable_calories\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1432,
+      "offset": 1463,
       "length": 18,
       "value": "\"disable_calories\""
     },
@@ -90042,90 +90101,97 @@
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
       "offset": 865,
-      "length": 24,
-      "value": "\"heart_rate_body_events\""
+      "length": 23,
+      "value": "\"body_event_heart_rate\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 915,
-      "length": 28,
-      "value": "\"heart_rate_physical_events\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 966,
-      "length": 25,
-      "value": "\"oxygenation_body_events\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1018,
-      "length": 29,
-      "value": "\"oxygenation_physical_events\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1071,
-      "length": 17,
-      "value": "\"physical_events\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1115,
-      "length": 25,
-      "value": "\"temperature_body_events\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1164,
-      "length": 28,
-      "value": "\"blood_pressure_body_events\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1215,
+      "offset": 914,
       "length": 27,
-      "value": "\"blood_glucose_body_events\""
+      "value": "\"physical_event_heart_rate\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1269,
+      "offset": 964,
+      "length": 24,
+      "value": "\"body_event_oxygenation\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1015,
+      "length": 28,
+      "value": "\"physical_event_oxygenation\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1067,
+      "length": 25,
+      "value": "\"physical_event_activity\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1119,
+      "length": 24,
+      "value": "\"body_event_temperature\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1167,
       "length": 21,
-      "value": "\"body_metrics_events\""
+      "value": "\"body_event_pressure\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1312,
+      "offset": 1211,
+      "length": 20,
+      "value": "\"body_event_glucose\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1258,
+      "length": 20,
+      "value": "\"body_event_metrics\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1299,
+      "length": 22,
+      "value": "\"physical_event_steps\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1343,
       "length": 14,
       "value": "\"enable_steps\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1349,
+      "offset": 1380,
       "length": 15,
       "value": "\"disable_steps\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1389,
+      "offset": 1420,
       "length": 17,
       "value": "\"enable_calories\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1432,
+      "offset": 1463,
       "length": 18,
       "value": "\"disable_calories\""
     },
@@ -90426,86 +90492,100 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Authentication\/Data\/Entities\/TokenPayLoadDTO.swift",
       "kind": "StringLiteral",
-      "offset": 670,
+      "offset": 688,
       "length": 33,
       "value": "\"extraction.bluetooth.heart_rate\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Authentication\/Data\/Entities\/TokenPayLoadDTO.swift",
       "kind": "StringLiteral",
-      "offset": 737,
+      "offset": 755,
       "length": 25,
       "value": "\"extraction.apple_health\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Authentication\/Data\/Entities\/TokenPayLoadDTO.swift",
       "kind": "StringLiteral",
-      "offset": 798,
+      "offset": 816,
       "length": 27,
       "value": "\"extraction.health_connect\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Authentication\/Data\/Entities\/TokenPayLoadDTO.swift",
       "kind": "StringLiteral",
-      "offset": 857,
+      "offset": 875,
       "length": 22,
       "value": "\"transmission.sockets\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Authentication\/Data\/Entities\/TokenPayLoadDTO.swift",
       "kind": "StringLiteral",
-      "offset": 897,
+      "offset": 915,
       "length": 7,
       "value": "\"users\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Authentication\/Data\/Entities\/TokenPayLoadDTO.swift",
       "kind": "StringLiteral",
-      "offset": 925,
+      "offset": 943,
       "length": 10,
       "value": "\"training\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Authentication\/Data\/Entities\/TokenPayLoadDTO.swift",
       "kind": "StringLiteral",
-      "offset": 670,
+      "offset": 971,
+      "length": 18,
+      "value": "\"extraction.steps\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Authentication\/Data\/Entities\/TokenPayLoadDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 688,
       "length": 33,
       "value": "\"extraction.bluetooth.heart_rate\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Authentication\/Data\/Entities\/TokenPayLoadDTO.swift",
       "kind": "StringLiteral",
-      "offset": 737,
+      "offset": 755,
       "length": 25,
       "value": "\"extraction.apple_health\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Authentication\/Data\/Entities\/TokenPayLoadDTO.swift",
       "kind": "StringLiteral",
-      "offset": 798,
+      "offset": 816,
       "length": 27,
       "value": "\"extraction.health_connect\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Authentication\/Data\/Entities\/TokenPayLoadDTO.swift",
       "kind": "StringLiteral",
-      "offset": 857,
+      "offset": 875,
       "length": 22,
       "value": "\"transmission.sockets\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Authentication\/Data\/Entities\/TokenPayLoadDTO.swift",
       "kind": "StringLiteral",
-      "offset": 897,
+      "offset": 915,
       "length": 7,
       "value": "\"users\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Authentication\/Data\/Entities\/TokenPayLoadDTO.swift",
       "kind": "StringLiteral",
-      "offset": 925,
+      "offset": 943,
       "length": 10,
       "value": "\"training\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Authentication\/Data\/Entities\/TokenPayLoadDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 971,
+      "length": 18,
+      "value": "\"extraction.steps\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Entities\/Granular\/RookCadenceGranularItem.swift",
@@ -92447,13 +92527,6 @@
       "value": "\"2%s@kWdP4NdY&V\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookOxygenationEventTransmission\/RookOxygenationEventTransmissionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1093,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookActivityEventTransmission\/Entities\/RookPositionDataTransmission.swift",
       "kind": "StringLiteral",
       "offset": 1266,
@@ -92606,6 +92679,20 @@
       "offset": 204,
       "length": 32,
       "value": "\"rook_connect_auth_client_token\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Authentication\/Data\/AuthLocatDataSource\/Constants\/AuthLocalDataSourceConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 264,
+      "length": 31,
+      "value": "\"rook_connect_auth_client_uuid\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Authentication\/Data\/AuthLocatDataSource\/Constants\/AuthLocalDataSourceConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 316,
+      "length": 30,
+      "value": "\"rook_connect_auth_client_key\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookActivityEventTransmission\/Entities\/RookMovementDataTransmission.swift",
@@ -93336,13 +93423,6 @@
       "value": "\"cholesterol_intake_mg_number\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/BloodEvents\/Glucose\/RookGlucoseEventTransmissionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 981,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/PhysicalNetworking\/Entities\/Granular\/RookSwimmingDistanceGranularNetworking.swift",
       "kind": "StringLiteral",
       "offset": 697,
@@ -93497,13 +93577,6 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/RookExtractionEventManager.swift",
-      "kind": "StringLiteral",
-      "offset": 6450,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/Entities\/Granular\/RookHrGranularTransmission.swift",
       "kind": "StringLiteral",
       "offset": 435,
@@ -94286,13 +94359,6 @@
       "offset": 11879,
       "length": 12,
       "value": "\"bmi_number\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookTemperatureEventTransmission\/RookTemperatureEventTransmissionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 924,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Entities\/CommonGranular\/RookSDNNGranularTransmissionNetworking.swift",
@@ -96136,13 +96202,6 @@
       "value": "\"vo2_granular_data_liter_per_min\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/BloodEvents\/Pressure\/Domain\/RookBloodPressureUploadUseCase.swift",
-      "kind": "StringLiteral",
-      "offset": 1215,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Event\/Entities\/RookTemperatureEvent.swift",
       "kind": "StringLiteral",
       "offset": 748,
@@ -96318,11 +96377,11 @@
       "value": "\"Apple Health\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookPhysicalTransmission\/RookPhysicalTransmissionManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1092,
-      "length": 2,
-      "value": "\"\""
+      "offset": 1255,
+      "length": 7,
+      "value": "\"1.5.1\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookActivityEventTransmission\/Entities\/Granular\/RookActivityLevelGranularTransmission.swift",
@@ -98045,13 +98104,6 @@
       "offset": 1172,
       "length": 43,
       "value": "\"protein_percentage_of_calories_percentage\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/BloodEvents\/Pressure\/RookBloodPressureEventTransmissionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1008,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Entities\/CommonGranular\/RookTssGranularTransmissionNetworking.swift",
@@ -98241,13 +98293,6 @@
       "offset": 324,
       "length": 34,
       "value": "\"rook_last_body_date_transmission\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/BodyMetrics\/RookBodyMetricsEventTransmissionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 930,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookHeartRateEventTransmission\/Entities\/RookHeartRateEventTransmission.swift",
@@ -100476,13 +100521,6 @@
       "value": "\"There are no data to upload\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookBodyTransmission\/RookBodyTransmissionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2143,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/PhysicalNetworking\/Entities\/Granular\/RookFloorsClimbedGranularNetworking.swift",
       "kind": "StringLiteral",
       "offset": 656,
@@ -100747,13 +100785,6 @@
       "offset": 2010,
       "length": 31,
       "value": "\"lap_granular_data_laps_number\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookHeartRateEventTransmission\/RookHrEventTransmissionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1058,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/AppleHealthProvider\/Constats\/HealthDataTypes.swift",
