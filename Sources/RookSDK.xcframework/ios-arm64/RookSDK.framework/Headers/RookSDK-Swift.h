@@ -277,8 +277,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AnalyticsTra
 SWIFT_CLASS("_TtC7RookSDK21DataSourceManagerObjc")
 @interface DataSourceManagerObjc : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)getAvailableDataSourcesWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
-- (void)presentDataSourceViewWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)getAvailableDataSourcesWithRedirectURL:(NSString * _Nullable)redirectURL completion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
+- (void)presentDataSourceViewWithRedirectURL:(NSString * _Nullable)redirectURL completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
 
@@ -331,19 +331,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 @end
 
 
-SWIFT_CLASS("_TtC7RookSDK27RookBodyTransmissionManager")
-@interface RookBodyTransmissionManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS("_TtC7RookSDK35RookConnectConfigurationManagerObjc")
 @interface RookConnectConfigurationManagerObjc : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookConnectConfigurationManagerObjc * _Nonnull shared;)
 + (RookConnectConfigurationManagerObjc * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)setConfigurationWithClientUUID:(NSString * _Nonnull)clientUUID secretKey:(NSString * _Nonnull)secretKey;
+- (void)setConfigurationWithClientUUID:(NSString * _Nonnull)clientUUID secretKey:(NSString * _Nonnull)secretKey enableBackgroundSync:(BOOL)enableBackgroundSync;
 - (void)setEnvironmentForSandbox;
 - (void)setEnvironmentForProduction;
 - (void)initRook SWIFT_METHOD_FAMILY(none);
@@ -414,18 +408,6 @@ SWIFT_CLASS("_TtC7RookSDK24RookPermissionExtraction")
 - (void)requestSleepPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)requestPhysicalPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)requestBodyPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-@end
-
-
-SWIFT_CLASS("_TtC7RookSDK31RookPhysicalTransmissionManager")
-@interface RookPhysicalTransmissionManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC7RookSDK28RookSleepTransmissionManager")
-@interface RookSleepTransmissionManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

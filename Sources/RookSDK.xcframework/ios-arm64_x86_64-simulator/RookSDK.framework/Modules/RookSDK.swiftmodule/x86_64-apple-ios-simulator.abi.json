@@ -264,12 +264,26 @@
           {
             "kind": "Function",
             "name": "getAvailableDataSources",
-            "printedName": "getAvailableDataSources(completion:)",
+            "printedName": "getAvailableDataSources(redirectURL:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -313,8 +327,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7RookSDK18DataSourcesManagerC012getAvailablecD010completionyys6ResultOySayAA0aC6SourceVGs5Error_pGc_tF",
-            "mangledName": "$s7RookSDK18DataSourcesManagerC012getAvailablecD010completionyys6ResultOySayAA0aC6SourceVGs5Error_pGc_tF",
+            "usr": "s:7RookSDK18DataSourcesManagerC012getAvailablecD011redirectURL10completionySSSg_ys6ResultOySayAA0aC6SourceVGs5Error_pGctF",
+            "mangledName": "$s7RookSDK18DataSourcesManagerC012getAvailablecD011redirectURL10completionySSSg_ys6ResultOySayAA0aC6SourceVGs5Error_pGctF",
             "moduleName": "RookSDK",
             "declAttributes": [
               "Final",
@@ -326,12 +340,26 @@
           {
             "kind": "Function",
             "name": "presentDataSourceView",
-            "printedName": "presentDataSourceView(completion:)",
+            "printedName": "presentDataSourceView(redirectURL:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -367,8 +395,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7RookSDK18DataSourcesManagerC07presentC10SourceView10completionyys6ResultOySbs5Error_pGc_tF",
-            "mangledName": "$s7RookSDK18DataSourcesManagerC07presentC10SourceView10completionyys6ResultOySbs5Error_pGc_tF",
+            "usr": "s:7RookSDK18DataSourcesManagerC07presentC10SourceView11redirectURL10completionySSSg_ys6ResultOySbs5Error_pGctF",
+            "mangledName": "$s7RookSDK18DataSourcesManagerC07presentC10SourceView11redirectURL10completionySSSg_ys6ResultOySbs5Error_pGctF",
             "moduleName": "RookSDK",
             "declAttributes": [
               "Final",
@@ -621,6 +649,46 @@
         "name": "RookDataType",
         "printedName": "RookDataType",
         "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookDataType",
+                "printedName": "RookSDK.RookDataType",
+                "usr": "s:7RookSDK0A8DataTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK0A8DataTypeO2idACvp",
+            "mangledName": "$s7RookSDK0A8DataTypeO2idACvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookDataType",
+                    "printedName": "RookSDK.RookDataType",
+                    "usr": "s:7RookSDK0A8DataTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A8DataTypeO2idACvg",
+                "mangledName": "$s7RookSDK0A8DataTypeO2idACvg",
+                "moduleName": "RookSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "sleepSummary",
@@ -1173,6 +1241,63 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[RookSDK.RookDataType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookDataType",
+                    "printedName": "RookSDK.RookDataType",
+                    "usr": "s:7RookSDK0A8DataTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK0A8DataTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s7RookSDK0A8DataTypeO8allCasesSayACGvpZ",
+            "moduleName": "RookSDK",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookSDK.RookDataType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookDataType",
+                        "printedName": "RookSDK.RookDataType",
+                        "usr": "s:7RookSDK0A8DataTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A8DataTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s7RookSDK0A8DataTypeO8allCasesSayACGvgZ",
+                "moduleName": "RookSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -1219,6 +1344,58 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookSDK.RookDataType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookDataType",
+                        "printedName": "RookSDK.RookDataType",
+                        "usr": "s:7RookSDK0A8DataTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookDataType",
+                    "printedName": "RookSDK.RookDataType",
+                    "usr": "s:7RookSDK0A8DataTypeO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -5710,6 +5887,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -5775,7 +5962,7 @@
           {
             "kind": "Function",
             "name": "setConfiguration",
-            "printedName": "setConfiguration(clientUUID:secretKey:)",
+            "printedName": "setConfiguration(clientUUID:secretKey:enableBackgroundSync:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5793,11 +5980,17 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7RookSDK0A27ConnectConfigurationManagerC03setD010clientUUID9secretKeyySS_SStF",
-            "mangledName": "$s7RookSDK0A27ConnectConfigurationManagerC03setD010clientUUID9secretKeyySS_SStF",
+            "usr": "s:7RookSDK0A27ConnectConfigurationManagerC03setD010clientUUID9secretKey20enableBackgroundSyncySS_SSSbtF",
+            "mangledName": "$s7RookSDK0A27ConnectConfigurationManagerC03setD010clientUUID9secretKey20enableBackgroundSyncySS_SSSbtF",
             "moduleName": "RookSDK",
             "declAttributes": [
               "Final",
@@ -17658,332 +17851,6 @@
         "moduleName": "RookSDK",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "RookSleepTransmissionManager",
-        "printedName": "RookSleepTransmissionManager",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "RookSleepTransmissionManager",
-                "printedName": "RookSDK.RookSleepTransmissionManager",
-                "usr": "c:@M@RookSDK@objc(cs)RookSleepTransmissionManager"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@RookSDK@objc(cs)RookSleepTransmissionManager(im)init",
-            "mangledName": "$s7RookSDK0A24SleepTransmissionManagerCACycfc",
-            "moduleName": "RookSDK",
-            "overriding": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "enqueueSleepSummary",
-            "printedName": "enqueueSleepSummary(with:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A24SleepTransmissionManagerC07enqueueC7Summary4with10completiony10Foundation4DataV_ys6ResultOySbs5Error_pGctF",
-            "mangledName": "$s7RookSDK0A24SleepTransmissionManagerC07enqueueC7Summary4with10completiony10Foundation4DataV_ys6ResultOySbs5Error_pGctF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getSleepSummariesStored",
-            "printedName": "getSleepSummariesStored(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<[RookSDK.RookSleepData], Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<[RookSDK.RookSleepData], Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[RookSDK.RookSleepData]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RookSleepData",
-                            "printedName": "RookSDK.RookSleepData",
-                            "usr": "s:7RookSDK0A9SleepDataV"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A24SleepTransmissionManagerC03getC15SummariesStored10completionyys6ResultOySayAA0aC4DataVGs5Error_pGc_tF",
-            "mangledName": "$s7RookSDK0A24SleepTransmissionManagerC03getC15SummariesStored10completionyys6ResultOySayAA0aC4DataVGs5Error_pGc_tF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "uploadSleepSummariesAsync",
-            "printedName": "uploadSleepSummariesAsync()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A24SleepTransmissionManagerC06uploadC14SummariesAsyncSbyYaKF",
-            "mangledName": "$s7RookSDK0A24SleepTransmissionManagerC06uploadC14SummariesAsyncSbyYaKF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "uploadSleepSummaries",
-            "printedName": "uploadSleepSummaries(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A24SleepTransmissionManagerC06uploadC9Summaries10completionyys6ResultOySbs5Error_pGc_tF",
-            "mangledName": "$s7RookSDK0A24SleepTransmissionManagerC06uploadC9Summaries10completionyys6ResultOySbs5Error_pGc_tF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getLastSleepSummaryTransmittedDate",
-            "printedName": "getLastSleepSummaryTransmittedDate()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Date?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Date",
-                    "printedName": "Foundation.Date",
-                    "usr": "s:10Foundation4DateV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A24SleepTransmissionManagerC07getLastC22SummaryTransmittedDate10Foundation0J0VSgyF",
-            "mangledName": "$s7RookSDK0A24SleepTransmissionManagerC07getLastC22SummaryTransmittedDate10Foundation0J0VSgyF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@RookSDK@objc(cs)RookSleepTransmissionManager",
-        "mangledName": "$s7RookSDK0A24SleepTransmissionManagerC",
-        "moduleName": "RookSDK",
-        "declAttributes": [
-          "Final",
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
         ]
       },
       {
@@ -47910,6 +47777,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "HealthKit",
         "printedName": "HealthKit",
         "declKind": "Import",
@@ -57888,6 +57765,63 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[RookSDK.RookTransmissionEventType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookTransmissionEventType",
+                    "printedName": "RookSDK.RookTransmissionEventType",
+                    "usr": "s:7RookSDK0A21TransmissionEventTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK0A21TransmissionEventTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s7RookSDK0A21TransmissionEventTypeO8allCasesSayACGvpZ",
+            "moduleName": "RookSDK",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookSDK.RookTransmissionEventType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookTransmissionEventType",
+                        "printedName": "RookSDK.RookTransmissionEventType",
+                        "usr": "s:7RookSDK0A21TransmissionEventTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A21TransmissionEventTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s7RookSDK0A21TransmissionEventTypeO8allCasesSayACGvgZ",
+                "moduleName": "RookSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -57934,6 +57868,36 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookSDK.RookTransmissionEventType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookTransmissionEventType",
+                        "printedName": "RookSDK.RookTransmissionEventType",
+                        "usr": "s:7RookSDK0A21TransmissionEventTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
           }
         ]
       },
@@ -62044,332 +62008,6 @@
         "moduleName": "RookSDK",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "RookPhysicalTransmissionManager",
-        "printedName": "RookPhysicalTransmissionManager",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "RookPhysicalTransmissionManager",
-                "printedName": "RookSDK.RookPhysicalTransmissionManager",
-                "usr": "c:@M@RookSDK@objc(cs)RookPhysicalTransmissionManager"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@RookSDK@objc(cs)RookPhysicalTransmissionManager(im)init",
-            "mangledName": "$s7RookSDK0A27PhysicalTransmissionManagerCACycfc",
-            "moduleName": "RookSDK",
-            "overriding": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "enqueuePhysicalSummary",
-            "printedName": "enqueuePhysicalSummary(with:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A27PhysicalTransmissionManagerC07enqueueC7Summary4with10completiony10Foundation4DataV_ys6ResultOySbs5Error_pGctF",
-            "mangledName": "$s7RookSDK0A27PhysicalTransmissionManagerC07enqueueC7Summary4with10completiony10Foundation4DataV_ys6ResultOySbs5Error_pGctF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getPhysicalSummariesStored",
-            "printedName": "getPhysicalSummariesStored(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<[RookSDK.RookPhysicalData], Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<[RookSDK.RookPhysicalData], Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[RookSDK.RookPhysicalData]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RookPhysicalData",
-                            "printedName": "RookSDK.RookPhysicalData",
-                            "usr": "s:7RookSDK0A12PhysicalDataV"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A27PhysicalTransmissionManagerC03getC15SummariesStored10completionyys6ResultOySayAA0aC4DataVGs5Error_pGc_tF",
-            "mangledName": "$s7RookSDK0A27PhysicalTransmissionManagerC03getC15SummariesStored10completionyys6ResultOySayAA0aC4DataVGs5Error_pGc_tF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "uploadPhysicalSummariesAsync",
-            "printedName": "uploadPhysicalSummariesAsync()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A27PhysicalTransmissionManagerC06uploadC14SummariesAsyncSbyYaKF",
-            "mangledName": "$s7RookSDK0A27PhysicalTransmissionManagerC06uploadC14SummariesAsyncSbyYaKF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "uploadPhysicalSummaries",
-            "printedName": "uploadPhysicalSummaries(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A27PhysicalTransmissionManagerC06uploadC9Summaries10completionyys6ResultOySbs5Error_pGc_tF",
-            "mangledName": "$s7RookSDK0A27PhysicalTransmissionManagerC06uploadC9Summaries10completionyys6ResultOySbs5Error_pGc_tF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getLastPhysicalSummaryTransmittedDate",
-            "printedName": "getLastPhysicalSummaryTransmittedDate()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Date?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Date",
-                    "printedName": "Foundation.Date",
-                    "usr": "s:10Foundation4DateV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A27PhysicalTransmissionManagerC07getLastC22SummaryTransmittedDate10Foundation0J0VSgyF",
-            "mangledName": "$s7RookSDK0A27PhysicalTransmissionManagerC07getLastC22SummaryTransmittedDate10Foundation0J0VSgyF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@RookSDK@objc(cs)RookPhysicalTransmissionManager",
-        "mangledName": "$s7RookSDK0A27PhysicalTransmissionManagerC",
-        "moduleName": "RookSDK",
-        "declAttributes": [
-          "Final",
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
         ]
       },
       {
@@ -66719,7 +66357,7 @@
           {
             "kind": "Function",
             "name": "setConfiguration",
-            "printedName": "setConfiguration(clientUUID:secretKey:)",
+            "printedName": "setConfiguration(clientUUID:secretKey:enableBackgroundSync:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -66737,13 +66375,19 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(im)setConfigurationWithClientUUID:secretKey:",
-            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC03setD010clientUUID9secretKeyySS_SStF",
+            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(im)setConfigurationWithClientUUID:secretKey:enableBackgroundSync:",
+            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC03setD010clientUUID9secretKey20enableBackgroundSyncySS_SSSbtF",
             "moduleName": "RookSDK",
-            "objc_name": "setConfigurationWithClientUUID:secretKey:",
+            "objc_name": "setConfigurationWithClientUUID:secretKey:enableBackgroundSync:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -69641,12 +69285,26 @@
           {
             "kind": "Function",
             "name": "getAvailableDataSources",
-            "printedName": "getAvailableDataSources(completion:)",
+            "printedName": "getAvailableDataSources(redirectURL:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -69718,10 +69376,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@RookSDK@objc(cs)DataSourceManagerObjc(im)getAvailableDataSourcesWithCompletion:",
-            "mangledName": "$s7RookSDK21DataSourceManagerObjcC012getAvailableC7Sources10completionyySaySDySSypGGSg_s5Error_pSgtc_tF",
+            "usr": "c:@M@RookSDK@objc(cs)DataSourceManagerObjc(im)getAvailableDataSourcesWithRedirectURL:completion:",
+            "mangledName": "$s7RookSDK21DataSourceManagerObjcC012getAvailableC7Sources11redirectURL10completionySSSg_ySaySDySSypGGSg_s5Error_pSgtctF",
             "moduleName": "RookSDK",
-            "objc_name": "getAvailableDataSourcesWithCompletion:",
+            "objc_name": "getAvailableDataSourcesWithRedirectURL:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -69733,12 +69391,26 @@
           {
             "kind": "Function",
             "name": "presentDataSourceView",
-            "printedName": "presentDataSourceView(completion:)",
+            "printedName": "presentDataSourceView(redirectURL:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -69781,10 +69453,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@RookSDK@objc(cs)DataSourceManagerObjc(im)presentDataSourceViewWithCompletion:",
-            "mangledName": "$s7RookSDK21DataSourceManagerObjcC07presentcD4View10completionyySb_s5Error_pSgtc_tF",
+            "usr": "c:@M@RookSDK@objc(cs)DataSourceManagerObjc(im)presentDataSourceViewWithRedirectURL:completion:",
+            "mangledName": "$s7RookSDK21DataSourceManagerObjcC07presentcD4View11redirectURL10completionySSSg_ySb_s5Error_pSgtctF",
             "moduleName": "RookSDK",
-            "objc_name": "presentDataSourceViewWithCompletion:",
+            "objc_name": "presentDataSourceViewWithRedirectURL:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -70066,6 +69738,63 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[RookSDK.RookTransmissionSummaryType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookTransmissionSummaryType",
+                    "printedName": "RookSDK.RookTransmissionSummaryType",
+                    "usr": "s:7RookSDK0A23TransmissionSummaryTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK0A23TransmissionSummaryTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s7RookSDK0A23TransmissionSummaryTypeO8allCasesSayACGvpZ",
+            "moduleName": "RookSDK",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookSDK.RookTransmissionSummaryType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookTransmissionSummaryType",
+                        "printedName": "RookSDK.RookTransmissionSummaryType",
+                        "usr": "s:7RookSDK0A23TransmissionSummaryTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A23TransmissionSummaryTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s7RookSDK0A23TransmissionSummaryTypeO8allCasesSayACGvgZ",
+                "moduleName": "RookSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -70112,6 +69841,36 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookSDK.RookTransmissionSummaryType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookTransmissionSummaryType",
+                        "printedName": "RookSDK.RookTransmissionSummaryType",
+                        "usr": "s:7RookSDK0A23TransmissionSummaryTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
           }
         ]
       },
@@ -81146,331 +80905,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "RookBodyTransmissionManager",
-        "printedName": "RookBodyTransmissionManager",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "RookBodyTransmissionManager",
-                "printedName": "RookSDK.RookBodyTransmissionManager",
-                "usr": "c:@M@RookSDK@objc(cs)RookBodyTransmissionManager"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@RookSDK@objc(cs)RookBodyTransmissionManager(im)init",
-            "mangledName": "$s7RookSDK0A23BodyTransmissionManagerCACycfc",
-            "moduleName": "RookSDK",
-            "overriding": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "enqueueBodySummary",
-            "printedName": "enqueueBodySummary(with:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A23BodyTransmissionManagerC07enqueueC7Summary4with10completiony10Foundation4DataV_ys6ResultOySbs5Error_pGctF",
-            "mangledName": "$s7RookSDK0A23BodyTransmissionManagerC07enqueueC7Summary4with10completiony10Foundation4DataV_ys6ResultOySbs5Error_pGctF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getBodySummariesStored",
-            "printedName": "getBodySummariesStored(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<[RookSDK.RookBodyData], Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<[RookSDK.RookBodyData], Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[RookSDK.RookBodyData]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RookBodyData",
-                            "printedName": "RookSDK.RookBodyData",
-                            "usr": "s:7RookSDK0A8BodyDataV"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A23BodyTransmissionManagerC03getC15SummariesStored10completionyys6ResultOySayAA0aC4DataVGs5Error_pGc_tF",
-            "mangledName": "$s7RookSDK0A23BodyTransmissionManagerC03getC15SummariesStored10completionyys6ResultOySayAA0aC4DataVGs5Error_pGc_tF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "uploadBodySummariesAsync",
-            "printedName": "uploadBodySummariesAsync()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A23BodyTransmissionManagerC06uploadC14SummariesAsyncSbyYaKF",
-            "mangledName": "$s7RookSDK0A23BodyTransmissionManagerC06uploadC14SummariesAsyncSbyYaKF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "uploadBodySummaries",
-            "printedName": "uploadBodySummaries(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A23BodyTransmissionManagerC06uploadC9Summaries10completionyys6ResultOySbs5Error_pGc_tF",
-            "mangledName": "$s7RookSDK0A23BodyTransmissionManagerC06uploadC9Summaries10completionyys6ResultOySbs5Error_pGc_tF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getLastBodySummaryTransmittedDate",
-            "printedName": "getLastBodySummaryTransmittedDate()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Date?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Date",
-                    "printedName": "Foundation.Date",
-                    "usr": "s:10Foundation4DateV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A23BodyTransmissionManagerC07getLastC22SummaryTransmittedDate10Foundation0J0VSgyF",
-            "mangledName": "$s7RookSDK0A23BodyTransmissionManagerC07getLastC22SummaryTransmittedDate10Foundation0J0VSgyF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@RookSDK@objc(cs)RookBodyTransmissionManager",
-        "mangledName": "$s7RookSDK0A23BodyTransmissionManagerC",
-        "moduleName": "RookSDK",
-        "declAttributes": [
-          "Final",
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -86348,182 +85782,182 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 193,
+      "offset": 259,
       "length": 33,
       "value": "\"rook_last_sleep_date_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 252,
+      "offset": 318,
       "length": 36,
       "value": "\"rook_last_physical_date_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 310,
+      "offset": 376,
       "length": 32,
       "value": "\"rook_last_body_date_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 368,
+      "offset": 434,
       "length": 37,
       "value": "\"rook_last_user_info_date_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 434,
+      "offset": 500,
       "length": 38,
       "value": "\"rook_last_heart_rate_body_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 505,
+      "offset": 571,
       "length": 42,
       "value": "\"rook_last_heart_rate_physical_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 578,
+      "offset": 644,
       "length": 39,
       "value": "\"rook_last_oxygenation_body_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 652,
+      "offset": 718,
       "length": 43,
       "value": "\"rook_last_oxygenation_physical_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 719,
+      "offset": 785,
       "length": 31,
       "value": "\"rook_last_activity_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 777,
+      "offset": 843,
       "length": 34,
       "value": "\"rook_last_temperature_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 839,
+      "offset": 905,
       "length": 36,
       "value": "\"rook_last_blood_glucose_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 900,
+      "offset": 966,
       "length": 32,
       "value": "\"rook_last_nutrition_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 961,
+      "offset": 1027,
       "length": 37,
       "value": "\"rook_last_blood_pressure_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 193,
+      "offset": 259,
       "length": 33,
       "value": "\"rook_last_sleep_date_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 252,
+      "offset": 318,
       "length": 36,
       "value": "\"rook_last_physical_date_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 310,
+      "offset": 376,
       "length": 32,
       "value": "\"rook_last_body_date_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 368,
+      "offset": 434,
       "length": 37,
       "value": "\"rook_last_user_info_date_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 434,
+      "offset": 500,
       "length": 38,
       "value": "\"rook_last_heart_rate_body_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 505,
+      "offset": 571,
       "length": 42,
       "value": "\"rook_last_heart_rate_physical_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 578,
+      "offset": 644,
       "length": 39,
       "value": "\"rook_last_oxygenation_body_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 652,
+      "offset": 718,
       "length": 43,
       "value": "\"rook_last_oxygenation_physical_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 719,
+      "offset": 785,
       "length": 31,
       "value": "\"rook_last_activity_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 777,
+      "offset": 843,
       "length": 34,
       "value": "\"rook_last_temperature_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 839,
+      "offset": 905,
       "length": 36,
       "value": "\"rook_last_blood_glucose_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 900,
+      "offset": 966,
       "length": 32,
       "value": "\"rook_last_nutrition_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 961,
+      "offset": 1027,
       "length": 37,
       "value": "\"rook_last_blood_pressure_extraction\""
     },
@@ -87034,14 +86468,14 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Configuration\/RookConnectConfigurationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1391,
+      "offset": 1496,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Configuration\/RookConnectConfigurationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1440,
+      "offset": 1545,
       "length": 5,
       "value": "false"
     },
@@ -88427,14 +87861,14 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/SourceStatus\/Presentation\/ViewModel\/DataSourceVieModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 808,
+      "offset": 835,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/SourceStatus\/Presentation\/ViewModel\/DataSourceVieModel.swift",
       "kind": "Array",
-      "offset": 864,
+      "offset": 891,
       "length": 2,
       "value": "[]"
     },
@@ -95539,126 +94973,126 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 226,
+      "offset": 240,
       "length": 40,
       "value": "\"rook_last_heart_rate_body_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 299,
+      "offset": 313,
       "length": 44,
       "value": "\"rook_last_heart_rate_physical_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 374,
+      "offset": 388,
       "length": 41,
       "value": "\"rook_last_oxygenation_body_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 450,
+      "offset": 464,
       "length": 45,
       "value": "\"rook_last_oxygenation_physical_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 519,
+      "offset": 533,
       "length": 33,
       "value": "\"rook_last_activity_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 579,
+      "offset": 593,
       "length": 36,
       "value": "\"rook_last_temperature_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 643,
+      "offset": 657,
       "length": 38,
       "value": "\"rook_last_blood_glucose_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 710,
+      "offset": 724,
       "length": 39,
       "value": "\"rook_last_blood_pressure_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 776,
+      "offset": 790,
       "length": 37,
       "value": "\"rook_last_body_metrics_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 226,
+      "offset": 240,
       "length": 40,
       "value": "\"rook_last_heart_rate_body_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 299,
+      "offset": 313,
       "length": 44,
       "value": "\"rook_last_heart_rate_physical_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 374,
+      "offset": 388,
       "length": 41,
       "value": "\"rook_last_oxygenation_body_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 450,
+      "offset": 464,
       "length": 45,
       "value": "\"rook_last_oxygenation_physical_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 519,
+      "offset": 533,
       "length": 33,
       "value": "\"rook_last_activity_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 579,
+      "offset": 593,
       "length": 36,
       "value": "\"rook_last_temperature_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 643,
+      "offset": 657,
       "length": 38,
       "value": "\"rook_last_blood_glucose_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 710,
+      "offset": 724,
       "length": 39,
       "value": "\"rook_last_blood_pressure_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 776,
+      "offset": 790,
       "length": 37,
       "value": "\"rook_last_body_metrics_transmission\""
     },
@@ -96381,7 +95815,14 @@
       "kind": "StringLiteral",
       "offset": 1255,
       "length": 7,
-      "value": "\"1.5.1\""
+      "value": "\"1.5.3\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1341,
+      "length": 32,
+      "value": "\"rook_configuration_environment\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookActivityEventTransmission\/Entities\/Granular\/RookActivityLevelGranularTransmission.swift",
@@ -98255,42 +97696,42 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionSummmaryType.swift",
       "kind": "StringLiteral",
-      "offset": 217,
+      "offset": 231,
       "length": 35,
       "value": "\"rook_last_sleep_date_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionSummmaryType.swift",
       "kind": "StringLiteral",
-      "offset": 271,
+      "offset": 285,
       "length": 38,
       "value": "\"rook_last_physical_date_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionSummmaryType.swift",
       "kind": "StringLiteral",
-      "offset": 324,
+      "offset": 338,
       "length": 34,
       "value": "\"rook_last_body_date_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionSummmaryType.swift",
       "kind": "StringLiteral",
-      "offset": 217,
+      "offset": 231,
       "length": 35,
       "value": "\"rook_last_sleep_date_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionSummmaryType.swift",
       "kind": "StringLiteral",
-      "offset": 271,
+      "offset": 285,
       "length": 38,
       "value": "\"rook_last_physical_date_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionSummmaryType.swift",
       "kind": "StringLiteral",
-      "offset": 324,
+      "offset": 338,
       "length": 34,
       "value": "\"rook_last_body_date_transmission\""
     },
@@ -100454,20 +99895,20 @@
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookBodyTransmission\/RookBodyTransmissionManager.swift",
       "kind": "StringLiteral",
       "offset": 458,
-      "length": 34,
-      "value": "\"metadata detaime could't be nill\""
+      "length": 35,
+      "value": "\"metadata date time could't be nil\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookBodyTransmission\/RookBodyTransmissionManager.swift",
       "kind": "StringLiteral",
-      "offset": 518,
+      "offset": 519,
       "length": 30,
       "value": "\"Your client uuid was not set\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookBodyTransmission\/RookBodyTransmissionManager.swift",
       "kind": "StringLiteral",
-      "offset": 568,
+      "offset": 569,
       "length": 29,
       "value": "\"There are no data to upload\""
     },
@@ -100503,20 +99944,20 @@
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookBodyTransmission\/RookBodyTransmissionManager.swift",
       "kind": "StringLiteral",
       "offset": 458,
-      "length": 34,
-      "value": "\"metadata detaime could't be nill\""
+      "length": 35,
+      "value": "\"metadata date time could't be nil\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookBodyTransmission\/RookBodyTransmissionManager.swift",
       "kind": "StringLiteral",
-      "offset": 518,
+      "offset": 519,
       "length": 30,
       "value": "\"Your client uuid was not set\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookBodyTransmission\/RookBodyTransmissionManager.swift",
       "kind": "StringLiteral",
-      "offset": 568,
+      "offset": 569,
       "length": 29,
       "value": "\"There are no data to upload\""
     },
