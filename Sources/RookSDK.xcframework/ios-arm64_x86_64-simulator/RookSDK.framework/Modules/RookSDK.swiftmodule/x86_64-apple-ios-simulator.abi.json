@@ -57695,6 +57695,43 @@
             "moduleName": "RookSDK"
           },
           {
+            "kind": "Var",
+            "name": "stepsEvent",
+            "printedName": "stepsEvent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookSDK.RookTransmissionEventType.Type) -> RookSDK.RookTransmissionEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookTransmissionEventType",
+                    "printedName": "RookSDK.RookTransmissionEventType",
+                    "usr": "s:7RookSDK0A21TransmissionEventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookSDK.RookTransmissionEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookTransmissionEventType",
+                        "printedName": "RookSDK.RookTransmissionEventType",
+                        "usr": "s:7RookSDK0A21TransmissionEventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7RookSDK0A21TransmissionEventTypeO05stepsD0yA2CmF",
+            "mangledName": "$s7RookSDK0A21TransmissionEventTypeO05stepsD0yA2CmF",
+            "moduleName": "RookSDK"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -95036,6 +95073,13 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
+      "offset": 848,
+      "length": 30,
+      "value": "\"rook_last_steps_transmission\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
+      "kind": "StringLiteral",
       "offset": 240,
       "length": 40,
       "value": "\"rook_last_heart_rate_body_transmission\""
@@ -95095,6 +95139,13 @@
       "offset": 790,
       "length": 37,
       "value": "\"rook_last_body_metrics_transmission\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
+      "kind": "StringLiteral",
+      "offset": 848,
+      "length": 30,
+      "value": "\"rook_last_steps_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/RespiratoryRateProvider\/Entities\/RookRespiratoryRate.swift",
@@ -95815,7 +95866,7 @@
       "kind": "StringLiteral",
       "offset": 1255,
       "length": 7,
-      "value": "\"1.5.3\""
+      "value": "\"1.5.4\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
