@@ -1238,6 +1238,7 @@ public enum RookTransmissionEventType : Swift.String, Swift.CaseIterable {
   case bloodGlucoseEvent
   case bloodPressureEvent
   case bodyMetricsEvent
+  case stepsEvent
   public init?(rawValue: Swift.String)
   public typealias AllCases = [RookSDK.RookTransmissionEventType]
   public typealias RawValue = Swift.String
