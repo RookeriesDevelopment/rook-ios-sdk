@@ -449,6 +449,7 @@ public struct RookHRVSdnnGranularTransmission : Swift.Codable {
   @objc public static let shared: RookSDK.IOSClass
   @objc final public func test()
   @objc final public func disableTest()
+  @objc final public func sendLog(with log: RookSDK.LogInfoObjc)
   @objc deinit
 }
 public enum BackGroundStorageTypes : Swift.String {
@@ -1413,6 +1414,10 @@ public enum HTTPMethod : Swift.String {
   public var rawValue: Swift.String {
     get
   }
+}
+@objc public class LogInfoObjc : ObjectiveC.NSObject {
+  public init(level: Swift.String?, dataDateTime: Swift.String?, action: Swift.String?, dataType: Swift.String?, extra: Swift.String?, uuid: Swift.String)
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class RookConnectConfigurationManagerObjc : ObjectiveC.NSObject {
   @objc public static let shared: RookSDK.RookConnectConfigurationManagerObjc

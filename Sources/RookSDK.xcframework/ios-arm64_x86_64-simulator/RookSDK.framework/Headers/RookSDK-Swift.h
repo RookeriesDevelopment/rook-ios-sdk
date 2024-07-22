@@ -283,6 +283,7 @@ SWIFT_CLASS("_TtC7RookSDK21DataSourceManagerObjc")
 
 
 
+@class LogInfoObjc;
 
 SWIFT_CLASS("_TtC7RookSDK8IOSClass")
 @interface IOSClass : NSObject
@@ -292,6 +293,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IOSClass * _
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)test;
 - (void)disableTest;
+- (void)sendLogWith:(LogInfoObjc * _Nonnull)log;
+@end
+
+
+SWIFT_CLASS("_TtC7RookSDK11LogInfoObjc")
+@interface LogInfoObjc : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -719,6 +728,7 @@ SWIFT_CLASS("_TtC7RookSDK21DataSourceManagerObjc")
 
 
 
+@class LogInfoObjc;
 
 SWIFT_CLASS("_TtC7RookSDK8IOSClass")
 @interface IOSClass : NSObject
@@ -728,6 +738,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IOSClass * _
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)test;
 - (void)disableTest;
+- (void)sendLogWith:(LogInfoObjc * _Nonnull)log;
+@end
+
+
+SWIFT_CLASS("_TtC7RookSDK11LogInfoObjc")
+@interface LogInfoObjc : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
