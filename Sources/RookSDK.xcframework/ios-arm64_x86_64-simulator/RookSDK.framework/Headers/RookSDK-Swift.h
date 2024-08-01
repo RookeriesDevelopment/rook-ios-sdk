@@ -380,6 +380,7 @@ SWIFT_CLASS("_TtC7RookSDK29RookConnectPermissionsManager")
 @end
 
 
+
 SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 @interface RookEventsManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -402,6 +403,7 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 - (void)syncPendingEventsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getTodayStepCountWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 @end
+
 
 
 SWIFT_CLASS("_TtC7RookSDK21RookExtractionManager")
@@ -434,6 +436,7 @@ SWIFT_CLASS("_TtC7RookSDK18RookSummaryManager")
 - (void)syncBodySummaryObjcFrom:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncPendingSummariesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
+
 
 #endif
 #if defined(__cplusplus)
@@ -825,6 +828,7 @@ SWIFT_CLASS("_TtC7RookSDK29RookConnectPermissionsManager")
 @end
 
 
+
 SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 @interface RookEventsManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -847,6 +851,7 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 - (void)syncPendingEventsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getTodayStepCountWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 @end
+
 
 
 SWIFT_CLASS("_TtC7RookSDK21RookExtractionManager")
@@ -879,6 +884,7 @@ SWIFT_CLASS("_TtC7RookSDK18RookSummaryManager")
 - (void)syncBodySummaryObjcFrom:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncPendingSummariesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
+
 
 #endif
 #if defined(__cplusplus)
