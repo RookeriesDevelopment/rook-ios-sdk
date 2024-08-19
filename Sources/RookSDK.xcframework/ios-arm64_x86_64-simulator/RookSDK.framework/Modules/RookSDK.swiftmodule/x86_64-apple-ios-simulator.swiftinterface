@@ -159,7 +159,7 @@ public struct VoltageECGMeasurement {
 }
 @_hasMissingDesignatedInitializers final public class RookConnectConfigurationManager {
   public static let shared: RookSDK.RookConnectConfigurationManager
-  final public func setConfiguration(clientUUID: Swift.String, secretKey: Swift.String, enableBackgroundSync: Swift.Bool)
+  final public func setConfiguration(clientUUID: Swift.String, secretKey: Swift.String, enableBackgroundSync: Swift.Bool, enableEventsBackgroundSync: Swift.Bool)
   final public func setEnvironment(_ environment: RookSDK.RookEnvironment)
   final public func initRook()
   final public func initRook(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
@@ -387,10 +387,10 @@ public struct RookTemperatureGranularTransmissionDTO : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 extension RookSDK.RookBackGroundSync {
-  @objc dynamic public func enableBackGroundForActivityEvents()
   @objc dynamic public func enableBackGroundForEvents()
-  public func disableBackGroundForActivityEvents(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  @objc dynamic public func disableBackGroundForEvents()
+  @objc dynamic public func disableBackGroundForEvents(completion: @escaping () -> Swift.Void)
+  @objc dynamic public func isBackGroundForEventsEnable() -> Swift.Bool
+  public func disableBackGroundForEvents()
 }
 @_inheritsConvenienceInitializers @objc final public class RookSummaryManager : ObjectiveC.NSObject {
   @objc override dynamic public init()
@@ -592,12 +592,6 @@ public struct RookCadenceGranularItem : Swift.Encodable {
   public let intervalDurationSeconds: Swift.Int
   public let cadenceRpm: Swift.Int
   public func encode(to encoder: Swift.Encoder) throws
-}
-extension RookSDK.RookExtractionEventManager {
-  final public func getTemperatureEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookSDK.RookTemperatureEvent], Swift.Error>) -> Swift.Void)
-  final public func getBloodPressureEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookSDK.RookBloodPressureEvent], Swift.Error>) -> Swift.Void)
-  final public func getGlucoseEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookSDK.RookGlucoseEvent], Swift.Error>) -> Swift.Void)
-  final public func getBodyMetricsEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookSDK.RookBodyMetricsEvent], Swift.Error>) -> Swift.Void)
 }
 public struct RookTemperatureEventTransmission : Swift.Codable {
   public var metadata: RookSDK.RookMetaDataEventTransmission
@@ -1058,17 +1052,6 @@ extension RookSDK.RookConnectConfigurationManager {
   #if compiler(>=5.3) && $AsyncAwait
   final public func syncUserTimeZone() async throws -> Swift.Bool
   #endif
-}
-final public class RookExtractionEventManager {
-  public init()
-  final public func getPhysicalHeartRateEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookSDK.RookHeartRateEventExtraction], Swift.Error>) -> Swift.Void)
-  final public func getBodyHeartRateEvents(date: Foundation.Date, excludingDatesBefore: Foundation.Date? = nil, completion: @escaping (Swift.Result<[RookSDK.RookHeartRateEventExtraction], Swift.Error>) -> Swift.Void)
-  final public func getPhysicalOxygenationEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookSDK.RookOxygentationEvent], Swift.Error>) -> Swift.Void)
-  final public func getBodyOxygenationEvents(date: Foundation.Date, excludingDatesBefore: Foundation.Date? = nil, completion: @escaping (Swift.Result<[RookSDK.RookOxygentationEvent], Swift.Error>) -> Swift.Void)
-  final public func getActivityEvents(date: Foundation.Date, excludingDatesBefore: Foundation.Date? = nil, completion: @escaping (Swift.Result<[RookSDK.RookActivityEventExtraction], Swift.Error>) -> Swift.Void)
-  final public func getNutritionEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookSDK.RookNutritionEvent], Swift.Error>) -> Swift.Void)
-  final public func getLastExtractionDate(of summary: RookSDK.RookDataType) -> Foundation.Date?
-  @objc deinit
 }
 public struct RookHrGranularTransmission : Swift.Codable {
   public let datetime: Foundation.Date
@@ -1535,7 +1518,7 @@ extension RookSDK.RookEventsManager {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class RookConnectConfigurationManagerObjc : ObjectiveC.NSObject {
   @objc public static let shared: RookSDK.RookConnectConfigurationManagerObjc
-  @objc final public func setConfiguration(clientUUID: Swift.String, secretKey: Swift.String, enableBackgroundSync: Swift.Bool)
+  @objc final public func setConfiguration(clientUUID: Swift.String, secretKey: Swift.String, enableBackgroundSync: Swift.Bool, enableEventsBackgroundSync: Swift.Bool)
   @objc final public func setEnvironmentForSandbox()
   @objc final public func setEnvironmentForProduction()
   @objc final public func initRook()
@@ -1687,6 +1670,7 @@ public enum AnalyticPlatform {
   @objc public func setBackListeners()
   @objc public func enableBackGroundForSummaries()
   @objc public func disableBackGroundForSummaries()
+  @objc public func isBackGroundForSummariesEnable() -> Swift.Bool
   @objc deinit
 }
 public enum RookConnectErrors : Swift.Error {
@@ -1874,10 +1858,6 @@ public enum RookEnvironment {
   public var hashValue: Swift.Int {
     get
   }
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RookBackGroundExtraction : ObjectiveC.NSObject {
-  @objc public static let shared: RookSDK.RookBackGroundExtraction
-  @objc deinit
 }
 public enum RookTransmissionError : Swift.String, Swift.Error {
   case emptyUserId
