@@ -6385,7 +6385,7 @@
           {
             "kind": "Function",
             "name": "setConfiguration",
-            "printedName": "setConfiguration(clientUUID:secretKey:enableBackgroundSync:)",
+            "printedName": "setConfiguration(clientUUID:secretKey:enableBackgroundSync:enableEventsBackgroundSync:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6409,11 +6409,17 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7RookSDK0A27ConnectConfigurationManagerC03setD010clientUUID9secretKey20enableBackgroundSyncySS_SSSbtF",
-            "mangledName": "$s7RookSDK0A27ConnectConfigurationManagerC03setD010clientUUID9secretKey20enableBackgroundSyncySS_SSSbtF",
+            "usr": "s:7RookSDK0A27ConnectConfigurationManagerC03setD010clientUUID9secretKey20enableBackgroundSync0k6EventslM0ySS_SSS2btF",
+            "mangledName": "$s7RookSDK0A27ConnectConfigurationManagerC03setD010clientUUID9secretKey20enableBackgroundSync0k6EventslM0ySS_SSS2btF",
             "moduleName": "RookSDK",
             "declAttributes": [
               "Final",
@@ -22282,6 +22288,16 @@
             "usr": "s:SE",
             "mangledName": "$sSE"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -49366,799 +49382,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "RookExtractionEventManager",
-        "printedName": "RookExtractionEventManager",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "RookExtractionEventManager",
-                "printedName": "RookSDK.RookExtractionEventManager",
-                "usr": "s:7RookSDK0A22ExtractionEventManagerC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7RookSDK0A22ExtractionEventManagerCACycfc",
-            "mangledName": "$s7RookSDK0A22ExtractionEventManagerCACycfc",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "getPhysicalHeartRateEvents",
-            "printedName": "getPhysicalHeartRateEvents(date:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Date",
-                "printedName": "Foundation.Date",
-                "usr": "s:10Foundation4DateV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<[RookSDK.RookHeartRateEventExtraction], Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<[RookSDK.RookHeartRateEventExtraction], Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[RookSDK.RookHeartRateEventExtraction]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RookHeartRateEventExtraction",
-                            "printedName": "RookSDK.RookHeartRateEventExtraction",
-                            "usr": "s:7RookSDK0A24HeartRateEventExtractionV"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A22ExtractionEventManagerC26getPhysicalHeartRateEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0ahidC0VGs5Error_pGctF",
-            "mangledName": "$s7RookSDK0A22ExtractionEventManagerC26getPhysicalHeartRateEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0ahidC0VGs5Error_pGctF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getBodyHeartRateEvents",
-            "printedName": "getBodyHeartRateEvents(date:excludingDatesBefore:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Date",
-                "printedName": "Foundation.Date",
-                "usr": "s:10Foundation4DateV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Date?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Date",
-                    "printedName": "Foundation.Date",
-                    "usr": "s:10Foundation4DateV"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<[RookSDK.RookHeartRateEventExtraction], Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<[RookSDK.RookHeartRateEventExtraction], Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[RookSDK.RookHeartRateEventExtraction]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RookHeartRateEventExtraction",
-                            "printedName": "RookSDK.RookHeartRateEventExtraction",
-                            "usr": "s:7RookSDK0A24HeartRateEventExtractionV"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A22ExtractionEventManagerC22getBodyHeartRateEvents4date20excludingDatesBefore10completiony10Foundation4DateV_AJSgys6ResultOySayAA0ahidC0VGs5Error_pGctF",
-            "mangledName": "$s7RookSDK0A22ExtractionEventManagerC22getBodyHeartRateEvents4date20excludingDatesBefore10completiony10Foundation4DateV_AJSgys6ResultOySayAA0ahidC0VGs5Error_pGctF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getPhysicalOxygenationEvents",
-            "printedName": "getPhysicalOxygenationEvents(date:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Date",
-                "printedName": "Foundation.Date",
-                "usr": "s:10Foundation4DateV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<[RookSDK.RookOxygentationEvent], Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<[RookSDK.RookOxygentationEvent], Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[RookSDK.RookOxygentationEvent]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RookOxygentationEvent",
-                            "printedName": "RookSDK.RookOxygentationEvent",
-                            "usr": "s:7RookSDK0A17OxygentationEventV"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A22ExtractionEventManagerC28getPhysicalOxygenationEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0a12OxygentationD0VGs5Error_pGctF",
-            "mangledName": "$s7RookSDK0A22ExtractionEventManagerC28getPhysicalOxygenationEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0a12OxygentationD0VGs5Error_pGctF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getBodyOxygenationEvents",
-            "printedName": "getBodyOxygenationEvents(date:excludingDatesBefore:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Date",
-                "printedName": "Foundation.Date",
-                "usr": "s:10Foundation4DateV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Date?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Date",
-                    "printedName": "Foundation.Date",
-                    "usr": "s:10Foundation4DateV"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<[RookSDK.RookOxygentationEvent], Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<[RookSDK.RookOxygentationEvent], Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[RookSDK.RookOxygentationEvent]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RookOxygentationEvent",
-                            "printedName": "RookSDK.RookOxygentationEvent",
-                            "usr": "s:7RookSDK0A17OxygentationEventV"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A22ExtractionEventManagerC24getBodyOxygenationEvents4date20excludingDatesBefore10completiony10Foundation4DateV_AJSgys6ResultOySayAA0a12OxygentationD0VGs5Error_pGctF",
-            "mangledName": "$s7RookSDK0A22ExtractionEventManagerC24getBodyOxygenationEvents4date20excludingDatesBefore10completiony10Foundation4DateV_AJSgys6ResultOySayAA0a12OxygentationD0VGs5Error_pGctF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getActivityEvents",
-            "printedName": "getActivityEvents(date:excludingDatesBefore:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Date",
-                "printedName": "Foundation.Date",
-                "usr": "s:10Foundation4DateV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Date?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Date",
-                    "printedName": "Foundation.Date",
-                    "usr": "s:10Foundation4DateV"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<[RookSDK.RookActivityEventExtraction], Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<[RookSDK.RookActivityEventExtraction], Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[RookSDK.RookActivityEventExtraction]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RookActivityEventExtraction",
-                            "printedName": "RookSDK.RookActivityEventExtraction",
-                            "usr": "s:7RookSDK0A23ActivityEventExtractionV"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A22ExtractionEventManagerC17getActivityEvents4date20excludingDatesBefore10completiony10Foundation4DateV_AJSgys6ResultOySayAA0agdC0VGs5Error_pGctF",
-            "mangledName": "$s7RookSDK0A22ExtractionEventManagerC17getActivityEvents4date20excludingDatesBefore10completiony10Foundation4DateV_AJSgys6ResultOySayAA0agdC0VGs5Error_pGctF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getNutritionEvents",
-            "printedName": "getNutritionEvents(date:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Date",
-                "printedName": "Foundation.Date",
-                "usr": "s:10Foundation4DateV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<[RookSDK.RookNutritionEvent], Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<[RookSDK.RookNutritionEvent], Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[RookSDK.RookNutritionEvent]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RookNutritionEvent",
-                            "printedName": "RookSDK.RookNutritionEvent",
-                            "usr": "s:7RookSDK0A14NutritionEventV"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A22ExtractionEventManagerC18getNutritionEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0agD0VGs5Error_pGctF",
-            "mangledName": "$s7RookSDK0A22ExtractionEventManagerC18getNutritionEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0agD0VGs5Error_pGctF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getLastExtractionDate",
-            "printedName": "getLastExtractionDate(of:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Date?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Date",
-                    "printedName": "Foundation.Date",
-                    "usr": "s:10Foundation4DateV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RookDataType",
-                "printedName": "RookSDK.RookDataType",
-                "usr": "s:7RookSDK0A8DataTypeO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A22ExtractionEventManagerC07getLastC4Date2of10Foundation0H0VSgAA0A8DataTypeO_tF",
-            "mangledName": "$s7RookSDK0A22ExtractionEventManagerC07getLastC4Date2of10Foundation0H0VSgAA0A8DataTypeO_tF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getTemperatureEvents",
-            "printedName": "getTemperatureEvents(date:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Date",
-                "printedName": "Foundation.Date",
-                "usr": "s:10Foundation4DateV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<[RookSDK.RookTemperatureEvent], Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<[RookSDK.RookTemperatureEvent], Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[RookSDK.RookTemperatureEvent]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RookTemperatureEvent",
-                            "printedName": "RookSDK.RookTemperatureEvent",
-                            "usr": "s:7RookSDK0A16TemperatureEventV"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A22ExtractionEventManagerC20getTemperatureEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0agD0VGs5Error_pGctF",
-            "mangledName": "$s7RookSDK0A22ExtractionEventManagerC20getTemperatureEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0agD0VGs5Error_pGctF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getBloodPressureEvents",
-            "printedName": "getBloodPressureEvents(date:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Date",
-                "printedName": "Foundation.Date",
-                "usr": "s:10Foundation4DateV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<[RookSDK.RookBloodPressureEvent], Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<[RookSDK.RookBloodPressureEvent], Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[RookSDK.RookBloodPressureEvent]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RookBloodPressureEvent",
-                            "printedName": "RookSDK.RookBloodPressureEvent",
-                            "usr": "s:7RookSDK0A18BloodPressureEventV"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A22ExtractionEventManagerC22getBloodPressureEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0aghD0VGs5Error_pGctF",
-            "mangledName": "$s7RookSDK0A22ExtractionEventManagerC22getBloodPressureEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0aghD0VGs5Error_pGctF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getGlucoseEvents",
-            "printedName": "getGlucoseEvents(date:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Date",
-                "printedName": "Foundation.Date",
-                "usr": "s:10Foundation4DateV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<[RookSDK.RookGlucoseEvent], Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<[RookSDK.RookGlucoseEvent], Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[RookSDK.RookGlucoseEvent]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RookGlucoseEvent",
-                            "printedName": "RookSDK.RookGlucoseEvent",
-                            "usr": "s:7RookSDK0A12GlucoseEventV"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A22ExtractionEventManagerC16getGlucoseEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0agD0VGs5Error_pGctF",
-            "mangledName": "$s7RookSDK0A22ExtractionEventManagerC16getGlucoseEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0agD0VGs5Error_pGctF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getBodyMetricsEvents",
-            "printedName": "getBodyMetricsEvents(date:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Date",
-                "printedName": "Foundation.Date",
-                "usr": "s:10Foundation4DateV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<[RookSDK.RookBodyMetricsEvent], Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<[RookSDK.RookBodyMetricsEvent], Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[RookSDK.RookBodyMetricsEvent]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RookBodyMetricsEvent",
-                            "printedName": "RookSDK.RookBodyMetricsEvent",
-                            "usr": "s:7RookSDK0A16BodyMetricsEventV"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7RookSDK0A22ExtractionEventManagerC20getBodyMetricsEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0aghD0VGs5Error_pGctF",
-            "mangledName": "$s7RookSDK0A22ExtractionEventManagerC20getBodyMetricsEvents4date10completiony10Foundation4DateV_ys6ResultOySayAA0aghD0VGs5Error_pGctF",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:7RookSDK0A22ExtractionEventManagerC",
-        "mangledName": "$s7RookSDK0A22ExtractionEventManagerC",
-        "moduleName": "RookSDK",
-        "declAttributes": [
-          "Final",
-          "AccessControl"
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -68195,7 +67418,7 @@
           {
             "kind": "Function",
             "name": "setConfiguration",
-            "printedName": "setConfiguration(clientUUID:secretKey:enableBackgroundSync:)",
+            "printedName": "setConfiguration(clientUUID:secretKey:enableBackgroundSync:enableEventsBackgroundSync:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -68219,13 +67442,19 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(im)setConfigurationWithClientUUID:secretKey:enableBackgroundSync:",
-            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC03setD010clientUUID9secretKey20enableBackgroundSyncySS_SSSbtF",
+            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(im)setConfigurationWithClientUUID:secretKey:enableBackgroundSync:enableEventsBackgroundSync:",
+            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC03setD010clientUUID9secretKey20enableBackgroundSync0l6EventsmN0ySS_SSS2btF",
             "moduleName": "RookSDK",
-            "objc_name": "setConfigurationWithClientUUID:secretKey:enableBackgroundSync:",
+            "objc_name": "setConfigurationWithClientUUID:secretKey:enableBackgroundSync:enableEventsBackgroundSync:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -74055,7 +73284,8 @@
               "Final",
               "HasStorage",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -74549,7 +73779,8 @@
             "moduleName": "RookSDK",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -74597,25 +73828,24 @@
           },
           {
             "kind": "Function",
-            "name": "enableBackGroundForActivityEvents",
-            "printedName": "enableBackGroundForActivityEvents()",
+            "name": "isBackGroundForSummariesEnable",
+            "printedName": "isBackGroundForSummariesEnable()",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@RookSDK@objc(cs)RookBackGroundSync(im)enableBackGroundForActivityEvents",
-            "mangledName": "$s7RookSDK0A14BackGroundSyncC06enablecD17ForActivityEventsyyF",
+            "usr": "c:@M@RookSDK@objc(cs)RookBackGroundSync(im)isBackGroundForSummariesEnable",
+            "mangledName": "$s7RookSDK0A14BackGroundSyncC02iscD18ForSummariesEnableSbyF",
             "moduleName": "RookSDK",
             "declAttributes": [
-              "Dynamic",
               "AccessControl",
               "ObjC"
             ],
-            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -74636,15 +73866,16 @@
             "declAttributes": [
               "Dynamic",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "disableBackGroundForActivityEvents",
-            "printedName": "disableBackGroundForActivityEvents(completion:)",
+            "name": "disableBackGroundForEvents",
+            "printedName": "disableBackGroundForEvents(completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -74654,7 +73885,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+                "printedName": "() -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -74663,33 +73894,45 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
+                    "name": "Void",
+                    "printedName": "()"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:7RookSDK0A14BackGroundSyncC07disablecD17ForActivityEvents10completionyys6ResultOySbs5Error_pGc_tF",
-            "mangledName": "$s7RookSDK0A14BackGroundSyncC07disablecD17ForActivityEvents10completionyys6ResultOySbs5Error_pGc_tF",
+            "usr": "c:@CM@RookSDK@objc(cs)RookBackGroundSync(im)disableBackGroundForEventsWithCompletion:",
+            "mangledName": "$s7RookSDK0A14BackGroundSyncC07disablecD9ForEvents10completionyyyc_tF",
+            "moduleName": "RookSDK",
+            "objc_name": "disableBackGroundForEventsWithCompletion:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isBackGroundForEventsEnable",
+            "printedName": "isBackGroundForEventsEnable()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookBackGroundSync(im)isBackGroundForEventsEnable",
+            "mangledName": "$s7RookSDK0A14BackGroundSyncC02iscD15ForEventsEnableSbyF",
             "moduleName": "RookSDK",
             "declAttributes": [
-              "AccessControl"
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -74706,13 +73949,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@RookSDK@objc(cs)RookBackGroundSync(im)disableBackGroundForEvents",
+            "usr": "s:7RookSDK0A14BackGroundSyncC07disablecD9ForEventsyyF",
             "mangledName": "$s7RookSDK0A14BackGroundSyncC07disablecD9ForEventsyyF",
             "moduleName": "RookSDK",
             "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -82073,131 +81314,6 @@
         "printedName": "HealthKit",
         "declKind": "Import",
         "moduleName": "RookSDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "RookBackGroundExtraction",
-        "printedName": "RookBackGroundExtraction",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "RookBackGroundExtraction",
-                "printedName": "RookSDK.RookBackGroundExtraction",
-                "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(cpy)shared",
-            "mangledName": "$s7RookSDK0A20BackGroundExtractionC6sharedACvpZ",
-            "moduleName": "RookSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RookBackGroundExtraction",
-                    "printedName": "RookSDK.RookBackGroundExtraction",
-                    "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction(cm)shared",
-                "mangledName": "$s7RookSDK0A20BackGroundExtractionC6sharedACvgZ",
-                "moduleName": "RookSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@RookSDK@objc(cs)RookBackGroundExtraction",
-        "mangledName": "$s7RookSDK0A20BackGroundExtractionC",
-        "moduleName": "RookSDK",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
       },
       {
         "kind": "Import",
@@ -90380,7 +89496,7 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Netwroking\/Service\/Router.swift",
       "kind": "FloatLiteral",
-      "offset": 271,
+      "offset": 308,
       "length": 4,
       "value": "15.0"
     },
@@ -90584,6 +89700,20 @@
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Summaries\/Domain\/MissingDaysUseCase.swift",
       "kind": "IntegerLiteral",
       "offset": 486,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Summaries\/Domain\/MissingDaysUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 536,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Summaries\/Domain\/MissingDaysUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 572,
       "length": 1,
       "value": "1"
     },
@@ -98019,7 +97149,7 @@
       "kind": "StringLiteral",
       "offset": 1255,
       "length": 7,
-      "value": "\"1.5.8\""
+      "value": "\"1.6.0\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",

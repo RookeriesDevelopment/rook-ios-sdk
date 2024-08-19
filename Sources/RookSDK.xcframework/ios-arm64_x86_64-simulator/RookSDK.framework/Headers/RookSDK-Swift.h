@@ -304,15 +304,6 @@ SWIFT_CLASS("_TtC7RookSDK11LogInfoObjc")
 @end
 
 
-SWIFT_CLASS("_TtC7RookSDK24RookBackGroundExtraction")
-@interface RookBackGroundExtraction : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGroundExtraction * _Nonnull shared;)
-+ (RookBackGroundExtraction * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
 SWIFT_CLASS("_TtC7RookSDK18RookBackGroundSync")
 @interface RookBackGroundSync : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGroundSync * _Nonnull shared;)
@@ -324,7 +315,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 - (void)setBackListeners;
 - (void)enableBackGroundForSummaries;
 - (void)disableBackGroundForSummaries;
+- (BOOL)isBackGroundForSummariesEnable SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 
@@ -334,9 +327,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 
 
 @interface RookBackGroundSync (SWIFT_EXTENSION(RookSDK))
-- (void)enableBackGroundForActivityEvents;
 - (void)enableBackGroundForEvents;
-- (void)disableBackGroundForEvents;
+- (void)disableBackGroundForEventsWithCompletion:(void (^ _Nonnull)(void))completion;
+- (BOOL)isBackGroundForEventsEnable SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -346,7 +339,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookConnectC
 + (RookConnectConfigurationManagerObjc * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)setConfigurationWithClientUUID:(NSString * _Nonnull)clientUUID secretKey:(NSString * _Nonnull)secretKey enableBackgroundSync:(BOOL)enableBackgroundSync;
+- (void)setConfigurationWithClientUUID:(NSString * _Nonnull)clientUUID secretKey:(NSString * _Nonnull)secretKey enableBackgroundSync:(BOOL)enableBackgroundSync enableEventsBackgroundSync:(BOOL)enableEventsBackgroundSync;
 - (void)setEnvironmentForSandbox;
 - (void)setEnvironmentForProduction;
 - (void)initRook SWIFT_METHOD_FAMILY(none);
@@ -752,15 +745,6 @@ SWIFT_CLASS("_TtC7RookSDK11LogInfoObjc")
 @end
 
 
-SWIFT_CLASS("_TtC7RookSDK24RookBackGroundExtraction")
-@interface RookBackGroundExtraction : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGroundExtraction * _Nonnull shared;)
-+ (RookBackGroundExtraction * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
 SWIFT_CLASS("_TtC7RookSDK18RookBackGroundSync")
 @interface RookBackGroundSync : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGroundSync * _Nonnull shared;)
@@ -772,7 +756,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 - (void)setBackListeners;
 - (void)enableBackGroundForSummaries;
 - (void)disableBackGroundForSummaries;
+- (BOOL)isBackGroundForSummariesEnable SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 
@@ -782,9 +768,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 
 
 @interface RookBackGroundSync (SWIFT_EXTENSION(RookSDK))
-- (void)enableBackGroundForActivityEvents;
 - (void)enableBackGroundForEvents;
-- (void)disableBackGroundForEvents;
+- (void)disableBackGroundForEventsWithCompletion:(void (^ _Nonnull)(void))completion;
+- (BOOL)isBackGroundForEventsEnable SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -794,7 +780,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookConnectC
 + (RookConnectConfigurationManagerObjc * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)setConfigurationWithClientUUID:(NSString * _Nonnull)clientUUID secretKey:(NSString * _Nonnull)secretKey enableBackgroundSync:(BOOL)enableBackgroundSync;
+- (void)setConfigurationWithClientUUID:(NSString * _Nonnull)clientUUID secretKey:(NSString * _Nonnull)secretKey enableBackgroundSync:(BOOL)enableBackgroundSync enableEventsBackgroundSync:(BOOL)enableEventsBackgroundSync;
 - (void)setEnvironmentForSandbox;
 - (void)setEnvironmentForProduction;
 - (void)initRook SWIFT_METHOD_FAMILY(none);
