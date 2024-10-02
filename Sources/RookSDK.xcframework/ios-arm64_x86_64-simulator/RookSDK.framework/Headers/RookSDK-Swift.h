@@ -324,13 +324,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 
 
 
-
-
 @interface RookBackGroundSync (SWIFT_EXTENSION(RookSDK))
 - (void)enableBackGroundForEvents;
-- (void)disableBackGroundForEventsWithCompletion:(void (^ _Nonnull)(void))completion;
 - (BOOL)isBackGroundForEventsEnable SWIFT_WARN_UNUSED_RESULT;
+- (void)disableBackGroundForEvents;
 @end
+
+
 
 
 SWIFT_CLASS("_TtC7RookSDK35RookConnectConfigurationManagerObjc")
@@ -399,12 +399,6 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 
 
 
-SWIFT_CLASS("_TtC7RookSDK21RookExtractionManager")
-@interface RookExtractionManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS("_TtC7RookSDK24RookPermissionExtraction")
 @interface RookPermissionExtraction : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -430,6 +424,18 @@ SWIFT_CLASS("_TtC7RookSDK18RookSummaryManager")
 - (void)syncPendingSummariesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
+
+
+SWIFT_CLASS("_TtC7RookSDK11UserManager")
+@interface UserManager : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)updateUserId:(NSString * _Nonnull)id completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)readUserIdWithCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion;
+- (void)clearUserWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)removeUserFromRookWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncUserTimeZoneWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)revokeDataSourceWithDataSource:(NSString * _Nonnull)dataSource completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
 
 #endif
 #if defined(__cplusplus)
@@ -765,13 +771,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 
 
 
-
-
 @interface RookBackGroundSync (SWIFT_EXTENSION(RookSDK))
 - (void)enableBackGroundForEvents;
-- (void)disableBackGroundForEventsWithCompletion:(void (^ _Nonnull)(void))completion;
 - (BOOL)isBackGroundForEventsEnable SWIFT_WARN_UNUSED_RESULT;
+- (void)disableBackGroundForEvents;
 @end
+
+
 
 
 SWIFT_CLASS("_TtC7RookSDK35RookConnectConfigurationManagerObjc")
@@ -840,12 +846,6 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 
 
 
-SWIFT_CLASS("_TtC7RookSDK21RookExtractionManager")
-@interface RookExtractionManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS("_TtC7RookSDK24RookPermissionExtraction")
 @interface RookPermissionExtraction : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -871,6 +871,18 @@ SWIFT_CLASS("_TtC7RookSDK18RookSummaryManager")
 - (void)syncPendingSummariesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
+
+
+SWIFT_CLASS("_TtC7RookSDK11UserManager")
+@interface UserManager : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)updateUserId:(NSString * _Nonnull)id completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)readUserIdWithCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion;
+- (void)clearUserWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)removeUserFromRookWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncUserTimeZoneWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)revokeDataSourceWithDataSource:(NSString * _Nonnull)dataSource completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
 
 #endif
 #if defined(__cplusplus)
