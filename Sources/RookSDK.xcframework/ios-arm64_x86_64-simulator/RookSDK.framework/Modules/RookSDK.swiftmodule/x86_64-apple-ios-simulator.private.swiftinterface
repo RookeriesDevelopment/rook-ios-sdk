@@ -1695,7 +1695,7 @@ public struct SleepRelatedData : Swift.Codable {
   public let sleepHeartRateRelatedData: RookSDK.SleepHeartRateRelatedData
   public let temperatureRelatedData: RookSDK.TemperatureRelatedData
   public let breathingRelatedData: RookSDK.BreathingRelatedData
-  public let nonStructuredData: RookSDK.NoStructuredSleepSummaryData?
+  public let nonStructuredData: RookSDK.NoStructuredSleepSummaryData
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
