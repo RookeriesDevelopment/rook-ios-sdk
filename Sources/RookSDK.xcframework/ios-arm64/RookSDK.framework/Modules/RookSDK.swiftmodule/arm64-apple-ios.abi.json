@@ -74238,22 +74238,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "RookSDK.NoStructuredSleepSummaryData?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NoStructuredSleepSummaryData",
-                    "printedName": "RookSDK.NoStructuredSleepSummaryData",
-                    "usr": "s:7RookSDK28NoStructuredSleepSummaryDataV"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "NoStructuredSleepSummaryData",
+                "printedName": "RookSDK.NoStructuredSleepSummaryData",
+                "usr": "s:7RookSDK28NoStructuredSleepSummaryDataV"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7RookSDK16SleepRelatedDataV013nonStructuredE0AA02Nogc7SummaryE0VSgvp",
-            "mangledName": "$s7RookSDK16SleepRelatedDataV013nonStructuredE0AA02Nogc7SummaryE0VSgvp",
+            "usr": "s:7RookSDK16SleepRelatedDataV013nonStructuredE0AA02Nogc7SummaryE0Vvp",
+            "mangledName": "$s7RookSDK16SleepRelatedDataV013nonStructuredE0AA02Nogc7SummaryE0Vvp",
             "moduleName": "RookSDK",
             "declAttributes": [
               "HasStorage",
@@ -74269,22 +74261,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "RookSDK.NoStructuredSleepSummaryData?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NoStructuredSleepSummaryData",
-                        "printedName": "RookSDK.NoStructuredSleepSummaryData",
-                        "usr": "s:7RookSDK28NoStructuredSleepSummaryDataV"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "NoStructuredSleepSummaryData",
+                    "printedName": "RookSDK.NoStructuredSleepSummaryData",
+                    "usr": "s:7RookSDK28NoStructuredSleepSummaryDataV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7RookSDK16SleepRelatedDataV013nonStructuredE0AA02Nogc7SummaryE0VSgvg",
-                "mangledName": "$s7RookSDK16SleepRelatedDataV013nonStructuredE0AA02Nogc7SummaryE0VSgvg",
+                "usr": "s:7RookSDK16SleepRelatedDataV013nonStructuredE0AA02Nogc7SummaryE0Vvg",
+                "mangledName": "$s7RookSDK16SleepRelatedDataV013nonStructuredE0AA02Nogc7SummaryE0Vvg",
                 "moduleName": "RookSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -88417,28 +88401,28 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Constants\/RookExtractionConstants.swift",
       "kind": "StringLiteral",
-      "offset": 376,
+      "offset": 381,
       "length": 14,
       "value": "\"Apple Health\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Constants\/RookExtractionConstants.swift",
       "kind": "StringLiteral",
-      "offset": 424,
+      "offset": 436,
       "length": 28,
       "value": "\"Apple Health - Third Party\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Constants\/RookExtractionConstants.swift",
       "kind": "StringLiteral",
-      "offset": 487,
+      "offset": 506,
       "length": 18,
       "value": "\"com.apple.health\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Constants\/RookExtractionConstants.swift",
       "kind": "Array",
-      "offset": 572,
+      "offset": 591,
       "length": 16,
       "value": "[\"Apple Health\"]"
     },
@@ -96413,7 +96397,7 @@
       "kind": "StringLiteral",
       "offset": 1255,
       "length": 7,
-      "value": "\"1.6.1\""
+      "value": "\"1.6.2\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
@@ -98693,896 +98677,896 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 1340,
+      "offset": 1339,
       "length": 29,
       "value": "\"sleep_duration_related_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 1393,
+      "offset": 1392,
       "length": 14,
       "value": "\"sleep_scores\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 1445,
+      "offset": 1444,
       "length": 31,
       "value": "\"sleep_heart_rate_related_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 1511,
+      "offset": 1510,
       "length": 26,
       "value": "\"temperature_related_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 1570,
+      "offset": 1569,
       "length": 24,
       "value": "\"breathing_related_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 1624,
+      "offset": 1623,
       "length": 21,
       "value": "\"non_structured_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 1340,
+      "offset": 1339,
       "length": 29,
       "value": "\"sleep_duration_related_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 1393,
+      "offset": 1392,
       "length": 14,
       "value": "\"sleep_scores\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 1445,
+      "offset": 1444,
       "length": 31,
       "value": "\"sleep_heart_rate_related_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 1511,
+      "offset": 1510,
       "length": 26,
       "value": "\"temperature_related_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 1570,
+      "offset": 1569,
       "length": 24,
       "value": "\"breathing_related_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 1624,
+      "offset": 1623,
       "length": 21,
       "value": "\"non_structured_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3196,
+      "offset": 3195,
       "length": 25,
       "value": "\"breaths_minimum_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3250,
+      "offset": 3249,
       "length": 21,
       "value": "\"breaths_avg_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3300,
+      "offset": 3299,
       "length": 21,
       "value": "\"breaths_max_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3368,
+      "offset": 3367,
       "length": 41,
       "value": "\"breathing_granular_data_breaths_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3446,
+      "offset": 3445,
       "length": 29,
       "value": "\"snoring_events_count_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3515,
+      "offset": 3514,
       "length": 32,
       "value": "\"snoring_duration_total_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3585,
+      "offset": 3584,
       "length": 30,
       "value": "\"snoring_granular_data_snores\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3651,
+      "offset": 3650,
       "length": 27,
       "value": "\"saturation_avg_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3714,
+      "offset": 3713,
       "length": 27,
       "value": "\"saturation_max_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3778,
+      "offset": 3777,
       "length": 27,
       "value": "\"saturation_min_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3850,
+      "offset": 3849,
       "length": 37,
       "value": "\"saturation_granular_data_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3196,
+      "offset": 3195,
       "length": 25,
       "value": "\"breaths_minimum_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3250,
+      "offset": 3249,
       "length": 21,
       "value": "\"breaths_avg_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3300,
+      "offset": 3299,
       "length": 21,
       "value": "\"breaths_max_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3368,
+      "offset": 3367,
       "length": 41,
       "value": "\"breathing_granular_data_breaths_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3446,
+      "offset": 3445,
       "length": 29,
       "value": "\"snoring_events_count_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3515,
+      "offset": 3514,
       "length": 32,
       "value": "\"snoring_duration_total_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3585,
+      "offset": 3584,
       "length": 30,
       "value": "\"snoring_granular_data_snores\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3651,
+      "offset": 3650,
       "length": 27,
       "value": "\"saturation_avg_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3714,
+      "offset": 3713,
       "length": 27,
       "value": "\"saturation_max_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3778,
+      "offset": 3777,
       "length": 27,
       "value": "\"saturation_min_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 3850,
+      "offset": 3849,
       "length": 37,
       "value": "\"saturation_granular_data_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 5489,
+      "offset": 5488,
       "length": 17,
       "value": "\"breaths_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 5489,
+      "offset": 5488,
       "length": 17,
       "value": "\"breaths_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 5775,
+      "offset": 5774,
       "length": 23,
       "value": "\"saturation_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 5775,
+      "offset": 5774,
       "length": 23,
       "value": "\"saturation_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6083,
+      "offset": 6082,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6147,
+      "offset": 6146,
       "length": 29,
       "value": "\"snoring_events_count_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6083,
+      "offset": 6082,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6147,
+      "offset": 6146,
       "length": 29,
       "value": "\"snoring_events_count_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6615,
+      "offset": 6614,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6650,
+      "offset": 6649,
       "length": 17,
       "value": "\"sources_of_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6696,
+      "offset": 6695,
       "length": 19,
       "value": "\"user_demographics\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6744,
+      "offset": 6743,
       "length": 20,
       "value": "\"sleep_health_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6615,
+      "offset": 6614,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6650,
+      "offset": 6649,
       "length": 17,
       "value": "\"sources_of_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6696,
+      "offset": 6695,
       "length": 19,
       "value": "\"user_demographics\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6744,
+      "offset": 6743,
       "length": 20,
       "value": "\"sleep_health_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 7807,
+      "offset": 7806,
       "length": 15,
       "value": "\"date_of_birth\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 7902,
+      "offset": 7901,
       "length": 16,
       "value": "\"marital_status\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 7807,
+      "offset": 7806,
       "length": 15,
       "value": "\"date_of_birth\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 7902,
+      "offset": 7901,
       "length": 16,
       "value": "\"marital_status\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9464,
+      "offset": 9463,
       "length": 22,
       "value": "\"sleep_start_datetime\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9515,
+      "offset": 9514,
       "length": 20,
       "value": "\"sleep_end_datetime\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9557,
+      "offset": 9556,
       "length": 12,
       "value": "\"sleep_date\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9602,
+      "offset": 9601,
       "length": 24,
       "value": "\"sleep_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9655,
+      "offset": 9654,
       "length": 21,
       "value": "\"time_in_bed_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9714,
+      "offset": 9713,
       "length": 30,
       "value": "\"light_sleep_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9780,
+      "offset": 9779,
       "length": 28,
       "value": "\"rem_sleep_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9845,
+      "offset": 9844,
       "length": 29,
       "value": "\"deep_sleep_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9910,
+      "offset": 9909,
       "length": 29,
       "value": "\"time_to_fall_asleep_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9979,
+      "offset": 9978,
       "length": 33,
       "value": "\"time_awake_during_sleep_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9464,
+      "offset": 9463,
       "length": 22,
       "value": "\"sleep_start_datetime\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9515,
+      "offset": 9514,
       "length": 20,
       "value": "\"sleep_end_datetime\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9557,
+      "offset": 9556,
       "length": 12,
       "value": "\"sleep_date\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9602,
+      "offset": 9601,
       "length": 24,
       "value": "\"sleep_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9655,
+      "offset": 9654,
       "length": 21,
       "value": "\"time_in_bed_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9714,
+      "offset": 9713,
       "length": 30,
       "value": "\"light_sleep_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9780,
+      "offset": 9779,
       "length": 28,
       "value": "\"rem_sleep_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9845,
+      "offset": 9844,
       "length": 29,
       "value": "\"deep_sleep_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9910,
+      "offset": 9909,
       "length": 29,
       "value": "\"time_to_fall_asleep_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9979,
+      "offset": 9978,
       "length": 33,
       "value": "\"time_awake_during_sleep_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11646,
+      "offset": 11645,
       "length": 12,
       "value": "\"hr_max_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11683,
+      "offset": 11682,
       "length": 16,
       "value": "\"hr_minimum_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11720,
+      "offset": 11719,
       "length": 12,
       "value": "\"hr_avg_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11757,
+      "offset": 11756,
       "length": 16,
       "value": "\"hr_resting_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11796,
+      "offset": 11795,
       "length": 14,
       "value": "\"hr_basal_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11840,
+      "offset": 11839,
       "length": 22,
       "value": "\"hr_granular_data_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11892,
+      "offset": 11891,
       "length": 22,
       "value": "\"hrv_avg_rmssd_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11943,
+      "offset": 11942,
       "length": 21,
       "value": "\"hrv_avg_sdnn_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11996,
+      "offset": 11995,
       "length": 24,
       "value": "\"hrv_sdnn_granular_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 12053,
+      "offset": 12052,
       "length": 25,
       "value": "\"hrv_rmssd_granular_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11646,
+      "offset": 11645,
       "length": 12,
       "value": "\"hr_max_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11683,
+      "offset": 11682,
       "length": 16,
       "value": "\"hr_minimum_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11720,
+      "offset": 11719,
       "length": 12,
       "value": "\"hr_avg_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11757,
+      "offset": 11756,
       "length": 16,
       "value": "\"hr_resting_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11796,
+      "offset": 11795,
       "length": 14,
       "value": "\"hr_basal_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11840,
+      "offset": 11839,
       "length": 22,
       "value": "\"hr_granular_data_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11892,
+      "offset": 11891,
       "length": 22,
       "value": "\"hrv_avg_rmssd_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11943,
+      "offset": 11942,
       "length": 21,
       "value": "\"hrv_avg_sdnn_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11996,
+      "offset": 11995,
       "length": 24,
       "value": "\"hrv_sdnn_granular_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 12053,
+      "offset": 12052,
       "length": 25,
       "value": "\"hrv_rmssd_granular_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 13316,
+      "offset": 13315,
       "length": 8,
       "value": "\"hr_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 13316,
+      "offset": 13315,
       "length": 8,
       "value": "\"hr_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 13547,
+      "offset": 13546,
       "length": 11,
       "value": "\"hrv_rmssd\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 13547,
+      "offset": 13546,
       "length": 11,
       "value": "\"hrv_rmssd\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 13777,
+      "offset": 13776,
       "length": 10,
       "value": "\"hrv_sdnn\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 13777,
+      "offset": 13776,
       "length": 10,
       "value": "\"hrv_sdnn\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14100,
+      "offset": 14099,
       "length": 32,
       "value": "\"sleep_quality_rating_1_5_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14171,
+      "offset": 14170,
       "length": 30,
       "value": "\"sleep_efficiency_1_100_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14230,
+      "offset": 14229,
       "length": 20,
       "value": "\"sleep_goal_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14287,
+      "offset": 14286,
       "length": 28,
       "value": "\"sleep_continuity_1_5_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14353,
+      "offset": 14352,
       "length": 29,
       "value": "\"sleep_continuity_1_5_rating\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14100,
+      "offset": 14099,
       "length": 32,
       "value": "\"sleep_quality_rating_1_5_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14171,
+      "offset": 14170,
       "length": 30,
       "value": "\"sleep_efficiency_1_100_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14230,
+      "offset": 14229,
       "length": 20,
       "value": "\"sleep_goal_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14287,
+      "offset": 14286,
       "length": 28,
       "value": "\"sleep_continuity_1_5_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14353,
+      "offset": 14352,
       "length": 29,
       "value": "\"sleep_continuity_1_5_rating\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15489,
+      "offset": 15488,
       "length": 29,
       "value": "\"temperature_minimum_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15552,
+      "offset": 15551,
       "length": 25,
       "value": "\"temperature_avg_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15611,
+      "offset": 15610,
       "length": 25,
       "value": "\"temperature_max_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15679,
+      "offset": 15678,
       "length": 35,
       "value": "\"temperature_granular_data_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15750,
+      "offset": 15749,
       "length": 27,
       "value": "\"temperature_delta_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15489,
+      "offset": 15488,
       "length": 29,
       "value": "\"temperature_minimum_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15552,
+      "offset": 15551,
       "length": 25,
       "value": "\"temperature_avg_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15611,
+      "offset": 15610,
       "length": 25,
       "value": "\"temperature_max_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15679,
+      "offset": 15678,
       "length": 35,
       "value": "\"temperature_granular_data_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15750,
+      "offset": 15749,
       "length": 27,
       "value": "\"temperature_delta_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 16757,
+      "offset": 16756,
       "length": 21,
       "value": "\"temperature_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 16806,
+      "offset": 16805,
       "length": 18,
       "value": "\"measurement_type\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 16757,
+      "offset": 16756,
       "length": 21,
       "value": "\"temperature_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 16806,
+      "offset": 16805,
       "length": 18,
       "value": "\"measurement_type\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 16997,
+      "offset": 16996,
       "length": 11,
       "value": "\"bundle_id\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 17031,
+      "offset": 17030,
       "length": 13,
       "value": "\"source_name\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 16997,
+      "offset": 16996,
       "length": 11,
       "value": "\"bundle_id\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/SleepProvider\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 17031,
+      "offset": 17030,
       "length": 13,
       "value": "\"source_name\""
     },
@@ -100471,7 +100455,7 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookSleepTransmission\/Constants\/SleepConstantsTranmission.swift",
       "kind": "StringLiteral",
-      "offset": 214,
+      "offset": 219,
       "length": 18,
       "value": "\"com.apple.health\""
     },
