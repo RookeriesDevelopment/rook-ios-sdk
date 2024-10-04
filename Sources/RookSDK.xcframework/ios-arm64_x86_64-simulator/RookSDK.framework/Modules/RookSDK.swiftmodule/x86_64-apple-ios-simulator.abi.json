@@ -96410,8 +96410,8 @@
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
       "kind": "StringLiteral",
       "offset": 1458,
-      "length": 38,
-      "value": "\"daaabbcb-5227-4eba-a2f4-f10a36ab24ef\""
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookActivityEventTransmission\/Entities\/Granular\/RookActivityLevelGranularTransmission.swift",
