@@ -14360,6 +14360,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "HealthKit",
         "printedName": "HealthKit",
         "declKind": "Import",
@@ -19438,6 +19448,16 @@
             "usr": "s:SE",
             "mangledName": "$sSE"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -24878,6 +24898,16 @@
         "moduleName": "RookSDK",
         "declAttributes": [
           "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -48351,6 +48381,134 @@
           },
           {
             "kind": "Function",
+            "name": "checkPermissionStatus",
+            "printedName": "checkPermissionStatus(type:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "RookSDK.HealthDataType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HealthDataType",
+                    "printedName": "RookSDK.HealthDataType",
+                    "usr": "s:7RookSDK14HealthDataTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookSDK.PermissionStatus) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PermissionStatus",
+                    "printedName": "RookSDK.PermissionStatus",
+                    "usr": "s:7RookSDK16PermissionStatusO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A25ConnectPermissionsManagerC21checkPermissionStatus4type10completionyAA14HealthDataTypeOSg_yAA0gH0OctF",
+            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC21checkPermissionStatus4type10completionyAA14HealthDataTypeOSg_yAA0gH0OctF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestPermissions",
+            "printedName": "requestPermissions(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[RookSDK.HealthDataType]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookSDK.HealthDataType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HealthDataType",
+                        "printedName": "RookSDK.HealthDataType",
+                        "usr": "s:7RookSDK14HealthDataTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A25ConnectPermissionsManagerC07requestD0_10completionySayAA14HealthDataTypeOGSg_ys6ResultOySbs5Error_pGctF",
+            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC07requestD0_10completionySayAA14HealthDataTypeOGSg_ys6ResultOySbs5Error_pGctF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "requestAllPermissions",
             "printedName": "requestAllPermissions()",
             "children": [
@@ -48467,6 +48625,89 @@
             ],
             "isFromExtension": true,
             "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestPermissions",
+            "printedName": "requestPermissions(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[RookSDK.HealthDataType]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookSDK.HealthDataType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HealthDataType",
+                        "printedName": "RookSDK.HealthDataType",
+                        "usr": "s:7RookSDK14HealthDataTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A25ConnectPermissionsManagerC07requestD0ySbSayAA14HealthDataTypeOGSgYaKF",
+            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC07requestD0ySbSayAA14HealthDataTypeOGSgYaKF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkPermissionStatus",
+            "printedName": "checkPermissionStatus(type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PermissionStatus",
+                "printedName": "RookSDK.PermissionStatus",
+                "usr": "s:7RookSDK16PermissionStatusO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "RookSDK.HealthDataType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HealthDataType",
+                    "printedName": "RookSDK.HealthDataType",
+                    "usr": "s:7RookSDK14HealthDataTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A25ConnectPermissionsManagerC21checkPermissionStatus4typeAA0gH0OAA14HealthDataTypeOSg_tYaF",
+            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC21checkPermissionStatus4typeAA0gH0OAA14HealthDataTypeOSg_tYaF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -48783,6 +49024,129 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkPermissionStatus",
+            "printedName": "checkPermissionStatus(type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookConnectPermissionsManager(im)checkPermissionStatusWithType:completionHandler:",
+            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC21checkPermissionStatus4typeS2SSg_tYaF",
+            "moduleName": "RookSDK",
+            "objc_name": "checkPermissionStatusWithType:completionHandler:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestPermissions",
+            "printedName": "requestPermissions(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookConnectPermissionsManager(im)requestPermissions:completion:",
+            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC07requestD0_10completionySaySSGSg_ySb_s5Error_pSgtctF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -48906,6 +49270,252 @@
         "moduleName": "RookSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PermissionStatus",
+        "printedName": "PermissionStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "permissionNotRequested",
+            "printedName": "permissionNotRequested",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookSDK.PermissionStatus.Type) -> RookSDK.PermissionStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PermissionStatus",
+                    "printedName": "RookSDK.PermissionStatus",
+                    "usr": "s:7RookSDK16PermissionStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookSDK.PermissionStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PermissionStatus",
+                        "printedName": "RookSDK.PermissionStatus",
+                        "usr": "s:7RookSDK16PermissionStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7RookSDK16PermissionStatusO22permissionNotRequestedyA2CmF",
+            "mangledName": "$s7RookSDK16PermissionStatusO22permissionNotRequestedyA2CmF",
+            "moduleName": "RookSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "permissionIndeterminate",
+            "printedName": "permissionIndeterminate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookSDK.PermissionStatus.Type) -> RookSDK.PermissionStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PermissionStatus",
+                    "printedName": "RookSDK.PermissionStatus",
+                    "usr": "s:7RookSDK16PermissionStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookSDK.PermissionStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PermissionStatus",
+                        "printedName": "RookSDK.PermissionStatus",
+                        "usr": "s:7RookSDK16PermissionStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7RookSDK16PermissionStatusO23permissionIndeterminateyA2CmF",
+            "mangledName": "$s7RookSDK16PermissionStatusO23permissionIndeterminateyA2CmF",
+            "moduleName": "RookSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "permissionGranted",
+            "printedName": "permissionGranted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookSDK.PermissionStatus.Type) -> RookSDK.PermissionStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PermissionStatus",
+                    "printedName": "RookSDK.PermissionStatus",
+                    "usr": "s:7RookSDK16PermissionStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookSDK.PermissionStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PermissionStatus",
+                        "printedName": "RookSDK.PermissionStatus",
+                        "usr": "s:7RookSDK16PermissionStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7RookSDK16PermissionStatusO17permissionGrantedyA2CmF",
+            "mangledName": "$s7RookSDK16PermissionStatusO17permissionGrantedyA2CmF",
+            "moduleName": "RookSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "RookSDK.PermissionStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PermissionStatus",
+                    "printedName": "RookSDK.PermissionStatus",
+                    "usr": "s:7RookSDK16PermissionStatusO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7RookSDK16PermissionStatusO8rawValueACSgSS_tcfc",
+            "mangledName": "$s7RookSDK16PermissionStatusO8rawValueACSgSS_tcfc",
+            "moduleName": "RookSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK16PermissionStatusO8rawValueSSvp",
+            "mangledName": "$s7RookSDK16PermissionStatusO8rawValueSSvp",
+            "moduleName": "RookSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK16PermissionStatusO8rawValueSSvg",
+                "mangledName": "$s7RookSDK16PermissionStatusO8rawValueSSvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7RookSDK16PermissionStatusO",
+        "mangledName": "$s7RookSDK16PermissionStatusO",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
         ]
       },
       {
@@ -79740,6 +80350,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookSpeedGranularItemTransmission",
         "printedName": "RookSpeedGranularItemTransmission",
@@ -93369,6 +93989,48 @@
       "value": "\"cholesterol_intake_mg_number\""
     },
     {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Permissions\/PermissionsStatus\/Entities\/PermissionStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 196,
+      "length": 26,
+      "value": "\"PERMISSION_NOT_REQUESTED\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Permissions\/PermissionsStatus\/Entities\/PermissionStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 256,
+      "length": 26,
+      "value": "\"PERMISSION_INDETERMINATE\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Permissions\/PermissionsStatus\/Entities\/PermissionStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 310,
+      "length": 20,
+      "value": "\"PERMISSION_GRANTED\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Permissions\/PermissionsStatus\/Entities\/PermissionStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 196,
+      "length": 26,
+      "value": "\"PERMISSION_NOT_REQUESTED\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Permissions\/PermissionsStatus\/Entities\/PermissionStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 256,
+      "length": 26,
+      "value": "\"PERMISSION_INDETERMINATE\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Permissions\/PermissionsStatus\/Entities\/PermissionStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 310,
+      "length": 20,
+      "value": "\"PERMISSION_GRANTED\""
+    },
+    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/PhysicalNetworking\/Entities\/Granular\/RookSwimmingDistanceGranularNetworking.swift",
       "kind": "StringLiteral",
       "offset": 697,
@@ -96397,7 +97059,7 @@
       "kind": "StringLiteral",
       "offset": 1255,
       "length": 7,
-      "value": "\"1.6.2\""
+      "value": "\"1.6.3\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
@@ -96410,8 +97072,8 @@
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
       "kind": "StringLiteral",
       "offset": 1458,
-      "length": 2,
-      "value": "\"\""
+      "length": 38,
+      "value": "\"daaabbcb-5227-4eba-a2f4-f10a36ab24ef\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookActivityEventTransmission\/Entities\/Granular\/RookActivityLevelGranularTransmission.swift",
