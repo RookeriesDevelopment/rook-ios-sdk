@@ -370,6 +370,8 @@ SWIFT_CLASS("_TtC7RookSDK29RookConnectPermissionsManager")
 - (void)requestUserInfoPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)requestPhysicalPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)requestBodyPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)checkPermissionStatusWithType:(NSString * _Nullable)type completionHandler:(void (^ _Nonnull)(NSString * _Nonnull))completionHandler;
+- (void)requestPermissions:(NSArray<NSString *> * _Nullable)permissions completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
 
@@ -817,6 +819,8 @@ SWIFT_CLASS("_TtC7RookSDK29RookConnectPermissionsManager")
 - (void)requestUserInfoPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)requestPhysicalPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)requestBodyPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)checkPermissionStatusWithType:(NSString * _Nullable)type completionHandler:(void (^ _Nonnull)(NSString * _Nonnull))completionHandler;
+- (void)requestPermissions:(NSArray<NSString *> * _Nullable)permissions completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
 

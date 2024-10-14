@@ -573,6 +573,12 @@ extension RookSDK.RookConnectPermissionsManager {
   #if compiler(>=5.3) && $AsyncAwait
   final public func requestBodyPermissions() async throws -> Swift.Bool
   #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func requestPermissions(_ permissions: [RookSDK.HealthDataType]?) async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func checkPermissionStatus(type: RookSDK.HealthDataType?) async -> RookSDK.PermissionStatus
+  #endif
 }
 public struct SummarySyncResponse {
   public var sleepResponse: Swift.Result<Swift.Bool, Swift.Error>?
@@ -973,6 +979,10 @@ extension RookSDK.RookConnectPermissionsManager {
   @objc final public func requestUserInfoPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func requestPhysicalPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func requestBodyPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  @objc final public func checkPermissionStatus(type: Swift.String?) async -> Swift.String
+  #endif
+  @objc final public func requestPermissions(_ permissions: [Swift.String]?, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
 }
 public struct RookMetaDataEventTransmission : Swift.Codable {
   public var datetime: Foundation.Date
@@ -1040,7 +1050,19 @@ extension RookSDK.RookSummaryManager {
   final public func requestUserInfoPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func requestPhysicalPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func requestBodyPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func checkPermissionStatus(type: RookSDK.HealthDataType?, completion: @escaping (RookSDK.PermissionStatus) -> Swift.Void)
+  final public func requestPermissions(_ permissions: [RookSDK.HealthDataType]?, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
+}
+public enum PermissionStatus : Swift.String {
+  case permissionNotRequested
+  case permissionIndeterminate
+  case permissionGranted
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 public struct UserTimeZone : Swift.Encodable {
   public let timeZone: Swift.String
@@ -1994,6 +2016,9 @@ extension RookSDK.EventNames : Swift.RawRepresentable {}
 extension RookSDK.TimeZoneErrors : Swift.Equatable {}
 extension RookSDK.TimeZoneErrors : Swift.Hashable {}
 extension RookSDK.TimeZoneErrors : Swift.RawRepresentable {}
+extension RookSDK.PermissionStatus : Swift.Equatable {}
+extension RookSDK.PermissionStatus : Swift.Hashable {}
+extension RookSDK.PermissionStatus : Swift.RawRepresentable {}
 extension RookSDK.RookTransmissionEventType : Swift.Equatable {}
 extension RookSDK.RookTransmissionEventType : Swift.Hashable {}
 extension RookSDK.RookTransmissionEventType : Swift.RawRepresentable {}
