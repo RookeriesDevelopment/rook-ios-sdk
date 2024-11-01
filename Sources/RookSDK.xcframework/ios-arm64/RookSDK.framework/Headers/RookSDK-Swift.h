@@ -323,7 +323,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 
 
 
-
 @interface RookBackGroundSync (SWIFT_EXTENSION(RookSDK))
 - (void)enableBackGroundForEvents;
 - (BOOL)isBackGroundForEventsEnable SWIFT_WARN_UNUSED_RESULT;
