@@ -87481,14 +87481,14 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Configuration\/RookConnectConfigurationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1610,
+      "offset": 1851,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Configuration\/RookConnectConfigurationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1659,
+      "offset": 1900,
       "length": 5,
       "value": "false"
     },
@@ -97059,7 +97059,7 @@
       "kind": "StringLiteral",
       "offset": 1255,
       "length": 7,
-      "value": "\"1.6.4\""
+      "value": "\"1.6.5\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
