@@ -170,14 +170,8 @@ public struct VoltageECGMeasurement {
   final public func clearUser(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func removeUserFromRook(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncUserTimeZone(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  @available(*, deprecated, renamed: "enableSync")
-  final public func enableYesterdaySync()
   final public func enableSync()
-  @available(*, deprecated, renamed: "disableSync")
-  final public func disableYesterdaySync()
   final public func disableSync()
-  @available(*, deprecated, renamed: "isSyncEnable")
-  final public func isYesterdaySyncEnable() -> Swift.Bool
   final public func isSyncEnable() -> Swift.Bool
   final public func setExcludeManualData(_ excludeManual: Swift.Bool)
   @objc final public func setConsoleLogAvailable(_ value: Swift.Bool)
@@ -259,6 +253,25 @@ public struct RookTorqueGranularItemTransmission : Swift.Codable {
   public init(datetime: Foundation.Date, intervalDurationSeconds: Swift.Int, torqueNewtonMeters: Swift.Int)
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
+}
+public enum RookTransmissionError : Swift.String, Swift.Error {
+  case emptyUserId
+  case rookTransmissionIsNotAvailable
+  case invalidEventData
+  case registerNotFound
+  case datetimeNil
+  case clientUUIDEmpty
+  case emptyData
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension RookSDK.RookTransmissionError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
 }
 public typealias Parameters = [Swift.String : Any]
 public protocol ParameterEncoder {
@@ -1594,25 +1607,22 @@ public enum RookEventType {
     get
   }
 }
+public enum BackgroundSummaryType {
+  case sleep
+  case body
+  case physical
+  public static func == (a: RookSDK.BackgroundSummaryType, b: RookSDK.BackgroundSummaryType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct RookPositionGranularItem : Swift.Encodable {
   public let datetime: Foundation.Date
   public let intervalDurationSeconds: Swift.Int
   public let latitude: Swift.Double
   public let longitude: Swift.Double
   public func encode(to encoder: Swift.Encoder) throws
-}
-@_inheritsConvenienceInitializers @objc public class RookPermissionExtraction : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  public func requestAllPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  public func requestSleepPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  public func requestUserInfoPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  public func requestPhysicalPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  public func requestBodyPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  @objc public func requestAllPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc public func requestSleepPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc public func requestPhysicalPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc public func requestBodyPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class DataSourceManagerObjc : ObjectiveC.NSObject {
   @objc override dynamic public init()
@@ -1671,6 +1681,7 @@ public enum AnalyticPlatform {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RookBackGroundSync : ObjectiveC.NSObject {
   @objc public static let shared: RookSDK.RookBackGroundSync
   @objc public var handleSummariesUploaded: (() -> Swift.Void)?
+  public var handleSummariesBackProcess: ((RookSDK.BackgroundSummaryType) -> Swift.Void)?
   @objc public var handleActivityEventsUploaded: (() -> Swift.Void)?
   public var handleEventsUploaded: ((RookSDK.RookEventType) -> Swift.Void)?
   @objc public func setBackListeners()
@@ -1865,25 +1876,6 @@ public enum RookEnvironment {
     get
   }
 }
-public enum RookTransmissionError : Swift.String, Swift.Error {
-  case emptyUserId
-  case rookTransmissionIsNotAvailable
-  case invalidEventData
-  case registerNotFound
-  case datetimeNil
-  case clientUUIDEmpty
-  case emptyData
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-extension RookSDK.RookTransmissionError : Foundation.LocalizedError {
-  public var errorDescription: Swift.String? {
-    get
-  }
-}
 public enum PendingDatesToUploadTypes : Swift.String {
   case sleepSummaryDates
   case physicalSummaryDates
@@ -2004,6 +1996,9 @@ extension RookSDK.RookContextType : Swift.Hashable {}
 extension RookSDK.NetworkResponse : Swift.Equatable {}
 extension RookSDK.NetworkResponse : Swift.Hashable {}
 extension RookSDK.NetworkResponse : Swift.RawRepresentable {}
+extension RookSDK.RookTransmissionError : Swift.Equatable {}
+extension RookSDK.RookTransmissionError : Swift.Hashable {}
+extension RookSDK.RookTransmissionError : Swift.RawRepresentable {}
 extension RookSDK.DataSourceRevoke : Swift.Equatable {}
 extension RookSDK.DataSourceRevoke : Swift.Hashable {}
 extension RookSDK.DataSourceRevoke : Swift.RawRepresentable {}
@@ -2027,6 +2022,8 @@ extension RookSDK.HTTPMethod : Swift.Hashable {}
 extension RookSDK.HTTPMethod : Swift.RawRepresentable {}
 extension RookSDK.RookEventType : Swift.Equatable {}
 extension RookSDK.RookEventType : Swift.Hashable {}
+extension RookSDK.BackgroundSummaryType : Swift.Equatable {}
+extension RookSDK.BackgroundSummaryType : Swift.Hashable {}
 extension RookSDK.RookTransmissionSummaryType : Swift.Equatable {}
 extension RookSDK.RookTransmissionSummaryType : Swift.Hashable {}
 extension RookSDK.RookTransmissionSummaryType : Swift.RawRepresentable {}
@@ -2036,9 +2033,6 @@ extension RookSDK.RookConnectErrors : Swift.Equatable {}
 extension RookSDK.RookConnectErrors : Swift.Hashable {}
 extension RookSDK.RookEnvironment : Swift.Equatable {}
 extension RookSDK.RookEnvironment : Swift.Hashable {}
-extension RookSDK.RookTransmissionError : Swift.Equatable {}
-extension RookSDK.RookTransmissionError : Swift.Hashable {}
-extension RookSDK.RookTransmissionError : Swift.RawRepresentable {}
 extension RookSDK.PendingDatesToUploadTypes : Swift.Equatable {}
 extension RookSDK.PendingDatesToUploadTypes : Swift.Hashable {}
 extension RookSDK.PendingDatesToUploadTypes : Swift.RawRepresentable {}
