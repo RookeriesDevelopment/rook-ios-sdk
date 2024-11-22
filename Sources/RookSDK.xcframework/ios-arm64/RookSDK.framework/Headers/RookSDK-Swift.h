@@ -304,6 +304,7 @@ SWIFT_CLASS("_TtC7RookSDK11LogInfoObjc")
 @end
 
 
+/// The RookBackGroundSync class provides an interface for enable back ground updates for events and summaries.
 SWIFT_CLASS("_TtC7RookSDK18RookBackGroundSync")
 @interface RookBackGroundSync : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGroundSync * _Nonnull shared;)
@@ -312,9 +313,24 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 @property (nonatomic, copy) void (^ _Nullable handleActivityEventsUploaded)(void);
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// This method add the configuration to enable background sync, it has to be added in didFinishLaunchingWithOptions app delegate.
 - (void)setBackListeners;
+/// This method enables the background sync for summaries
+/// Use this method to upload health data while your app is in the background
+/// <h1>Notes:</h1>
+/// <ul>
+///   <li>
+///     Before call this method, a user id has to be stored and request all the permissions
+///   </li>
+/// </ul>
 - (void)enableBackGroundForSummaries;
+/// This method disables the background sync for summaries
+/// Use this method to disable the upload health data while your app is in the background
 - (void)disableBackGroundForSummaries;
+/// This method return if the background sync is enable for summaries
+///
+/// returns:
+/// A Bool value indicating if the background sync is enable
 - (BOOL)isBackGroundForSummariesEnable SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -323,12 +339,26 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 
 
 
+
 @interface RookBackGroundSync (SWIFT_EXTENSION(RookSDK))
+/// This method enables the background sync for events
+/// Use this method to upload health data while your app is in the background
+/// <h1>Notes:</h1>
+/// <ul>
+///   <li>
+///     Before call this method, a user id has to be stored and request all the permissions
+///   </li>
+/// </ul>
 - (void)enableBackGroundForEvents;
+/// This method return if the background sync is enable for events
+///
+/// returns:
+/// A Bool value indicating if the background sync is enable
 - (BOOL)isBackGroundForEventsEnable SWIFT_WARN_UNUSED_RESULT;
+/// This method disables the background sync for events
+/// Use this method to disable the upload health data while your app is in the background
 - (void)disableBackGroundForEvents;
 @end
-
 
 
 
@@ -357,10 +387,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookConnectC
 @end
 
 
+/// Public API RookConnectPermissionsManager class provides an interface for request permissions to the user’s health data.
+/// Use a RookConnectPermissionsManager object to request permission to share or read HealthKit data
 SWIFT_CLASS("_TtC7RookSDK29RookConnectPermissionsManager")
 @interface RookConnectPermissionsManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface RookConnectPermissionsManager (SWIFT_EXTENSION(RookSDK))
@@ -374,10 +407,27 @@ SWIFT_CLASS("_TtC7RookSDK29RookConnectPermissionsManager")
 @end
 
 
-
+/// The RookEventsManager class provides an interface for extract and transmit events
 SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 @interface RookEventsManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// This method upload all the missing events that has not been uploaded within the past 30 days..
+/// <h1>Notes:</h1>
+/// <ul>
+///   <li>
+///     A user id has to be added before use this method
+///   </li>
+/// </ul>
+/// \param completion A block that is called when the request finishes. This block takes the following parameters in the result
+/// <ul>
+///   <li>
+///     Bool: A Boolean value indicating if the request was successful.
+///   </li>
+///   <li>
+///     Error: An error indicating that the request fails
+///   </li>
+/// </ul>
+///
 - (void)syncEventsWithCompletion:(void (^ _Nonnull)(void))completion;
 - (void)syncYesterdayEventsWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_DEPRECATED_MSG("", "syncEventsWithCompletion:");
 @end
@@ -400,19 +450,27 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 
 
 
-SWIFT_CLASS("_TtC7RookSDK24RookPermissionExtraction")
-@interface RookPermissionExtraction : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)requestAllPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)requestSleepPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)requestPhysicalPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)requestBodyPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-@end
-
-
+/// The RookSummaryManager class provides an interface for extract and transmit summaries
 SWIFT_CLASS("_TtC7RookSDK18RookSummaryManager")
 @interface RookSummaryManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// This method upload all the missing summaries that has not been uploaded within the past 30 days..
+/// <h1>Notes:</h1>
+/// <ul>
+///   <li>
+///     A user id has to be added before use this method
+///   </li>
+/// </ul>
+/// \param completion A block that is called when the request finishes. This block takes the following parameters in the result
+/// <ul>
+///   <li>
+///     Bool: A Boolean value indicating if the request was successful.
+///   </li>
+///   <li>
+///     Error: An error indicating that the request fails
+///   </li>
+/// </ul>
+///
 - (void)syncSummariesWithCompletion:(void (^ _Nonnull)(void))completion;
 - (void)syncYesterdaySummariesWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_DEPRECATED_MSG("", "syncSummariesWithCompletion:");
 @end
@@ -427,6 +485,8 @@ SWIFT_CLASS("_TtC7RookSDK18RookSummaryManager")
 
 
 
+/// Public API UserManager class provides an interface for register, read or delete a user id.
+/// Use a UserManager object to read a user id, to update a user id, clear a user id, remove user id from rook or update user’s time zone
 SWIFT_CLASS("_TtC7RookSDK11UserManager")
 @interface UserManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
