@@ -407,6 +407,59 @@
           },
           {
             "kind": "Function",
+            "name": "getAuthorizedDataSources",
+            "printedName": "getAuthorizedDataSources(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<RookSDK.StatusDataSources, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<RookSDK.StatusDataSources, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StatusDataSources",
+                        "printedName": "RookSDK.StatusDataSources",
+                        "usr": "s:7RookSDK17StatusDataSourcesV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK18DataSourcesManagerC013getAuthorizedcD010completionyys6ResultOyAA06StatuscD0Vs5Error_pGc_tF",
+            "mangledName": "$s7RookSDK18DataSourcesManagerC013getAuthorizedcD010completionyys6ResultOyAA06StatuscD0Vs5Error_pGc_tF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getAvailableDataSources",
             "printedName": "getAvailableDataSources(redirectURL:)",
             "children": [
@@ -480,6 +533,29 @@
             "declKind": "Func",
             "usr": "s:7RookSDK18DataSourcesManagerC07presentC10SourceView11redirectURLSbSSSg_tYaKF",
             "mangledName": "$s7RookSDK18DataSourcesManagerC07presentC10SourceView11redirectURLSbSSSg_tYaKF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAuthorizedDataSources",
+            "printedName": "getAuthorizedDataSources()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StatusDataSources",
+                "printedName": "RookSDK.StatusDataSources",
+                "usr": "s:7RookSDK17StatusDataSourcesV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK18DataSourcesManagerC013getAuthorizedcD0AA06StatuscD0VyYaKF",
+            "mangledName": "$s7RookSDK18DataSourcesManagerC013getAuthorizedcD0AA06StatuscD0VyYaKF",
             "moduleName": "RookSDK",
             "declAttributes": [
               "Final",
@@ -6522,6 +6598,28 @@
               "Final",
               "AccessControl",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getEnvironment",
+            "printedName": "getEnvironment()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookEnvironment",
+                "printedName": "RookSDK.RookEnvironment",
+                "usr": "s:7RookSDK0A11EnvironmentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A27ConnectConfigurationManagerC14getEnvironmentAA0aG0OyF",
+            "mangledName": "$s7RookSDK0A27ConnectConfigurationManagerC14getEnvironmentAA0aG0OyF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -16632,6 +16730,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookTemperatureGranularTransmissionDTO",
         "printedName": "RookTemperatureGranularTransmissionDTO",
@@ -18834,14 +18942,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7RookSDK0A8CaloriesV06activeC0Sivp",
-            "mangledName": "$s7RookSDK0A8CaloriesV06activeC0Sivp",
+            "usr": "s:7RookSDK0A8CaloriesV06activeC0SiSgvp",
+            "mangledName": "$s7RookSDK0A8CaloriesV06activeC0SiSgvp",
             "moduleName": "RookSDK",
             "declAttributes": [
               "HasStorage",
@@ -18857,14 +18973,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7RookSDK0A8CaloriesV06activeC0Sivg",
-                "mangledName": "$s7RookSDK0A8CaloriesV06activeC0Sivg",
+                "usr": "s:7RookSDK0A8CaloriesV06activeC0SiSgvg",
+                "mangledName": "$s7RookSDK0A8CaloriesV06activeC0SiSgvg",
                 "moduleName": "RookSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -18878,14 +19002,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7RookSDK0A8CaloriesV05basalC0Sivp",
-            "mangledName": "$s7RookSDK0A8CaloriesV05basalC0Sivp",
+            "usr": "s:7RookSDK0A8CaloriesV05basalC0SiSgvp",
+            "mangledName": "$s7RookSDK0A8CaloriesV05basalC0SiSgvp",
             "moduleName": "RookSDK",
             "declAttributes": [
               "HasStorage",
@@ -18901,14 +19033,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7RookSDK0A8CaloriesV05basalC0Sivg",
-                "mangledName": "$s7RookSDK0A8CaloriesV05basalC0Sivg",
+                "usr": "s:7RookSDK0A8CaloriesV05basalC0SiSgvg",
+                "mangledName": "$s7RookSDK0A8CaloriesV05basalC0SiSgvg",
                 "moduleName": "RookSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -18922,14 +19062,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7RookSDK0A8CaloriesV05totalC0Sivp",
-            "mangledName": "$s7RookSDK0A8CaloriesV05totalC0Sivp",
+            "usr": "s:7RookSDK0A8CaloriesV05totalC0SiSgvp",
+            "mangledName": "$s7RookSDK0A8CaloriesV05totalC0SiSgvp",
             "moduleName": "RookSDK",
             "declAttributes": [
               "HasStorage",
@@ -18945,14 +19093,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7RookSDK0A8CaloriesV05totalC0Sivg",
-                "mangledName": "$s7RookSDK0A8CaloriesV05totalC0Sivg",
+                "usr": "s:7RookSDK0A8CaloriesV05totalC0SiSgvg",
+                "mangledName": "$s7RookSDK0A8CaloriesV05totalC0SiSgvg",
                 "moduleName": "RookSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -41119,6 +41275,486 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "StatusDataSources",
+        "printedName": "StatusDataSources",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "oura",
+            "printedName": "oura",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK17StatusDataSourcesV4ouraSbvp",
+            "mangledName": "$s7RookSDK17StatusDataSourcesV4ouraSbvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK17StatusDataSourcesV4ouraSbvg",
+                "mangledName": "$s7RookSDK17StatusDataSourcesV4ouraSbvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "polar",
+            "printedName": "polar",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK17StatusDataSourcesV5polarSbvp",
+            "mangledName": "$s7RookSDK17StatusDataSourcesV5polarSbvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK17StatusDataSourcesV5polarSbvg",
+                "mangledName": "$s7RookSDK17StatusDataSourcesV5polarSbvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "whoop",
+            "printedName": "whoop",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK17StatusDataSourcesV5whoopSbvp",
+            "mangledName": "$s7RookSDK17StatusDataSourcesV5whoopSbvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK17StatusDataSourcesV5whoopSbvg",
+                "mangledName": "$s7RookSDK17StatusDataSourcesV5whoopSbvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fitbit",
+            "printedName": "fitbit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK17StatusDataSourcesV6fitbitSbvp",
+            "mangledName": "$s7RookSDK17StatusDataSourcesV6fitbitSbvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK17StatusDataSourcesV6fitbitSbvg",
+                "mangledName": "$s7RookSDK17StatusDataSourcesV6fitbitSbvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "garmin",
+            "printedName": "garmin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK17StatusDataSourcesV6garminSbvp",
+            "mangledName": "$s7RookSDK17StatusDataSourcesV6garminSbvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK17StatusDataSourcesV6garminSbvg",
+                "mangledName": "$s7RookSDK17StatusDataSourcesV6garminSbvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "withings",
+            "printedName": "withings",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK17StatusDataSourcesV8withingsSbvp",
+            "mangledName": "$s7RookSDK17StatusDataSourcesV8withingsSbvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK17StatusDataSourcesV8withingsSbvg",
+                "mangledName": "$s7RookSDK17StatusDataSourcesV8withingsSbvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "googleFit",
+            "printedName": "googleFit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK17StatusDataSourcesV9googleFitSbSgvp",
+            "mangledName": "$s7RookSDK17StatusDataSourcesV9googleFitSbSgvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK17StatusDataSourcesV9googleFitSbSgvg",
+                "mangledName": "$s7RookSDK17StatusDataSourcesV9googleFitSbSgvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "appleHealth",
+            "printedName": "appleHealth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK17StatusDataSourcesV11appleHealthSbvp",
+            "mangledName": "$s7RookSDK17StatusDataSourcesV11appleHealthSbvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK17StatusDataSourcesV11appleHealthSbvg",
+                "mangledName": "$s7RookSDK17StatusDataSourcesV11appleHealthSbvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "healthConnect",
+            "printedName": "healthConnect",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK17StatusDataSourcesV13healthConnectSbvp",
+            "mangledName": "$s7RookSDK17StatusDataSourcesV13healthConnectSbvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK17StatusDataSourcesV13healthConnectSbvg",
+                "mangledName": "$s7RookSDK17StatusDataSourcesV13healthConnectSbvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "android",
+            "printedName": "android",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK17StatusDataSourcesV7androidSbvp",
+            "mangledName": "$s7RookSDK17StatusDataSourcesV7androidSbvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK17StatusDataSourcesV7androidSbvg",
+                "mangledName": "$s7RookSDK17StatusDataSourcesV7androidSbvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7RookSDK17StatusDataSourcesV",
+        "mangledName": "$s7RookSDK17StatusDataSourcesV",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -50642,6 +51278,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookHrGranularTransmission",
         "printedName": "RookHrGranularTransmission",
@@ -56072,21 +56718,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Int?",
+                "printedName": "Swift.Float?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7RookSDK4BodyV14weightKgNumberSiSgvp",
-            "mangledName": "$s7RookSDK4BodyV14weightKgNumberSiSgvp",
+            "usr": "s:7RookSDK4BodyV14weightKgNumberSfSgvp",
+            "mangledName": "$s7RookSDK4BodyV14weightKgNumberSfSgvp",
             "moduleName": "RookSDK",
             "declAttributes": [
               "HasStorage",
@@ -56103,21 +56749,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Int?",
+                    "printedName": "Swift.Float?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7RookSDK4BodyV14weightKgNumberSiSgvg",
-                "mangledName": "$s7RookSDK4BodyV14weightKgNumberSiSgvg",
+                "usr": "s:7RookSDK4BodyV14weightKgNumberSfSgvg",
+                "mangledName": "$s7RookSDK4BodyV14weightKgNumberSfSgvg",
                 "moduleName": "RookSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -56132,21 +56778,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Int?",
+                "printedName": "Swift.Float?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7RookSDK4BodyV14heightCMNumberSiSgvp",
-            "mangledName": "$s7RookSDK4BodyV14heightCMNumberSiSgvp",
+            "usr": "s:7RookSDK4BodyV14heightCMNumberSfSgvp",
+            "mangledName": "$s7RookSDK4BodyV14heightCMNumberSfSgvp",
             "moduleName": "RookSDK",
             "declAttributes": [
               "HasStorage",
@@ -56163,21 +56809,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Int?",
+                    "printedName": "Swift.Float?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7RookSDK4BodyV14heightCMNumberSiSgvg",
-                "mangledName": "$s7RookSDK4BodyV14heightCMNumberSiSgvg",
+                "usr": "s:7RookSDK4BodyV14heightCMNumberSfSgvg",
+                "mangledName": "$s7RookSDK4BodyV14heightCMNumberSfSgvg",
                 "moduleName": "RookSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -56192,21 +56838,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Int?",
+                "printedName": "Swift.Float?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7RookSDK4BodyV9bmiNumberSiSgvp",
-            "mangledName": "$s7RookSDK4BodyV9bmiNumberSiSgvp",
+            "usr": "s:7RookSDK4BodyV9bmiNumberSfSgvp",
+            "mangledName": "$s7RookSDK4BodyV9bmiNumberSfSgvp",
             "moduleName": "RookSDK",
             "declAttributes": [
               "HasStorage",
@@ -56223,21 +56869,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Int?",
+                    "printedName": "Swift.Float?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7RookSDK4BodyV9bmiNumberSiSgvg",
-                "mangledName": "$s7RookSDK4BodyV9bmiNumberSiSgvg",
+                "usr": "s:7RookSDK4BodyV9bmiNumberSfSgvg",
+                "mangledName": "$s7RookSDK4BodyV9bmiNumberSfSgvg",
                 "moduleName": "RookSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -70719,6 +71365,89 @@
             "mangledName": "$s7RookSDK21DataSourceManagerObjcC07presentcD4View11redirectURL10completionySSSg_ySb_s5Error_pSgtctF",
             "moduleName": "RookSDK",
             "objc_name": "presentDataSourceViewWithRedirectURL:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAuthorizedDataSources",
+            "printedName": "getAuthorizedDataSources(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Any]?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([Swift.String : Any]?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[Swift.String : Any]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookSDK@objc(cs)DataSourceManagerObjc(im)getAuthorizedDataSourcesWithCompletion:",
+            "mangledName": "$s7RookSDK21DataSourceManagerObjcC013getAuthorizedC7Sources10completionyySDySSypGSg_s5Error_pSgtc_tF",
+            "moduleName": "RookSDK",
+            "objc_name": "getAuthorizedDataSourcesWithCompletion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -85559,728 +86288,728 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 2826,
+      "offset": 2832,
       "length": 19,
       "value": "\"body_health_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 2889,
+      "offset": 2895,
       "length": 31,
       "value": "\"waist_circumference_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 2957,
+      "offset": 2963,
       "length": 29,
       "value": "\"hip_circumference_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3025,
+      "offset": 3031,
       "length": 31,
       "value": "\"chest_circumference_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3100,
+      "offset": 3106,
       "length": 36,
       "value": "\"bone_composition_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3182,
+      "offset": 3188,
       "length": 38,
       "value": "\"muscle_composition_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3265,
+      "offset": 3271,
       "length": 37,
       "value": "\"water_composition_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3329,
+      "offset": 3335,
       "length": 18,
       "value": "\"weight_kg_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3374,
+      "offset": 3380,
       "length": 18,
       "value": "\"height_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3414,
+      "offset": 3420,
       "length": 12,
       "value": "\"bmi_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3475,
+      "offset": 3481,
       "length": 40,
       "value": "\"blood_glucose_day_avg_mg_per_dL_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3559,
+      "offset": 3565,
       "length": 39,
       "value": "\"blood_glucose_granular_data_mg_per_dL\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3655,
+      "offset": 3661,
       "length": 53,
       "value": "\"blood_pressure_day_avg_systolic_diastolic_bp_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3771,
+      "offset": 3777,
       "length": 59,
       "value": "\"blood_pressure_granular_data_systolic_diastolic_bp_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3877,
+      "offset": 3883,
       "length": 35,
       "value": "\"water_total_consumption_ml_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3960,
+      "offset": 3966,
       "length": 42,
       "value": "\"hydration_amount_granular_data_ml_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4057,
+      "offset": 4063,
       "length": 49,
       "value": "\"hydration_level_granular_data_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4132,
+      "offset": 4138,
       "length": 12,
       "value": "\"hr_max_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4169,
+      "offset": 4175,
       "length": 16,
       "value": "\"hr_minimum_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4206,
+      "offset": 4212,
       "length": 12,
       "value": "\"hr_avg_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4243,
+      "offset": 4249,
       "length": 16,
       "value": "\"hr_resting_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4289,
+      "offset": 4295,
       "length": 22,
       "value": "\"hr_granular_data_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4341,
+      "offset": 4347,
       "length": 22,
       "value": "\"hrv_avg_rmssd_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4392,
+      "offset": 4398,
       "length": 21,
       "value": "\"hrv_avg_sdnn_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4456,
+      "offset": 4462,
       "length": 31,
       "value": "\"hrv_sdnn_granular_data_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4526,
+      "offset": 4532,
       "length": 32,
       "value": "\"hrv_rmssd_granular_data_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4592,
+      "offset": 4598,
       "length": 20,
       "value": "\"mood_minimum_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4637,
+      "offset": 4643,
       "length": 16,
       "value": "\"mood_avg_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4687,
+      "offset": 4693,
       "length": 26,
       "value": "\"mood_granular_data_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4738,
+      "offset": 4744,
       "length": 16,
       "value": "\"mood_max_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4781,
+      "offset": 4787,
       "length": 18,
       "value": "\"mood_delta_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4833,
+      "offset": 4839,
       "length": 20,
       "value": "\"food_intake_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4886,
+      "offset": 4892,
       "length": 24,
       "value": "\"calories_intake_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4943,
+      "offset": 4949,
       "length": 25,
       "value": "\"protein_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4999,
+      "offset": 5005,
       "length": 23,
       "value": "\"sugar_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5051,
+      "offset": 5057,
       "length": 21,
       "value": "\"fat_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5106,
+      "offset": 5112,
       "length": 27,
       "value": "\"trans_fat_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5172,
+      "offset": 5178,
       "length": 31,
       "value": "\"carbohydrates_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5234,
+      "offset": 5240,
       "length": 23,
       "value": "\"fiber_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5290,
+      "offset": 5296,
       "length": 25,
       "value": "\"alcohol_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5348,
+      "offset": 5354,
       "length": 25,
       "value": "\"sodium_intake_mg_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5411,
+      "offset": 5417,
       "length": 30,
       "value": "\"cholesterol_intake_mg_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5482,
+      "offset": 5488,
       "length": 27,
       "value": "\"saturation_avg_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5554,
+      "offset": 5560,
       "length": 37,
       "value": "\"saturation_granular_data_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5628,
+      "offset": 5634,
       "length": 26,
       "value": "\"vo2max_ml_per_min_per_kg\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5693,
+      "offset": 5699,
       "length": 30,
       "value": "\"vo2_granular_data_ml_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5766,
+      "offset": 5772,
       "length": 29,
       "value": "\"temperature_minimum_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5829,
+      "offset": 5835,
       "length": 25,
       "value": "\"temperature_avg_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5888,
+      "offset": 5894,
       "length": 25,
       "value": "\"temperature_max_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5949,
+      "offset": 5955,
       "length": 27,
       "value": "\"temperature_delta_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 6019,
+      "offset": 6025,
       "length": 35,
       "value": "\"temperature_granular_data_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 6089,
+      "offset": 6095,
       "length": 21,
       "value": "\"non_structured_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 2826,
+      "offset": 2832,
       "length": 19,
       "value": "\"body_health_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 2889,
+      "offset": 2895,
       "length": 31,
       "value": "\"waist_circumference_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 2957,
+      "offset": 2963,
       "length": 29,
       "value": "\"hip_circumference_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3025,
+      "offset": 3031,
       "length": 31,
       "value": "\"chest_circumference_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3100,
+      "offset": 3106,
       "length": 36,
       "value": "\"bone_composition_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3182,
+      "offset": 3188,
       "length": 38,
       "value": "\"muscle_composition_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3265,
+      "offset": 3271,
       "length": 37,
       "value": "\"water_composition_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3329,
+      "offset": 3335,
       "length": 18,
       "value": "\"weight_kg_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3374,
+      "offset": 3380,
       "length": 18,
       "value": "\"height_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3414,
+      "offset": 3420,
       "length": 12,
       "value": "\"bmi_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3475,
+      "offset": 3481,
       "length": 40,
       "value": "\"blood_glucose_day_avg_mg_per_dL_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3559,
+      "offset": 3565,
       "length": 39,
       "value": "\"blood_glucose_granular_data_mg_per_dL\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3655,
+      "offset": 3661,
       "length": 53,
       "value": "\"blood_pressure_day_avg_systolic_diastolic_bp_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3771,
+      "offset": 3777,
       "length": 59,
       "value": "\"blood_pressure_granular_data_systolic_diastolic_bp_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3877,
+      "offset": 3883,
       "length": 35,
       "value": "\"water_total_consumption_ml_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 3960,
+      "offset": 3966,
       "length": 42,
       "value": "\"hydration_amount_granular_data_ml_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4057,
+      "offset": 4063,
       "length": 49,
       "value": "\"hydration_level_granular_data_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4132,
+      "offset": 4138,
       "length": 12,
       "value": "\"hr_max_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4169,
+      "offset": 4175,
       "length": 16,
       "value": "\"hr_minimum_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4206,
+      "offset": 4212,
       "length": 12,
       "value": "\"hr_avg_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4243,
+      "offset": 4249,
       "length": 16,
       "value": "\"hr_resting_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4289,
+      "offset": 4295,
       "length": 22,
       "value": "\"hr_granular_data_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4341,
+      "offset": 4347,
       "length": 22,
       "value": "\"hrv_avg_rmssd_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4392,
+      "offset": 4398,
       "length": 21,
       "value": "\"hrv_avg_sdnn_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4456,
+      "offset": 4462,
       "length": 31,
       "value": "\"hrv_sdnn_granular_data_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4526,
+      "offset": 4532,
       "length": 32,
       "value": "\"hrv_rmssd_granular_data_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4592,
+      "offset": 4598,
       "length": 20,
       "value": "\"mood_minimum_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4637,
+      "offset": 4643,
       "length": 16,
       "value": "\"mood_avg_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4687,
+      "offset": 4693,
       "length": 26,
       "value": "\"mood_granular_data_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4738,
+      "offset": 4744,
       "length": 16,
       "value": "\"mood_max_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4781,
+      "offset": 4787,
       "length": 18,
       "value": "\"mood_delta_scale\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4833,
+      "offset": 4839,
       "length": 20,
       "value": "\"food_intake_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4886,
+      "offset": 4892,
       "length": 24,
       "value": "\"calories_intake_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4943,
+      "offset": 4949,
       "length": 25,
       "value": "\"protein_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 4999,
+      "offset": 5005,
       "length": 23,
       "value": "\"sugar_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5051,
+      "offset": 5057,
       "length": 21,
       "value": "\"fat_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5106,
+      "offset": 5112,
       "length": 27,
       "value": "\"trans_fat_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5172,
+      "offset": 5178,
       "length": 31,
       "value": "\"carbohydrates_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5234,
+      "offset": 5240,
       "length": 23,
       "value": "\"fiber_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5290,
+      "offset": 5296,
       "length": 25,
       "value": "\"alcohol_intake_g_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5348,
+      "offset": 5354,
       "length": 25,
       "value": "\"sodium_intake_mg_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5411,
+      "offset": 5417,
       "length": 30,
       "value": "\"cholesterol_intake_mg_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5482,
+      "offset": 5488,
       "length": 27,
       "value": "\"saturation_avg_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5554,
+      "offset": 5560,
       "length": 37,
       "value": "\"saturation_granular_data_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5628,
+      "offset": 5634,
       "length": 26,
       "value": "\"vo2max_ml_per_min_per_kg\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5693,
+      "offset": 5699,
       "length": 30,
       "value": "\"vo2_granular_data_ml_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5766,
+      "offset": 5772,
       "length": 29,
       "value": "\"temperature_minimum_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5829,
+      "offset": 5835,
       "length": 25,
       "value": "\"temperature_avg_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5888,
+      "offset": 5894,
       "length": 25,
       "value": "\"temperature_max_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 5949,
+      "offset": 5955,
       "length": 27,
       "value": "\"temperature_delta_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 6019,
+      "offset": 6025,
       "length": 35,
       "value": "\"temperature_granular_data_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/BodyNetworking\/Entities\/V2\/RookBodySummaryTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 6089,
+      "offset": 6095,
       "length": 21,
       "value": "\"non_structured_data\""
     },
@@ -87274,14 +88003,21 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/Data\/RookHealthSampleProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 425,
+      "offset": 509,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/Data\/RookHealthSampleProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 924,
+      "offset": 1057,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/Data\/RookHealthSampleProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1563,
       "length": 4,
       "value": "true"
     },
@@ -89265,6 +90001,62 @@
       "offset": 557,
       "length": 18,
       "value": "\"measurement_type\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/DataSource\/SourceStatus\/Data\/Endpoint\/Output\/ConnectedDataSources.swift",
+      "kind": "StringLiteral",
+      "offset": 288,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/DataSource\/SourceStatus\/Data\/Endpoint\/Output\/ConnectedDataSources.swift",
+      "kind": "StringLiteral",
+      "offset": 288,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/DataSource\/SourceStatus\/Data\/Endpoint\/Output\/ConnectedDataSources.swift",
+      "kind": "StringLiteral",
+      "offset": 728,
+      "length": 12,
+      "value": "\"google_fit\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/DataSource\/SourceStatus\/Data\/Endpoint\/Output\/ConnectedDataSources.swift",
+      "kind": "StringLiteral",
+      "offset": 764,
+      "length": 14,
+      "value": "\"apple_health\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/DataSource\/SourceStatus\/Data\/Endpoint\/Output\/ConnectedDataSources.swift",
+      "kind": "StringLiteral",
+      "offset": 804,
+      "length": 16,
+      "value": "\"health_connect\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/DataSource\/SourceStatus\/Data\/Endpoint\/Output\/ConnectedDataSources.swift",
+      "kind": "StringLiteral",
+      "offset": 728,
+      "length": 12,
+      "value": "\"google_fit\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/DataSource\/SourceStatus\/Data\/Endpoint\/Output\/ConnectedDataSources.swift",
+      "kind": "StringLiteral",
+      "offset": 764,
+      "length": 14,
+      "value": "\"apple_health\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/DataSource\/SourceStatus\/Data\/Endpoint\/Output\/ConnectedDataSources.swift",
+      "kind": "StringLiteral",
+      "offset": 804,
+      "length": 16,
+      "value": "\"health_connect\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/Entities\/DTO\/RookVo2GranularDTO.swift",
@@ -93112,7 +93904,14 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/HeightProvider\/RookHeightProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 618,
+      "offset": 675,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/HeightProvider\/RookHeightProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1583,
       "length": 2,
       "value": "10"
     },
@@ -93938,7 +94737,14 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/WeightProvider\/RookWeightProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 617,
+      "offset": 698,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/WeightProvider\/RookWeightProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1586,
       "length": 2,
       "value": "10"
     },
@@ -94057,7 +94863,7 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/PredicateBuilder\/RookPredicateBuilder.swift",
       "kind": "BooleanLiteral",
-      "offset": 1114,
+      "offset": 1250,
       "length": 4,
       "value": "true"
     },
@@ -94778,126 +95584,126 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11801,
+      "offset": 11807,
       "length": 31,
       "value": "\"waist_circumference_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11869,
+      "offset": 11875,
       "length": 29,
       "value": "\"hip_circumference_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11937,
+      "offset": 11943,
       "length": 31,
       "value": "\"chest_circumference_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 12012,
+      "offset": 12018,
       "length": 36,
       "value": "\"bone_composition_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 12094,
+      "offset": 12100,
       "length": 38,
       "value": "\"muscle_composition_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 12171,
+      "offset": 12177,
       "length": 37,
       "value": "\"water_composition_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 12235,
+      "offset": 12241,
       "length": 18,
       "value": "\"weight_kg_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 12280,
+      "offset": 12286,
       "length": 18,
       "value": "\"height_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 12320,
+      "offset": 12326,
       "length": 12,
       "value": "\"bmi_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11801,
+      "offset": 11807,
       "length": 31,
       "value": "\"waist_circumference_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11869,
+      "offset": 11875,
       "length": 29,
       "value": "\"hip_circumference_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 11937,
+      "offset": 11943,
       "length": 31,
       "value": "\"chest_circumference_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 12012,
+      "offset": 12018,
       "length": 36,
       "value": "\"bone_composition_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 12094,
+      "offset": 12100,
       "length": 38,
       "value": "\"muscle_composition_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 12171,
+      "offset": 12177,
       "length": 37,
       "value": "\"water_composition_percentage_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 12235,
+      "offset": 12241,
       "length": 18,
       "value": "\"weight_kg_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 12280,
+      "offset": 12286,
       "length": 18,
       "value": "\"height_cm_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/SummariesProvider\/BodyProvider\/Entities\/RookBodyData.swift",
       "kind": "StringLiteral",
-      "offset": 12320,
+      "offset": 12326,
       "length": 12,
       "value": "\"bmi_number\""
     },
@@ -96591,7 +97397,7 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/RookAccumulativeProvider\/RookAccumulativeProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 2203,
+      "offset": 2216,
       "length": 4,
       "value": "true"
     },
@@ -96689,14 +97495,28 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/Data\/RookSampleProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 625,
+      "offset": 786,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/Data\/RookSampleProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 1658,
+      "offset": 1577,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/Data\/RookSampleProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2608,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/Data\/RookSampleProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3159,
       "length": 4,
       "value": "true"
     },
@@ -96936,7 +97756,7 @@
       "kind": "StringLiteral",
       "offset": 1255,
       "length": 7,
-      "value": "\"1.6.6\""
+      "value": "\"1.6.7\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
@@ -100126,7 +100946,7 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/CaloriesProvider\/RookCaloriesProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 318,
+      "offset": 543,
       "length": 1,
       "value": "2"
     },
