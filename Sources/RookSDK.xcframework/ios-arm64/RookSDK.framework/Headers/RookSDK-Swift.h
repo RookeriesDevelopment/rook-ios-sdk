@@ -279,6 +279,7 @@ SWIFT_CLASS("_TtC7RookSDK21DataSourceManagerObjc")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)getAvailableDataSourcesWithRedirectURL:(NSString * _Nullable)redirectURL completion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)presentDataSourceViewWithRedirectURL:(NSString * _Nullable)redirectURL completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)getAuthorizedDataSourcesWithCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
 @end
 
 

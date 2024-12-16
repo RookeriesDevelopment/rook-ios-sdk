@@ -23,11 +23,15 @@ final public class DataSourcesManager {
   public init()
   final public func getAvailableDataSources(redirectURL: Swift.String?, completion: @escaping (Swift.Result<[RookSDK.RookDataSource], Swift.Error>) -> Swift.Void)
   final public func presentDataSourceView(redirectURL: Swift.String?, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func getAuthorizedDataSources(completion: @escaping (Swift.Result<RookSDK.StatusDataSources, Swift.Error>) -> Swift.Void)
   #if compiler(>=5.3) && $AsyncAwait
   final public func getAvailableDataSources(redirectURL: Swift.String?) async throws -> [RookSDK.RookDataSource]
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   final public func presentDataSourceView(redirectURL: Swift.String?) async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func getAuthorizedDataSources() async throws -> RookSDK.StatusDataSources
   #endif
   @objc deinit
 }
@@ -163,6 +167,7 @@ public struct VoltageECGMeasurement {
   public static let shared: RookSDK.RookConnectConfigurationManager
   final public func setConfiguration(clientUUID: Swift.String, secretKey: Swift.String, enableBackgroundSync: Swift.Bool, enableEventsBackgroundSync: Swift.Bool)
   final public func setEnvironment(_ environment: RookSDK.RookEnvironment)
+  final public func getEnvironment() -> RookSDK.RookEnvironment
   final public func initRook()
   final public func initRook(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func updateUserId(_ id: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
@@ -460,9 +465,9 @@ public struct RookGranularStepsTransmission : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct RookCalories {
-  public let activeCalories: Swift.Int
-  public let basalCalories: Swift.Int
-  public let totalCalories: Swift.Int
+  public let activeCalories: Swift.Int?
+  public let basalCalories: Swift.Int?
+  public let totalCalories: Swift.Int?
 }
 public enum DataSourceRevoke : Swift.String, Swift.CaseIterable {
   case Garmin
@@ -944,6 +949,18 @@ public struct RookOxigenationDataEventTransmission : Swift.Codable {
 public struct URLParameterEncoder : RookSDK.ParameterEncoder {
   public static func encode(urlRequest: inout Foundation.URLRequest, with parameters: RookSDK.Parameters) throws
 }
+public struct StatusDataSources {
+  public let oura: Swift.Bool
+  public let polar: Swift.Bool
+  public let whoop: Swift.Bool
+  public let fitbit: Swift.Bool
+  public let garmin: Swift.Bool
+  public let withings: Swift.Bool
+  public let googleFit: Swift.Bool?
+  public let appleHealth: Swift.Bool
+  public let healthConnect: Swift.Bool
+  public let android: Swift.Bool
+}
 public struct RookPositionDataTransmission : Swift.Codable {
   public let positionStartLatLngDeg: RookSDK.RookPositionItemTransmission?
   public let positionCentroidLatLngDeg: RookSDK.RookPositionItemTransmission?
@@ -1243,9 +1260,9 @@ public struct Body : Swift.Codable {
   public let boneCompositionPercentageNumber: Swift.Int?
   public let muscleCompositionPercentageNumber: Swift.Int?
   public let waterCompositionPercentage: Swift.Int?
-  public let weightKgNumber: Swift.Int?
-  public let heightCMNumber: Swift.Int?
-  public let bmiNumber: Swift.Int?
+  public let weightKgNumber: Swift.Float?
+  public let heightCMNumber: Swift.Float?
+  public let bmiNumber: Swift.Float?
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
@@ -1628,6 +1645,7 @@ public struct RookPositionGranularItem : Swift.Encodable {
   @objc override dynamic public init()
   @objc final public func getAvailableDataSources(redirectURL: Swift.String?, completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
   @objc final public func presentDataSourceView(redirectURL: Swift.String?, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func getAuthorizedDataSources(completion: @escaping ([Swift.String : Any]?, Swift.Error?) -> Swift.Void)
   @objc deinit
 }
 public enum RookTransmissionSummaryType : Swift.String, Swift.CaseIterable {
