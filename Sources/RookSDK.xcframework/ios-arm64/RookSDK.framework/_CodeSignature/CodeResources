@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RookSDK-Swift.h</key>
 		<data>
-		AXFIyFvURG+k5C2ew1o3EN7doMI=
+		13mspFlxuUcSR3YuFIM+fpvxPRs=
 		</data>
 		<key>Headers/RookSDK.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		1Up1j7pExMJvfGaZv1fUYpBWJFg=
+		t6T0HAyBVXj6UhkQ1JtTl1SwSYk=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		d9krLlWMTmXVxe9lDR9NSGM8/Y8=
+		ThM3QZyknJxVzHAYoM9ndYQVBt8=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		d9krLlWMTmXVxe9lDR9NSGM8/Y8=
+		ThM3QZyknJxVzHAYoM9ndYQVBt8=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		HKHtcz4255Z66Rn4IXDct2Av/d0=
+		4Sa51xdvlbSg/E67XcG5wrn37+0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			U/rH04IH2BNU4CLY4xDi1/EMpXX3j0kVgONpTERqM8g=
+			R8I4ab0pDaosOGDLPQFpq3UpQVxy8CQkgvntCKf1JWA=
 			</data>
 		</dict>
 		<key>Headers/RookSDK.h</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g+XUADev0h8CwuHrME9yTV4ykXeRplJEcIHKC3wiSo0=
+			oeoF+Wm9q7+2gVMGsYNlX0oQz2ROHX3dWkhHq/6TIM0=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Q32qoL3ZJKhUOimVn+HCK1TQ/AjKYJvehB98lP1tOI=
+			ETdrU21uF2kUc6z5FmbsoFBrgnOp/BD7vxh6yPiTvO8=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -114,14 +114,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Q32qoL3ZJKhUOimVn+HCK1TQ/AjKYJvehB98lP1tOI=
+			ETdrU21uF2kUc6z5FmbsoFBrgnOp/BD7vxh6yPiTvO8=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SziAxfoml1Xm/dTS8WCnS5ed2r0WVW0Cr7NEhmeXPK8=
+			Yki+roIo8/AZlh60SOw3Q8itlTDR7gyJGxl5Vw/yHeM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

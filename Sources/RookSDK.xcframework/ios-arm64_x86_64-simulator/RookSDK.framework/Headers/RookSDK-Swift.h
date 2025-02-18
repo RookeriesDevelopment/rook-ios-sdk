@@ -410,6 +410,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 
 
 
+
 SWIFT_CLASS("_TtC7RookSDK35RookConnectConfigurationManagerObjc")
 @interface RookConnectConfigurationManagerObjc : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookConnectConfigurationManagerObjc * _Nonnull shared;)
@@ -494,6 +495,7 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 - (void)syncBodyMetricsEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncPendingEventsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getTodayStepCountWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+- (void)getTodayCaloriesWithCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
 @end
 
 
@@ -966,6 +968,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 
 
 
+
 SWIFT_CLASS("_TtC7RookSDK35RookConnectConfigurationManagerObjc")
 @interface RookConnectConfigurationManagerObjc : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookConnectConfigurationManagerObjc * _Nonnull shared;)
@@ -1050,6 +1053,7 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 - (void)syncBodyMetricsEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncPendingEventsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getTodayStepCountWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+- (void)getTodayCaloriesWithCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
 @end
 
 
