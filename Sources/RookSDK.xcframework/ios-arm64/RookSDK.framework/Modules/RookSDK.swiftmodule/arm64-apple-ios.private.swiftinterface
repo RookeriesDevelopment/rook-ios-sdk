@@ -94,6 +94,7 @@ public enum RookContextType {
   final public func syncBodyMetricsEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   final public func syncPendingEvents(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   final public func getTodayStepCount(completion: @escaping (Swift.Result<Swift.Int, any Swift.Error>) -> Swift.Void)
+  final public func getTodayCalories(completion: @escaping (Swift.Result<RookSDK.RookCalories, any Swift.Error>) -> Swift.Void)
   final public func getPendingDates(of type: RookSDK.PendingDatesToUploadTypes) -> [Foundation.Date]
   final public func getLastTransmissionDate(of type: RookSDK.RookTransmissionEventType) -> Foundation.Date?
   @objc deinit
@@ -385,6 +386,7 @@ extension RookSDK.RookEventsManager {
   @objc final public func syncBodyMetricsEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   @objc final public func syncPendingEventsObjc(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   @objc final public func getTodayStepCount(completion: @escaping (Swift.Int, (any Swift.Error)?) -> Swift.Void)
+  @objc final public func getTodayCalories(completion: @escaping ([Swift.String : Any]?, (any Swift.Error)?) -> Swift.Void)
 }
 public struct RookActivityEventTransmission : Swift.Codable {
   public var metadata: RookSDK.RookMetaDataEventTransmission
@@ -1361,6 +1363,7 @@ public enum RookTransmissionEventType : Swift.String, Swift.CaseIterable {
   case bloodPressureEvent
   case bodyMetricsEvent
   case stepsEvent
+  case caloriesEvent
   public init?(rawValue: Swift.String)
   public typealias AllCases = [RookSDK.RookTransmissionEventType]
   public typealias RawValue = Swift.String
@@ -1572,6 +1575,9 @@ extension RookSDK.RookEventsManager {
   #if compiler(>=5.3) && $AsyncAwait
   final public func getTodayStepCount() async throws -> Swift.Int
   #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func getTodayCalories() async throws -> RookSDK.RookCalories
+  #endif
 }
 @objc public class LogInfoObjc : ObjectiveC.NSObject {
   public init(level: Swift.String?, dataDateTime: Swift.String?, action: Swift.String?, dataType: Swift.String?, extra: Swift.String?, uuid: Swift.String)
@@ -1619,6 +1625,7 @@ public enum RookEventType {
   case bloodGlucose
   case temperature
   case bodyMetrics
+  case calories
   public static func == (a: RookSDK.RookEventType, b: RookSDK.RookEventType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
