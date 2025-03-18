@@ -732,7 +732,7 @@ public struct RookPhysicalMetadata : Swift.Codable {
   public let datetime: Foundation.Date
   public let userID: Swift.String?
   public let sourcesOfData: [Swift.String]
-  @available(*, deprecated, message: "This property is deprecated insted use getUserInformation method")
+  @available(*, deprecated, message: "This property is deprecated instead use getUserInformation method")
   public let userDemographics: [RookSDK.UserDemographic]
   public let physicalHealthScore: Swift.Int?
   public func encode(to encoder: any Swift.Encoder) throws
@@ -1795,7 +1795,7 @@ public struct RookSleepMetadata : Swift.Codable {
   public let datetime: Foundation.Date
   public let userID: Swift.String?
   public let sourcesOfData: [Swift.String]
-  @available(*, deprecated, message: "This property is deprecated insted use getUserInformation method")
+  @available(*, deprecated, message: "This property is deprecated instead use getUserInformation method")
   public let userDemographics: [RookSDK.UserDemographic]
   public let sleepHealthScore: Swift.Int?
   public func encode(to encoder: any Swift.Encoder) throws
