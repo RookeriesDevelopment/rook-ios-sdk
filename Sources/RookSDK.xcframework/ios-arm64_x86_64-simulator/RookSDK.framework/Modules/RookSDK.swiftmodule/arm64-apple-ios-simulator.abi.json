@@ -90134,21 +90134,21 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookTemperatureEventTransmission\/Domain\/RookTemperatureUploadUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 2833,
+      "offset": 2755,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookTemperatureEventTransmission\/Domain\/RookTemperatureUploadUseCase.swift",
       "kind": "StringLiteral",
-      "offset": 4662,
+      "offset": 4598,
       "length": 21,
       "value": "\"server response 201\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookTemperatureEventTransmission\/Domain\/RookTemperatureUploadUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 5161,
+      "offset": 5111,
       "length": 4,
       "value": "true"
     },
@@ -90400,42 +90400,42 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/BloodEvents\/Glucose\/Domain\/RookGlucoseUploadUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 2814,
+      "offset": 2736,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/BloodEvents\/Glucose\/Domain\/RookGlucoseUploadUseCase.swift",
       "kind": "StringLiteral",
-      "offset": 4608,
+      "offset": 4544,
       "length": 21,
       "value": "\"server response 201\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/BloodEvents\/Glucose\/Domain\/RookGlucoseUploadUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 5319,
+      "offset": 5269,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookActivityEventTransmission\/Domain\/RookActivityUploadUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 2878,
+      "offset": 2800,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookActivityEventTransmission\/Domain\/RookActivityUploadUseCase.swift",
       "kind": "StringLiteral",
-      "offset": 4729,
+      "offset": 4665,
       "length": 21,
       "value": "\"server response 201\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookActivityEventTransmission\/Domain\/RookActivityUploadUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 5229,
+      "offset": 5179,
       "length": 4,
       "value": "true"
     },
@@ -91303,35 +91303,35 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/BodyMetrics\/Domain\/RookBodyMetricsUploadUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 3000,
+      "offset": 2922,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/BodyMetrics\/Domain\/RookBodyMetricsUploadUseCase.swift",
       "kind": "StringLiteral",
-      "offset": 4865,
+      "offset": 4801,
       "length": 21,
       "value": "\"server response 201\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/BodyMetrics\/Domain\/RookBodyMetricsUploadUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 5379,
+      "offset": 5329,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/BodyMetrics\/Domain\/RookBodyMetricsUploadUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 6892,
+      "offset": 6842,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/BodyMetrics\/Domain\/RookBodyMetricsUploadUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 6914,
+      "offset": 6864,
       "length": 5,
       "value": "false"
     },
@@ -91695,35 +91695,35 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/Workouts\/Data\/WorkoutSamplesProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 785,
+      "offset": 802,
       "length": 2,
       "value": "23"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/Workouts\/Data\/WorkoutSamplesProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 889,
+      "offset": 823,
       "length": 2,
       "value": "59"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/Workouts\/Data\/WorkoutSamplesProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 993,
+      "offset": 844,
       "length": 2,
       "value": "59"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/Workouts\/Data\/WorkoutSamplesProvider.swift",
       "kind": "StringLiteral",
-      "offset": 3018,
+      "offset": 2560,
       "length": 27,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/DataTypesProvider\/Workouts\/Data\/WorkoutSamplesProvider.swift",
       "kind": "StringLiteral",
-      "offset": 3044,
+      "offset": 2586,
       "length": 2,
       "value": "\"\""
     },
@@ -92423,7 +92423,7 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Summaries\/RookSummaryManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7729,
+      "offset": 7555,
       "length": 5,
       "value": "false"
     },
@@ -92717,21 +92717,21 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookSleepTransmission\/RookSleepTransmissionManager.swift",
       "kind": "StringLiteral",
-      "offset": 2789,
+      "offset": 2618,
       "length": 5,
       "value": "\"201\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookSleepTransmission\/RookSleepTransmissionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2823,
+      "offset": 2652,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookSleepTransmission\/RookSleepTransmissionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2947,
+      "offset": 2776,
       "length": 5,
       "value": "false"
     },
@@ -92913,14 +92913,14 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Configuration\/Dev\/IOSClass.swift",
       "kind": "BooleanLiteral",
-      "offset": 591,
+      "offset": 596,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Configuration\/Dev\/IOSClass.swift",
       "kind": "BooleanLiteral",
-      "offset": 729,
+      "offset": 734,
       "length": 5,
       "value": "false"
     },
@@ -93627,35 +93627,35 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Sync\/BackGround\/Domain\/SleepBackgroundSyncUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 1151,
+      "offset": 1052,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Sync\/BackGround\/Domain\/SleepBackgroundSyncUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 1231,
+      "offset": 1132,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Sync\/BackGround\/Domain\/SleepBackgroundSyncUseCase.swift",
       "kind": "StringLiteral",
-      "offset": 2385,
+      "offset": 2300,
       "length": 5,
       "value": "\"201\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Sync\/BackGround\/Domain\/SleepBackgroundSyncUseCase.swift",
       "kind": "StringLiteral",
-      "offset": 2483,
+      "offset": 2412,
       "length": 20,
       "value": "\"Error transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Sync\/BackGround\/Domain\/SleepBackgroundSyncUseCase.swift",
       "kind": "IntegerLiteral",
-      "offset": 2511,
+      "offset": 2440,
       "length": 3,
       "value": "402"
     },
@@ -95475,1064 +95475,1064 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 2048,
+      "offset": 2049,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 2083,
+      "offset": 2084,
       "length": 17,
       "value": "\"sources_of_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 2129,
+      "offset": 2130,
       "length": 19,
       "value": "\"user_demographics\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 2180,
+      "offset": 2181,
       "length": 23,
       "value": "\"physical_health_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 2048,
+      "offset": 2049,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 2083,
+      "offset": 2084,
       "length": 17,
       "value": "\"sources_of_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 2129,
+      "offset": 2130,
       "length": 19,
       "value": "\"user_demographics\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 2180,
+      "offset": 2181,
       "length": 23,
       "value": "\"physical_health_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 3886,
+      "offset": 3887,
       "length": 16,
       "value": "\"active_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 3926,
+      "offset": 3927,
       "length": 14,
       "value": "\"rest_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 3972,
+      "offset": 3973,
       "length": 23,
       "value": "\"low_intensity_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 4032,
+      "offset": 4033,
       "length": 28,
       "value": "\"moderate_intensity_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 4097,
+      "offset": 4098,
       "length": 28,
       "value": "\"vigorous_intensity_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 4155,
+      "offset": 4156,
       "length": 20,
       "value": "\"inactivity_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 4219,
+      "offset": 4220,
       "length": 37,
       "value": "\"activity_level_granular_data_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 4300,
+      "offset": 4301,
       "length": 36,
       "value": "\"continuous_inactive_periods_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 3886,
+      "offset": 3887,
       "length": 16,
       "value": "\"active_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 3926,
+      "offset": 3927,
       "length": 14,
       "value": "\"rest_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 3972,
+      "offset": 3973,
       "length": 23,
       "value": "\"low_intensity_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 4032,
+      "offset": 4033,
       "length": 28,
       "value": "\"moderate_intensity_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 4097,
+      "offset": 4098,
       "length": 28,
       "value": "\"vigorous_intensity_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 4155,
+      "offset": 4156,
       "length": 20,
       "value": "\"inactivity_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 4219,
+      "offset": 4220,
       "length": 37,
       "value": "\"activity_level_granular_data_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 4300,
+      "offset": 4301,
       "length": 36,
       "value": "\"continuous_inactive_periods_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 4589,
+      "offset": 4590,
       "length": 16,
       "value": "\"activity_level\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 4589,
+      "offset": 4590,
       "length": 16,
       "value": "\"activity_level\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 4965,
+      "offset": 4966,
       "length": 34,
       "value": "\"calories_net_intake_kilocalories\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 5043,
+      "offset": 5044,
       "length": 35,
       "value": "\"calories_expenditure_kilocalories\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 5120,
+      "offset": 5121,
       "length": 34,
       "value": "\"calories_net_active_kilocalories\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 5205,
+      "offset": 5206,
       "length": 44,
       "value": "\"calories_basal_metabolic_rate_kilocalories\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 4965,
+      "offset": 4966,
       "length": 34,
       "value": "\"calories_net_intake_kilocalories\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 5043,
+      "offset": 5044,
       "length": 35,
       "value": "\"calories_expenditure_kilocalories\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 5120,
+      "offset": 5121,
       "length": 34,
       "value": "\"calories_net_active_kilocalories\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 5205,
+      "offset": 5206,
       "length": 44,
       "value": "\"calories_basal_metabolic_rate_kilocalories\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 6918,
+      "offset": 6919,
       "length": 22,
       "value": "\"steps_per_day_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 6980,
+      "offset": 6981,
       "length": 34,
       "value": "\"steps_granular_data_steps_per_hr\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7050,
+      "offset": 7051,
       "length": 29,
       "value": "\"active_steps_per_day_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7125,
+      "offset": 7126,
       "length": 41,
       "value": "\"active_steps_granular_data_steps_per_hr\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7199,
+      "offset": 7200,
       "length": 24,
       "value": "\"walked_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7258,
+      "offset": 7259,
       "length": 26,
       "value": "\"traveled_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7331,
+      "offset": 7332,
       "length": 40,
       "value": "\"traveled_distance_granular_data_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7403,
+      "offset": 7404,
       "length": 23,
       "value": "\"floors_climbed_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7470,
+      "offset": 7471,
       "length": 37,
       "value": "\"floors_climbed_granular_data_floors\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7546,
+      "offset": 7547,
       "length": 31,
       "value": "\"elevation_avg_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7620,
+      "offset": 7621,
       "length": 35,
       "value": "\"elevation_minimum_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7694,
+      "offset": 7695,
       "length": 31,
       "value": "\"elevation_max_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7771,
+      "offset": 7772,
       "length": 39,
       "value": "\"elevation_loss_actual_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7856,
+      "offset": 7857,
       "length": 39,
       "value": "\"elevation_gain_actual_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7934,
+      "offset": 7935,
       "length": 31,
       "value": "\"elevation_planned_gain_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 8005,
+      "offset": 8006,
       "length": 32,
       "value": "\"elevation_granular_data_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 8071,
+      "offset": 8072,
       "length": 25,
       "value": "\"swimming_strokes_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 8130,
+      "offset": 8131,
       "length": 26,
       "value": "\"swimming_num_laps_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 8193,
+      "offset": 8194,
       "length": 29,
       "value": "\"swimming_pool_length_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 8262,
+      "offset": 8263,
       "length": 32,
       "value": "\"swimming_total_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 8341,
+      "offset": 8342,
       "length": 40,
       "value": "\"swimming_distance_granular_data_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 6918,
+      "offset": 6919,
       "length": 22,
       "value": "\"steps_per_day_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 6980,
+      "offset": 6981,
       "length": 34,
       "value": "\"steps_granular_data_steps_per_hr\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7050,
+      "offset": 7051,
       "length": 29,
       "value": "\"active_steps_per_day_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7125,
+      "offset": 7126,
       "length": 41,
       "value": "\"active_steps_granular_data_steps_per_hr\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7199,
+      "offset": 7200,
       "length": 24,
       "value": "\"walked_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7258,
+      "offset": 7259,
       "length": 26,
       "value": "\"traveled_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7331,
+      "offset": 7332,
       "length": 40,
       "value": "\"traveled_distance_granular_data_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7403,
+      "offset": 7404,
       "length": 23,
       "value": "\"floors_climbed_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7470,
+      "offset": 7471,
       "length": 37,
       "value": "\"floors_climbed_granular_data_floors\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7546,
+      "offset": 7547,
       "length": 31,
       "value": "\"elevation_avg_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7620,
+      "offset": 7621,
       "length": 35,
       "value": "\"elevation_minimum_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7694,
+      "offset": 7695,
       "length": 31,
       "value": "\"elevation_max_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7771,
+      "offset": 7772,
       "length": 39,
       "value": "\"elevation_loss_actual_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7856,
+      "offset": 7857,
       "length": 39,
       "value": "\"elevation_gain_actual_altitude_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 7934,
+      "offset": 7935,
       "length": 31,
       "value": "\"elevation_planned_gain_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 8005,
+      "offset": 8006,
       "length": 32,
       "value": "\"elevation_granular_data_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 8071,
+      "offset": 8072,
       "length": 25,
       "value": "\"swimming_strokes_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 8130,
+      "offset": 8131,
       "length": 26,
       "value": "\"swimming_num_laps_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 8193,
+      "offset": 8194,
       "length": 29,
       "value": "\"swimming_pool_length_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 8262,
+      "offset": 8263,
       "length": 32,
       "value": "\"swimming_total_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 8341,
+      "offset": 8342,
       "length": 40,
       "value": "\"swimming_distance_granular_data_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 10681,
+      "offset": 10682,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 10681,
+      "offset": 10682,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 11003,
+      "offset": 11004,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 11058,
+      "offset": 11059,
       "length": 18,
       "value": "\"elevation_change\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 11003,
+      "offset": 11004,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 11058,
+      "offset": 11059,
       "length": 18,
       "value": "\"elevation_change\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 11362,
+      "offset": 11363,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 11415,
+      "offset": 11416,
       "length": 16,
       "value": "\"floors_climbed\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 11362,
+      "offset": 11363,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 11415,
+      "offset": 11416,
       "length": 16,
       "value": "\"floors_climbed\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 11732,
+      "offset": 11733,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 11794,
+      "offset": 11795,
       "length": 26,
       "value": "\"swimming_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 11732,
+      "offset": 11733,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 11794,
+      "offset": 11795,
       "length": 26,
       "value": "\"swimming_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12121,
+      "offset": 12122,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12183,
+      "offset": 12184,
       "length": 26,
       "value": "\"traveled_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12121,
+      "offset": 12122,
       "length": 27,
       "value": "\"interval_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12183,
+      "offset": 12184,
       "length": 26,
       "value": "\"traveled_distance_meters\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12657,
+      "offset": 12658,
       "length": 12,
       "value": "\"hr_max_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12694,
+      "offset": 12695,
       "length": 16,
       "value": "\"hr_minimum_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12731,
+      "offset": 12732,
       "length": 12,
       "value": "\"hr_avg_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12768,
+      "offset": 12769,
       "length": 16,
       "value": "\"hr_resting_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12814,
+      "offset": 12815,
       "length": 22,
       "value": "\"hr_granular_data_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12866,
+      "offset": 12867,
       "length": 22,
       "value": "\"hrv_avg_rmssd_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12917,
+      "offset": 12918,
       "length": 21,
       "value": "\"hrv_avg_sdnn_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12976,
+      "offset": 12977,
       "length": 31,
       "value": "\"hrv_sdnn_granular_data_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 13046,
+      "offset": 13047,
       "length": 32,
       "value": "\"hrv_rmssd_granular_data_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12657,
+      "offset": 12658,
       "length": 12,
       "value": "\"hr_max_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12694,
+      "offset": 12695,
       "length": 16,
       "value": "\"hr_minimum_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12731,
+      "offset": 12732,
       "length": 12,
       "value": "\"hr_avg_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12768,
+      "offset": 12769,
       "length": 16,
       "value": "\"hr_resting_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12814,
+      "offset": 12815,
       "length": 22,
       "value": "\"hr_granular_data_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12866,
+      "offset": 12867,
       "length": 22,
       "value": "\"hrv_avg_rmssd_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12917,
+      "offset": 12918,
       "length": 21,
       "value": "\"hrv_avg_sdnn_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 12976,
+      "offset": 12977,
       "length": 31,
       "value": "\"hrv_sdnn_granular_data_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 13046,
+      "offset": 13047,
       "length": 32,
       "value": "\"hrv_rmssd_granular_data_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14057,
+      "offset": 14058,
       "length": 11,
       "value": "\"hrv_rmssd\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14057,
+      "offset": 14058,
       "length": 11,
       "value": "\"hrv_rmssd\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14297,
+      "offset": 14298,
       "length": 10,
       "value": "\"hrv_sdnn\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14297,
+      "offset": 14298,
       "length": 10,
       "value": "\"hrv_sdnn\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14642,
+      "offset": 14643,
       "length": 15,
       "value": "\"walking_speed\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14687,
+      "offset": 14688,
       "length": 21,
       "value": "\"walking_step_length\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14733,
+      "offset": 14734,
       "length": 15,
       "value": "\"running_power\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14773,
+      "offset": 14774,
       "length": 15,
       "value": "\"running_speed\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14642,
+      "offset": 14643,
       "length": 15,
       "value": "\"walking_speed\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14687,
+      "offset": 14688,
       "length": 21,
       "value": "\"walking_step_length\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14733,
+      "offset": 14734,
       "length": 15,
       "value": "\"running_power\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14773,
+      "offset": 14774,
       "length": 15,
       "value": "\"running_speed\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 15177,
+      "offset": 15178,
       "length": 27,
       "value": "\"saturation_avg_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 15249,
+      "offset": 15250,
       "length": 37,
       "value": "\"saturation_granular_data_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 15318,
+      "offset": 15319,
       "length": 26,
       "value": "\"vo2max_ml_per_min_per_kg\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 15383,
+      "offset": 15384,
       "length": 33,
       "value": "\"vo2_granular_data_liter_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 15177,
+      "offset": 15178,
       "length": 27,
       "value": "\"saturation_avg_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 15249,
+      "offset": 15250,
       "length": 37,
       "value": "\"saturation_granular_data_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 15318,
+      "offset": 15319,
       "length": 26,
       "value": "\"vo2max_ml_per_min_per_kg\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 15383,
+      "offset": 15384,
       "length": 33,
       "value": "\"vo2_granular_data_liter_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16139,
+      "offset": 16140,
       "length": 23,
       "value": "\"vo2_ml_per_min_per_kg\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16139,
+      "offset": 16140,
       "length": 23,
       "value": "\"vo2_ml_per_min_per_kg\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16690,
+      "offset": 16691,
       "length": 33,
       "value": "\"stress_at_rest_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16757,
+      "offset": 16758,
       "length": 25,
       "value": "\"stress_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16819,
+      "offset": 16820,
       "length": 29,
       "value": "\"low_stress_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16888,
+      "offset": 16889,
       "length": 32,
       "value": "\"medium_stress_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16958,
+      "offset": 16959,
       "length": 30,
       "value": "\"high_stress_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 17030,
+      "offset": 17031,
       "length": 35,
       "value": "\"stress_granular_data_score_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 17098,
+      "offset": 17099,
       "length": 25,
       "value": "\"stress_avg_level_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 17156,
+      "offset": 17157,
       "length": 25,
       "value": "\"stress_max_level_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16690,
+      "offset": 16691,
       "length": 33,
       "value": "\"stress_at_rest_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16757,
+      "offset": 16758,
       "length": 25,
       "value": "\"stress_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16819,
+      "offset": 16820,
       "length": 29,
       "value": "\"low_stress_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16888,
+      "offset": 16889,
       "length": 32,
       "value": "\"medium_stress_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16958,
+      "offset": 16959,
       "length": 30,
       "value": "\"high_stress_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 17030,
+      "offset": 17031,
       "length": 35,
       "value": "\"stress_granular_data_score_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 17098,
+      "offset": 17099,
       "length": 25,
       "value": "\"stress_avg_level_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 17156,
+      "offset": 17157,
       "length": 25,
       "value": "\"stress_max_level_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 18238,
+      "offset": 18239,
       "length": 14,
       "value": "\"stress_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 18238,
+      "offset": 18239,
       "length": 14,
       "value": "\"stress_score\""
     },
@@ -96553,21 +96553,21 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/BackGround\/RookBackGround+BackGround+BloodEvents.swift",
       "kind": "Array",
-      "offset": 1966,
+      "offset": 2047,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/BackGround\/RookBackGround+BackGround+BloodEvents.swift",
       "kind": "Array",
-      "offset": 2191,
+      "offset": 2272,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/Steps\/StepsTransmissionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1247,
+      "offset": 1175,
       "length": 21,
       "value": "\"Server response 201\""
     },
@@ -97267,21 +97267,21 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Events\/Calories\/Domain\/UseCases\/UploadCaloriesEventUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 3045,
+      "offset": 2948,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Events\/Calories\/Domain\/UseCases\/UploadCaloriesEventUseCase.swift",
       "kind": "FloatLiteral",
-      "offset": 3095,
+      "offset": 2998,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Events\/Calories\/Domain\/UseCases\/UploadCaloriesEventUseCase.swift",
       "kind": "FloatLiteral",
-      "offset": 3145,
+      "offset": 3048,
       "length": 3,
       "value": "0.0"
     },
@@ -97330,56 +97330,56 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Events\/Calories\/Domain\/UseCases\/UploadBackGroundCaloriesEventUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 936,
+      "offset": 789,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Events\/Calories\/Domain\/UseCases\/UploadBackGroundCaloriesEventUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 3005,
+      "offset": 2908,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Events\/Calories\/Domain\/UseCases\/UploadBackGroundCaloriesEventUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 3403,
+      "offset": 3306,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Events\/Calories\/Domain\/UseCases\/UploadBackGroundCaloriesEventUseCase.swift",
       "kind": "FloatLiteral",
-      "offset": 3453,
+      "offset": 3356,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Events\/Calories\/Domain\/UseCases\/UploadBackGroundCaloriesEventUseCase.swift",
       "kind": "FloatLiteral",
-      "offset": 3503,
+      "offset": 3406,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Events\/Calories\/Domain\/UseCases\/UploadBackGroundCaloriesEventUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 3672,
+      "offset": 3575,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Events\/Calories\/Domain\/UseCases\/UploadBackGroundCaloriesEventUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 3881,
+      "offset": 3784,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Events\/Calories\/Domain\/UseCases\/UploadBackGroundCaloriesEventUseCase.swift",
       "kind": "IntegerLiteral",
-      "offset": 3920,
+      "offset": 3823,
       "length": 1,
       "value": "1"
     },
@@ -97491,21 +97491,21 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookOxygenationEventTransmission\/RookOxygenationEventTransmissionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3870,
+      "offset": 3805,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookOxygenationEventTransmission\/RookOxygenationEventTransmissionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6236,
+      "offset": 6171,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookOxygenationEventTransmission\/RookOxygenationEventTransmissionManager.swift",
       "kind": "StringLiteral",
-      "offset": 6931,
+      "offset": 6880,
       "length": 21,
       "value": "\"server response 201\""
     },
@@ -97750,21 +97750,21 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Sync\/BackGround\/Domain\/PhysicalBackgroundSyncUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 1151,
+      "offset": 1052,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Sync\/BackGround\/Domain\/PhysicalBackgroundSyncUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 1231,
+      "offset": 1132,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Sync\/BackGround\/Domain\/PhysicalBackgroundSyncUseCase.swift",
       "kind": "StringLiteral",
-      "offset": 2305,
+      "offset": 2220,
       "length": 5,
       "value": "\"201\""
     },
@@ -98667,28 +98667,28 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/BackGround\/RookBackGround+BackGroundEventListeners.swift",
       "kind": "Array",
-      "offset": 2732,
+      "offset": 2893,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/BackGround\/RookBackGround+BackGroundEventListeners.swift",
       "kind": "Array",
-      "offset": 2951,
+      "offset": 3112,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/BackGround\/RookBackGround+BackGroundEventListeners.swift",
       "kind": "Array",
-      "offset": 4049,
+      "offset": 4291,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/BackGround\/RookBackGround+BackGroundEventListeners.swift",
       "kind": "Array",
-      "offset": 4273,
+      "offset": 4515,
       "length": 2,
       "value": "[]"
     },
@@ -99178,28 +99178,28 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/RookExtractionEventManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 12198,
+      "offset": 12116,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/RookExtractionEventManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13580,
+      "offset": 13498,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/RookExtractionEventManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 15499,
+      "offset": 15417,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/RookExtractionEventManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16941,
+      "offset": 16859,
       "length": 5,
       "value": "false"
     },
@@ -102650,21 +102650,21 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/BloodEvents\/Pressure\/Domain\/RookBloodPressureUploadUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 2878,
+      "offset": 2800,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/BloodEvents\/Pressure\/Domain\/RookBloodPressureUploadUseCase.swift",
       "kind": "StringLiteral",
-      "offset": 4697,
+      "offset": 4633,
       "length": 21,
       "value": "\"server response 201\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/BloodEvents\/Pressure\/Domain\/RookBloodPressureUploadUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 5199,
+      "offset": 5149,
       "length": 4,
       "value": "true"
     },
@@ -102868,41 +102868,41 @@
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
       "kind": "StringLiteral",
       "offset": 1494,
-      "length": 7,
-      "value": "\"1.6.9\""
+      "length": 8,
+      "value": "\"1.6.10\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1580,
+      "offset": 1581,
       "length": 32,
       "value": "\"rook_configuration_environment\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1697,
+      "offset": 1698,
       "length": 38,
       "value": "\"daaabbcb-5227-4eba-a2f4-f10a36ab24ef\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookPhysicalTransmission\/RookPhysicalTransmissionManager.swift",
       "kind": "StringLiteral",
-      "offset": 2430,
+      "offset": 2259,
       "length": 5,
       "value": "\"201\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookPhysicalTransmission\/RookPhysicalTransmissionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2464,
+      "offset": 2293,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookPhysicalTransmission\/RookPhysicalTransmissionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2591,
+      "offset": 2420,
       "length": 5,
       "value": "false"
     },
@@ -106045,35 +106045,35 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/BackGround\/RookBackGroundSync.swift",
       "kind": "Array",
-      "offset": 7749,
+      "offset": 7773,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/BackGround\/RookBackGroundSync.swift",
       "kind": "BooleanLiteral",
-      "offset": 7790,
+      "offset": 7816,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/BackGround\/RookBackGroundSync.swift",
       "kind": "BooleanLiteral",
-      "offset": 9918,
+      "offset": 10172,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/BackGround\/RookBackGroundSync.swift",
       "kind": "Array",
-      "offset": 10296,
+      "offset": 10570,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/BackGround\/RookBackGroundSync.swift",
       "kind": "Array",
-      "offset": 10683,
+      "offset": 10957,
       "length": 2,
       "value": "[]"
     },
@@ -106577,602 +106577,602 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6614,
+      "offset": 6615,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6649,
+      "offset": 6650,
       "length": 17,
       "value": "\"sources_of_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6695,
+      "offset": 6696,
       "length": 19,
       "value": "\"user_demographics\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6743,
+      "offset": 6744,
       "length": 20,
       "value": "\"sleep_health_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6614,
+      "offset": 6615,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6649,
+      "offset": 6650,
       "length": 17,
       "value": "\"sources_of_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6695,
+      "offset": 6696,
       "length": 19,
       "value": "\"user_demographics\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 6743,
+      "offset": 6744,
       "length": 20,
       "value": "\"sleep_health_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 7806,
+      "offset": 7807,
       "length": 15,
       "value": "\"date_of_birth\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 7901,
+      "offset": 7902,
       "length": 16,
       "value": "\"marital_status\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 7806,
+      "offset": 7807,
       "length": 15,
       "value": "\"date_of_birth\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 7901,
+      "offset": 7902,
       "length": 16,
       "value": "\"marital_status\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9463,
+      "offset": 9464,
       "length": 22,
       "value": "\"sleep_start_datetime\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9514,
+      "offset": 9515,
       "length": 20,
       "value": "\"sleep_end_datetime\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9556,
+      "offset": 9557,
       "length": 12,
       "value": "\"sleep_date\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9601,
+      "offset": 9602,
       "length": 24,
       "value": "\"sleep_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9654,
+      "offset": 9655,
       "length": 21,
       "value": "\"time_in_bed_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9713,
+      "offset": 9714,
       "length": 30,
       "value": "\"light_sleep_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9779,
+      "offset": 9780,
       "length": 28,
       "value": "\"rem_sleep_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9844,
+      "offset": 9845,
       "length": 29,
       "value": "\"deep_sleep_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9909,
+      "offset": 9910,
       "length": 29,
       "value": "\"time_to_fall_asleep_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9978,
+      "offset": 9979,
       "length": 33,
       "value": "\"time_awake_during_sleep_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9463,
+      "offset": 9464,
       "length": 22,
       "value": "\"sleep_start_datetime\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9514,
+      "offset": 9515,
       "length": 20,
       "value": "\"sleep_end_datetime\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9556,
+      "offset": 9557,
       "length": 12,
       "value": "\"sleep_date\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9601,
+      "offset": 9602,
       "length": 24,
       "value": "\"sleep_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9654,
+      "offset": 9655,
       "length": 21,
       "value": "\"time_in_bed_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9713,
+      "offset": 9714,
       "length": 30,
       "value": "\"light_sleep_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9779,
+      "offset": 9780,
       "length": 28,
       "value": "\"rem_sleep_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9844,
+      "offset": 9845,
       "length": 29,
       "value": "\"deep_sleep_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9909,
+      "offset": 9910,
       "length": 29,
       "value": "\"time_to_fall_asleep_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 9978,
+      "offset": 9979,
       "length": 33,
       "value": "\"time_awake_during_sleep_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11645,
+      "offset": 11646,
       "length": 12,
       "value": "\"hr_max_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11682,
+      "offset": 11683,
       "length": 16,
       "value": "\"hr_minimum_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11719,
+      "offset": 11720,
       "length": 12,
       "value": "\"hr_avg_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11756,
+      "offset": 11757,
       "length": 16,
       "value": "\"hr_resting_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11795,
+      "offset": 11796,
       "length": 14,
       "value": "\"hr_basal_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11839,
+      "offset": 11840,
       "length": 22,
       "value": "\"hr_granular_data_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11891,
+      "offset": 11892,
       "length": 22,
       "value": "\"hrv_avg_rmssd_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11942,
+      "offset": 11943,
       "length": 21,
       "value": "\"hrv_avg_sdnn_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11995,
+      "offset": 11996,
       "length": 24,
       "value": "\"hrv_sdnn_granular_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 12052,
+      "offset": 12053,
       "length": 25,
       "value": "\"hrv_rmssd_granular_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11645,
+      "offset": 11646,
       "length": 12,
       "value": "\"hr_max_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11682,
+      "offset": 11683,
       "length": 16,
       "value": "\"hr_minimum_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11719,
+      "offset": 11720,
       "length": 12,
       "value": "\"hr_avg_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11756,
+      "offset": 11757,
       "length": 16,
       "value": "\"hr_resting_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11795,
+      "offset": 11796,
       "length": 14,
       "value": "\"hr_basal_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11839,
+      "offset": 11840,
       "length": 22,
       "value": "\"hr_granular_data_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11891,
+      "offset": 11892,
       "length": 22,
       "value": "\"hrv_avg_rmssd_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11942,
+      "offset": 11943,
       "length": 21,
       "value": "\"hrv_avg_sdnn_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 11995,
+      "offset": 11996,
       "length": 24,
       "value": "\"hrv_sdnn_granular_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 12052,
+      "offset": 12053,
       "length": 25,
       "value": "\"hrv_rmssd_granular_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 13315,
+      "offset": 13316,
       "length": 8,
       "value": "\"hr_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 13315,
+      "offset": 13316,
       "length": 8,
       "value": "\"hr_bpm\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 13546,
+      "offset": 13547,
       "length": 11,
       "value": "\"hrv_rmssd\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 13546,
+      "offset": 13547,
       "length": 11,
       "value": "\"hrv_rmssd\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 13776,
+      "offset": 13777,
       "length": 10,
       "value": "\"hrv_sdnn\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 13776,
+      "offset": 13777,
       "length": 10,
       "value": "\"hrv_sdnn\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14099,
+      "offset": 14100,
       "length": 32,
       "value": "\"sleep_quality_rating_1_5_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14170,
+      "offset": 14171,
       "length": 30,
       "value": "\"sleep_efficiency_1_100_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14229,
+      "offset": 14230,
       "length": 20,
       "value": "\"sleep_goal_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14286,
+      "offset": 14287,
       "length": 28,
       "value": "\"sleep_continuity_1_5_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14352,
+      "offset": 14353,
       "length": 29,
       "value": "\"sleep_continuity_1_5_rating\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14099,
+      "offset": 14100,
       "length": 32,
       "value": "\"sleep_quality_rating_1_5_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14170,
+      "offset": 14171,
       "length": 30,
       "value": "\"sleep_efficiency_1_100_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14229,
+      "offset": 14230,
       "length": 20,
       "value": "\"sleep_goal_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14286,
+      "offset": 14287,
       "length": 28,
       "value": "\"sleep_continuity_1_5_score\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 14352,
+      "offset": 14353,
       "length": 29,
       "value": "\"sleep_continuity_1_5_rating\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15488,
+      "offset": 15489,
       "length": 29,
       "value": "\"temperature_minimum_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15551,
+      "offset": 15552,
       "length": 25,
       "value": "\"temperature_avg_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15610,
+      "offset": 15611,
       "length": 25,
       "value": "\"temperature_max_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15678,
+      "offset": 15679,
       "length": 35,
       "value": "\"temperature_granular_data_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15749,
+      "offset": 15750,
       "length": 27,
       "value": "\"temperature_delta_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15488,
+      "offset": 15489,
       "length": 29,
       "value": "\"temperature_minimum_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15551,
+      "offset": 15552,
       "length": 25,
       "value": "\"temperature_avg_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15610,
+      "offset": 15611,
       "length": 25,
       "value": "\"temperature_max_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15678,
+      "offset": 15679,
       "length": 35,
       "value": "\"temperature_granular_data_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 15749,
+      "offset": 15750,
       "length": 27,
       "value": "\"temperature_delta_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 16756,
+      "offset": 16757,
       "length": 21,
       "value": "\"temperature_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 16805,
+      "offset": 16806,
       "length": 18,
       "value": "\"measurement_type\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 16756,
+      "offset": 16757,
       "length": 21,
       "value": "\"temperature_celsius\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 16805,
+      "offset": 16806,
       "length": 18,
       "value": "\"measurement_type\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 16996,
+      "offset": 16997,
       "length": 11,
       "value": "\"bundle_id\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 17030,
+      "offset": 17031,
       "length": 13,
       "value": "\"source_name\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 16996,
+      "offset": 16997,
       "length": 11,
       "value": "\"bundle_id\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Sleep\/Extraction\/Entities\/RookSleepData.swift",
       "kind": "StringLiteral",
-      "offset": 17030,
+      "offset": 17031,
       "length": 13,
       "value": "\"source_name\""
     },
@@ -108222,35 +108222,35 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookBodyTransmission\/RookBodyTransmissionManager.swift",
       "kind": "StringLiteral",
-      "offset": 2358,
+      "offset": 2194,
       "length": 5,
       "value": "\"201\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookBodyTransmission\/RookBodyTransmissionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2378,
+      "offset": 2214,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookBodyTransmission\/RookBodyTransmissionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2551,
+      "offset": 2387,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookBodyTransmission\/RookBodyTransmissionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3925,
+      "offset": 3789,
       "length": 29,
       "value": "\"server response \""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookBodyTransmission\/RookBodyTransmissionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3953,
+      "offset": 3817,
       "length": 3,
       "value": "\"\""
     },
@@ -108796,28 +108796,28 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookHeartRateEventTransmission\/RookHrEventTransmissionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2236,
+      "offset": 2145,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookHeartRateEventTransmission\/RookHrEventTransmissionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2842,
+      "offset": 2751,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookHeartRateEventTransmission\/RookHrEventTransmissionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5227,
+      "offset": 5136,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookHeartRateEventTransmission\/RookHrEventTransmissionManager.swift",
       "kind": "StringLiteral",
-      "offset": 5934,
+      "offset": 5857,
       "length": 21,
       "value": "\"Server response 201\""
     },
