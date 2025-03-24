@@ -324,9 +324,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AnalyticsTra
 SWIFT_CLASS("_TtC7RookSDK21DataSourceManagerObjc")
 @interface DataSourceManagerObjc : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)getAvailableDataSourcesWithRedirectURL:(NSString * _Nullable)redirectURL completion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
-- (void)presentDataSourceViewWithRedirectURL:(NSString * _Nullable)redirectURL completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)getAuthorizedDataSourcesWithCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
+- (void)getAvailableDataSourcesWithRedirectURL:(NSString * _Nullable)redirectURL completion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method is deprecated and it will be removed in a future version");
+- (void)presentDataSourceViewWithRedirectURL:(NSString * _Nullable)redirectURL completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method is deprecated and it will be removed in a future version");
+- (void)getDataSourceAuthorizerWithDataSource:(NSString * _Nonnull)dataSource redirectUrl:(NSString * _Nullable)redirectUrl completion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
+- (void)getAuthorizedDataSourcesWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 @end
 
 
@@ -478,24 +479,24 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 /// </ul>
 ///
 - (void)syncEventsWithCompletion:(void (^ _Nonnull)(void))completion;
-- (void)syncYesterdayEventsWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_DEPRECATED_MSG("", "syncEventsWithCompletion:");
 @end
 
 @class NSDate;
 
 @interface RookEventsManager (SWIFT_EXTENSION(RookSDK))
-- (void)syncBodyHeartRateEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)syncPhysicalHeartRateEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)syncBodyOxygenationEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)syncPhysicalOxygenationEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)syncTrainingEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)syncTemperatureEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)syncPressureEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)syncGlucoseEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)syncBodyMetricsEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncEventsWithDate:(NSDate * _Nonnull)date eventType:(NSString * _Nonnull)eventType completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncPendingEventsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getTodayStepCountWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 - (void)getTodayCaloriesWithCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
+- (void)syncBodyHeartRateEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
+- (void)syncPhysicalHeartRateEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
+- (void)syncBodyOxygenationEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
+- (void)syncPhysicalOxygenationEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
+- (void)syncTrainingEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
+- (void)syncTemperatureEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
+- (void)syncPressureEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
+- (void)syncGlucoseEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
+- (void)syncBodyMetricsEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
 @end
 
 
@@ -504,33 +505,19 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 SWIFT_CLASS("_TtC7RookSDK18RookSummaryManager")
 @interface RookSummaryManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-/// This method upload all the missing summaries that has not been uploaded within the past 30 days..
-/// <h1>Notes:</h1>
-/// <ul>
-///   <li>
-///     A user id has to be added before use this method
-///   </li>
-/// </ul>
-/// \param completion A block that is called when the request finishes. This block takes the following parameters in the result
-/// <ul>
-///   <li>
-///     Bool: A Boolean value indicating if the request was successful.
-///   </li>
-///   <li>
-///     Error: An error indicating that the request fails
-///   </li>
-/// </ul>
-///
-- (void)syncSummariesWithCompletion:(void (^ _Nonnull)(void))completion;
+- (void)syncSummariesWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])");
 - (void)syncYesterdaySummariesWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_DEPRECATED_MSG("", "syncSummariesWithCompletion:");
 @end
 
 
 @interface RookSummaryManager (SWIFT_EXTENSION(RookSDK))
-- (void)syncSleepSummaryObjcWithForm:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)syncPhysicalSummaryObjcWithForm:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)syncBodySummaryObjcFrom:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)syncPendingSummariesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncWithDate:(NSDate * _Nonnull)date summaryType:(NSArray<NSString *> * _Nonnull)summaryType completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncSleepSummaryObjcWithForm:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])");
+- (void)syncPhysicalSummaryObjcWithForm:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])");
+- (void)syncBodySummaryObjcFrom:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])");
+- (void)syncPendingSummariesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])");
 @end
 
 
@@ -540,6 +527,7 @@ SWIFT_CLASS("_TtC7RookSDK18RookSummaryManager")
 SWIFT_CLASS("_TtC7RookSDK11UserManager")
 @interface UserManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)revokeWithDataSource:(NSString * _Nonnull)dataSource completionHandler:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completionHandler;
 - (void)updateUserId:(NSString * _Nonnull)id completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)readUserIdWithCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion;
 - (void)clearUserWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;

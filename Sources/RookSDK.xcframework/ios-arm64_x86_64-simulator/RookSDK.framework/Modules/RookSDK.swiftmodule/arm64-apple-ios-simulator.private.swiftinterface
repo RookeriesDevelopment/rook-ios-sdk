@@ -22,17 +22,29 @@ public struct RookLapGranularItem : Swift.Encodable {
 }
 final public class DataSourcesManager {
   public init()
+  @available(*, deprecated, message: "This method is deprecated and it will be removed in a future version")
   final public func getAvailableDataSources(redirectURL: Swift.String?, completion: @escaping (Swift.Result<[RookSDK.RookDataSource], any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "This method is deprecated and it will be removed in a future version")
   final public func presentDataSourceView(redirectURL: Swift.String?, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   final public func getAuthorizedDataSources(completion: @escaping (Swift.Result<RookSDK.StatusDataSources, any Swift.Error>) -> Swift.Void)
+  final public func getAuthorizedSources(completion: @escaping (Swift.Result<[RookSDK.DataSourceStatus], any Swift.Error>) -> Swift.Void)
+  final public func getDataSourceAuthorizer(dataSource: Swift.String, redirectUrl: Swift.String? = nil, completion: @escaping (Swift.Result<RookSDK.DataSourceAuthorizer, any Swift.Error>) -> Swift.Void)
   #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "This method is deprecated and it will be removed in a future version")
   final public func getAvailableDataSources(redirectURL: Swift.String?) async throws -> [RookSDK.RookDataSource]
   #endif
   #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "This method is deprecated and it will be removed in a future version")
   final public func presentDataSourceView(redirectURL: Swift.String?) async throws -> Swift.Bool
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   final public func getAuthorizedDataSources() async throws -> RookSDK.StatusDataSources
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func getAuthorizedDataSources() async throws -> [RookSDK.DataSourceStatus]
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func getDataSourceAuthorizer(dataSource: Swift.String, redirectUrl: Swift.String? = nil) async throws -> RookSDK.DataSourceAuthorizer
   #endif
   @objc deinit
 }
@@ -81,20 +93,28 @@ public enum RookContextType {
 @_inheritsConvenienceInitializers @objc final public class RookEventsManager : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc final public func syncEvents(completion: @escaping () -> Swift.Void)
-  @available(*, deprecated, renamed: "syncEvents")
-  @objc final public func syncYesterdayEvents(completion: @escaping () -> Swift.Void)
-  final public func syncBodyHeartRateEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
-  final public func syncPhysicalHeartRateEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
-  final public func syncBodyOxygenationEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
-  final public func syncPhysicalOxygenationEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
-  final public func syncTrainingEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
-  final public func syncTemperatureEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
-  final public func syncBloodPressureEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
-  final public func syncBloodGlucoseEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
-  final public func syncBodyMetricsEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
-  final public func syncPendingEvents(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  final public func syncEvents(date: Foundation.Date, eventType: RookSDK.EventTypeToUpload, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   final public func getTodayStepCount(completion: @escaping (Swift.Result<Swift.Int, any Swift.Error>) -> Swift.Void)
   final public func getTodayCalories(completion: @escaping (Swift.Result<RookSDK.RookCalories, any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBodyHeartRateEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncPhysicalHeartRateEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBodyOxygenationEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncPhysicalOxygenationEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncTrainingEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncTemperatureEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBloodPressureEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBloodGlucoseEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBodyMetricsEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  final public func syncPendingEvents(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   final public func getPendingDates(of type: RookSDK.PendingDatesToUploadTypes) -> [Foundation.Date]
   final public func getLastTransmissionDate(of type: RookSDK.RookTransmissionEventType) -> Foundation.Date?
   @objc deinit
@@ -193,6 +213,7 @@ public struct VoltageECGMeasurement {
   final public func removeUserFromRook(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   final public func syncUserTimeZone(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   final public func revokeDataSource(dataSource: RookSDK.DataSourceRevoke, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  final public func revoke(dataSource: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   #if compiler(>=5.3) && $AsyncAwait
   final public func updateUserId(_ id: Swift.String) async throws -> Swift.Bool
   #endif
@@ -210,6 +231,9 @@ public struct VoltageECGMeasurement {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   final public func revokeDataSource(dataSource: RookSDK.DataSourceRevoke) async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @objc final public func revoke(dataSource: Swift.String) async throws -> Swift.Bool
   #endif
   @objc final public func updateUserId(_ id: Swift.String, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   @objc final public func readUserId(completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
@@ -375,18 +399,28 @@ public struct RookGlucoseGranularItemTransmission : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension RookSDK.RookEventsManager {
-  @objc final public func syncBodyHeartRateEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
-  @objc final public func syncPhysicalHeartRateEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
-  @objc final public func syncBodyOxygenationEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
-  @objc final public func syncPhysicalOxygenationEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
-  @objc final public func syncTrainingEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
-  @objc final public func syncTemperatureEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
-  @objc final public func syncPressureEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
-  @objc final public func syncGlucoseEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
-  @objc final public func syncBodyMetricsEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @objc final public func syncEvents(date: Foundation.Date, eventType: Swift.String, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   @objc final public func syncPendingEventsObjc(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   @objc final public func getTodayStepCount(completion: @escaping (Swift.Int, (any Swift.Error)?) -> Swift.Void)
   @objc final public func getTodayCalories(completion: @escaping ([Swift.String : Any]?, (any Swift.Error)?) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  @objc final public func syncBodyHeartRateEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  @objc final public func syncPhysicalHeartRateEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  @objc final public func syncBodyOxygenationEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  @objc final public func syncPhysicalOxygenationEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  @objc final public func syncTrainingEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  @objc final public func syncTemperatureEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  @objc final public func syncPressureEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  @objc final public func syncGlucoseEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  @objc final public func syncBodyMetricsEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
 }
 public struct RookActivityEventTransmission : Swift.Codable {
   public var metadata: RookSDK.RookMetaDataEventTransmission
@@ -430,12 +464,20 @@ extension RookSDK.RookBackGroundSync {
 }
 @_inheritsConvenienceInitializers @objc final public class RookSummaryManager : ObjectiveC.NSObject {
   @objc override dynamic public init()
+  final public func sync(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  final public func sync(_ date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  final public func sync(_ date: Foundation.Date, summaryType: [RookSDK.SummaryTypeToUpload], completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
   @objc final public func syncSummaries(completion: @escaping () -> Swift.Void)
   @available(*, deprecated, renamed: "syncSummaries")
   @objc final public func syncYesterdaySummaries(completion: @escaping () -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
   final public func syncSleepSummary(from date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
   final public func syncPhysicalSummary(from date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
   final public func syncBodySummary(from date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date)")
   final public func syncPendingSummaries(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   final public func getSleepPendingDates() -> [Foundation.Date]
   final public func getPhysicalPendingDates() -> [Foundation.Date]
@@ -605,6 +647,16 @@ public struct SummarySyncResponse {
   public var sleepResponse: Swift.Result<Swift.Bool, any Swift.Error>?
   public var physicalResponse: Swift.Result<Swift.Bool, any Swift.Error>?
   public var bodyResponse: Swift.Result<Swift.Bool, any Swift.Error>?
+}
+public enum SummaryTypeToUpload : Swift.String {
+  case sleep
+  case physical
+  case body
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 public struct RookDataSource {
   public let name: Swift.String
@@ -953,16 +1005,21 @@ public struct URLParameterEncoder : RookSDK.ParameterEncoder {
   public static func encode(urlRequest: inout Foundation.URLRequest, with parameters: RookSDK.Parameters) throws
 }
 public struct StatusDataSources {
-  public let oura: Swift.Bool
-  public let polar: Swift.Bool
-  public let whoop: Swift.Bool
-  public let fitbit: Swift.Bool
-  public let garmin: Swift.Bool
-  public let withings: Swift.Bool
+  public let oura: Swift.Bool?
+  public let polar: Swift.Bool?
+  public let whoop: Swift.Bool?
+  public let fitbit: Swift.Bool?
+  public let garmin: Swift.Bool?
+  public let withings: Swift.Bool?
   public let googleFit: Swift.Bool?
-  public let appleHealth: Swift.Bool
-  public let healthConnect: Swift.Bool
-  public let android: Swift.Bool
+  public let appleHealth: Swift.Bool?
+  public let healthConnect: Swift.Bool?
+  public let android: Swift.Bool?
+  public let dexcom: Swift.Bool?
+}
+public struct DataSourceStatus {
+  public let source: Swift.String
+  public let status: Swift.Bool
 }
 public struct RookPositionDataTransmission : Swift.Codable {
   public let positionStartLatLngDeg: RookSDK.RookPositionItemTransmission?
@@ -1071,9 +1128,16 @@ public struct RookDistanceDateTransmission : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension RookSDK.RookSummaryManager {
+  @objc final public func sync(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @objc final public func sync(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @objc final public func sync(date: Foundation.Date, summaryType: [Swift.String], completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
   @objc final public func syncSleepSummaryObjc(form date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
   @objc final public func syncPhysicalSummaryObjc(form date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
   @objc final public func syncBodySummaryObjc(from date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
   @objc final public func syncPendingSummariesObjc(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
 }
 @_inheritsConvenienceInitializers @objc final public class RookConnectPermissionsManager : ObjectiveC.NSObject {
@@ -1271,18 +1335,32 @@ public struct Body : Swift.Codable {
 }
 extension RookSDK.RookSummaryManager {
   #if compiler(>=5.3) && $AsyncAwait
+  final public func sync() async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func sync(_ date: Foundation.Date) async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func sync(_ date: Foundation.Date, _ summaryType: [RookSDK.SummaryTypeToUpload]) async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
   final public func syncSummaries() async
   #endif
   #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
   final public func syncSleepSummary(from date: Foundation.Date) async throws -> Swift.Bool
   #endif
   #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
   final public func syncPhysicalSummary(from date: Foundation.Date) async throws -> Swift.Bool
   #endif
   #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
   final public func syncBodySummary(from date: Foundation.Date) async throws -> Swift.Bool
   #endif
   #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date)")
   final public func syncPendingSummaries() async throws -> Swift.Bool
   #endif
 }
@@ -1543,34 +1621,7 @@ extension RookSDK.RookEventsManager {
   final public func syncEvents() async
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  final public func syncBodyHeartRateEvent(date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  final public func syncPhysicalHeartRateEvent(date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  final public func syncBodyOxygenationEvent(date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  final public func syncPhysicalOxygenationEvent(date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  final public func syncTrainingEvent(date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  final public func syncTemperatureEvents(date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  final public func syncBloodPressureEvents(date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  final public func syncBloodGlucoseEvents(date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  final public func syncBodyMetricsEvents(date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  final public func syncPendingEvents() async throws -> Swift.Bool
+  final public func syncEvents(date: Foundation.Date, eventType: RookSDK.EventTypeToUpload) async throws -> Swift.Bool
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   final public func getTodayStepCount() async throws -> Swift.Int
@@ -1578,10 +1629,66 @@ extension RookSDK.RookEventsManager {
   #if compiler(>=5.3) && $AsyncAwait
   final public func getTodayCalories() async throws -> RookSDK.RookCalories
   #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBodyHeartRateEvent(date: Foundation.Date) async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncPhysicalHeartRateEvent(date: Foundation.Date) async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBodyOxygenationEvent(date: Foundation.Date) async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncPhysicalOxygenationEvent(date: Foundation.Date) async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncTrainingEvent(date: Foundation.Date) async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncTemperatureEvents(date: Foundation.Date) async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBloodPressureEvents(date: Foundation.Date) async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBloodGlucoseEvents(date: Foundation.Date) async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBodyMetricsEvents(date: Foundation.Date) async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncPendingEvents() async throws -> Swift.Bool
+  #endif
 }
 @objc public class LogInfoObjc : ObjectiveC.NSObject {
   public init(level: Swift.String?, dataDateTime: Swift.String?, action: Swift.String?, dataType: Swift.String?, extra: Swift.String?, uuid: Swift.String)
   @objc deinit
+}
+public enum EventTypeToUpload : Swift.String {
+  case activityEvent
+  case heartRate
+  case oxygenation
+  case temperature
+  case bloodPressure
+  case bloodGlucose
+  case bodyMetrics
+  case calories
+  case steps
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class RookConnectConfigurationManagerObjc : ObjectiveC.NSObject {
   @objc public static let shared: RookSDK.RookConnectConfigurationManagerObjc
@@ -1651,10 +1758,18 @@ public struct RookPositionGranularItem : Swift.Encodable {
 }
 @_inheritsConvenienceInitializers @objc final public class DataSourceManagerObjc : ObjectiveC.NSObject {
   @objc override dynamic public init()
+  @available(*, deprecated, message: "This method is deprecated and it will be removed in a future version")
   @objc final public func getAvailableDataSources(redirectURL: Swift.String?, completion: @escaping ([[Swift.String : Any]]?, (any Swift.Error)?) -> Swift.Void)
+  @available(*, deprecated, message: "This method is deprecated and it will be removed in a future version")
   @objc final public func presentDataSourceView(redirectURL: Swift.String?, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
-  @objc final public func getAuthorizedDataSources(completion: @escaping ([Swift.String : Any]?, (any Swift.Error)?) -> Swift.Void)
+  @objc final public func getDataSourceAuthorizer(dataSource: Swift.String, redirectUrl: Swift.String? = nil, completion: @escaping ([Swift.String : Any]?, (any Swift.Error)?) -> Swift.Void)
+  @objc final public func getAuthorizedDataSources(completion: @escaping ([[Swift.String : Any]]?, (any Swift.Error)?) -> Swift.Void)
   @objc deinit
+}
+public struct DataSourceAuthorizer {
+  public let dataSource: Swift.String
+  public let authorized: Swift.Bool
+  public let authorizationURL: Foundation.URL?
 }
 public enum RookTransmissionSummaryType : Swift.String, Swift.CaseIterable {
   case sleep
@@ -2034,6 +2149,9 @@ extension RookSDK.BackGroundStorageTypes : Swift.RawRepresentable {}
 extension RookSDK.EventNames : Swift.Equatable {}
 extension RookSDK.EventNames : Swift.Hashable {}
 extension RookSDK.EventNames : Swift.RawRepresentable {}
+extension RookSDK.SummaryTypeToUpload : Swift.Equatable {}
+extension RookSDK.SummaryTypeToUpload : Swift.Hashable {}
+extension RookSDK.SummaryTypeToUpload : Swift.RawRepresentable {}
 extension RookSDK.TimeZoneErrors : Swift.Equatable {}
 extension RookSDK.TimeZoneErrors : Swift.Hashable {}
 extension RookSDK.TimeZoneErrors : Swift.RawRepresentable {}
@@ -2046,6 +2164,9 @@ extension RookSDK.RookTransmissionEventType : Swift.RawRepresentable {}
 extension RookSDK.HTTPMethod : Swift.Equatable {}
 extension RookSDK.HTTPMethod : Swift.Hashable {}
 extension RookSDK.HTTPMethod : Swift.RawRepresentable {}
+extension RookSDK.EventTypeToUpload : Swift.Equatable {}
+extension RookSDK.EventTypeToUpload : Swift.Hashable {}
+extension RookSDK.EventTypeToUpload : Swift.RawRepresentable {}
 extension RookSDK.RookEventType : Swift.Equatable {}
 extension RookSDK.RookEventType : Swift.Hashable {}
 extension RookSDK.BackgroundSummaryType : Swift.Equatable {}
