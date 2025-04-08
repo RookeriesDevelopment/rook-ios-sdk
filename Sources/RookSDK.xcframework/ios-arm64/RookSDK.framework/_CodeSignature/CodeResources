@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RookSDK-Swift.h</key>
 		<data>
-		9xfvSzH9j9NuUclpzyaZdTK33nw=
+		av1NZPk+QxRC5crsaIlRguZGDhE=
 		</data>
 		<key>Headers/RookSDK.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LS7zysbwbv0nZeTNO90kWMN2kwI=
+		sN2cUSfZTFA4dOtJPhK1p5wahVQ=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		kPz07RXIhGIiG7aeAlnGbE2nirE=
+		F4JeLXxOBOivK7waz6U1QKzKWOE=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		yiSuFM1VYtrM+ineIh73i5woQhQ=
+		ZZcoh+VikCJHIJsDWjHXv4UYlQo=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		IBJuJnpD4KlRJTmsCxt20TKCZNw=
+		An5Sr/dpsCiC8xG+/hjETf31mjw=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		yiSuFM1VYtrM+ineIh73i5woQhQ=
+		ZZcoh+VikCJHIJsDWjHXv4UYlQo=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		+ZcLxXAYZBctTu9txrJdy+NPC0I=
+		6J5V5V1RheGRJprrj+WvStIvqdo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,19 +46,19 @@
 		</data>
 		<key>RookTransmissionContainer.momd/RookTransmissionContainer 2.mom</key>
 		<data>
-		P1pvP2PENwF2MXY13NeR+g/xPFA=
+		Yg1Pfy5wqRg6Nm5hD56Dl0M8OFE=
 		</data>
 		<key>RookTransmissionContainer.momd/RookTransmissionContainer 3.mom</key>
 		<data>
-		fuhPGATPwRsZEJFUqbS5o4ktNk0=
+		Tct2IHFzLhOh1PJ/RlkR3qiV1RI=
 		</data>
 		<key>RookTransmissionContainer.momd/RookTransmissionContainer 4.mom</key>
 		<data>
-		z2Wz7FG0gl/FROGUgw5mOwNDrf0=
+		BPc9rbi0vpOzE2CURbg4JUmlNxk=
 		</data>
 		<key>RookTransmissionContainer.momd/RookTransmissionContainer 5.mom</key>
 		<data>
-		fcCG7NRcG7H8Og1aJB35Dp6Zetk=
+		JF9oYBxChutiYPU3kCJuni8aUc0=
 		</data>
 		<key>RookTransmissionContainer.momd/RookTransmissionContainer 5.omo</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>RookTransmissionContainer.momd/RookTransmissionContainer.mom</key>
 		<data>
-		tjQ4uUABqVH62O/ydIgggBcZPzE=
+		mIoYYJn0PjnNOOpe1UNSFFAUJ3o=
 		</data>
 		<key>RookTransmissionContainer.momd/VersionInfo.plist</key>
 		<data>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+Eikjmh5bqmvV6epom3hODauZKoqm6yxdauOfEzQ5F8=
+			uy6YQLE9yVk5n3PHUxVLip0x65szKDKUZ4zFELd59yc=
 			</data>
 		</dict>
 		<key>Headers/RookSDK.h</key>
@@ -93,35 +93,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			52/hQG+oitlLq7Y8ynSxI19vAwcBre4K1NwId+7HSJI=
+			pZoeAtYL6MlG0moWUW4Mxql4t5WUH+HTV2CIgoaU5/s=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tj4QeLD6WS5dLt3wQRvWOPKX/39AlZCg4Q3lDpZyMsY=
+			wbKTp6gl8K/O4DsveGjrKdbbrCC4AMlFem8+icpCqYM=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g5pT1a7u0j+iX3UWKnZRR2B6nXEV+pEYP/KPVooyrrY=
+			IGeTrdBwB0zDQGSPoI7m98di9XPRAPqwbl5y4GulZjk=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tj4QeLD6WS5dLt3wQRvWOPKX/39AlZCg4Q3lDpZyMsY=
+			wbKTp6gl8K/O4DsveGjrKdbbrCC4AMlFem8+icpCqYM=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hdREGLsh0eqbncjbpbdC9aEbtvOtObI7rmk/G8+DVh4=
+			wiKVpIfNHL6ewo1iRlxI4c3sSvpIeWXTCEKZ7pdPnyE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -142,28 +142,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3tFA1O5qn9R7mXaSC/PaRM6VPx7A9Xylx9K693J0Q2I=
+			zxVMbWd6WawGu6pdgKtEbgIyIrqA9AjTML2+RgfBumM=
 			</data>
 		</dict>
 		<key>RookTransmissionContainer.momd/RookTransmissionContainer 3.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ASAtaM4li4hzxHmpp3rgkYimNlMd143YFcckqLEONnQ=
+			2h52MD8ASPo6/RB4/6bUnbupw24o1d0S1xso9Mih2uw=
 			</data>
 		</dict>
 		<key>RookTransmissionContainer.momd/RookTransmissionContainer 4.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ql+taQIhi8HTIIXVWf5gociHLbyAmrux0XKtRJxF2f8=
+			WfIHMaO0YytgzjTPRk9nuKW6wIrIsGYNpLEIb4lLoRE=
 			</data>
 		</dict>
 		<key>RookTransmissionContainer.momd/RookTransmissionContainer 5.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OAyR9BQVygn4tTdBF9H4TIz6ZDMTJHuV4Mchsk7f5U0=
+			ojT68JNighHgLRYf3+JfxhnkXZVAV2BxwuWfXlvdL5E=
 			</data>
 		</dict>
 		<key>RookTransmissionContainer.momd/RookTransmissionContainer 5.omo</key>
@@ -177,7 +177,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F9HnE2jUaPr/FC2LoLI3hnXva2jdcvAp1pnw1/jknu4=
+			k/MsQLjea9UzhxDlgDNOgIaAqMs2+hO4FoEVwmW4XA8=
 			</data>
 		</dict>
 		<key>RookTransmissionContainer.momd/VersionInfo.plist</key>

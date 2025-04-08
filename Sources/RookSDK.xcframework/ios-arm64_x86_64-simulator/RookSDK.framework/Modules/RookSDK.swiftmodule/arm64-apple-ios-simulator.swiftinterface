@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RookSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name RookSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Combine
 import CoreData
 import Foundation
@@ -29,23 +29,13 @@ final public class DataSourcesManager {
   final public func getAuthorizedDataSources(completion: @escaping (Swift.Result<RookSDK.StatusDataSources, any Swift.Error>) -> Swift.Void)
   final public func getAuthorizedSources(completion: @escaping (Swift.Result<[RookSDK.DataSourceStatus], any Swift.Error>) -> Swift.Void)
   final public func getDataSourceAuthorizer(dataSource: Swift.String, redirectUrl: Swift.String? = nil, completion: @escaping (Swift.Result<RookSDK.DataSourceAuthorizer, any Swift.Error>) -> Swift.Void)
-  #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, message: "This method is deprecated and it will be removed in a future version")
   final public func getAvailableDataSources(redirectURL: Swift.String?) async throws -> [RookSDK.RookDataSource]
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, message: "This method is deprecated and it will be removed in a future version")
   final public func presentDataSourceView(redirectURL: Swift.String?) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func getAuthorizedDataSources() async throws -> RookSDK.StatusDataSources
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func getAuthorizedDataSources() async throws -> [RookSDK.DataSourceStatus]
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func getDataSourceAuthorizer(dataSource: Swift.String, redirectUrl: Swift.String? = nil) async throws -> RookSDK.DataSourceAuthorizer
-  #endif
   @objc deinit
 }
 final public class RookTimeZoneManager {
@@ -72,9 +62,10 @@ public enum RookDataType : Swift.String, Swift.CaseIterable, Swift.Identifiable 
   case bloodPressureEvent
   public init?(rawValue: Swift.String)
   public typealias AllCases = [RookSDK.RookDataType]
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias ID = RookSDK.RookDataType
   public typealias RawValue = Swift.String
-  public static var allCases: [RookSDK.RookDataType] {
+  nonisolated public static var allCases: [RookSDK.RookDataType] {
     get
   }
   public var rawValue: Swift.String {
@@ -214,27 +205,13 @@ public struct VoltageECGMeasurement {
   final public func syncUserTimeZone(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   final public func revokeDataSource(dataSource: RookSDK.DataSourceRevoke, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   final public func revoke(dataSource: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
-  #if compiler(>=5.3) && $AsyncAwait
   final public func updateUserId(_ id: Swift.String) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func getUserId() async throws -> Swift.String
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func clearUser() async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func removeUserFromRook() async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func syncUserTimeZone() async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func revokeDataSource(dataSource: RookSDK.DataSourceRevoke) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @objc final public func revoke(dataSource: Swift.String) async throws -> Swift.Bool
-  #endif
   @objc final public func updateUserId(_ id: Swift.String, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   @objc final public func readUserId(completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
   @objc final public func clearUser(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
@@ -524,7 +501,7 @@ public enum DataSourceRevoke : Swift.String, Swift.CaseIterable {
   public init?(rawValue: Swift.String)
   public typealias AllCases = [RookSDK.DataSourceRevoke]
   public typealias RawValue = Swift.String
-  public static var allCases: [RookSDK.DataSourceRevoke] {
+  nonisolated public static var allCases: [RookSDK.DataSourceRevoke] {
     get
   }
   public var rawValue: Swift.String {
@@ -575,22 +552,6 @@ public enum BackGroundStorageTypes : Swift.String {
     get
   }
 }
-public struct RookDistanceData : Swift.Codable {
-  public var stepsNumber: Swift.Int?
-  public var stepsGranularDataStepsPerMin: [RookSDK.StepsGranularDataStepsPerHr]?
-  public var walkedDistanceMeters: Swift.Int?, traveledDistanceMeters: Swift.Int?
-  public var traveledDistanceGranularDataMeters: [RookSDK.TraveledDistanceGranularDataMeter]?
-  public var floorsClimbedNumber: Swift.Int?
-  public var floorsClimbedGranularDataFloors: [RookSDK.FloorsClimbedGranularDataFloor]?
-  public var elevationAvgAltitudeMeters: Swift.Int?, elevationMinimumAltitudeMeters: Swift.Int?, elevationMaxAltitudeMeters: Swift.Int?, elevationLossActualAltitudeMeters: Swift.Int?
-  public var elevationGainActualAltitudeMeters: Swift.Int?, elevationPlannedGainMeters: Swift.Int?
-  public var elevationGranularDataMeters: [RookSDK.ElevationGranularDataMeter]?
-  public var swimmingStrokesNumber: Swift.Int?, swimmingNumLapsNumber: Swift.Int?, swimmingPoolLengthMeters: Swift.Int?, swimmingTotalDistanceMeters: Swift.Int?
-  public var swimmingDistanceGranularDataMeters: [RookSDK.SwimmingDistanceGranularDataMeter]?
-  public var distanceCyclingMeters: Swift.Int?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 public enum EventNames : Swift.String {
   public static let errorBackGround: Swift.String
   case errorBackGroundEventName
@@ -621,27 +582,13 @@ public struct RookHrvRmssdGranularTransmissionDTO : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension RookSDK.RookConnectPermissionsManager {
-  #if compiler(>=5.3) && $AsyncAwait
   final public func requestAllPermissions() async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func requestSleepPermissions() async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func requestUserInfoPermissions() async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func requestPhysicalPermissions() async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func requestBodyPermissions() async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func requestPermissions(_ permissions: [RookSDK.HealthDataType]?) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func checkPermissionStatus(type: RookSDK.HealthDataType?) async -> RookSDK.PermissionStatus
-  #endif
 }
 public struct SummarySyncResponse {
   public var sleepResponse: Swift.Result<Swift.Bool, any Swift.Error>?
@@ -695,24 +642,6 @@ public struct RookStressGranularDataScoreNumberTransmission : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct RookHeartRateEventExtraction : Swift.Codable {
-  public var metadata: RookSDK.RookMetaDataEvent
-  public var heartRateData: RookSDK.RookHeartRateDataEvent
-  public var dataEvent: Foundation.Data? {
-    get
-  }
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct RookHeartRateDataEvent : Swift.Codable {
-  public let hrMaxBPM: Swift.Int?, hrMinimumBPM: Swift.Int?, hrAvgBPM: Swift.Int?, hrRestingBPM: Swift.Int?
-  public let hrGranularDataBPM: [RookSDK.HrGranularDataBPM]?
-  public let hrvAvgRmssdNumber: Swift.Int?, hrvAvgSdnnNumber: Swift.Int?
-  public let hrvSdnnGranularData: [RookSDK.HrvSdnnGranularDatum]?
-  public let hrvRmssdGranularData: [RookSDK.HrvRmssdGranularDatum]?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 public struct RookCadenceGranularItem : Swift.Encodable {
   public let datetime: Foundation.Date
   public let intervalDurationSeconds: Swift.Int
@@ -753,179 +682,6 @@ public struct RookSpeedGranularItem : Swift.Encodable {
   public let intervalDurationSeconds: Swift.Int
   public let speedMetersPerSecond: Swift.Int
   public func encode(to encoder: any Swift.Encoder) throws
-}
-public struct RookPhysicalData : Swift.Codable {
-  public let dataStructure: Swift.String
-  public let version: Swift.Int
-  public let summaries: RookSDK.RookPhysicalSummaries
-  public func getDictionary() -> [Swift.String : Any]
-  public func getData() -> Foundation.Data?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct RookPhysicalSummaries : Swift.Codable {
-  public let dailyActivityRelatedData: RookSDK.DailyActivityRelatedData
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct DailyActivityRelatedData : Swift.Codable {
-  public let metadata: RookSDK.RookPhysicalMetadata
-  public let distanceData: RookSDK.DistanceData
-  public let oxygenationData: RookSDK.OxygenationData
-  public let activityData: RookSDK.ActivityData
-  public let caloriesData: RookSDK.CaloriesData
-  public let heartRateData: RookSDK.HeartRateData
-  public let stressData: RookSDK.StressData
-  public let nonStructuredData: RookSDK.NoStructuredPhysicalData?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct RookPhysicalMetadata : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let userID: Swift.String?
-  public let sourcesOfData: [Swift.String]
-  @available(*, deprecated, message: "This property is deprecated instead use getUserInformation method")
-  public let userDemographics: [RookSDK.UserDemographic]
-  public let physicalHealthScore: Swift.Int?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct ActivityData : Swift.Codable {
-  public let activeSeconds: Swift.Int?
-  public let restSeconds: Swift.Int?
-  public let lowIntensitySeconds: Swift.Int?
-  public let moderateIntensitySeconds: Swift.Int?
-  public let vigorousIntensitySeconds: Swift.Int?, inactivitySeconds: Swift.Int?
-  public let activityLevelGranularDataNumber: [RookSDK.ActivityLevelGranularDataNumber]?
-  public let continuousInactivePeriodsNumber: Swift.Int?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct ActivityLevelGranularDataNumber : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let activityLevel: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct CaloriesData : Swift.Codable {
-  public let caloriesNetIntakeKilocalories: Swift.Int?
-  public let caloriesExpenditureKilocalories: Swift.Int?
-  public let caloriesNetActiveKilocalories: Swift.Int?
-  public let caloriesBasalMetabolicRateKilocalories: Swift.Int?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct DistanceData : Swift.Codable {
-  public var stepsPerDayNumber: Swift.Int?
-  public var stepsGranularDataStepsPerHr: [RookSDK.StepsGranularDataStepsPerHr]?
-  public var activeStepsPerDayNumber: Swift.Int?
-  public var activeStepsGranularDataStepsPerHr: [RookSDK.StepsGranularDataStepsPerHr]?
-  public var walkedDistanceMeters: Swift.Int?, traveledDistanceMeters: Swift.Int?
-  public var traveledDistanceGranularDataMeters: [RookSDK.TraveledDistanceGranularDataMeter]?
-  public var floorsClimbedNumber: Swift.Int?
-  public var floorsClimbedGranularDataFloors: [RookSDK.FloorsClimbedGranularDataFloor]?
-  public var elevationAvgAltitudeMeters: Swift.Int?, elevationMinimumAltitudeMeters: Swift.Int?, elevationMaxAltitudeMeters: Swift.Int?, elevationLossActualAltitudeMeters: Swift.Int?
-  public var elevationGainActualAltitudeMeters: Swift.Int?, elevationPlannedGainMeters: Swift.Int?
-  public var elevationGranularDataMeters: [RookSDK.ElevationGranularDataMeter]?
-  public var swimmingStrokesNumber: Swift.Int?, swimmingNumLapsNumber: Swift.Int?, swimmingPoolLengthMeters: Swift.Int?, swimmingTotalDistanceMeters: Swift.Int?
-  public var swimmingDistanceGranularDataMeters: [RookSDK.SwimmingDistanceGranularDataMeter]?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct StepsGranularDataStepsPerHr : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let intervalDurationSeconds: Swift.Int, steps: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct ElevationGranularDataMeter : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let intervalDurationSeconds: Swift.Int, elevationChange: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct FloorsClimbedGranularDataFloor : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let intervalDurationSeconds: Swift.Int, floorsClimbed: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct SwimmingDistanceGranularDataMeter : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let intervalDurationSeconds: Swift.Int, swimmingDistanceMeters: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct TraveledDistanceGranularDataMeter : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let intervalDurationSeconds: Swift.Int, traveledDistanceMeters: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct HeartRateData : Swift.Codable {
-  public var hrMaxBPM: Swift.Int?, hrMinimumBPM: Swift.Int?, hrAvgBPM: Swift.Int?, hrRestingBPM: Swift.Int?
-  public var hrGranularDataBPM: [RookSDK.HrGranularDataBPM]?
-  public var hrvAvgRmssdNumber: Swift.Int?, hrvAvgSdnnNumber: Swift.Int?
-  public var hrvSdnnGranularDataNumber: [RookSDK.HrvSdnnGranularDataNumber]?
-  public var hrvRmssdGranularDataNumber: [RookSDK.HrvRmssdGranularDataNumber]?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct HrvRmssdGranularDataNumber : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let hrvRmssd: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct HrvSdnnGranularDataNumber : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let hrvSdnn: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct NonStructuredData : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct NoStructuredPhysicalData : Swift.Codable {
-  public let walkingSpeed: Swift.Int?
-  public let walkingStepLength: Swift.Int?
-  public let runningPower: Swift.Int?
-  public let runningSpeed: Swift.Int?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct OxygenationData : Swift.Codable {
-  public let saturationAvgPercentage: Swift.Int?
-  public let saturationGranularDataPercentage: [RookSDK.SaturationGranularDataPercentage]?
-  public let vo2MaxMlPerMinPerKg: Swift.Int?
-  public let vo2GranularDataLiterPerMin: [RookSDK.Vo2GranularDataLiterPerMin]?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct Vo2GranularDataLiterPerMin : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let vo2MlPerMinPerKg: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct StressData : Swift.Codable {
-  public let stressAtRESTDurationSeconds: Swift.Int?
-  public let stressDurationSeconds: Swift.Int?
-  public let lowStressDurationSeconds: Swift.Int?
-  public let mediumStressDurationSeconds: Swift.Int?
-  public let highStressDurationSeconds: Swift.Int?
-  public let stressGranularDataScoreNumber: [RookSDK.StressGranularDataScoreNumber]?
-  public let stressAvgLevelNumber: Swift.Int?
-  public let stressMaxLevelNumber: Swift.Int?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct StressGranularDataScoreNumber : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let stressScore: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
 public typealias HTTPHeaders = [Swift.String : Swift.String]
 public enum HTTPTask {
@@ -1047,31 +803,13 @@ public struct RookPositionGranularItemTransmission : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct RookActivityEventExtraction : Swift.Encodable {
-  public var metadata: RookSDK.RookMetaDataEvent
-  public var activityData: RookSDK.RookActivityDataEvent?
-  public var caloriesData: RookSDK.RookCaloriesDataEvent?
-  public var distanceData: RookSDK.RookDistanceData?
-  public var heartRateData: RookSDK.HeartRateData?
-  public var movementData: RookSDK.RookMovementData?
-  public var powerData: RookSDK.RookPowerData?
-  public var positionData: RookSDK.RookPositionData?
-  public var oxygenationData: RookSDK.OxygenationData?
-  public var stressData: RookSDK.StressData?
-  public var eventData: Foundation.Data? {
-    get
-  }
-  public func encode(to encoder: any Swift.Encoder) throws
-}
 extension RookSDK.RookConnectPermissionsManager {
   @objc final public func requestAllPermissionsObjc(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   @objc final public func requestSleepPermissionsObjc(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   @objc final public func requestUserInfoPermissionsObjc(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   @objc final public func requestPhysicalPermissionsObjc(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   @objc final public func requestBodyPermissionsObjc(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
-  #if compiler(>=5.3) && $AsyncAwait
   @objc final public func checkPermissionStatus(type: Swift.String?) async -> Swift.String
-  #endif
   @objc final public func requestPermissions(_ permissions: [Swift.String]?, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
 }
 public struct RookMetaDataEventTransmission : Swift.Codable {
@@ -1174,24 +912,12 @@ public struct RookVo2GranularTransmission : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension RookSDK.RookConnectConfigurationManager {
-  #if compiler(>=5.3) && $AsyncAwait
   final public func initRook() async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func updateUserId(_ id: Swift.String) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func getUserId() async throws -> Swift.String
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func clearUser() async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func removeUserFromRook() async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func syncUserTimeZone() async throws -> Swift.Bool
-  #endif
 }
 public struct RookHrGranularTransmission : Swift.Codable {
   public let datetime: Foundation.Date
@@ -1200,169 +926,20 @@ public struct RookHrGranularTransmission : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct RookBodyData : Swift.Codable {
-  public let dataStructure: Swift.String
-  public let version: Swift.Int
-  public let summaries: RookSDK.RookBodySummaries
-  public func getDictionary() -> [Swift.String : Any]
-  public func getData() -> Foundation.Data?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct RookBodySummaries : Swift.Codable {
-  public let bodyData: RookSDK.BodyData
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct BodyData : Swift.Codable {
-  public let metadata: RookSDK.RookBodyMetadata
-  public let body: RookSDK.Body
-  public let bloodGlucose: RookSDK.BloodGlucose
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct RookBodyMetadata : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let userID: Swift.String?
-  public let sourcesOfData: [Swift.String]
-  @available(*, deprecated, message: "This property is deprecated insted use getUserInformation method")
-  public let userDemographics: [RookSDK.UserDemographic]
-  public let bodyHealthScore: Swift.Int?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct BloodGlucose : Swift.Codable {
-  public let bloodGlucoseDayAvgMgPerDLNumber: Swift.Int?
-  public let bloodGlucoseGranularDataMgPerDL: [RookSDK.BloodGlucoseGranularDataMgPerDL]?
-  public let bloodPressure: RookSDK.BloodPressure
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct BloodGlucoseGranularDataMgPerDL : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let bloodGlucoseMgPerDL: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct BloodPressure : Swift.Codable {
-  public let bloodPressureDayAvgSystolicDiastolicBpNumber: [RookSDK.BloodPressureSystolicDiastolicBpNumber]?
-  public let bloodPressureGranularDataSystolicDiastolicBpNumber: [RookSDK.BloodPressureGranularDataSystolicDiastolicBpNumber]?
-  public let hydration: RookSDK.Hydration
-  public let heartRateData: RookSDK.HeartRateData
-  public let mood: RookSDK.Mood
-  public let nutrition: RookSDK.Nutrition
-  public let oxygenationData: RookSDK.OxygenationData
-  public let temperatureRelatedData: RookSDK.TemperatureRelatedData
-  public let nonStructuredData: RookSDK.NoStructuredBodyData?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct NoStructuredBodyData : Swift.Codable {
-  public let uvExposureMax: Swift.Int?
-  public let uvExposureAvg: Swift.Int?
-  public let uvExposureMin: Swift.Int?
-  public let uvExposureSeconds: Swift.Int?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct BloodPressureSystolicDiastolicBpNumber : Swift.Codable {
-  public let systolicBp: Swift.Int, diastolicBp: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct BloodPressureGranularDataSystolicDiastolicBpNumber : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let systolicBp: Swift.Int, diastolicBp: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct Hydration : Swift.Codable {
-  public let waterTotalConsumptionMlNumber: Swift.Int?
-  public let hydrationAmountGranularDataMlNumber: [RookSDK.HydrationAmountGranularDataMlNumber]?
-  public let hydrationLevelGranularDataPercentageNumber: [RookSDK.HydrationLevelGranularDataPercentageNumber]?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct HydrationAmountGranularDataMlNumber : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let intervalDurationSeconds: Swift.Int, hydrationAmountMl: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct HydrationLevelGranularDataPercentageNumber : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let intervalDurationSeconds: Swift.Int, hydrationLevelPercentage: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct Mood : Swift.Codable {
-  public let moodMinimumScale: Swift.Int?, moodAvgScale: Swift.Int?, moodMaxScale: Swift.Int?
-  public let moodGranularDataScale: [RookSDK.MoodGranularDataScale]?
-  public let moodDeltaScale: Swift.Int?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct MoodGranularDataScale : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let intervalDurationSeconds: Swift.Int, moodScale: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct Nutrition : Swift.Codable {
-  public let foodIntakeNumber: Swift.Int?
-  public let caloriesIntakeNumber: Swift.Int?, proteinIntakeGNumber: Swift.Int?, sugarIntakeGNumber: Swift.Int?, fatIntakeGNumber: Swift.Int?
-  public let transFatIntakeGNumber: Swift.Int?, carbohydratesIntakeGNumber: Swift.Int?, fiberIntakeGNumber: Swift.Int?, alcoholIntakeGNumber: Swift.Int?
-  public let sodiumIntakeMgNumber: Swift.Int?, cholesterolIntakeMgNumber: Swift.Int?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct FoodIntakeNumber : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct Body : Swift.Codable {
-  public let waistCircumferenceCMNumber: Swift.Int?
-  public let hipCircumferenceCMNumber: Swift.Int?
-  public let chestCircumferenceCMNumber: Swift.Int?
-  public let boneCompositionPercentageNumber: Swift.Int?
-  public let muscleCompositionPercentageNumber: Swift.Int?
-  public let waterCompositionPercentage: Swift.Int?
-  public let weightKgNumber: Swift.Float?
-  public let heightCMNumber: Swift.Float?
-  public let bmiNumber: Swift.Float?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 extension RookSDK.RookSummaryManager {
-  #if compiler(>=5.3) && $AsyncAwait
   final public func sync() async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func sync(_ date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func sync(_ date: Foundation.Date, _ summaryType: [RookSDK.SummaryTypeToUpload]) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
   final public func syncSummaries() async
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
   final public func syncSleepSummary(from date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
   final public func syncPhysicalSummary(from date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
   final public func syncBodySummary(from date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date)")
   final public func syncPendingSummaries() async throws -> Swift.Bool
-  #endif
 }
 public struct RookBodyMetricsEventTransmission : Swift.Codable {
   public let metaData: RookSDK.RookMetaDataEventTransmission
@@ -1445,7 +1022,7 @@ public enum RookTransmissionEventType : Swift.String, Swift.CaseIterable {
   public init?(rawValue: Swift.String)
   public typealias AllCases = [RookSDK.RookTransmissionEventType]
   public typealias RawValue = Swift.String
-  public static var allCases: [RookSDK.RookTransmissionEventType] {
+  nonisolated public static var allCases: [RookSDK.RookTransmissionEventType] {
     get
   }
   public var rawValue: Swift.String {
@@ -1489,39 +1066,6 @@ public struct RookHrvSdnnGranularTransmisisonDTO : Swift.Codable {
   public let datetime: Foundation.Date
   public let hrvSdnn: Swift.Int
   public init(datetime: Foundation.Date, hrvSdnn: Swift.Int)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct RookOxygentationEvent : Swift.Codable {
-  public var metadata: RookSDK.RookMetaDataEvent
-  public var oxygenationData: RookSDK.RookOxigenationDataEvent
-  public var dataEvent: Foundation.Data? {
-    get
-  }
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct RookOxigenationDataEvent : Swift.Codable {
-  public let saturationAvgPercentage: Swift.Int?
-  public let saturationGranularDataPercentage: [RookSDK.SaturationGranularDataPercentage]?
-  public let vo2MaxMlPerMinPerKg: Swift.Int?
-  public let vo2GranularDataLiterPerMin: [RookSDK.Vo2GranularDataLiterPerMin]?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct RookTemperatureEvent : Swift.Codable {
-  public var metadata: RookSDK.RookMetaDataEvent
-  public var temperatureData: RookSDK.RookTemperatureData
-  public var dataEvent: Foundation.Data? {
-    get
-  }
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct RookTemperatureData : Swift.Codable {
-  public var temperatureMinimumCelsius: RookSDK.RookTemperatureExtractionItem?, temperatureAvgCelsius: RookSDK.RookTemperatureExtractionItem?, temperatureMaxCelsius: RookSDK.RookTemperatureExtractionItem?
-  public var temperatureGranularDataCelsius: [RookSDK.TemperatureGranularDataCelsius]?
-  public var temperatureDeltaCelsius: RookSDK.RookTemperatureExtractionItem?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -1617,58 +1161,30 @@ public enum HTTPMethod : Swift.String {
   }
 }
 extension RookSDK.RookEventsManager {
-  #if compiler(>=5.3) && $AsyncAwait
   final public func syncEvents() async
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func syncEvents(date: Foundation.Date, eventType: RookSDK.EventTypeToUpload) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func getTodayStepCount() async throws -> Swift.Int
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func getTodayCalories() async throws -> RookSDK.RookCalories
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
   final public func syncBodyHeartRateEvent(date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
   final public func syncPhysicalHeartRateEvent(date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
   final public func syncBodyOxygenationEvent(date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
   final public func syncPhysicalOxygenationEvent(date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
   final public func syncTrainingEvent(date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
   final public func syncTemperatureEvents(date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
   final public func syncBloodPressureEvents(date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
   final public func syncBloodGlucoseEvents(date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
   final public func syncBodyMetricsEvents(date: Foundation.Date) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
   final public func syncPendingEvents() async throws -> Swift.Bool
-  #endif
 }
 @objc public class LogInfoObjc : ObjectiveC.NSObject {
   public init(level: Swift.String?, dataDateTime: Swift.String?, action: Swift.String?, dataType: Swift.String?, extra: Swift.String?, uuid: Swift.String)
@@ -1778,7 +1294,7 @@ public enum RookTransmissionSummaryType : Swift.String, Swift.CaseIterable {
   public init?(rawValue: Swift.String)
   public typealias AllCases = [RookSDK.RookTransmissionSummaryType]
   public typealias RawValue = Swift.String
-  public static var allCases: [RookSDK.RookTransmissionSummaryType] {
+  nonisolated public static var allCases: [RookSDK.RookTransmissionSummaryType] {
     get
   }
   public var rawValue: Swift.String {
@@ -1847,155 +1363,6 @@ extension RookSDK.RookConnectErrors : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
-}
-public struct RookSleepData : Swift.Codable {
-  public let dataStructure: Swift.String
-  public let version: Swift.Int
-  public let summaries: RookSDK.RookSleepSummaries
-  public func getDictionary() -> [Swift.String : Any]
-  public func getData() -> Foundation.Data?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct RookSleepSummaries : Swift.Codable {
-  public let sleepRelatedData: RookSDK.SleepRelatedData
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct SleepRelatedData : Swift.Codable {
-  public let metadata: RookSDK.RookSleepMetadata
-  public let sleepDurationRelatedData: RookSDK.SleepDurationRelatedData
-  public let sleepScores: RookSDK.SleepScores
-  public let sleepHeartRateRelatedData: RookSDK.SleepHeartRateRelatedData
-  public let temperatureRelatedData: RookSDK.TemperatureRelatedData
-  public let breathingRelatedData: RookSDK.BreathingRelatedData
-  public let nonStructuredData: RookSDK.NoStructuredSleepSummaryData
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct BreathingRelatedData : Swift.Codable {
-  public let breathsMinimumPerMin: Swift.Int?
-  public let breathsAvgPerMin: Swift.Int?
-  public let breathsMaxPerMin: Swift.Int?
-  public let breathingGranularDataBreathsPerMin: [RookSDK.BreathingGranularDataBreathsPerMin]?
-  public let snoringEventsCountNumber: Swift.Int?
-  public let snoringDurationTotalSeconds: Swift.Int?
-  public let snoringGranularDataSnores: [RookSDK.SnoringGranularDataSnore]?
-  public let saturationAvgPercentage: Swift.Int?
-  public let saturationMaxPercentage: Swift.Int?
-  public let saturationMiniPercentage: Swift.Int?
-  public let saturationGranularDataPercentage: [RookSDK.SaturationGranularDataPercentage]?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct BreathingGranularDataBreathsPerMin : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let breathsPerMin: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct SaturationGranularDataPercentage : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let saturationPercentage: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct SnoringGranularDataSnore : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let intervalDurationSeconds: Swift.Int, snoringEventsCountNumber: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct RookSleepMetadata : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let userID: Swift.String?
-  public let sourcesOfData: [Swift.String]
-  @available(*, deprecated, message: "This property is deprecated instead use getUserInformation method")
-  public let userDemographics: [RookSDK.UserDemographic]
-  public let sleepHealthScore: Swift.Int?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct UserDemographic : Swift.Codable {
-  public let sex: Swift.String?
-  public let gender: Swift.String?
-  public let dateOfBirth: Swift.String?
-  public let age: Swift.Int?
-  public let country: Swift.String?
-  public let state: Swift.String?
-  public let city: Swift.String?
-  public let ethnicity: Swift.String?
-  public let income: Swift.String?
-  public let maritalStatus: Swift.String?
-  public let education: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct SleepDurationRelatedData : Swift.Codable {
-  public let sleepStartDatetime: Foundation.Date
-  public let sleepEndDatetime: Foundation.Date
-  public let sleepDate: Foundation.Date
-  public let sleepDurationSeconds: Swift.Int
-  public let timeInBedSeconds: Swift.Int
-  public let lightSleepDurationSeconds: Swift.Int
-  public let remSleepDurationSeconds: Swift.Int
-  public let deepSleepDurationSeconds: Swift.Int
-  public let timeToFallAsleepSeconds: Swift.Int
-  public let timeAwakeDuringSleepSeconds: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct SleepHeartRateRelatedData : Swift.Codable {
-  public let hrMaxBPM: Swift.Int?, hrMinimumBPM: Swift.Int?, hrAvgBPM: Swift.Int?, hrRestingBPM: Swift.Int?
-  public let hrBasalBPM: Swift.Int?
-  public let hrGranularDataBPM: [RookSDK.HrGranularDataBPM]?
-  public let hrvAvgRmssdNumber: Swift.Int?, hrvAvgSdnnNumber: Swift.Int?
-  public let hrvSdnnGranularData: [RookSDK.HrvSdnnGranularDatum]?
-  public let hrvRmssdGranularData: [RookSDK.HrvRmssdGranularDatum]?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct HrGranularDataBPM : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let bpm: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct HrvRmssdGranularDatum : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let hrvRmssd: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct HrvSdnnGranularDatum : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let hrvSdnn: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct SleepScores : Swift.Codable {
-  public let sleepQualityRating1_5_Score: Swift.Int?, sleepEfficiency1_100_Score: Swift.Int?, sleepGoalSeconds: Swift.Int?, sleepContinuity1_5_Score: Swift.Int?
-  public let sleepContinuity1_5_Rating: Swift.Int?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct TemperatureRelatedData : Swift.Codable {
-  public let temperatureMinimumCelsius: RookSDK.RookTemperatureExtractionItem?, temperatureAvgCelsius: RookSDK.RookTemperatureExtractionItem?, temperatureMaxCelsius: RookSDK.RookTemperatureExtractionItem?
-  public let temperatureGranularDataCelsius: [RookSDK.TemperatureGranularDataCelsius]?
-  public let temperatureDeltaCelsius: RookSDK.RookTemperatureExtractionItem?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct TemperatureGranularDataCelsius : Swift.Codable {
-  public let datetime: Foundation.Date
-  public let temperatureCelsius: Swift.Int
-  public let measurementType: Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct NoStructuredSleepSummaryData : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
 public struct RookSpeedGranularItemTransmission : Swift.Codable {
   public let datetime: Foundation.Date
@@ -2088,6 +1455,7 @@ public enum HealthDataType : Swift.String, Swift.CaseIterable, Swift.Identifiabl
   case electrocardiogram
   case workout
   case sleepAnalysis
+  case sleepApneaEvent
   case vo2Max
   case oxygenSaturation
   case respiratoryRate
@@ -2107,9 +1475,10 @@ public enum HealthDataType : Swift.String, Swift.CaseIterable, Swift.Identifiabl
   case dietaryCholesterol
   public init?(rawValue: Swift.String)
   public typealias AllCases = [RookSDK.HealthDataType]
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias ID = RookSDK.HealthDataType
   public typealias RawValue = Swift.String
-  public static var allCases: [RookSDK.HealthDataType] {
+  nonisolated public static var allCases: [RookSDK.HealthDataType] {
     get
   }
   public var rawValue: Swift.String {
