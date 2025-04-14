@@ -1338,9 +1338,9 @@ public enum AnalyticPlatform {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RookBackGroundSync : ObjectiveC.NSObject {
   @objc public static let shared: RookSDK.RookBackGroundSync
   @objc public var handleSummariesUploaded: (() -> Swift.Void)?
-  public var handleSummariesBackProcess: ((RookSDK.BackgroundSummaryType) -> Swift.Void)?
   @objc public var handleActivityEventsUploaded: (() -> Swift.Void)?
   public var handleEventsUploaded: ((RookSDK.RookEventType) -> Swift.Void)?
+  public var handleSummariesBackProcess: ((RookSDK.BackgroundSummaryType) -> Swift.Void)?
   @objc public func setBackListeners()
   @objc public func enableBackGroundForSummaries()
   @objc public func disableBackGroundForSummaries()

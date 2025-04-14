@@ -57990,152 +57990,6 @@
           },
           {
             "kind": "Var",
-            "name": "handleSummariesBackProcess",
-            "printedName": "handleSummariesBackProcess",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((RookSDK.BackgroundSummaryType) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(RookSDK.BackgroundSummaryType) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BackgroundSummaryType",
-                        "printedName": "RookSDK.BackgroundSummaryType",
-                        "usr": "s:7RookSDK21BackgroundSummaryTypeO"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7RookSDK0A14BackGroundSyncC015handleSummariesC7ProcessyAA21BackgroundSummaryTypeOcSgvp",
-            "mangledName": "$s7RookSDK0A14BackGroundSyncC015handleSummariesC7ProcessyAA21BackgroundSummaryTypeOcSgvp",
-            "moduleName": "RookSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((RookSDK.BackgroundSummaryType) -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(RookSDK.BackgroundSummaryType) -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "BackgroundSummaryType",
-                            "printedName": "RookSDK.BackgroundSummaryType",
-                            "usr": "s:7RookSDK21BackgroundSummaryTypeO"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7RookSDK0A14BackGroundSyncC015handleSummariesC7ProcessyAA21BackgroundSummaryTypeOcSgvg",
-                "mangledName": "$s7RookSDK0A14BackGroundSyncC015handleSummariesC7ProcessyAA21BackgroundSummaryTypeOcSgvg",
-                "moduleName": "RookSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((RookSDK.BackgroundSummaryType) -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(RookSDK.BackgroundSummaryType) -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "BackgroundSummaryType",
-                            "printedName": "RookSDK.BackgroundSummaryType",
-                            "usr": "s:7RookSDK21BackgroundSummaryTypeO"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7RookSDK0A14BackGroundSyncC015handleSummariesC7ProcessyAA21BackgroundSummaryTypeOcSgvs",
-                "mangledName": "$s7RookSDK0A14BackGroundSyncC015handleSummariesC7ProcessyAA21BackgroundSummaryTypeOcSgvs",
-                "moduleName": "RookSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7RookSDK0A14BackGroundSyncC015handleSummariesC7ProcessyAA21BackgroundSummaryTypeOcSgvM",
-                "mangledName": "$s7RookSDK0A14BackGroundSyncC015handleSummariesC7ProcessyAA21BackgroundSummaryTypeOcSgvM",
-                "moduleName": "RookSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "handleActivityEventsUploaded",
             "printedName": "handleActivityEventsUploaded",
             "children": [
@@ -58424,6 +58278,152 @@
                 "declKind": "Accessor",
                 "usr": "s:7RookSDK0A14BackGroundSyncC20handleEventsUploadedyAA0A9EventTypeOcSgvM",
                 "mangledName": "$s7RookSDK0A14BackGroundSyncC20handleEventsUploadedyAA0A9EventTypeOcSgvM",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "handleSummariesBackProcess",
+            "printedName": "handleSummariesBackProcess",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((RookSDK.BackgroundSummaryType) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(RookSDK.BackgroundSummaryType) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BackgroundSummaryType",
+                        "printedName": "RookSDK.BackgroundSummaryType",
+                        "usr": "s:7RookSDK21BackgroundSummaryTypeO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK0A14BackGroundSyncC015handleSummariesC7ProcessyAA21BackgroundSummaryTypeOcSgvp",
+            "mangledName": "$s7RookSDK0A14BackGroundSyncC015handleSummariesC7ProcessyAA21BackgroundSummaryTypeOcSgvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((RookSDK.BackgroundSummaryType) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(RookSDK.BackgroundSummaryType) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BackgroundSummaryType",
+                            "printedName": "RookSDK.BackgroundSummaryType",
+                            "usr": "s:7RookSDK21BackgroundSummaryTypeO"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A14BackGroundSyncC015handleSummariesC7ProcessyAA21BackgroundSummaryTypeOcSgvg",
+                "mangledName": "$s7RookSDK0A14BackGroundSyncC015handleSummariesC7ProcessyAA21BackgroundSummaryTypeOcSgvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((RookSDK.BackgroundSummaryType) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(RookSDK.BackgroundSummaryType) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BackgroundSummaryType",
+                            "printedName": "RookSDK.BackgroundSummaryType",
+                            "usr": "s:7RookSDK21BackgroundSummaryTypeO"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A14BackGroundSyncC015handleSummariesC7ProcessyAA21BackgroundSummaryTypeOcSgvs",
+                "mangledName": "$s7RookSDK0A14BackGroundSyncC015handleSummariesC7ProcessyAA21BackgroundSummaryTypeOcSgvs",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A14BackGroundSyncC015handleSummariesC7ProcessyAA21BackgroundSummaryTypeOcSgvM",
+                "mangledName": "$s7RookSDK0A14BackGroundSyncC015handleSummariesC7ProcessyAA21BackgroundSummaryTypeOcSgvM",
                 "moduleName": "RookSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -59911,6 +59911,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "RookSDK"
       },
       {
         "kind": "Import",
@@ -67874,126 +67881,147 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14013,
+      "offset": 14090,
       "length": 15,
       "value": "\"walking_speed\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14058,
+      "offset": 14135,
       "length": 21,
       "value": "\"walking_step_length\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14104,
+      "offset": 14181,
       "length": 15,
       "value": "\"running_power\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14144,
+      "offset": 14221,
       "length": 15,
       "value": "\"running_speed\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14513,
+      "offset": 14263,
+      "length": 18,
+      "value": "\"offset_time_zone\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
+      "kind": "StringLiteral",
+      "offset": 14302,
+      "length": 11,
+      "value": "\"time_zone\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
+      "kind": "StringLiteral",
+      "offset": 14336,
+      "length": 13,
+      "value": "\"uuid_device\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
+      "kind": "StringLiteral",
+      "offset": 14703,
       "length": 27,
       "value": "\"saturation_avg_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14585,
+      "offset": 14775,
       "length": 37,
       "value": "\"saturation_granular_data_percentage\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14654,
+      "offset": 14844,
       "length": 26,
       "value": "\"vo2max_ml_per_min_per_kg\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 14719,
+      "offset": 14909,
       "length": 33,
       "value": "\"vo2_granular_data_liter_per_min\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 15447,
+      "offset": 15637,
       "length": 23,
       "value": "\"vo2_ml_per_min_per_kg\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 15935,
+      "offset": 16125,
       "length": 33,
       "value": "\"stress_at_rest_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16002,
+      "offset": 16192,
       "length": 25,
       "value": "\"stress_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16064,
+      "offset": 16254,
       "length": 29,
       "value": "\"low_stress_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16133,
+      "offset": 16323,
       "length": 32,
       "value": "\"medium_stress_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16203,
+      "offset": 16393,
       "length": 30,
       "value": "\"high_stress_duration_seconds\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16275,
+      "offset": 16465,
       "length": 35,
       "value": "\"stress_granular_data_score_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16343,
+      "offset": 16533,
       "length": 25,
       "value": "\"stress_avg_level_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 16401,
+      "offset": 16591,
       "length": 25,
       "value": "\"stress_max_level_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Extraction\/Entities\/RookPhysicalData.swift",
       "kind": "StringLiteral",
-      "offset": 17455,
+      "offset": 17645,
       "length": 14,
       "value": "\"stress_score\""
     },
@@ -70487,7 +70515,7 @@
       "kind": "StringLiteral",
       "offset": 1494,
       "length": 7,
-      "value": "\"1.7.2\""
+      "value": "\"1.7.3\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
@@ -70516,13 +70544,6 @@
       "offset": 498,
       "length": 16,
       "value": "\"activity_level\""
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/AppleHealthProvider\/AppleHealthProvider.swift",
-      "kind": "Array",
-      "offset": 775,
-      "length": 2,
-      "value": "[]"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookActivityEventTransmission\/Entities\/Granular\/RookLapGranularItemTransmission.swift",
