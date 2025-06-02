@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		qNRAtKXRiiIwDM4RwQLWAPV1hQg=
+		ttA4qf6UGVKkyvsz3MEgWyxlSeM=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		i6o43NbrKJyKkyFB6JvC1fcj50M=
+		cc1asjvBwlJE5Lwr4HUfhBf5E18=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		i6o43NbrKJyKkyFB6JvC1fcj50M=
+		cc1asjvBwlJE5Lwr4HUfhBf5E18=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		LTffPr+lglcy6v5X0f3jQ4dy65M=
+		eJ/zs5Z+0adDMlsEcCp7DcIV4p8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YN3GZ1Q26MikUJXtJAoCXVEuOjfEsOcEsjbYEE/fZKo=
+			SmMxw92acPxgmulvRBVv+5V0ZMdiNta1Yi58hGCzgi4=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QQiTu4cDHGKZuLVPGB1xnUIe94L2mEFdD3tT6b3/hVQ=
+			R3/4+ACH9oDKCDPE5B202BFD5RMXaRcD7n7Yt9XlBt4=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -114,14 +114,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QQiTu4cDHGKZuLVPGB1xnUIe94L2mEFdD3tT6b3/hVQ=
+			R3/4+ACH9oDKCDPE5B202BFD5RMXaRcD7n7Yt9XlBt4=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H2Bh45vClv9wZSFEK0rS2qQaFHJa9nQfmp0YYFe3Y54=
+			L9aaf3ZGCQQQbZqudmzZMBZAwpu3fEOjJGx/3oV/5Do=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
