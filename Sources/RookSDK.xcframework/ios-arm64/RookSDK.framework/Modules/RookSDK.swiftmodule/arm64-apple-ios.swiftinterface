@@ -4,6 +4,7 @@
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Combine
 import CoreData
+import CoreLocation
 import Foundation
 import HealthKit
 @_exported import RookSDK
@@ -36,6 +37,7 @@ final public class DataSourcesManager {
   final public func getAuthorizedDataSources() async throws -> RookSDK.StatusDataSources
   final public func getAuthorizedDataSources() async throws -> [RookSDK.DataSourceStatus]
   final public func getDataSourceAuthorizer(dataSource: Swift.String, redirectUrl: Swift.String? = nil) async throws -> RookSDK.DataSourceAuthorizer
+  final public func updateAppleHealthStatus(_ status: Swift.Bool) async throws -> Swift.Bool
   @objc deinit
 }
 final public class RookTimeZoneManager {
@@ -164,6 +166,7 @@ public struct VoltageECGMeasurement {
   final public func removeUserFromRook(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   final public func syncUserTimeZone(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   final public func revokeDataSource(dataSource: RookSDK.DataSourceRevoke, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  final public func revokeDataSource(dataSource: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   final public func revoke(dataSource: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   final public func updateUserId(_ id: Swift.String) async throws -> Swift.Bool
   final public func getUserId() async throws -> Swift.String
@@ -171,6 +174,7 @@ public struct VoltageECGMeasurement {
   final public func removeUserFromRook() async throws -> Swift.Bool
   final public func syncUserTimeZone() async throws -> Swift.Bool
   final public func revokeDataSource(dataSource: RookSDK.DataSourceRevoke) async throws -> Swift.Bool
+  final public func revokeDataSource(dataSource: Swift.String) async throws -> Swift.Bool
   @objc final public func revoke(dataSource: Swift.String) async throws -> Swift.Bool
   @objc final public func updateUserId(_ id: Swift.String, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   @objc final public func readUserId(completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
@@ -504,6 +508,7 @@ public struct StatusDataSources {
 public struct DataSourceStatus {
   public let source: Swift.String
   public let status: Swift.Bool
+  public let imageURL: Foundation.URL
 }
 extension RookSDK.RookConnectPermissionsManager {
   @objc final public func requestAllPermissionsObjc(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
@@ -899,6 +904,7 @@ public enum HealthDataType : Swift.String, Swift.CaseIterable, Swift.Identifiabl
   case heartRateVariabilitySDNN
   case electrocardiogram
   case workout
+  case workoutRoute
   case sleepAnalysis
   case sleepApneaEvent
   case vo2Max
