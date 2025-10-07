@@ -392,7 +392,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 
 
 
-
 @interface RookBackGroundSync (SWIFT_EXTENSION(RookSDK))
 /// This method enables the background sync for events
 /// Use this method to upload health data while your app is in the background
@@ -412,6 +411,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 /// Use this method to disable the upload health data while your app is in the background
 - (void)disableBackGroundForEvents;
 @end
+
 
 
 
@@ -942,7 +942,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 
 
 
-
 @interface RookBackGroundSync (SWIFT_EXTENSION(RookSDK))
 /// This method enables the background sync for events
 /// Use this method to upload health data while your app is in the background
@@ -962,6 +961,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 /// Use this method to disable the upload health data while your app is in the background
 - (void)disableBackGroundForEvents;
 @end
+
 
 
 
