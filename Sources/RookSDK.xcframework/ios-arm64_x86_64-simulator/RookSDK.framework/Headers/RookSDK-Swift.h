@@ -425,10 +425,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookConnectC
 - (void)setConfigurationWithClientUUID:(NSString * _Nonnull)clientUUID secretKey:(NSString * _Nonnull)secretKey enableBackgroundSync:(BOOL)enableBackgroundSync enableEventsBackgroundSync:(BOOL)enableEventsBackgroundSync;
 - (void)setEnvironmentForSandbox;
 - (void)setEnvironmentForProduction;
-- (void)initRook SWIFT_METHOD_FAMILY(none);
+- (void)initRookWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_METHOD_FAMILY(none);
 - (void)updateUserId:(NSString * _Nonnull)id completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)readUserIdWithCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion;
-- (void)clearUserWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)removeUserFromRookWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncUserTimeZoneWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)enableYesterdaySync SWIFT_DEPRECATED_MSG("", "enableSync");
@@ -451,11 +450,6 @@ SWIFT_CLASS("_TtC7RookSDK29RookConnectPermissionsManager")
 
 
 @interface RookConnectPermissionsManager (SWIFT_EXTENSION(RookSDK))
-- (void)requestAllPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)requestSleepPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)requestUserInfoPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)requestPhysicalPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)requestBodyPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)checkPermissionStatusWithType:(NSString * _Nullable)type completionHandler:(void (^ _Nonnull)(NSString * _Nonnull))completionHandler;
 - (void)requestPermissions:(NSArray<NSString *> * _Nullable)permissions completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
@@ -492,15 +486,6 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 - (void)syncPendingEventsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getTodayStepCountWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 - (void)getTodayCaloriesWithCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
-- (void)syncBodyHeartRateEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
-- (void)syncPhysicalHeartRateEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
-- (void)syncBodyOxygenationEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
-- (void)syncPhysicalOxygenationEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
-- (void)syncTrainingEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
-- (void)syncTemperatureEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
-- (void)syncPressureEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
-- (void)syncGlucoseEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
-- (void)syncBodyMetricsEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
 @end
 
 
@@ -975,10 +960,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookConnectC
 - (void)setConfigurationWithClientUUID:(NSString * _Nonnull)clientUUID secretKey:(NSString * _Nonnull)secretKey enableBackgroundSync:(BOOL)enableBackgroundSync enableEventsBackgroundSync:(BOOL)enableEventsBackgroundSync;
 - (void)setEnvironmentForSandbox;
 - (void)setEnvironmentForProduction;
-- (void)initRook SWIFT_METHOD_FAMILY(none);
+- (void)initRookWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_METHOD_FAMILY(none);
 - (void)updateUserId:(NSString * _Nonnull)id completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)readUserIdWithCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion;
-- (void)clearUserWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)removeUserFromRookWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncUserTimeZoneWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)enableYesterdaySync SWIFT_DEPRECATED_MSG("", "enableSync");
@@ -1001,11 +985,6 @@ SWIFT_CLASS("_TtC7RookSDK29RookConnectPermissionsManager")
 
 
 @interface RookConnectPermissionsManager (SWIFT_EXTENSION(RookSDK))
-- (void)requestAllPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)requestSleepPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)requestUserInfoPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)requestPhysicalPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)requestBodyPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)checkPermissionStatusWithType:(NSString * _Nullable)type completionHandler:(void (^ _Nonnull)(NSString * _Nonnull))completionHandler;
 - (void)requestPermissions:(NSArray<NSString *> * _Nullable)permissions completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
@@ -1042,15 +1021,6 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 - (void)syncPendingEventsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)getTodayStepCountWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 - (void)getTodayCaloriesWithCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
-- (void)syncBodyHeartRateEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
-- (void)syncPhysicalHeartRateEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
-- (void)syncBodyOxygenationEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
-- (void)syncPhysicalOxygenationEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
-- (void)syncTrainingEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
-- (void)syncTemperatureEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
-- (void)syncPressureEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
-- (void)syncGlucoseEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
-- (void)syncBodyMetricsEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)");
 @end
 
 
