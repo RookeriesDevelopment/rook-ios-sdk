@@ -61485,6 +61485,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Analytics\/AnaliticTransmissionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1296,
+      "length": 31,
+      "value": "\"com.analytics.singleton.queue\""
+    },
+    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Permissions\/PermissionsStatus\/Entities\/PermissionStatus.swift",
       "kind": "StringLiteral",
       "offset": 196,
@@ -62944,20 +62951,20 @@
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
       "kind": "StringLiteral",
       "offset": 1494,
-      "length": 7,
-      "value": "\"1.7.9\""
+      "length": 14,
+      "value": "\"1.8.0-beta.3\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1580,
+      "offset": 1587,
       "length": 32,
       "value": "\"rook_configuration_environment\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1697,
+      "offset": 1704,
       "length": 38,
       "value": "\"daaabbcb-5227-4eba-a2f4-f10a36ab24ef\""
     },
