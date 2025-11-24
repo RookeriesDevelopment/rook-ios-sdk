@@ -61485,6 +61485,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Analytics\/AnaliticTransmissionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1296,
+      "length": 31,
+      "value": "\"com.analytics.singleton.queue\""
+    },
+    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Permissions\/PermissionsStatus\/Entities\/PermissionStatus.swift",
       "kind": "StringLiteral",
       "offset": 196,
@@ -62945,7 +62952,7 @@
       "kind": "StringLiteral",
       "offset": 1494,
       "length": 7,
-      "value": "\"1.7.9\""
+      "value": "\"1.8.0\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
