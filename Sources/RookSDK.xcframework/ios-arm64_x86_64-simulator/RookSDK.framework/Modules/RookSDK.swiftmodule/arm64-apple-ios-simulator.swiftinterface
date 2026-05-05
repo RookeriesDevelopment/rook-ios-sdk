@@ -2,19 +2,20 @@
 // swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name RookSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+import Combine
 import CoreData
 import CoreLocation
-import CryptoKit
 import Foundation
 import HealthKit
 @_exported import RookSDK
 import Swift
 import SwiftUI
 import UIKit
+import WebKit
 import _Concurrency
-import _LocationEssentials
 import _StringProcessing
 import _SwiftConcurrencyShims
+import _WebKit_SwiftUI
 public struct RookLapGranularItem : Swift.Encodable {
   public let datetime: Foundation.Date
   public let intervalDurationSeconds: Swift.Int
@@ -24,34 +25,34 @@ public struct RookLapGranularItem : Swift.Encodable {
 final public class DataSourcesManager {
   public init()
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func getDataSourcesAuthorized(userId: Swift.String?, completion: @escaping (Swift.Result<RookSDK.StatusDataSources, any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "This method is deprecated and it will be removed in a future version")
+  final public func getAvailableDataSources(redirectURL: Swift.String?, completion: @escaping (Swift.Result<[RookSDK.RookDataSource], any Swift.Error>) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func getDataSourcesAuthorizedV2(userId: Swift.String?, completion: @escaping (Swift.Result<[RookSDK.DataSourceStatus], any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "This method is deprecated and it will be removed in a future version")
+  final public func presentDataSourceView(redirectURL: Swift.String?, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func getDataSourceAuthorizer(userId: Swift.String?, dataSource: Swift.String, redirectUrl: Swift.String? = nil, completion: @escaping (Swift.Result<RookSDK.DataSourceAuthorizer, any Swift.Error>) -> Swift.Void)
+  final public func getAuthorizedDataSources(completion: @escaping (Swift.Result<RookSDK.StatusDataSources, any Swift.Error>) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func revokeDataSource(userId: Swift.String?, dataSource: RookSDK.DataSourceRevoke, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  final public func getAuthorizedSources(completion: @escaping (Swift.Result<[RookSDK.DataSourceStatus], any Swift.Error>) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func revokeDataSource(userId: Swift.String?, dataSource: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  final public func getDataSourceAuthorizer(dataSource: Swift.String, redirectUrl: Swift.String? = nil, completion: @escaping (Swift.Result<RookSDK.DataSourceAuthorizer, any Swift.Error>) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func getDataSourcesAuthorized(userId: Swift.String?) async throws -> RookSDK.StatusDataSources
+  @available(*, deprecated, message: "This method is deprecated and it will be removed in a future version")
+  final public func getAvailableDataSources(redirectURL: Swift.String?) async throws -> [RookSDK.RookDataSource]
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func getDataSourcesAuthorizedV2(userId: Swift.String?) async throws -> [RookSDK.DataSourceStatus]
+  @available(*, deprecated, message: "This method is deprecated and it will be removed in a future version")
+  final public func presentDataSourceView(redirectURL: Swift.String?) async throws -> Swift.Bool
   #endif
+  final public func getAuthorizedDataSources() async throws -> RookSDK.StatusDataSources
+  final public func getAuthorizedDataSources() async throws -> [RookSDK.DataSourceStatus]
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func getDataSourceAuthorizer(userId: Swift.String?, dataSource: Swift.String, redirectUrl: Swift.String? = nil) async throws -> RookSDK.DataSourceAuthorizer
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  final public func revokeDataSource(userId: Swift.String?, dataSource: RookSDK.DataSourceRevoke) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  final public func revokeDataSource(userId: Swift.String?, dataSource: Swift.String) async throws -> Swift.Bool
+  final public func getDataSourceAuthorizer(dataSource: Swift.String, redirectUrl: Swift.String? = nil) async throws -> RookSDK.DataSourceAuthorizer
   #endif
   final public func updateAppleHealthStatus(_ status: Swift.Bool) async throws -> Swift.Bool
   @objc deinit
@@ -112,23 +113,53 @@ public enum RookContextType {
   final public func getActivityEvents(date: Foundation.Date, completion: @escaping (Swift.Result<[RookSDK.RookActivityEvent], any Swift.Error>) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func syncPendingEvents(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
-  #endif
-  final public func getPendingDates(of type: RookSDK.PendingDatesToUploadTypes) -> [Foundation.Date]
-  #if compiler(>=5.3) && $NonescapableTypes
-  final public func getLastTransmissionDate(of type: RookSDK.RookTransmissionEventType) -> Foundation.Date?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getTodayStepCount(completion: @escaping (Swift.Result<Swift.Int, any Swift.Error>) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   final public func getTodayCalories(completion: @escaping (Swift.Result<RookSDK.RookCalories, any Swift.Error>) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func getTodayHeartRate(completion: @escaping (Swift.Result<RookSDK.RookHeartRate, any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBodyHeartRateEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func writeNutritionEvent(event: RookSDK.NutritionInsertionEvent, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncPhysicalHeartRateEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBodyOxygenationEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncPhysicalOxygenationEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncTrainingEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncTemperatureEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBloodPressureEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBloodGlucoseEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBodyMetricsEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func syncPendingEvents(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  final public func getPendingDates(of type: RookSDK.PendingDatesToUploadTypes) -> [Foundation.Date]
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func getLastTransmissionDate(of type: RookSDK.RookTransmissionEventType) -> Foundation.Date?
   #endif
   @objc deinit
 }
@@ -272,12 +303,10 @@ public struct RookStressGranular : Swift.Encodable {
 @_hasMissingDesignatedInitializers final public class RookConnectConfigurationManager {
   public static let shared: RookSDK.RookConnectConfigurationManager
   @objc deinit
-  #if compiler(>=5.3) && $NonescapableTypes
-  final public func setConfiguration(clientUUID: Swift.String, secret: Swift.String, bundleId: Swift.String?, enableBackgroundSync: Swift.Bool, enableEventsBackgroundSync: Swift.Bool)
-  #endif
-  final public func removeConfiguration()
+  final public func setConfiguration(clientUUID: Swift.String, secretKey: Swift.String, enableBackgroundSync: Swift.Bool, enableEventsBackgroundSync: Swift.Bool)
   final public func setEnvironment(_ environment: RookSDK.RookEnvironment)
   final public func getEnvironment() -> RookSDK.RookEnvironment
+  final public func initRook()
   #if compiler(>=5.3) && $NonescapableTypes
   final public func initRook(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   #endif
@@ -286,6 +315,9 @@ public struct RookStressGranular : Swift.Encodable {
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   final public func getUserId(completion: @escaping (Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func clearUser(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   final public func removeUserFromRook(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
@@ -299,9 +331,6 @@ public struct RookStressGranular : Swift.Encodable {
   final public func setExcludeManualData(_ excludeManual: Swift.Bool)
   @objc final public func setConsoleLogAvailable(_ value: Swift.Bool)
   @objc final public func isHealthDataAvailable() -> Swift.Bool
-  final public func getDiagnosticState(completion: @escaping (RookSDK.SDKState) -> Swift.Void)
-  final public func getDiagnosticState() async -> RookSDK.SDKState
-  final public func setRefreshSkew(_ refreshSkew: Foundation.TimeInterval)
 }
 @_inheritsConvenienceInitializers @objc final public class UserManager : ObjectiveC.NSObject {
   @objc override dynamic public init()
@@ -312,15 +341,31 @@ public struct RookStressGranular : Swift.Encodable {
   final public func getUserId(completion: @escaping (Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  final public func clearUser(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func removeUserFromRook(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   final public func syncUserTimeZone(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func revokeDataSource(dataSource: RookSDK.DataSourceRevoke, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func revokeDataSource(dataSource: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func revoke(dataSource: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
   final public func updateUserId(_ id: Swift.String) async throws -> Swift.Bool
   final public func getUserId() async throws -> Swift.String
+  final public func clearUser() async throws -> Swift.Bool
   final public func removeUserFromRook() async throws -> Swift.Bool
   final public func syncUserTimeZone() async throws -> Swift.Bool
+  final public func revokeDataSource(dataSource: RookSDK.DataSourceRevoke) async throws -> Swift.Bool
+  final public func revokeDataSource(dataSource: Swift.String) async throws -> Swift.Bool
+  @objc final public func revoke(dataSource: Swift.String) async throws -> Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func updateUserId(_ id: Swift.String, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   #endif
@@ -328,10 +373,16 @@ public struct RookStressGranular : Swift.Encodable {
   @objc final public func readUserId(completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func clearUser(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func removeUserFromRook(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func syncUserTimeZone(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func revokeDataSource(dataSource: Swift.String, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   #endif
   @objc deinit
 }
@@ -350,9 +401,49 @@ public struct RookPositionItem : Swift.Encodable {
   public let longitude: Swift.Double
   public func encode(to encoder: any Swift.Encoder) throws
 }
+public enum RookTransmissionError : Swift.String, Swift.Error {
+  case emptyUserId
+  case rookTransmissionIsNotAvailable
+  case invalidEventData
+  case registerNotFound
+  case datetimeNil
+  case clientUUIDEmpty
+  case emptyData
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension RookSDK.RookTransmissionError : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+}
 public typealias Parameters = [Swift.String : Any]
 public protocol ParameterEncoder {
   static func encode(urlRequest: inout Foundation.URLRequest, with parameters: RookSDK.Parameters) throws
+}
+public enum NetworkError : Swift.Error, Swift.Equatable {
+  case parametersNil
+  case encodingFailed
+  case missingUrl
+  case noData
+  case NotAuthorizedError
+  case URLResponseError
+  case apiError(error: Swift.String, httpCode: Swift.Int)
+  public static func == (a: RookSDK.NetworkError, b: RookSDK.NetworkError) -> Swift.Bool
+}
+extension RookSDK.NetworkError : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
 }
 public struct RookBodySummary : Swift.Encodable {
   public let dateTime: Foundation.Date
@@ -443,21 +534,6 @@ public struct RookMoodGranular : Swift.Encodable {
   public let moodScale: Swift.Int
   public func encode(to encoder: any Swift.Encoder) throws
 }
-public struct SDKState {
-  public let isConfigured: Swift.Bool
-  public let userIdentified: Swift.Bool
-  public let permissions: Swift.String
-  public let backgroundSync: RookSDK.SDKBackgroundState
-  public let manualSync: RookSDK.SDKManualSyncState
-}
-public struct SDKBackgroundState {
-  public let enabled: Swift.Bool
-  public let lastSync: Foundation.Date?
-}
-public struct SDKManualSyncState {
-  public let enabled: Swift.Bool
-  public let lastSync: Foundation.Date?
-}
 extension RookSDK.RookEventsManager {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func syncEvents(date: Foundation.Date, eventType: Swift.String, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
@@ -471,43 +547,41 @@ extension RookSDK.RookEventsManager {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getTodayCalories(completion: @escaping ([Swift.String : Any]?, (any Swift.Error)?) -> Swift.Void)
   #endif
-}
-public struct NutritionInsertionEvent {
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(name: Swift.String, quantity: RookSDK.NutritionInsertionEventQuantity, date: Foundation.Date, nutritionInsertionEnergyWaterDataRelated: RookSDK.NutritionInsertionEnergyWaterDataRelated?, nutritionCarbohydratesDataRelated: RookSDK.NutritionCarbohydratesDataRelated?, nutritionFatsDataRelated: RookSDK.NutritionFatsDataRelated?, nutritionProteinDataRelated: RookSDK.NutritionProteinDataRelated?, nutritionVitaminsDataRelated: RookSDK.NutritionVitaminsDataRelated?, nutritionMineralDataRelated: RookSDK.NutritionMineralDataRelated?)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  @objc final public func syncBodyHeartRateEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   #endif
-}
-public struct NutritionInsertionEventQuantity {
-  public init(unit: Swift.Int, amount: Swift.Double)
-}
-public struct NutritionInsertionEnergyWaterDataRelated {
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(dietaryKiloCaloriesEnergyConsumed: Swift.Double?, dietaryMilliLiterWater: Swift.Double?)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  @objc final public func syncPhysicalHeartRateEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   #endif
-}
-public struct NutritionCarbohydratesDataRelated {
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(dietaryGramCarbohydrates: Swift.Double?, dietaryGramFiber: Swift.Double?, dietaryGramSugar: Swift.Double?)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  @objc final public func syncBodyOxygenationEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   #endif
-}
-public struct NutritionFatsDataRelated {
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(dietaryGramFatTotal: Swift.Double?, dietaryGramFatSaturated: Swift.Double?, dietaryGramFatMonounsaturated: Swift.Double?, dietaryGramFatPolyunsaturated: Swift.Double?)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  @objc final public func syncPhysicalOxygenationEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   #endif
-}
-public struct NutritionProteinDataRelated {
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(dietaryGramProtein: Swift.Double?, dietaryMilliGramCholesterol: Swift.Double?)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  @objc final public func syncTrainingEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   #endif
-}
-public struct NutritionVitaminsDataRelated {
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(dietaryMicroGramVitaminA: Swift.Double?, dietaryMilliGramVitaminB6: Swift.Double?, dietaryMicroGramVitaminB12: Swift.Double?, dietaryMilliGramVitaminC: Swift.Double?, dietaryMicroGramVitaminD: Swift.Double?, dietaryMilliGramVitaminE: Swift.Double?, dietaryMicroGramVitaminK: Swift.Double?, dietaryMilliGramThiamin: Swift.Double?, dietaryMilliGramRiboflavin: Swift.Double?, dietaryMilliGramNiacin: Swift.Double?, dietaryMilliGramPantothenicAcid: Swift.Double?, dietaryMicroGramFolate: Swift.Double?, dietaryMicroGramBiotin: Swift.Double?)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  @objc final public func syncTemperatureEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   #endif
-}
-public struct NutritionMineralDataRelated {
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(dietaryMilliGramsCalcium: Swift.Double?, dietaryMilliGramsChloride: Swift.Double?, dietaryMilliGramsChromium: Swift.Double?, dietaryMilliGramsCopper: Swift.Double?, dietaryMilliGramsIodine: Swift.Double?, dietaryMilliGramsIron: Swift.Double?, dietaryMilliGramsMagnesium: Swift.Double?, dietaryMilliGramsManganese: Swift.Double?, dietaryMilliGramsMolybdenum: Swift.Double?, dietaryMilliGramsPhosphorus: Swift.Double?, dietaryMilliGramsPotassium: Swift.Double?, dietaryMilliGramsSelenium: Swift.Double?, dietaryMilliGramsSodium: Swift.Double?, dietaryMilliGramsZinc: Swift.Double?)
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  @objc final public func syncPressureEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  @objc final public func syncGlucoseEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  @objc final public func syncBodyMetricsEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   #endif
 }
 public struct RookVelocityVectorItem : Swift.Encodable {
@@ -555,7 +629,24 @@ extension RookSDK.RookBackGroundSync {
   #if compiler(>=5.3) && $NonescapableTypes
   final public func getBodySummary(date: Foundation.Date, completion: @escaping (Swift.Result<RookSDK.RookBodySummary, any Swift.Error>) -> Swift.Void)
   #endif
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
+  @objc final public func syncSummaries(completion: @escaping () -> Swift.Void)
+  @available(*, deprecated, renamed: "syncSummaries")
+  @objc final public func syncYesterdaySummaries(completion: @escaping () -> Swift.Void)
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
+  final public func syncSleepSummary(from date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
+  final public func syncPhysicalSummary(from date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
+  final public func syncBodySummary(from date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date)")
   final public func syncPendingSummaries(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   #endif
   final public func getSleepPendingDates() -> [Foundation.Date]
@@ -667,13 +758,17 @@ public struct RookHrvRmssdGranularTransmissionDTO : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension RookSDK.RookConnectPermissionsManager {
+  final public func requestAllPermissions() async throws -> Swift.Bool
+  final public func requestSleepPermissions() async throws -> Swift.Bool
+  final public func requestUserInfoPermissions() async throws -> Swift.Bool
+  final public func requestPhysicalPermissions() async throws -> Swift.Bool
+  final public func requestBodyPermissions() async throws -> Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
   final public func requestPermissions(_ permissions: [RookSDK.HealthDataType]?) async throws -> Swift.Bool
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   final public func checkPermissionStatus(type: RookSDK.HealthDataType?) async -> RookSDK.PermissionStatus
   #endif
-  final public func requestDietaryWritePermissions() async throws -> Swift.Bool
 }
 public struct SummarySyncResponse {
   public var sleepResponse: Swift.Result<Swift.Bool, any Swift.Error>?
@@ -699,13 +794,6 @@ public struct RookDataSource {
   public let connected: Swift.Bool
   public let authorizationURL: Swift.String?
 }
-public class TransmissionBodyMetricsValues {
-  public init()
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func getLastBodyTransmission() -> (Swift.Float?, Swift.Float?)
-  #endif
-  @objc deinit
-}
 public struct RookActivityLevelGranular : Swift.Encodable {
   public let dateTime: Foundation.Date
   public let activityLevel: Swift.Int
@@ -728,6 +816,36 @@ public enum HTTPTask {
   case request
   case requestParameters(bodyParameters: RookSDK.Parameters?, urlParameters: RookSDK.Parameters?)
   case requestParametersAndHeaders(bodyParameters: RookSDK.Parameters?, urlParameters: RookSDK.Parameters?, additionalHeaders: RookSDK.HTTPHeaders?)
+}
+public enum TimeZoneErrors : Swift.String, Swift.Error {
+  case timeZoneNotAvailable
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension RookSDK.TimeZoneErrors : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+}
+public enum ExtractionErrors : Swift.Error {
+  case sleepDataEmpty
+  case errorRequest(httpCode: Swift.Int)
+  case badRequest
+  case userNotFound
+}
+extension RookSDK.ExtractionErrors : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
 }
 public typealias NetworkRouterCompletion = (_ data: Foundation.Data?, _ response: Foundation.URLResponse?, _ error: (any Swift.Error)?) -> Swift.Void
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class AnalyticsTransmissionConfigurator : ObjectiveC.NSObject {
@@ -753,11 +871,26 @@ public struct StatusDataSources {
   public let dexcom: Swift.Bool?
 }
 public struct DataSourceStatus {
-  public let name: Swift.String
-  public let authorized: Swift.Bool
-  public let imageUrl: Foundation.URL
+  public let source: Swift.String
+  public let status: Swift.Bool
+  public let imageURL: Foundation.URL
 }
 extension RookSDK.RookConnectPermissionsManager {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func requestAllPermissionsObjc(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func requestSleepPermissionsObjc(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func requestUserInfoPermissionsObjc(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func requestPhysicalPermissionsObjc(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func requestBodyPermissionsObjc(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func checkPermissionStatus(type: Swift.String?) async -> Swift.String
   #endif
@@ -777,19 +910,43 @@ extension RookSDK.RookSummaryManager {
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
+  @objc final public func syncSleepSummaryObjc(form date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
+  @objc final public func syncPhysicalSummaryObjc(form date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
+  @objc final public func syncBodySummaryObjc(from date: Foundation.Date, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
   @objc final public func syncPendingSummariesObjc(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   #endif
 }
 @_inheritsConvenienceInitializers @objc final public class RookConnectPermissionsManager : ObjectiveC.NSObject {
   @objc override dynamic public init()
   #if compiler(>=5.3) && $NonescapableTypes
+  final public func requestAllPermissions(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func requestSleepPermissions(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func requestUserInfoPermissions(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func requestPhysicalPermissions(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func requestBodyPermissions(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func checkPermissionStatus(type: RookSDK.HealthDataType?, completion: @escaping (RookSDK.PermissionStatus) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   final public func requestPermissions(_ permissions: [RookSDK.HealthDataType]?, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  final public func requestDietaryWritePermissions(completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   #endif
   @objc deinit
 }
@@ -814,6 +971,7 @@ extension RookSDK.RookConnectConfigurationManager {
   final public func initRook() async throws -> Swift.Bool
   final public func updateUserId(_ id: Swift.String) async throws -> Swift.Bool
   final public func getUserId() async throws -> Swift.String
+  final public func clearUser() async throws -> Swift.Bool
   final public func removeUserFromRook() async throws -> Swift.Bool
   final public func syncUserTimeZone() async throws -> Swift.Bool
 }
@@ -824,6 +982,14 @@ extension RookSDK.RookSummaryManager {
   final public func getSleepSummary(date: Foundation.Date) async throws -> [RookSDK.RookSleepSummary]
   final public func getPhysicalSummary(date: Foundation.Date) async throws -> RookSDK.RookPhysicalSummary
   final public func getBodySummary(date: Foundation.Date) async throws -> RookSDK.RookBodySummary
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
+  final public func syncSummaries() async
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
+  final public func syncSleepSummary(from date: Foundation.Date) async throws -> Swift.Bool
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
+  final public func syncPhysicalSummary(from date: Foundation.Date) async throws -> Swift.Bool
+  @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date) or sync(_ date: Date, _ summaryType: [SummaryType])")
+  final public func syncBodySummary(from date: Foundation.Date) async throws -> Swift.Bool
   @available(*, deprecated, message: "This method will be removed; please use sync(), sync(_ date: Date)")
   final public func syncPendingSummaries() async throws -> Swift.Bool
 }
@@ -1083,8 +1249,26 @@ extension RookSDK.RookEventsManager {
   final public func getActivityEvents(date: Foundation.Date) async throws -> [RookSDK.RookActivityEvent]
   final public func getTodayStepCount() async throws -> Swift.Int
   final public func getTodayCalories() async throws -> RookSDK.RookCalories
-  final public func getTodayHeartRate() async throws -> RookSDK.RookHeartRate
-  final public func writeNutritionEvent(event: RookSDK.NutritionInsertionEvent) async throws -> Swift.Bool
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBodyHeartRateEvent(date: Foundation.Date) async throws -> Swift.Bool
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncPhysicalHeartRateEvent(date: Foundation.Date) async throws -> Swift.Bool
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBodyOxygenationEvent(date: Foundation.Date) async throws -> Swift.Bool
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncPhysicalOxygenationEvent(date: Foundation.Date) async throws -> Swift.Bool
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncTrainingEvent(date: Foundation.Date) async throws -> Swift.Bool
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncTemperatureEvents(date: Foundation.Date) async throws -> Swift.Bool
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBloodPressureEvents(date: Foundation.Date) async throws -> Swift.Bool
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBloodGlucoseEvents(date: Foundation.Date) async throws -> Swift.Bool
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncBodyMetricsEvents(date: Foundation.Date) async throws -> Swift.Bool
+  @available(*, deprecated, message: "This method will be removed; please use syncEvents(date: Date, eventType: EventTypeToUpload)")
+  final public func syncPendingEvents() async throws -> Swift.Bool
 }
 @objc public class LogInfoObjc : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $NonescapableTypes
@@ -1113,14 +1297,10 @@ public enum EventTypeToUpload : Swift.String {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class RookConnectConfigurationManagerObjc : ObjectiveC.NSObject {
   @objc public static let shared: RookSDK.RookConnectConfigurationManagerObjc
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc final public func setConfiguration(clientUUID: Swift.String, secret: Swift.String, bundleId: Swift.String?, enableBackgroundSync: Swift.Bool, enableEventsBackgroundSync: Swift.Bool)
-  #endif
+  @objc final public func setConfiguration(clientUUID: Swift.String, secretKey: Swift.String, enableBackgroundSync: Swift.Bool, enableEventsBackgroundSync: Swift.Bool)
   @objc final public func setEnvironmentForSandbox()
   @objc final public func setEnvironmentForProduction()
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc final public func initRook(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
-  #endif
+  @objc final public func initRook()
   #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func updateUserId(_ id: Swift.String, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   #endif
@@ -1128,13 +1308,22 @@ public enum EventTypeToUpload : Swift.String {
   @objc final public func readUserId(completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func clearUser(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func removeUserFromRook(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func syncUserTimeZone(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   #endif
+  @available(*, deprecated, renamed: "enableSync")
+  @objc final public func enableYesterdaySync()
   @objc final public func enableSync()
+  @available(*, deprecated, renamed: "disableSync")
+  @objc final public func disableYesterdaySync()
   @objc final public func disableSync()
+  @available(*, deprecated, renamed: "isSyncEnable")
+  @objc final public func isYesterdaySyncEnable() -> Swift.Bool
   @objc final public func isSyncEnable() -> Swift.Bool
   @objc final public func setConsoleLogAvailable(_ value: Swift.Bool)
   @objc deinit
@@ -1175,17 +1364,25 @@ public struct RookPositionGranularItem : Swift.Encodable {
 @_inheritsConvenienceInitializers @objc final public class DataSourceManagerObjc : ObjectiveC.NSObject {
   @objc override dynamic public init()
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc final public func getDataSourceAuthorizer(userId: Swift.String?, dataSource: Swift.String, redirectUrl: Swift.String? = nil, completion: @escaping ([Swift.String : Any]?, (any Swift.Error)?) -> Swift.Void)
+  @available(*, deprecated, message: "This method is deprecated and it will be removed in a future version")
+  @objc final public func getAvailableDataSources(redirectURL: Swift.String?, completion: @escaping ([[Swift.String : Any]]?, (any Swift.Error)?) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc final public func getDataSourcesAuthorizedV2(userId: Swift.String?, completion: @escaping ([[Swift.String : Any]]?, (any Swift.Error)?) -> Swift.Void)
+  @available(*, deprecated, message: "This method is deprecated and it will be removed in a future version")
+  @objc final public func presentDataSourceView(redirectURL: Swift.String?, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func getDataSourceAuthorizer(dataSource: Swift.String, redirectUrl: Swift.String? = nil, completion: @escaping ([Swift.String : Any]?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func getAuthorizedDataSources(completion: @escaping ([[Swift.String : Any]]?, (any Swift.Error)?) -> Swift.Void)
   #endif
   @objc deinit
 }
 public struct DataSourceAuthorizer {
   public let dataSource: Swift.String
   public let authorized: Swift.Bool
-  public let authorizationUrl: Foundation.URL?
+  public let authorizationURL: Foundation.URL?
 }
 public enum RookTransmissionSummaryType : Swift.String, Swift.CaseIterable {
   case sleep
@@ -1233,37 +1430,24 @@ public enum AnalyticPlatform {
   @objc public func isBackGroundForSummariesEnable() -> Swift.Bool
   @objc deinit
 }
-public protocol RookErrorCode {
-  var code: Swift.Int { get }
-}
-public enum RookError : Swift.Error, Swift.Equatable {
-  case SDKNotInitialized
+public enum RookConnectErrors : Swift.Error {
+  case emptySummary
+  case emptySummaries
+  case emptyEvent
+  case nothingToUpdate
   case missingConfiguration
-  case SDKNotAuthorized
-  case missingPermissions(type: Swift.String)
-  case healthKitNotAvailable
-  case emptyData(type: Swift.String)
-  case emptyUserId
-  case requestError(code: Swift.Int, message: Swift.String)
-  case invalidDataSource
-  case deviceLocked
-  case invalidEventType
-  case appDeInitialized
-  case timeZoneNotAvailable
-  case unknown
-  public static func == (a: RookSDK.RookError, b: RookSDK.RookError) -> Swift.Bool
+  public static func == (a: RookSDK.RookConnectErrors, b: RookSDK.RookConnectErrors) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
-extension RookSDK.RookError : Foundation.LocalizedError {
+extension RookSDK.RookConnectErrors : Foundation.LocalizedError {
   #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
   #endif
-}
-extension RookSDK.RookError : RookSDK.RookErrorCode {
-  public var code: Swift.Int {
-    get
-  }
 }
 public struct RookBreathingGranularBreathsPerMinTransmissionDTO {
   public init(datetime: Foundation.Date, breathsPerMin: Swift.Int)
@@ -1351,37 +1535,6 @@ public enum HealthDataType : Swift.String, Swift.CaseIterable, Swift.Identifiabl
   case dietaryFiber
   case dietarySodium
   case dietaryCholesterol
-  case dietaryBiotin
-  case dietaryCaffeine
-  case dietaryCalcium
-  case dietaryChloride
-  case dietaryChromium
-  case dietaryCopper
-  case dietaryFatMonounsaturated
-  case dietaryFatPolyunsaturated
-  case dietaryFatSaturated
-  case dietaryFolate
-  case dietaryIodine
-  case dietaryIron
-  case dietaryMagnesium
-  case dietaryManganese
-  case dietaryMolybdenum
-  case dietaryNiacin
-  case dietaryPantothenicAcid
-  case dietaryPhosphorus
-  case dietaryPotassium
-  case dietaryRiboflavin
-  case dietarySelenium
-  case dietaryThiamin
-  case dietaryVitaminA
-  case dietaryVitaminB12
-  case dietaryVitaminB6
-  case dietaryVitaminC
-  case dietaryVitaminD
-  case dietaryVitaminE
-  case dietaryVitaminK
-  case dietaryWater
-  case dietaryZinc
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
@@ -1395,25 +1548,6 @@ public enum HealthDataType : Swift.String, Swift.CaseIterable, Swift.Identifiabl
     get
   }
 }
-public struct RookHeartRate {
-  public let hrMaximumBPM: Swift.Int?
-  public let hrMinimumBPM: Swift.Int?
-  public let hrAverageBMP: Swift.Int?
-  public let hrRestingBPM: Swift.Int?
-  public let hrvAverageRMSSD: Swift.Double?
-  public let hrvAverageSDNN: Swift.Double?
-  public let hrGranularData: [RookSDK.RookHeartRateItem]?
-  public let hrvSDNNGranularData: [RookSDK.RookHRVItem]?
-  public let hrvRMSSDGranularData: [RookSDK.RookHRVItem]?
-}
-public struct RookHeartRateItem {
-  public let hrBPM: Swift.Int
-  public let dateTime: Foundation.Date
-}
-public struct RookHRVItem {
-  public let hrv: Swift.Double
-  public let dateTime: Foundation.Date
-}
 public struct RookNutritionEventData : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -1426,6 +1560,9 @@ extension RookSDK.RookContextType : Swift.Hashable {}
 extension RookSDK.NetworkResponse : Swift.Equatable {}
 extension RookSDK.NetworkResponse : Swift.Hashable {}
 extension RookSDK.NetworkResponse : Swift.RawRepresentable {}
+extension RookSDK.RookTransmissionError : Swift.Equatable {}
+extension RookSDK.RookTransmissionError : Swift.Hashable {}
+extension RookSDK.RookTransmissionError : Swift.RawRepresentable {}
 extension RookSDK.DataSourceRevoke : Swift.Equatable {}
 extension RookSDK.DataSourceRevoke : Swift.Hashable {}
 extension RookSDK.DataSourceRevoke : Swift.RawRepresentable {}
@@ -1438,6 +1575,9 @@ extension RookSDK.EventNames : Swift.RawRepresentable {}
 extension RookSDK.SummaryTypeToUpload : Swift.Equatable {}
 extension RookSDK.SummaryTypeToUpload : Swift.Hashable {}
 extension RookSDK.SummaryTypeToUpload : Swift.RawRepresentable {}
+extension RookSDK.TimeZoneErrors : Swift.Equatable {}
+extension RookSDK.TimeZoneErrors : Swift.Hashable {}
+extension RookSDK.TimeZoneErrors : Swift.RawRepresentable {}
 extension RookSDK.PermissionStatus : Swift.Equatable {}
 extension RookSDK.PermissionStatus : Swift.Hashable {}
 extension RookSDK.PermissionStatus : Swift.RawRepresentable {}
@@ -1459,6 +1599,8 @@ extension RookSDK.RookTransmissionSummaryType : Swift.Hashable {}
 extension RookSDK.RookTransmissionSummaryType : Swift.RawRepresentable {}
 extension RookSDK.AnalyticPlatform : Swift.Equatable {}
 extension RookSDK.AnalyticPlatform : Swift.Hashable {}
+extension RookSDK.RookConnectErrors : Swift.Equatable {}
+extension RookSDK.RookConnectErrors : Swift.Hashable {}
 extension RookSDK.RookEnvironment : Swift.Equatable {}
 extension RookSDK.RookEnvironment : Swift.Hashable {}
 extension RookSDK.PendingDatesToUploadTypes : Swift.Equatable {}
