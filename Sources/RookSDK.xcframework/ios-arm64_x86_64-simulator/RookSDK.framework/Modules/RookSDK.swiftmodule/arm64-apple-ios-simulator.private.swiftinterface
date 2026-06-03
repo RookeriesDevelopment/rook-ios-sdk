@@ -614,7 +614,6 @@ public struct RookHrGranularTransmissionDTO : Swift.Codable {
   @objc public static let shared: RookSDK.IOSClass
   @objc final public func test()
   @objc final public func disableTest()
-  @objc final public func sendLog(with log: RookSDK.LogInfoObjc)
   @objc deinit
 }
 public enum BackGroundStorageTypes : Swift.String {
@@ -698,13 +697,6 @@ public struct RookDataSource {
   public let imageUrl: Swift.String
   public let connected: Swift.Bool
   public let authorizationURL: Swift.String?
-}
-public class TransmissionBodyMetricsValues {
-  public init()
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func getLastBodyTransmission() -> (Swift.Float?, Swift.Float?)
-  #endif
-  @objc deinit
 }
 public struct RookActivityLevelGranular : Swift.Encodable {
   public let dateTime: Foundation.Date
@@ -934,6 +926,7 @@ public enum RookTransmissionEventType : Swift.String, Swift.CaseIterable {
   case stepsEvent
   case caloriesEvent
   case nutritionEvent
+  case ecgEvent
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
@@ -1103,6 +1096,7 @@ public enum EventTypeToUpload : Swift.String {
   case nutrition
   case calories
   case steps
+  case ecg
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
@@ -1317,6 +1311,10 @@ public enum HealthDataType : Swift.String, Swift.CaseIterable, Swift.Identifiabl
   case walkingStepLength
   case runningPower
   case runningSpeed
+  case stairAscentSpeed
+  case cyclingPower
+  case cyclingSpeed
+  case waterTemperature
   case height
   case bodyMass
   case bodyMassIndex
@@ -1382,6 +1380,9 @@ public enum HealthDataType : Swift.String, Swift.CaseIterable, Swift.Identifiabl
   case dietaryVitaminK
   case dietaryWater
   case dietaryZinc
+  case estimatedWorkoutEffortScore
+  case physicalEffort
+  case workoutEffortScore
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
