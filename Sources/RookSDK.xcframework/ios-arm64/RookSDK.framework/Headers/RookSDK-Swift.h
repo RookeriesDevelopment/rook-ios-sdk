@@ -331,7 +331,6 @@ SWIFT_CLASS("_TtC7RookSDK21DataSourceManagerObjc")
 - (void)getDataSourcesAuthorizedV2WithUserId:(NSString * _Nullable)userId completion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 @end
 
-@class LogInfoObjc;
 SWIFT_CLASS("_TtC7RookSDK8IOSClass")
 @interface IOSClass : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IOSClass * _Nonnull shared;)
@@ -340,7 +339,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IOSClass * _
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)test;
 - (void)disableTest;
-- (void)sendLogWith:(LogInfoObjc * _Nonnull)log;
 @end
 
 SWIFT_CLASS("_TtC7RookSDK11LogInfoObjc")
