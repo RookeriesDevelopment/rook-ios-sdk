@@ -122,6 +122,9 @@ public enum RookContextType {
   final public func getTodayStepCount(completion: @escaping (Swift.Result<Swift.Int, any Swift.Error>) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  final public func getTodayStepCountBySource(completion: @escaping (Swift.Result<RookSDK.StepEvent, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getTodayCalories(completion: @escaping (Swift.Result<RookSDK.RookCalories, any Swift.Error>) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
@@ -698,6 +701,25 @@ public struct RookDataSource {
   public let connected: Swift.Bool
   public let authorizationURL: Swift.String?
 }
+public struct StepEvent {
+  public let stepCount: Swift.Int
+  public let date: Foundation.Date
+  public let source: [RookSDK.SourceInformation]?
+  public var granularSteps: [RookSDK.RookStepGranularSample]
+  public var stepCountBySource: [RookSDK.StepCountBySource]?
+}
+public struct RookStepGranularSample {
+  public let value: Swift.Double
+  public let start: Foundation.Date
+  public let endDate: Foundation.Date
+  public let sourceName: Swift.String
+  public let bundleId: Swift.String
+}
+public struct StepCountBySource {
+  public let sourceName: Swift.String
+  public let bundleId: Swift.String
+  public let stepCount: Swift.Double
+}
 public struct RookActivityLevelGranular : Swift.Encodable {
   public let dateTime: Foundation.Date
   public let activityLevel: Swift.Int
@@ -808,6 +830,17 @@ extension RookSDK.RookConnectConfigurationManager {
   final public func getUserId() async throws -> Swift.String
   final public func removeUserFromRook() async throws -> Swift.Bool
   final public func syncUserTimeZone() async throws -> Swift.Bool
+}
+public struct SourceInformation : Swift.Hashable, Swift.Codable {
+  public let bundleId: Swift.String
+  public let name: Swift.String
+  public static func == (a: RookSDK.SourceInformation, b: RookSDK.SourceInformation) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension RookSDK.RookSummaryManager {
   final public func sync() async throws -> Swift.Bool
@@ -1075,6 +1108,7 @@ extension RookSDK.RookEventsManager {
   final public func syncEvents(date: Foundation.Date, eventType: RookSDK.EventTypeToUpload) async throws -> Swift.Bool
   final public func getActivityEvents(date: Foundation.Date) async throws -> [RookSDK.RookActivityEvent]
   final public func getTodayStepCount() async throws -> Swift.Int
+  final public func getTodayStepCountBySource() async throws -> RookSDK.StepEvent
   final public func getTodayCalories() async throws -> RookSDK.RookCalories
   final public func getTodayHeartRate() async throws -> RookSDK.RookHeartRate
   final public func writeNutritionEvent(event: RookSDK.NutritionInsertionEvent) async throws -> Swift.Bool

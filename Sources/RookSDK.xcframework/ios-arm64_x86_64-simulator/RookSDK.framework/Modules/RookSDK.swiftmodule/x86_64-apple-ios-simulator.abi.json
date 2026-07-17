@@ -2722,6 +2722,59 @@
           },
           {
             "kind": "Function",
+            "name": "getTodayStepCountBySource",
+            "printedName": "getTodayStepCountBySource(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<RookSDK.StepEvent, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<RookSDK.StepEvent, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StepEvent",
+                        "printedName": "RookSDK.StepEvent",
+                        "usr": "s:7RookSDK9StepEventV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A13EventsManagerC25getTodayStepCountBySource10completionyys6ResultOyAA0G5EventVs5Error_pGc_tF",
+            "mangledName": "$s7RookSDK0A13EventsManagerC25getTodayStepCountBySource10completionyys6ResultOyAA0G5EventVs5Error_pGc_tF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getTodayCalories",
             "printedName": "getTodayCalories(completion:)",
             "children": [
@@ -3281,6 +3334,30 @@
             "declKind": "Func",
             "usr": "s:7RookSDK0A13EventsManagerC17getTodayStepCountSiyYaKF",
             "mangledName": "$s7RookSDK0A13EventsManagerC17getTodayStepCountSiyYaKF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTodayStepCountBySource",
+            "printedName": "getTodayStepCountBySource()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StepEvent",
+                "printedName": "RookSDK.StepEvent",
+                "usr": "s:7RookSDK9StepEventV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A13EventsManagerC25getTodayStepCountBySourceAA0G5EventVyYaKF",
+            "mangledName": "$s7RookSDK0A13EventsManagerC25getTodayStepCountBySourceAA0G5EventVyYaKF",
             "moduleName": "RookSDK",
             "declAttributes": [
               "Final",
@@ -26143,6 +26220,856 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "StepEvent",
+        "printedName": "StepEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "stepCount",
+            "printedName": "stepCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK9StepEventV9stepCountSivp",
+            "mangledName": "$s7RookSDK9StepEventV9stepCountSivp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK9StepEventV9stepCountSivg",
+                "mangledName": "$s7RookSDK9StepEventV9stepCountSivg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "date",
+            "printedName": "date",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK9StepEventV4date10Foundation4DateVvp",
+            "mangledName": "$s7RookSDK9StepEventV4date10Foundation4DateVvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK9StepEventV4date10Foundation4DateVvg",
+                "mangledName": "$s7RookSDK9StepEventV4date10Foundation4DateVvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "source",
+            "printedName": "source",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[RookSDK.SourceInformation]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookSDK.SourceInformation]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SourceInformation",
+                        "printedName": "RookSDK.SourceInformation",
+                        "usr": "s:7RookSDK17SourceInformationV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK9StepEventV6sourceSayAA17SourceInformationVGSgvp",
+            "mangledName": "$s7RookSDK9StepEventV6sourceSayAA17SourceInformationVGSgvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[RookSDK.SourceInformation]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[RookSDK.SourceInformation]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SourceInformation",
+                            "printedName": "RookSDK.SourceInformation",
+                            "usr": "s:7RookSDK17SourceInformationV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK9StepEventV6sourceSayAA17SourceInformationVGSgvg",
+                "mangledName": "$s7RookSDK9StepEventV6sourceSayAA17SourceInformationVGSgvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "granularSteps",
+            "printedName": "granularSteps",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[RookSDK.RookStepGranularSample]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookStepGranularSample",
+                    "printedName": "RookSDK.RookStepGranularSample",
+                    "usr": "s:7RookSDK0A18StepGranularSampleV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK9StepEventV13granularStepsSayAA0aC14GranularSampleVGvp",
+            "mangledName": "$s7RookSDK9StepEventV13granularStepsSayAA0aC14GranularSampleVGvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookSDK.RookStepGranularSample]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookStepGranularSample",
+                        "printedName": "RookSDK.RookStepGranularSample",
+                        "usr": "s:7RookSDK0A18StepGranularSampleV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK9StepEventV13granularStepsSayAA0aC14GranularSampleVGvg",
+                "mangledName": "$s7RookSDK9StepEventV13granularStepsSayAA0aC14GranularSampleVGvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookSDK.RookStepGranularSample]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookStepGranularSample",
+                        "printedName": "RookSDK.RookStepGranularSample",
+                        "usr": "s:7RookSDK0A18StepGranularSampleV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK9StepEventV13granularStepsSayAA0aC14GranularSampleVGvs",
+                "mangledName": "$s7RookSDK9StepEventV13granularStepsSayAA0aC14GranularSampleVGvs",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK9StepEventV13granularStepsSayAA0aC14GranularSampleVGvM",
+                "mangledName": "$s7RookSDK9StepEventV13granularStepsSayAA0aC14GranularSampleVGvM",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stepCountBySource",
+            "printedName": "stepCountBySource",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[RookSDK.StepCountBySource]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookSDK.StepCountBySource]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StepCountBySource",
+                        "printedName": "RookSDK.StepCountBySource",
+                        "usr": "s:7RookSDK17StepCountBySourceV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK9StepEventV17stepCountBySourceSayAA0cfgH0VGSgvp",
+            "mangledName": "$s7RookSDK9StepEventV17stepCountBySourceSayAA0cfgH0VGSgvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[RookSDK.StepCountBySource]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[RookSDK.StepCountBySource]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "StepCountBySource",
+                            "printedName": "RookSDK.StepCountBySource",
+                            "usr": "s:7RookSDK17StepCountBySourceV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK9StepEventV17stepCountBySourceSayAA0cfgH0VGSgvg",
+                "mangledName": "$s7RookSDK9StepEventV17stepCountBySourceSayAA0cfgH0VGSgvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[RookSDK.StepCountBySource]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[RookSDK.StepCountBySource]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "StepCountBySource",
+                            "printedName": "RookSDK.StepCountBySource",
+                            "usr": "s:7RookSDK17StepCountBySourceV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK9StepEventV17stepCountBySourceSayAA0cfgH0VGSgvs",
+                "mangledName": "$s7RookSDK9StepEventV17stepCountBySourceSayAA0cfgH0VGSgvs",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK9StepEventV17stepCountBySourceSayAA0cfgH0VGSgvM",
+                "mangledName": "$s7RookSDK9StepEventV17stepCountBySourceSayAA0cfgH0VGSgvM",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7RookSDK9StepEventV",
+        "mangledName": "$s7RookSDK9StepEventV",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RookStepGranularSample",
+        "printedName": "RookStepGranularSample",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK0A18StepGranularSampleV5valueSdvp",
+            "mangledName": "$s7RookSDK0A18StepGranularSampleV5valueSdvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A18StepGranularSampleV5valueSdvg",
+                "mangledName": "$s7RookSDK0A18StepGranularSampleV5valueSdvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "start",
+            "printedName": "start",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK0A18StepGranularSampleV5start10Foundation4DateVvp",
+            "mangledName": "$s7RookSDK0A18StepGranularSampleV5start10Foundation4DateVvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A18StepGranularSampleV5start10Foundation4DateVvg",
+                "mangledName": "$s7RookSDK0A18StepGranularSampleV5start10Foundation4DateVvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "endDate",
+            "printedName": "endDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK0A18StepGranularSampleV7endDate10Foundation0G0Vvp",
+            "mangledName": "$s7RookSDK0A18StepGranularSampleV7endDate10Foundation0G0Vvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A18StepGranularSampleV7endDate10Foundation0G0Vvg",
+                "mangledName": "$s7RookSDK0A18StepGranularSampleV7endDate10Foundation0G0Vvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sourceName",
+            "printedName": "sourceName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK0A18StepGranularSampleV10sourceNameSSvp",
+            "mangledName": "$s7RookSDK0A18StepGranularSampleV10sourceNameSSvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A18StepGranularSampleV10sourceNameSSvg",
+                "mangledName": "$s7RookSDK0A18StepGranularSampleV10sourceNameSSvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bundleId",
+            "printedName": "bundleId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK0A18StepGranularSampleV8bundleIdSSvp",
+            "mangledName": "$s7RookSDK0A18StepGranularSampleV8bundleIdSSvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A18StepGranularSampleV8bundleIdSSvg",
+                "mangledName": "$s7RookSDK0A18StepGranularSampleV8bundleIdSSvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7RookSDK0A18StepGranularSampleV",
+        "mangledName": "$s7RookSDK0A18StepGranularSampleV",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StepCountBySource",
+        "printedName": "StepCountBySource",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sourceName",
+            "printedName": "sourceName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK17StepCountBySourceV10sourceNameSSvp",
+            "mangledName": "$s7RookSDK17StepCountBySourceV10sourceNameSSvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK17StepCountBySourceV10sourceNameSSvg",
+                "mangledName": "$s7RookSDK17StepCountBySourceV10sourceNameSSvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bundleId",
+            "printedName": "bundleId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK17StepCountBySourceV8bundleIdSSvp",
+            "mangledName": "$s7RookSDK17StepCountBySourceV8bundleIdSSvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK17StepCountBySourceV8bundleIdSSvg",
+                "mangledName": "$s7RookSDK17StepCountBySourceV8bundleIdSSvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stepCount",
+            "printedName": "stepCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK17StepCountBySourceV04stepD0Sdvp",
+            "mangledName": "$s7RookSDK17StepCountBySourceV04stepD0Sdvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK17StepCountBySourceV04stepD0Sdvg",
+                "mangledName": "$s7RookSDK17StepCountBySourceV04stepD0Sdvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7RookSDK17StepCountBySourceV",
+        "mangledName": "$s7RookSDK17StepCountBySourceV",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -30404,6 +31331,299 @@
         "moduleName": "RookSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SourceInformation",
+        "printedName": "SourceInformation",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "bundleId",
+            "printedName": "bundleId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK17SourceInformationV8bundleIdSSvp",
+            "mangledName": "$s7RookSDK17SourceInformationV8bundleIdSSvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK17SourceInformationV8bundleIdSSvg",
+                "mangledName": "$s7RookSDK17SourceInformationV8bundleIdSSvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK17SourceInformationV4nameSSvp",
+            "mangledName": "$s7RookSDK17SourceInformationV4nameSSvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK17SourceInformationV4nameSSvg",
+                "mangledName": "$s7RookSDK17SourceInformationV4nameSSvg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SourceInformation",
+                "printedName": "RookSDK.SourceInformation",
+                "usr": "s:7RookSDK17SourceInformationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7RookSDK17SourceInformationV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7RookSDK17SourceInformationV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK17SourceInformationV9hashValueSivp",
+            "mangledName": "$s7RookSDK17SourceInformationV9hashValueSivp",
+            "moduleName": "RookSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK17SourceInformationV9hashValueSivg",
+                "mangledName": "$s7RookSDK17SourceInformationV9hashValueSivg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK17SourceInformationV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s7RookSDK17SourceInformationV4hash4intoys6HasherVz_tF",
+            "moduleName": "RookSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK17SourceInformationV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7RookSDK17SourceInformationV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SourceInformation",
+                "printedName": "RookSDK.SourceInformation",
+                "usr": "s:7RookSDK17SourceInformationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SourceInformation",
+                "printedName": "RookSDK.SourceInformation",
+                "usr": "s:7RookSDK17SourceInformationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK17SourceInformationV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s7RookSDK17SourceInformationV2eeoiySbAC_ACtFZ",
+            "moduleName": "RookSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7RookSDK17SourceInformationV",
+        "mangledName": "$s7RookSDK17SourceInformationV",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
         ]
       },
       {
@@ -57901,42 +59121,42 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/StepsNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 411,
+      "offset": 415,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/StepsNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 441,
+      "offset": 445,
       "length": 10,
       "value": "\"datetime\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/StepsNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 485,
+      "offset": 489,
       "length": 38,
       "value": "\"was_the_user_under_physical_activity\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/StepsNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 555,
+      "offset": 559,
       "length": 23,
       "value": "\"accumulated_steps_int\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/StepsNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 608,
+      "offset": 612,
       "length": 21,
       "value": "\"non_structured_data\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/StepsNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 654,
+      "offset": 658,
       "length": 17,
       "value": "\"sources_of_data\""
     },
@@ -60314,6 +61534,20 @@
       "value": "\"vo2_ml_per_min\""
     },
     {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Entities\/Common\/StepEventExtraction.swift",
+      "kind": "Array",
+      "offset": 266,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Entities\/Common\/StepEventExtraction.swift",
+      "kind": "Array",
+      "offset": 493,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/BodyMetricsStorage\/TransmissionBodyMetricsValues.swift",
       "kind": "StringLiteral",
       "offset": 455,
@@ -62010,14 +63244,14 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/PredicateBuilder\/RookPredicateBuilder.swift",
       "kind": "BooleanLiteral",
-      "offset": 2449,
+      "offset": 2660,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/PredicateBuilder\/RookPredicateBuilder.swift",
       "kind": "BooleanLiteral",
-      "offset": 2497,
+      "offset": 2708,
       "length": 4,
       "value": "true"
     },
@@ -63454,7 +64688,7 @@
       "kind": "StringLiteral",
       "offset": 1836,
       "length": 7,
-      "value": "\"4.1.0\""
+      "value": "\"4.1.1\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
