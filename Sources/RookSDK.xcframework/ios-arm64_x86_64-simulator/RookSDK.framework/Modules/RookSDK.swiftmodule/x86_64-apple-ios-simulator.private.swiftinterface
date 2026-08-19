@@ -79,6 +79,7 @@ public enum RookDataType : Swift.String, Swift.CaseIterable, Swift.Identifiable 
   case temperatureEvent
   case bloodGlucoseEvent
   case nutritionEvent
+  case hydrationEvent
   case bloodPressureEvent
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
@@ -959,6 +960,7 @@ public enum RookTransmissionEventType : Swift.String, Swift.CaseIterable {
   case stepsEvent
   case caloriesEvent
   case nutritionEvent
+  case hydrationEvent
   case ecgEvent
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
@@ -1128,6 +1130,7 @@ public enum EventTypeToUpload : Swift.String {
   case bloodGlucose
   case bodyMetrics
   case nutrition
+  case hydration
   case calories
   case steps
   case ecg
