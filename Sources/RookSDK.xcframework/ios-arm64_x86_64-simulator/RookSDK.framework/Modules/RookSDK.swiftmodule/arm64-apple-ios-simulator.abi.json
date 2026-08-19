@@ -15,6 +15,76 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookLapGranularItem",
         "printedName": "RookLapGranularItem",
@@ -1735,6 +1805,43 @@
             "declKind": "EnumElement",
             "usr": "s:7RookSDK0A8DataTypeO14nutritionEventyA2CmF",
             "mangledName": "$s7RookSDK0A8DataTypeO14nutritionEventyA2CmF",
+            "moduleName": "RookSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "hydrationEvent",
+            "printedName": "hydrationEvent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookSDK.RookDataType.Type) -> RookSDK.RookDataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookDataType",
+                    "printedName": "RookSDK.RookDataType",
+                    "usr": "s:7RookSDK0A8DataTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookSDK.RookDataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookDataType",
+                        "printedName": "RookSDK.RookDataType",
+                        "usr": "s:7RookSDK0A8DataTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7RookSDK0A8DataTypeO14hydrationEventyA2CmF",
+            "mangledName": "$s7RookSDK0A8DataTypeO14hydrationEventyA2CmF",
             "moduleName": "RookSDK"
           },
           {
@@ -37418,6 +37525,43 @@
           },
           {
             "kind": "Var",
+            "name": "hydrationEvent",
+            "printedName": "hydrationEvent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookSDK.RookTransmissionEventType.Type) -> RookSDK.RookTransmissionEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookTransmissionEventType",
+                    "printedName": "RookSDK.RookTransmissionEventType",
+                    "usr": "s:7RookSDK0A21TransmissionEventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookSDK.RookTransmissionEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookTransmissionEventType",
+                        "printedName": "RookSDK.RookTransmissionEventType",
+                        "usr": "s:7RookSDK0A21TransmissionEventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7RookSDK0A21TransmissionEventTypeO09hydrationD0yA2CmF",
+            "mangledName": "$s7RookSDK0A21TransmissionEventTypeO09hydrationD0yA2CmF",
+            "moduleName": "RookSDK"
+          },
+          {
+            "kind": "Var",
             "name": "ecgEvent",
             "printedName": "ecgEvent",
             "children": [
@@ -46762,6 +46906,43 @@
             "declKind": "EnumElement",
             "usr": "s:7RookSDK17EventTypeToUploadO9nutritionyA2CmF",
             "mangledName": "$s7RookSDK17EventTypeToUploadO9nutritionyA2CmF",
+            "moduleName": "RookSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "hydration",
+            "printedName": "hydration",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookSDK.EventTypeToUpload.Type) -> RookSDK.EventTypeToUpload",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventTypeToUpload",
+                    "printedName": "RookSDK.EventTypeToUpload",
+                    "usr": "s:7RookSDK17EventTypeToUploadO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookSDK.EventTypeToUpload.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EventTypeToUpload",
+                        "printedName": "RookSDK.EventTypeToUpload",
+                        "usr": "s:7RookSDK17EventTypeToUploadO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7RookSDK17EventTypeToUploadO9hydrationyA2CmF",
+            "mangledName": "$s7RookSDK17EventTypeToUploadO9hydrationyA2CmF",
             "moduleName": "RookSDK"
           },
           {
@@ -58706,6 +58887,27 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Events\/Hydration\/Entities\/RookHydrationEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 556,
+      "length": 35,
+      "value": "\"water_total_consumption_ml_number\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Events\/Hydration\/Entities\/RookHydrationEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 639,
+      "length": 42,
+      "value": "\"hydration_amount_granular_data_ml_number\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Events\/Hydration\/Entities\/RookHydrationEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 736,
+      "length": 49,
+      "value": "\"hydration_level_granular_data_percentage_number\""
+    },
+    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Entities\/Granular\/RookLapGranularItem.swift",
       "kind": "StringLiteral",
       "offset": 369,
@@ -59359,7 +59561,14 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 1027,
+      "offset": 1023,
+      "length": 32,
+      "value": "\"rook_last_hydration_extraction\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 1084,
       "length": 37,
       "value": "\"rook_last_blood_pressure_extraction\""
     },
@@ -60269,63 +60478,70 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Events\/Data\/Entities\/ExtracttionAttemptType.swift",
       "kind": "StringLiteral",
-      "offset": 727,
+      "offset": 724,
+      "length": 40,
+      "value": "\"rook_last_hydration_attempt_extraction\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Events\/Data\/Entities\/ExtracttionAttemptType.swift",
+      "kind": "StringLiteral",
+      "offset": 792,
       "length": 44,
       "value": "\"rook_last_blood_glucose_attempt_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Events\/Data\/Entities\/ExtracttionAttemptType.swift",
       "kind": "StringLiteral",
-      "offset": 800,
+      "offset": 865,
       "length": 45,
       "value": "\"rook_last_blood_pressure_attempt_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Events\/Data\/Entities\/ExtracttionAttemptType.swift",
       "kind": "StringLiteral",
-      "offset": 872,
+      "offset": 937,
       "length": 43,
       "value": "\"rook_last_body_metrics_attempt_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Events\/Data\/Entities\/ExtracttionAttemptType.swift",
       "kind": "StringLiteral",
-      "offset": 936,
+      "offset": 1001,
       "length": 36,
       "value": "\"rook_last_steps_attempt_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Events\/Data\/Entities\/ExtracttionAttemptType.swift",
       "kind": "StringLiteral",
-      "offset": 996,
+      "offset": 1061,
       "length": 39,
       "value": "\"rook_last_calories_attempt_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Events\/Data\/Entities\/ExtracttionAttemptType.swift",
       "kind": "StringLiteral",
-      "offset": 1057,
+      "offset": 1122,
       "length": 43,
       "value": "\"rook_last_body_summary_attempt_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Events\/Data\/Entities\/ExtracttionAttemptType.swift",
       "kind": "StringLiteral",
-      "offset": 1123,
+      "offset": 1188,
       "length": 44,
       "value": "\"rook_last_sleep_summary_attempt_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Events\/Data\/Entities\/ExtracttionAttemptType.swift",
       "kind": "StringLiteral",
-      "offset": 1193,
+      "offset": 1258,
       "length": 47,
       "value": "\"rook_last_physical_summary_attempt_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Events\/Data\/Entities\/ExtracttionAttemptType.swift",
       "kind": "StringLiteral",
-      "offset": 1263,
+      "offset": 1328,
       "length": 39,
       "value": "\"rook_last_ecg_body_attempt_extraction\""
     },
@@ -61389,21 +61605,42 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/RookHydrationEventTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 624,
+      "offset": 601,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/RookHydrationEventTransmissionNetworking.swift",
+      "kind": "StringLiteral",
+      "offset": 654,
+      "length": 17,
+      "value": "\"sources_of_data\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/RookHydrationEventTransmissionNetworking.swift",
+      "kind": "StringLiteral",
+      "offset": 706,
+      "length": 38,
+      "value": "\"was_the_user_under_physical_activity\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/RookHydrationEventTransmissionNetworking.swift",
+      "kind": "StringLiteral",
+      "offset": 786,
       "length": 35,
       "value": "\"water_total_consumption_ml_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/RookHydrationEventTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 707,
+      "offset": 869,
       "length": 42,
       "value": "\"hydration_amount_granular_data_ml_number\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Events\/Entities\/RookHydrationEventTransmissionNetworking.swift",
       "kind": "StringLiteral",
-      "offset": 804,
+      "offset": 966,
       "length": 49,
       "value": "\"hydration_level_granular_data_percentage_number\""
     },
@@ -61802,56 +62039,63 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1759,
+      "offset": 1757,
+      "length": 22,
+      "value": "\"body_event_hydration\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1806,
       "length": 20,
       "value": "\"body_event_metrics\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1800,
+      "offset": 1847,
       "length": 22,
       "value": "\"physical_event_steps\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1846,
+      "offset": 1893,
       "length": 16,
       "value": "\"event_calories\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1884,
+      "offset": 1931,
       "length": 14,
       "value": "\"enable_steps\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1921,
+      "offset": 1968,
       "length": 15,
       "value": "\"disable_steps\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1961,
+      "offset": 2008,
       "length": 17,
       "value": "\"enable_calories\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2004,
+      "offset": 2051,
       "length": 18,
       "value": "\"disable_calories\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Constans\/AnalyticConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2052,
+      "offset": 2099,
       "length": 7,
       "value": "\"other\""
     },
@@ -64287,7 +64531,14 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 1013,
+      "offset": 1019,
+      "length": 34,
+      "value": "\"rook_last_hydration_transmission\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
+      "kind": "StringLiteral",
+      "offset": 1072,
       "length": 28,
       "value": "\"rook_last_ecg_transmission\""
     },
@@ -64688,7 +64939,7 @@
       "kind": "StringLiteral",
       "offset": 1836,
       "length": 7,
-      "value": "\"4.1.1\""
+      "value": "\"4.1.2\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
@@ -65526,35 +65777,35 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Events\/Constants\/EventType.swift",
       "kind": "StringLiteral",
-      "offset": 426,
+      "offset": 443,
       "length": 10,
       "value": "\"activity\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Events\/Constants\/EventType.swift",
       "kind": "StringLiteral",
-      "offset": 456,
+      "offset": 473,
       "length": 12,
       "value": "\"heart_rate\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Events\/Constants\/EventType.swift",
       "kind": "StringLiteral",
-      "offset": 530,
+      "offset": 547,
       "length": 16,
       "value": "\"blood_pressure\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Events\/Constants\/EventType.swift",
       "kind": "StringLiteral",
-      "offset": 569,
+      "offset": 586,
       "length": 15,
       "value": "\"blood_glucose\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/Events\/Constants\/EventType.swift",
       "kind": "StringLiteral",
-      "offset": 606,
+      "offset": 623,
       "length": 14,
       "value": "\"body_metrics\""
     },
@@ -65862,7 +66113,7 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Body\/Extraction\/Entities\/RookAppleBodyData.swift",
       "kind": "BooleanLiteral",
-      "offset": 777,
+      "offset": 809,
       "length": 5,
       "value": "false"
     },
@@ -66072,14 +66323,21 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Errors\/RookError.swift",
       "kind": "StringLiteral",
-      "offset": 840,
+      "offset": 841,
+      "length": 18,
+      "value": "\"Hydration events\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Errors\/RookError.swift",
+      "kind": "StringLiteral",
+      "offset": 892,
       "length": 17,
       "value": "\"Calories events\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Errors\/RookError.swift",
       "kind": "StringLiteral",
-      "offset": 887,
+      "offset": 939,
       "length": 14,
       "value": "\"Steps events\""
     },
