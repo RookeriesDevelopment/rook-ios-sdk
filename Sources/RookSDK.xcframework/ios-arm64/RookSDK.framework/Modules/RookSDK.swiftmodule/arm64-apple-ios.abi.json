@@ -63626,16 +63626,23 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Analytics\/Data\/AnalyticLocalDataSource\/AnalyticLocalDataSource.swift",
       "kind": "StringLiteral",
-      "offset": 381,
+      "offset": 457,
       "length": 23,
       "value": "\"rook_connect_logs_key\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Analytics\/Data\/AnalyticLocalDataSource\/AnalyticLocalDataSource.swift",
       "kind": "StringLiteral",
-      "offset": 442,
+      "offset": 518,
       "length": 29,
       "value": "\"rook_connect_logs_count_key\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Analytics\/Data\/AnalyticLocalDataSource\/AnalyticLocalDataSource.swift",
+      "kind": "IntegerLiteral",
+      "offset": 621,
+      "length": 3,
+      "value": "500"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/PhysicalNetworking\/Entities\/Granular\/RookSwimmingDistanceGranularNetworking.swift",
@@ -65133,7 +65140,7 @@
       "kind": "StringLiteral",
       "offset": 1836,
       "length": 7,
-      "value": "\"4.2.0\""
+      "value": "\"4.2.1\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
@@ -66356,9 +66363,23 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Analytics\/Domain\/AnalyticTransmissionUseCase.swift",
       "kind": "IntegerLiteral",
-      "offset": 539,
+      "offset": 479,
       "length": 2,
       "value": "50"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Analytics\/Domain\/AnalyticTransmissionUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 516,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Analytics\/Domain\/AnalyticTransmissionUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 553,
+      "length": 7,
+      "value": "900000"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Body\/Extraction\/Entities\/RookAppleBodyData.swift",
