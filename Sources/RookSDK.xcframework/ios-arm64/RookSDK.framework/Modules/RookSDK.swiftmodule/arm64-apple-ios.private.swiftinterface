@@ -1239,7 +1239,6 @@ public enum AnalyticPlatform {
   case flutter
   case reactNative
   case capacitor
-  case appExtraction
   public static func == (a: RookSDK.AnalyticPlatform, b: RookSDK.AnalyticPlatform) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -1249,7 +1248,6 @@ public enum AnalyticPlatform {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class AnalyticsExtractionConfigurator : ObjectiveC.NSObject {
   @objc public static let shared: RookSDK.AnalyticsExtractionConfigurator
   final public func setPlatform(_ platform: RookSDK.AnalyticPlatform)
-  final public func setAppVersion(_ appVersion: Swift.String)
   @objc final public func setPlatformToReact()
   @objc deinit
 }
