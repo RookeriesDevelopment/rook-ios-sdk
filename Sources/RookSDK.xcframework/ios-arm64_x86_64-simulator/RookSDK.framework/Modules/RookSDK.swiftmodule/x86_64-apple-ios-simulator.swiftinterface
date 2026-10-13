@@ -280,6 +280,7 @@ public struct RookStressGranular : Swift.Encodable {
   final public func setConfiguration(clientUUID: Swift.String, secret: Swift.String, bundleId: Swift.String?, enableBackgroundSync: Swift.Bool, enableEventsBackgroundSync: Swift.Bool)
   #endif
   final public func removeConfiguration()
+  final public func getSDKVersion() -> Swift.String
   final public func setEnvironment(_ environment: RookSDK.RookEnvironment)
   final public func getEnvironment() -> RookSDK.RookEnvironment
   #if compiler(>=5.3) && $NonescapableTypes
