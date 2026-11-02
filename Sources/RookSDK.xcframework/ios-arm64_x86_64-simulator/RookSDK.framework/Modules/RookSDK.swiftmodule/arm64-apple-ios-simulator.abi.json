@@ -10290,6 +10290,28 @@
           },
           {
             "kind": "Function",
+            "name": "getSDKVersion",
+            "printedName": "getSDKVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A27ConnectConfigurationManagerC13getSDKVersionSSyF",
+            "mangledName": "$s7RookSDK0A27ConnectConfigurationManagerC13getSDKVersionSSyF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setEnvironment",
             "printedName": "setEnvironment(_:)",
             "children": [
@@ -47934,6 +47956,13 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "RookSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "RookSDK",
         "declAttributes": [
           "RawDocComment"
@@ -63626,16 +63655,23 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Analytics\/Data\/AnalyticLocalDataSource\/AnalyticLocalDataSource.swift",
       "kind": "StringLiteral",
-      "offset": 381,
+      "offset": 457,
       "length": 23,
       "value": "\"rook_connect_logs_key\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Analytics\/Data\/AnalyticLocalDataSource\/AnalyticLocalDataSource.swift",
       "kind": "StringLiteral",
-      "offset": 442,
+      "offset": 518,
       "length": 29,
       "value": "\"rook_connect_logs_count_key\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Analytics\/Data\/AnalyticLocalDataSource\/AnalyticLocalDataSource.swift",
+      "kind": "IntegerLiteral",
+      "offset": 621,
+      "length": 3,
+      "value": "500"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/PhysicalNetworking\/Entities\/Granular\/RookSwimmingDistanceGranularNetworking.swift",
@@ -65133,7 +65169,7 @@
       "kind": "StringLiteral",
       "offset": 1836,
       "length": 7,
-      "value": "\"4.2.0\""
+      "value": "\"4.2.3\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
@@ -66081,6 +66117,13 @@
       "value": "\"protein_percentage_of_calories_percentage\""
     },
     {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Domain\/ExtractionAnalyticErrorGuard.swift",
+      "kind": "StringLiteral",
+      "offset": 309,
+      "length": 32,
+      "value": "\"rook_last_error_analytic_date_\""
+    },
+    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Entities\/CommonGranular\/RookTssGranularTransmissionNetworking.swift",
       "kind": "StringLiteral",
       "offset": 645,
@@ -66356,9 +66399,23 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Analytics\/Domain\/AnalyticTransmissionUseCase.swift",
       "kind": "IntegerLiteral",
-      "offset": 539,
+      "offset": 479,
       "length": 2,
       "value": "50"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Analytics\/Domain\/AnalyticTransmissionUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 516,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Analytics\/Domain\/AnalyticTransmissionUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 553,
+      "length": 7,
+      "value": "900000"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Body\/Extraction\/Entities\/RookAppleBodyData.swift",
