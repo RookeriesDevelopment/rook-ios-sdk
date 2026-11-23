@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zh+jgt1+HCdajsXn2d690faKEbY=
+		Om8Q2QrJn67/pv+RrdMuihW89YM=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		aC9wFDmjlFJBvzWEcLv8y7ZmGkQ=
+		ZM0VA0Hq4vglXP2teTjbvNIzUzw=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/vHA7tMiQi6lTqgOo4w1v62/k7o=
+		pZnGP34+D7RPf/iYH1Z3PrjpJaY=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		gpLzgGLgtZEKlA/xXtTnqeRJhfs=
+		dpVthdRlCl4liUo838ijPitJHDM=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/vHA7tMiQi6lTqgOo4w1v62/k7o=
+		pZnGP34+D7RPf/iYH1Z3PrjpJaY=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		eIBtzCkflD3qFhIgjpq4lF2DwIM=
+		5xNiIyTDI5LEvHnRmzQHKtQ/dfg=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		aC9wFDmjlFJBvzWEcLv8y7ZmGkQ=
+		ZM0VA0Hq4vglXP2teTjbvNIzUzw=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Na5WRCrvfUGoKPV1H/Ei4P5gkaE=
+		SKnW34+D/4+NuguSaa5zd6z9wU0=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		568U9EuXS/aIkEdNH13Cw2H1Pwg=
+		IcX7jTdnsnAexSb8SA8VLDnsRrU=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Na5WRCrvfUGoKPV1H/Ei4P5gkaE=
+		SKnW34+D/4+NuguSaa5zd6z9wU0=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Ufyd2X6005nSFEXACTVBZ8htOwI=
+		KrOuv0V4K0cw+3879YoqOgj0Ss4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -113,70 +113,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R7Xz/UvCa4kZH6YSL231iDDu9k9XaQskA6dTpV5nnc0=
+			F3NBO4B36plyQNY9Ihja3jCtpkMy9Uwdehh7HT6Bi/E=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9TXLWaEcCCBbLgq76V0Tk9jGXExBaMzg0kcIz1rv81c=
+			KxI14DmhxYv1S0q0pKGippIF3sCVY94S/bryyfLbobY=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KrgtMxV5o5R2HD7AZro3FEBX/qHGkKiTjXwmy7uWjgo=
+			/Sl6KSdIBslk8iTe4PSYnoduUicVnwtFncR4Nf7Su14=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9TXLWaEcCCBbLgq76V0Tk9jGXExBaMzg0kcIz1rv81c=
+			KxI14DmhxYv1S0q0pKGippIF3sCVY94S/bryyfLbobY=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AklPZlbsH/Rn1e5PWsNhC6Nut7gDtNy3vtHD0oVD90A=
+			+UsR8fnJmQK5ilIsKHIuuvN9Bp+D5qVwncsJVWEmJi4=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R7Xz/UvCa4kZH6YSL231iDDu9k9XaQskA6dTpV5nnc0=
+			F3NBO4B36plyQNY9Ihja3jCtpkMy9Uwdehh7HT6Bi/E=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6V4M+fsGfxsa2rlogLrEC+GyFMODMTlzB6pXS1Rm2ug=
+			vreI59Sdjw+AwpPUhKs9BcFN8nNFA2CEHNOmJrWdrJA=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nbV2jr4gDL0y1DNgYEmfYhuImQANvSL0V3ppnbsnpRc=
+			HmdsKifbUnoiifWk9LtSXsO3v+kSiBkMtn+fga1CgVE=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6V4M+fsGfxsa2rlogLrEC+GyFMODMTlzB6pXS1Rm2ug=
+			vreI59Sdjw+AwpPUhKs9BcFN8nNFA2CEHNOmJrWdrJA=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vahqcpE9IuDbqNJ2bLYg3kIFYdKytXnjQAZkloW4r64=
+			kD5B9fZgP3kfl4ptFzd9e7DQI13xT068FtL7hzP3vac=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
